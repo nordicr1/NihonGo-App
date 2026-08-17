@@ -1,0 +1,505 @@
+import { KanjiItem } from '../types';
+
+export const KANJI_N2_N1: KanjiItem[] = [
+  // ===================== N2 KANJIS =====================
+  {
+    id: 'k_n2_1',
+    kanji: '憲',
+    onyomi: ['ケン (ken)'],
+    kunyomi: [],
+    meaningPt: 'Constituição, Lei fundamental',
+    strokes: 16,
+    radical: '心 (coração)',
+    jlpt: 'N2',
+    examples: [
+      { word: '憲法', reading: 'けんぽう (kenpou)', meaningPt: 'Constituição nacional' },
+      { word: '立憲', reading: 'りっけん (rikken)', meaningPt: 'Constitucionalismo' },
+      { word: '改憲', reading: 'かいけん (kaiken)', meaningPt: 'Reforma constitucional' }
+    ]
+  },
+  {
+    id: 'k_n2_2',
+    kanji: '貿',
+    onyomi: ['ボウ (bou)'],
+    kunyomi: [],
+    meaningPt: 'Comércio exterior, Troca mercantil',
+    strokes: 12,
+    radical: '貝 (concha/moeda)',
+    jlpt: 'N2',
+    examples: [
+      { word: '貿易', reading: 'ぼうえき (boueki)', meaningPt: 'Comércio exterior' },
+      { word: '貿易商', reading: 'ぼうえきしょう (bouekishou)', meaningPt: 'Comerciante internacional' }
+    ]
+  },
+  {
+    id: 'k_n2_3',
+    kanji: '企',
+    onyomi: ['キ (ki)'],
+    kunyomi: ['くわだ.てる (kuwada.teru)'],
+    meaningPt: 'Empreender, Planejar, Empresa',
+    strokes: 6,
+    radical: '人 (pessoa)',
+    jlpt: 'N2',
+    examples: [
+      { word: '企業', reading: 'きぎょう (kigyou)', meaningPt: 'Empresa / Corporação' },
+      { word: '企画', reading: 'きかく (kikaku)', meaningPt: 'Planejamento / Projeto' },
+      { word: '企てる', reading: 'くわだてる (kuwadaeru)', meaningPt: 'Tramar / Empreender' }
+    ]
+  },
+  {
+    id: 'k_n2_4',
+    kanji: '厳',
+    onyomi: ['ゲン (gen)', 'ゴン (gon)'],
+    kunyomi: ['きび.しい (kibi.shii)', 'おごそ.か (ogoso.ka)'],
+    meaningPt: 'Severo, Estrito, Solene',
+    strokes: 17,
+    radical: '口 (boca)',
+    jlpt: 'N2',
+    examples: [
+      { word: '厳しい', reading: 'きびしい (kibishii)', meaningPt: 'Severo / Rigoroso' },
+      { word: '厳重', reading: 'げんじゅう (genjuu)', meaningPt: 'Segurança rigorosa' },
+      { word: '荘厳', reading: 'そうごん (sougon)', meaningPt: 'Solene / Majestoso' }
+    ]
+  },
+  {
+    id: 'k_n2_5',
+    kanji: '幅',
+    onyomi: ['フク (fuku)'],
+    kunyomi: ['はば (haba)'],
+    meaningPt: 'Largura, Amplitude, Margem',
+    strokes: 12,
+    radical: '巾 (pano)',
+    jlpt: 'N2',
+    examples: [
+      { word: '幅', reading: 'はば (haba)', meaningPt: 'Largura / Amplitude' },
+      { word: '大幅', reading: 'おおはば (oohaba)', meaningPt: 'Em grande escala / Drástico' },
+      { word: '振幅', reading: 'しんぷく (shinpuku)', meaningPt: 'Amplitude de oscilação' }
+    ]
+  },
+  {
+    id: 'k_n2_6',
+    kanji: '裁',
+    onyomi: ['サイ (sai)'],
+    kunyomi: ['た.つ (ta.tsu)', 'さば.く (saba.ku)'],
+    meaningPt: 'Julgar, Cortar tecido, Decisão judicial',
+    strokes: 12,
+    radical: '衣 (roupa)',
+    jlpt: 'N2',
+    examples: [
+      { word: '裁判', reading: 'さいばん (saiban)', meaningPt: 'Julgamento / Tribunal' },
+      { word: '裁判所', reading: 'さいばんしょ (saibansho)', meaningPt: 'Tribunal de Justiça' },
+      { word: '独裁', reading: 'どくさい (dokusai)', meaningPt: 'Ditadura / Autocracia' }
+    ]
+  },
+  {
+    id: 'k_n2_7',
+    kanji: '批',
+    onyomi: ['ヒ (hi)'],
+    kunyomi: [],
+    meaningPt: 'Criticar, Avaliar, Comentar',
+    strokes: 7,
+    radical: '手 (mão)',
+    jlpt: 'N2',
+    examples: [
+      { word: '批判', reading: 'ひはん (hihan)', meaningPt: 'Crítica / Juízo crítico' },
+      { word: '批評', reading: 'ひひょう (hihyou)', meaningPt: 'Crítica analítica (arte/literatura)' },
+      { word: '批准', reading: 'ひじゅん (hijun)', meaningPt: 'Ratificação de tratado' }
+    ]
+  },
+  {
+    id: 'k_n2_8',
+    kanji: '展',
+    onyomi: ['テン (ten)'],
+    kunyomi: [],
+    meaningPt: 'Expandir, Expor, Desenvolver',
+    strokes: 10,
+    radical: '尸 (corpo/cadáver)',
+    jlpt: 'N2',
+    examples: [
+      { word: '発展', reading: 'はってん (hatten)', meaningPt: 'Desenvolvimento / Progresso' },
+      { word: '展覧会', reading: 'てんらんかい (tenrankai)', meaningPt: 'Exposição de arte' },
+      { word: '展開', reading: 'てんかい (tenkai)', meaningPt: 'Desdobramento / Expansão' }
+    ]
+  },
+  {
+    id: 'k_n2_9',
+    kanji: '疑',
+    onyomi: ['ギ (gi)'],
+    kunyomi: ['うたが.う (utaga.u)'],
+    meaningPt: 'Dúvida, Suspeita, Desconfiança',
+    strokes: 14,
+    radical: '疋 (pé)',
+    jlpt: 'N2',
+    examples: [
+      { word: '疑問', reading: 'ぎもん (gimon)', meaningPt: 'Dúvida / Questão' },
+      { word: '容疑者', reading: 'ようぎしゃ (yougisha)', meaningPt: 'Suspeito (policial)' },
+      { word: '疑う', reading: 'うたがう (utagau)', meaningPt: 'Duvidar / Desconfiar' }
+    ]
+  },
+  {
+    id: 'k_n2_10',
+    kanji: '創',
+    onyomi: ['ソウ (sou)', 'ショウ (shou)'],
+    kunyomi: ['つく.る (tsuku.ru)'],
+    meaningPt: 'Criar, Fundar, Ferimento original',
+    strokes: 12,
+    radical: '刀 (espada)',
+    jlpt: 'N2',
+    examples: [
+      { word: '創造', reading: 'そうぞう (souzou)', meaningPt: 'Criação / Criatividade' },
+      { word: '創立', reading: 'そうりつ (souritsu)', meaningPt: 'Fundação / Instituição' },
+      { word: '独創的', reading: 'どくそうてき (dokusouteki)', meaningPt: 'Original / Inovador' }
+    ]
+  },
+  {
+    id: 'k_n2_11',
+    kanji: '導',
+    onyomi: ['ドウ (dou)'],
+    kunyomi: ['みちび.く (michibi.ku)'],
+    meaningPt: 'Guiar, Conduzir, Liderar',
+    strokes: 15,
+    radical: '寸 (medida/polegada)',
+    jlpt: 'N2',
+    examples: [
+      { word: '指導', reading: 'しどう (shidou)', meaningPt: 'Orientação / Treinamento' },
+      { word: '導入', reading: 'どうにゅう (dounyuu)', meaningPt: 'Introdução / Adoção de sistema' },
+      { word: '導く', reading: 'みちびく (michibiku)', meaningPt: 'Guiar / Conduzir alguém' }
+    ]
+  },
+  {
+    id: 'k_n2_12',
+    kanji: '署',
+    onyomi: ['ショ (sho)'],
+    kunyomi: [],
+    meaningPt: 'Posto governamental, Assinatura',
+    strokes: 13,
+    radical: '网 (rede)',
+    jlpt: 'N2',
+    examples: [
+      { word: '警察署', reading: 'けいさつしょ (keisatsusho)', meaningPt: 'Delegacia de polícia' },
+      { word: '署名', reading: 'しょめい (shomei)', meaningPt: 'Assinatura / Firma' },
+      { word: '消防署', reading: 'しょうぼうしょ (shoubousho)', meaningPt: 'Corpo de bombeiros' }
+    ]
+  },
+  {
+    id: 'k_n2_13',
+    kanji: '拡',
+    onyomi: ['カク (kaku)'],
+    kunyomi: ['ひろ.がる (hiro.garu)', 'ひろ.げる (hiro.geru)'],
+    meaningPt: 'Expandir, Ampliar, Aumentar',
+    strokes: 8,
+    radical: '手 (mão)',
+    jlpt: 'N2',
+    examples: [
+      { word: '拡大', reading: 'かくだい (kakudai)', meaningPt: 'Ampliação / Zoom / Expansão' },
+      { word: '拡張', reading: 'かくちょう (kakuchou)', meaningPt: 'Extensão / Alargamento' },
+      { word: '軍拡', reading: 'ぐんかく (gunkaku)', meaningPt: 'Corrida armamentista' }
+    ]
+  },
+  {
+    id: 'k_n2_14',
+    kanji: '障',
+    onyomi: ['ショウ (shou)'],
+    kunyomi: ['さわ.る (sawa.ru)'],
+    meaningPt: 'Obstáculo, Empecilho, Deficiência',
+    strokes: 14,
+    radical: '阜 (colina)',
+    jlpt: 'N2',
+    examples: [
+      { word: '障害', reading: 'しょうがい (shougai)', meaningPt: 'Deficiência / Obstáculo / Falha' },
+      { word: '保障', reading: 'ほしょう (hoshou)', meaningPt: 'Garantia de segurança / Seguridade' },
+      { word: '故障', reading: 'こしょう (koshou)', meaningPt: 'Pane / Quebra mecânica' }
+    ]
+  },
+  {
+    id: 'k_n2_15',
+    kanji: '著',
+    onyomi: ['チョ (cho)', 'チャク (chaku)'],
+    kunyomi: ['あらわ.す (arawa.su)', 'いちじる.しい (ichijiru.shii)'],
+    meaningPt: 'Autor, Escrever livro, Notável, Evidente',
+    strokes: 11,
+    radical: '艸 (grama)',
+    jlpt: 'N2',
+    examples: [
+      { word: '著者', reading: 'ちょしゃ (chosha)', meaningPt: 'Autor / Escritor da obra' },
+      { word: '著しい', reading: 'いちじるしい (ichijirushii)', meaningPt: 'Notável / Expressivo' },
+      { word: '著作権', reading: 'ちょさくけん (chosakuken)', meaningPt: 'Direitos autorais' }
+    ]
+  },
+  {
+    id: 'k_n2_16',
+    kanji: '損',
+    onyomi: ['ソン (son)'],
+    kunyomi: ['そこ.なう (soko.nau)', 'そこ.ねる (soko.neru)'],
+    meaningPt: 'Prejuízo, Perda financeira, Danificar',
+    strokes: 13,
+    radical: '手 (mão)',
+    jlpt: 'N2',
+    examples: [
+      { word: '損害', reading: 'そんがい (songai)', meaningPt: 'Dano / Prejuízo sofrido' },
+      { word: '損失', reading: 'そんしつ (sonshitsu)', meaningPt: 'Perda financeira líquida' },
+      { word: '破損', reading: 'はそん (hason)', meaningPt: 'Avaria / Dano físico' }
+    ]
+  },
+  {
+    id: 'k_n2_17',
+    kanji: '震',
+    onyomi: ['シン (shin)'],
+    kunyomi: ['ふる.える (furu.eru)', 'ふる.う (furu.u)'],
+    meaningPt: 'Terremoto, Tremer, Sacudir',
+    strokes: 15,
+    radical: '雨 (chuva)',
+    jlpt: 'N2',
+    examples: [
+      { word: '地震', reading: 'じしん (jishin)', meaningPt: 'Terremoto / Abalo sísmico' },
+      { word: '震度', reading: 'しんど (shindo)', meaningPt: 'Escala de intensidade sísmica japonesa' },
+      { word: '震える', reading: 'ふるえる (furueru)', meaningPt: 'Tremer (de frio ou medo)' }
+    ]
+  },
+  {
+    id: 'k_n2_18',
+    kanji: '濃',
+    onyomi: ['ノウ (nou)'],
+    kunyomi: ['こ.い (ko.i)'],
+    meaningPt: 'Denso, Concentrado, Escuro (cor)',
+    strokes: 16,
+    radical: '水 (água)',
+    jlpt: 'N2',
+    examples: [
+      { word: '濃い', reading: 'こい (koi)', meaningPt: 'Forte / Denso / Espesso' },
+      { word: '濃厚', reading: 'のうこう (noukou)', meaningPt: 'Sabor rico e denso / Alta probabilidade' },
+      { word: '濃度', reading: 'のうど (noudo)', meaningPt: 'Concentração química' }
+    ]
+  },
+
+  // ===================== N1 KANJIS =====================
+  {
+    id: 'k_n1_1',
+    kanji: '鑑',
+    onyomi: ['カン (kan)'],
+    kunyomi: ['かがみ (kagami)', 'かんが.みる (kanga.miru)'],
+    meaningPt: 'Apreciar arte, Perícia, Espelho exemplar',
+    strokes: 23,
+    radical: '金 (metal)',
+    jlpt: 'N1',
+    examples: [
+      { word: '鑑賞', reading: 'かんしょう (kanshou)', meaningPt: 'Apreciação artística' },
+      { word: '鑑定', reading: 'かんてい (kantei)', meaningPt: 'Perícia / Avaliação pericial' },
+      { word: '図鑑', reading: 'ずかん (zukan)', meaningPt: 'Enciclopédia ilustrada' }
+    ]
+  },
+  {
+    id: 'k_n1_2',
+    kanji: '覇',
+    onyomi: ['ハ (ha)', 'ハク (haku)'],
+    kunyomi: [],
+    meaningPt: 'Hegemonia, Supremacia, Campeão',
+    strokes: 19,
+    radical: '西 (oeste)',
+    jlpt: 'N1',
+    examples: [
+      { word: '覇権', reading: 'はけん (haken)', meaningPt: 'Hegemonia' },
+      { word: '連覇', reading: 'れんぱ (renpa)', meaningPt: 'Títulos consecutivos' },
+      { word: '制覇', reading: 'せいは (seiha)', meaningPt: 'Conquista e dominação' }
+    ]
+  },
+  {
+    id: 'k_n1_3',
+    kanji: '鬱',
+    onyomi: ['ウツ (utsu)'],
+    kunyomi: ['ふさ.ぐ (fusa.gu)'],
+    meaningPt: 'Melancolia, Depressão clínica, Denso',
+    strokes: 29,
+    radical: '鬯 (erva aromática)',
+    jlpt: 'N1',
+    examples: [
+      { word: '憂鬱', reading: 'ゆううつ (yuuutsu)', meaningPt: 'Melancólico / Desanimado' },
+      { word: '鬱病', reading: 'うつびょう (utsubyou)', meaningPt: 'Depressão clínica' },
+      { word: '暗鬱', reading: 'あんうつ (an\'utsu)', meaningPt: 'Sombrio / Deprimente' }
+    ]
+  },
+  {
+    id: 'k_n1_4',
+    kanji: '糾',
+    onyomi: ['キュウ (kyuu)'],
+    kunyomi: [],
+    meaningPt: 'Investigar, Entrelaçar, Denunciar',
+    strokes: 9,
+    radical: '糸 (fio)',
+    jlpt: 'N1',
+    examples: [
+      { word: '糾弾', reading: 'きゅうだん (kyuudan)', meaningPt: 'Denúncia / Censura severa' },
+      { word: '紛糾', reading: 'ふんきゅう (funkyuu)', meaningPt: 'Complicação / Impasse conflituoso' }
+    ]
+  },
+  {
+    id: 'k_n1_5',
+    kanji: '唆',
+    onyomi: ['サ (sa)'],
+    kunyomi: ['そそのか.す (sasonoka.su)'],
+    meaningPt: 'Incentivar, Sugerir, Instigar',
+    strokes: 10,
+    radical: '口 (boca)',
+    jlpt: 'N1',
+    examples: [
+      { word: '示唆', reading: 'しさ (shisa)', meaningPt: 'Sugestão / Insinuação / Indício' },
+      { word: '教唆', reading: 'きょうさ (kyousa)', meaningPt: 'Instigação criminosa' },
+      { word: '唆す', reading: 'そそのかす (sasonokasu)', meaningPt: 'Instigar / Seduzir para o erro' }
+    ]
+  },
+  {
+    id: 'k_n1_6',
+    kanji: '匿',
+    onyomi: ['トク (toku)'],
+    kunyomi: ['かくま.う (kakuma.u)'],
+    meaningPt: 'Ocultar, Esconder, Anonimato',
+    strokes: 10,
+    radical: '匚 (caixa aberta)',
+    jlpt: 'N1',
+    examples: [
+      { word: '匿名', reading: 'とくめい (tokumei)', meaningPt: 'Anonimato / Sem nome' },
+      { word: '隠匿', reading: 'いんとく (intoku)', meaningPt: 'Ocultação de provas/bens' },
+      { word: '匿う', reading: 'かくまう (kakumau)', meaningPt: 'Dar abrigo secreto / Esconder fugitivo' }
+    ]
+  },
+  {
+    id: 'k_n1_7',
+    kanji: '蔽',
+    onyomi: ['ヘイ (hei)'],
+    kunyomi: ['おお.う (oo.u)'],
+    meaningPt: 'Cobrir, Ocultar, Encobrir',
+    strokes: 15,
+    radical: '艸 (grama)',
+    jlpt: 'N1',
+    examples: [
+      { word: '隠蔽', reading: 'いんぺい (inpei)', meaningPt: 'Encobrimento / Ocultação de escândalo' },
+      { word: '遮蔽', reading: 'しゃへい (shahei)', meaningPt: 'Blindagem / Bloqueio visual' }
+    ]
+  },
+  {
+    id: 'k_n1_8',
+    kanji: '貪',
+    onyomi: ['トン (ton)', 'タン (tan)'],
+    kunyomi: ['むさぼ.る (musabo.ru)'],
+    meaningPt: 'Ganância, Avidez, Devorar insaciavelmente',
+    strokes: 11,
+    radical: '貝 (concha/moeda)',
+    jlpt: 'N1',
+    examples: [
+      { word: '貪欲', reading: 'どんよく (donyoku)', meaningPt: 'Ganancioso / Voraz por conhecimento' },
+      { word: '貪る', reading: 'むさぼる (musaboru)', meaningPt: 'Devorar com avidez / Cobiçar' }
+    ]
+  },
+  {
+    id: 'k_n1_9',
+    kanji: '傲',
+    onyomi: ['ゴウ (gou)'],
+    kunyomi: ['おご.る (ogo.ru)'],
+    meaningPt: 'Arrogância, Soberba, Petulância',
+    strokes: 13,
+    radical: '人 (pessoa)',
+    jlpt: 'N1',
+    examples: [
+      { word: '傲慢', reading: 'ごうまん (gouman)', meaningPt: 'Arrogante / Soberbo / Prepotente' },
+      { word: '驕傲', reading: 'きょうごう (kyougou)', meaningPt: 'Altivez arrogante' }
+    ]
+  },
+  {
+    id: 'k_n1_10',
+    kanji: '捗',
+    onyomi: ['チョク (choku)', 'ホ (ho)'],
+    kunyomi: ['はかど.る (hakado.ru)'],
+    meaningPt: 'Progresso, Avanço do trabalho',
+    strokes: 10,
+    radical: '手 (mão)',
+    jlpt: 'N1',
+    examples: [
+      { word: '進捗', reading: 'しんちょく (shinchoku)', meaningPt: 'Status do progresso / Andamento' },
+      { word: '進捗状況', reading: 'しんちょくじょうきょう (shinchoku joukyou)', meaningPt: 'Relatório de evolução do projeto' }
+    ]
+  },
+  {
+    id: 'k_n1_11',
+    kanji: '彙',
+    onyomi: ['イ (i)'],
+    kunyomi: [],
+    meaningPt: 'Vocabulário, Glossário, Compilação',
+    strokes: 13,
+    radical: '彑 (focinho)',
+    jlpt: 'N1',
+    examples: [
+      { word: '語彙', reading: 'ごい (goi)', meaningPt: 'Vocabulário / Léxico' },
+      { word: '語彙力', reading: 'ごいりょく (goiryoku)', meaningPt: 'Riqueza de vocabulário' }
+    ]
+  },
+  {
+    id: 'k_n1_12',
+    kanji: '恣',
+    onyomi: ['シ (shi)'],
+    kunyomi: ['ほしいまま (hoshiimama)'],
+    meaningPt: 'Arbitrário, Desenfreado, A seu bel-prazer',
+    strokes: 10,
+    radical: '心 (coração)',
+    jlpt: 'N1',
+    examples: [
+      { word: '恣意', reading: 'しい (shii)', meaningPt: 'Arbitrariedade / Decisão egoísta' },
+      { word: '恣意的', reading: 'しいてき (shiiteki)', meaningPt: 'Arbitrário / Tendencioso' }
+    ]
+  },
+  {
+    id: 'k_n1_13',
+    kanji: '痕',
+    onyomi: ['コン (kon)'],
+    kunyomi: ['あと (ato)'],
+    meaningPt: 'Marca, Cicatriz, Vestígio',
+    strokes: 11,
+    radical: '疒 (doença)',
+    jlpt: 'N1',
+    examples: [
+      { word: '傷痕', reading: 'きずあと (kizuato) / しょうこん', meaningPt: 'Cicatriz da ferida' },
+      { word: '痕跡', reading: 'こんせき (konseki)', meaningPt: 'Vestígio / Rastro forense' }
+    ]
+  },
+  {
+    id: 'k_n1_14',
+    kanji: '枢',
+    onyomi: ['スウ (suu)', 'シュ (shu)'],
+    kunyomi: ['くるる (kururu)', 'とぼそ (toboso)'],
+    meaningPt: 'Pivô, Eixo central, Articulação chave',
+    strokes: 8,
+    radical: '木 (árvore)',
+    jlpt: 'N1',
+    examples: [
+      { word: '中枢', reading: 'ちゅうすう (chuusuu)', meaningPt: 'Núcleo central / Centro nevrálgico' },
+      { word: '枢軸', reading: 'すうじく (suujiku)', meaningPt: 'Eixo cardinal / Potências do Eixo' }
+    ]
+  },
+  {
+    id: 'k_n1_15',
+    kanji: '緻',
+    onyomi: ['チ (chi)'],
+    kunyomi: [],
+    meaningPt: 'Minucioso, Preciso, Fino',
+    strokes: 15,
+    radical: '糸 (fio)',
+    jlpt: 'N1',
+    examples: [
+      { word: '緻密', reading: 'ちみつ (chimitsu)', meaningPt: 'Minucioso / Meticuloso / Detalhado' },
+      { word: '精緻', reading: 'せいち (seichi)', meaningPt: 'Extremamente preciso e refinado' }
+    ]
+  },
+  {
+    id: 'k_n1_16',
+    kanji: '醸',
+    onyomi: ['ジョウ (jou)'],
+    kunyomi: ['かも.す (kamo.su)'],
+    meaningPt: 'Fermentar, Produzir bebida, Criar atmosfera',
+    strokes: 20,
+    radical: '酉 (jarro de saquê)',
+    jlpt: 'N1',
+    examples: [
+      { word: '醸造', reading: 'じょうぞう (jouzou)', meaningPt: 'Fermentação / Cervejaria / Produção de saquê' },
+      { word: '醸し出す', reading: 'かもしだす (kamoshidasu)', meaningPt: 'Emanar / Criar clima ou atmosfera' }
+    ]
+  }
+];

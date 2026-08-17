@@ -1,0 +1,298 @@
+import React from 'react';
+import { JLPTLevel, UserStats } from '../types';
+import {
+  Sparkles,
+  BookOpen,
+  Gamepad2,
+  Layers,
+  ArrowRight,
+  Bot,
+  Flame,
+  Trophy,
+  CheckCircle,
+  HelpCircle,
+  Volume2
+} from 'lucide-react';
+import { AudioButton } from './AudioButton';
+
+interface HomeHubProps {
+  onTabChange: (tab: 'hub' | 'kana' | 'kanji' | 'grammar' | 'games' | 'analyzer' | 'sensei') => void;
+  selectedJlpt: JLPTLevel;
+  onJlptChange: (level: JLPTLevel) => void;
+  userStats: UserStats;
+  onOpenSensei: () => void;
+}
+
+export const HomeHub: React.FC<HomeHubProps> = ({
+  onTabChange,
+  selectedJlpt,
+  onJlptChange,
+  userStats,
+  onOpenSensei,
+}) => {
+  const jlptLevels: { level: JLPTLevel; title: string; desc: string; color: string }[] = [
+    {
+      level: 'N5',
+      title: 'JLPT N5 (Básico / Iniciante)',
+      desc: 'Hiragana, Katakana, ~100 Kanjis fundamentais, partículas は/が/を/に/で, frases básicas do cotidiano e verbos nos tempos presente/passado.',
+      color: 'border-emerald-500 bg-emerald-50/40 text-emerald-950',
+    },
+    {
+      level: 'N4',
+      title: 'JLPT N4 (Elementar)',
+      desc: '~300 Kanjis, 1.500 palavras, Forma-TE (〜てください), obrigação (~nakereba narimasen), potencial e permissão.',
+      color: 'border-sky-500 bg-sky-50/40 text-sky-950',
+    },
+    {
+      level: 'N3',
+      title: 'JLPT N3 (Intermediário)',
+      desc: 'A ponte para a fluência. ~650 Kanjis, voz passiva, causativa, estruturas 〜わけではない, 〜ために, conversação natural.',
+      color: 'border-indigo-500 bg-indigo-50/40 text-indigo-950',
+    },
+    {
+      level: 'N2',
+      title: 'JLPT N2 (Pré-Avançado / Profissional)',
+      desc: '~1.000 Kanjis, 6.000 palavras, expressões formais de negócios, notícias, artigos e nuances avançadas de polidez (Keigo).',
+      color: 'border-amber-500 bg-amber-50/40 text-amber-950',
+    },
+    {
+      level: 'N1',
+      title: 'JLPT N1 (Avançado / Maestria)',
+      desc: '~2.000+ Kanjis, 10.000+ palavras, gramática literária complexa, jornais, ensaios acadêmicos e debates aprofundados.',
+      color: 'border-rose-500 bg-rose-50/40 text-rose-950',
+    },
+  ];
+
+  return (
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 py-6 space-y-8">
+      {/* Hero Welcome Banner */}
+      <div className="bg-gradient-to-r from-stone-900 via-stone-800 to-rose-950 text-white rounded-3xl p-6 sm:p-10 border border-rose-900/30 shadow-xl relative overflow-hidden">
+        <div className="absolute right-0 top-0 opacity-10 text-[140px] font-serif select-none pointer-events-none pr-6 leading-none">
+          日本語
+        </div>
+        <div className="max-w-3xl space-y-4 relative z-10">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-rose-500/20 border border-rose-500/40 text-rose-300 text-xs font-semibold">
+            <Sparkles size={14} />
+            <span>Guia Completo de Japonês Didático em Português</span>
+          </div>
+
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight leading-tight">
+            Aprenda Japonês do Zero até o JLPT N1 com Jogos & IA
+          </h1>
+
+          <p className="text-stone-300 text-sm sm:text-base leading-relaxed">
+            Bem-vindo ao <strong>NihonGo!</strong> Estude os alfabetos Hiragana e Katakana, domine os ideogramas Kanji, compreenda a gramática explicada com clareza em Português e divirta-se com jogos de memória e montagem de frases.
+          </p>
+
+          {/* Action CTAs */}
+          <div className="flex flex-wrap gap-3 pt-2">
+            <button
+              type="button"
+              onClick={() => onTabChange('games')}
+              className="px-5 py-3 rounded-2xl bg-emerald-500 hover:bg-emerald-400 text-stone-950 font-extrabold text-sm shadow-lg shadow-emerald-950/30 transition-all hover:scale-105 active:scale-95 flex items-center gap-2 cursor-pointer"
+            >
+              <Gamepad2 size={18} />
+              <span>Jogar Minigames & Memória</span>
+            </button>
+
+            <button
+              type="button"
+              onClick={() => onTabChange('kana')}
+              className="px-5 py-3 rounded-2xl bg-rose-600 hover:bg-rose-500 text-white font-bold text-sm shadow-lg shadow-rose-950/30 transition-all hover:scale-105 active:scale-95 flex items-center gap-2 cursor-pointer"
+            >
+              <span>Explorar Hiragana & Katakana</span>
+              <ArrowRight size={16} />
+            </button>
+
+            <button
+              type="button"
+              onClick={onOpenSensei}
+              className="px-5 py-3 rounded-2xl bg-stone-800 hover:bg-stone-700 text-stone-100 border border-stone-700 font-bold text-sm transition-all flex items-center gap-2 cursor-pointer"
+            >
+              <Bot size={18} className="text-rose-400" />
+              <span>Tirar Dúvida com o Sensei Kenji</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      {/* Main 4 Learning Modules Cards */}
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+        {/* Module 1: Kana */}
+        <div
+          onClick={() => onTabChange('kana')}
+          className="bg-white p-6 rounded-3xl border border-stone-200 shadow-sm hover:border-rose-400 hover:shadow-lg transition-all duration-300 cursor-pointer flex flex-col justify-between group"
+        >
+          <div className="space-y-3">
+            <div className="w-12 h-12 rounded-2xl bg-rose-100 text-rose-700 flex items-center justify-center font-bold text-xl group-hover:scale-110 transition-transform">
+              あア
+            </div>
+            <h3 className="font-extrabold text-lg text-stone-900 group-hover:text-rose-600 transition-colors">
+              Hiragana & Katakana
+            </h3>
+            <p className="text-xs text-stone-600 leading-relaxed">
+              Tabelas completas com áudio de nativos, dicas mnemônicas em português e modo quiz para memorizar rápido.
+            </p>
+          </div>
+          <div className="mt-4 pt-4 border-t border-stone-100 flex items-center justify-between text-xs font-bold text-rose-600">
+            <span>46 Sons Básicos + Combos</span>
+            <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
+          </div>
+        </div>
+
+        {/* Module 2: Kanji */}
+        <div
+          onClick={() => onTabChange('kanji')}
+          className="bg-white p-6 rounded-3xl border border-stone-200 shadow-sm hover:border-amber-400 hover:shadow-lg transition-all duration-300 cursor-pointer flex flex-col justify-between group"
+        >
+          <div className="space-y-3">
+            <div className="w-12 h-12 rounded-2xl bg-amber-100 text-amber-800 flex items-center justify-center font-bold text-xl group-hover:scale-110 transition-transform font-serif">
+              漢字
+            </div>
+            <h3 className="font-extrabold text-lg text-stone-900 group-hover:text-amber-700 transition-colors">
+              Dicionário de Kanjis
+            </h3>
+            <p className="text-xs text-stone-600 leading-relaxed">
+              Leituras On'yomi, Kun'yomi, radicais, número de traços e tela para desenhar e praticar a caligrafia.
+            </p>
+          </div>
+          <div className="mt-4 pt-4 border-t border-stone-100 flex items-center justify-between text-xs font-bold text-amber-700">
+            <span>Níveis N5 até N1</span>
+            <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
+          </div>
+        </div>
+
+        {/* Module 3: Grammar & Vocab */}
+        <div
+          onClick={() => onTabChange('grammar')}
+          className="bg-white p-6 rounded-3xl border border-stone-200 shadow-sm hover:border-indigo-400 hover:shadow-lg transition-all duration-300 cursor-pointer flex flex-col justify-between group"
+        >
+          <div className="space-y-3">
+            <div className="w-12 h-12 rounded-2xl bg-indigo-100 text-indigo-700 flex items-center justify-center font-bold text-xl group-hover:scale-110 transition-transform">
+              <BookOpen size={22} />
+            </div>
+            <h3 className="font-extrabold text-lg text-stone-900 group-hover:text-indigo-700 transition-colors">
+              Gramática & Vocabulário
+            </h3>
+            <p className="text-xs text-stone-600 leading-relaxed">
+              Regras de conjugação (Verbos Godan, Ichidan, Irregulares; Adjetivos い e な) e fórmulas passo a passo.
+            </p>
+          </div>
+          <div className="mt-4 pt-4 border-t border-stone-100 flex items-center justify-between text-xs font-bold text-indigo-700">
+            <span>Explicações PT-BR</span>
+            <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
+          </div>
+        </div>
+
+        {/* Module 4: Games */}
+        <div
+          onClick={() => onTabChange('games')}
+          className="bg-white p-6 rounded-3xl border border-stone-200 shadow-sm hover:border-emerald-400 hover:shadow-lg transition-all duration-300 cursor-pointer flex flex-col justify-between group"
+        >
+          <div className="space-y-3">
+            <div className="w-12 h-12 rounded-2xl bg-emerald-100 text-emerald-700 flex items-center justify-center font-bold text-xl group-hover:scale-110 transition-transform">
+              <Gamepad2 size={22} />
+            </div>
+            <h3 className="font-extrabold text-lg text-stone-900 group-hover:text-emerald-700 transition-colors">
+              Minigames & Memória
+            </h3>
+            <p className="text-xs text-stone-600 leading-relaxed">
+              Jogo da memória com Kanjis/Vocabulário, montador de frases, Kana Rush e simulados de questões JLPT.
+            </p>
+          </div>
+          <div className="mt-4 pt-4 border-t border-stone-100 flex items-center justify-between text-xs font-bold text-emerald-700">
+            <span>Ganhe XP & Emblemas</span>
+            <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
+          </div>
+        </div>
+      </div>
+
+      {/* JLPT Levels Progression Track */}
+      <div className="bg-white rounded-3xl p-6 sm:p-8 border border-stone-200 shadow-sm space-y-6">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-stone-100 pb-4">
+          <div>
+            <span className="text-xs font-bold uppercase tracking-wider text-rose-600">
+              Estrutura Oficial de Exames
+            </span>
+            <h2 className="text-2xl font-black text-stone-900">
+              Trilha de Proficiência JLPT (日本語能力試験)
+            </h2>
+          </div>
+          <span className="text-xs text-stone-500">
+            Clique em qualquer nível para selecionar e estudar seus kanjis e gramática
+          </span>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          {jlptLevels.map((lvl) => {
+            const isSelected = selectedJlpt === lvl.level;
+
+            return (
+              <div
+                key={lvl.level}
+                onClick={() => {
+                  onJlptChange(lvl.level);
+                  onTabChange('grammar');
+                }}
+                className={`p-5 rounded-2xl border-2 transition-all cursor-pointer flex flex-col justify-between space-y-3 ${
+                  isSelected
+                    ? 'border-rose-600 bg-rose-50/50 shadow-md ring-2 ring-rose-300'
+                    : 'border-stone-200 bg-white hover:border-stone-400 hover:shadow'
+                }`}
+              >
+                <div>
+                  <div className="flex items-center justify-between">
+                    <span className="text-xs px-2.5 py-0.5 rounded-full font-black bg-stone-900 text-white">
+                      {lvl.level}
+                    </span>
+                    {isSelected && (
+                      <span className="text-xs font-bold text-rose-600 flex items-center gap-1">
+                        <CheckCircle size={14} />
+                        <span>Selecionado</span>
+                      </span>
+                    )}
+                  </div>
+                  <h3 className="font-extrabold text-base text-stone-900 mt-2">
+                    {lvl.title}
+                  </h3>
+                  <p className="text-xs text-stone-600 leading-relaxed mt-1">
+                    {lvl.desc}
+                  </p>
+                </div>
+
+                <div className="pt-2 flex items-center justify-between text-xs font-bold text-rose-600">
+                  <span>Estudar Conteúdo {lvl.level}</span>
+                  <ArrowRight size={14} />
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+
+      {/* Didactic Tip of the Day */}
+      <div className="bg-amber-50/80 border border-amber-200/80 rounded-3xl p-6 sm:p-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+        <div className="space-y-2 max-w-2xl">
+          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-200/70 text-amber-900 text-xs font-bold uppercase tracking-wider">
+            <Sparkles size={14} />
+            <span>Dica de Ouro de Japonês (日本語のコツ)</span>
+          </div>
+          <h3 className="text-lg sm:text-xl font-black text-amber-950">
+            A ordem da frase em Japonês: SOV (Sujeito - Objeto - Verbo)
+          </h3>
+          <p className="text-xs sm:text-sm text-amber-900 leading-relaxed">
+            Em português dizemos "Eu [Sujeito] bebo [Verbo] água [Objeto]". Em japonês, o <strong>Verbo sempre vai no final</strong> da oração: "私は [Eu] 水を [água] 飲みます [bebo]". Fixe essa regra e nunca mais errará uma frase!
+          </p>
+        </div>
+
+        <button
+          type="button"
+          onClick={() => onTabChange('analyzer')}
+          className="px-5 py-3 bg-amber-900 text-white font-bold text-xs sm:text-sm rounded-2xl hover:bg-amber-800 transition cursor-pointer shrink-0 shadow"
+        >
+          Experimentar no Analisador de Frases →
+        </button>
+      </div>
+    </div>
+  );
+};
