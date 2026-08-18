@@ -16,7 +16,7 @@ import {
 import { AudioButton } from './AudioButton';
 
 interface HomeHubProps {
-  onTabChange: (tab: 'hub' | 'kana' | 'kanji' | 'grammar' | 'games' | 'analyzer' | 'sensei') => void;
+  onTabChange: (tab: 'hub' | 'kana' | 'kanji' | 'grammar' | 'verbs' | 'games' | 'analyzer' | 'sensei') => void;
   selectedJlpt: JLPTLevel;
   onJlptChange: (level: JLPTLevel) => void;
   userStats: UserStats;
@@ -116,8 +116,8 @@ export const HomeHub: React.FC<HomeHubProps> = ({
         </div>
       </div>
 
-      {/* Main 4 Learning Modules Cards */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+      {/* Main 5 Learning Modules Cards */}
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4">
         {/* Module 1: Kana */}
         <div
           onClick={() => onTabChange('kana')}
@@ -202,6 +202,28 @@ export const HomeHub: React.FC<HomeHubProps> = ({
           </div>
           <div className="mt-4 pt-4 border-t border-stone-100 flex items-center justify-between text-xs font-bold text-emerald-700">
             <span>Ganhe XP & Emblemas</span>
+            <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
+          </div>
+        </div>
+
+        {/* Module 5: Verbos & Adjetivos */}
+        <div
+          onClick={() => onTabChange('verbs')}
+          className="bg-white p-6 rounded-3xl border border-stone-200 shadow-sm hover:border-teal-400 hover:shadow-lg transition-all duration-300 cursor-pointer flex flex-col justify-between group"
+        >
+          <div className="space-y-3">
+            <div className="w-12 h-12 rounded-2xl bg-teal-100 text-teal-700 flex items-center justify-center font-bold text-xl group-hover:scale-110 transition-transform">
+              <BookOpen size={22} />
+            </div>
+            <h3 className="font-extrabold text-lg text-stone-900 group-hover:text-teal-700 transition-colors">
+              Verbos & Adjetivos
+            </h3>
+            <p className="text-xs text-stone-600 leading-relaxed">
+              Banco completo de Verbos (Godan, Ichidan, Irregulares) e Adjetivos (い e な) com áudio e frases.
+            </p>
+          </div>
+          <div className="mt-4 pt-4 border-t border-stone-100 flex items-center justify-between text-xs font-bold text-teal-700">
+            <span>Ações & Descrições</span>
             <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
           </div>
         </div>

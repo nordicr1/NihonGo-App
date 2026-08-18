@@ -4,8 +4,8 @@ import { getLevelTitle } from '../utils/storage';
 import { Sparkles, Flame, Trophy, Bot, BookOpen, Compass, Gamepad2, Layers } from 'lucide-react';
 
 interface HeaderProps {
-  currentTab: 'hub' | 'kana' | 'kanji' | 'grammar' | 'games' | 'analyzer' | 'sensei';
-  onTabChange: (tab: 'hub' | 'kana' | 'kanji' | 'grammar' | 'games' | 'analyzer' | 'sensei') => void;
+  currentTab: 'hub' | 'kana' | 'kanji' | 'grammar' | 'verbs' | 'games' | 'analyzer' | 'sensei';
+  onTabChange: (tab: 'hub' | 'kana' | 'kanji' | 'grammar' | 'verbs' | 'games' | 'analyzer' | 'sensei') => void;
   selectedJlpt: JLPTLevel;
   onJlptChange: (level: JLPTLevel) => void;
   userStats: UserStats;
@@ -158,7 +158,20 @@ export const Header: React.FC<HeaderProps> = ({
             }`}
           >
             <BookOpen size={16} />
-            <span>Gramática & Vocabulário</span>
+            <span>Gramática & Vocab</span>
+          </button>
+
+          <button
+            type="button"
+            onClick={() => onTabChange('verbs')}
+            className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg transition-all whitespace-nowrap cursor-pointer ${
+              currentTab === 'verbs'
+                ? 'bg-emerald-600 text-white font-semibold shadow-sm'
+                : 'text-stone-300 hover:text-white hover:bg-stone-800'
+            }`}
+          >
+            <Layers size={16} />
+            <span>Verbos & Adjetivos</span>
           </button>
 
           <button

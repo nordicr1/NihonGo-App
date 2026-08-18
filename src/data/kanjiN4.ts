@@ -2162,4 +2162,680 @@ export const KANJI_N4: KanjiItem[] = [
       { word: '歌手', reading: 'かしゅ (kashu)', meaningPt: 'Cantor(a)' }
     ]
   }
+,
+  {
+    "id": "k_n4_extra_0",
+    "kanji": "不",
+    "onyomi": [
+        "フ",
+        "ブ"
+    ],
+    "kunyomi": [],
+    "meaningPt": "Não, negativo",
+    "strokes": 4,
+    "radical": "一",
+    "jlpt": "N4",
+    "examples": []
+},
+  {
+    "id": "k_n4_extra_1",
+    "kanji": "世",
+    "onyomi": [
+        "セイ",
+        "セ"
+    ],
+    "kunyomi": [
+        "よ"
+    ],
+    "meaningPt": "Mundo, geração",
+    "strokes": 5,
+    "radical": "一",
+    "jlpt": "N4",
+    "examples": []
+},
+  {
+    "id": "k_n4_extra_2",
+    "kanji": "事",
+    "onyomi": [
+        "ジ",
+        "ズ"
+    ],
+    "kunyomi": [
+        "こと"
+    ],
+    "meaningPt": "Coisa, assunto",
+    "strokes": 8,
+    "radical": "亅",
+    "jlpt": "N4",
+    "examples": []
+},
+  {
+    "id": "k_n4_extra_3",
+    "kanji": "仕",
+    "onyomi": [
+        "シ",
+        "ジ"
+    ],
+    "kunyomi": [
+        "つか.える"
+    ],
+    "meaningPt": "Servir, fazer",
+    "strokes": 5,
+    "radical": "人",
+    "jlpt": "N4",
+    "examples": []
+},
+  {
+    "id": "k_n4_extra_4",
+    "kanji": "代",
+    "onyomi": [
+        "ダイ",
+        "タイ"
+    ],
+    "kunyomi": [
+        "か.わる",
+        "か.える",
+        "よ",
+        "しろ"
+    ],
+    "meaningPt": "Substituir, era, custo",
+    "strokes": 5,
+    "radical": "人",
+    "jlpt": "N4",
+    "examples": []
+},
+  {
+    "id": "k_n4_extra_5",
+    "kanji": "以",
+    "onyomi": [
+        "イ"
+    ],
+    "kunyomi": [
+        "もっ.て"
+    ],
+    "meaningPt": "Por meio de, comparado com",
+    "strokes": 5,
+    "radical": "人",
+    "jlpt": "N4",
+    "examples": []
+},
+  {
+    "id": "k_n4_extra_6",
+    "kanji": "住",
+    "onyomi": [
+        "ジュウ"
+    ],
+    "kunyomi": [
+        "す.む",
+        "す.まう"
+    ],
+    "meaningPt": "Morar, residir",
+    "strokes": 7,
+    "radical": "人",
+    "jlpt": "N4",
+    "examples": []
+},
+  {
+    "id": "k_n4_extra_7",
+    "kanji": "元",
+    "onyomi": [
+        "ゲン",
+        "ガン"
+    ],
+    "kunyomi": [
+        "もと"
+    ],
+    "meaningPt": "Origem, antigo",
+    "strokes": 4,
+    "radical": "儿",
+    "jlpt": "N4",
+    "examples": []
+},
+  {
+    "id": "k_n4_extra_8",
+    "kanji": "公",
+    "onyomi": [
+        "コウ"
+    ],
+    "kunyomi": [
+        "おおやけ"
+    ],
+    "meaningPt": "Público, oficial",
+    "strokes": 4,
+    "radical": "八",
+    "jlpt": "N4",
+    "examples": []
+},
+  {
+    "id": "k_n4_extra_9",
+    "kanji": "力",
+    "onyomi": [
+        "リョク",
+        "リキ"
+    ],
+    "kunyomi": [
+        "ちから"
+    ],
+    "meaningPt": "Força, poder",
+    "strokes": 2,
+    "radical": "力",
+    "jlpt": "N4",
+    "examples": []
+},
+  {
+    "id": "k_n4_extra_10",
+    "kanji": "去",
+    "onyomi": [
+        "キョ",
+        "コ"
+    ],
+    "kunyomi": [
+        "さ.る"
+    ],
+    "meaningPt": "Ir embora, passado",
+    "strokes": 5,
+    "radical": "厶",
+    "jlpt": "N4",
+    "examples": []
+},
+  {
+    "id": "k_n4_extra_11",
+    "kanji": "台",
+    "onyomi": [
+        "ダイ",
+        "タイ"
+    ],
+    "kunyomi": [
+        "うてな",
+        "われ"
+    ],
+    "meaningPt": "Pedestal, balcão, máquina",
+    "strokes": 5,
+    "radical": "口",
+    "jlpt": "N4",
+    "examples": []
+},
+  {
+    "id": "k_n4_extra_12",
+    "kanji": "同",
+    "onyomi": [
+        "ドウ"
+    ],
+    "kunyomi": [
+        "おな.じ"
+    ],
+    "meaningPt": "Igual, mesmo",
+    "strokes": 6,
+    "radical": "口",
+    "jlpt": "N4",
+    "examples": []
+},
+  {
+    "id": "k_n4_extra_13",
+    "kanji": "品",
+    "onyomi": [
+        "ヒン",
+        "ホン"
+    ],
+    "kunyomi": [
+        "しな"
+    ],
+    "meaningPt": "Produto, qualidade",
+    "strokes": 9,
+    "radical": "口",
+    "jlpt": "N4",
+    "examples": []
+},
+  {
+    "id": "k_n4_extra_14",
+    "kanji": "家",
+    "onyomi": [
+        "カ",
+        "ケ"
+    ],
+    "kunyomi": [
+        "いえ",
+        "や",
+        "うち"
+    ],
+    "meaningPt": "Casa, família",
+    "strokes": 10,
+    "radical": "宀",
+    "jlpt": "N4",
+    "examples": []
+},
+  {
+    "id": "k_n4_extra_15",
+    "kanji": "工",
+    "onyomi": [
+        "コウ",
+        "ク",
+        "グ"
+    ],
+    "kunyomi": [],
+    "meaningPt": "Artesanato, construção",
+    "strokes": 3,
+    "radical": "工",
+    "jlpt": "N4",
+    "examples": []
+},
+  {
+    "id": "k_n4_extra_16",
+    "kanji": "度",
+    "onyomi": [
+        "ド",
+        "ト",
+        "タク"
+    ],
+    "kunyomi": [
+        "たび",
+        "(-)た.い"
+    ],
+    "meaningPt": "Grau, vez",
+    "strokes": 9,
+    "radical": "广",
+    "jlpt": "N4",
+    "examples": []
+},
+  {
+    "id": "k_n4_extra_17",
+    "kanji": "建",
+    "onyomi": [
+        "ケン",
+        "コン"
+    ],
+    "kunyomi": [
+        "た.てる",
+        "た.つ"
+    ],
+    "meaningPt": "Construir",
+    "strokes": 9,
+    "radical": "廴",
+    "jlpt": "N4",
+    "examples": []
+},
+  {
+    "id": "k_n4_extra_18",
+    "kanji": "文",
+    "onyomi": [
+        "ブン",
+        "モン"
+    ],
+    "kunyomi": [
+        "ふみ",
+        "あや"
+    ],
+    "meaningPt": "Texto, frase, literatura",
+    "strokes": 4,
+    "radical": "文",
+    "jlpt": "N4",
+    "examples": []
+},
+  {
+    "id": "k_n4_extra_19",
+    "kanji": "料",
+    "onyomi": [
+        "リョウ"
+    ],
+    "kunyomi": [],
+    "meaningPt": "Taxa, material",
+    "strokes": 10,
+    "radical": "斗",
+    "jlpt": "N4",
+    "examples": []
+},
+  {
+    "id": "k_n4_extra_20",
+    "kanji": "方",
+    "onyomi": [
+        "ホウ"
+    ],
+    "kunyomi": [
+        "かた",
+        "-がた"
+    ],
+    "meaningPt": "Direção, pessoa, método",
+    "strokes": 4,
+    "radical": "方",
+    "jlpt": "N4",
+    "examples": []
+},
+  {
+    "id": "k_n4_extra_21",
+    "kanji": "曜",
+    "onyomi": [
+        "ヨウ"
+    ],
+    "kunyomi": [],
+    "meaningPt": "Dia da semana",
+    "strokes": 18,
+    "radical": "日",
+    "jlpt": "N4",
+    "examples": []
+},
+  {
+    "id": "k_n4_extra_22",
+    "kanji": "業",
+    "onyomi": [
+        "ギョウ",
+        "ゴウ"
+    ],
+    "kunyomi": [
+        "わざ"
+    ],
+    "meaningPt": "Trabalho, negócio",
+    "strokes": 13,
+    "radical": "木",
+    "jlpt": "N4",
+    "examples": []
+},
+  {
+    "id": "k_n4_extra_23",
+    "kanji": "注",
+    "onyomi": [
+        "チュウ"
+    ],
+    "kunyomi": [
+        "そそ.ぐ",
+        "さ.す",
+        "つ.ぐ"
+    ],
+    "meaningPt": "Despejar, focar",
+    "strokes": 8,
+    "radical": "氵",
+    "jlpt": "N4",
+    "examples": []
+},
+  {
+    "id": "k_n4_extra_24",
+    "kanji": "洋",
+    "onyomi": [
+        "ヨウ"
+    ],
+    "kunyomi": [],
+    "meaningPt": "Oceano, ocidental",
+    "strokes": 9,
+    "radical": "氵",
+    "jlpt": "N4",
+    "examples": []
+},
+  {
+    "id": "k_n4_extra_25",
+    "kanji": "物",
+    "onyomi": [
+        "ブツ",
+        "モツ"
+    ],
+    "kunyomi": [
+        "もの"
+    ],
+    "meaningPt": "Coisa, objeto",
+    "strokes": 8,
+    "radical": "牛",
+    "jlpt": "N4",
+    "examples": []
+},
+  {
+    "id": "k_n4_extra_26",
+    "kanji": "犬",
+    "onyomi": [
+        "ケン"
+    ],
+    "kunyomi": [
+        "いぬ"
+    ],
+    "meaningPt": "Cachorro",
+    "strokes": 4,
+    "radical": "犬",
+    "jlpt": "N4",
+    "examples": []
+},
+  {
+    "id": "k_n4_extra_27",
+    "kanji": "理",
+    "onyomi": [
+        "リ"
+    ],
+    "kunyomi": [
+        "ことわり"
+    ],
+    "meaningPt": "Razão, lógica",
+    "strokes": 11,
+    "radical": "玉",
+    "jlpt": "N4",
+    "examples": []
+},
+  {
+    "id": "k_n4_extra_28",
+    "kanji": "用",
+    "onyomi": [
+        "ヨウ"
+    ],
+    "kunyomi": [
+        "もち.いる"
+    ],
+    "meaningPt": "Uso, utilidade, tarefa",
+    "strokes": 5,
+    "radical": "用",
+    "jlpt": "N4",
+    "examples": []
+},
+  {
+    "id": "k_n4_extra_29",
+    "kanji": "田",
+    "onyomi": [
+        "デン"
+    ],
+    "kunyomi": [
+        "た"
+    ],
+    "meaningPt": "Campo de arroz",
+    "strokes": 5,
+    "radical": "田",
+    "jlpt": "N4",
+    "examples": []
+},
+  {
+    "id": "k_n4_extra_30",
+    "kanji": "発",
+    "onyomi": [
+        "ハツ",
+        "ホツ"
+    ],
+    "kunyomi": [
+        "た.つ",
+        "あば.く",
+        "おこ.る",
+        "つか.わす",
+        "はな.つ"
+    ],
+    "meaningPt": "Partida, emitir",
+    "strokes": 9,
+    "radical": "癶",
+    "jlpt": "N4",
+    "examples": []
+},
+  {
+    "id": "k_n4_extra_31",
+    "kanji": "的",
+    "onyomi": [
+        "テキ"
+    ],
+    "kunyomi": [
+        "まと"
+    ],
+    "meaningPt": "Alvo, sufixo adjetival",
+    "strokes": 8,
+    "radical": "白",
+    "jlpt": "N4",
+    "examples": []
+},
+  {
+    "id": "k_n4_extra_32",
+    "kanji": "自",
+    "onyomi": [
+        "ジ",
+        "シ"
+    ],
+    "kunyomi": [
+        "みずか.ら",
+        "おの.ずから",
+        "おの.ずと"
+    ],
+    "meaningPt": "Próprio, auto",
+    "strokes": 6,
+    "radical": "自",
+    "jlpt": "N4",
+    "examples": []
+},
+  {
+    "id": "k_n4_extra_33",
+    "kanji": "色",
+    "onyomi": [
+        "ショク",
+        "シキ"
+    ],
+    "kunyomi": [
+        "いろ"
+    ],
+    "meaningPt": "Cor",
+    "strokes": 6,
+    "radical": "色",
+    "jlpt": "N4",
+    "examples": []
+},
+  {
+    "id": "k_n4_extra_34",
+    "kanji": "英",
+    "onyomi": [
+        "エイ"
+    ],
+    "kunyomi": [
+        "はなぶさ"
+    ],
+    "meaningPt": "Inglaterra, excelente",
+    "strokes": 8,
+    "radical": "艹",
+    "jlpt": "N4",
+    "examples": []
+},
+  {
+    "id": "k_n4_extra_35",
+    "kanji": "計",
+    "onyomi": [
+        "ケイ"
+    ],
+    "kunyomi": [
+        "はか.る",
+        "はか.らう"
+    ],
+    "meaningPt": "Plano, medir",
+    "strokes": 9,
+    "radical": "言",
+    "jlpt": "N4",
+    "examples": []
+},
+  {
+    "id": "k_n4_extra_36",
+    "kanji": "質",
+    "onyomi": [
+        "シツ",
+        "シチ",
+        "チ"
+    ],
+    "kunyomi": [
+        "たち",
+        "ただ.す",
+        "わりふ"
+    ],
+    "meaningPt": "Qualidade, matéria, penhor",
+    "strokes": 15,
+    "radical": "貝",
+    "jlpt": "N4",
+    "examples": []
+},
+  {
+    "id": "k_n4_extra_37",
+    "kanji": "起",
+    "onyomi": [
+        "キ"
+    ],
+    "kunyomi": [
+        "お.きる",
+        "お.こる",
+        "お.こす",
+        "た.つ"
+    ],
+    "meaningPt": "Acordar, levantar, ocorrer",
+    "strokes": 10,
+    "radical": "走",
+    "jlpt": "N4",
+    "examples": []
+},
+  {
+    "id": "k_n4_extra_38",
+    "kanji": "通",
+    "onyomi": [
+        "ツウ",
+        "ツ"
+    ],
+    "kunyomi": [
+        "とお.る",
+        "とお.す",
+        "かよ.う"
+    ],
+    "meaningPt": "Passar, frequentar",
+    "strokes": 10,
+    "radical": "辶",
+    "jlpt": "N4",
+    "examples": []
+},
+  {
+    "id": "k_n4_extra_39",
+    "kanji": "野",
+    "onyomi": [
+        "ヤ"
+    ],
+    "kunyomi": [
+        "の"
+    ],
+    "meaningPt": "Campo, planície",
+    "strokes": 11,
+    "radical": "里",
+    "jlpt": "N4",
+    "examples": []
+},
+  {
+    "id": "k_n4_extra_40",
+    "kanji": "集",
+    "onyomi": [
+        "シュウ"
+    ],
+    "kunyomi": [
+        "あつ.まる",
+        "あつ.める",
+        "つど.う"
+    ],
+    "meaningPt": "Reunir, juntar",
+    "strokes": 12,
+    "radical": "隹",
+    "jlpt": "N4",
+    "examples": []
+},
+  {
+    "id": "k_n4_extra_41",
+    "kanji": "黒",
+    "onyomi": [
+        "コク"
+    ],
+    "kunyomi": [
+        "くろ",
+        "くろ.い"
+    ],
+    "meaningPt": "Preto",
+    "strokes": 11,
+    "radical": "黒",
+    "jlpt": "N4",
+    "examples": []
+}
 ];

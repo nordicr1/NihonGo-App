@@ -494,4 +494,181 @@ export const VOCAB_N5: VocabItem[] = [
       meaningPt: 'Muito obrigado por me ajudar.'
     }
   }
+,
+  {
+    "id": "v_n5_extra_0",
+    "word": "遊ぶ",
+    "reading": "あそぶ",
+    "romaji": "asobu",
+    "meaningPt": "Brincar / Jogar",
+    "category": "verbo_godan",
+    "jlpt": "N5",
+    "categoryLabelPt": "Verbo Godan",
+    "exampleSentence": {
+        "jp": "公園で遊ぶ。",
+        "reading": "こうえん で あそぶ。",
+        "romaji": "Kouen de asobu.",
+        "meaningPt": "Brincar no parque."
+    }
+},
+  {
+    "id": "v_n5_extra_1",
+    "word": "休む",
+    "reading": "やすむ",
+    "romaji": "yasumu",
+    "meaningPt": "Descansar / Faltar",
+    "category": "verbo_godan",
+    "jlpt": "N5",
+    "categoryLabelPt": "Verbo Godan",
+    "exampleSentence": {
+        "jp": "今日は学校を休む。",
+        "reading": "きょう は がっこう を やすむ。",
+        "romaji": "Kyou wa gakkou o yasumu.",
+        "meaningPt": "Vou faltar à escola hoje."
+    }
+},
+  {
+    "id": "v_n5_extra_2",
+    "word": "泳ぐ",
+    "reading": "およぐ",
+    "romaji": "oyogu",
+    "meaningPt": "Nadar",
+    "category": "verbo_godan",
+    "jlpt": "N5",
+    "categoryLabelPt": "Verbo Godan",
+    "exampleSentence": {
+        "jp": "海で泳ぐ。",
+        "reading": "うみ で およぐ。",
+        "romaji": "Umi de oyogu.",
+        "meaningPt": "Nadar no mar."
+    }
+},
+  {
+    "id": "v_n5_extra_3",
+    "word": "歩く",
+    "reading": "あるく",
+    "romaji": "aruku",
+    "meaningPt": "Andar / Caminhar",
+    "category": "verbo_godan",
+    "jlpt": "N5",
+    "categoryLabelPt": "Verbo Godan",
+    "exampleSentence": {
+        "jp": "駅まで歩く。",
+        "reading": "えき まで あるく。",
+        "romaji": "Eki made aruku.",
+        "meaningPt": "Andar até a estação."
+    }
+},
+  {
+    "id": "v_n5_extra_4",
+    "word": "終わる",
+    "reading": "おわる",
+    "romaji": "owaru",
+    "meaningPt": "Terminar / Acabar",
+    "category": "verbo_godan",
+    "jlpt": "N5",
+    "categoryLabelPt": "Verbo Godan",
+    "exampleSentence": {
+        "jp": "仕事が終わる。",
+        "reading": "しごと が おわる。",
+        "romaji": "Shigoto ga owaru.",
+        "meaningPt": "O trabalho termina."
+    }
+},
+  {
+    "id": "v_n5_extra_5",
+    "word": "熱い",
+    "reading": "あつい",
+    "romaji": "atsui",
+    "meaningPt": "Quente (coisas)",
+    "category": "adjetivo_i",
+    "jlpt": "N5",
+    "categoryLabelPt": "Adjetivo-I",
+    "exampleSentence": {
+        "jp": "熱いお茶を飲む。",
+        "reading": "あつい おちゃ を のむ。",
+        "romaji": "Atsui ocha o nomu.",
+        "meaningPt": "Beber chá quente."
+    }
+},
+  {
+    "id": "v_n5_extra_6",
+    "word": "冷たい",
+    "reading": "つめたい",
+    "romaji": "tsumetai",
+    "meaningPt": "Frio (coisas)",
+    "category": "adjetivo_i",
+    "jlpt": "N5",
+    "categoryLabelPt": "Adjetivo-I",
+    "exampleSentence": {
+        "jp": "冷たい水を飲む。",
+        "reading": "つめたい みず を のむ。",
+        "romaji": "Tsumetai mizu o nomu.",
+        "meaningPt": "Beber água fria."
+    }
+},
+  {
+    "id": "v_n5_extra_7",
+    "word": "長い",
+    "reading": "ながい",
+    "romaji": "nagai",
+    "meaningPt": "Longo / Comprido",
+    "category": "adjetivo_i",
+    "jlpt": "N5",
+    "categoryLabelPt": "Adjetivo-I",
+    "exampleSentence": {
+        "jp": "長い時間がかかる。",
+        "reading": "ながい じかん が かかる。",
+        "romaji": "Nagai jikan ga kakaru.",
+        "meaningPt": "Leva um longo tempo."
+    }
+},
+  {
+    "id": "v_n5_extra_8",
+    "word": "短い",
+    "reading": "みじかい",
+    "romaji": "mijikai",
+    "meaningPt": "Curto",
+    "category": "adjetivo_i",
+    "jlpt": "N5",
+    "categoryLabelPt": "Adjetivo-I",
+    "exampleSentence": {
+        "jp": "短いスカート",
+        "reading": "みじかい スカート",
+        "romaji": "Mijikai sukaato",
+        "meaningPt": "Saia curta"
+    }
+},
+  {
+    "id": "v_n5_extra_9",
+    "word": "綺麗",
+    "reading": "きれい",
+    "romaji": "kirei",
+    "meaningPt": "Bonito / Limpo",
+    "category": "adjetivo_na",
+    "jlpt": "N5",
+    "categoryLabelPt": "Adjetivo-Na",
+    "exampleSentence": {
+        "jp": "綺麗な花",
+        "reading": "きれいな はな",
+        "romaji": "Kirei na hana",
+        "meaningPt": "Flor bonita"
+    }
+},
+  {
+    "id": "v_n5_extra_10",
+    "word": "好き",
+    "reading": "すき",
+    "romaji": "suki",
+    "meaningPt": "Gostar",
+    "category": "adjetivo_na",
+    "jlpt": "N5",
+    "categoryLabelPt": "Adjetivo-Na",
+    "exampleSentence": {
+        "jp": "りんごが好きです。",
+        "reading": "りんご が すき です。",
+        "romaji": "Ringo ga suki desu.",
+        "meaningPt": "Gosto de maçã."
+    }
+}
 ];

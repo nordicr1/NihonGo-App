@@ -332,4 +332,149 @@ export const VOCAB_N4: VocabItem[] = [
       meaningPt: 'Na verdade, vou me mudar para o Japão no mês que vem.'
     }
   }
+,
+  {
+    "id": "v_n4_extra_0",
+    "word": "調べる",
+    "reading": "しらべる",
+    "romaji": "shiraberu",
+    "meaningPt": "Investigar / Pesquisar",
+    "category": "verbo_ichidan",
+    "jlpt": "N4",
+    "categoryLabelPt": "Verbo Ichidan",
+    "exampleSentence": {
+        "jp": "辞書で意味を調べる。",
+        "reading": "じしょ で いみ を しらべる。",
+        "romaji": "Jisho de imi o shiraberu.",
+        "meaningPt": "Pesquisar o significado no dicionário."
+    }
+},
+  {
+    "id": "v_n4_extra_1",
+    "word": "遅れる",
+    "reading": "おくれる",
+    "romaji": "okureru",
+    "meaningPt": "Atrasar-se",
+    "category": "verbo_ichidan",
+    "jlpt": "N4",
+    "categoryLabelPt": "Verbo Ichidan",
+    "exampleSentence": {
+        "jp": "授業に遅れる。",
+        "reading": "じゅぎょう に おくれる。",
+        "romaji": "Jugyou ni okureru.",
+        "meaningPt": "Atrasar-se para a aula."
+    }
+},
+  {
+    "id": "v_n4_extra_2",
+    "word": "勝つ",
+    "reading": "かつ",
+    "romaji": "katsu",
+    "meaningPt": "Vencer / Ganhar",
+    "category": "verbo_godan",
+    "jlpt": "N4",
+    "categoryLabelPt": "Verbo Godan",
+    "exampleSentence": {
+        "jp": "試合に勝つ。",
+        "reading": "しあい に かつ。",
+        "romaji": "Shiai ni katsu.",
+        "meaningPt": "Vencer a partida."
+    }
+},
+  {
+    "id": "v_n4_extra_3",
+    "word": "負ける",
+    "reading": "まける",
+    "romaji": "makeru",
+    "meaningPt": "Perder",
+    "category": "verbo_ichidan",
+    "jlpt": "N4",
+    "categoryLabelPt": "Verbo Ichidan",
+    "exampleSentence": {
+        "jp": "試合に負ける。",
+        "reading": "しあい に まける。",
+        "romaji": "Shiai ni makeru.",
+        "meaningPt": "Perder a partida."
+    }
+},
+  {
+    "id": "v_n4_extra_4",
+    "word": "頑張る",
+    "reading": "がんばる",
+    "romaji": "ganbaru",
+    "meaningPt": "Esforçar-se / Dar o seu melhor",
+    "category": "verbo_godan",
+    "jlpt": "N4",
+    "categoryLabelPt": "Verbo Godan",
+    "exampleSentence": {
+        "jp": "明日も頑張る。",
+        "reading": "あした も がんばる。",
+        "romaji": "Ashita mo ganbaru.",
+        "meaningPt": "Vou me esforçar amanhã também."
+    }
+},
+  {
+    "id": "v_n4_extra_5",
+    "word": "眠い",
+    "reading": "ねむい",
+    "romaji": "nemui",
+    "meaningPt": "Sonolento",
+    "category": "adjetivo_i",
+    "jlpt": "N4",
+    "categoryLabelPt": "Adjetivo-I",
+    "exampleSentence": {
+        "jp": "今日はとても眠いです。",
+        "reading": "きょう は とても ねむい です。",
+        "romaji": "Kyou wa totemo nemui desu.",
+        "meaningPt": "Hoje estou muito sonolento."
+    }
+},
+  {
+    "id": "v_n4_extra_6",
+    "word": "悲しい",
+    "reading": "かなしい",
+    "romaji": "kanashii",
+    "meaningPt": "Triste",
+    "category": "adjetivo_i",
+    "jlpt": "N4",
+    "categoryLabelPt": "Adjetivo-I",
+    "exampleSentence": {
+        "jp": "悲しい映画を見ました。",
+        "reading": "かなしい えいが を みました。",
+        "romaji": "Kanashii eiga o mimashita.",
+        "meaningPt": "Assisti a um filme triste."
+    }
+},
+  {
+    "id": "v_n4_extra_7",
+    "word": "寂しい",
+    "reading": "さびしい",
+    "romaji": "sabishii",
+    "meaningPt": "Solitário",
+    "category": "adjetivo_i",
+    "jlpt": "N4",
+    "categoryLabelPt": "Adjetivo-I",
+    "exampleSentence": {
+        "jp": "一人は寂しいです。",
+        "reading": "ひとり は さびしい です。",
+        "romaji": "Hitori wa sabishii desu.",
+        "meaningPt": "Estar sozinho é solitário."
+    }
+},
+  {
+    "id": "v_n4_extra_8",
+    "word": "親切",
+    "reading": "しんせつ",
+    "romaji": "shinsetsu",
+    "meaningPt": "Gentil",
+    "category": "adjetivo_na",
+    "jlpt": "N4",
+    "categoryLabelPt": "Adjetivo-Na",
+    "exampleSentence": {
+        "jp": "彼はとても親切です。",
+        "reading": "かれ は とても しんせつ です。",
+        "romaji": "Kare wa totemo shinsetsu desu.",
+        "meaningPt": "Ele é muito gentil."
+    }
+}
 ];

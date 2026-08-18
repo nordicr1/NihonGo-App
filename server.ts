@@ -69,7 +69,7 @@ Diretrizes:
     ];
 
     const response = await ai.models.generateContent({
-      model: "gemini-3.7-flash",
+      model: "gemini-3.6-flash",
       contents: chatContents,
       config: {
         systemInstruction,
@@ -132,7 +132,7 @@ Retorne estritamente um objeto JSON com o formato:
 }`;
 
     const response = await ai.models.generateContent({
-      model: "gemini-3.7-flash",
+      model: "gemini-3.6-flash",
       contents: prompt,
       config: {
         responseMimeType: "application/json",
