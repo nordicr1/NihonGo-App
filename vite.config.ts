@@ -4,8 +4,9 @@ import path from 'path';
 import {defineConfig} from 'vite';
 
 export default defineConfig(({ command }) => {
+  const isVercel = process.env.VERCEL === '1';
   return {
-    base: command === 'build' ? '/NihonGo-App/' : '/',
+    base: command === 'build' && !isVercel ? '/NihonGo-App/' : '/',
     plugins: [react(), tailwindcss()],
     resolve: {
       alias: {
