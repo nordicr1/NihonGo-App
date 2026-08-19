@@ -87,9 +87,11 @@ export const KanjiDrawCanvas: React.FC<KanjiDrawCanvasProps> = ({ kanji, onSucce
     const offCtx = offCanvas.getContext('2d');
     if (!offCtx) return;
 
+    const offscreenSize = kanji.length > 1 ? 120 : 160;
+
     // Draw text in offscreen
     offCtx.fillStyle = 'black';
-    offCtx.font = '900 160px serif';
+    offCtx.font = `900 ${offscreenSize}px serif`;
     offCtx.textAlign = 'center';
     offCtx.textBaseline = 'middle';
     offCtx.fillText(kanji, canvas.width / 2, canvas.height / 2);
@@ -167,7 +169,7 @@ export const KanjiDrawCanvas: React.FC<KanjiDrawCanvasProps> = ({ kanji, onSucce
 
         {/* Kanji Watermark Guide */}
         {showGuide && (
-          <div className="absolute inset-0 flex items-center justify-center pointer-events-none text-stone-800 font-serif font-black select-none opacity-40" style={{ fontSize: '160px' }}>
+          <div className="absolute inset-0 flex items-center justify-center pointer-events-none text-stone-800 font-serif font-black select-none opacity-40" style={{ fontSize: kanji.length > 1 ? '120px' : '160px' }}>
             {kanji}
           </div>
         )}
