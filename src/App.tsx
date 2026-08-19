@@ -11,11 +11,12 @@ import { GamesHub } from './components/GamesHub';
 import { SentenceAnalyzer } from './components/SentenceAnalyzer';
 import { SenseiChat } from './components/SenseiChat';
 import { UserProgressModal } from './components/UserProgressModal';
+import { CalligraphyHub } from './components/CalligraphyHub';
 import { Sparkles, Bot, Zap } from 'lucide-react';
 
 export default function App() {
   const [currentTab, setCurrentTab] = useState<
-    'hub' | 'kana' | 'kanji' | 'grammar' | 'verbs' | 'games' | 'analyzer' | 'sensei'
+    'hub' | 'kana' | 'kanji' | 'grammar' | 'verbs' | 'games' | 'analyzer' | 'sensei' | 'drawing'
   >('hub');
   const [selectedJlpt, setSelectedJlpt] = useState<JLPTLevel>('N5');
   const [userStats, setUserStats] = useState<UserStats>(loadUserStats);
@@ -133,6 +134,13 @@ export default function App() {
           <VocabGrammarHub
             selectedJlpt={selectedJlpt}
             onSelectJlpt={setSelectedJlpt}
+            onGainXp={handleGainXp}
+          />
+        )}
+
+        {currentTab === 'drawing' && (
+          <CalligraphyHub
+            selectedJlpt={selectedJlpt}
             onGainXp={handleGainXp}
           />
         )}

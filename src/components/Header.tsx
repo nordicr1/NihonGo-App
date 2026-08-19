@@ -1,11 +1,11 @@
 import React from 'react';
 import { JLPTLevel, UserStats } from '../types';
 import { getLevelTitle } from '../utils/storage';
-import { Sparkles, Flame, Trophy, Bot, BookOpen, Compass, Gamepad2, Layers } from 'lucide-react';
+import { Sparkles, Flame, Trophy, Bot, BookOpen, Compass, Gamepad2, Layers, PenTool } from 'lucide-react';
 
 interface HeaderProps {
-  currentTab: 'hub' | 'kana' | 'kanji' | 'grammar' | 'verbs' | 'games' | 'analyzer' | 'sensei';
-  onTabChange: (tab: 'hub' | 'kana' | 'kanji' | 'grammar' | 'verbs' | 'games' | 'analyzer' | 'sensei') => void;
+  currentTab: 'hub' | 'kana' | 'kanji' | 'grammar' | 'verbs' | 'games' | 'analyzer' | 'sensei' | 'drawing';
+  onTabChange: (tab: 'hub' | 'kana' | 'kanji' | 'grammar' | 'verbs' | 'games' | 'analyzer' | 'sensei' | 'drawing') => void;
   selectedJlpt: JLPTLevel;
   onJlptChange: (level: JLPTLevel) => void;
   userStats: UserStats;
@@ -172,6 +172,19 @@ export const Header: React.FC<HeaderProps> = ({
           >
             <Layers size={16} />
             <span>Verbos & Adjetivos</span>
+          </button>
+
+          <button
+            type="button"
+            onClick={() => onTabChange('drawing')}
+            className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg transition-all whitespace-nowrap cursor-pointer ${
+              currentTab === 'drawing'
+                ? 'bg-rose-500 text-white font-semibold shadow-sm'
+                : 'text-stone-300 hover:text-white hover:bg-stone-800'
+            }`}
+          >
+            <PenTool size={16} />
+            <span>Caligrafia</span>
           </button>
 
           <button

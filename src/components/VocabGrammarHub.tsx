@@ -6,6 +6,85 @@ import { AudioButton } from './AudioButton';
 import { BookOpen, Search, Sparkles, Filter, ChevronRight, Layers, Bookmark } from 'lucide-react';
 import { playJapaneseAudio } from '../utils/audio';
 
+const GrammarDetailContent = ({ selectedGrammar }: { selectedGrammar: GrammarItem }) => (
+  <>
+    <div className="border-b border-stone-100 pb-4">
+      <div className="flex items-center gap-2">
+        <span className="text-xs px-2 py-0.5 rounded bg-indigo-100 text-indigo-800 font-bold">
+          JLPT {selectedGrammar.jlpt}
+        </span>
+        <span className="text-xs text-stone-500">{selectedGrammar.category}</span>
+      </div>
+      <h2 className="text-xl font-extrabold text-stone-900 mt-2">
+        {selectedGrammar.pattern}
+      </h2>
+      <p className="text-sm font-semibold text-indigo-600">
+        {selectedGrammar.titlePt}
+      </p>
+    </div>
+
+    <div className="space-y-4 text-sm mt-4">
+      {/* Formula */}
+      <div className="bg-indigo-50/70 p-3.5 rounded-xl border border-indigo-100">
+        <span className="text-xs font-bold text-indigo-900 block uppercase mb-1">
+          Estrutura / Fórmula de Formação
+        </span>
+        <p className="text-xs font-mono font-bold text-indigo-950">
+          {selectedGrammar.formationFormula}
+        </p>
+      </div>
+
+      {/* Explanation */}
+      <div className="space-y-1">
+        <span className="text-xs text-stone-400 font-bold uppercase block">
+          Explicação Didática
+        </span>
+        <p className="text-xs text-stone-700 leading-relaxed">
+          {selectedGrammar.explanationPt}
+        </p>
+      </div>
+
+      {/* Key Rules */}
+      {selectedGrammar.keyRulePt && (
+        <div className="bg-amber-50 p-3.5 rounded-xl border border-amber-200/60 text-amber-900 text-xs leading-relaxed whitespace-pre-line font-medium">
+          <strong>Dicas & Regras de Ouro:</strong>
+          <div className="mt-1">{selectedGrammar.keyRulePt}</div>
+        </div>
+      )}
+
+      {/* Examples */}
+      <div className="space-y-2">
+        <span className="text-xs text-stone-400 font-bold uppercase block">
+          Frases de Exemplo com Áudio
+        </span>
+        <div className="space-y-2.5">
+          {selectedGrammar.examples.map((ex, idx) => (
+            <div
+              key={idx}
+              className="p-3 rounded-xl bg-stone-50 border border-stone-100 space-y-1"
+            >
+              <div className="flex items-start justify-between gap-2">
+                <div>
+                  <span className="font-bold text-stone-900 text-sm block">
+                    {ex.jp}
+                  </span>
+                  <span className="text-xs text-stone-500 font-mono">
+                    {ex.reading}
+                  </span>
+                </div>
+                <AudioButton text={ex.jp} size="sm" />
+              </div>
+              <p className="text-xs font-medium text-indigo-700">
+                {ex.meaningPt}
+              </p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  </>
+);
+
 interface VocabGrammarHubProps {
   selectedJlpt: JLPTLevel;
   onSelectJlpt: (lvl: JLPTLevel) => void;
@@ -192,6 +271,12 @@ export const VocabGrammarHub: React.FC<VocabGrammarHubProps> = ({
                     <span className="font-bold text-indigo-700">Fórmula: </span>
                     {item.formationFormula}
                   </div>
+
+                  {isSelected && (
+                    <div className="mt-4 pt-4 border-t border-stone-200 lg:hidden block cursor-default animate-in fade-in zoom-in-95 duration-200" onClick={(e) => e.stopPropagation()}>
+                      <GrammarDetailContent selectedGrammar={item} />
+                    </div>
+                  )}
                 </div>
               );
             })}
@@ -204,85 +289,10 @@ export const VocabGrammarHub: React.FC<VocabGrammarHubProps> = ({
           </div>
 
           {/* Grammar Detail & Example Sentences */}
-          <div className="lg:col-span-1">
+          <div className="lg:col-span-1 hidden lg:block">
             <div className="bg-white rounded-2xl p-6 border border-stone-200 shadow-sm sticky top-28 space-y-5">
               {selectedGrammar ? (
-                <>
-                  <div className="border-b border-stone-100 pb-4">
-                    <div className="flex items-center gap-2">
-                      <span className="text-xs px-2 py-0.5 rounded bg-indigo-100 text-indigo-800 font-bold">
-                        JLPT {selectedGrammar.jlpt}
-                      </span>
-                      <span className="text-xs text-stone-500">{selectedGrammar.category}</span>
-                    </div>
-                    <h2 className="text-xl font-extrabold text-stone-900 mt-2">
-                      {selectedGrammar.pattern}
-                    </h2>
-                    <p className="text-sm font-semibold text-indigo-600">
-                      {selectedGrammar.titlePt}
-                    </p>
-                  </div>
-
-                  <div className="space-y-4 text-sm">
-                    {/* Formula */}
-                    <div className="bg-indigo-50/70 p-3.5 rounded-xl border border-indigo-100">
-                      <span className="text-xs font-bold text-indigo-900 block uppercase mb-1">
-                        Estrutura / Fórmula de Formação
-                      </span>
-                      <p className="text-xs font-mono font-bold text-indigo-950">
-                        {selectedGrammar.formationFormula}
-                      </p>
-                    </div>
-
-                    {/* Explanation */}
-                    <div className="space-y-1">
-                      <span className="text-xs text-stone-400 font-bold uppercase block">
-                        Explicação Didática
-                      </span>
-                      <p className="text-xs text-stone-700 leading-relaxed">
-                        {selectedGrammar.explanationPt}
-                      </p>
-                    </div>
-
-                    {/* Key Rules */}
-                    {selectedGrammar.keyRulePt && (
-                      <div className="bg-amber-50 p-3.5 rounded-xl border border-amber-200/60 text-amber-900 text-xs leading-relaxed whitespace-pre-line font-medium">
-                        <strong>Dicas & Regras de Ouro:</strong>
-                        <div className="mt-1">{selectedGrammar.keyRulePt}</div>
-                      </div>
-                    )}
-
-                    {/* Examples */}
-                    <div className="space-y-2">
-                      <span className="text-xs text-stone-400 font-bold uppercase block">
-                        Frases de Exemplo com Áudio
-                      </span>
-                      <div className="space-y-2.5">
-                        {selectedGrammar.examples.map((ex, idx) => (
-                          <div
-                            key={idx}
-                            className="p-3 rounded-xl bg-stone-50 border border-stone-100 space-y-1"
-                          >
-                            <div className="flex items-start justify-between gap-2">
-                              <div>
-                                <span className="font-bold text-stone-900 text-sm block">
-                                  {ex.jp}
-                                </span>
-                                <span className="text-xs text-stone-500 font-mono">
-                                  {ex.reading}
-                                </span>
-                              </div>
-                              <AudioButton text={ex.jp} size="sm" />
-                            </div>
-                            <p className="text-xs font-medium text-indigo-700">
-                              {ex.meaningPt}
-                            </p>
-                          </div>
-                        ))}
-                      </div>
-                    </div>
-                  </div>
-                </>
+                <GrammarDetailContent selectedGrammar={selectedGrammar} />
               ) : (
                 <div className="text-center py-16 space-y-3">
                   <div className="w-12 h-12 rounded-full bg-indigo-50 text-indigo-600 flex items-center justify-center mx-auto text-xl font-bold">

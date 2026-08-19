@@ -11,12 +11,13 @@ import {
   Trophy,
   CheckCircle,
   HelpCircle,
-  Volume2
+  Volume2,
+  PenTool
 } from 'lucide-react';
 import { AudioButton } from './AudioButton';
 
 interface HomeHubProps {
-  onTabChange: (tab: 'hub' | 'kana' | 'kanji' | 'grammar' | 'verbs' | 'games' | 'analyzer' | 'sensei') => void;
+  onTabChange: (tab: 'hub' | 'kana' | 'kanji' | 'grammar' | 'verbs' | 'games' | 'analyzer' | 'sensei' | 'drawing') => void;
   selectedJlpt: JLPTLevel;
   onJlptChange: (level: JLPTLevel) => void;
   userStats: UserStats;
@@ -116,8 +117,8 @@ export const HomeHub: React.FC<HomeHubProps> = ({
         </div>
       </div>
 
-      {/* Main 5 Learning Modules Cards */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4">
+      {/* Main 6 Learning Modules Cards */}
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {/* Module 1: Kana */}
         <div
           onClick={() => onTabChange('kana')}
@@ -224,6 +225,27 @@ export const HomeHub: React.FC<HomeHubProps> = ({
           </div>
           <div className="mt-4 pt-4 border-t border-stone-100 flex items-center justify-between text-xs font-bold text-teal-700">
             <span>Ações & Descrições</span>
+            <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
+          </div>
+        </div>
+        {/* Module 6: Caligrafia */}
+        <div
+          onClick={() => onTabChange('drawing')}
+          className="bg-white p-6 rounded-3xl border border-stone-200 shadow-sm hover:border-fuchsia-400 hover:shadow-lg transition-all duration-300 cursor-pointer flex flex-col justify-between group"
+        >
+          <div className="space-y-3">
+            <div className="w-12 h-12 rounded-2xl bg-fuchsia-100 text-fuchsia-700 flex items-center justify-center font-bold text-xl group-hover:scale-110 transition-transform">
+              <PenTool size={22} />
+            </div>
+            <h3 className="font-extrabold text-lg text-stone-900 group-hover:text-fuchsia-700 transition-colors">
+              Estúdio de Caligrafia
+            </h3>
+            <p className="text-xs text-stone-600 leading-relaxed">
+              Pratique a escrita desenhando Hiragana, Katakana e Kanjis diretamente na tela do seu celular.
+            </p>
+          </div>
+          <div className="mt-4 pt-4 border-t border-stone-100 flex items-center justify-between text-xs font-bold text-fuchsia-700">
+            <span>Trace e Memorize</span>
             <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
           </div>
         </div>
