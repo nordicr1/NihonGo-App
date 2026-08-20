@@ -108,7 +108,7 @@ export const Header: React.FC<HeaderProps> = ({
         </div>
 
         {/* Navigation Tabs */}
-        <nav className="flex items-center gap-1 sm:gap-2 overflow-x-auto py-2 scrollbar-none text-xs sm:text-sm font-medium">
+        <nav className="flex flex-wrap items-center gap-1 sm:gap-2 py-2 text-xs sm:text-sm font-medium justify-center sm:justify-start">
           <button
             type="button"
             onClick={() => onTabChange('hub')}
