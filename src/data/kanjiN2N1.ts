@@ -5745,4 +5745,1377 @@ export const KANJI_N2_N1: KanjiItem[] = [
       }
 ]
   }
+,
+  {
+    id: 'k_n2_add6_1',
+    kanji: '脳',
+    onyomi: ["ノウ (nou)"],
+    kunyomi: [],
+    meaningPt: 'Cérebro',
+    strokes: 11,
+    radical: '月 (carne/lua)',
+    jlpt: 'N2',
+    examples: [
+      {
+            word: "脳",
+            reading: "のう (nou)",
+            meaningPt: "Cérebro"
+      },
+      {
+            word: "頭脳",
+            reading: "ずのう (zunou)",
+            meaningPt: "Intelecto / Cérebro"
+      },
+      {
+            word: "脳科学",
+            reading: "のうかがく (noukagaku)",
+            meaningPt: "Neurociência"
+      }
+]
+  },
+  {
+    id: 'k_n2_add6_2',
+    kanji: '能',
+    onyomi: ["ノウ (nou)"],
+    kunyomi: [],
+    meaningPt: 'Habilidade, Talento',
+    strokes: 10,
+    radical: '肉 (carne)',
+    jlpt: 'N2',
+    examples: [
+      {
+            word: "能力",
+            reading: "のうりょく (nouryoku)",
+            meaningPt: "Capacidade / Habilidade"
+      },
+      {
+            word: "可能",
+            reading: "かのう (kanou)",
+            meaningPt: "Possível"
+      },
+      {
+            word: "芸能",
+            reading: "げいのう (geinou)",
+            meaningPt: "Entretenimento / Arte"
+      }
+]
+  },
+  {
+    id: 'k_n2_add6_4',
+    kanji: '悩',
+    onyomi: ["ノウ (nou)"],
+    kunyomi: ["なや.む (naya.mu)","なや.ます (naya.masu)"],
+    meaningPt: 'Sofrer, Preocupar-se',
+    strokes: 10,
+    radical: '心 (coração)',
+    jlpt: 'N2',
+    examples: [
+      {
+            word: "悩む",
+            reading: "なやむ (nayamu)",
+            meaningPt: "Preocupar-se / Estar indeciso"
+      },
+      {
+            word: "悩み",
+            reading: "なやみ (nayami)",
+            meaningPt: "Problema / Preocupação"
+      },
+      {
+            word: "苦悩",
+            reading: "くのう (kunou)",
+            meaningPt: "Aflição / Sofrimento"
+      }
+]
+  },
+  {
+    id: 'k_n2_add6_5',
+    kanji: '燃',
+    onyomi: ["ネン (nen)"],
+    kunyomi: ["も.える (mo.eru)","も.やす (mo.yasu)","も.す (mo.su)"],
+    meaningPt: 'Queimar, Arder',
+    strokes: 16,
+    radical: '火 (fogo)',
+    jlpt: 'N2',
+    examples: [
+      {
+            word: "燃える",
+            reading: "もえる (moeru)",
+            meaningPt: "Queimar (intransitivo) / Arder"
+      },
+      {
+            word: "燃やす",
+            reading: "もやす (moyasu)",
+            meaningPt: "Queimar (transitivo)"
+      },
+      {
+            word: "燃料",
+            reading: "ねんりょう (nenryou)",
+            meaningPt: "Combustível"
+      }
+]
+  },
+  {
+    id: 'k_n2_add6_6',
+    kanji: '念',
+    onyomi: ["ネン (nen)"],
+    kunyomi: [],
+    meaningPt: 'Pensamento, Sentimento, Desejo',
+    strokes: 8,
+    radical: '心 (coração)',
+    jlpt: 'N2',
+    examples: [
+      {
+            word: "残念",
+            reading: "ざんねん (zannen)",
+            meaningPt: "Pena / Lamentável"
+      },
+      {
+            word: "記念",
+            reading: "きねん (kinen)",
+            meaningPt: "Comemoração / Memória"
+      },
+      {
+            word: "理念",
+            reading: "りねん (rinen)",
+            meaningPt: "Ideal / Princípio"
+      }
+]
+  },
+  {
+    id: 'k_n2_add6_7',
+    kanji: '熱',
+    onyomi: ["ネツ (netsu)"],
+    kunyomi: ["あつ.い (atsu.i)"],
+    meaningPt: 'Quente (ao toque), Febre',
+    strokes: 15,
+    radical: '火 (fogo)',
+    jlpt: 'N2',
+    examples: [
+      {
+            word: "熱い",
+            reading: "あつい (atsui)",
+            meaningPt: "Quente (ao toque)"
+      },
+      {
+            word: "熱",
+            reading: "ねつ (netsu)",
+            meaningPt: "Febre / Calor"
+      },
+      {
+            word: "熱心",
+            reading: "ねっしん (nesshin)",
+            meaningPt: "Entusiasmado / Dedicado"
+      }
+]
+  },
+  {
+    id: 'k_n2_add6_8',
+    kanji: '猫',
+    onyomi: ["ビョウ (byou)"],
+    kunyomi: ["ねこ (neko)"],
+    meaningPt: 'Gato',
+    strokes: 11,
+    radical: '犬 (cachorro)',
+    jlpt: 'N2',
+    examples: [
+      {
+            word: "猫",
+            reading: "ねこ (neko)",
+            meaningPt: "Gato"
+      },
+      {
+            word: "子猫",
+            reading: "こねこ (koneko)",
+            meaningPt: "Filhote de gato / Gatinho"
+      },
+      {
+            word: "野良猫",
+            reading: "のらねこ (noraneko)",
+            meaningPt: "Gato de rua"
+      }
+]
+  },
+  {
+    id: 'k_n2_add6_9',
+    kanji: '認',
+    onyomi: ["ニン (nin)"],
+    kunyomi: ["みと.める (mito.meru)"],
+    meaningPt: 'Reconhecer, Admitir',
+    strokes: 14,
+    radical: '言 (palavra/falar)',
+    jlpt: 'N2',
+    examples: [
+      {
+            word: "認める",
+            reading: "みとめる (mitomeru)",
+            meaningPt: "Reconhecer / Admitir (culpa)"
+      },
+      {
+            word: "確認",
+            reading: "かくにん (kakunin)",
+            meaningPt: "Confirmação / Verificação"
+      },
+      {
+            word: "承認",
+            reading: "しょうにん (shounin)",
+            meaningPt: "Aprovação"
+      }
+]
+  },
+  {
+    id: 'k_n2_add6_10',
+    kanji: '任',
+    onyomi: ["ニン (nin)"],
+    kunyomi: ["まか.せる (maka.seru)","まか.す (maka.su)"],
+    meaningPt: 'Responsabilidade, Confiar (tarefa)',
+    strokes: 6,
+    radical: '人 (pessoa)',
+    jlpt: 'N2',
+    examples: [
+      {
+            word: "任せる",
+            reading: "まかせる (makaseru)",
+            meaningPt: "Confiar (uma tarefa a alguém)"
+      },
+      {
+            word: "責任",
+            reading: "せきにん (sekinin)",
+            meaningPt: "Responsabilidade"
+      },
+      {
+            word: "辞任",
+            reading: "じにん (jinin)",
+            meaningPt: "Renúncia"
+      }
+]
+  },
+  {
+    id: 'k_n2_add6_11',
+    kanji: '乳',
+    onyomi: ["ニュウ (nyuu)"],
+    kunyomi: ["ちち (chichi)","ち (chi)"],
+    meaningPt: 'Leite, Seios',
+    strokes: 8,
+    radical: '乙 (segundo/curvo)',
+    jlpt: 'N2',
+    examples: [
+      {
+            word: "牛乳",
+            reading: "ぎゅうにゅう (gyuunyuu)",
+            meaningPt: "Leite de vaca"
+      },
+      {
+            word: "母乳",
+            reading: "ぼにゅう (bonyuu)",
+            meaningPt: "Leite materno"
+      },
+      {
+            word: "豆乳",
+            reading: "とうにゅう (tounyuu)",
+            meaningPt: "Leite de soja"
+      }
+]
+  },
+  {
+    id: 'k_n2_add6_12',
+    kanji: '難',
+    onyomi: ["ナン (nan)"],
+    kunyomi: ["むずか.しい (muzuka.shii)","がた.い (gata.i)"],
+    meaningPt: 'Difícil, Dificuldade',
+    strokes: 18,
+    radical: '隹 (pássaro pequeno)',
+    jlpt: 'N2',
+    examples: [
+      {
+            word: "難しい",
+            reading: "むずかしい (muzukashii)",
+            meaningPt: "Difícil"
+      },
+      {
+            word: "困難",
+            reading: "こんなん (konnan)",
+            meaningPt: "Dificuldade / Dureza"
+      },
+      {
+            word: "避難",
+            reading: "ひなん (hinan)",
+            meaningPt: "Refúgio / Evacuação"
+      }
+]
+  },
+  {
+    id: 'k_n2_add6_13',
+    kanji: '軟',
+    onyomi: ["ナン (nan)"],
+    kunyomi: ["やわ.らかい (yawa.rakai)","やわ.らか (yawa.raka)"],
+    meaningPt: 'Mole, Suave',
+    strokes: 11,
+    radical: '車 (carro/roda)',
+    jlpt: 'N2',
+    examples: [
+      {
+            word: "軟らかい",
+            reading: "やわらかい (yawarakai)",
+            meaningPt: "Macio / Flexível / Suave"
+      },
+      {
+            word: "柔軟",
+            reading: "じゅうなん (juunan)",
+            meaningPt: "Flexível / Adaptável"
+      },
+      {
+            word: "軟水",
+            reading: "なんすい (nansui)",
+            meaningPt: "Água mole (baixo teor de minerais)"
+      }
+]
+  },
+  {
+    id: 'k_n2_add6_14',
+    kanji: '内',
+    onyomi: ["ナイ (nai)","ダイ (dai)"],
+    kunyomi: ["うち (uchi)"],
+    meaningPt: 'Dentro, Interior',
+    strokes: 4,
+    radical: '冂 (caixa invertida)',
+    jlpt: 'N2',
+    examples: [
+      {
+            word: "内",
+            reading: "うち (uchi)",
+            meaningPt: "Dentro / Minha casa / Meu grupo"
+      },
+      {
+            word: "国内",
+            reading: "こくない (kokunai)",
+            meaningPt: "Nacional / Doméstico"
+      },
+      {
+            word: "内容",
+            reading: "ないよう (naiyou)",
+            meaningPt: "Conteúdo"
+      }
+]
+  },
+  {
+    id: 'k_n2_add6_15',
+    kanji: '鈍',
+    onyomi: ["ドン (don)"],
+    kunyomi: ["にぶ.い (nibu.i)","にぶ.る (nibu.ru)"],
+    meaningPt: 'Cego (lâmina), Lento, Estúpido',
+    strokes: 12,
+    radical: '金 (ouro/metal)',
+    jlpt: 'N2',
+    examples: [
+      {
+            word: "鈍い",
+            reading: "にぶい (nibui)",
+            meaningPt: "Lento (reação) / Cego (não afiado)"
+      },
+      {
+            word: "鈍感",
+            reading: "どんかん (donkan)",
+            meaningPt: "Insensível / Lento para perceber"
+      },
+      {
+            word: "鈍る",
+            reading: "にぶる (niburu)",
+            meaningPt: "Tornar-se cego/embotado / Enfraquecer"
+      }
+]
+  },
+  {
+    id: 'k_n2_add6_16',
+    kanji: '曇',
+    onyomi: ["ドン (don)"],
+    kunyomi: ["くも.る (kumo.ru)"],
+    meaningPt: 'Nublar, Ficar embaçado',
+    strokes: 16,
+    radical: '日 (sol/dia)',
+    jlpt: 'N2',
+    examples: [
+      {
+            word: "曇る",
+            reading: "くもる (kumoru)",
+            meaningPt: "Ficar nublado / Embaçar"
+      },
+      {
+            word: "曇り",
+            reading: "くもり (kumori)",
+            meaningPt: "Tempo nublado"
+      },
+      {
+            word: "曇り空",
+            reading: "くもりぞら (kumorizora)",
+            meaningPt: "Céu nublado"
+      }
+]
+  },
+  {
+    id: 'k_n2_add6_17',
+    kanji: '届',
+    onyomi: ["カイ (kai)"],
+    kunyomi: ["とど.く (todo.ku)","とど.ける (todo.keru)"],
+    meaningPt: 'Entregar, Alcançar',
+    strokes: 8,
+    radical: '尸 (cadáver/bandeira)',
+    jlpt: 'N2',
+    examples: [
+      {
+            word: "届く",
+            reading: "とどく (todoku)",
+            meaningPt: "Chegar / Alcançar (um pacote, uma voz)"
+      },
+      {
+            word: "届ける",
+            reading: "とどける (todokeru)",
+            meaningPt: "Entregar / Notificar"
+      },
+      {
+            word: "届け出",
+            reading: "とどけで (todokede)",
+            meaningPt: "Aviso (oficial) / Relatório"
+      }
+]
+  },
+  {
+    id: 'k_n2_add6_18',
+    kanji: '突',
+    onyomi: ["トツ (totsu)"],
+    kunyomi: ["つ.く (tsu.ku)"],
+    meaningPt: 'Apunhalar, Atacar, Subitamente',
+    strokes: 8,
+    radical: '穴 (buraco)',
+    jlpt: 'N2',
+    examples: [
+      {
+            word: "突然",
+            reading: "とつぜん (totsuzen)",
+            meaningPt: "De repente"
+      },
+      {
+            word: "突く",
+            reading: "つく (tsuku)",
+            meaningPt: "Cutucar / Apunhalar"
+      },
+      {
+            word: "衝突",
+            reading: "しょうとつ (shoutotsu)",
+            meaningPt: "Colisão / Choque"
+      }
+]
+  },
+  {
+    id: 'k_n2_add6_19',
+    kanji: '独',
+    onyomi: ["ドク (doku)"],
+    kunyomi: ["ひと.り (hito.ri)"],
+    meaningPt: 'Sozinho, Alemanha',
+    strokes: 9,
+    radical: '犬 (cachorro)',
+    jlpt: 'N2',
+    examples: [
+      {
+            word: "独立",
+            reading: "どくりつ (dokuritsu)",
+            meaningPt: "Independência"
+      },
+      {
+            word: "独特",
+            reading: "どくとく (dokutoku)",
+            meaningPt: "Peculiar / Único"
+      },
+      {
+            word: "独身",
+            reading: "どくしん (dokushin)",
+            meaningPt: "Solteiro(a)"
+      }
+]
+  },
+  {
+    id: 'k_n2_add6_20',
+    kanji: '毒',
+    onyomi: ["ドク (doku)"],
+    kunyomi: [],
+    meaningPt: 'Veneno',
+    strokes: 8,
+    radical: '毋 (mãe)',
+    jlpt: 'N2',
+    examples: [
+      {
+            word: "毒",
+            reading: "どく (doku)",
+            meaningPt: "Veneno"
+      },
+      {
+            word: "中毒",
+            reading: "ちゅうどく (chuudoku)",
+            meaningPt: "Intoxicação / Vício"
+      },
+      {
+            word: "消毒",
+            reading: "しょうどく (shoudoku)",
+            meaningPt: "Desinfecção / Esterilização"
+      }
+]
+  },
+  {
+    id: 'k_n2_add6_21',
+    kanji: '得',
+    onyomi: ["トク (toku)"],
+    kunyomi: ["え.る (e.ru)","う.る (u.ru)"],
+    meaningPt: 'Adquirir, Obter, Lucro',
+    strokes: 11,
+    radical: '彳 (passo/ir)',
+    jlpt: 'N2',
+    examples: [
+      {
+            word: "得る",
+            reading: "える (eru)",
+            meaningPt: "Obter / Ganhar"
+      },
+      {
+            word: "得意",
+            reading: "とくい (tokui)",
+            meaningPt: "Ser bom em algo / Orgulhoso"
+      },
+      {
+            word: "納得",
+            reading: "なっとく (nattoku)",
+            meaningPt: "Compreensão / Consentimento"
+      }
+]
+  },
+  {
+    id: 'k_n2_add6_22',
+    kanji: '銅',
+    onyomi: ["ドウ (dou)"],
+    kunyomi: [],
+    meaningPt: 'Cobre',
+    strokes: 14,
+    radical: '金 (ouro/metal)',
+    jlpt: 'N2',
+    examples: [
+      {
+            word: "銅",
+            reading: "どう (dou)",
+            meaningPt: "Cobre"
+      },
+      {
+            word: "銅メダル",
+            reading: "どうめだる (doumedaru)",
+            meaningPt: "Medalha de bronze"
+      },
+      {
+            word: "青銅",
+            reading: "せいどう (seidou)",
+            meaningPt: "Bronze"
+      }
+]
+  },
+  {
+    id: 'k_n2_add6_23',
+    kanji: '童',
+    onyomi: ["ドウ (dou)"],
+    kunyomi: ["わらべ (warabe)"],
+    meaningPt: 'Criança, Infantil',
+    strokes: 12,
+    radical: '立 (ficar em pé)',
+    jlpt: 'N2',
+    examples: [
+      {
+            word: "児童",
+            reading: "じどう (jidou)",
+            meaningPt: "Criança / Menor de idade"
+      },
+      {
+            word: "童話",
+            reading: "どうわ (douwa)",
+            meaningPt: "Conto de fadas"
+      },
+      {
+            word: "童謡",
+            reading: "どうよう (douyou)",
+            meaningPt: "Canção infantil"
+      }
+]
+  },
+  {
+    id: 'k_n2_add6_25',
+    kanji: '逃',
+    onyomi: ["トウ (tou)"],
+    kunyomi: ["に.げる (ni.geru)","に.がす (ni.gasu)","のが.れる (noga.reru)","のが.す (noga.su)"],
+    meaningPt: 'Fugir, Escapar',
+    strokes: 9,
+    radical: '辵 (caminhar)',
+    jlpt: 'N2',
+    examples: [
+      {
+            word: "逃げる",
+            reading: "にげる (nigeru)",
+            meaningPt: "Fugir"
+      },
+      {
+            word: "見逃す",
+            reading: "みのがす (minogasu)",
+            meaningPt: "Deixar passar (algo) / Perder (uma chance)"
+      },
+      {
+            word: "逃走",
+            reading: "とうそう (tousou)",
+            meaningPt: "Fuga"
+      }
+]
+  },
+  {
+    id: 'k_n2_add6_26',
+    kanji: '到',
+    onyomi: ["トウ (tou)"],
+    kunyomi: [],
+    meaningPt: 'Chegada, Alcance',
+    strokes: 8,
+    radical: '刀 (espada)',
+    jlpt: 'N2',
+    examples: [
+      {
+            word: "到着",
+            reading: "とうちゃく (touchaku)",
+            meaningPt: "Chegada"
+      },
+      {
+            word: "到達",
+            reading: "とうたつ (toutatsu)",
+            meaningPt: "Alcançar (uma meta)"
+      },
+      {
+            word: "殺到",
+            reading: "さっとう (sattou)",
+            meaningPt: "Afluxo / Invasão em massa"
+      }
+]
+  },
+  {
+    id: 'k_n2_add6_27',
+    kanji: '筒',
+    onyomi: ["トウ (tou)"],
+    kunyomi: ["つつ (tsutsu)"],
+    meaningPt: 'Cilindro, Tubo',
+    strokes: 12,
+    radical: '竹 (bambu)',
+    jlpt: 'N2',
+    examples: [
+      {
+            word: "封筒",
+            reading: "ふうとう (fuutou)",
+            meaningPt: "Envelope"
+      },
+      {
+            word: "水筒",
+            reading: "すいとう (suitou)",
+            meaningPt: "Cantil / Garrafa de água"
+      },
+      {
+            word: "筒",
+            reading: "つつ (tsutsu)",
+            meaningPt: "Tubo / Cilindro"
+      }
+]
+  },
+  {
+    id: 'k_n2_add6_28',
+    kanji: '等',
+    onyomi: ["トウ (tou)"],
+    kunyomi: ["ひと.しい (hito.shii)","など (nado)"],
+    meaningPt: 'Igual, Classe, Et cetera',
+    strokes: 12,
+    radical: '竹 (bambu)',
+    jlpt: 'N2',
+    examples: [
+      {
+            word: "など",
+            reading: "など (nado)",
+            meaningPt: "Et cetera / E outros"
+      },
+      {
+            word: "平等",
+            reading: "びょうどう (byoudou)",
+            meaningPt: "Igualdade"
+      },
+      {
+            word: "高等",
+            reading: "こうとう (koutou)",
+            meaningPt: "De alta classe / Superior"
+      }
+]
+  },
+  {
+    id: 'k_n2_add6_29',
+    kanji: '当',
+    onyomi: ["トウ (tou)"],
+    kunyomi: ["あ.たる (a.taru)","あ.てる (a.teru)"],
+    meaningPt: 'Acertar, Apropriado, Este',
+    strokes: 6,
+    radical: '小 (pequeno)',
+    jlpt: 'N2',
+    examples: [
+      {
+            word: "当たる",
+            reading: "あたる (ataru)",
+            meaningPt: "Acertar / Bater em"
+      },
+      {
+            word: "本当",
+            reading: "ほんとう (hontou)",
+            meaningPt: "Verdade"
+      },
+      {
+            word: "弁当",
+            reading: "べんとう (bentou)",
+            meaningPt: "Marmita (Bento)"
+      }
+]
+  },
+  {
+    id: 'k_n2_add6_30',
+    kanji: '灯',
+    onyomi: ["トウ (tou)"],
+    kunyomi: ["ひ (hi)","ほ (ho)","ともしび (tomoshibi)"],
+    meaningPt: 'Lâmpada, Luz',
+    strokes: 6,
+    radical: '火 (fogo)',
+    jlpt: 'N2',
+    examples: [
+      {
+            word: "電灯",
+            reading: "でんとう (dentou)",
+            meaningPt: "Luz elétrica"
+      },
+      {
+            word: "灯台",
+            reading: "とうだい (toudai)",
+            meaningPt: "Farol"
+      },
+      {
+            word: "街灯",
+            reading: "がいとう (gaitou)",
+            meaningPt: "Luz de rua"
+      }
+]
+  },
+  {
+    id: 'k_n2_add6_31',
+    kanji: '湯',
+    onyomi: ["トウ (tou)"],
+    kunyomi: ["ゆ (yu)"],
+    meaningPt: 'Água quente, Banho termal',
+    strokes: 12,
+    radical: '水 (água)',
+    jlpt: 'N2',
+    examples: [
+      {
+            word: "お湯",
+            reading: "おゆ (oyu)",
+            meaningPt: "Água quente"
+      },
+      {
+            word: "銭湯",
+            reading: "せんとう (sentou)",
+            meaningPt: "Casa de banho pública"
+      },
+      {
+            word: "熱湯",
+            reading: "ねっとう (nettou)",
+            meaningPt: "Água fervente"
+      }
+]
+  },
+  {
+    id: 'k_n2_add6_32',
+    kanji: '盗',
+    onyomi: ["トウ (tou)"],
+    kunyomi: ["ぬす.む (nusu.mu)"],
+    meaningPt: 'Roubar',
+    strokes: 11,
+    radical: '皿 (prato)',
+    jlpt: 'N2',
+    examples: [
+      {
+            word: "盗む",
+            reading: "ぬすむ (nusumu)",
+            meaningPt: "Roubar"
+      },
+      {
+            word: "強盗",
+            reading: "ごうとう (goutou)",
+            meaningPt: "Assalto / Ladrão"
+      },
+      {
+            word: "盗難",
+            reading: "とうなん (tounan)",
+            meaningPt: "Roubo / Furto"
+      }
+]
+  },
+  {
+    id: 'k_n2_add6_33',
+    kanji: '投',
+    onyomi: ["トウ (tou)"],
+    kunyomi: ["な.げる (na.geru)"],
+    meaningPt: 'Arremessar, Jogar',
+    strokes: 7,
+    radical: '手 (mão)',
+    jlpt: 'N2',
+    examples: [
+      {
+            word: "投げる",
+            reading: "なげる (nageru)",
+            meaningPt: "Jogar / Arremessar"
+      },
+      {
+            word: "投資",
+            reading: "とうし (toushi)",
+            meaningPt: "Investimento"
+      },
+      {
+            word: "投票",
+            reading: "とうひょう (touhyou)",
+            meaningPt: "Votação"
+      }
+]
+  },
+  {
+    id: 'k_n2_add6_34',
+    kanji: '島',
+    onyomi: ["トウ (tou)"],
+    kunyomi: ["しま (shima)"],
+    meaningPt: 'Ilha',
+    strokes: 10,
+    radical: '山 (montanha)',
+    jlpt: 'N2',
+    examples: [
+      {
+            word: "島",
+            reading: "しま (shima)",
+            meaningPt: "Ilha"
+      },
+      {
+            word: "半島",
+            reading: "はんとう (hantou)",
+            meaningPt: "Península"
+      },
+      {
+            word: "列島",
+            reading: "れっとう (rettou)",
+            meaningPt: "Arquipélago"
+      }
+]
+  },
+  {
+    id: 'k_n2_add6_35',
+    kanji: '塔',
+    onyomi: ["トウ (tou)"],
+    kunyomi: [],
+    meaningPt: 'Torre, Pagode',
+    strokes: 12,
+    radical: '土 (terra)',
+    jlpt: 'N2',
+    examples: [
+      {
+            word: "塔",
+            reading: "とう (tou)",
+            meaningPt: "Torre / Pagode"
+      },
+      {
+            word: "電波塔",
+            reading: "でんぱとう (denpatou)",
+            meaningPt: "Torre de rádio"
+      },
+      {
+            word: "五重塔",
+            reading: "ごじゅうのとう (gojuunotou)",
+            meaningPt: "Pagode de 5 andares"
+      }
+]
+  },
+  {
+    id: 'k_n2_add6_36',
+    kanji: '凍',
+    onyomi: ["トウ (tou)"],
+    kunyomi: ["こお.る (koo.ru)","ごご.える (gogo.eru)"],
+    meaningPt: 'Congelar',
+    strokes: 10,
+    radical: '冫 (gelo)',
+    jlpt: 'N2',
+    examples: [
+      {
+            word: "凍る",
+            reading: "こおる (kooru)",
+            meaningPt: "Congelar"
+      },
+      {
+            word: "冷凍",
+            reading: "れいとう (reitou)",
+            meaningPt: "Congelamento"
+      },
+      {
+            word: "凍える",
+            reading: "こごえる (kogoeru)",
+            meaningPt: "Estar congelando (de frio)"
+      }
+]
+  },
+  {
+    id: 'k_n2_add6_37',
+    kanji: '党',
+    onyomi: ["トウ (tou)"],
+    kunyomi: [],
+    meaningPt: 'Partido, Facção',
+    strokes: 10,
+    radical: '儿 (pernas humanas)',
+    jlpt: 'N2',
+    examples: [
+      {
+            word: "政党",
+            reading: "せいとう (seitou)",
+            meaningPt: "Partido político"
+      },
+      {
+            word: "与党",
+            reading: "よとう (yotou)",
+            meaningPt: "Partido da situação / no poder"
+      },
+      {
+            word: "野党",
+            reading: "やとう (yatou)",
+            meaningPt: "Partido da oposição"
+      }
+]
+  },
+  {
+    id: 'k_n2_add6_38',
+    kanji: '倒',
+    onyomi: ["トウ (tou)"],
+    kunyomi: ["たお.れる (tao.reru)","たお.す (tao.su)"],
+    meaningPt: 'Cair, Derrubar',
+    strokes: 10,
+    radical: '人 (pessoa)',
+    jlpt: 'N2',
+    examples: [
+      {
+            word: "倒れる",
+            reading: "たおれる (taoreru)",
+            meaningPt: "Cair / Desabar"
+      },
+      {
+            word: "倒す",
+            reading: "たおす (taosu)",
+            meaningPt: "Derrubar / Derrotar"
+      },
+      {
+            word: "面倒",
+            reading: "めんどう (mendou)",
+            meaningPt: "Trabalhoso / Incômodo"
+      }
+]
+  },
+  {
+    id: 'k_n2_add6_39',
+    kanji: '怒',
+    onyomi: ["ド (do)","ヌ (nu)"],
+    kunyomi: ["いか.る (ika.ru)","おこ.る (oko.ru)"],
+    meaningPt: 'Raiva, Ficar bravo',
+    strokes: 9,
+    radical: '心 (coração)',
+    jlpt: 'N2',
+    examples: [
+      {
+            word: "怒る",
+            reading: "おこる (okoru)",
+            meaningPt: "Ficar bravo / Zangar-se"
+      },
+      {
+            word: "怒り",
+            reading: "いかり (ikari)",
+            meaningPt: "Raiva / Fúria"
+      },
+      {
+            word: "激怒",
+            reading: "げきど (gekido)",
+            meaningPt: "Ira profunda"
+      }
+]
+  },
+  {
+    id: 'k_n2_add6_40',
+    kanji: '努',
+    onyomi: ["ド (do)"],
+    kunyomi: ["つと.める (tsuto.meru)"],
+    meaningPt: 'Esforçar-se',
+    strokes: 7,
+    radical: '力 (força)',
+    jlpt: 'N2',
+    examples: [
+      {
+            word: "努力",
+            reading: "どりょく (doryoku)",
+            meaningPt: "Esforço"
+      },
+      {
+            word: "努める",
+            reading: "つとめる (tsutomeru)",
+            meaningPt: "Esforçar-se"
+      }
+]
+  },
+  {
+    id: 'k_n2_add6_41',
+    kanji: '途',
+    onyomi: ["ト (to)"],
+    kunyomi: [],
+    meaningPt: 'Caminho, Rota, Meio',
+    strokes: 10,
+    radical: '辵 (caminhar)',
+    jlpt: 'N2',
+    examples: [
+      {
+            word: "途中",
+            reading: "とちゅう (tochuu)",
+            meaningPt: "No meio do caminho"
+      },
+      {
+            word: "用途",
+            reading: "ようと (youto)",
+            meaningPt: "Uso / Propósito"
+      },
+      {
+            word: "途端",
+            reading: "とたん (totan)",
+            meaningPt: "No exato momento em que"
+      }
+]
+  },
+  {
+    id: 'k_n2_add6_42',
+    kanji: '登',
+    onyomi: ["トウ (tou)","ト (to)"],
+    kunyomi: ["のぼ.る (nobo.ru)"],
+    meaningPt: 'Subir, Escalar, Registrar',
+    strokes: 12,
+    radical: '癶 (passos)',
+    jlpt: 'N2',
+    examples: [
+      {
+            word: "登る",
+            reading: "のぼる (noboru)",
+            meaningPt: "Escalar / Subir"
+      },
+      {
+            word: "登山",
+            reading: "とざん (tozan)",
+            meaningPt: "Alpinismo / Escalada"
+      },
+      {
+            word: "登録",
+            reading: "とうろく (touroku)",
+            meaningPt: "Registro / Inscrição"
+      }
+]
+  },
+  {
+    id: 'k_n2_add6_43',
+    kanji: '渡',
+    onyomi: ["ト (to)"],
+    kunyomi: ["わた.る (wata.ru)","わた.す (wata.su)"],
+    meaningPt: 'Atravessar, Entregar',
+    strokes: 12,
+    radical: '水 (água)',
+    jlpt: 'N2',
+    examples: [
+      {
+            word: "渡る",
+            reading: "わたる (wataru)",
+            meaningPt: "Atravessar (uma rua, rio)"
+      },
+      {
+            word: "渡す",
+            reading: "わたす (watasu)",
+            meaningPt: "Entregar / Passar adiante"
+      },
+      {
+            word: "渡り鳥",
+            reading: "わたりどり (wataridori)",
+            meaningPt: "Pássaro migratório"
+      }
+]
+  },
+  {
+    id: 'k_n2_add6_44',
+    kanji: '徒',
+    onyomi: ["ト (to)"],
+    kunyomi: ["いたずら (itazura)"],
+    meaningPt: 'A pé, Discípulo, Em vão',
+    strokes: 10,
+    radical: '彳 (passo/ir)',
+    jlpt: 'N2',
+    examples: [
+      {
+            word: "徒歩",
+            reading: "とほ (toho)",
+            meaningPt: "A pé"
+      },
+      {
+            word: "生徒",
+            reading: "せいと (seito)",
+            meaningPt: "Aluno (Ensino fundamental/médio)"
+      },
+      {
+            word: "徒労",
+            reading: "とろう (torou)",
+            meaningPt: "Esforço em vão"
+      }
+]
+  },
+  {
+    id: 'k_n2_add6_45',
+    kanji: '塗',
+    onyomi: ["ト (to)"],
+    kunyomi: ["ぬ.る (nu.ru)"],
+    meaningPt: 'Pintar, Passar (tinta, creme)',
+    strokes: 13,
+    radical: '土 (terra)',
+    jlpt: 'N2',
+    examples: [
+      {
+            word: "塗る",
+            reading: "ぬる (nuru)",
+            meaningPt: "Pintar / Espalhar (creme/tinta)"
+      },
+      {
+            word: "塗装",
+            reading: "とそう (tosou)",
+            meaningPt: "Pintura (revestimento)"
+      },
+      {
+            word: "塗り薬",
+            reading: "ぬりぐすり (nurigusuri)",
+            meaningPt: "Pomada"
+      }
+]
+  },
+  {
+    id: 'k_n2_add6_46',
+    kanji: '殿',
+    onyomi: ["デン (den)","テン (ten)"],
+    kunyomi: ["との (tono)","どの (dono)"],
+    meaningPt: 'Palácio, Senhor',
+    strokes: 13,
+    radical: '殳 (arma)',
+    jlpt: 'N2',
+    examples: [
+      {
+            word: "宮殿",
+            reading: "きゅうでん (kyuuden)",
+            meaningPt: "Palácio"
+      },
+      {
+            word: "殿様",
+            reading: "とのさま (tonosama)",
+            meaningPt: "Lorde / Senhor feudal"
+      },
+      {
+            word: "神殿",
+            reading: "しんでん (shinden)",
+            meaningPt: "Templo / Santuário"
+      }
+]
+  },
+  {
+    id: 'k_n2_add6_47',
+    kanji: '伝',
+    onyomi: ["デン (den)"],
+    kunyomi: ["つた.わる (tsuta.waru)","つた.える (tsuta.eru)","つた.う (tsuta.u)"],
+    meaningPt: 'Transmitir, Reportar, Tradição',
+    strokes: 6,
+    radical: '人 (pessoa)',
+    jlpt: 'N2',
+    examples: [
+      {
+            word: "伝える",
+            reading: "つたえる (tsutaeru)",
+            meaningPt: "Transmitir / Informar"
+      },
+      {
+            word: "伝言",
+            reading: "でんごん (dengon)",
+            meaningPt: "Mensagem / Recado"
+      },
+      {
+            word: "伝統",
+            reading: "でんとう (dentou)",
+            meaningPt: "Tradição"
+      }
+]
+  },
+  {
+    id: 'k_n2_add6_48',
+    kanji: '点',
+    onyomi: ["テン (ten)"],
+    kunyomi: ["つ.ける (tsu.keru)","つ.く (tsu.ku)"],
+    meaningPt: 'Ponto, Nota, Acender',
+    strokes: 9,
+    radical: '火 (fogo)',
+    jlpt: 'N2',
+    examples: [
+      {
+            word: "点",
+            reading: "てん (ten)",
+            meaningPt: "Ponto / Nota (prova)"
+      },
+      {
+            word: "交差点",
+            reading: "こうさてん (kousaten)",
+            meaningPt: "Cruzamento"
+      },
+      {
+            word: "点数",
+            reading: "てんすう (tensuu)",
+            meaningPt: "Pontuação"
+      }
+]
+  },
+  {
+    id: 'k_n2_add6_50',
+    kanji: '鉄',
+    onyomi: ["テツ (tetsu)"],
+    kunyomi: ["くろがね (kurogane)"],
+    meaningPt: 'Ferro',
+    strokes: 13,
+    radical: '金 (ouro/metal)',
+    jlpt: 'N2',
+    examples: [
+      {
+            word: "鉄道",
+            reading: "てつどう (tetsudou)",
+            meaningPt: "Ferrovia"
+      },
+      {
+            word: "地下鉄",
+            reading: "ちかてつ (chikatetsu)",
+            meaningPt: "Metrô"
+      },
+      {
+            word: "鉄砲",
+            reading: "てっぽう (teppou)",
+            meaningPt: "Arma de fogo"
+      }
+]
+  },
+  {
+    id: 'k_n2_add6_51',
+    kanji: '適',
+    onyomi: ["テキ (teki)"],
+    kunyomi: [],
+    meaningPt: 'Adequado, Apropriado',
+    strokes: 14,
+    radical: '辵 (caminhar)',
+    jlpt: 'N2',
+    examples: [
+      {
+            word: "適切",
+            reading: "てきせつ (tekisetsu)",
+            meaningPt: "Apropriado / Adequado"
+      },
+      {
+            word: "快適",
+            reading: "かいてき (kaiteki)",
+            meaningPt: "Confortável / Agradável"
+      },
+      {
+            word: "適当",
+            reading: "てきとう (tekitou)",
+            meaningPt: "Apropriado (ou feito de qualquer jeito)"
+      }
+]
+  },
+  {
+    id: 'k_n2_add6_52',
+    kanji: '的',
+    onyomi: ["テキ (teki)"],
+    kunyomi: ["まと (mato)"],
+    meaningPt: 'Alvo, Propósito, (Sufixo adjetival)',
+    strokes: 8,
+    radical: '白 (branco)',
+    jlpt: 'N2',
+    examples: [
+      {
+            word: "目的",
+            reading: "もくてき (mokuteki)",
+            meaningPt: "Propósito / Objetivo"
+      },
+      {
+            word: "的",
+            reading: "まと (mato)",
+            meaningPt: "Alvo"
+      },
+      {
+            word: "個人的",
+            reading: "こじんてき (kojinteki)",
+            meaningPt: "Pessoal (adj)"
+      }
+]
+  },
+  {
+    id: 'k_n2_add6_53',
+    kanji: '滴',
+    onyomi: ["テキ (teki)"],
+    kunyomi: ["しずく (shizuku)","したた.る (shitata.ru)"],
+    meaningPt: 'Gota, Gotejar',
+    strokes: 14,
+    radical: '水 (água)',
+    jlpt: 'N2',
+    examples: [
+      {
+            word: "水滴",
+            reading: "すいてき (suiteki)",
+            meaningPt: "Gota d'água"
+      },
+      {
+            word: "滴",
+            reading: "しずく (shizuku)",
+            meaningPt: "Gota"
+      },
+      {
+            word: "点滴",
+            reading: "てんてき (tenteki)",
+            meaningPt: "Soro (médico) / Gotejamento"
+      }
+]
+  },
+  {
+    id: 'k_n2_add6_54',
+    kanji: '泥',
+    onyomi: ["デイ (dei)"],
+    kunyomi: ["どろ (doro)"],
+    meaningPt: 'Lama',
+    strokes: 8,
+    radical: '水 (água)',
+    jlpt: 'N2',
+    examples: [
+      {
+            word: "泥",
+            reading: "どろ (doro)",
+            meaningPt: "Lama"
+      },
+      {
+            word: "泥棒",
+            reading: "どろぼう (dorobou)",
+            meaningPt: "Ladrão"
+      },
+      {
+            word: "泥沼",
+            reading: "どろぬま (doronuma)",
+            meaningPt: "Pântano (também fig. situação difícil)"
+      }
+]
+  }
 ];
