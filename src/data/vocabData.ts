@@ -1,3 +1,5 @@
+import { VOCAB_ADJ_NA } from './vocabAdjetivosNa';
+import { VOCAB_ADJ_I } from './vocabAdjetivosI';
 import { VocabItem } from '../types';
 import { VOCAB_N5 } from './vocabN5';
 import { VOCAB_N4 } from './vocabN4';
@@ -13,5 +15,7 @@ export const VOCAB_DATA: VocabItem[] = [
   ...VOCAB_N5,
   ...VOCAB_N4,
   ...VOCAB_N3,
-  ...VOCAB_N2_N1
+  ...VOCAB_N2_N1,
+  ...VOCAB_ADJ_I,
+  ...VOCAB_ADJ_NA
 ];
