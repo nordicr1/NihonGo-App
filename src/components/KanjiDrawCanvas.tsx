@@ -169,7 +169,7 @@ export const KanjiDrawCanvas: React.FC<KanjiDrawCanvasProps> = ({ kanji, onSucce
 
         {/* Kanji Watermark Guide */}
         {showGuide && (
-          <div className="absolute inset-0 flex items-center justify-center pointer-events-none text-stone-800 dark:text-stone-200 font-serif font-black select-none opacity-40" style={{ fontSize: kanji.length > 1 ? '120px' : '160px' }}>
+          <div className="absolute inset-0 flex items-center justify-center pointer-events-none text-stone-800 font-serif font-black select-none opacity-40" style={{ fontSize: kanji.length > 1 ? '120px' : '160px' }}>
             {kanji}
           </div>
         )}
@@ -213,7 +213,7 @@ export const KanjiDrawCanvas: React.FC<KanjiDrawCanvasProps> = ({ kanji, onSucce
         <button
           type="button"
           onClick={evaluateDrawing}
-          className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-emerald-600 text-white text-xs font-bold hover:bg-emerald-50 dark:bg-emerald-900/400 transition cursor-pointer"
+          className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-emerald-600 text-white text-xs font-bold hover:bg-emerald-500 transition cursor-pointer"
         >
           <Check size={14} />
           <span>Verificar Precisão</span>

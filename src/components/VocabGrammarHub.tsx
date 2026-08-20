@@ -8,14 +8,14 @@ import { playJapaneseAudio } from '../utils/audio';
 
 const GrammarDetailContent = ({ selectedGrammar }: { selectedGrammar: GrammarItem }) => (
   <>
-    <div className="border-b border-stone-100 dark:border-stone-800 pb-4">
+    <div className="border-b border-stone-100 pb-4">
       <div className="flex items-center gap-2">
-        <span className="text-xs px-2 py-0.5 rounded bg-indigo-100 text-indigo-800 dark:text-indigo-300 font-bold">
+        <span className="text-xs px-2 py-0.5 rounded bg-indigo-100 text-indigo-800 font-bold">
           JLPT {selectedGrammar.jlpt}
         </span>
         <span className="text-xs text-stone-500">{selectedGrammar.category}</span>
       </div>
-      <h2 className="text-xl font-extrabold text-stone-900 dark:text-stone-100 mt-2">
+      <h2 className="text-xl font-extrabold text-stone-900 mt-2">
         {selectedGrammar.pattern}
       </h2>
       <p className="text-sm font-semibold text-indigo-600">
@@ -25,11 +25,11 @@ const GrammarDetailContent = ({ selectedGrammar }: { selectedGrammar: GrammarIte
 
     <div className="space-y-4 text-sm mt-4">
       {/* Formula */}
-      <div className="bg-indigo-50 dark:bg-indigo-900/40/70 p-3.5 rounded-xl border border-indigo-100">
-        <span className="text-xs font-bold text-indigo-900 dark:text-indigo-200 block uppercase mb-1">
+      <div className="bg-indigo-50/70 p-3.5 rounded-xl border border-indigo-100">
+        <span className="text-xs font-bold text-indigo-900 block uppercase mb-1">
           Estrutura / Fórmula de Formação
         </span>
-        <p className="text-xs font-mono font-bold text-indigo-950 dark:text-indigo-100">
+        <p className="text-xs font-mono font-bold text-indigo-950">
           {selectedGrammar.formationFormula}
         </p>
       </div>
@@ -39,14 +39,14 @@ const GrammarDetailContent = ({ selectedGrammar }: { selectedGrammar: GrammarIte
         <span className="text-xs text-stone-400 font-bold uppercase block">
           Explicação Didática
         </span>
-        <p className="text-xs text-stone-700 dark:text-stone-300 leading-relaxed">
+        <p className="text-xs text-stone-700 leading-relaxed">
           {selectedGrammar.explanationPt}
         </p>
       </div>
 
       {/* Key Rules */}
       {selectedGrammar.keyRulePt && (
-        <div className="bg-amber-50 dark:bg-amber-900/40 p-3.5 rounded-xl border border-amber-200/60 text-amber-900 text-xs leading-relaxed whitespace-pre-line font-medium">
+        <div className="bg-amber-50 p-3.5 rounded-xl border border-amber-200/60 text-amber-900 text-xs leading-relaxed whitespace-pre-line font-medium">
           <strong>Dicas & Regras de Ouro:</strong>
           <div className="mt-1">{selectedGrammar.keyRulePt}</div>
         </div>
@@ -61,11 +61,11 @@ const GrammarDetailContent = ({ selectedGrammar }: { selectedGrammar: GrammarIte
           {selectedGrammar.examples.map((ex, idx) => (
             <div
               key={idx}
-              className="p-3 rounded-xl bg-stone-50 dark:bg-stone-800/50 border border-stone-100 dark:border-stone-800 space-y-1"
+              className="p-3 rounded-xl bg-stone-50 border border-stone-100 space-y-1"
             >
               <div className="flex items-start justify-between gap-2">
                 <div>
-                  <span className="font-bold text-stone-900 dark:text-stone-100 text-sm block">
+                  <span className="font-bold text-stone-900 text-sm block">
                     {ex.jp}
                   </span>
                   <span className="text-xs text-stone-500 font-mono">
@@ -140,7 +140,7 @@ export const VocabGrammarHub: React.FC<VocabGrammarHubProps> = ({
           文法
         </div>
         <div className="max-w-3xl space-y-3 relative z-10">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-50 dark:bg-indigo-900/400/20 border border-indigo-500/40 text-indigo-300 text-xs font-semibold">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-500/20 border border-indigo-500/40 text-indigo-300 text-xs font-semibold">
             <Sparkles size={14} />
             <span>Gramática & Vocabulário JLPT ({selectedJlpt})</span>
           </div>
@@ -164,7 +164,7 @@ export const VocabGrammarHub: React.FC<VocabGrammarHubProps> = ({
                 }}
                 className={`px-3 py-1.5 rounded-xl text-xs font-bold transition cursor-pointer ${
                   selectedJlpt === lvl
-                    ? 'bg-indigo-50 dark:bg-indigo-900/400 text-white shadow-md font-extrabold scale-105'
+                    ? 'bg-indigo-500 text-white shadow-md font-extrabold scale-105'
                     : 'bg-stone-800/80 text-stone-300 hover:bg-stone-700 hover:text-white'
                 }`}
               >
@@ -176,15 +176,15 @@ export const VocabGrammarHub: React.FC<VocabGrammarHubProps> = ({
       </div>
 
       {/* Main Switcher: Gramática vs Vocabulário */}
-      <div className="flex items-center justify-between flex-wrap gap-4 bg-white dark:bg-stone-900 p-4 rounded-2xl border border-stone-200 dark:border-stone-700/50 shadow-sm">
-        <div className="flex items-center bg-stone-100 dark:bg-stone-800 p-1 rounded-xl">
+      <div className="flex items-center justify-between flex-wrap gap-4 bg-white p-4 rounded-2xl border border-stone-200 shadow-sm">
+        <div className="flex items-center bg-stone-100 p-1 rounded-xl">
           <button
             type="button"
             onClick={() => setSubTab('grammar')}
             className={`flex items-center gap-2 px-4 py-2 rounded-lg text-xs sm:text-sm font-bold transition cursor-pointer ${
               subTab === 'grammar'
                 ? 'bg-indigo-600 text-white shadow-sm'
-                : 'text-stone-600 dark:text-stone-400 hover:text-stone-900 dark:text-stone-100'
+                : 'text-stone-600 hover:text-stone-900'
             }`}
           >
             <BookOpen size={16} />
@@ -196,7 +196,7 @@ export const VocabGrammarHub: React.FC<VocabGrammarHubProps> = ({
             className={`flex items-center gap-2 px-4 py-2 rounded-lg text-xs sm:text-sm font-bold transition cursor-pointer ${
               subTab === 'vocab'
                 ? 'bg-indigo-600 text-white shadow-sm'
-                : 'text-stone-600 dark:text-stone-400 hover:text-stone-900 dark:text-stone-100'
+                : 'text-stone-600 hover:text-stone-900'
             }`}
           >
             <Layers size={16} />
@@ -216,7 +216,7 @@ export const VocabGrammarHub: React.FC<VocabGrammarHubProps> = ({
             }
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
-            className="w-full pl-9 pr-3 py-2 text-xs sm:text-sm bg-stone-50 dark:bg-stone-800/50 border border-stone-200 dark:border-stone-700/50 rounded-xl focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:bg-white dark:bg-stone-900 transition"
+            className="w-full pl-9 pr-3 py-2 text-xs sm:text-sm bg-stone-50 border border-stone-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:bg-white transition"
           />
         </div>
       </div>
@@ -234,24 +234,24 @@ export const VocabGrammarHub: React.FC<VocabGrammarHubProps> = ({
                   onClick={() => handleSelectGrammar(item)}
                   className={`p-5 rounded-2xl border transition-all cursor-pointer group ${
                     isSelected
-                      ? 'bg-indigo-50 dark:bg-indigo-900/40/80 border-indigo-500 ring-2 ring-indigo-400 shadow-md'
-                      : 'bg-white dark:bg-stone-900 border-stone-200 dark:border-stone-700/50 hover:border-indigo-300 hover:shadow-md'
+                      ? 'bg-indigo-50/80 border-indigo-500 ring-2 ring-indigo-400 shadow-md'
+                      : 'bg-white border-stone-200 hover:border-indigo-300 hover:shadow-md'
                   }`}
                 >
                   <div className="flex items-start justify-between">
                     <div>
                       <div className="flex items-center gap-2">
-                        <span className="text-xs px-2 py-0.5 rounded bg-indigo-100 text-indigo-800 dark:text-indigo-300 font-bold">
+                        <span className="text-xs px-2 py-0.5 rounded bg-indigo-100 text-indigo-800 font-bold">
                           {item.jlpt}
                         </span>
                         <span className="text-xs text-stone-500 font-semibold">
                           {item.category}
                         </span>
                       </div>
-                      <h3 className="text-lg font-bold text-stone-900 dark:text-stone-100 mt-1.5 group-hover:text-indigo-600 transition">
+                      <h3 className="text-lg font-bold text-stone-900 mt-1.5 group-hover:text-indigo-600 transition">
                         {item.pattern}
                       </h3>
-                      <p className="text-sm font-semibold text-stone-700 dark:text-stone-300 mt-0.5">
+                      <p className="text-sm font-semibold text-stone-700 mt-0.5">
                         {item.titlePt}
                       </p>
                     </div>
@@ -263,17 +263,17 @@ export const VocabGrammarHub: React.FC<VocabGrammarHubProps> = ({
                     />
                   </div>
 
-                  <p className="text-xs text-stone-600 dark:text-stone-400 mt-2 line-clamp-2 leading-relaxed">
+                  <p className="text-xs text-stone-600 mt-2 line-clamp-2 leading-relaxed">
                     {item.explanationPt}
                   </p>
 
-                  <div className="mt-3 p-2.5 rounded-xl bg-stone-50 dark:bg-stone-800/50 border border-stone-100 dark:border-stone-800 text-xs font-mono text-stone-700 dark:text-stone-300">
+                  <div className="mt-3 p-2.5 rounded-xl bg-stone-50 border border-stone-100 text-xs font-mono text-stone-700">
                     <span className="font-bold text-indigo-700">Fórmula: </span>
                     {item.formationFormula}
                   </div>
 
                   {isSelected && (
-                    <div className="mt-4 pt-4 border-t border-stone-200 dark:border-stone-700/50 lg:hidden block cursor-default animate-in fade-in zoom-in-95 duration-200" onClick={(e) => e.stopPropagation()}>
+                    <div className="mt-4 pt-4 border-t border-stone-200 lg:hidden block cursor-default animate-in fade-in zoom-in-95 duration-200" onClick={(e) => e.stopPropagation()}>
                       <GrammarDetailContent selectedGrammar={item} />
                     </div>
                   )}
@@ -282,7 +282,7 @@ export const VocabGrammarHub: React.FC<VocabGrammarHubProps> = ({
             })}
 
             {filteredGrammar.length === 0 && (
-              <div className="p-12 text-center text-stone-500 bg-white dark:bg-stone-900 rounded-2xl border border-stone-200 dark:border-stone-700/50">
+              <div className="p-12 text-center text-stone-500 bg-white rounded-2xl border border-stone-200">
                 Nenhum ponto gramatical encontrado para "{searchQuery}" no nível {selectedJlpt}.
               </div>
             )}
@@ -290,15 +290,15 @@ export const VocabGrammarHub: React.FC<VocabGrammarHubProps> = ({
 
           {/* Grammar Detail & Example Sentences */}
           <div className="lg:col-span-1 hidden lg:block">
-            <div className="bg-white dark:bg-stone-900 rounded-2xl p-6 border border-stone-200 dark:border-stone-700/50 shadow-sm sticky top-28 space-y-5">
+            <div className="bg-white rounded-2xl p-6 border border-stone-200 shadow-sm sticky top-28 space-y-5">
               {selectedGrammar ? (
                 <GrammarDetailContent selectedGrammar={selectedGrammar} />
               ) : (
                 <div className="text-center py-16 space-y-3">
-                  <div className="w-12 h-12 rounded-full bg-indigo-50 dark:bg-indigo-900/40 text-indigo-600 flex items-center justify-center mx-auto text-xl font-bold">
+                  <div className="w-12 h-12 rounded-full bg-indigo-50 text-indigo-600 flex items-center justify-center mx-auto text-xl font-bold">
                     文
                   </div>
-                  <h4 className="font-bold text-stone-800 dark:text-stone-200 text-sm">Selecione uma Regra</h4>
+                  <h4 className="font-bold text-stone-800 text-sm">Selecione uma Regra</h4>
                   <p className="text-xs text-stone-500 leading-relaxed">
                     Clique em um ponto gramatical ao lado para ver o detalhamento completo, fórmula e frases práticas com áudio.
                   </p>
@@ -332,7 +332,7 @@ export const VocabGrammarHub: React.FC<VocabGrammarHubProps> = ({
                 className={`px-3 py-1.5 rounded-xl text-xs font-bold whitespace-nowrap transition cursor-pointer ${
                   vocabCategoryFilter === cat.id
                     ? 'bg-stone-900 text-white shadow-sm'
-                    : 'bg-white dark:bg-stone-900 text-stone-600 dark:text-stone-400 border border-stone-200 dark:border-stone-700/50 hover:bg-stone-100 dark:bg-stone-800'
+                    : 'bg-white text-stone-600 border border-stone-200 hover:bg-stone-100'
                 }`}
               >
                 {cat.label}
@@ -345,15 +345,15 @@ export const VocabGrammarHub: React.FC<VocabGrammarHubProps> = ({
             {filteredVocab.map((v) => (
               <div
                 key={v.id}
-                className="bg-white dark:bg-stone-900 p-5 rounded-2xl border border-stone-200 dark:border-stone-700/50 shadow-sm hover:border-indigo-300 hover:shadow-md transition flex flex-col justify-between space-y-4"
+                className="bg-white p-5 rounded-2xl border border-stone-200 shadow-sm hover:border-indigo-300 hover:shadow-md transition flex flex-col justify-between space-y-4"
               >
                 <div>
                   <div className="flex items-start justify-between">
                     <div>
-                      <span className="text-[10px] px-2 py-0.5 rounded bg-stone-100 dark:bg-stone-800 text-stone-600 dark:text-stone-400 font-bold border border-stone-200 dark:border-stone-700/50">
+                      <span className="text-[10px] px-2 py-0.5 rounded bg-stone-100 text-stone-600 font-bold border border-stone-200">
                         {v.categoryLabelPt}
                       </span>
-                      <h3 className="text-2xl font-bold text-stone-900 dark:text-stone-100 mt-2">{v.word}</h3>
+                      <h3 className="text-2xl font-bold text-stone-900 mt-2">{v.word}</h3>
                       <div className="flex items-center gap-2 text-xs text-stone-500 font-mono mt-0.5">
                         <span>{v.reading}</span>
                         <span>•</span>
@@ -363,18 +363,18 @@ export const VocabGrammarHub: React.FC<VocabGrammarHubProps> = ({
                     <AudioButton text={v.word} size="md" />
                   </div>
 
-                  <div className="mt-3 p-2.5 rounded-xl bg-indigo-50 dark:bg-indigo-900/40/70 border border-indigo-100">
-                    <span className="text-[10px] font-bold text-indigo-800 dark:text-indigo-300 uppercase block">
+                  <div className="mt-3 p-2.5 rounded-xl bg-indigo-50/70 border border-indigo-100">
+                    <span className="text-[10px] font-bold text-indigo-800 uppercase block">
                       Significado em Português
                     </span>
-                    <span className="text-sm font-bold text-indigo-950 dark:text-indigo-100">{v.meaningPt}</span>
+                    <span className="text-sm font-bold text-indigo-950">{v.meaningPt}</span>
                   </div>
                 </div>
 
                 {/* Example sentence */}
-                <div className="p-3 rounded-xl bg-stone-50 dark:bg-stone-800/50 border border-stone-100 dark:border-stone-800 space-y-1 text-xs">
+                <div className="p-3 rounded-xl bg-stone-50 border border-stone-100 space-y-1 text-xs">
                   <div className="flex items-center justify-between">
-                    <span className="font-bold text-stone-800 dark:text-stone-200">{v.exampleSentence.jp}</span>
+                    <span className="font-bold text-stone-800">{v.exampleSentence.jp}</span>
                     <AudioButton text={v.exampleSentence.jp} size="sm" />
                   </div>
                   <p className="text-stone-500 font-mono">{v.exampleSentence.reading}</p>
@@ -385,7 +385,7 @@ export const VocabGrammarHub: React.FC<VocabGrammarHubProps> = ({
           </div>
 
           {filteredVocab.length === 0 && (
-            <div className="p-12 text-center text-stone-500 bg-white dark:bg-stone-900 rounded-2xl border border-stone-200 dark:border-stone-700/50">
+            <div className="p-12 text-center text-stone-500 bg-white rounded-2xl border border-stone-200">
               Nenhuma palavra encontrada para o filtro atual.
             </div>
           )}

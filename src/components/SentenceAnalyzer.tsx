@@ -102,7 +102,7 @@ export const SentenceAnalyzer: React.FC<{ onGainXp: (amt: number, reason: string
       </div>
 
       {/* Input Box & Presets */}
-      <div className="bg-white dark:bg-stone-900 rounded-2xl p-6 border border-stone-200 dark:border-stone-700/50 shadow-sm space-y-4">
+      <div className="bg-white rounded-2xl p-6 border border-stone-200 shadow-sm space-y-4">
         <div className="space-y-2">
           <label className="text-xs font-bold uppercase tracking-wider text-stone-500">
             Digite ou cole uma frase em Japonês:
@@ -113,7 +113,7 @@ export const SentenceAnalyzer: React.FC<{ onGainXp: (amt: number, reason: string
               value={inputText}
               onChange={(e) => setInputText(e.target.value)}
               placeholder="Ex: 私は日本語を勉強しています。"
-              className="flex-1 px-4 py-3 text-base bg-stone-50 dark:bg-stone-800/50 border border-stone-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-purple-500 focus:bg-white dark:bg-stone-900 transition"
+              className="flex-1 px-4 py-3 text-base bg-stone-50 border border-stone-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-purple-500 focus:bg-white transition"
             />
             <button
               type="button"
@@ -141,7 +141,7 @@ export const SentenceAnalyzer: React.FC<{ onGainXp: (amt: number, reason: string
                   setInputText(p);
                   handleAnalyze(p);
                 }}
-                className="px-3 py-1.5 bg-stone-100 dark:bg-stone-800 hover:bg-purple-50 hover:text-purple-700 hover:border-purple-200 border border-stone-200 dark:border-stone-700/50 rounded-lg text-xs font-medium text-stone-700 dark:text-stone-300 transition cursor-pointer"
+                className="px-3 py-1.5 bg-stone-100 hover:bg-purple-50 hover:text-purple-700 hover:border-purple-200 border border-stone-200 rounded-lg text-xs font-medium text-stone-700 transition cursor-pointer"
               >
                 {p}
               </button>
@@ -152,7 +152,7 @@ export const SentenceAnalyzer: React.FC<{ onGainXp: (amt: number, reason: string
 
       {/* Analysis Output Result */}
       {result && (
-        <div className="bg-white dark:bg-stone-900 rounded-2xl p-6 sm:p-8 border border-stone-200 dark:border-stone-700/50 shadow-sm space-y-6 animate-fadeIn">
+        <div className="bg-white rounded-2xl p-6 sm:p-8 border border-stone-200 shadow-sm space-y-6 animate-fadeIn">
           {/* Main Original & Translation */}
           <div className="p-5 rounded-2xl bg-gradient-to-br from-purple-50 to-stone-50 border border-purple-100 space-y-3">
             <div className="flex items-start justify-between">
@@ -160,7 +160,7 @@ export const SentenceAnalyzer: React.FC<{ onGainXp: (amt: number, reason: string
                 <span className="text-xs px-2 py-0.5 rounded bg-purple-200 text-purple-900 font-bold">
                   {result.jlptLevel || 'JLPT N5'}
                 </span>
-                <h2 className="text-2xl sm:text-3xl font-black text-stone-900 dark:text-stone-100 mt-2">
+                <h2 className="text-2xl sm:text-3xl font-black text-stone-900 mt-2">
                   {result.original}
                 </h2>
                 {result.romaji && (
@@ -174,7 +174,7 @@ export const SentenceAnalyzer: React.FC<{ onGainXp: (amt: number, reason: string
               <span className="text-[11px] font-bold uppercase text-purple-800 tracking-wider">
                 Tradução em Português (PT-BR)
               </span>
-              <p className="text-lg font-bold text-stone-800 dark:text-stone-200">
+              <p className="text-lg font-bold text-stone-800">
                 "{result.translation}"
               </p>
               {result.literalTranslation && (
@@ -189,7 +189,7 @@ export const SentenceAnalyzer: React.FC<{ onGainXp: (amt: number, reason: string
           <div className="space-y-3">
             <div className="flex items-center gap-2">
               <Layers size={18} className="text-purple-600" />
-              <h3 className="font-extrabold text-stone-900 dark:text-stone-100 text-base">
+              <h3 className="font-extrabold text-stone-900 text-base">
                 Quebra de Palavras & Partículas (形態素解析)
               </h3>
             </div>
@@ -198,11 +198,11 @@ export const SentenceAnalyzer: React.FC<{ onGainXp: (amt: number, reason: string
               {result.breakdown?.map((token, idx) => (
                 <div
                   key={idx}
-                  className="p-4 rounded-xl bg-stone-50 dark:bg-stone-800/50 border border-stone-200 dark:border-stone-700/50 hover:border-purple-300 transition flex flex-col justify-between space-y-2"
+                  className="p-4 rounded-xl bg-stone-50 border border-stone-200 hover:border-purple-300 transition flex flex-col justify-between space-y-2"
                 >
                   <div className="flex items-start justify-between">
                     <div>
-                      <span className="text-xl font-bold text-stone-900 dark:text-stone-100 block">
+                      <span className="text-xl font-bold text-stone-900 block">
                         {token.token}
                       </span>
                       {token.reading && token.reading !== token.token && (
@@ -218,7 +218,7 @@ export const SentenceAnalyzer: React.FC<{ onGainXp: (amt: number, reason: string
                     <span className="text-[10px] font-bold px-1.5 py-0.5 rounded bg-purple-100 text-purple-800">
                       {token.type}
                     </span>
-                    <p className="text-xs font-semibold text-stone-700 dark:text-stone-300 mt-1">
+                    <p className="text-xs font-semibold text-stone-700 mt-1">
                       {token.meaning}
                     </p>
                   </div>
@@ -230,19 +230,19 @@ export const SentenceAnalyzer: React.FC<{ onGainXp: (amt: number, reason: string
           {/* Grammar & Cultural Notes */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {result.grammarNotes && (
-              <div className="p-4 rounded-xl bg-stone-50 dark:bg-stone-800/50 border border-stone-200 dark:border-stone-700/50 space-y-1.5">
-                <span className="text-xs font-bold text-stone-800 dark:text-stone-200 uppercase flex items-center gap-1.5">
+              <div className="p-4 rounded-xl bg-stone-50 border border-stone-200 space-y-1.5">
+                <span className="text-xs font-bold text-stone-800 uppercase flex items-center gap-1.5">
                   <BookOpen size={14} className="text-purple-600" />
                   <span>Explicação da Estrutura Gramatical</span>
                 </span>
-                <p className="text-xs text-stone-600 dark:text-stone-400 leading-relaxed">
+                <p className="text-xs text-stone-600 leading-relaxed">
                   {result.grammarNotes}
                 </p>
               </div>
             )}
 
             {result.culturalNote && (
-              <div className="p-4 rounded-xl bg-amber-50 dark:bg-amber-900/40 border border-amber-200/80 space-y-1.5">
+              <div className="p-4 rounded-xl bg-amber-50 border border-amber-200/80 space-y-1.5">
                 <span className="text-xs font-bold text-amber-900 uppercase flex items-center gap-1.5">
                   <Sparkles size={14} className="text-amber-600" />
                   <span>Nuance Cultural & Nível de Polidez</span>

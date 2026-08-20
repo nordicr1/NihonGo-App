@@ -102,7 +102,7 @@ export const SenseiChat: React.FC<SenseiChatProps> = ({ isOpen, onClose, onGainX
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm animate-fadeIn">
-      <div className="bg-white dark:bg-stone-900 rounded-3xl shadow-2xl border border-stone-200 dark:border-stone-700/50 w-full max-w-2xl h-[85vh] flex flex-col overflow-hidden">
+      <div className="bg-white rounded-3xl shadow-2xl border border-stone-200 w-full max-w-2xl h-[85vh] flex flex-col overflow-hidden">
         {/* Header */}
         <div className="p-4 sm:p-5 bg-gradient-to-r from-stone-900 via-stone-800 to-rose-950 text-white flex items-center justify-between border-b border-rose-900/40">
           <div className="flex items-center gap-3">
@@ -128,7 +128,7 @@ export const SenseiChat: React.FC<SenseiChatProps> = ({ isOpen, onClose, onGainX
         </div>
 
         {/* Messages List */}
-        <div className="flex-1 overflow-y-auto p-4 sm:p-6 space-y-4 bg-stone-50 dark:bg-stone-800/50/50">
+        <div className="flex-1 overflow-y-auto p-4 sm:p-6 space-y-4 bg-stone-50/50">
           {messages.map((m) => {
             const isSensei = m.sender === 'sensei';
             return (
@@ -144,7 +144,7 @@ export const SenseiChat: React.FC<SenseiChatProps> = ({ isOpen, onClose, onGainX
                 <div
                   className={`max-w-[85%] p-4 rounded-2xl text-sm leading-relaxed shadow-sm space-y-2 ${
                     isSensei
-                      ? 'bg-white dark:bg-stone-900 text-stone-800 dark:text-stone-200 border border-stone-200 dark:border-stone-700/50 rounded-tl-none'
+                      ? 'bg-white text-stone-800 border border-stone-200 rounded-tl-none'
                       : 'bg-stone-900 text-white rounded-tr-none'
                   }`}
                 >
@@ -178,10 +178,10 @@ export const SenseiChat: React.FC<SenseiChatProps> = ({ isOpen, onClose, onGainX
               <div className="w-8 h-8 rounded-xl bg-rose-600 text-white flex items-center justify-center font-bold text-xs shrink-0 mt-1">
                 先
               </div>
-              <div className="bg-white dark:bg-stone-900 p-4 rounded-2xl rounded-tl-none border border-stone-200 dark:border-stone-700/50 text-stone-500 text-xs flex items-center gap-2">
-                <div className="w-2 h-2 rounded-full bg-rose-50 dark:bg-rose-900/400 animate-bounce" />
-                <div className="w-2 h-2 rounded-full bg-rose-50 dark:bg-rose-900/400 animate-bounce [animation-delay:0.2s]" />
-                <div className="w-2 h-2 rounded-full bg-rose-50 dark:bg-rose-900/400 animate-bounce [animation-delay:0.4s]" />
+              <div className="bg-white p-4 rounded-2xl rounded-tl-none border border-stone-200 text-stone-500 text-xs flex items-center gap-2">
+                <div className="w-2 h-2 rounded-full bg-rose-500 animate-bounce" />
+                <div className="w-2 h-2 rounded-full bg-rose-500 animate-bounce [animation-delay:0.2s]" />
+                <div className="w-2 h-2 rounded-full bg-rose-500 animate-bounce [animation-delay:0.4s]" />
                 <span className="ml-1 font-medium">Sensei Kenji está formulando a explicação...</span>
               </div>
             </div>
@@ -191,7 +191,7 @@ export const SenseiChat: React.FC<SenseiChatProps> = ({ isOpen, onClose, onGainX
         </div>
 
         {/* Quick Prompts Suggestions */}
-        <div className="px-4 py-2 bg-white dark:bg-stone-900 border-t border-stone-100 dark:border-stone-800 flex items-center gap-1.5 overflow-x-auto scrollbar-none">
+        <div className="px-4 py-2 bg-white border-t border-stone-100 flex items-center gap-1.5 overflow-x-auto scrollbar-none">
           <span className="text-[11px] text-stone-400 font-bold uppercase shrink-0">
             Sugestões:
           </span>
@@ -200,7 +200,7 @@ export const SenseiChat: React.FC<SenseiChatProps> = ({ isOpen, onClose, onGainX
               key={idx}
               type="button"
               onClick={() => handleSend(p)}
-              className="px-2.5 py-1 bg-stone-100 dark:bg-stone-800 hover:bg-rose-50 dark:bg-rose-900/40 hover:text-rose-700 text-stone-700 dark:text-stone-300 rounded-lg text-xs whitespace-nowrap transition cursor-pointer"
+              className="px-2.5 py-1 bg-stone-100 hover:bg-rose-50 hover:text-rose-700 text-stone-700 rounded-lg text-xs whitespace-nowrap transition cursor-pointer"
             >
               {p}
             </button>
@@ -213,19 +213,19 @@ export const SenseiChat: React.FC<SenseiChatProps> = ({ isOpen, onClose, onGainX
             e.preventDefault();
             handleSend();
           }}
-          className="p-3 sm:p-4 bg-white dark:bg-stone-900 border-t border-stone-200 dark:border-stone-700/50 flex gap-2"
+          className="p-3 sm:p-4 bg-white border-t border-stone-200 flex gap-2"
         >
           <input
             type="text"
             value={input}
             onChange={(e) => setInput(e.target.value)}
             placeholder="Pergunte ao Sensei (Ex: Como dizer 'obrigado' formalmente?)..."
-            className="flex-1 px-4 py-2.5 text-sm bg-stone-50 dark:bg-stone-800/50 border border-stone-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-rose-500 focus:bg-white dark:bg-stone-900 transition"
+            className="flex-1 px-4 py-2.5 text-sm bg-stone-50 border border-stone-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-rose-500 focus:bg-white transition"
           />
           <button
             type="submit"
             disabled={!input.trim() || isLoading}
-            className="px-5 py-2.5 bg-rose-600 text-white font-bold text-sm rounded-xl hover:bg-rose-50 dark:bg-rose-900/400 transition disabled:opacity-50 flex items-center gap-1.5 cursor-pointer shadow"
+            className="px-5 py-2.5 bg-rose-600 text-white font-bold text-sm rounded-xl hover:bg-rose-500 transition disabled:opacity-50 flex items-center gap-1.5 cursor-pointer shadow"
           >
             <Send size={16} />
             <span className="hidden sm:inline">Enviar</span>

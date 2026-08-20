@@ -47,7 +47,7 @@ export const AudioButton: React.FC<AudioButtonProps> = ({
       className={`inline-flex items-center justify-center gap-1.5 rounded-full transition-all duration-200 cursor-pointer ${
         isPlaying
           ? 'bg-rose-100 text-rose-700 ring-2 ring-rose-300 scale-105'
-          : 'bg-stone-100 dark:bg-stone-800 text-stone-700 dark:text-stone-300 hover:bg-rose-50 dark:bg-rose-900/40 hover:text-rose-600 hover:scale-105 active:scale-95'
+          : 'bg-stone-100 text-stone-700 hover:bg-rose-50 hover:text-rose-600 hover:scale-105 active:scale-95'
       } ${sizeClasses[size]} ${className}`}
     >
       <Volume2 size={iconSizes[size]} className={isPlaying ? 'animate-pulse' : ''} />
