@@ -4,8 +4,8 @@ import { getLevelTitle } from '../utils/storage';
 import { Sparkles, Flame, Trophy, Bot, BookOpen, Compass, Gamepad2, Layers, PenTool } from 'lucide-react';
 
 interface HeaderProps {
-  currentTab: 'hub' | 'kana' | 'kanji' | 'grammar' | 'verbs' | 'games' | 'analyzer' | 'sensei' | 'drawing';
-  onTabChange: (tab: 'hub' | 'kana' | 'kanji' | 'grammar' | 'verbs' | 'games' | 'analyzer' | 'sensei' | 'drawing') => void;
+  currentTab: 'hub' | 'kana' | 'kanji' | 'grammar' | 'verbs' | 'games' | 'analyzer' | 'sensei' | 'drawing' | 'conversation';
+  onTabChange: (tab: 'hub' | 'kana' | 'kanji' | 'grammar' | 'verbs' | 'games' | 'analyzer' | 'sensei' | 'drawing' | 'conversation') => void;
   selectedJlpt: JLPTLevel;
   onJlptChange: (level: JLPTLevel) => void;
   userStats: UserStats;
@@ -146,6 +146,19 @@ export const Header: React.FC<HeaderProps> = ({
           >
             <span className="font-bold text-amber-300">漢</span>
             <span>Kanjis ({selectedJlpt})</span>
+          </button>
+
+                    <button
+            type="button"
+            onClick={() => onTabChange('conversation')}
+            className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg transition-all whitespace-nowrap cursor-pointer ${
+              currentTab === 'conversation'
+                ? 'bg-rose-600 text-white font-semibold shadow-sm'
+                : 'text-stone-300 hover:text-white hover:bg-stone-800'
+            }`}
+          >
+            <span className="font-bold text-emerald-300">💬</span>
+            <span>Conversação</span>
           </button>
 
           <button

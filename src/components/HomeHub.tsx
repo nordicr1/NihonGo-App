@@ -1,3 +1,4 @@
+import { MessageSquare } from 'lucide-react';
 import React from 'react';
 import { JLPTLevel, UserStats } from '../types';
 import {
@@ -50,7 +51,7 @@ const JAPANESE_TIPS = [
 ];
 
 interface HomeHubProps {
-  onTabChange: (tab: 'hub' | 'kana' | 'kanji' | 'grammar' | 'verbs' | 'games' | 'analyzer' | 'sensei' | 'drawing') => void;
+  onTabChange: (tab: 'hub' | 'kana' | 'kanji' | 'grammar' | 'verbs' | 'games' | 'analyzer' | 'sensei' | 'drawing' | 'conversation') => void;
   selectedJlpt: JLPTLevel;
   onJlptChange: (level: JLPTLevel) => void;
   userStats: UserStats;
