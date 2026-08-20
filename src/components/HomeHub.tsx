@@ -16,6 +16,39 @@ import {
 } from 'lucide-react';
 import { AudioButton } from './AudioButton';
 
+const JAPANESE_TIPS = [
+  {
+    title: 'A ordem da frase em Japonês: SOV (Sujeito - Objeto - Verbo)',
+    content: 'Em português dizemos "Eu [Sujeito] bebo [Verbo] água [Objeto]". Em japonês, o <strong>Verbo sempre vai no final</strong> da oração: "わたし [Eu] みず [água] のみます [bebo]". Fixe essa regra e nunca mais errará uma frase!',
+    buttonText: 'Experimentar no Analisador de Frases ➔',
+    tab: 'analyzer' as const
+  },
+  {
+    title: 'Partícula は (wa) vs が (ga)',
+    content: 'A partícula <strong>は (wa)</strong> marca o tópico (sobre o que estamos falando), enquanto <strong>が (ga)</strong> foca no sujeito (quem executa a ação) e introduz informações novas. Se alguém perguntar "Quem é o professor?", responda com が. Se perguntar "O que o professor é?", responda com は.',
+    buttonText: 'Estudar Partículas ➔',
+    tab: 'grammar' as const
+  },
+  {
+    title: 'Adjetivos I e Adjetivos NA',
+    content: 'Adjetivos em japonês se dividem em dois grupos. Os <strong>Adjetivos-I</strong> terminam em "i" e se conjugam como verbos (ex: atsui -> atsuknai). Os <strong>Adjetivos-NA</strong> precisam do "na" antes de um substantivo (ex: kirei na hana).',
+    buttonText: 'Ver Adjetivos ➔',
+    tab: 'verbs' as const
+  },
+  {
+    title: 'Não existe som de L nem V no japonês',
+    content: 'O alfabeto japonês (Kana) possui o som de <strong>R (ra, ri, ru, re, ro)</strong> que soa como uma mistura entre R, L e D. E para o V, costuma-se usar o som de B ou adaptações mais recentes com o U (ヴ).',
+    buttonText: 'Praticar o Kana ➔',
+    tab: 'kana' as const
+  },
+  {
+    title: 'Kanjis têm várias leituras',
+    content: 'A maioria dos Kanjis possui a leitura chinesa <strong>(On\'yomi)</strong> e a leitura japonesa <strong>(Kun\'yomi)</strong>. Geralmente, Kanjis juntos em uma palavra usam On\'yomi, enquanto Kanjis isolados (com hiragana) usam Kun\'yomi.',
+    buttonText: 'Dicionário de Kanjis ➔',
+    tab: 'kanji' as const
+  }
+];
+
 interface HomeHubProps {
   onTabChange: (tab: 'hub' | 'kana' | 'kanji' | 'grammar' | 'verbs' | 'games' | 'analyzer' | 'sensei' | 'drawing') => void;
   selectedJlpt: JLPTLevel;
@@ -31,6 +64,8 @@ export const HomeHub: React.FC<HomeHubProps> = ({
   userStats,
   onOpenSensei,
 }) => {
+  const currentTip = React.useMemo(() => JAPANESE_TIPS[Math.floor(Math.random() * JAPANESE_TIPS.length)], []);
+
   const jlptLevels: { level: JLPTLevel; title: string; desc: string; color: string }[] = [
     {
       level: 'N5',
@@ -319,22 +354,23 @@ export const HomeHub: React.FC<HomeHubProps> = ({
         <div className="space-y-2 max-w-2xl">
           <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-200/70 text-amber-900 text-xs font-bold uppercase tracking-wider">
             <Sparkles size={14} />
-            <span>Dica de Ouro de Japonês (日本語のコツ)</span>
+            <span>Dica de Ouro de Japonês (日本語のヒント)</span>
           </div>
           <h3 className="text-lg sm:text-xl font-black text-amber-950">
-            A ordem da frase em Japonês: SOV (Sujeito - Objeto - Verbo)
+            {currentTip.title}
           </h3>
-          <p className="text-xs sm:text-sm text-amber-900 leading-relaxed">
-            Em português dizemos "Eu [Sujeito] bebo [Verbo] água [Objeto]". Em japonês, o <strong>Verbo sempre vai no final</strong> da oração: "私は [Eu] 水を [água] 飲みます [bebo]". Fixe essa regra e nunca mais errará uma frase!
-          </p>
+          <p 
+            className="text-xs sm:text-sm text-amber-900 leading-relaxed"
+            dangerouslySetInnerHTML={{ __html: currentTip.content }}
+          />
         </div>
 
         <button
           type="button"
-          onClick={() => onTabChange('analyzer')}
+          onClick={() => onTabChange(currentTip.tab)}
           className="px-5 py-3 bg-amber-900 text-white font-bold text-xs sm:text-sm rounded-2xl hover:bg-amber-800 transition cursor-pointer shrink-0 shadow"
         >
-          Experimentar no Analisador de Frases →
+          {currentTip.buttonText}
         </button>
       </div>
     </div>
