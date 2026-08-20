@@ -2838,4 +2838,116 @@ export const KANJI_N4: KanjiItem[] = [
     "jlpt": "N4",
     "examples": []
 }
+,
+  {
+    id: 'k_n3_add_10',
+    kanji: '練',
+    onyomi: ["レン (ren)"],
+    kunyomi: ["ね.る (ne.ru)"],
+    meaningPt: 'Prática, Treinamento',
+    strokes: 14,
+    radical: '糸 (fio)',
+    jlpt: 'N4',
+    examples: [
+      {
+            word: "練習",
+            reading: "れんしゅう (renshuu)",
+            meaningPt: "Prática / Exercício"
+      },
+      {
+            word: "訓練",
+            reading: "くんれん (kunren)",
+            meaningPt: "Treinamento"
+      },
+      {
+            word: "練る",
+            reading: "ねる (neru)",
+            meaningPt: "Amassar / Planejar bem"
+      }
+]
+  }
+,
+  {
+    id: 'k_n3_add_17',
+    kanji: '冷',
+    onyomi: ["レイ (rei)"],
+    kunyomi: ["つめ.たい (tsume.tai)","ひ.える (hi.eru)","さ.める (sa.meru)"],
+    meaningPt: 'Frio (ao toque), Esfriar',
+    strokes: 7,
+    radical: '冫 (gelo)',
+    jlpt: 'N4',
+    examples: [
+      {
+            word: "冷たい",
+            reading: "つめたい (tsumetai)",
+            meaningPt: "Frio (temperatura / pessoa)"
+      },
+      {
+            word: "冷蔵庫",
+            reading: "れいぞうこ (reizouko)",
+            meaningPt: "Geladeira"
+      },
+      {
+            word: "冷える",
+            reading: "ひえる (hieru)",
+            meaningPt: "Esfriar-se"
+      }
+]
+  }
+,
+  {
+    id: 'k_n3_add_18',
+    kanji: '例',
+    onyomi: ["レイ (rei)"],
+    kunyomi: ["たと.える (tato.eru)"],
+    meaningPt: 'Exemplo, Comparação',
+    strokes: 8,
+    radical: '人 (pessoa)',
+    jlpt: 'N4',
+    examples: [
+      {
+            word: "例えば",
+            reading: "たとえば (tatoeba)",
+            meaningPt: "Por exemplo"
+      },
+      {
+            word: "例外",
+            reading: "れいがい (reigai)",
+            meaningPt: "Exceção"
+      },
+      {
+            word: "例文",
+            reading: "れいぶん (reibun)",
+            meaningPt: "Frase de exemplo"
+      }
+]
+  }
+,
+  {
+    id: 'k_n3_add_29',
+    kanji: '両',
+    onyomi: ["リョウ (ryou)"],
+    kunyomi: [],
+    meaningPt: 'Ambos',
+    strokes: 6,
+    radical: '一 (um)',
+    jlpt: 'N4',
+    examples: [
+      {
+            word: "両親",
+            reading: "りょうしん (ryoushin)",
+            meaningPt: "Pais (Ambos)"
+      },
+      {
+            word: "両方",
+            reading: "りょうほう (ryouhou)",
+            meaningPt: "Ambos / Os dois lados"
+      },
+      {
+            word: "両手",
+            reading: "りょうて (ryoute)",
+            meaningPt: "Ambas as mãos"
+      }
+]
+  }
 ];
