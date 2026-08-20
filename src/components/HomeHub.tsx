@@ -36,7 +36,7 @@ export const HomeHub: React.FC<HomeHubProps> = ({
       level: 'N5',
       title: 'JLPT N5 (Básico / Iniciante)',
       desc: 'Hiragana, Katakana, ~100 Kanjis fundamentais, partículas は/が/を/に/で, frases básicas do cotidiano e verbos nos tempos presente/passado.',
-      color: 'border-emerald-500 bg-emerald-50/40 text-emerald-950',
+      color: 'border-emerald-500 bg-emerald-50 dark:bg-emerald-900/40/40 text-emerald-950',
     },
     {
       level: 'N4',
@@ -48,19 +48,19 @@ export const HomeHub: React.FC<HomeHubProps> = ({
       level: 'N3',
       title: 'JLPT N3 (Intermediário)',
       desc: 'A ponte para a fluência. ~650 Kanjis, voz passiva, causativa, estruturas 〜わけではない, 〜ために, conversação natural.',
-      color: 'border-indigo-500 bg-indigo-50/40 text-indigo-950',
+      color: 'border-indigo-500 bg-indigo-50 dark:bg-indigo-900/40/40 text-indigo-950 dark:text-indigo-100',
     },
     {
       level: 'N2',
       title: 'JLPT N2 (Pré-Avançado / Profissional)',
       desc: '~1.000 Kanjis, 6.000 palavras, expressões formais de negócios, notícias, artigos e nuances avançadas de polidez (Keigo).',
-      color: 'border-amber-500 bg-amber-50/40 text-amber-950',
+      color: 'border-amber-500 bg-amber-50 dark:bg-amber-900/40/40 text-amber-950',
     },
     {
       level: 'N1',
       title: 'JLPT N1 (Avançado / Maestria)',
       desc: '~2.000+ Kanjis, 10.000+ palavras, gramática literária complexa, jornais, ensaios acadêmicos e debates aprofundados.',
-      color: 'border-rose-500 bg-rose-50/40 text-rose-950',
+      color: 'border-rose-500 bg-rose-50 dark:bg-rose-900/40/40 text-rose-950',
     },
   ];
 
@@ -72,7 +72,7 @@ export const HomeHub: React.FC<HomeHubProps> = ({
           日本語
         </div>
         <div className="max-w-3xl space-y-4 relative z-10">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-rose-500/20 border border-rose-500/40 text-rose-300 text-xs font-semibold">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-rose-50 dark:bg-rose-900/400/20 border border-rose-500/40 text-rose-300 text-xs font-semibold">
             <Sparkles size={14} />
             <span>Guia Completo de Japonês Didático em Português</span>
           </div>
@@ -90,7 +90,7 @@ export const HomeHub: React.FC<HomeHubProps> = ({
             <button
               type="button"
               onClick={() => onTabChange('games')}
-              className="px-5 py-3 rounded-2xl bg-emerald-500 hover:bg-emerald-400 text-stone-950 font-extrabold text-sm shadow-lg shadow-emerald-950/30 transition-all hover:scale-105 active:scale-95 flex items-center gap-2 cursor-pointer"
+              className="px-5 py-3 rounded-2xl bg-emerald-50 dark:bg-emerald-900/400 hover:bg-emerald-400 text-stone-950 font-extrabold text-sm shadow-lg shadow-emerald-950/30 transition-all hover:scale-105 active:scale-95 flex items-center gap-2 cursor-pointer"
             >
               <Gamepad2 size={18} />
               <span>Jogar Minigames & Memória</span>
@@ -99,7 +99,7 @@ export const HomeHub: React.FC<HomeHubProps> = ({
             <button
               type="button"
               onClick={() => onTabChange('kana')}
-              className="px-5 py-3 rounded-2xl bg-rose-600 hover:bg-rose-500 text-white font-bold text-sm shadow-lg shadow-rose-950/30 transition-all hover:scale-105 active:scale-95 flex items-center gap-2 cursor-pointer"
+              className="px-5 py-3 rounded-2xl bg-rose-600 hover:bg-rose-50 dark:bg-rose-900/400 text-white font-bold text-sm shadow-lg shadow-rose-950/30 transition-all hover:scale-105 active:scale-95 flex items-center gap-2 cursor-pointer"
             >
               <span>Explorar Hiragana & Katakana</span>
               <ArrowRight size={16} />
@@ -122,20 +122,20 @@ export const HomeHub: React.FC<HomeHubProps> = ({
         {/* Module 1: Kana */}
         <div
           onClick={() => onTabChange('kana')}
-          className="bg-white p-6 rounded-3xl border border-stone-200 shadow-sm hover:border-rose-400 hover:shadow-lg transition-all duration-300 cursor-pointer flex flex-col justify-between group"
+          className="bg-white dark:bg-stone-900 p-6 rounded-3xl border border-stone-200 dark:border-stone-700/50 shadow-sm hover:border-rose-400 hover:shadow-lg transition-all duration-300 cursor-pointer flex flex-col justify-between group"
         >
           <div className="space-y-3">
             <div className="w-12 h-12 rounded-2xl bg-rose-100 text-rose-700 flex items-center justify-center font-bold text-xl group-hover:scale-110 transition-transform">
               あア
             </div>
-            <h3 className="font-extrabold text-lg text-stone-900 group-hover:text-rose-600 transition-colors">
+            <h3 className="font-extrabold text-lg text-stone-900 dark:text-stone-100 group-hover:text-rose-600 transition-colors">
               Hiragana & Katakana
             </h3>
-            <p className="text-xs text-stone-600 leading-relaxed">
+            <p className="text-xs text-stone-600 dark:text-stone-400 leading-relaxed">
               Tabelas completas com áudio de nativos, dicas mnemônicas em português e modo quiz para memorizar rápido.
             </p>
           </div>
-          <div className="mt-4 pt-4 border-t border-stone-100 flex items-center justify-between text-xs font-bold text-rose-600">
+          <div className="mt-4 pt-4 border-t border-stone-100 dark:border-stone-800 flex items-center justify-between text-xs font-bold text-rose-600">
             <span>46 Sons Básicos + Combos</span>
             <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
           </div>
@@ -144,20 +144,20 @@ export const HomeHub: React.FC<HomeHubProps> = ({
         {/* Module 2: Kanji */}
         <div
           onClick={() => onTabChange('kanji')}
-          className="bg-white p-6 rounded-3xl border border-stone-200 shadow-sm hover:border-amber-400 hover:shadow-lg transition-all duration-300 cursor-pointer flex flex-col justify-between group"
+          className="bg-white dark:bg-stone-900 p-6 rounded-3xl border border-stone-200 dark:border-stone-700/50 shadow-sm hover:border-amber-400 hover:shadow-lg transition-all duration-300 cursor-pointer flex flex-col justify-between group"
         >
           <div className="space-y-3">
             <div className="w-12 h-12 rounded-2xl bg-amber-100 text-amber-800 flex items-center justify-center font-bold text-xl group-hover:scale-110 transition-transform font-serif">
               漢字
             </div>
-            <h3 className="font-extrabold text-lg text-stone-900 group-hover:text-amber-700 transition-colors">
+            <h3 className="font-extrabold text-lg text-stone-900 dark:text-stone-100 group-hover:text-amber-700 transition-colors">
               Dicionário de Kanjis
             </h3>
-            <p className="text-xs text-stone-600 leading-relaxed">
+            <p className="text-xs text-stone-600 dark:text-stone-400 leading-relaxed">
               Leituras On'yomi, Kun'yomi, radicais, número de traços e tela para desenhar e praticar a caligrafia.
             </p>
           </div>
-          <div className="mt-4 pt-4 border-t border-stone-100 flex items-center justify-between text-xs font-bold text-amber-700">
+          <div className="mt-4 pt-4 border-t border-stone-100 dark:border-stone-800 flex items-center justify-between text-xs font-bold text-amber-700">
             <span>Níveis N5 até N1</span>
             <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
           </div>
@@ -166,20 +166,20 @@ export const HomeHub: React.FC<HomeHubProps> = ({
         {/* Module 3: Grammar & Vocab */}
         <div
           onClick={() => onTabChange('grammar')}
-          className="bg-white p-6 rounded-3xl border border-stone-200 shadow-sm hover:border-indigo-400 hover:shadow-lg transition-all duration-300 cursor-pointer flex flex-col justify-between group"
+          className="bg-white dark:bg-stone-900 p-6 rounded-3xl border border-stone-200 dark:border-stone-700/50 shadow-sm hover:border-indigo-400 hover:shadow-lg transition-all duration-300 cursor-pointer flex flex-col justify-between group"
         >
           <div className="space-y-3">
             <div className="w-12 h-12 rounded-2xl bg-indigo-100 text-indigo-700 flex items-center justify-center font-bold text-xl group-hover:scale-110 transition-transform">
               <BookOpen size={22} />
             </div>
-            <h3 className="font-extrabold text-lg text-stone-900 group-hover:text-indigo-700 transition-colors">
+            <h3 className="font-extrabold text-lg text-stone-900 dark:text-stone-100 group-hover:text-indigo-700 transition-colors">
               Gramática & Vocabulário
             </h3>
-            <p className="text-xs text-stone-600 leading-relaxed">
+            <p className="text-xs text-stone-600 dark:text-stone-400 leading-relaxed">
               Regras de conjugação (Verbos Godan, Ichidan, Irregulares; Adjetivos い e な) e fórmulas passo a passo.
             </p>
           </div>
-          <div className="mt-4 pt-4 border-t border-stone-100 flex items-center justify-between text-xs font-bold text-indigo-700">
+          <div className="mt-4 pt-4 border-t border-stone-100 dark:border-stone-800 flex items-center justify-between text-xs font-bold text-indigo-700">
             <span>Explicações PT-BR</span>
             <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
           </div>
@@ -188,20 +188,20 @@ export const HomeHub: React.FC<HomeHubProps> = ({
         {/* Module 4: Games */}
         <div
           onClick={() => onTabChange('games')}
-          className="bg-white p-6 rounded-3xl border border-stone-200 shadow-sm hover:border-emerald-400 hover:shadow-lg transition-all duration-300 cursor-pointer flex flex-col justify-between group"
+          className="bg-white dark:bg-stone-900 p-6 rounded-3xl border border-stone-200 dark:border-stone-700/50 shadow-sm hover:border-emerald-400 hover:shadow-lg transition-all duration-300 cursor-pointer flex flex-col justify-between group"
         >
           <div className="space-y-3">
             <div className="w-12 h-12 rounded-2xl bg-emerald-100 text-emerald-700 flex items-center justify-center font-bold text-xl group-hover:scale-110 transition-transform">
               <Gamepad2 size={22} />
             </div>
-            <h3 className="font-extrabold text-lg text-stone-900 group-hover:text-emerald-700 transition-colors">
+            <h3 className="font-extrabold text-lg text-stone-900 dark:text-stone-100 group-hover:text-emerald-700 transition-colors">
               Minigames & Memória
             </h3>
-            <p className="text-xs text-stone-600 leading-relaxed">
+            <p className="text-xs text-stone-600 dark:text-stone-400 leading-relaxed">
               Jogo da memória com Kanjis/Vocabulário, montador de frases, Kana Rush e simulados de questões JLPT.
             </p>
           </div>
-          <div className="mt-4 pt-4 border-t border-stone-100 flex items-center justify-between text-xs font-bold text-emerald-700">
+          <div className="mt-4 pt-4 border-t border-stone-100 dark:border-stone-800 flex items-center justify-between text-xs font-bold text-emerald-700">
             <span>Ganhe XP & Emblemas</span>
             <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
           </div>
@@ -210,20 +210,20 @@ export const HomeHub: React.FC<HomeHubProps> = ({
         {/* Module 5: Verbos & Adjetivos */}
         <div
           onClick={() => onTabChange('verbs')}
-          className="bg-white p-6 rounded-3xl border border-stone-200 shadow-sm hover:border-teal-400 hover:shadow-lg transition-all duration-300 cursor-pointer flex flex-col justify-between group"
+          className="bg-white dark:bg-stone-900 p-6 rounded-3xl border border-stone-200 dark:border-stone-700/50 shadow-sm hover:border-teal-400 hover:shadow-lg transition-all duration-300 cursor-pointer flex flex-col justify-between group"
         >
           <div className="space-y-3">
             <div className="w-12 h-12 rounded-2xl bg-teal-100 text-teal-700 flex items-center justify-center font-bold text-xl group-hover:scale-110 transition-transform">
               <BookOpen size={22} />
             </div>
-            <h3 className="font-extrabold text-lg text-stone-900 group-hover:text-teal-700 transition-colors">
+            <h3 className="font-extrabold text-lg text-stone-900 dark:text-stone-100 group-hover:text-teal-700 transition-colors">
               Verbos & Adjetivos
             </h3>
-            <p className="text-xs text-stone-600 leading-relaxed">
+            <p className="text-xs text-stone-600 dark:text-stone-400 leading-relaxed">
               Banco completo de Verbos (Godan, Ichidan, Irregulares) e Adjetivos (い e な) com áudio e frases.
             </p>
           </div>
-          <div className="mt-4 pt-4 border-t border-stone-100 flex items-center justify-between text-xs font-bold text-teal-700">
+          <div className="mt-4 pt-4 border-t border-stone-100 dark:border-stone-800 flex items-center justify-between text-xs font-bold text-teal-700">
             <span>Ações & Descrições</span>
             <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
           </div>
@@ -231,20 +231,20 @@ export const HomeHub: React.FC<HomeHubProps> = ({
         {/* Module 6: Caligrafia */}
         <div
           onClick={() => onTabChange('drawing')}
-          className="bg-white p-6 rounded-3xl border border-stone-200 shadow-sm hover:border-fuchsia-400 hover:shadow-lg transition-all duration-300 cursor-pointer flex flex-col justify-between group"
+          className="bg-white dark:bg-stone-900 p-6 rounded-3xl border border-stone-200 dark:border-stone-700/50 shadow-sm hover:border-fuchsia-400 hover:shadow-lg transition-all duration-300 cursor-pointer flex flex-col justify-between group"
         >
           <div className="space-y-3">
             <div className="w-12 h-12 rounded-2xl bg-fuchsia-100 text-fuchsia-700 flex items-center justify-center font-bold text-xl group-hover:scale-110 transition-transform">
               <PenTool size={22} />
             </div>
-            <h3 className="font-extrabold text-lg text-stone-900 group-hover:text-fuchsia-700 transition-colors">
+            <h3 className="font-extrabold text-lg text-stone-900 dark:text-stone-100 group-hover:text-fuchsia-700 transition-colors">
               Estúdio de Caligrafia
             </h3>
-            <p className="text-xs text-stone-600 leading-relaxed">
+            <p className="text-xs text-stone-600 dark:text-stone-400 leading-relaxed">
               Pratique a escrita desenhando Hiragana, Katakana e Kanjis diretamente na tela do seu celular.
             </p>
           </div>
-          <div className="mt-4 pt-4 border-t border-stone-100 flex items-center justify-between text-xs font-bold text-fuchsia-700">
+          <div className="mt-4 pt-4 border-t border-stone-100 dark:border-stone-800 flex items-center justify-between text-xs font-bold text-fuchsia-700">
             <span>Trace e Memorize</span>
             <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
           </div>
@@ -252,13 +252,13 @@ export const HomeHub: React.FC<HomeHubProps> = ({
       </div>
 
       {/* JLPT Levels Progression Track */}
-      <div className="bg-white rounded-3xl p-6 sm:p-8 border border-stone-200 shadow-sm space-y-6">
-        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-stone-100 pb-4">
+      <div className="bg-white dark:bg-stone-900 rounded-3xl p-6 sm:p-8 border border-stone-200 dark:border-stone-700/50 shadow-sm space-y-6">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-stone-100 dark:border-stone-800 pb-4">
           <div>
             <span className="text-xs font-bold uppercase tracking-wider text-rose-600">
               Estrutura Oficial de Exames
             </span>
-            <h2 className="text-2xl font-black text-stone-900">
+            <h2 className="text-2xl font-black text-stone-900 dark:text-stone-100">
               Trilha de Proficiência JLPT (日本語能力試験)
             </h2>
           </div>
@@ -280,8 +280,8 @@ export const HomeHub: React.FC<HomeHubProps> = ({
                 }}
                 className={`p-5 rounded-2xl border-2 transition-all cursor-pointer flex flex-col justify-between space-y-3 ${
                   isSelected
-                    ? 'border-rose-600 bg-rose-50/50 shadow-md ring-2 ring-rose-300'
-                    : 'border-stone-200 bg-white hover:border-stone-400 hover:shadow'
+                    ? 'border-rose-600 bg-rose-50 dark:bg-rose-900/40/50 shadow-md ring-2 ring-rose-300'
+                    : 'border-stone-200 dark:border-stone-700/50 bg-white dark:bg-stone-900 hover:border-stone-400 hover:shadow'
                 }`}
               >
                 <div>
@@ -296,10 +296,10 @@ export const HomeHub: React.FC<HomeHubProps> = ({
                       </span>
                     )}
                   </div>
-                  <h3 className="font-extrabold text-base text-stone-900 mt-2">
+                  <h3 className="font-extrabold text-base text-stone-900 dark:text-stone-100 mt-2">
                     {lvl.title}
                   </h3>
-                  <p className="text-xs text-stone-600 leading-relaxed mt-1">
+                  <p className="text-xs text-stone-600 dark:text-stone-400 leading-relaxed mt-1">
                     {lvl.desc}
                   </p>
                 </div>
@@ -315,7 +315,7 @@ export const HomeHub: React.FC<HomeHubProps> = ({
       </div>
 
       {/* Didactic Tip of the Day */}
-      <div className="bg-amber-50/80 border border-amber-200/80 rounded-3xl p-6 sm:p-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+      <div className="bg-amber-50 dark:bg-amber-900/40/80 border border-amber-200/80 rounded-3xl p-6 sm:p-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
         <div className="space-y-2 max-w-2xl">
           <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-200/70 text-amber-900 text-xs font-bold uppercase tracking-wider">
             <Sparkles size={14} />

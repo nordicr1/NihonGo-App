@@ -24,6 +24,28 @@ export default function App() {
   const [isSenseiOpen, setIsSenseiOpen] = useState(false);
   const [xpToast, setXpToast] = useState<{ amount: number; reason: string } | null>(null);
 
+  // Dark Mode State
+  const [isDarkMode, setIsDarkMode] = useState<boolean>(() => {
+    if (typeof window !== 'undefined') {
+      const saved = localStorage.getItem('nihongo-theme');
+      if (saved === 'dark' || saved === 'light') return saved === 'dark';
+      return window.matchMedia('(prefers-color-scheme: dark)').matches;
+    }
+    return false;
+  });
+
+  // Apply dark mode class to HTML
+  useEffect(() => {
+    const root = window.document.documentElement;
+    if (isDarkMode) {
+      root.classList.add('dark');
+      localStorage.setItem('nihongo-theme', 'dark');
+    } else {
+      root.classList.remove('dark');
+      localStorage.setItem('nihongo-theme', 'light');
+    }
+  }, [isDarkMode]);
+
   // Save stats on update
   useEffect(() => {
     saveUserStats(userStats);
@@ -84,7 +106,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-stone-100 text-stone-900 font-sans flex flex-col selection:bg-rose-200 selection:text-rose-900">
+    <div className="min-h-screen bg-stone-100 dark:bg-stone-950 text-stone-900 dark:text-stone-100 font-sans flex flex-col selection:bg-rose-200 selection:text-rose-900 dark:selection:bg-rose-900 dark:selection:text-rose-100 transition-colors duration-200">
       {/* Header */}
       <Header
         currentTab={currentTab}
@@ -92,13 +114,15 @@ export default function App() {
           if (tab === 'sensei') {
             setIsSenseiOpen(true);
           } else {
-            setCurrentTab(tab);
+            setCurrentTab(tab as any);
           }
         }}
         selectedJlpt={selectedJlpt}
         onJlptChange={setSelectedJlpt}
         userStats={userStats}
         onOpenStats={() => setIsStatsOpen(true)}
+        isDarkMode={isDarkMode}
+        toggleDarkMode={() => setIsDarkMode(!isDarkMode)}
         onOpenSensei={() => setIsSenseiOpen(true)}
       />
 

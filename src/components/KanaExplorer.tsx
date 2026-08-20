@@ -91,7 +91,7 @@ export const KanaExplorer: React.FC<KanaExplorerProps> = ({ onGainXp }) => {
           あア
         </div>
         <div className="max-w-3xl space-y-3 relative z-10">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-rose-500/20 border border-rose-500/40 text-rose-300 text-xs font-semibold">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-rose-50 dark:bg-rose-900/400/20 border border-rose-500/40 text-rose-300 text-xs font-semibold">
             <Sparkles size={14} />
             <span>Fundamentos da Escrita Japonesa (かな)</span>
           </div>
@@ -114,8 +114,8 @@ export const KanaExplorer: React.FC<KanaExplorerProps> = ({ onGainXp }) => {
               }}
               className={`px-4 py-2 rounded-xl text-sm font-bold shadow-md transition-all cursor-pointer flex items-center gap-2 ${
                 quizMode
-                  ? 'bg-amber-500 text-stone-950 hover:bg-amber-400'
-                  : 'bg-rose-600 text-white hover:bg-rose-500'
+                  ? 'bg-amber-50 dark:bg-amber-900/400 text-stone-950 hover:bg-amber-400'
+                  : 'bg-rose-600 text-white hover:bg-rose-50 dark:bg-rose-900/400'
               }`}
             >
               <HelpCircle size={16} />
@@ -128,8 +128,8 @@ export const KanaExplorer: React.FC<KanaExplorerProps> = ({ onGainXp }) => {
       {/* Main Interactive Container */}
       {quizMode ? (
         /* Quick Quiz View */
-        <div className="bg-white rounded-2xl p-6 sm:p-8 border border-stone-200 shadow-sm max-w-xl mx-auto text-center space-y-6">
-          <div className="flex items-center justify-between border-b border-stone-100 pb-4">
+        <div className="bg-white dark:bg-stone-900 rounded-2xl p-6 sm:p-8 border border-stone-200 dark:border-stone-700/50 shadow-sm max-w-xl mx-auto text-center space-y-6">
+          <div className="flex items-center justify-between border-b border-stone-100 dark:border-stone-800 pb-4">
             <span className="text-xs font-bold uppercase tracking-wider text-rose-600">
               Desafio de Reconhecimento
             </span>
@@ -140,8 +140,8 @@ export const KanaExplorer: React.FC<KanaExplorerProps> = ({ onGainXp }) => {
 
           {quizQuestion && (
             <div className="space-y-6">
-              <div className="p-8 bg-stone-50 rounded-2xl border border-stone-200 flex flex-col items-center justify-center relative">
-                <span className="text-7xl sm:text-8xl font-black text-stone-900 tracking-wider">
+              <div className="p-8 bg-stone-50 dark:bg-stone-800/50 rounded-2xl border border-stone-200 dark:border-stone-700/50 flex flex-col items-center justify-center relative">
+                <span className="text-7xl sm:text-8xl font-black text-stone-900 dark:text-stone-100 tracking-wider">
                   {quizQuestion.target.char}
                 </span>
                 <button
@@ -154,7 +154,7 @@ export const KanaExplorer: React.FC<KanaExplorerProps> = ({ onGainXp }) => {
                 </button>
               </div>
 
-              <div className="text-sm font-medium text-stone-600">
+              <div className="text-sm font-medium text-stone-600 dark:text-stone-400">
                 Qual é a leitura em Romaji deste caractere?
               </div>
 
@@ -162,7 +162,7 @@ export const KanaExplorer: React.FC<KanaExplorerProps> = ({ onGainXp }) => {
                 {quizQuestion.options.map((option, idx) => {
                   const isSelected = quizQuestion.selectedOption === option;
                   const isCorrect = option === quizQuestion.target.romaji;
-                  let btnColor = 'bg-stone-100 text-stone-800 hover:bg-stone-200';
+                  let btnColor = 'bg-stone-100 dark:bg-stone-800 text-stone-800 dark:text-stone-200 hover:bg-stone-200';
 
                   if (quizQuestion.answered) {
                     if (isCorrect) {
@@ -170,7 +170,7 @@ export const KanaExplorer: React.FC<KanaExplorerProps> = ({ onGainXp }) => {
                     } else if (isSelected) {
                       btnColor = 'bg-rose-600 text-white font-bold';
                     } else {
-                      btnColor = 'bg-stone-100 text-stone-400 opacity-60';
+                      btnColor = 'bg-stone-100 dark:bg-stone-800 text-stone-400 opacity-60';
                     }
                   }
 
@@ -189,17 +189,17 @@ export const KanaExplorer: React.FC<KanaExplorerProps> = ({ onGainXp }) => {
               </div>
 
               {quizQuestion.answered && (
-                <div className="p-4 rounded-xl bg-stone-50 border border-stone-200 text-left space-y-2 animate-fadeIn">
+                <div className="p-4 rounded-xl bg-stone-50 dark:bg-stone-800/50 border border-stone-200 dark:border-stone-700/50 text-left space-y-2 animate-fadeIn">
                   <div className="flex items-center gap-2">
                     <CheckCircle className="text-emerald-600" size={18} />
-                    <span className="font-bold text-stone-800 text-sm">
+                    <span className="font-bold text-stone-800 dark:text-stone-200 text-sm">
                       {quizQuestion.target.char} = {quizQuestion.target.romaji}
                     </span>
                   </div>
-                  <p className="text-xs text-stone-600">
+                  <p className="text-xs text-stone-600 dark:text-stone-400">
                     <strong>Dica Mnemônica:</strong> {quizQuestion.target.mnemonicPt}
                   </p>
-                  <p className="text-xs text-stone-600">
+                  <p className="text-xs text-stone-600 dark:text-stone-400">
                     <strong>Exemplo:</strong> {quizQuestion.target.exampleWord} ({quizQuestion.target.exampleReading}) — {quizQuestion.target.exampleMeaningPt}
                   </p>
 
@@ -219,9 +219,9 @@ export const KanaExplorer: React.FC<KanaExplorerProps> = ({ onGainXp }) => {
         /* Standard Kana Chart View */
         <div className="space-y-6">
           {/* Controls: Hiragana vs Katakana & Sub-Categories */}
-          <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 bg-white p-4 rounded-2xl border border-stone-200 shadow-sm">
+          <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 bg-white dark:bg-stone-900 p-4 rounded-2xl border border-stone-200 dark:border-stone-700/50 shadow-sm">
             {/* Type selector */}
-            <div className="flex items-center bg-stone-100 p-1 rounded-xl">
+            <div className="flex items-center bg-stone-100 dark:bg-stone-800 p-1 rounded-xl">
               <button
                 type="button"
                 onClick={() => {
@@ -231,7 +231,7 @@ export const KanaExplorer: React.FC<KanaExplorerProps> = ({ onGainXp }) => {
                 className={`px-4 py-2 rounded-lg text-xs sm:text-sm font-bold transition-all cursor-pointer ${
                   activeType === 'hiragana'
                     ? 'bg-rose-600 text-white shadow-sm'
-                    : 'text-stone-600 hover:text-stone-900'
+                    : 'text-stone-600 dark:text-stone-400 hover:text-stone-900 dark:text-stone-100'
                 }`}
               >
                 Hiragana (ひらがな)
@@ -245,7 +245,7 @@ export const KanaExplorer: React.FC<KanaExplorerProps> = ({ onGainXp }) => {
                 className={`px-4 py-2 rounded-lg text-xs sm:text-sm font-bold transition-all cursor-pointer ${
                   activeType === 'katakana'
                     ? 'bg-rose-600 text-white shadow-sm'
-                    : 'text-stone-600 hover:text-stone-900'
+                    : 'text-stone-600 dark:text-stone-400 hover:text-stone-900 dark:text-stone-100'
                 }`}
               >
                 Katakana (カタカナ)
@@ -272,7 +272,7 @@ export const KanaExplorer: React.FC<KanaExplorerProps> = ({ onGainXp }) => {
                   className={`px-3 py-1.5 rounded-lg text-xs font-semibold whitespace-nowrap transition cursor-pointer ${
                     activeCategory === cat.id
                       ? 'bg-stone-900 text-white'
-                      : 'bg-stone-100 text-stone-600 hover:bg-stone-200'
+                      : 'bg-stone-100 dark:bg-stone-800 text-stone-600 dark:text-stone-400 hover:bg-stone-200'
                   }`}
                 >
                   {cat.label}
@@ -288,7 +288,7 @@ export const KanaExplorer: React.FC<KanaExplorerProps> = ({ onGainXp }) => {
                 placeholder="Buscar som, romaji, tradução..."
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                className="w-full pl-9 pr-3 py-2 text-xs sm:text-sm bg-stone-50 border border-stone-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-rose-500 focus:bg-white transition"
+                className="w-full pl-9 pr-3 py-2 text-xs sm:text-sm bg-stone-50 dark:bg-stone-800/50 border border-stone-200 dark:border-stone-700/50 rounded-xl focus:outline-none focus:ring-2 focus:ring-rose-500 focus:bg-white dark:bg-stone-900 transition"
               />
             </div>
           </div>
@@ -306,11 +306,11 @@ export const KanaExplorer: React.FC<KanaExplorerProps> = ({ onGainXp }) => {
                       onClick={() => handleSelectKana(item)}
                       className={`relative p-3 rounded-2xl border transition-all cursor-pointer flex flex-col items-center justify-center text-center group ${
                         isSelected
-                          ? 'bg-rose-50 border-rose-500 ring-2 ring-rose-400 shadow-md scale-105'
-                          : 'bg-white border-stone-200 hover:border-rose-300 hover:shadow-md hover:-translate-y-0.5'
+                          ? 'bg-rose-50 dark:bg-rose-900/40 border-rose-500 ring-2 ring-rose-400 shadow-md scale-105'
+                          : 'bg-white dark:bg-stone-900 border-stone-200 dark:border-stone-700/50 hover:border-rose-300 hover:shadow-md hover:-translate-y-0.5'
                       }`}
                     >
-                      <span className="text-3xl sm:text-4xl font-bold text-stone-900 group-hover:text-rose-600 transition-colors">
+                      <span className="text-3xl sm:text-4xl font-bold text-stone-900 dark:text-stone-100 group-hover:text-rose-600 transition-colors">
                         {item.char}
                       </span>
                       <span className="text-xs font-semibold text-stone-500 mt-1 uppercase tracking-wider">
@@ -326,7 +326,7 @@ export const KanaExplorer: React.FC<KanaExplorerProps> = ({ onGainXp }) => {
               </div>
 
               {filteredKanas.length === 0 && (
-                <div className="p-12 text-center text-stone-500 bg-white rounded-2xl border border-stone-200">
+                <div className="p-12 text-center text-stone-500 bg-white dark:bg-stone-900 rounded-2xl border border-stone-200 dark:border-stone-700/50">
                   Nenhum caractere encontrado para "{searchQuery}".
                 </div>
               )}
@@ -334,15 +334,15 @@ export const KanaExplorer: React.FC<KanaExplorerProps> = ({ onGainXp }) => {
 
             {/* Detail / Mnemonic Side Panel */}
             <div className="lg:col-span-1">
-              <div className="bg-white rounded-2xl p-6 border border-stone-200 shadow-sm sticky top-28 space-y-5">
+              <div className="bg-white dark:bg-stone-900 rounded-2xl p-6 border border-stone-200 dark:border-stone-700/50 shadow-sm sticky top-28 space-y-5">
                 {selectedKana ? (
                   <>
-                    <div className="flex items-center justify-between border-b border-stone-100 pb-4">
+                    <div className="flex items-center justify-between border-b border-stone-100 dark:border-stone-800 pb-4">
                       <div>
                         <span className="text-xs font-bold uppercase tracking-wider text-rose-600">
                           Detalhe do Caractere
                         </span>
-                        <h3 className="text-2xl font-black text-stone-900">
+                        <h3 className="text-2xl font-black text-stone-900 dark:text-stone-100">
                           {selectedKana.char}
                         </h3>
                       </div>
@@ -350,16 +350,16 @@ export const KanaExplorer: React.FC<KanaExplorerProps> = ({ onGainXp }) => {
                     </div>
 
                     <div className="space-y-4 text-sm">
-                      <div className="bg-stone-50 p-3.5 rounded-xl border border-stone-100">
+                      <div className="bg-stone-50 dark:bg-stone-800/50 p-3.5 rounded-xl border border-stone-100 dark:border-stone-800">
                         <span className="text-xs text-stone-400 font-semibold block uppercase">
                           Pronúncia / Romaji
                         </span>
-                        <span className="text-lg font-bold text-stone-800">
+                        <span className="text-lg font-bold text-stone-800 dark:text-stone-200">
                           "{selectedKana.romaji}"
                         </span>
                       </div>
 
-                      <div className="bg-amber-50/80 p-3.5 rounded-xl border border-amber-200/60 text-amber-900">
+                      <div className="bg-amber-50 dark:bg-amber-900/40/80 p-3.5 rounded-xl border border-amber-200/60 text-amber-900">
                         <div className="flex items-center gap-1.5 font-bold text-xs uppercase mb-1">
                           <Sparkles size={14} className="text-amber-600" />
                           <span>Dica Mnemônica Didática</span>
@@ -369,13 +369,13 @@ export const KanaExplorer: React.FC<KanaExplorerProps> = ({ onGainXp }) => {
                         </p>
                       </div>
 
-                      <div className="bg-stone-50 p-3.5 rounded-xl border border-stone-100 space-y-2">
+                      <div className="bg-stone-50 dark:bg-stone-800/50 p-3.5 rounded-xl border border-stone-100 dark:border-stone-800 space-y-2">
                         <span className="text-xs text-stone-400 font-semibold block uppercase">
                           Palavra de Exemplo
                         </span>
                         <div className="flex items-center justify-between">
                           <div>
-                            <span className="font-bold text-stone-900 text-base">
+                            <span className="font-bold text-stone-900 dark:text-stone-100 text-base">
                               {selectedKana.exampleWord}
                             </span>
                             <span className="text-xs text-stone-500 ml-2">
@@ -392,10 +392,10 @@ export const KanaExplorer: React.FC<KanaExplorerProps> = ({ onGainXp }) => {
                   </>
                 ) : (
                   <div className="text-center py-12 space-y-3">
-                    <div className="w-12 h-12 rounded-full bg-rose-50 text-rose-600 flex items-center justify-center mx-auto text-xl font-bold">
+                    <div className="w-12 h-12 rounded-full bg-rose-50 dark:bg-rose-900/40 text-rose-600 flex items-center justify-center mx-auto text-xl font-bold">
                       あ
                     </div>
-                    <h4 className="font-bold text-stone-800 text-sm">
+                    <h4 className="font-bold text-stone-800 dark:text-stone-200 text-sm">
                       Selecione um caractere
                     </h4>
                     <p className="text-xs text-stone-500 leading-relaxed">

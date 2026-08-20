@@ -27,11 +27,11 @@ export const UserProgressModal: React.FC<UserProgressModalProps> = ({
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm animate-fadeIn">
-      <div className="bg-white rounded-3xl shadow-2xl border border-stone-200 w-full max-w-xl max-h-[90vh] flex flex-col overflow-hidden">
+      <div className="bg-white dark:bg-stone-900 rounded-3xl shadow-2xl border border-stone-200 dark:border-stone-700/50 w-full max-w-xl max-h-[90vh] flex flex-col overflow-hidden">
         {/* Header */}
         <div className="p-5 bg-gradient-to-r from-stone-900 via-stone-800 to-rose-950 text-white flex items-center justify-between border-b border-rose-900/40">
           <div className="flex items-center gap-3">
-            <div className="w-12 h-12 rounded-2xl bg-amber-500 text-stone-950 flex items-center justify-center font-black text-xl shadow-lg">
+            <div className="w-12 h-12 rounded-2xl bg-amber-50 dark:bg-amber-900/400 text-stone-950 flex items-center justify-center font-black text-xl shadow-lg">
               {stats.level}
             </div>
             <div>
@@ -56,8 +56,8 @@ export const UserProgressModal: React.FC<UserProgressModalProps> = ({
         {/* Content */}
         <div className="flex-1 overflow-y-auto p-6 space-y-6">
           {/* XP Progression Bar */}
-          <div className="p-4 bg-stone-50 rounded-2xl border border-stone-200 space-y-2">
-            <div className="flex items-center justify-between text-xs font-bold text-stone-700">
+          <div className="p-4 bg-stone-50 dark:bg-stone-800/50 rounded-2xl border border-stone-200 dark:border-stone-700/50 space-y-2">
+            <div className="flex items-center justify-between text-xs font-bold text-stone-700 dark:text-stone-300">
               <span className="flex items-center gap-1.5 text-rose-600">
                 <Zap size={14} className="fill-rose-500 text-rose-500" />
                 <span>Progresso para Nível {stats.level + 1}</span>
@@ -77,23 +77,23 @@ export const UserProgressModal: React.FC<UserProgressModalProps> = ({
 
           {/* Quick Metrics */}
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 text-center">
-            <div className="p-4 rounded-2xl bg-amber-50/70 border border-amber-200/50">
+            <div className="p-4 rounded-2xl bg-amber-50 dark:bg-amber-900/40/70 border border-amber-200/50">
               <Flame size={22} className="text-amber-500 mx-auto fill-amber-400 mb-1" />
-              <span className="text-2xl font-black text-stone-900">{stats.streakDays}</span>
+              <span className="text-2xl font-black text-stone-900 dark:text-stone-100">{stats.streakDays}</span>
               <span className="text-[11px] text-stone-500 font-semibold block">
                 Dias Consecutivos
               </span>
             </div>
 
-            <div className="p-4 rounded-2xl bg-rose-50/70 border border-rose-200/50">
+            <div className="p-4 rounded-2xl bg-rose-50 dark:bg-rose-900/40/70 border border-rose-200/50">
               <Trophy size={22} className="text-rose-500 mx-auto mb-1" />
-              <span className="text-2xl font-black text-stone-900">{stats.xp}</span>
+              <span className="text-2xl font-black text-stone-900 dark:text-stone-100">{stats.xp}</span>
               <span className="text-[11px] text-stone-500 font-semibold block">Total de XP</span>
             </div>
 
-            <div className="p-4 rounded-2xl bg-emerald-50/70 border border-emerald-200/50 col-span-2 sm:col-span-1">
+            <div className="p-4 rounded-2xl bg-emerald-50 dark:bg-emerald-900/40/70 border border-emerald-200/50 col-span-2 sm:col-span-1">
               <Award size={22} className="text-emerald-500 mx-auto mb-1" />
-              <span className="text-2xl font-black text-stone-900">
+              <span className="text-2xl font-black text-stone-900 dark:text-stone-100">
                 {stats.unlockedBadges.length} / {INITIAL_BADGES.length}
               </span>
               <span className="text-[11px] text-stone-500 font-semibold block">
@@ -105,8 +105,8 @@ export const UserProgressModal: React.FC<UserProgressModalProps> = ({
           {/* Badges / Conquistas */}
           <div className="space-y-3">
             <div className="flex items-center gap-2">
-              <Award size={18} className="text-stone-800" />
-              <h4 className="font-extrabold text-stone-900 text-sm">
+              <Award size={18} className="text-stone-800 dark:text-stone-200" />
+              <h4 className="font-extrabold text-stone-900 dark:text-stone-100 text-sm">
                 Conquistas & Emblemas Desbloqueados
               </h4>
             </div>
@@ -120,14 +120,14 @@ export const UserProgressModal: React.FC<UserProgressModalProps> = ({
                     key={b.id}
                     className={`p-3.5 rounded-2xl border flex items-start gap-3 transition ${
                       isUnlocked
-                        ? 'bg-white border-amber-300 shadow-sm'
-                        : 'bg-stone-50 border-stone-200 opacity-60'
+                        ? 'bg-white dark:bg-stone-900 border-amber-300 shadow-sm'
+                        : 'bg-stone-50 dark:bg-stone-800/50 border-stone-200 dark:border-stone-700/50 opacity-60'
                     }`}
                   >
                     <div className="text-3xl select-none">{b.icon}</div>
                     <div className="flex-1 min-w-0">
                       <div className="flex items-center justify-between">
-                        <span className="text-xs font-bold text-stone-900 truncate">
+                        <span className="text-xs font-bold text-stone-900 dark:text-stone-100 truncate">
                           {b.title}
                         </span>
                         {isUnlocked ? (
@@ -136,7 +136,7 @@ export const UserProgressModal: React.FC<UserProgressModalProps> = ({
                           <Lock size={13} className="text-stone-400 shrink-0" />
                         )}
                       </div>
-                      <p className="text-[11px] text-stone-600 leading-tight mt-0.5">
+                      <p className="text-[11px] text-stone-600 dark:text-stone-400 leading-tight mt-0.5">
                         {b.description}
                       </p>
                     </div>
@@ -148,7 +148,7 @@ export const UserProgressModal: React.FC<UserProgressModalProps> = ({
         </div>
 
         {/* Footer */}
-        <div className="p-4 bg-stone-50 border-t border-stone-200 flex items-center justify-between">
+        <div className="p-4 bg-stone-50 dark:bg-stone-800/50 border-t border-stone-200 dark:border-stone-700/50 flex items-center justify-between">
           <button
             type="button"
             onClick={onResetStats}

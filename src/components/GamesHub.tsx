@@ -549,7 +549,7 @@ export const GamesHub: React.FC<GamesHubProps> = ({ selectedJlpt: globalJlpt, on
           遊
         </div>
         <div className="max-w-3xl space-y-4 relative z-10">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/20 border border-emerald-500/40 text-emerald-300 text-xs font-semibold">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-50 dark:bg-emerald-900/400/20 border border-emerald-500/40 text-emerald-300 text-xs font-semibold">
             <Sparkles size={14} />
             <span>Aprendizado Gamificado & Prática Interativa N5 ao N1</span>
           </div>
@@ -597,7 +597,7 @@ export const GamesHub: React.FC<GamesHubProps> = ({ selectedJlpt: globalJlpt, on
                 onClick={() => setActiveGame(g.id as GameType)}
                 className={`px-4 py-2 rounded-xl text-xs sm:text-sm font-bold transition cursor-pointer ${
                   activeGame === g.id
-                    ? 'bg-emerald-500 text-stone-950 shadow-md font-black scale-105'
+                    ? 'bg-emerald-50 dark:bg-emerald-900/400 text-stone-950 shadow-md font-black scale-105'
                     : 'bg-stone-800/80 text-stone-300 hover:bg-stone-700 hover:text-white'
                 }`}
               >
@@ -612,12 +612,12 @@ export const GamesHub: React.FC<GamesHubProps> = ({ selectedJlpt: globalJlpt, on
       {/* 1. JOGO DA MEMÓRIA                                                        */}
       {/* ========================================================================= */}
       {activeGame === 'memory' && (
-        <div className="bg-white rounded-2xl p-6 sm:p-8 border border-stone-200 shadow-sm space-y-6">
+        <div className="bg-white dark:bg-stone-900 rounded-2xl p-6 sm:p-8 border border-stone-200 dark:border-stone-700/50 shadow-sm space-y-6">
           {/* Controls & Stats Bar */}
-          <div className="flex flex-col sm:flex-row items-center justify-between gap-4 border-b border-stone-100 pb-4">
+          <div className="flex flex-col sm:flex-row items-center justify-between gap-4 border-b border-stone-100 dark:border-stone-800 pb-4">
             <div className="flex items-center gap-3">
               <span className="text-xs font-bold text-stone-500 uppercase">Tipo de Peça:</span>
-              <div className="flex bg-stone-100 p-1 rounded-xl">
+              <div className="flex bg-stone-100 dark:bg-stone-800 p-1 rounded-xl">
                 {(['kanji', 'vocab', 'kana'] as const).map((cat) => (
                   <button
                     key={cat}
@@ -626,7 +626,7 @@ export const GamesHub: React.FC<GamesHubProps> = ({ selectedJlpt: globalJlpt, on
                     className={`px-3 py-1 text-xs font-bold rounded-lg transition cursor-pointer ${
                       memoryCategory === cat
                         ? 'bg-emerald-600 text-white shadow-sm'
-                        : 'text-stone-600 hover:text-stone-900'
+                        : 'text-stone-600 dark:text-stone-400 hover:text-stone-900 dark:text-stone-100'
                     }`}
                   >
                     {cat === 'kanji' ? `Kanjis (${localJlpt})` : cat === 'vocab' ? `Vocabulário (${localJlpt})` : 'Kanas'}
@@ -635,7 +635,7 @@ export const GamesHub: React.FC<GamesHubProps> = ({ selectedJlpt: globalJlpt, on
               </div>
             </div>
 
-            <div className="flex items-center gap-4 text-xs sm:text-sm font-semibold text-stone-600">
+            <div className="flex items-center gap-4 text-xs sm:text-sm font-semibold text-stone-600 dark:text-stone-400">
               <div className="flex items-center gap-1.5">
                 <Timer size={16} className="text-emerald-600" />
                 <span>Tempo: <strong>{memoryTimer}s</strong></span>
@@ -649,7 +649,7 @@ export const GamesHub: React.FC<GamesHubProps> = ({ selectedJlpt: globalJlpt, on
               <button
                 type="button"
                 onClick={initMemoryGame}
-                className="flex items-center gap-1 px-3 py-1.5 rounded-lg bg-stone-100 text-stone-700 text-xs font-bold hover:bg-stone-200 transition cursor-pointer"
+                className="flex items-center gap-1 px-3 py-1.5 rounded-lg bg-stone-100 dark:bg-stone-800 text-stone-700 dark:text-stone-300 text-xs font-bold hover:bg-stone-200 transition cursor-pointer"
               >
                 <RotateCcw size={14} />
                 <span>Reiniciar</span>
@@ -668,9 +668,9 @@ export const GamesHub: React.FC<GamesHubProps> = ({ selectedJlpt: globalJlpt, on
                   onClick={() => handleCardClick(idx)}
                   className={`aspect-square rounded-2xl border-2 transition-all duration-300 flex flex-col items-center justify-center p-3 text-center cursor-pointer select-none relative ${
                     card.isMatched
-                      ? 'bg-emerald-50 border-emerald-400 opacity-80 scale-95 shadow-sm'
+                      ? 'bg-emerald-50 dark:bg-emerald-900/40 border-emerald-400 opacity-80 scale-95 shadow-sm'
                       : isShown
-                      ? 'bg-white border-rose-500 shadow-md scale-105 ring-2 ring-rose-300'
+                      ? 'bg-white dark:bg-stone-900 border-rose-500 shadow-md scale-105 ring-2 ring-rose-300'
                       : 'bg-gradient-to-br from-stone-800 to-stone-900 border-stone-700 hover:border-emerald-500 hover:shadow-md hover:scale-102'
                   }`}
                 >
@@ -679,7 +679,7 @@ export const GamesHub: React.FC<GamesHubProps> = ({ selectedJlpt: globalJlpt, on
                       <span
                         className={`font-black ${
                           card.type === 'jp'
-                            ? 'text-2xl sm:text-4xl text-stone-900 font-serif'
+                            ? 'text-2xl sm:text-4xl text-stone-900 dark:text-stone-100 font-serif'
                             : 'text-xs sm:text-base text-rose-700 font-bold'
                         }`}
                       >
@@ -706,7 +706,7 @@ export const GamesHub: React.FC<GamesHubProps> = ({ selectedJlpt: globalJlpt, on
 
           {/* Victory Modal */}
           {memoryWon && (
-            <div className="p-6 bg-emerald-50 border border-emerald-200 rounded-2xl text-center max-w-md mx-auto space-y-3 animate-fadeIn">
+            <div className="p-6 bg-emerald-50 dark:bg-emerald-900/40 border border-emerald-200 rounded-2xl text-center max-w-md mx-auto space-y-3 animate-fadeIn">
               <Trophy size={40} className="text-amber-500 mx-auto animate-bounce" />
               <h3 className="text-xl font-black text-emerald-950">
                 Parabéns! Memória Ninja! (おめでとう)
@@ -718,7 +718,7 @@ export const GamesHub: React.FC<GamesHubProps> = ({ selectedJlpt: globalJlpt, on
                 <button
                   type="button"
                   onClick={initMemoryGame}
-                  className="px-4 py-2 bg-emerald-600 text-white text-xs font-bold rounded-xl hover:bg-emerald-500 transition cursor-pointer shadow"
+                  className="px-4 py-2 bg-emerald-600 text-white text-xs font-bold rounded-xl hover:bg-emerald-50 dark:bg-emerald-900/400 transition cursor-pointer shadow"
                 >
                   Jogar Novamente (+35 XP)
                 </button>
@@ -732,27 +732,27 @@ export const GamesHub: React.FC<GamesHubProps> = ({ selectedJlpt: globalJlpt, on
       {/* 2. MONTADOR DE FRASES                                                     */}
       {/* ========================================================================= */}
       {activeGame === 'sentence' && (
-        <div className="bg-white rounded-2xl p-6 sm:p-8 border border-stone-200 shadow-sm max-w-3xl mx-auto space-y-6">
-          <div className="flex items-center justify-between border-b border-stone-100 pb-4">
+        <div className="bg-white dark:bg-stone-900 rounded-2xl p-6 sm:p-8 border border-stone-200 dark:border-stone-700/50 shadow-sm max-w-3xl mx-auto space-y-6">
+          <div className="flex items-center justify-between border-b border-stone-100 dark:border-stone-800 pb-4">
             <div>
               <span className="text-xs font-bold uppercase tracking-wider text-emerald-600">
                 Desafio de Ordenação Gramatical
               </span>
-              <h3 className="text-lg font-bold text-stone-900">
+              <h3 className="text-lg font-bold text-stone-900 dark:text-stone-100">
                 Frase #{sentenceIndex + 1} ({currentSentence.jlpt})
               </h3>
             </div>
-            <span className="text-xs px-2.5 py-1 bg-stone-100 rounded-full text-stone-600 font-bold">
+            <span className="text-xs px-2.5 py-1 bg-stone-100 dark:bg-stone-800 rounded-full text-stone-600 dark:text-stone-400 font-bold">
               {sentenceIndex + 1} de {filteredSentences.length}
             </span>
           </div>
 
           {/* Translation in Portuguese Target */}
-          <div className="bg-stone-50 p-5 rounded-2xl border border-stone-200 text-center space-y-2">
+          <div className="bg-stone-50 dark:bg-stone-800/50 p-5 rounded-2xl border border-stone-200 dark:border-stone-700/50 text-center space-y-2">
             <span className="text-xs text-stone-400 font-bold uppercase block">
               Traduza para o Japonês:
             </span>
-            <p className="text-xl font-extrabold text-stone-900">
+            <p className="text-xl font-extrabold text-stone-900 dark:text-stone-100">
               "{currentSentence.meaningPt}"
             </p>
             <p className="text-xs text-stone-500 font-medium">
@@ -772,7 +772,7 @@ export const GamesHub: React.FC<GamesHubProps> = ({ selectedJlpt: globalJlpt, on
                   key={idx}
                   type="button"
                   onClick={() => handleRemoveToken(token, idx)}
-                  className="px-3.5 py-2 bg-rose-600 text-white font-bold text-base rounded-xl shadow hover:bg-rose-500 transition cursor-pointer flex items-center gap-1.5 animate-fadeIn"
+                  className="px-3.5 py-2 bg-rose-600 text-white font-bold text-base rounded-xl shadow hover:bg-rose-50 dark:bg-rose-900/400 transition cursor-pointer flex items-center gap-1.5 animate-fadeIn"
                 >
                   <span>{token}</span>
                   <span className="text-xs opacity-75 font-normal">×</span>
@@ -792,7 +792,7 @@ export const GamesHub: React.FC<GamesHubProps> = ({ selectedJlpt: globalJlpt, on
                   key={idx}
                   type="button"
                   onClick={() => handlePickToken(token, idx)}
-                  className="px-4 py-2.5 bg-stone-100 text-stone-800 font-bold text-base rounded-xl border border-stone-300 hover:bg-stone-200 hover:border-stone-400 transition cursor-pointer shadow-sm active:scale-95"
+                  className="px-4 py-2.5 bg-stone-100 dark:bg-stone-800 text-stone-800 dark:text-stone-200 font-bold text-base rounded-xl border border-stone-300 hover:bg-stone-200 hover:border-stone-400 transition cursor-pointer shadow-sm active:scale-95"
                 >
                   {token}
                 </button>
@@ -801,20 +801,20 @@ export const GamesHub: React.FC<GamesHubProps> = ({ selectedJlpt: globalJlpt, on
           </div>
 
           {/* Feedback & Actions */}
-          <div className="pt-4 border-t border-stone-100 flex flex-col sm:flex-row items-center justify-between gap-3">
+          <div className="pt-4 border-t border-stone-100 dark:border-stone-800 flex flex-col sm:flex-row items-center justify-between gap-3">
             <div className="flex items-center gap-2">
               <button
                 type="button"
                 onClick={handleCheckSentence}
                 disabled={selectedTokens.length === 0}
-                className="px-6 py-2.5 bg-emerald-600 text-white font-bold text-sm rounded-xl hover:bg-emerald-500 disabled:opacity-50 transition cursor-pointer shadow"
+                className="px-6 py-2.5 bg-emerald-600 text-white font-bold text-sm rounded-xl hover:bg-emerald-50 dark:bg-emerald-900/400 disabled:opacity-50 transition cursor-pointer shadow"
               >
                 Verificar Resposta
               </button>
               <button
                 type="button"
                 onClick={() => initSentenceBuilder(sentenceIndex, filteredSentences)}
-                className="px-3 py-2.5 bg-stone-100 text-stone-600 text-xs font-bold rounded-xl hover:bg-stone-200 transition cursor-pointer"
+                className="px-3 py-2.5 bg-stone-100 dark:bg-stone-800 text-stone-600 dark:text-stone-400 text-xs font-bold rounded-xl hover:bg-stone-200 transition cursor-pointer"
               >
                 Limpar
               </button>
@@ -851,9 +851,9 @@ export const GamesHub: React.FC<GamesHubProps> = ({ selectedJlpt: globalJlpt, on
       {/* 3. QUIZ JLPT SHOWDOWN                                                     */}
       {/* ========================================================================= */}
       {activeGame === 'quiz' && (
-        <div className="bg-white rounded-2xl p-6 sm:p-8 border border-stone-200 shadow-sm max-w-2xl mx-auto space-y-6">
+        <div className="bg-white dark:bg-stone-900 rounded-2xl p-6 sm:p-8 border border-stone-200 dark:border-stone-700/50 shadow-sm max-w-2xl mx-auto space-y-6">
           {/* Header */}
-          <div className="flex items-center justify-between border-b border-stone-100 pb-4">
+          <div className="flex items-center justify-between border-b border-stone-100 dark:border-stone-800 pb-4">
             <div className="flex items-center gap-2">
               <span className="text-xs px-2.5 py-1 rounded-full bg-rose-100 text-rose-800 font-bold">
                 JLPT {currentQuizQ.jlpt}
@@ -868,15 +868,15 @@ export const GamesHub: React.FC<GamesHubProps> = ({ selectedJlpt: globalJlpt, on
                 <Flame size={15} className="fill-amber-500 text-amber-500" />
                 <span>Combo: {quizStreak}x</span>
               </div>
-              <div className="text-stone-800">
+              <div className="text-stone-800 dark:text-stone-200">
                 Score: <span className="text-rose-600 font-black">{quizScore} XP</span>
               </div>
             </div>
           </div>
 
           {/* Question Text */}
-          <div className="bg-stone-50 p-6 rounded-2xl border border-stone-200 text-center space-y-2">
-            <h3 className="text-2xl font-black text-stone-900 tracking-wide">
+          <div className="bg-stone-50 dark:bg-stone-800/50 p-6 rounded-2xl border border-stone-200 dark:border-stone-700/50 text-center space-y-2">
+            <h3 className="text-2xl font-black text-stone-900 dark:text-stone-100 tracking-wide">
               {currentQuizQ.question}
             </h3>
             {currentQuizQ.questionRomaji && (
@@ -884,7 +884,7 @@ export const GamesHub: React.FC<GamesHubProps> = ({ selectedJlpt: globalJlpt, on
                 {currentQuizQ.questionRomaji}
               </p>
             )}
-            <p className="text-sm font-medium text-stone-700 pt-1">
+            <p className="text-sm font-medium text-stone-700 dark:text-stone-300 pt-1">
               {currentQuizQ.questionPt}
             </p>
           </div>
@@ -894,7 +894,7 @@ export const GamesHub: React.FC<GamesHubProps> = ({ selectedJlpt: globalJlpt, on
             {currentQuizQ.options.map((opt, idx) => {
               const isSelected = quizSelectedOpt === idx;
               const isCorrect = idx === currentQuizQ.correctIndex;
-              let btnStyle = 'bg-stone-100 text-stone-800 hover:bg-stone-200 border-stone-200';
+              let btnStyle = 'bg-stone-100 dark:bg-stone-800 text-stone-800 dark:text-stone-200 hover:bg-stone-200 border-stone-200 dark:border-stone-700/50';
 
               if (quizSelectedOpt !== null) {
                 if (isCorrect) {
@@ -902,7 +902,7 @@ export const GamesHub: React.FC<GamesHubProps> = ({ selectedJlpt: globalJlpt, on
                 } else if (isSelected) {
                   btnStyle = 'bg-rose-600 text-white font-bold border-rose-500';
                 } else {
-                  btnStyle = 'bg-stone-50 text-stone-400 border-stone-100 opacity-60';
+                  btnStyle = 'bg-stone-50 dark:bg-stone-800/50 text-stone-400 border-stone-100 dark:border-stone-800 opacity-60';
                 }
               }
 
@@ -925,20 +925,20 @@ export const GamesHub: React.FC<GamesHubProps> = ({ selectedJlpt: globalJlpt, on
 
           {/* Explanation Banner */}
           {quizSelectedOpt !== null && (
-            <div className="p-4 rounded-xl bg-stone-50 border border-stone-200 text-left space-y-2 animate-fadeIn">
+            <div className="p-4 rounded-xl bg-stone-50 dark:bg-stone-800/50 border border-stone-200 dark:border-stone-700/50 text-left space-y-2 animate-fadeIn">
               <div className="flex items-center gap-2">
                 {quizSelectedOpt === currentQuizQ.correctIndex ? (
                   <CheckCircle className="text-emerald-600" size={18} />
                 ) : (
                   <XCircle className="text-rose-600" size={18} />
                 )}
-                <span className="font-bold text-stone-900 text-sm">
+                <span className="font-bold text-stone-900 dark:text-stone-100 text-sm">
                   {quizSelectedOpt === currentQuizQ.correctIndex
                     ? 'Excelente! Resposta Correta'
                     : 'Incorreto. Veja a explicação:'}
                 </span>
               </div>
-              <p className="text-xs text-stone-700 leading-relaxed">
+              <p className="text-xs text-stone-700 dark:text-stone-300 leading-relaxed">
                 {currentQuizQ.explanationPt}
               </p>
 
@@ -947,7 +947,7 @@ export const GamesHub: React.FC<GamesHubProps> = ({ selectedJlpt: globalJlpt, on
                   type="button"
                   onClick={generateAiQuestions}
                   disabled={isAiGenerating}
-                  className="flex items-center gap-1.5 px-3 py-1.5 bg-rose-50 text-rose-700 border border-rose-200 text-xs font-bold rounded-lg hover:bg-rose-100 transition cursor-pointer"
+                  className="flex items-center gap-1.5 px-3 py-1.5 bg-rose-50 dark:bg-rose-900/40 text-rose-700 border border-rose-200 text-xs font-bold rounded-lg hover:bg-rose-100 transition cursor-pointer"
                 >
                   <Bot size={14} />
                   <span>{isAiGenerating ? 'Gerando...' : '+ Novas Questões com IA'}</span>
@@ -970,15 +970,15 @@ export const GamesHub: React.FC<GamesHubProps> = ({ selectedJlpt: globalJlpt, on
       {/* 4. RUSH DE VELOCIDADE (KANJI & KANA)                                     */}
       {/* ========================================================================= */}
       {activeGame === 'rush' && (
-        <div className="bg-white rounded-2xl p-6 sm:p-8 border border-stone-200 shadow-sm max-w-xl mx-auto text-center space-y-6">
-          <div className="flex items-center justify-between border-b border-stone-100 pb-4">
+        <div className="bg-white dark:bg-stone-900 rounded-2xl p-6 sm:p-8 border border-stone-200 dark:border-stone-700/50 shadow-sm max-w-xl mx-auto text-center space-y-6">
+          <div className="flex items-center justify-between border-b border-stone-100 dark:border-stone-800 pb-4">
             <div className="flex items-center gap-2">
-              <div className="flex bg-stone-100 p-1 rounded-xl text-xs font-bold">
+              <div className="flex bg-stone-100 dark:bg-stone-800 p-1 rounded-xl text-xs font-bold">
                 <button
                   type="button"
                   onClick={() => setRushMode('kanji')}
                   className={`px-3 py-1 rounded-lg transition cursor-pointer ${
-                    rushMode === 'kanji' ? 'bg-amber-500 text-stone-950 font-black' : 'text-stone-600'
+                    rushMode === 'kanji' ? 'bg-amber-50 dark:bg-amber-900/400 text-stone-950 font-black' : 'text-stone-600 dark:text-stone-400'
                   }`}
                 >
                   Kanji Rush ({localJlpt})
@@ -987,7 +987,7 @@ export const GamesHub: React.FC<GamesHubProps> = ({ selectedJlpt: globalJlpt, on
                   type="button"
                   onClick={() => setRushMode('kana')}
                   className={`px-3 py-1 rounded-lg transition cursor-pointer ${
-                    rushMode === 'kana' ? 'bg-amber-500 text-stone-950 font-black' : 'text-stone-600'
+                    rushMode === 'kana' ? 'bg-amber-50 dark:bg-amber-900/400 text-stone-950 font-black' : 'text-stone-600 dark:text-stone-400'
                   }`}
                 >
                   Kana Rush
@@ -997,14 +997,14 @@ export const GamesHub: React.FC<GamesHubProps> = ({ selectedJlpt: globalJlpt, on
 
             <div className="flex items-center gap-3 text-xs font-bold">
               <span className="text-rose-600 font-mono text-sm">⏳ {rushTimer}s</span>
-              <span className="text-stone-800">Acertos: {rushScore}</span>
+              <span className="text-stone-800 dark:text-stone-200">Acertos: {rushScore}</span>
             </div>
           </div>
 
           {rushTarget && rushActive ? (
             <div className="space-y-6">
-              <div className="p-8 bg-amber-50 rounded-2xl border border-amber-200 flex flex-col items-center justify-center">
-                <span className="text-6xl sm:text-8xl font-black text-stone-900 font-serif">
+              <div className="p-8 bg-amber-50 dark:bg-amber-900/40 rounded-2xl border border-amber-200 flex flex-col items-center justify-center">
+                <span className="text-6xl sm:text-8xl font-black text-stone-900 dark:text-stone-100 font-serif">
                   {rushTarget.char}
                 </span>
                 {rushTarget.sub && (
@@ -1020,7 +1020,7 @@ export const GamesHub: React.FC<GamesHubProps> = ({ selectedJlpt: globalJlpt, on
                     key={i}
                     type="button"
                     onClick={() => handleRushAnswer(opt)}
-                    className="p-4 rounded-xl bg-stone-100 text-stone-900 text-base font-bold hover:bg-amber-500 hover:text-stone-950 transition cursor-pointer shadow-sm active:scale-95 text-center line-clamp-2"
+                    className="p-4 rounded-xl bg-stone-100 dark:bg-stone-800 text-stone-900 dark:text-stone-100 text-base font-bold hover:bg-amber-50 dark:bg-amber-900/400 hover:text-stone-950 transition cursor-pointer shadow-sm active:scale-95 text-center line-clamp-2"
                   >
                     {opt}
                   </button>
@@ -1029,8 +1029,8 @@ export const GamesHub: React.FC<GamesHubProps> = ({ selectedJlpt: globalJlpt, on
             </div>
           ) : (
             <div className="space-y-4 py-8">
-              <h3 className="text-xl font-bold text-stone-900">Fim da Rodada!</h3>
-              <p className="text-sm text-stone-600">
+              <h3 className="text-xl font-bold text-stone-900 dark:text-stone-100">Fim da Rodada!</h3>
+              <p className="text-sm text-stone-600 dark:text-stone-400">
                 Você acertou <strong>{rushScore}</strong> em sequência rápida!
               </p>
               <button
@@ -1039,7 +1039,7 @@ export const GamesHub: React.FC<GamesHubProps> = ({ selectedJlpt: globalJlpt, on
                   setRushScore(0);
                   generateRushQuestion();
                 }}
-                className="px-6 py-2.5 bg-amber-500 text-stone-950 font-bold rounded-xl hover:bg-amber-400 transition cursor-pointer shadow"
+                className="px-6 py-2.5 bg-amber-50 dark:bg-amber-900/400 text-stone-950 font-bold rounded-xl hover:bg-amber-400 transition cursor-pointer shadow"
               >
                 Começar Nova Corrida!
               </button>
@@ -1052,15 +1052,15 @@ export const GamesHub: React.FC<GamesHubProps> = ({ selectedJlpt: globalJlpt, on
       {/* 5. COMPLETAR PALAVRA                                                      */}
       {/* ========================================================================= */}
       {activeGame === 'missing-char' && wcTarget && (
-        <div className="bg-white rounded-2xl p-6 sm:p-8 border border-stone-200 shadow-sm max-w-xl mx-auto text-center space-y-6 animate-fadeIn">
-          <div className="flex items-center justify-between border-b border-stone-100 pb-4">
-             <h3 className="text-lg font-bold text-stone-800">Completar a Palavra</h3>
+        <div className="bg-white dark:bg-stone-900 rounded-2xl p-6 sm:p-8 border border-stone-200 dark:border-stone-700/50 shadow-sm max-w-xl mx-auto text-center space-y-6 animate-fadeIn">
+          <div className="flex items-center justify-between border-b border-stone-100 dark:border-stone-800 pb-4">
+             <h3 className="text-lg font-bold text-stone-800 dark:text-stone-200">Completar a Palavra</h3>
              <span className="text-emerald-600 font-bold text-sm">Score: {wcScore} XP</span>
           </div>
 
           <div className="py-6 space-y-4">
             <div className="text-xs text-stone-500 uppercase tracking-wider font-bold">Qual kanji/kana está faltando?</div>
-            <div className="text-4xl sm:text-6xl font-black text-stone-900 tracking-widest font-serif flex justify-center gap-2">
+            <div className="text-4xl sm:text-6xl font-black text-stone-900 dark:text-stone-100 tracking-widest font-serif flex justify-center gap-2">
               {wcTarget.word.split('').map((char, i) => (
                 <span key={i} className={i === wcTarget.hiddenIdx ? "text-rose-500 border-b-4 border-rose-500 px-2" : ""}>
                   {i === wcTarget.hiddenIdx ? '?' : char}
@@ -1068,7 +1068,7 @@ export const GamesHub: React.FC<GamesHubProps> = ({ selectedJlpt: globalJlpt, on
               ))}
             </div>
             <div className="text-sm text-stone-500 font-medium">
-              Significado: <strong className="text-stone-700">{wcTarget.meaning.split('/')[0]}</strong>
+              Significado: <strong className="text-stone-700 dark:text-stone-300">{wcTarget.meaning.split('/')[0]}</strong>
             </div>
           </div>
 
@@ -1078,7 +1078,7 @@ export const GamesHub: React.FC<GamesHubProps> = ({ selectedJlpt: globalJlpt, on
                 key={i}
                 type="button"
                 onClick={() => handleWcAnswer(opt)}
-                className="p-4 rounded-xl bg-stone-100 text-stone-900 text-2xl font-serif font-bold hover:bg-emerald-500 hover:text-white transition cursor-pointer shadow-sm active:scale-95"
+                className="p-4 rounded-xl bg-stone-100 dark:bg-stone-800 text-stone-900 dark:text-stone-100 text-2xl font-serif font-bold hover:bg-emerald-50 dark:bg-emerald-900/400 hover:text-white transition cursor-pointer shadow-sm active:scale-95"
               >
                 {opt}
               </button>
@@ -1091,9 +1091,9 @@ export const GamesHub: React.FC<GamesHubProps> = ({ selectedJlpt: globalJlpt, on
       {/* 6. JOGO DOS 7 ERROS KANJI                                                */}
       {/* ========================================================================= */}
       {activeGame === 'spot-diff' && (
-        <div className="bg-white rounded-2xl p-6 sm:p-8 border border-stone-200 shadow-sm max-w-xl mx-auto text-center space-y-6 animate-fadeIn">
-          <div className="flex items-center justify-between border-b border-stone-100 pb-4">
-            <h3 className="text-lg font-bold text-stone-800">Encontre o Kanji Diferente</h3>
+        <div className="bg-white dark:bg-stone-900 rounded-2xl p-6 sm:p-8 border border-stone-200 dark:border-stone-700/50 shadow-sm max-w-xl mx-auto text-center space-y-6 animate-fadeIn">
+          <div className="flex items-center justify-between border-b border-stone-100 dark:border-stone-800 pb-4">
+            <h3 className="text-lg font-bold text-stone-800 dark:text-stone-200">Encontre o Kanji Diferente</h3>
             <div className="flex items-center gap-4 text-xs font-bold">
               <span className="text-rose-600 font-mono text-sm">⏳ {sdTimer}s</span>
               <span className="text-emerald-600">Acertos: {Math.floor(sdScore / 15)}</span>
@@ -1109,7 +1109,7 @@ export const GamesHub: React.FC<GamesHubProps> = ({ selectedJlpt: globalJlpt, on
                     key={i}
                     type="button"
                     onClick={() => handleSdAnswer(cell.isDiff)}
-                    className="aspect-square rounded-lg bg-stone-100 border border-stone-200 text-stone-900 text-2xl sm:text-3xl font-serif font-bold hover:bg-rose-50 hover:border-rose-300 transition cursor-pointer flex items-center justify-center active:scale-90"
+                    className="aspect-square rounded-lg bg-stone-100 dark:bg-stone-800 border border-stone-200 dark:border-stone-700/50 text-stone-900 dark:text-stone-100 text-2xl sm:text-3xl font-serif font-bold hover:bg-rose-50 dark:bg-rose-900/40 hover:border-rose-300 transition cursor-pointer flex items-center justify-center active:scale-90"
                   >
                     {cell.char}
                   </button>
@@ -1118,14 +1118,14 @@ export const GamesHub: React.FC<GamesHubProps> = ({ selectedJlpt: globalJlpt, on
             </div>
           ) : (
             <div className="space-y-4 py-8">
-              <h3 className="text-2xl font-bold text-stone-900">Tempo Esgotado!</h3>
-              <p className="text-sm text-stone-600">
+              <h3 className="text-2xl font-bold text-stone-900 dark:text-stone-100">Tempo Esgotado!</h3>
+              <p className="text-sm text-stone-600 dark:text-stone-400">
                 Você sobreviveu tempo suficiente para marcar <strong>{sdScore} XP</strong>!
               </p>
               <button
                 type="button"
                 onClick={generateSpotDiff}
-                className="px-6 py-2.5 bg-emerald-500 text-white font-bold rounded-xl hover:bg-emerald-600 transition cursor-pointer shadow"
+                className="px-6 py-2.5 bg-emerald-50 dark:bg-emerald-900/400 text-white font-bold rounded-xl hover:bg-emerald-600 transition cursor-pointer shadow"
               >
                 Tentar Novamente
               </button>

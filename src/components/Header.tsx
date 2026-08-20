@@ -1,7 +1,7 @@
 import React from 'react';
 import { JLPTLevel, UserStats } from '../types';
 import { getLevelTitle } from '../utils/storage';
-import { Sparkles, Flame, Trophy, Bot, BookOpen, Compass, Gamepad2, Layers, PenTool } from 'lucide-react';
+import { Sparkles, Flame, Trophy, Bot, BookOpen, Compass, Gamepad2, Layers, PenTool, Sun, Moon } from 'lucide-react';
 
 interface HeaderProps {
   currentTab: 'hub' | 'kana' | 'kanji' | 'grammar' | 'verbs' | 'games' | 'analyzer' | 'sensei' | 'drawing';
@@ -11,6 +11,8 @@ interface HeaderProps {
   userStats: UserStats;
   onOpenStats: () => void;
   onOpenSensei: () => void;
+  isDarkMode: boolean;
+  toggleDarkMode: () => void;
 }
 
 export const Header: React.FC<HeaderProps> = ({
@@ -21,6 +23,8 @@ export const Header: React.FC<HeaderProps> = ({
   userStats,
   onOpenStats,
   onOpenSensei,
+  isDarkMode,
+  toggleDarkMode,
 }) => {
   const jlptLevels: JLPTLevel[] = ['N5', 'N4', 'N3', 'N2', 'N1'];
 
@@ -75,6 +79,15 @@ export const Header: React.FC<HeaderProps> = ({
 
           {/* Stats & Sensei AI Shortcut */}
           <div className="flex items-center gap-2.5 sm:gap-3">
+            {/* Theme Toggle */}
+            <button
+              onClick={toggleDarkMode}
+              className="p-2 rounded-lg bg-stone-800/80 border border-stone-700/60 text-stone-300 hover:bg-stone-700/60 hover:text-amber-300 transition-colors cursor-pointer"
+              title="Alternar Tema Claro/Escuro"
+            >
+              {isDarkMode ? <Sun size={15} /> : <Moon size={15} />}
+            </button>
+
             {/* Streak */}
             <div 
               onClick={onOpenStats}
