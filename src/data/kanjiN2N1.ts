@@ -14261,4 +14261,2541 @@ export const KANJI_N2_N1: KanjiItem[] = [
       }
 ]
   }
+,
+  {
+    id: 'k_n2_add11_1',
+    kanji: '守',
+    onyomi: ["シュ (shu)","ス (su)"],
+    kunyomi: ["まも.る (mamo.ru)"],
+    meaningPt: 'Proteger, Defender',
+    strokes: 6,
+    radical: '宀 (telhado)',
+    jlpt: 'N2',
+    examples: [
+      {
+            word: "守る",
+            reading: "まもる (mamoru)",
+            meaningPt: "Proteger / Cumprir (regras)"
+      },
+      {
+            word: "お守り",
+            reading: "おまもり (omamori)",
+            meaningPt: "Amuleto"
+      },
+      {
+            word: "留守",
+            reading: "るす (rusu)",
+            meaningPt: "Ausência (de casa)"
+      }
+]
+  },
+  {
+    id: 'k_n2_add11_2',
+    kanji: '取',
+    onyomi: ["シュ (shu)"],
+    kunyomi: ["と.る (to.ru)"],
+    meaningPt: 'Pegar, Tirar',
+    strokes: 8,
+    radical: '又 (de novo)',
+    jlpt: 'N2',
+    examples: [
+      {
+            word: "取る",
+            reading: "とる (toru)",
+            meaningPt: "Pegar / Tirar"
+      },
+      {
+            word: "取り消す",
+            reading: "とりけす (torikesu)",
+            meaningPt: "Cancelar"
+      },
+      {
+            word: "受け取る",
+            reading: "うけとる (uketoru)",
+            meaningPt: "Receber"
+      }
+]
+  },
+  {
+    id: 'k_n2_add11_3',
+    kanji: '若',
+    onyomi: ["ジャク (jaku)"],
+    kunyomi: ["わか.い (waka.i)","も.しくわ (mo.shikuwa)"],
+    meaningPt: 'Jovem',
+    strokes: 8,
+    radical: '艸 (grama)',
+    jlpt: 'N2',
+    examples: [
+      {
+            word: "若い",
+            reading: "わかい (wakai)",
+            meaningPt: "Jovem"
+      },
+      {
+            word: "若者",
+            reading: "わかもの (wakamono)",
+            meaningPt: "Jovens / Juventude"
+      },
+      {
+            word: "若干",
+            reading: "じゃっかん (jakkan)",
+            meaningPt: "Alguns / Um pouco"
+      }
+]
+  },
+  {
+    id: 'k_n2_add11_4',
+    kanji: '捨',
+    onyomi: ["シャ (sha)"],
+    kunyomi: ["す.てる (su.teru)"],
+    meaningPt: 'Jogar fora, Descartar',
+    strokes: 11,
+    radical: '手 (mão)',
+    jlpt: 'N2',
+    examples: [
+      {
+            word: "捨てる",
+            reading: "すてる (suteru)",
+            meaningPt: "Jogar fora"
+      },
+      {
+            word: "見捨てる",
+            reading: "みすてる (misuteru)",
+            meaningPt: "Abandonar"
+      },
+      {
+            word: "使い捨て",
+            reading: "つかいすて (tsukaisute)",
+            meaningPt: "Descartável"
+      }
+]
+  },
+  {
+    id: 'k_n2_add11_5',
+    kanji: '実',
+    onyomi: ["ジツ (jitsu)"],
+    kunyomi: ["み (mi)","みの.る (mino.ru)"],
+    meaningPt: 'Verdade, Fruto',
+    strokes: 8,
+    radical: '宀 (telhado)',
+    jlpt: 'N2',
+    examples: [
+      {
+            word: "事実",
+            reading: "じじつ (jijitsu)",
+            meaningPt: "Fato"
+      },
+      {
+            word: "実は",
+            reading: "じつは (jitsuwa)",
+            meaningPt: "Na verdade"
+      },
+      {
+            word: "実力",
+            reading: "じつりょく (jitsuryoku)",
+            meaningPt: "Habilidade real / Capacidade"
+      }
+]
+  },
+  {
+    id: 'k_n2_add11_6',
+    kanji: '湿',
+    onyomi: ["シツ (shitsu)"],
+    kunyomi: ["しめ.る (shime.ru)","しめ.す (shime.su)"],
+    meaningPt: 'Úmido, Molhado',
+    strokes: 12,
+    radical: '水 (água)',
+    jlpt: 'N2',
+    examples: [
+      {
+            word: "湿度",
+            reading: "しつど (shitsudo)",
+            meaningPt: "Umidade"
+      },
+      {
+            word: "湿る",
+            reading: "しめる (shimeru)",
+            meaningPt: "Ficar úmido / Molhar-se"
+      },
+      {
+            word: "湿気",
+            reading: "しっけ (shikke)",
+            meaningPt: "Umidade (do ar)"
+      }
+]
+  },
+  {
+    id: 'k_n2_add11_7',
+    kanji: '失',
+    onyomi: ["シツ (shitsu)"],
+    kunyomi: ["うしな.う (ushina.u)"],
+    meaningPt: 'Perder, Errar',
+    strokes: 5,
+    radical: '大 (grande)',
+    jlpt: 'N2',
+    examples: [
+      {
+            word: "失う",
+            reading: "うしなう (ushinau)",
+            meaningPt: "Perder (algo)"
+      },
+      {
+            word: "失敗",
+            reading: "しっぱい (shippai)",
+            meaningPt: "Fracasso / Erro"
+      },
+      {
+            word: "失礼",
+            reading: "しつれい (shitsurei)",
+            meaningPt: "Grosseria / Com licença"
+      }
+]
+  },
+  {
+    id: 'k_n2_add11_8',
+    kanji: '識',
+    onyomi: ["シキ (shiki)"],
+    kunyomi: [],
+    meaningPt: 'Conhecimento, Discernimento',
+    strokes: 19,
+    radical: '言 (palavra/falar)',
+    jlpt: 'N2',
+    examples: [
+      {
+            word: "知識",
+            reading: "ちしき (chishiki)",
+            meaningPt: "Conhecimento"
+      },
+      {
+            word: "意識",
+            reading: "いしき (ishiki)",
+            meaningPt: "Consciência"
+      },
+      {
+            word: "常識",
+            reading: "じょうしき (joushiki)",
+            meaningPt: "Senso comum"
+      }
+]
+  },
+  {
+    id: 'k_n2_add11_9',
+    kanji: '式',
+    onyomi: ["シキ (shiki)"],
+    kunyomi: [],
+    meaningPt: 'Estilo, Cerimônia',
+    strokes: 6,
+    radical: '弋 (flecha)',
+    jlpt: 'N2',
+    examples: [
+      {
+            word: "結婚式",
+            reading: "けっこんしき (kekkonshiki)",
+            meaningPt: "Cerimônia de casamento"
+      },
+      {
+            word: "公式",
+            reading: "こうしき (koushiki)",
+            meaningPt: "Fórmula / Oficial"
+      },
+      {
+            word: "形式",
+            reading: "けいしき (keishiki)",
+            meaningPt: "Formato / Forma"
+      }
+]
+  },
+  {
+    id: 'k_n2_add11_10',
+    kanji: '辞',
+    onyomi: ["ジ (ji)"],
+    kunyomi: ["や.める (ya.meru)"],
+    meaningPt: 'Dicionário, Renunciar',
+    strokes: 13,
+    radical: '辛 (picante)',
+    jlpt: 'N2',
+    examples: [
+      {
+            word: "辞書",
+            reading: "じしょ (jisho)",
+            meaningPt: "Dicionário"
+      },
+      {
+            word: "辞める",
+            reading: "やめる (yameru)",
+            meaningPt: "Renunciar / Desistir"
+      },
+      {
+            word: "辞任",
+            reading: "じにん (jinin)",
+            meaningPt: "Renúncia"
+      }
+]
+  },
+  {
+    id: 'k_n2_add11_11',
+    kanji: '示',
+    onyomi: ["ジ (ji)","シ (shi)"],
+    kunyomi: ["しめ.す (shime.su)"],
+    meaningPt: 'Mostrar, Indicar',
+    strokes: 5,
+    radical: '示 (mostrar)',
+    jlpt: 'N2',
+    examples: [
+      {
+            word: "示す",
+            reading: "しめす (shimesu)",
+            meaningPt: "Mostrar / Indicar"
+      },
+      {
+            word: "指示",
+            reading: "しじ (shiji)",
+            meaningPt: "Instrução / Direção"
+      },
+      {
+            word: "表示",
+            reading: "ひょうじ (hyouji)",
+            meaningPt: "Exibição / Indicação"
+      }
+]
+  },
+  {
+    id: 'k_n2_add11_12',
+    kanji: '治',
+    onyomi: ["ジ (ji)","チ (chi)"],
+    kunyomi: ["おさ.める (osa.meru)","なお.る (nao.ru)"],
+    meaningPt: 'Curar, Governar',
+    strokes: 8,
+    radical: '水 (água)',
+    jlpt: 'N2',
+    examples: [
+      {
+            word: "治る",
+            reading: "なおる (naoru)",
+            meaningPt: "Curar-se (doença)"
+      },
+      {
+            word: "政治",
+            reading: "せいじ (seiji)",
+            meaningPt: "Política"
+      },
+      {
+            word: "治療",
+            reading: "ちりょう (chiryou)",
+            meaningPt: "Tratamento médico"
+      }
+]
+  },
+  {
+    id: 'k_n2_add11_13',
+    kanji: '次',
+    onyomi: ["ジ (ji)","シ (shi)"],
+    kunyomi: ["つぎ (tsugi)","つ.ぐ (tsu.gu)"],
+    meaningPt: 'Próximo',
+    strokes: 6,
+    radical: '欠 (falta/bocejo)',
+    jlpt: 'N2',
+    examples: [
+      {
+            word: "次",
+            reading: "つぎ (tsugi)",
+            meaningPt: "Próximo"
+      },
+      {
+            word: "次回",
+            reading: "じかい (jikai)",
+            meaningPt: "Próxima vez"
+      },
+      {
+            word: "次第",
+            reading: "しだい (shidai)",
+            meaningPt: "Logo que / Dependendo de"
+      }
+]
+  },
+  {
+    id: 'k_n2_add11_14',
+    kanji: '寺',
+    onyomi: ["ジ (ji)"],
+    kunyomi: ["てら (tera)"],
+    meaningPt: 'Templo budista',
+    strokes: 6,
+    radical: '寸 (medida)',
+    jlpt: 'N2',
+    examples: [
+      {
+            word: "お寺",
+            reading: "おてら (otera)",
+            meaningPt: "Templo (budista)"
+      },
+      {
+            word: "寺院",
+            reading: "じいん (jiin)",
+            meaningPt: "Templo"
+      }
+]
+  },
+  {
+    id: 'k_n2_add11_15',
+    kanji: '児',
+    onyomi: ["ジ (ji)","ニ (ni)"],
+    kunyomi: [],
+    meaningPt: 'Criança',
+    strokes: 7,
+    radical: '儿 (pernas)',
+    jlpt: 'N2',
+    examples: [
+      {
+            word: "児童",
+            reading: "じどう (jidou)",
+            meaningPt: "Crianças / Menores"
+      },
+      {
+            word: "小児科",
+            reading: "しょうにか (shounika)",
+            meaningPt: "Pediatria"
+      },
+      {
+            word: "育児",
+            reading: "いくじ (ikuji)",
+            meaningPt: "Criação de filhos"
+      }
+]
+  },
+  {
+    id: 'k_n2_add11_16',
+    kanji: '似',
+    onyomi: ["ジ (ji)"],
+    kunyomi: ["に.る (ni.ru)"],
+    meaningPt: 'Assemelhar-se, Parecer',
+    strokes: 7,
+    radical: '人 (pessoa)',
+    jlpt: 'N2',
+    examples: [
+      {
+            word: "似る",
+            reading: "にる (niru)",
+            meaningPt: "Ser parecido / Assemelhar-se"
+      },
+      {
+            word: "似合う",
+            reading: "にあう (niau)",
+            meaningPt: "Combinar (roupas/acessórios)"
+      },
+      {
+            word: "類似",
+            reading: "るいじ (ruiji)",
+            meaningPt: "Semelhança"
+      }
+]
+  },
+  {
+    id: 'k_n2_add11_17',
+    kanji: '歯',
+    onyomi: ["シ (shi)"],
+    kunyomi: ["は (ha)"],
+    meaningPt: 'Dente',
+    strokes: 12,
+    radical: '歯 (dente)',
+    jlpt: 'N2',
+    examples: [
+      {
+            word: "歯",
+            reading: "は (ha)",
+            meaningPt: "Dente"
+      },
+      {
+            word: "歯医者",
+            reading: "はいしゃ (haisha)",
+            meaningPt: "Dentista"
+      },
+      {
+            word: "虫歯",
+            reading: "むしば (mushiba)",
+            meaningPt: "Cárie"
+      }
+]
+  },
+  {
+    id: 'k_n2_add11_18',
+    kanji: '資',
+    onyomi: ["シ (shi)"],
+    kunyomi: [],
+    meaningPt: 'Recursos, Capital',
+    strokes: 13,
+    radical: '貝 (concha/moeda)',
+    jlpt: 'N2',
+    examples: [
+      {
+            word: "資料",
+            reading: "しりょう (shiryou)",
+            meaningPt: "Materiais / Dados / Documentos"
+      },
+      {
+            word: "資源",
+            reading: "しげん (shigen)",
+            meaningPt: "Recursos (naturais)"
+      },
+      {
+            word: "資本",
+            reading: "しほん (shihon)",
+            meaningPt: "Capital (financeiro)"
+      }
+]
+  },
+  {
+    id: 'k_n2_add11_19',
+    kanji: '誌',
+    onyomi: ["シ (shi)"],
+    kunyomi: [],
+    meaningPt: 'Revista, Documento',
+    strokes: 14,
+    radical: '言 (palavra/falar)',
+    jlpt: 'N2',
+    examples: [
+      {
+            word: "雑誌",
+            reading: "ざっし (zasshi)",
+            meaningPt: "Revista"
+      },
+      {
+            word: "日誌",
+            reading: "にっし (nisshi)",
+            meaningPt: "Diário (registro)"
+      }
+]
+  },
+  {
+    id: 'k_n2_add11_20',
+    kanji: '詞',
+    onyomi: ["シ (shi)"],
+    kunyomi: [],
+    meaningPt: 'Parte do discurso, Palavras',
+    strokes: 12,
+    radical: '言 (palavra/falar)',
+    jlpt: 'N2',
+    examples: [
+      {
+            word: "動詞",
+            reading: "どうし (doushi)",
+            meaningPt: "Verbo"
+      },
+      {
+            word: "名詞",
+            reading: "めいし (meishi)",
+            meaningPt: "Substantivo"
+      },
+      {
+            word: "歌詞",
+            reading: "かし (kashi)",
+            meaningPt: "Letra de música"
+      }
+]
+  },
+  {
+    id: 'k_n2_add11_21',
+    kanji: '脂',
+    onyomi: ["シ (shi)"],
+    kunyomi: ["あぶら (abura)"],
+    meaningPt: 'Gordura',
+    strokes: 10,
+    radical: '月 (carne/lua)',
+    jlpt: 'N2',
+    examples: [
+      {
+            word: "脂肪",
+            reading: "しぼう (shibou)",
+            meaningPt: "Gordura (do corpo)"
+      },
+      {
+            word: "脂",
+            reading: "あぶら (abura)",
+            meaningPt: "Gordura / Banha"
+      }
+]
+  },
+  {
+    id: 'k_n2_add11_22',
+    kanji: '糸',
+    onyomi: ["シ (shi)"],
+    kunyomi: ["いと (ito)"],
+    meaningPt: 'Fio, Linha',
+    strokes: 6,
+    radical: '糸 (fio)',
+    jlpt: 'N2',
+    examples: [
+      {
+            word: "糸",
+            reading: "いと (ito)",
+            meaningPt: "Linha / Fio"
+      },
+      {
+            word: "毛糸",
+            reading: "けいと (keito)",
+            meaningPt: "Lã (fio)"
+      }
+]
+  },
+  {
+    id: 'k_n2_add11_23',
+    kanji: '枝',
+    onyomi: ["シ (shi)"],
+    kunyomi: ["えだ (eda)"],
+    meaningPt: 'Ramo, Galho',
+    strokes: 8,
+    radical: '木 (árvore)',
+    jlpt: 'N2',
+    examples: [
+      {
+            word: "枝",
+            reading: "えだ (eda)",
+            meaningPt: "Galho"
+      },
+      {
+            word: "小枝",
+            reading: "こえだ (koeda)",
+            meaningPt: "Galhinho"
+      }
+]
+  },
+  {
+    id: 'k_n2_add11_24',
+    kanji: '支',
+    onyomi: ["シ (shi)"],
+    kunyomi: ["ささ.える (sasa.eru)"],
+    meaningPt: 'Suportar, Ramo, Apoiar',
+    strokes: 4,
+    radical: '支 (ramo)',
+    jlpt: 'N2',
+    examples: [
+      {
+            word: "支える",
+            reading: "ささえる (sasaeru)",
+            meaningPt: "Apoiar / Sustentar"
+      },
+      {
+            word: "支払う",
+            reading: "しはらう (shiharau)",
+            meaningPt: "Pagar"
+      },
+      {
+            word: "支店",
+            reading: "してん (shiten)",
+            meaningPt: "Filial (loja)"
+      }
+]
+  },
+  {
+    id: 'k_n2_add11_25',
+    kanji: '指',
+    onyomi: ["シ (shi)"],
+    kunyomi: ["ゆび (yubi)","さ.す (sa.su)"],
+    meaningPt: 'Dedo, Apontar',
+    strokes: 9,
+    radical: '手 (mão)',
+    jlpt: 'N2',
+    examples: [
+      {
+            word: "指",
+            reading: "ゆび (yubi)",
+            meaningPt: "Dedo"
+      },
+      {
+            word: "指す",
+            reading: "さす (sasu)",
+            meaningPt: "Apontar"
+      },
+      {
+            word: "指定",
+            reading: "してい (shitei)",
+            meaningPt: "Designação / Especificação"
+      }
+]
+  },
+  {
+    id: 'k_n2_add11_26',
+    kanji: '志',
+    onyomi: ["シ (shi)"],
+    kunyomi: ["こころざし (kokorozashi)","こころざ.す (kokoroza.su)"],
+    meaningPt: 'Intenção, Motivo',
+    strokes: 7,
+    radical: '心 (coração)',
+    jlpt: 'N2',
+    examples: [
+      {
+            word: "志",
+            reading: "こころざし (kokorozashi)",
+            meaningPt: "Vontade / Aspiração"
+      },
+      {
+            word: "志望",
+            reading: "しぼう (shibou)",
+            meaningPt: "Desejo / Escolha (escola/profissão)"
+      },
+      {
+            word: "意志",
+            reading: "いし (ishi)",
+            meaningPt: "Força de vontade"
+      }
+]
+  },
+  {
+    id: 'k_n2_add11_27',
+    kanji: '師',
+    onyomi: ["シ (shi)"],
+    kunyomi: [],
+    meaningPt: 'Mestre, Professor, Especialista',
+    strokes: 10,
+    radical: '巾 (tecido/toalha)',
+    jlpt: 'N2',
+    examples: [
+      {
+            word: "教師",
+            reading: "きょうし (kyoushi)",
+            meaningPt: "Professor (profissão)"
+      },
+      {
+            word: "医師",
+            reading: "いし (ishi)",
+            meaningPt: "Médico"
+      },
+      {
+            word: "美容師",
+            reading: "びようし (biyoushi)",
+            meaningPt: "Cabeleireiro(a)"
+      }
+]
+  },
+  {
+    id: 'k_n2_add11_28',
+    kanji: '史',
+    onyomi: ["シ (shi)"],
+    kunyomi: [],
+    meaningPt: 'História',
+    strokes: 5,
+    radical: '口 (boca)',
+    jlpt: 'N2',
+    examples: [
+      {
+            word: "歴史",
+            reading: "れきし (rekishi)",
+            meaningPt: "História"
+      },
+      {
+            word: "日本史",
+            reading: "にほんし (nihonshi)",
+            meaningPt: "História do Japão"
+      }
+]
+  },
+  {
+    id: 'k_n2_add11_29',
+    kanji: '司',
+    onyomi: ["シ (shi)"],
+    kunyomi: [],
+    meaningPt: 'Dirigir, Administrar',
+    strokes: 5,
+    radical: '口 (boca)',
+    jlpt: 'N2',
+    examples: [
+      {
+            word: "司会",
+            reading: "しかい (shikai)",
+            meaningPt: "Apresentador / Mestre de cerimônias"
+      },
+      {
+            word: "上司",
+            reading: "じょうし (joushi)",
+            meaningPt: "Chefe / Superior"
+      }
+]
+  },
+  {
+    id: 'k_n2_add11_30',
+    kanji: '刺',
+    onyomi: ["シ (shi)"],
+    kunyomi: ["さ.す (sa.su)","さ.さる (sa.saru)"],
+    meaningPt: 'Perfurar, Espeto',
+    strokes: 8,
+    radical: '刀 (espada)',
+    jlpt: 'N2',
+    examples: [
+      {
+            word: "刺す",
+            reading: "さす (sasu)",
+            meaningPt: "Perfurar / Picar (inseto)"
+      },
+      {
+            word: "名刺",
+            reading: "めいし (meishi)",
+            meaningPt: "Cartão de visitas"
+      },
+      {
+            word: "刺激",
+            reading: "しげき (shigeki)",
+            meaningPt: "Estímulo"
+      }
+]
+  },
+  {
+    id: 'k_n2_add11_31',
+    kanji: '伺',
+    onyomi: ["シ (shi)"],
+    kunyomi: ["うかが.う (ukaga.u)"],
+    meaningPt: 'Perguntar, Visitar (humilde)',
+    strokes: 6,
+    radical: '人 (pessoa)',
+    jlpt: 'N2',
+    examples: [
+      {
+            word: "伺う",
+            reading: "うかがう (ukagau)",
+            meaningPt: "Perguntar / Visitar (humilde)"
+      }
+]
+  },
+  {
+    id: 'k_n2_add11_32',
+    kanji: '残',
+    onyomi: ["ザン (zan)"],
+    kunyomi: ["のこ.る (noko.ru)","のこ.す (noko.su)"],
+    meaningPt: 'Restar, Deixar para trás',
+    strokes: 10,
+    radical: '歹 (ossos/morte)',
+    jlpt: 'N2',
+    examples: [
+      {
+            word: "残る",
+            reading: "のこる (nokoru)",
+            meaningPt: "Restar / Sobrar"
+      },
+      {
+            word: "残す",
+            reading: "のこす (nokosu)",
+            meaningPt: "Deixar para trás"
+      },
+      {
+            word: "残念",
+            reading: "ざんねん (zannen)",
+            meaningPt: "Lamentável / Que pena"
+      }
+]
+  },
+  {
+    id: 'k_n2_add11_33',
+    kanji: '賛',
+    onyomi: ["サン (san)"],
+    kunyomi: [],
+    meaningPt: 'Aprovar, Elogiar',
+    strokes: 15,
+    radical: '貝 (concha/moeda)',
+    jlpt: 'N2',
+    examples: [
+      {
+            word: "賛成",
+            reading: "さんせい (sansei)",
+            meaningPt: "Acordo / Aprovação"
+      },
+      {
+            word: "賞賛",
+            reading: "しょうさん (shousan)",
+            meaningPt: "Elogio / Admiração"
+      }
+]
+  },
+  {
+    id: 'k_n2_add11_34',
+    kanji: '算',
+    onyomi: ["サン (san)"],
+    kunyomi: [],
+    meaningPt: 'Calcular',
+    strokes: 14,
+    radical: '竹 (bambu)',
+    jlpt: 'N2',
+    examples: [
+      {
+            word: "計算",
+            reading: "けいさん (keisan)",
+            meaningPt: "Cálculo"
+      },
+      {
+            word: "予算",
+            reading: "よさん (yosan)",
+            meaningPt: "Orçamento"
+      },
+      {
+            word: "算数",
+            reading: "さんすう (sansuu)",
+            meaningPt: "Aritmética / Matemática básica"
+      }
+]
+  },
+  {
+    id: 'k_n2_add11_35',
+    kanji: '散',
+    onyomi: ["サン (san)"],
+    kunyomi: ["ち.る (chi.ru)","ち.らす (chi.rasu)"],
+    meaningPt: 'Espalhar, Dispersar',
+    strokes: 12,
+    radical: '攴 (bater)',
+    jlpt: 'N2',
+    examples: [
+      {
+            word: "散歩",
+            reading: "さんぽ (sanpo)",
+            meaningPt: "Passeio / Caminhada"
+      },
+      {
+            word: "散る",
+            reading: "ちる (chiru)",
+            meaningPt: "Cair (pétalas) / Dispersar"
+      },
+      {
+            word: "解散",
+            reading: "かいさん (kaisan)",
+            meaningPt: "Dissolução / Separação"
+      }
+]
+  },
+  {
+    id: 'k_n2_add11_36',
+    kanji: '参',
+    onyomi: ["サン (san)"],
+    kunyomi: ["まい.る (mai.ru)"],
+    meaningPt: 'Participar, Visitar (templo)',
+    strokes: 8,
+    radical: '厶 (privado)',
+    jlpt: 'N2',
+    examples: [
+      {
+            word: "参加",
+            reading: "さんか (sanka)",
+            meaningPt: "Participação"
+      },
+      {
+            word: "参る",
+            reading: "まいる (mairu)",
+            meaningPt: "Ir / Vir (humilde) / Desistir"
+      },
+      {
+            word: "参考",
+            reading: "さんこう (sankou)",
+            meaningPt: "Referência"
+      }
+]
+  },
+  {
+    id: 'k_n2_add11_37',
+    kanji: '皿',
+    onyomi: ["ベイ (bei)"],
+    kunyomi: ["さら (sara)"],
+    meaningPt: 'Prato',
+    strokes: 5,
+    radical: '皿 (prato)',
+    jlpt: 'N2',
+    examples: [
+      {
+            word: "皿",
+            reading: "さら (sara)",
+            meaningPt: "Prato"
+      },
+      {
+            word: "灰皿",
+            reading: "はいざら (haizara)",
+            meaningPt: "Cinzeiro"
+      },
+      {
+            word: "紙皿",
+            reading: "かみざら (kamizara)",
+            meaningPt: "Prato de papel"
+      }
+]
+  },
+  {
+    id: 'k_n2_add11_38',
+    kanji: '雑',
+    onyomi: ["ザツ (zatsu)","ゾウ (zou)"],
+    kunyomi: [],
+    meaningPt: 'Misto, Diversos',
+    strokes: 14,
+    radical: '隹 (pássaro)',
+    jlpt: 'N2',
+    examples: [
+      {
+            word: "雑誌",
+            reading: "ざっし (zasshi)",
+            meaningPt: "Revista"
+      },
+      {
+            word: "複雑",
+            reading: "ふくざつ (fukuzatsu)",
+            meaningPt: "Complexo"
+      },
+      {
+            word: "雑音",
+            reading: "ざつおん (zatsuon)",
+            meaningPt: "Ruído"
+      }
+]
+  },
+  {
+    id: 'k_n2_add11_39',
+    kanji: '殺',
+    onyomi: ["サツ (satsu)"],
+    kunyomi: ["ころ.す (koro.su)"],
+    meaningPt: 'Matar',
+    strokes: 10,
+    radical: '殳 (arma)',
+    jlpt: 'N2',
+    examples: [
+      {
+            word: "殺す",
+            reading: "ころす (korosu)",
+            meaningPt: "Matar"
+      },
+      {
+            word: "殺人",
+            reading: "さつじん (satsujin)",
+            meaningPt: "Assassinato"
+      },
+      {
+            word: "自殺",
+            reading: "じさつ (jisatsu)",
+            meaningPt: "Suicídio"
+      }
+]
+  },
+  {
+    id: 'k_n2_add11_40',
+    kanji: '札',
+    onyomi: ["サツ (satsu)"],
+    kunyomi: ["ふだ (fuda)"],
+    meaningPt: 'Cédula, Etiqueta',
+    strokes: 5,
+    radical: '木 (árvore)',
+    jlpt: 'N2',
+    examples: [
+      {
+            word: "札",
+            reading: "ふだ (fuda)",
+            meaningPt: "Etiqueta / Placa"
+      },
+      {
+            word: "改札",
+            reading: "かいさつ (kaisatsu)",
+            meaningPt: "Catraca (de estação)"
+      },
+      {
+            word: "千円札",
+            reading: "せんえんさつ (senensatsu)",
+            meaningPt: "Nota de mil ienes"
+      }
+]
+  },
+  {
+    id: 'k_n2_add11_41',
+    kanji: '察',
+    onyomi: ["サツ (satsu)"],
+    kunyomi: [],
+    meaningPt: 'Adivinhar, Inspecionar',
+    strokes: 14,
+    radical: '宀 (telhado)',
+    jlpt: 'N2',
+    examples: [
+      {
+            word: "警察",
+            reading: "けいさつ (keisatsu)",
+            meaningPt: "Polícia"
+      },
+      {
+            word: "観察",
+            reading: "かんさつ (kansatsu)",
+            meaningPt: "Observação"
+      },
+      {
+            word: "診察",
+            reading: "しんさつ (shinsatsu)",
+            meaningPt: "Exame médico"
+      }
+]
+  },
+  {
+    id: 'k_n2_add11_42',
+    kanji: '刷',
+    onyomi: ["サツ (satsu)"],
+    kunyomi: ["す.る (su.ru)"],
+    meaningPt: 'Imprimir, Esfregar',
+    strokes: 8,
+    radical: '刀 (espada)',
+    jlpt: 'N2',
+    examples: [
+      {
+            word: "印刷",
+            reading: "いんさつ (insatsu)",
+            meaningPt: "Impressão"
+      },
+      {
+            word: "刷る",
+            reading: "する (suru)",
+            meaningPt: "Imprimir"
+      }
+]
+  },
+  {
+    id: 'k_n2_add11_43',
+    kanji: '冊',
+    onyomi: ["サツ (satsu)","サク (saku)"],
+    kunyomi: [],
+    meaningPt: 'Livro, Contador de livros',
+    strokes: 5,
+    radical: '冂 (caixa invertida)',
+    jlpt: 'N2',
+    examples: [
+      {
+            word: "一冊",
+            reading: "いっさつ (issatsu)",
+            meaningPt: "Um livro"
+      },
+      {
+            word: "冊子",
+            reading: "さっし (sasshi)",
+            meaningPt: "Livreto / Brochura"
+      }
+]
+  },
+  {
+    id: 'k_n2_add11_44',
+    kanji: '昨',
+    onyomi: ["サク (saku)"],
+    kunyomi: [],
+    meaningPt: 'Ontem, Passado',
+    strokes: 9,
+    radical: '日 (sol/dia)',
+    jlpt: 'N2',
+    examples: [
+      {
+            word: "昨日",
+            reading: "きのう (kinou)",
+            meaningPt: "Ontem"
+      },
+      {
+            word: "昨年",
+            reading: "さくねん (sakunen)",
+            meaningPt: "Ano passado"
+      },
+      {
+            word: "昨夜",
+            reading: "さくや (sakuya)",
+            meaningPt: "Noite passada"
+      }
+]
+  },
+  {
+    id: 'k_n2_add11_45',
+    kanji: '咲',
+    onyomi: ["ショウ (shou)"],
+    kunyomi: ["さ.く (sa.ku)"],
+    meaningPt: 'Florescer',
+    strokes: 9,
+    radical: '口 (boca)',
+    jlpt: 'N2',
+    examples: [
+      {
+            word: "咲く",
+            reading: "さく (saku)",
+            meaningPt: "Florescer"
+      },
+      {
+            word: "遅咲き",
+            reading: "おそざき (osozaki)",
+            meaningPt: "Florescimento tardio"
+      }
+]
+  },
+  {
+    id: 'k_n2_add11_46',
+    kanji: '坂',
+    onyomi: ["ハン (han)"],
+    kunyomi: ["さか (saka)"],
+    meaningPt: 'Ladeira',
+    strokes: 7,
+    radical: '土 (terra)',
+    jlpt: 'N2',
+    examples: [
+      {
+            word: "坂",
+            reading: "さか (saka)",
+            meaningPt: "Ladeira"
+      },
+      {
+            word: "上り坂",
+            reading: "のぼりざか (noborizaka)",
+            meaningPt: "Ladeira acima"
+      },
+      {
+            word: "坂道",
+            reading: "さかみち (sakamichi)",
+            meaningPt: "Caminho íngreme"
+      }
+]
+  },
+  {
+    id: 'k_n2_add11_47',
+    kanji: '財',
+    onyomi: ["ザイ (zai)","サイ (sai)"],
+    kunyomi: [],
+    meaningPt: 'Fortuna, Propriedade',
+    strokes: 10,
+    radical: '貝 (concha/moeda)',
+    jlpt: 'N2',
+    examples: [
+      {
+            word: "財産",
+            reading: "ざいさん (zaisan)",
+            meaningPt: "Propriedade / Fortuna"
+      },
+      {
+            word: "財布",
+            reading: "さいふ (saifu)",
+            meaningPt: "Carteira"
+      },
+      {
+            word: "財政",
+            reading: "ざいせい (zaisei)",
+            meaningPt: "Finanças"
+      }
+]
+  },
+  {
+    id: 'k_n2_add11_48',
+    kanji: '罪',
+    onyomi: ["ザイ (zai)"],
+    kunyomi: ["つみ (tsumi)"],
+    meaningPt: 'Pecado, Crime, Culpa',
+    strokes: 13,
+    radical: '网 (rede)',
+    jlpt: 'N2',
+    examples: [
+      {
+            word: "罪",
+            reading: "つみ (tsumi)",
+            meaningPt: "Crime / Pecado"
+      },
+      {
+            word: "犯罪",
+            reading: "はんざい (hanzai)",
+            meaningPt: "Crime"
+      },
+      {
+            word: "無罪",
+            reading: "むざい (muzai)",
+            meaningPt: "Inocente (sem culpa)"
+      }
+]
+  },
+  {
+    id: 'k_n2_add11_49',
+    kanji: '材',
+    onyomi: ["ザイ (zai)"],
+    kunyomi: [],
+    meaningPt: 'Madeira, Material',
+    strokes: 7,
+    radical: '木 (árvore)',
+    jlpt: 'N2',
+    examples: [
+      {
+            word: "材料",
+            reading: "ざいりょう (zairyou)",
+            meaningPt: "Material / Ingrediente"
+      },
+      {
+            word: "木材",
+            reading: "もくざい (mokuzai)",
+            meaningPt: "Madeira"
+      },
+      {
+            word: "素材",
+            reading: "そざい (sozai)",
+            meaningPt: "Matéria-prima"
+      }
+]
+  },
+  {
+    id: 'k_n2_add11_50',
+    kanji: '在',
+    onyomi: ["ザイ (zai)"],
+    kunyomi: ["あ.る (a.ru)"],
+    meaningPt: 'Existir',
+    strokes: 6,
+    radical: '土 (terra)',
+    jlpt: 'N2',
+    examples: [
+      {
+            word: "現在",
+            reading: "げんざい (genzai)",
+            meaningPt: "Atualmente / Presente"
+      },
+      {
+            word: "存在",
+            reading: "そんざい (sonzai)",
+            meaningPt: "Existência"
+      },
+      {
+            word: "滞在",
+            reading: "たいざい (taizai)",
+            meaningPt: "Estadia"
+      }
+]
+  },
+  {
+    id: 'k_n2_add11_51',
+    kanji: '際',
+    onyomi: ["サイ (sai)"],
+    kunyomi: ["きわ (kiwa)"],
+    meaningPt: 'Ocasião, Borda',
+    strokes: 14,
+    radical: '阜 (colina)',
+    jlpt: 'N2',
+    examples: [
+      {
+            word: "国際",
+            reading: "こくさい (kokusai)",
+            meaningPt: "Internacional"
+      },
+      {
+            word: "交際",
+            reading: "こうさい (kousai)",
+            meaningPt: "Relacionamento / Namoro"
+      },
+      {
+            word: "際に",
+            reading: "さいに (saini)",
+            meaningPt: "No momento de / Na ocasião de"
+      }
+]
+  },
+  {
+    id: 'k_n2_add11_52',
+    kanji: '細',
+    onyomi: ["サイ (sai)"],
+    kunyomi: ["ほそ.い (hoso.i)","こま.かい (koma.kai)"],
+    meaningPt: 'Fino, Detalhado',
+    strokes: 11,
+    radical: '糸 (fio)',
+    jlpt: 'N2',
+    examples: [
+      {
+            word: "細かい",
+            reading: "こまかい (komakai)",
+            meaningPt: "Pequeno / Detalhado"
+      },
+      {
+            word: "細い",
+            reading: "ほそい (hosoi)",
+            meaningPt: "Fino / Magro"
+      },
+      {
+            word: "詳細",
+            reading: "しょうさい (shousai)",
+            meaningPt: "Detalhes"
+      }
+]
+  },
+  {
+    id: 'k_n2_add11_53',
+    kanji: '祭',
+    onyomi: ["サイ (sai)"],
+    kunyomi: ["まつ.り (matsu.ri)"],
+    meaningPt: 'Festival',
+    strokes: 11,
+    radical: '示 (mostrar)',
+    jlpt: 'N2',
+    examples: [
+      {
+            word: "お祭り",
+            reading: "おまつり (omatsuri)",
+            meaningPt: "Festival"
+      },
+      {
+            word: "文化祭",
+            reading: "ぶんかさい (bunkasai)",
+            meaningPt: "Festival cultural"
+      },
+      {
+            word: "祭日",
+            reading: "さいじつ (saijitsu)",
+            meaningPt: "Feriado nacional"
+      }
+]
+  },
+  {
+    id: 'k_n2_add11_54',
+    kanji: '済',
+    onyomi: ["サイ (sai)","ザイ (zai)"],
+    kunyomi: ["す.む (su.mu)","す.ます (su.masu)"],
+    meaningPt: 'Terminar, Aliviar',
+    strokes: 11,
+    radical: '水 (água)',
+    jlpt: 'N2',
+    examples: [
+      {
+            word: "済む",
+            reading: "すむ (sumu)",
+            meaningPt: "Terminar / Concluir"
+      },
+      {
+            word: "経済",
+            reading: "けいざい (keizai)",
+            meaningPt: "Economia"
+      },
+      {
+            word: "済ませる",
+            reading: "すませる (sumaseru)",
+            meaningPt: "Finalizar / Terminar (transitivo)"
+      }
+]
+  },
+  {
+    id: 'k_n2_add11_55',
+    kanji: '歳',
+    onyomi: ["サイ (sai)","セイ (sei)"],
+    kunyomi: [],
+    meaningPt: 'Idade, Ano',
+    strokes: 13,
+    radical: '止 (parar)',
+    jlpt: 'N2',
+    examples: [
+      {
+            word: "二十歳",
+            reading: "はたち (hatachi)",
+            meaningPt: "20 anos de idade"
+      },
+      {
+            word: "歳",
+            reading: "さい (sai)",
+            meaningPt: "...anos de idade"
+      },
+      {
+            word: "お歳暮",
+            reading: "おせいぼ (oseibo)",
+            meaningPt: "Presente de fim de ano"
+      }
+]
+  },
+  {
+    id: 'k_n2_add11_56',
+    kanji: '採',
+    onyomi: ["サイ (sai)"],
+    kunyomi: ["と.る (to.ru)"],
+    meaningPt: 'Coletar, Pegar',
+    strokes: 11,
+    radical: '手 (mão)',
+    jlpt: 'N2',
+    examples: [
+      {
+            word: "採用",
+            reading: "さいよう (saiyou)",
+            meaningPt: "Adotar / Contratar"
+      },
+      {
+            word: "採る",
+            reading: "とる (toru)",
+            meaningPt: "Coletar (sangue/plantas)"
+      },
+      {
+            word: "採点",
+            reading: "さいてん (saiten)",
+            meaningPt: "Dar nota / Avaliar"
+      }
+]
+  },
+  {
+    id: 'k_n2_add11_57',
+    kanji: '才',
+    onyomi: ["サイ (sai)"],
+    kunyomi: [],
+    meaningPt: 'Talento, Idade',
+    strokes: 3,
+    radical: '手 (mão)',
+    jlpt: 'N2',
+    examples: [
+      {
+            word: "才能",
+            reading: "さいのう (sainou)",
+            meaningPt: "Talento"
+      },
+      {
+            word: "天才",
+            reading: "てんさい (tensai)",
+            meaningPt: "Gênio"
+      },
+      {
+            word: "才",
+            reading: "さい (sai)",
+            meaningPt: "...anos de idade"
+      }
+]
+  },
+  {
+    id: 'k_n2_add11_58',
+    kanji: '妻',
+    onyomi: ["サイ (sai)"],
+    kunyomi: ["つま (tsuma)"],
+    meaningPt: 'Esposa',
+    strokes: 8,
+    radical: '女 (mulher)',
+    jlpt: 'N2',
+    examples: [
+      {
+            word: "妻",
+            reading: "つま (tsuma)",
+            meaningPt: "Esposa (minha)"
+      },
+      {
+            word: "夫妻",
+            reading: "ふさい (fusai)",
+            meaningPt: "Marido e mulher / Casal"
+      },
+      {
+            word: "妻子",
+            reading: "さいし (saishi)",
+            meaningPt: "Esposa e filhos"
+      }
+]
+  },
+  {
+    id: 'k_n2_add11_59',
+    kanji: '最',
+    onyomi: ["サイ (sai)"],
+    kunyomi: ["もっと.も (motto.mo)"],
+    meaningPt: 'O mais, Extremo',
+    strokes: 12,
+    radical: '日 (sol/dia)',
+    jlpt: 'N2',
+    examples: [
+      {
+            word: "最も",
+            reading: "もっとも (mottomo)",
+            meaningPt: "O mais / Extremamente"
+      },
+      {
+            word: "最近",
+            reading: "さいきん (saikin)",
+            meaningPt: "Recentemente"
+      },
+      {
+            word: "最高",
+            reading: "さいこう (saikou)",
+            meaningPt: "O melhor / O mais alto"
+      }
+]
+  },
+  {
+    id: 'k_n2_add11_60',
+    kanji: '再',
+    onyomi: ["サイ (sai)","サ (sa)"],
+    kunyomi: ["ふたた.び (futata.bi)"],
+    meaningPt: 'De novo, Re-',
+    strokes: 6,
+    radical: '冂 (caixa invertida)',
+    jlpt: 'N2',
+    examples: [
+      {
+            word: "再び",
+            reading: "ふたたび (futatabi)",
+            meaningPt: "De novo / Novamente"
+      },
+      {
+            word: "再来週",
+            reading: "さらいしゅう (saraishuu)",
+            meaningPt: "Semana seguinte à próxima"
+      },
+      {
+            word: "再開",
+            reading: "さいかい (saikai)",
+            meaningPt: "Reabertura / Reinício"
+      }
+]
+  },
+  {
+    id: 'k_n2_add11_61',
+    kanji: '座',
+    onyomi: ["ザ (za)"],
+    kunyomi: ["すわ.る (suwa.ru)"],
+    meaningPt: 'Assento, Sentar',
+    strokes: 10,
+    radical: '广 (prédio largo)',
+    jlpt: 'N2',
+    examples: [
+      {
+            word: "座る",
+            reading: "すわる (suwaru)",
+            meaningPt: "Sentar"
+      },
+      {
+            word: "座席",
+            reading: "ざせき (zaseki)",
+            meaningPt: "Assento"
+      },
+      {
+            word: "口座",
+            reading: "こうざ (kouza)",
+            meaningPt: "Conta (bancária)"
+      }
+]
+  },
+  {
+    id: 'k_n2_add11_62',
+    kanji: '砂',
+    onyomi: ["サ (sa)","シャ (sha)"],
+    kunyomi: ["すな (suna)"],
+    meaningPt: 'Areia',
+    strokes: 9,
+    radical: '石 (pedra)',
+    jlpt: 'N2',
+    examples: [
+      {
+            word: "砂",
+            reading: "すな (suna)",
+            meaningPt: "Areia"
+      },
+      {
+            word: "砂糖",
+            reading: "さとう (satou)",
+            meaningPt: "Açúcar"
+      },
+      {
+            word: "砂漠",
+            reading: "さばく (sabaku)",
+            meaningPt: "Deserto"
+      }
+]
+  },
+  {
+    id: 'k_n2_add11_63',
+    kanji: '査',
+    onyomi: ["サ (sa)"],
+    kunyomi: [],
+    meaningPt: 'Investigar',
+    strokes: 9,
+    radical: '木 (árvore)',
+    jlpt: 'N2',
+    examples: [
+      {
+            word: "検査",
+            reading: "けんさ (kensa)",
+            meaningPt: "Inspeção / Exame (médico/técnico)"
+      },
+      {
+            word: "調査",
+            reading: "ちょうさ (chousa)",
+            meaningPt: "Investigação / Pesquisa"
+      },
+      {
+            word: "審査",
+            reading: "しんさ (shinsa)",
+            meaningPt: "Avaliação / Julgamento"
+      }
+]
+  },
+  {
+    id: 'k_n2_add11_64',
+    kanji: '差',
+    onyomi: ["サ (sa)"],
+    kunyomi: ["さ.す (sa.su)"],
+    meaningPt: 'Diferença, Apontar',
+    strokes: 10,
+    radical: '工 (trabalho)',
+    jlpt: 'N2',
+    examples: [
+      {
+            word: "差",
+            reading: "さ (sa)",
+            meaningPt: "Diferença"
+      },
+      {
+            word: "交差点",
+            reading: "こうさてん (kousaten)",
+            meaningPt: "Cruzamento"
+      },
+      {
+            word: "時差",
+            reading: "じさ (jisa)",
+            meaningPt: "Fuso horário / Diferença de tempo"
+      }
+]
+  },
+  {
+    id: 'k_n2_add11_65',
+    kanji: '混',
+    onyomi: ["コン (kon)"],
+    kunyomi: ["ま.じる (ma.jiru)","ま.ざる (ma.zaru)","こ.む (ko.mu)"],
+    meaningPt: 'Misturar, Lotar',
+    strokes: 11,
+    radical: '水 (água)',
+    jlpt: 'N2',
+    examples: [
+      {
+            word: "混雑",
+            reading: "こんざつ (konzatsu)",
+            meaningPt: "Congestionamento / Tumulto"
+      },
+      {
+            word: "混ざる",
+            reading: "まざる (mazaru)",
+            meaningPt: "Estar misturado"
+      },
+      {
+            word: "混乱",
+            reading: "こんらん (konran)",
+            meaningPt: "Confusão"
+      }
+]
+  },
+  {
+    id: 'k_n2_add11_66',
+    kanji: '根',
+    onyomi: ["コン (kon)"],
+    kunyomi: ["ね (ne)"],
+    meaningPt: 'Raiz, Base',
+    strokes: 10,
+    radical: '木 (árvore)',
+    jlpt: 'N2',
+    examples: [
+      {
+            word: "根",
+            reading: "ね (ne)",
+            meaningPt: "Raiz"
+      },
+      {
+            word: "屋根",
+            reading: "やね (yane)",
+            meaningPt: "Telhado"
+      },
+      {
+            word: "根本",
+            reading: "こんぽん (konpon)",
+            meaningPt: "Fundamento / Origem"
+      }
+]
+  },
+  {
+    id: 'k_n2_add11_67',
+    kanji: '婚',
+    onyomi: ["コン (kon)"],
+    kunyomi: [],
+    meaningPt: 'Casamento',
+    strokes: 11,
+    radical: '女 (mulher)',
+    jlpt: 'N2',
+    examples: [
+      {
+            word: "結婚",
+            reading: "けっこん (kekkon)",
+            meaningPt: "Casamento"
+      },
+      {
+            word: "婚約",
+            reading: "こんやく (konyaku)",
+            meaningPt: "Noivado"
+      },
+      {
+            word: "離婚",
+            reading: "りこん (rikon)",
+            meaningPt: "Divórcio"
+      }
+]
+  },
+  {
+    id: 'k_n2_add11_68',
+    kanji: '困',
+    onyomi: ["コン (kon)"],
+    kunyomi: ["こま.る (koma.ru)"],
+    meaningPt: 'Estar em apuros, Dificuldade',
+    strokes: 7,
+    radical: '囗 (caixa/cerco)',
+    jlpt: 'N2',
+    examples: [
+      {
+            word: "困る",
+            reading: "こまる (komaru)",
+            meaningPt: "Estar em apuros / Ter problemas"
+      },
+      {
+            word: "困難",
+            reading: "こんなん (konnan)",
+            meaningPt: "Dificuldade / Dureza"
+      },
+      {
+            word: "貧困",
+            reading: "ひんこん (hinkon)",
+            meaningPt: "Pobreza"
+      }
+]
+  },
+  {
+    id: 'k_n2_add11_69',
+    kanji: '込',
+    onyomi: [],
+    kunyomi: ["こ.む (ko.mu)","こ.める (ko.meru)"],
+    meaningPt: 'Incluir, Ficar lotado',
+    strokes: 5,
+    radical: '辵 (caminhar)',
+    jlpt: 'N2',
+    examples: [
+      {
+            word: "込む",
+            reading: "こむ (komu)",
+            meaningPt: "Estar lotado"
+      },
+      {
+            word: "申し込む",
+            reading: "もうしこむ (moushikomu)",
+            meaningPt: "Inscrever-se / Candidatar-se"
+      },
+      {
+            word: "税込",
+            reading: "ぜいこみ (zeikomi)",
+            meaningPt: "Imposto incluso"
+      }
+]
+  },
+  {
+    id: 'k_n2_add11_70',
+    kanji: '骨',
+    onyomi: ["コツ (kotsu)"],
+    kunyomi: ["ほね (hone)"],
+    meaningPt: 'Osso',
+    strokes: 10,
+    radical: '骨 (osso)',
+    jlpt: 'N2',
+    examples: [
+      {
+            word: "骨",
+            reading: "ほね (hone)",
+            meaningPt: "Osso"
+      },
+      {
+            word: "骨折",
+            reading: "こっせつ (kossetsu)",
+            meaningPt: "Fratura óssea"
+      },
+      {
+            word: "鉄骨",
+            reading: "てっこつ (tekkotsu)",
+            meaningPt: "Estrutura de aço"
+      }
+]
+  },
+  {
+    id: 'k_n2_add11_71',
+    kanji: '腰',
+    onyomi: ["ヨウ (you)"],
+    kunyomi: ["こし (koshi)"],
+    meaningPt: 'Quadril, Cintura',
+    strokes: 13,
+    radical: '月 (carne/lua)',
+    jlpt: 'N2',
+    examples: [
+      {
+            word: "腰",
+            reading: "こし (koshi)",
+            meaningPt: "Cintura / Quadril"
+      },
+      {
+            word: "腰痛",
+            reading: "ようつう (youtsuu)",
+            meaningPt: "Dor lombar"
+      }
+]
+  },
+  {
+    id: 'k_n2_add11_72',
+    kanji: '告',
+    onyomi: ["コク (koku)"],
+    kunyomi: ["つ.げる (tsu.geru)"],
+    meaningPt: 'Anunciar, Informar',
+    strokes: 7,
+    radical: '口 (boca)',
+    jlpt: 'N2',
+    examples: [
+      {
+            word: "広告",
+            reading: "こうこく (koukoku)",
+            meaningPt: "Anúncio / Propaganda"
+      },
+      {
+            word: "報告",
+            reading: "ほうこく (houkoku)",
+            meaningPt: "Relatório"
+      },
+      {
+            word: "告白",
+            reading: "こくはく (kokuhaku)",
+            meaningPt: "Confissão (amor/crime)"
+      }
+]
+  },
+  {
+    id: 'k_n2_add11_73',
+    kanji: '刻',
+    onyomi: ["コク (koku)"],
+    kunyomi: ["きざ.む (kiza.mu)"],
+    meaningPt: 'Gravar, Tempo',
+    strokes: 8,
+    radical: '刀 (espada)',
+    jlpt: 'N2',
+    examples: [
+      {
+            word: "遅刻",
+            reading: "ちこく (chikoku)",
+            meaningPt: "Atraso"
+      },
+      {
+            word: "時刻",
+            reading: "じこく (jikoku)",
+            meaningPt: "Horário / Hora"
+      },
+      {
+            word: "刻む",
+            reading: "きざむ (kizamu)",
+            meaningPt: "Gravar / Picar (cortar fino)"
+      }
+]
+  },
+  {
+    id: 'k_n2_add11_74',
+    kanji: '号',
+    onyomi: ["ゴウ (gou)"],
+    kunyomi: [],
+    meaningPt: 'Número, Edição',
+    strokes: 5,
+    radical: '口 (boca)',
+    jlpt: 'N2',
+    examples: [
+      {
+            word: "番号",
+            reading: "ばんごう (bangou)",
+            meaningPt: "Número"
+      },
+      {
+            word: "信号",
+            reading: "しんごう (shingou)",
+            meaningPt: "Semáforo / Sinal"
+      },
+      {
+            word: "記号",
+            reading: "きごう (kigou)",
+            meaningPt: "Símbolo / Marca"
+      }
+]
+  },
+  {
+    id: 'k_n2_add11_75',
+    kanji: '香',
+    onyomi: ["コウ (kou)","キョウ (kyou)"],
+    kunyomi: ["かお.り (kao.ri)"],
+    meaningPt: 'Cheiro, Incenso',
+    strokes: 9,
+    radical: '香 (incenso)',
+    jlpt: 'N2',
+    examples: [
+      {
+            word: "香り",
+            reading: "かおり (kaori)",
+            meaningPt: "Cheiro bom / Fragrância"
+      },
+      {
+            word: "香水",
+            reading: "こうすい (kousui)",
+            meaningPt: "Perfume"
+      },
+      {
+            word: "香港",
+            reading: "ほんこん (honkon)",
+            meaningPt: "Hong Kong"
+      }
+]
+  },
+  {
+    id: 'k_n2_add11_76',
+    kanji: '降',
+    onyomi: ["コウ (kou)"],
+    kunyomi: ["お.りる (o.riru)","ふ.る (fu.ru)"],
+    meaningPt: 'Descer, Cair (chuva/neve)',
+    strokes: 10,
+    radical: '阜 (colina)',
+    jlpt: 'N2',
+    examples: [
+      {
+            word: "降りる",
+            reading: "おりる (oriru)",
+            meaningPt: "Descer (de um veículo)"
+      },
+      {
+            word: "降る",
+            reading: "ふる (furu)",
+            meaningPt: "Cair (chuva/neve)"
+      },
+      {
+            word: "以降",
+            reading: "いこう (ikou)",
+            meaningPt: "A partir de (tempo)"
+      }
+]
+  },
+  {
+    id: 'k_n2_add11_77',
+    kanji: '鉱',
+    onyomi: ["コウ (kou)"],
+    kunyomi: [],
+    meaningPt: 'Minério, Mineral',
+    strokes: 13,
+    radical: '金 (ouro/metal)',
+    jlpt: 'N2',
+    examples: [
+      {
+            word: "鉱物",
+            reading: "こうぶつ (koubutsu)",
+            meaningPt: "Mineral"
+      },
+      {
+            word: "炭鉱",
+            reading: "たんこう (tankou)",
+            meaningPt: "Mina de carvão"
+      }
+]
+  },
+  {
+    id: 'k_n2_add11_78',
+    kanji: '郊',
+    onyomi: ["コウ (kou)"],
+    kunyomi: [],
+    meaningPt: 'Subúrbio, Arredores',
+    strokes: 9,
+    radical: '邑 (cidade/aldeia)',
+    jlpt: 'N2',
+    examples: [
+      {
+            word: "郊外",
+            reading: "こうがい (kougai)",
+            meaningPt: "Subúrbios / Arredores"
+      },
+      {
+            word: "近郊",
+            reading: "きんこう (kinkou)",
+            meaningPt: "Arredores / Cercanias (da cidade)"
+      }
+]
+  },
+  {
+    id: 'k_n2_add11_79',
+    kanji: '講',
+    onyomi: ["コウ (kou)"],
+    kunyomi: [],
+    meaningPt: 'Palestra, Discurso',
+    strokes: 17,
+    radical: '言 (palavra/falar)',
+    jlpt: 'N2',
+    examples: [
+      {
+            word: "講義",
+            reading: "こうぎ (kougi)",
+            meaningPt: "Palestra / Aula (universitária)"
+      },
+      {
+            word: "休講",
+            reading: "きゅうこう (kyuukou)",
+            meaningPt: "Aula cancelada"
+      },
+      {
+            word: "講演",
+            reading: "こうえん (kouen)",
+            meaningPt: "Discurso / Conferência"
+      }
+]
+  },
+  {
+    id: 'k_n2_add11_80',
+    kanji: '荒',
+    onyomi: ["コウ (kou)"],
+    kunyomi: ["あら.い (ara.i)","あ.れる (a.reru)"],
+    meaningPt: 'Violento, Árido',
+    strokes: 9,
+    radical: '艸 (grama)',
+    jlpt: 'N2',
+    examples: [
+      {
+            word: "荒い",
+            reading: "あらい (arai)",
+            meaningPt: "Áspero / Violento"
+      },
+      {
+            word: "荒れる",
+            reading: "あれる (areru)",
+            meaningPt: "Ficar agitado / Estragar-se"
+      }
+]
+  },
+  {
+    id: 'k_n2_add11_81',
+    kanji: '航',
+    onyomi: ["コウ (kou)"],
+    kunyomi: [],
+    meaningPt: 'Navegar, Voo',
+    strokes: 10,
+    radical: '舟 (barco)',
+    jlpt: 'N2',
+    examples: [
+      {
+            word: "航空",
+            reading: "こうくう (koukuu)",
+            meaningPt: "Aviação"
+      },
+      {
+            word: "航海",
+            reading: "こうかい (koukai)",
+            meaningPt: "Navegação / Viagem marítima"
+      },
+      {
+            word: "航空券",
+            reading: "こうくうけん (koukuuken)",
+            meaningPt: "Passagem aérea"
+      }
+]
+  },
+  {
+    id: 'k_n2_add11_82',
+    kanji: '肯',
+    onyomi: ["コウ (kou)"],
+    kunyomi: [],
+    meaningPt: 'Concordar, Afirmar',
+    strokes: 8,
+    radical: '肉 (carne)',
+    jlpt: 'N2',
+    examples: [
+      {
+            word: "肯定",
+            reading: "こうてい (koutei)",
+            meaningPt: "Afirmação / Confirmação"
+      },
+      {
+            word: "肯定的",
+            reading: "こうていてき (kouteiteki)",
+            meaningPt: "Afirmativo"
+      }
+]
+  },
+  {
+    id: 'k_n2_add11_83',
+    kanji: '耕',
+    onyomi: ["コウ (kou)"],
+    kunyomi: ["たがや.す (tagaya.su)"],
+    meaningPt: 'Arar, Cultivar',
+    strokes: 10,
+    radical: '耒 (arado)',
+    jlpt: 'N2',
+    examples: [
+      {
+            word: "耕す",
+            reading: "たがやす (tagayasu)",
+            meaningPt: "Arar / Cultivar (terra)"
+      },
+      {
+            word: "農耕",
+            reading: "のうこう (noukou)",
+            meaningPt: "Agricultura"
+      }
+]
+  },
+  {
+    id: 'k_n2_add11_84',
+    kanji: '紅',
+    onyomi: ["コウ (kou)","ク (ku)"],
+    kunyomi: ["べに (beni)","くれない (kurenai)"],
+    meaningPt: 'Carmesim, Vermelho',
+    strokes: 9,
+    radical: '糸 (fio)',
+    jlpt: 'N2',
+    examples: [
+      {
+            word: "紅茶",
+            reading: "こうちゃ (koucha)",
+            meaningPt: "Chá preto"
+      },
+      {
+            word: "口紅",
+            reading: "くちべに (kuchibeni)",
+            meaningPt: "Batom"
+      },
+      {
+            word: "紅葉",
+            reading: "こうよう (kouyou)",
+            meaningPt: "Folhas de outono"
+      }
+]
+  },
+  {
+    id: 'k_n2_add11_85',
+    kanji: '硬',
+    onyomi: ["コウ (kou)"],
+    kunyomi: ["かた.い (kata.i)"],
+    meaningPt: 'Duro, Rígido',
+    strokes: 12,
+    radical: '石 (pedra)',
+    jlpt: 'N2',
+    examples: [
+      {
+            word: "硬い",
+            reading: "かたい (katai)",
+            meaningPt: "Duro / Sólido"
+      },
+      {
+            word: "硬貨",
+            reading: "こうか (kouka)",
+            meaningPt: "Moeda"
+      }
+]
+  },
+  {
+    id: 'k_n2_add11_86',
+    kanji: '港',
+    onyomi: ["コウ (kou)"],
+    kunyomi: ["みなと (minato)"],
+    meaningPt: 'Porto',
+    strokes: 12,
+    radical: '水 (água)',
+    jlpt: 'N2',
+    examples: [
+      {
+            word: "港",
+            reading: "みなと (minato)",
+            meaningPt: "Porto"
+      },
+      {
+            word: "空港",
+            reading: "くうこう (kuukou)",
+            meaningPt: "Aeroporto"
+      },
+      {
+            word: "香港",
+            reading: "ほんこん (honkon)",
+            meaningPt: "Hong Kong"
+      }
+]
+  },
+  {
+    id: 'k_n2_add11_87',
+    kanji: '構',
+    onyomi: ["コウ (kou)"],
+    kunyomi: ["かま.える (kama.eru)","かま.う (kama.u)"],
+    meaningPt: 'Estrutura, Importar-se',
+    strokes: 14,
+    radical: '木 (árvore)',
+    jlpt: 'N2',
+    examples: [
+      {
+            word: "結構",
+            reading: "けっこう (kekkou)",
+            meaningPt: "Bom / Suficiente / Não, obrigado"
+      },
+      {
+            word: "構う",
+            reading: "かまう (kamau)",
+            meaningPt: "Importar-se com / Cuidar"
+      },
+      {
+            word: "構造",
+            reading: "こうぞう (kouzou)",
+            meaningPt: "Estrutura / Construção"
+      }
+]
+  },
+  {
+    id: 'k_n2_add11_88',
+    kanji: '更',
+    onyomi: ["コウ (kou)"],
+    kunyomi: ["さら (sara)","ふ.ける (fu.keru)"],
+    meaningPt: 'Renovar, Além disso',
+    strokes: 7,
+    radical: '曰 (dizer)',
+    jlpt: 'N2',
+    examples: [
+      {
+            word: "変更",
+            reading: "へんこう (henkou)",
+            meaningPt: "Mudança / Alteração"
+      },
+      {
+            word: "更に",
+            reading: "さらに (sarani)",
+            meaningPt: "Além disso / Mais"
+      },
+      {
+            word: "更新",
+            reading: "こうしん (koushin)",
+            meaningPt: "Renovação / Atualização"
+      }
+]
+  },
+  {
+    id: 'k_n2_add11_89',
+    kanji: '康',
+    onyomi: ["コウ (kou)"],
+    kunyomi: [],
+    meaningPt: 'Saúde, Paz',
+    strokes: 11,
+    radical: '广 (prédio largo)',
+    jlpt: 'N2',
+    examples: [
+      {
+            word: "健康",
+            reading: "けんこう (kenkou)",
+            meaningPt: "Saúde"
+      },
+      {
+            word: "不健康",
+            reading: "ふけんこう (fukenkou)",
+            meaningPt: "Falta de saúde / Doentio"
+      }
+]
+  },
+  {
+    id: 'k_n2_add11_90',
+    kanji: '幸',
+    onyomi: ["コウ (kou)"],
+    kunyomi: ["さいわ.い (saiwa.i)","しあわ.せ (shiawa.se)"],
+    meaningPt: 'Felicidade, Sorte',
+    strokes: 8,
+    radical: '干 (seco)',
+    jlpt: 'N2',
+    examples: [
+      {
+            word: "幸せ",
+            reading: "しあわせ (shiawase)",
+            meaningPt: "Felicidade"
+      },
+      {
+            word: "幸福",
+            reading: "こうふく (koufuku)",
+            meaningPt: "Felicidade / Bem-estar"
+      },
+      {
+            word: "不幸",
+            reading: "ふこう (fukou)",
+            meaningPt: "Infelicidade / Azar"
+      }
+]
+  },
+  {
+    id: 'k_n2_add11_91',
+    kanji: '向',
+    onyomi: ["コウ (kou)"],
+    kunyomi: ["む.く (mu.ku)","む.こう (mu.kou)"],
+    meaningPt: 'Virar-se para, Em direção a',
+    strokes: 6,
+    radical: '口 (boca)',
+    jlpt: 'N2',
+    examples: [
+      {
+            word: "向こう",
+            reading: "むこう (mukou)",
+            meaningPt: "Do outro lado / Ali"
+      },
+      {
+            word: "向かう",
+            reading: "むかう (mukau)",
+            meaningPt: "Dirigir-se a / Enfrentar"
+      },
+      {
+            word: "方向",
+            reading: "ほうこう (houkou)",
+            meaningPt: "Direção"
+      }
+]
+  },
+  {
+    id: 'k_n2_add11_92',
+    kanji: '厚',
+    onyomi: ["コウ (kou)"],
+    kunyomi: ["あつ.い (atsu.i)"],
+    meaningPt: 'Grosso, Espesso',
+    strokes: 9,
+    radical: '厂 (rochedo)',
+    jlpt: 'N2',
+    examples: [
+      {
+            word: "厚い",
+            reading: "あつい (atsui)",
+            meaningPt: "Grosso / Espesso (objetos)"
+      },
+      {
+            word: "濃厚",
+            reading: "のうこう (noukou)",
+            meaningPt: "Espesso / Forte (sabor/densidade)"
+      }
+]
+  },
+  {
+    id: 'k_n2_add11_93',
+    kanji: '効',
+    onyomi: ["コウ (kou)"],
+    kunyomi: ["き.く (ki.ku)"],
+    meaningPt: 'Efeito, Eficácia',
+    strokes: 8,
+    radical: '力 (força)',
+    jlpt: 'N2',
+    examples: [
+      {
+            word: "効果",
+            reading: "こうか (kouka)",
+            meaningPt: "Efeito"
+      },
+      {
+            word: "効く",
+            reading: "きく (kiku)",
+            meaningPt: "Fazer efeito (remédio/etc)"
+      },
+      {
+            word: "有効",
+            reading: "ゆうこう (yuukou)",
+            meaningPt: "Válido / Efetivo"
+      }
+]
+  },
+  {
+    id: 'k_n2_add11_94',
+    kanji: '公',
+    onyomi: ["コウ (kou)"],
+    kunyomi: ["おおやけ (ooyake)"],
+    meaningPt: 'Público',
+    strokes: 4,
+    radical: '八 (oito)',
+    jlpt: 'N2',
+    examples: [
+      {
+            word: "公園",
+            reading: "こうえん (kouen)",
+            meaningPt: "Parque"
+      },
+      {
+            word: "公務員",
+            reading: "こうむいん (koumuin)",
+            meaningPt: "Funcionário público"
+      },
+      {
+            word: "公共",
+            reading: "こうきょう (koukyou)",
+            meaningPt: "Público (comunitário)"
+      }
+]
+  },
+  {
+    id: 'k_n2_add11_95',
+    kanji: '候',
+    onyomi: ["コウ (kou)"],
+    kunyomi: [],
+    meaningPt: 'Clima, Temporada',
+    strokes: 10,
+    radical: '人 (pessoa)',
+    jlpt: 'N2',
+    examples: [
+      {
+            word: "気候",
+            reading: "きこう (kikou)",
+            meaningPt: "Clima"
+      },
+      {
+            word: "候補",
+            reading: "こうほ (kouho)",
+            meaningPt: "Candidato"
+      },
+      {
+            word: "天候",
+            reading: "てんこう (tenkou)",
+            meaningPt: "Condição do tempo"
+      }
+]
+  },
+  {
+    id: 'k_n2_add11_96',
+    kanji: '交',
+    onyomi: ["コウ (kou)"],
+    kunyomi: ["まじ.わる (maji.waru)","かわ.す (kawa.su)"],
+    meaningPt: 'Misturar, Interseção, Trocar',
+    strokes: 6,
+    radical: '亠 (tampa)',
+    jlpt: 'N2',
+    examples: [
+      {
+            word: "交通",
+            reading: "こうつう (koutsuu)",
+            meaningPt: "Trânsito / Transporte"
+      },
+      {
+            word: "交差点",
+            reading: "こうさてん (kousaten)",
+            meaningPt: "Cruzamento"
+      },
+      {
+            word: "交換",
+            reading: "こうかん (koukan)",
+            meaningPt: "Troca"
+      }
+]
+  },
+  {
+    id: 'k_n2_add11_97',
+    kanji: '誤',
+    onyomi: ["ゴ (go)"],
+    kunyomi: ["あやま.る (ayama.ru)"],
+    meaningPt: 'Erro, Engano',
+    strokes: 14,
+    radical: '言 (palavra/falar)',
+    jlpt: 'N2',
+    examples: [
+      {
+            word: "誤解",
+            reading: "ごかい (gokai)",
+            meaningPt: "Mal-entendido"
+      },
+      {
+            word: "誤り",
+            reading: "あやまり (ayamari)",
+            meaningPt: "Erro"
+      },
+      {
+            word: "誤字",
+            reading: "ごじ (goji)",
+            meaningPt: "Erro de digitação / Letra errada"
+      }
+]
+  },
+  {
+    id: 'k_n2_add11_98',
+    kanji: '御',
+    onyomi: ["ギョ (gyo)","ゴ (go)"],
+    kunyomi: ["おん (on)","お (o)"],
+    meaningPt: 'Honorífico, Controlar',
+    strokes: 12,
+    radical: '彳 (passo)',
+    jlpt: 'N2',
+    examples: [
+      {
+            word: "御飯",
+            reading: "ごはん (gohan)",
+            meaningPt: "Arroz cozido / Refeição"
+      },
+      {
+            word: "御主人",
+            reading: "ごしゅじん (goshujin)",
+            meaningPt: "Marido (de outra pessoa)"
+      },
+      {
+            word: "制御",
+            reading: "せいぎょ (seigyo)",
+            meaningPt: "Controle (de sistema)"
+      }
+]
+  }
 ];
