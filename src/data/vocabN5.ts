@@ -28,10 +28,10 @@ export const VOCAB_N5: VocabItem[] = [
     jlpt: 'N5',
     categoryLabelPt: 'Verbo Godan (Grupo 1)',
     exampleSentence: {
-      jp: '日本語で手紙を書きます。',
-      reading: 'にほんご で てがみ を かきます。',
-      romaji: 'Nihongo de tegami o kakimasu.',
-      meaningPt: 'Escrevo uma carta em japonês.'
+      jp: 'きょうしつで書いてください。',
+      reading: 'きょうしつ で かいて ください。',
+      romaji: 'Kyoushitsu de kaite kudasai.',
+      meaningPt: 'Por favor, escreva na sala de aula.'
     }
   },
   {
@@ -158,10 +158,10 @@ export const VOCAB_N5: VocabItem[] = [
     jlpt: 'N5',
     categoryLabelPt: 'Verbo Ichidan (Grupo 2)',
     exampleSentence: {
-      jp: '週末にアニメを見ます。',
-      reading: 'しゅうまつ に アニメ を みます。',
-      romaji: 'Shuumatsu ni anime o mimasu.',
-      meaningPt: 'Assisto anime nos fins de semana.'
+      jp: 'このざっしを見てください。',
+      reading: 'この ざっし を みて ください。',
+      romaji: 'Kono zasshi o mite kudasai.',
+      meaningPt: 'Por favor, veja esta revista.'
     }
   },
   {
@@ -290,10 +290,10 @@ export const VOCAB_N5: VocabItem[] = [
     jlpt: 'N5',
     categoryLabelPt: 'Adjetivo-I (い)',
     exampleSentence: {
-      jp: '小さい猫がいます。',
-      reading: 'ちいさい ねこ が います。',
-      romaji: 'Chiisai neko ga imasu.',
-      meaningPt: 'Há um gatinho pequeno.'
+      jp: 'このいすは小さいです。',
+      reading: 'この いす は ちいさい です。',
+      romaji: 'Kono isu wa chiisai desu.',
+      meaningPt: 'Esta cadeira é pequena.'
     }
   },
   {
@@ -338,10 +338,10 @@ export const VOCAB_N5: VocabItem[] = [
     jlpt: 'N5',
     categoryLabelPt: 'Adjetivo-I (い)',
     exampleSentence: {
-      jp: 'この時計は高いです。',
-      reading: 'この とけい は たかい です。',
-      romaji: 'Kono tokei wa takai desu.',
-      meaningPt: 'Este relógio é caro.'
+      jp: 'このカメラは高いですね。',
+      reading: 'この カメラ は たかい です ね。',
+      romaji: 'Kono kamera wa takai desu ne.',
+      meaningPt: 'Esta câmera é cara, né?'
     }
   },
 
@@ -388,10 +388,10 @@ export const VOCAB_N5: VocabItem[] = [
     jlpt: 'N5',
     categoryLabelPt: 'Adjetivo-Na (な)',
     exampleSentence: {
-      jp: 'お元気ですか。',
-      reading: 'おげんき です か。',
-      romaji: 'O-genki desu ka.',
-      meaningPt: 'Como você está? (Está bem/saudável?)'
+      jp: 'きょうは元気がいいですね。',
+      reading: 'きょう は げんき が いい です ね。',
+      romaji: 'Kyou wa genki ga ii desu ne.',
+      meaningPt: 'Você está com uma energia boa hoje.'
     }
   },
 
@@ -406,10 +406,10 @@ export const VOCAB_N5: VocabItem[] = [
     jlpt: 'N5',
     categoryLabelPt: 'Substantivo',
     exampleSentence: {
-      jp: '自転車で学校へ行きます。',
-      reading: 'じてんしゃ で がっこう へ いきます。',
-      romaji: 'Jitensha de gakkou e ikimasu.',
-      meaningPt: 'Vou para a escola de bicicleta.'
+      jp: 'ヤンさんの学校はどこですか。',
+      reading: 'ヤンさん の がっこう は どこ です か。',
+      romaji: 'Yan-san no gakkou wa doko desu ka.',
+      meaningPt: 'Onde é a escola do Yan?'
     }
   },
   {
@@ -1116,10 +1116,10 @@ export const VOCAB_N5: VocabItem[] = [
     jlpt: "N5",
     categoryLabelPt: "Verbo Ichidan (Grupo 2)",
     exampleSentence: {
-      jp: "覚える。",
-      reading: "おぼえる。",
-      romaji: "oboeru.",
-      meaningPt: "Vou lembrar / decorar."
+      jp: "きのうはがっこうでたくさんかんじを覚えました。",
+      reading: "きのう は がっこう で たくさん かんじ を おぼえました。",
+      romaji: "Kinou wa gakkou de takusan kanji o oboemashita.",
+      meaningPt: "Ontem na escola, memorizei muitos kanjis."
     }
   },
   {
@@ -1230,10 +1230,10 @@ export const VOCAB_N5: VocabItem[] = [
     jlpt: "N5",
     categoryLabelPt: "Verbo Godan (Grupo 1)",
     exampleSentence: {
-      jp: "洗う。",
-      reading: "あらう。",
-      romaji: "arau.",
-      meaningPt: "Vou lavar."
+      jp: "ふくを洗いました。",
+      reading: "ふく を あらいました。",
+      romaji: "Fuku o araimashita.",
+      meaningPt: "Lavei as roupas."
     }
   },
   {
@@ -1326,10 +1326,10 @@ export const VOCAB_N5: VocabItem[] = [
     jlpt: "N5",
     categoryLabelPt: "Verbo Godan (Grupo 1)",
     exampleSentence: {
-      jp: "吹く。",
-      reading: "ふく。",
-      romaji: "fuku.",
-      meaningPt: "Vou soprar."
+      jp: "つよいかぜが吹いています。",
+      reading: "つよい かぜ が ふいて います。",
+      romaji: "Tsuyoi kaze ga fuite imasu.",
+      meaningPt: "Um vento forte está soprando."
     }
   },
   {
@@ -1486,10 +1486,10 @@ export const VOCAB_N5: VocabItem[] = [
     jlpt: "N5",
     categoryLabelPt: "Verbo Godan (Grupo 1)",
     exampleSentence: {
-      jp: "言う。",
-      reading: "いう。",
-      romaji: "iu.",
-      meaningPt: "Vou dizer."
+      jp: "まだ言わないでください。",
+      reading: "まだ いわないで ください。",
+      romaji: "Mada iwanaide kudasai.",
+      meaningPt: "Por favor, não diga ainda."
     }
   },
   {
@@ -1566,10 +1566,10 @@ export const VOCAB_N5: VocabItem[] = [
     jlpt: "N5",
     categoryLabelPt: "Verbo Godan (Grupo 1)",
     exampleSentence: {
-      jp: "貸す。",
-      reading: "かす。",
-      romaji: "kasu.",
-      meaningPt: "Vou emprestar."
+      jp: "リーさんはもりさんにペンを貸しました。",
+      reading: "リーさん は もりさん に ペン を かしました。",
+      romaji: "Rii-san wa Mori-san ni pen o kashimashita.",
+      meaningPt: "O Sr. Lee emprestou uma caneta ao Sr. Mori."
     }
   },
   {
@@ -1598,10 +1598,10 @@ export const VOCAB_N5: VocabItem[] = [
     jlpt: "N5",
     categoryLabelPt: "Verbo Godan (Grupo 1)",
     exampleSentence: {
-      jp: "切る。",
-      reading: "きる。",
-      romaji: "kiru.",
-      meaningPt: "Vou cortar."
+      jp: "そのナイフでりんごを切ってください。",
+      reading: "その ナイフ で りんご を きって ください。",
+      romaji: "Sono naifu de ringo o kitte kudasai.",
+      meaningPt: "Por favor, corte a maçã com essa faca."
     }
   },
   {
