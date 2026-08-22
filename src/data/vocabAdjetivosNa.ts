@@ -1139,4 +1139,69 @@ export const VOCAB_ADJ_NA: VocabItem[] = [
       meaningPt: 'Hoje está bastante frio.'
     }
   }
+,
+  {
+    id: 'v_adj_na_n2_1',
+    word: '意地悪',
+    reading: 'いじわる',
+    romaji: 'ijiwaru',
+    meaningPt: 'Maldoso, cruel',
+    category: 'adjetivo_na',
+    jlpt: 'N2',
+    categoryLabelPt: 'Adjetivo Na',
+    exampleSentence: {
+      jp: '彼は意地悪な人です。',
+      reading: 'かれ は いじわるな ひと です。',
+      romaji: 'Kare wa ijiwaru na hito desu.',
+      meaningPt: 'Ele é uma pessoa maldosa.'
+    }
+  },
+  {
+    id: 'v_adj_na_n2_2',
+    word: '真っ青',
+    reading: 'まっさお',
+    romaji: 'massao',
+    meaningPt: 'Azul escuro, pálido',
+    category: 'adjetivo_na',
+    jlpt: 'N2',
+    categoryLabelPt: 'Adjetivo Na',
+    exampleSentence: {
+      jp: '顔が真っ青ですよ。',
+      reading: 'かお が まっさお です よ。',
+      romaji: 'Kao ga massao desu yo.',
+      meaningPt: 'O seu rosto está completamente pálido.'
+    }
+  },
+  {
+    id: 'v_adj_na_n2_3',
+    word: '真っ白',
+    reading: 'まっしろ',
+    romaji: 'masshiro',
+    meaningPt: 'Branco puro, em branco',
+    category: 'adjetivo_na',
+    jlpt: 'N2',
+    categoryLabelPt: 'Adjetivo Na',
+    exampleSentence: {
+      jp: '雪で山が真っ白です。',
+      reading: 'ゆき で やま が まっしろ です。',
+      romaji: 'Yuki de yama ga masshiro desu.',
+      meaningPt: 'A montanha está branca de neve.'
+    }
+  },
+  {
+    id: 'v_adj_na_n2_4',
+    word: '透明',
+    reading: 'とうめい',
+    romaji: 'toumei',
+    meaningPt: 'Transparente, claro',
+    category: 'adjetivo_na',
+    jlpt: 'N2',
+    categoryLabelPt: 'Adjetivo Na',
+    exampleSentence: {
+      jp: '透明なガラスのコップ。',
+      reading: 'とうめいな ガラス の コップ。',
+      romaji: 'Toumei na garasu no koppu.',
+      meaningPt: 'Um copo de vidro transparente.'
+    }
+  }
 ];

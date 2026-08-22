@@ -1347,4 +1347,21 @@ export const VOCAB_ADJ_I: VocabItem[] = [
       meaningPt: 'Isto está bom para você?'
     }
   }
+,
+  {
+    id: 'v_adj_i_n2_1',
+    word: '青白い',
+    reading: 'あおじろい',
+    romaji: 'aojiroi',
+    meaningPt: 'Pálido',
+    category: 'adjetivo_i',
+    jlpt: 'N2',
+    categoryLabelPt: 'Adjetivo I',
+    exampleSentence: {
+      jp: '彼女は青白い顔をしています。',
+      reading: 'かのじょ は あおじろい かお を しています。',
+      romaji: 'Kanojo wa aojiroi kao o shite imasu.',
+      meaningPt: 'Ela está com o rosto pálido.'
+    }
+  }
 ];
