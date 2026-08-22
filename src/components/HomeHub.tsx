@@ -53,6 +53,16 @@ const JAPANESE_TIPS = [
 const CHANGELOG = [
   {
     date: '22 Ago 2026',
+    title: 'Mais de 170 Advérbios Adicionados!',
+    desc: 'Expandimos a categoria de advérbios com mais de 170 novas palavras e expressões (N5, N4, N3 e N2), todas com tradução e exemplos práticos com áudio.',
+  },
+  {
+    date: '22 Ago 2026',
+    title: 'Adjetivos N2 e N3 Adicionados!',
+    desc: 'Atualizamos nossa base com dezenas de Adjetivos Na e I para os níveis intermediário e avançado (N3 e N2).',
+  },
+  {
+    date: '22 Ago 2026',
     title: 'Adjetivos Na (N4) Adicionados!',
     desc: 'Adicionamos 24 novos Adjetivos Na do nível N4, incluindo palavras importantes como 安全 (Segurança) e 大事 (Importante) com exemplos práticos.',
   },
