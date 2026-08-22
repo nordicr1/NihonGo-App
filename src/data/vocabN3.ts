@@ -2,6 +2,967 @@ import { VocabItem } from '../types';
 
 export const VOCAB_N3: VocabItem[] = [
   {
+    id: 'n3_noun_batch2_1787422304647_0',
+    word: 'お昼',
+    reading: 'おひる',
+    romaji: 'ohiru',
+    meaningPt: 'almoço; meio-dia',
+    category: 'substantivo',
+    jlpt: 'N3',
+    categoryLabelPt: 'Substantivo N3',
+    exampleSentence: {
+      jp: 'お昼ご飯を食べに行きましょう。',
+      reading: 'おひる ごはんを たべに いきましょう。',
+      romaji: 'ohiru gohan o tabe ni ikimashou.',
+      meaningPt: 'Vamos almoçar.'
+    }
+  },
+  {
+    id: 'n3_noun_batch2_1787422304647_1',
+    word: '連続',
+    reading: 'れんぞく',
+    romaji: 'renzoku',
+    meaningPt: 'continuação; sucessão',
+    category: 'substantivo',
+    jlpt: 'N3',
+    categoryLabelPt: 'Substantivo N3',
+    exampleSentence: {
+      jp: '三日間連続で雨が降っている。',
+      reading: 'みっかかん れんぞくで あめが ふっている。',
+      romaji: 'mikkakan renzoku de ame ga futteiru.',
+      meaningPt: 'Está chovendo por três dias seguidos.'
+    }
+  },
+  {
+    id: 'n3_noun_batch2_1787422304647_2',
+    word: '利益',
+    reading: 'りえき',
+    romaji: 'rieki',
+    meaningPt: 'lucro; benefício',
+    category: 'substantivo',
+    jlpt: 'N3',
+    categoryLabelPt: 'Substantivo N3',
+    exampleSentence: {
+      jp: 'このビジネスは大きな利益を生む。',
+      reading: 'この ビジネスは おおきな りえきを うむ。',
+      romaji: 'kono bijinesu wa ookina rieki o umu.',
+      meaningPt: 'Este negócio gera um grande lucro.'
+    }
+  },
+  {
+    id: 'n3_noun_batch2_1787422304647_3',
+    word: '利口',
+    reading: 'りこう',
+    romaji: 'rikou',
+    meaningPt: 'inteligente; esperto',
+    category: 'substantivo',
+    jlpt: 'N3',
+    categoryLabelPt: 'Substantivo N3',
+    exampleSentence: {
+      jp: 'あの子はとても利口だ。',
+      reading: 'あのこは とても りこうだ。',
+      romaji: 'anoko wa totemo rikou da.',
+      meaningPt: 'Aquela criança é muito esperta.'
+    }
+  },
+  {
+    id: 'n3_noun_batch2_1787422304647_4',
+    word: '留学',
+    reading: 'りゅうがく',
+    romaji: 'ryuugaku',
+    meaningPt: 'intercâmbio; estudar fora',
+    category: 'substantivo',
+    jlpt: 'N3',
+    categoryLabelPt: 'Substantivo N3',
+    exampleSentence: {
+      jp: '来年、日本へ留学する予定です。',
+      reading: 'らいねん、にほんへ りゅうがくする よていです。',
+      romaji: 'rainen, nihon e ryuugaku suru yotei desu.',
+      meaningPt: 'Planejo fazer intercâmbio no Japão no ano que vem.'
+    }
+  },
+  {
+    id: 'n3_noun_batch2_1787422304647_5',
+    word: '作品',
+    reading: 'さくひん',
+    romaji: 'sakuhin',
+    meaningPt: 'obra (de arte); produção',
+    category: 'substantivo',
+    jlpt: 'N3',
+    categoryLabelPt: 'Substantivo N3',
+    exampleSentence: {
+      jp: 'これは彼の最高傑作の作品だ。',
+      reading: 'これは かれの さいこう けっさくの さくひんだ。',
+      romaji: 'kore wa kare no saikou kessaku no sakuhin da.',
+      meaningPt: 'Esta obra é a obra-prima dele.'
+    }
+  },
+  {
+    id: 'n3_noun_batch2_1787422304647_6',
+    word: '左右',
+    reading: 'さゆう',
+    romaji: 'sayuu',
+    meaningPt: 'esquerda e direita',
+    category: 'substantivo',
+    jlpt: 'N3',
+    categoryLabelPt: 'Substantivo N3',
+    exampleSentence: {
+      jp: '道路を渡る時は左右を確認する。',
+      reading: 'どうろを わたる ときは さゆうを かくにんする。',
+      romaji: 'douro o wataru toki wa sayuu o kakunin suru.',
+      meaningPt: 'Olhe para a esquerda e para a direita ao atravessar a rua.'
+    }
+  },
+  {
+    id: 'n3_noun_batch2_1787422304647_7',
+    word: '成長',
+    reading: 'せいちょう',
+    romaji: 'seichou',
+    meaningPt: 'crescimento; desenvolvimento',
+    category: 'substantivo',
+    jlpt: 'N3',
+    categoryLabelPt: 'Substantivo N3',
+    exampleSentence: {
+      jp: '子供の成長は早い。',
+      reading: 'こどもの せいちょうは はやい。',
+      romaji: 'kodomo no seichou wa hayai.',
+      meaningPt: 'O crescimento das crianças é rápido.'
+    }
+  },
+  {
+    id: 'n3_noun_batch2_1787422304647_8',
+    word: '製品',
+    reading: 'せいひん',
+    romaji: 'seihin',
+    meaningPt: 'produto manufaturado',
+    category: 'substantivo',
+    jlpt: 'N3',
+    categoryLabelPt: 'Substantivo N3',
+    exampleSentence: {
+      jp: 'この工場で新しい製品を作っている。',
+      reading: 'この こうじょうで あたらしい せいひんを つくっている。',
+      romaji: 'kono koujou de atarashii seihin o tsukutteiru.',
+      meaningPt: 'Eles estão fazendo um novo produto nesta fábrica.'
+    }
+  },
+  {
+    id: 'n3_noun_batch2_1787422304647_9',
+    word: '青年',
+    reading: 'せいねん',
+    romaji: 'seinen',
+    meaningPt: 'juventude; jovem',
+    category: 'substantivo',
+    jlpt: 'N3',
+    categoryLabelPt: 'Substantivo N3',
+    exampleSentence: {
+      jp: '彼は立派な青年になった。',
+      reading: 'かれは りっぱな せいねんに なった。',
+      romaji: 'kare wa rippa na seinen ni natta.',
+      meaningPt: 'Ele se tornou um jovem admirável.'
+    }
+  },
+  {
+    id: 'n3_noun_batch2_1787422304647_10',
+    word: '刺激',
+    reading: 'しげき',
+    romaji: 'shigeki',
+    meaningPt: 'estímulo; incentivo',
+    category: 'substantivo',
+    jlpt: 'N3',
+    categoryLabelPt: 'Substantivo N3',
+    exampleSentence: {
+      jp: '海外旅行は良い刺激になる。',
+      reading: 'かいがい りょこうは よい しげきになる。',
+      romaji: 'kaigai ryokou wa yoi shigeki ni naru.',
+      meaningPt: 'Viajar para o exterior é um bom estímulo.'
+    }
+  },
+  {
+    id: 'n3_noun_batch2_1787422304647_11',
+    word: '資本',
+    reading: 'しほん',
+    romaji: 'shihon',
+    meaningPt: 'fundos; capital',
+    category: 'substantivo',
+    jlpt: 'N3',
+    categoryLabelPt: 'Substantivo N3',
+    exampleSentence: {
+      jp: '会社を設立するための資本を集める。',
+      reading: 'かいしゃを せつりつするための しほんを あつめる。',
+      romaji: 'kaisha o setsuritsu suru tame no shihon o atsumeru.',
+      meaningPt: 'Arrecadar capital para fundar uma empresa.'
+    }
+  },
+  {
+    id: 'n3_noun_batch2_1787422304647_12',
+    word: '品',
+    reading: 'しな',
+    romaji: 'shina',
+    meaningPt: 'artigo; mercadoria; qualidade',
+    category: 'substantivo',
+    jlpt: 'N3',
+    categoryLabelPt: 'Substantivo N3',
+    exampleSentence: {
+      jp: 'この店は安くて良い品を売っている。',
+      reading: 'この みせは やすくて よい しなを うっている。',
+      romaji: 'kono mise wa yasukute yoi shina o utteiru.',
+      meaningPt: 'Esta loja vende mercadorias boas e baratas.'
+    }
+  },
+  {
+    id: 'n3_noun_batch2_1787422304647_13',
+    word: '身長',
+    reading: 'しんちょう',
+    romaji: 'shinchou',
+    meaningPt: 'estatura; altura',
+    category: 'substantivo',
+    jlpt: 'N3',
+    categoryLabelPt: 'Substantivo N3',
+    exampleSentence: {
+      jp: '彼は身長が180センチある。',
+      reading: 'かれは しんちょうが 180センチある。',
+      romaji: 'kare wa shinchou ga 180 senchi aru.',
+      meaningPt: 'Ele tem 180 cm de altura.'
+    }
+  },
+  {
+    id: 'n3_noun_batch2_1787422304647_14',
+    word: '進学',
+    reading: 'しんがく',
+    romaji: 'shingaku',
+    meaningPt: 'ingresso no ensino superior',
+    category: 'substantivo',
+    jlpt: 'N3',
+    categoryLabelPt: 'Substantivo N3',
+    exampleSentence: {
+      jp: '大学への進学を希望している。',
+      reading: 'だいがくへの しんがくを きぼうしている。',
+      romaji: 'daigaku e no shingaku o kibou shiteiru.',
+      meaningPt: 'Eu desejo ingressar na universidade.'
+    }
+  },
+  {
+    id: 'n3_noun_batch2_1787422304647_15',
+    word: '支店',
+    reading: 'してん',
+    romaji: 'shiten',
+    meaningPt: 'filial; sucursal',
+    category: 'substantivo',
+    jlpt: 'N3',
+    categoryLabelPt: 'Substantivo N3',
+    exampleSentence: {
+      jp: '東京に新しい支店を出した。',
+      reading: 'とうきょうに あたらしい してんを だした。',
+      romaji: 'toukyou ni atarashii shiten o dashita.',
+      meaningPt: 'Abriram uma nova filial em Tóquio.'
+    }
+  },
+  {
+    id: 'n3_noun_batch2_1787422304647_16',
+    word: '使用',
+    reading: 'しよう',
+    romaji: 'shiyou',
+    meaningPt: 'uso; aplicação',
+    category: 'substantivo',
+    jlpt: 'N3',
+    categoryLabelPt: 'Substantivo N3',
+    exampleSentence: {
+      jp: 'この部屋は現在使用中です。',
+      reading: 'この へやは げんざい しようちゅうです。',
+      romaji: 'kono heya wa genzai shiyouchuu desu.',
+      meaningPt: 'Este quarto está em uso no momento.'
+    }
+  },
+  {
+    id: 'n3_noun_batch2_1787422304647_17',
+    word: '食品',
+    reading: 'しょくひん',
+    romaji: 'shokuhin',
+    meaningPt: 'alimento; produtos alimentícios',
+    category: 'substantivo',
+    jlpt: 'N3',
+    categoryLabelPt: 'Substantivo N3',
+    exampleSentence: {
+      jp: 'スーパーで食品を買う。',
+      reading: 'スーパーで しょくひんを かう。',
+      romaji: 'suupaa de shokuhin o kau.',
+      meaningPt: 'Comprar alimentos no supermercado.'
+    }
+  },
+  {
+    id: 'n3_noun_batch2_1787422304647_18',
+    word: '書物',
+    reading: 'しょもつ',
+    romaji: 'shomotsu',
+    meaningPt: 'livro; volume',
+    category: 'substantivo',
+    jlpt: 'N3',
+    categoryLabelPt: 'Substantivo N3',
+    exampleSentence: {
+      jp: '図書館には古い書物がたくさんある。',
+      reading: 'としょかんには ふるい しょもつが たくさんある。',
+      romaji: 'toshokan ni wa furui shomotsu ga takusan aru.',
+      meaningPt: 'Há muitos livros antigos na biblioteca.'
+    }
+  },
+  {
+    id: 'n3_noun_batch2_1787422304647_19',
+    word: '書類',
+    reading: 'しょるい',
+    romaji: 'shorui',
+    meaningPt: 'documentos; papéis oficiais',
+    category: 'substantivo',
+    jlpt: 'N3',
+    categoryLabelPt: 'Substantivo N3',
+    exampleSentence: {
+      jp: '会議の書類を準備する。',
+      reading: 'かいぎの しょるいを じゅんびする。',
+      romaji: 'kaigi no shorui o junbi suru.',
+      meaningPt: 'Preparar os documentos para a reunião.'
+    }
+  },
+  {
+    id: 'n3_noun_batch2_1787422304647_20',
+    word: '書斎',
+    reading: 'しょさい',
+    romaji: 'shosai',
+    meaningPt: 'escritório (em casa); sala de estudos',
+    category: 'substantivo',
+    jlpt: 'N3',
+    categoryLabelPt: 'Substantivo N3',
+    exampleSentence: {
+      jp: '父は書斎で本を読んでいる。',
+      reading: 'ちちは しょさいで ほんを よんでいる。',
+      romaji: 'chichi wa shosai de hon o yondeiru.',
+      meaningPt: 'Meu pai está lendo um livro no escritório.'
+    }
+  },
+  {
+    id: 'n3_noun_batch2_1787422304647_21',
+    word: '商売',
+    reading: 'しょうばい',
+    romaji: 'shoubai',
+    meaningPt: 'negócio; comércio',
+    category: 'substantivo',
+    jlpt: 'N3',
+    categoryLabelPt: 'Substantivo N3',
+    exampleSentence: {
+      jp: '彼の商売はうまくいっている。',
+      reading: 'かれの しょうばいは うまくいっている。',
+      romaji: 'kare no shoubai wa umaku itteiru.',
+      meaningPt: 'O negócio dele está indo bem.'
+    }
+  },
+  {
+    id: 'n3_noun_batch2_1787422304647_22',
+    word: '奨学金',
+    reading: 'しょうがくきん',
+    romaji: 'shougakukin',
+    meaningPt: 'bolsa de estudos',
+    category: 'substantivo',
+    jlpt: 'N3',
+    categoryLabelPt: 'Substantivo N3',
+    exampleSentence: {
+      jp: '奨学金をもらって大学に通う。',
+      reading: 'しょうがくきんを もらって だいがくに かよう。',
+      romaji: 'shougakukin o moratte daigaku ni kayou.',
+      meaningPt: 'Frequentar a universidade com uma bolsa de estudos.'
+    }
+  },
+  {
+    id: 'n3_noun_batch2_1787422304647_23',
+    word: '正午',
+    reading: 'しょうご',
+    romaji: 'shougo',
+    meaningPt: 'meio-dia',
+    category: 'substantivo',
+    jlpt: 'N3',
+    categoryLabelPt: 'Substantivo N3',
+    exampleSentence: {
+      jp: '正午に駅で待ち合わせましょう。',
+      reading: 'しょうごに えきで まちあわせましょう。',
+      romaji: 'shougo ni eki de machiawasemashou.',
+      meaningPt: 'Vamos nos encontrar na estação ao meio-dia.'
+    }
+  },
+  {
+    id: 'n3_noun_batch2_1787422304647_24',
+    word: '商品',
+    reading: 'しょうひん',
+    romaji: 'shouhin',
+    meaningPt: 'mercadoria; produto',
+    category: 'substantivo',
+    jlpt: 'N3',
+    categoryLabelPt: 'Substantivo N3',
+    exampleSentence: {
+      jp: 'この商品はとても人気がある。',
+      reading: 'この しょうひんは とても にんきがある。',
+      romaji: 'kono shouhin wa totemo ninki ga aru.',
+      meaningPt: 'Esta mercadoria é muito popular.'
+    }
+  },
+  {
+    id: 'n3_noun_batch2_1787422304647_25',
+    word: '少女',
+    reading: 'しょうじょ',
+    romaji: 'shoujo',
+    meaningPt: 'menina; garota',
+    category: 'substantivo',
+    jlpt: 'N3',
+    categoryLabelPt: 'Substantivo N3',
+    exampleSentence: {
+      jp: '公園で少女が遊んでいる。',
+      reading: 'こうえんで しょうじょが あそんでいる。',
+      romaji: 'kouen de shoujo ga asondeiru.',
+      meaningPt: 'Uma menina está brincando no parque.'
+    }
+  },
+  {
+    id: 'n3_noun_batch2_1787422304647_26',
+    word: '証明',
+    reading: 'しょうめい',
+    romaji: 'shoumei',
+    meaningPt: 'prova; certificação',
+    category: 'substantivo',
+    jlpt: 'N3',
+    categoryLabelPt: 'Substantivo N3',
+    exampleSentence: {
+      jp: '自分の無実を証明する。',
+      reading: 'じぶんの むじつを しょうめいする。',
+      romaji: 'jibun no mujitsu o shoumei suru.',
+      meaningPt: 'Provar a própria inocência.'
+    }
+  },
+  {
+    id: 'n3_noun_batch2_1787422304647_27',
+    word: '少年',
+    reading: 'しょうねん',
+    romaji: 'shounen',
+    meaningPt: 'menino; garoto',
+    category: 'substantivo',
+    jlpt: 'N3',
+    categoryLabelPt: 'Substantivo N3',
+    exampleSentence: {
+      jp: 'その少年は足が速い。',
+      reading: 'その しょうねんは あしが はやい。',
+      romaji: 'sono shounen wa ashi ga hayai.',
+      meaningPt: 'Aquele menino corre rápido.'
+    }
+  },
+  {
+    id: 'n3_noun_batch2_1787422304647_28',
+    word: '少々',
+    reading: 'しょうしょう',
+    romaji: 'shoushou',
+    meaningPt: 'um momento; um pouco',
+    category: 'substantivo',
+    jlpt: 'N3',
+    categoryLabelPt: 'Substantivo N3',
+    exampleSentence: {
+      jp: '少々お待ちください。',
+      reading: 'しょうしょう おまちください。',
+      romaji: 'shoushou omachi kudasai.',
+      meaningPt: 'Por favor, aguarde um momento.'
+    }
+  },
+  {
+    id: 'n3_noun_batch2_1787422304647_29',
+    word: '招待',
+    reading: 'しょうたい',
+    romaji: 'shoutai',
+    meaningPt: 'convite',
+    category: 'substantivo',
+    jlpt: 'N3',
+    categoryLabelPt: 'Substantivo N3',
+    exampleSentence: {
+      jp: '結婚式に招待された。',
+      reading: 'けっこんしきに しょうたいされた。',
+      romaji: 'kekkonshiki ni shoutai sareta.',
+      meaningPt: 'Fui convidado para a cerimônia de casamento.'
+    }
+  },
+  {
+    id: 'n3_noun_batch2_1787422304647_30',
+    word: '週',
+    reading: 'しゅう',
+    romaji: 'shuu',
+    meaningPt: 'semana',
+    category: 'substantivo',
+    jlpt: 'N3',
+    categoryLabelPt: 'Substantivo N3',
+    exampleSentence: {
+      jp: '一週間に三回ジムに行く。',
+      reading: 'いっしゅうかんに さんかい ジムに いく。',
+      romaji: 'isshuukan ni sankai jimu ni iku.',
+      meaningPt: 'Vou à academia três vezes por semana.'
+    }
+  },
+  {
+    id: 'n3_noun_batch2_1787422304647_31',
+    word: '集中',
+    reading: 'しゅうちゅう',
+    romaji: 'shuuchuu',
+    meaningPt: 'concentração',
+    category: 'substantivo',
+    jlpt: 'N3',
+    categoryLabelPt: 'Substantivo N3',
+    exampleSentence: {
+      jp: '勉強に集中できない。',
+      reading: 'べんきょうに しゅうちゅうできない。',
+      romaji: 'benkyou ni shuuchuu dekinai.',
+      meaningPt: 'Não consigo me concentrar nos estudos.'
+    }
+  },
+  {
+    id: 'n3_noun_batch2_1787422304647_32',
+    word: '集団',
+    reading: 'しゅうだん',
+    romaji: 'shuudan',
+    meaningPt: 'grupo; massa',
+    category: 'substantivo',
+    jlpt: 'N3',
+    categoryLabelPt: 'Substantivo N3',
+    exampleSentence: {
+      jp: '集団で行動する。',
+      reading: 'しゅうだんで こうどうする。',
+      romaji: 'shuudan de koudou suru.',
+      meaningPt: 'Agir em grupo.'
+    }
+  },
+  {
+    id: 'n3_noun_batch2_1787422304647_33',
+    word: '収穫',
+    reading: 'しゅうかく',
+    romaji: 'shuukaku',
+    meaningPt: 'colheita; frutos (de esforço)',
+    category: 'substantivo',
+    jlpt: 'N3',
+    categoryLabelPt: 'Substantivo N3',
+    exampleSentence: {
+      jp: '今年は米の収穫が多い。',
+      reading: 'ことしは こめの しゅうかくが おおい。',
+      romaji: 'kotoshi wa kome no shuukaku ga ooi.',
+      meaningPt: 'A colheita de arroz deste ano é grande.'
+    }
+  },
+  {
+    id: 'n3_noun_batch2_1787422304647_34',
+    word: '週間',
+    reading: 'しゅうかん',
+    romaji: 'shuukan',
+    meaningPt: 'semana (duração)',
+    category: 'substantivo',
+    jlpt: 'N3',
+    categoryLabelPt: 'Substantivo N3',
+    exampleSentence: {
+      jp: '二週間後にテストがある。',
+      reading: 'にしゅうかんごに テストがある。',
+      romaji: 'nishuukango ni tesuto ga aru.',
+      meaningPt: 'Haverá um teste daqui a duas semanas.'
+    }
+  },
+  {
+    id: 'n3_noun_batch2_1787422304647_35',
+    word: '週刊',
+    reading: 'しゅうかん',
+    romaji: 'shuukan_2',
+    meaningPt: 'publicação semanal',
+    category: 'substantivo',
+    jlpt: 'N3',
+    categoryLabelPt: 'Substantivo N3',
+    exampleSentence: {
+      jp: '週刊誌を毎週買っている。',
+      reading: 'しゅうかんしを まいしゅう かっている。',
+      romaji: 'shuukanshi o maishuu katteiru.',
+      meaningPt: 'Compro uma revista semanal toda semana.'
+    }
+  },
+  {
+    id: 'n3_noun_batch2_1787422304647_36',
+    word: '収入',
+    reading: 'しゅうにゅう',
+    romaji: 'shuunyuu',
+    meaningPt: 'renda; receita; salário',
+    category: 'substantivo',
+    jlpt: 'N3',
+    categoryLabelPt: 'Substantivo N3',
+    exampleSentence: {
+      jp: 'アルバイトの収入が増えた。',
+      reading: 'アルバイトの しゅうにゅうが ふえた。',
+      romaji: 'arubaito no shuunyuu ga fueta.',
+      meaningPt: 'Minha renda do trabalho de meio período aumentou.'
+    }
+  },
+  {
+    id: 'n3_noun_batch2_1787422304647_37',
+    word: '速度',
+    reading: 'そくど',
+    romaji: 'sokudo',
+    meaningPt: 'velocidade; ritmo',
+    category: 'substantivo',
+    jlpt: 'N3',
+    categoryLabelPt: 'Substantivo N3',
+    exampleSentence: {
+      jp: '車の速度を落とす。',
+      reading: 'くるまの そくどを おとす。',
+      romaji: 'kuruma no sokudo o otosu.',
+      meaningPt: 'Reduzir a velocidade do carro.'
+    }
+  },
+  {
+    id: 'n3_noun_batch2_1787422304647_38',
+    word: '大半',
+    reading: 'たいはん',
+    romaji: 'taihan',
+    meaningPt: 'a maior parte; a maioria',
+    category: 'substantivo',
+    jlpt: 'N3',
+    categoryLabelPt: 'Substantivo N3',
+    exampleSentence: {
+      jp: '休日の大半を寝て過ごした。',
+      reading: 'きゅうじつの たいはんを ねて すごした。',
+      romaji: 'kyuujitsu no taihan o nete sugoshita.',
+      meaningPt: 'Passei a maior parte do meu feriado dormindo.'
+    }
+  },
+  {
+    id: 'n3_noun_batch2_1787422304647_39',
+    word: '大会',
+    reading: 'たいかい',
+    romaji: 'taikai',
+    meaningPt: 'torneio; convenção',
+    category: 'substantivo',
+    jlpt: 'N3',
+    categoryLabelPt: 'Substantivo N3',
+    exampleSentence: {
+      jp: 'スポーツ大会に参加する。',
+      reading: 'スポーツ たいかいに さんかする。',
+      romaji: 'supootsu taikai ni sanka suru.',
+      meaningPt: 'Participar de um torneio esportivo.'
+    }
+  },
+  {
+    id: 'n3_noun_batch2_1787422304647_40',
+    word: '多少',
+    reading: 'たしょう',
+    romaji: 'tashou',
+    meaningPt: 'um pouco; mais ou menos',
+    category: 'substantivo',
+    jlpt: 'N3',
+    categoryLabelPt: 'Substantivo N3',
+    exampleSentence: {
+      jp: '多少の雨なら決行する。',
+      reading: 'たしょうの あめなら けっこうする。',
+      romaji: 'tashou no ame nara kekkou suru.',
+      meaningPt: 'Se for pouca chuva, seguiremos com o plano.'
+    }
+  },
+  {
+    id: 'n3_noun_batch2_1787422304647_41',
+    word: '手品',
+    reading: 'てじな',
+    romaji: 'tejina',
+    meaningPt: 'truque de mágica',
+    category: 'substantivo',
+    jlpt: 'N3',
+    categoryLabelPt: 'Substantivo N3',
+    exampleSentence: {
+      jp: 'パーティーで手品を披露する。',
+      reading: 'パーティーで てじなを ひろうする。',
+      romaji: 'paatii de tejina o hirou suru.',
+      meaningPt: 'Apresentar um truque de mágica na festa.'
+    }
+  },
+  {
+    id: 'n3_noun_batch2_1787422304647_42',
+    word: '哲学',
+    reading: 'てつがく',
+    romaji: 'tetsugaku',
+    meaningPt: 'filosofia',
+    category: 'substantivo',
+    jlpt: 'N3',
+    categoryLabelPt: 'Substantivo N3',
+    exampleSentence: {
+      jp: '大学で哲学を学ぶ。',
+      reading: 'だいがくで てつがくを まなぶ。',
+      romaji: 'daigaku de tetsugaku o manabu.',
+      meaningPt: 'Estudar filosofia na universidade.'
+    }
+  },
+  {
+    id: 'n3_noun_batch2_1787422304647_43',
+    word: '徹夜',
+    reading: 'てつや',
+    romaji: 'tetsuya',
+    meaningPt: 'passar a noite acordado',
+    category: 'substantivo',
+    jlpt: 'N3',
+    categoryLabelPt: 'Substantivo N3',
+    exampleSentence: {
+      jp: '昨日は徹夜で勉強した。',
+      reading: 'きのうは てつやで べんきょうした。',
+      romaji: 'kinou wa tetsuya de benkyou shita.',
+      meaningPt: 'Ontem passei a noite acordado estudando.'
+    }
+  },
+  {
+    id: 'n3_noun_batch2_1787422304647_44',
+    word: '土地',
+    reading: 'とち',
+    romaji: 'tochi',
+    meaningPt: 'terreno; terra',
+    category: 'substantivo',
+    jlpt: 'N3',
+    categoryLabelPt: 'Substantivo N3',
+    exampleSentence: {
+      jp: '家を建てるための土地を買う。',
+      reading: 'いえを たてるための とちを かう。',
+      romaji: 'ie o tateru tame no tochi o kau.',
+      meaningPt: 'Comprar um terreno para construir uma casa.'
+    }
+  },
+  {
+    id: 'n3_noun_batch2_1787422304647_45',
+    word: '都会',
+    reading: 'とかい',
+    romaji: 'tokai',
+    meaningPt: 'cidade grande; metrópole',
+    category: 'substantivo',
+    jlpt: 'N3',
+    categoryLabelPt: 'Substantivo N3',
+    exampleSentence: {
+      jp: '都会の生活は便利だ。',
+      reading: 'とかいの せいかつは べんりだ。',
+      romaji: 'tokai no seikatsu wa benri da.',
+      meaningPt: 'A vida na cidade grande é conveniente.'
+    }
+  },
+  {
+    id: 'n3_noun_batch2_1787422304647_46',
+    word: '図書',
+    reading: 'としょ',
+    romaji: 'tosho',
+    meaningPt: 'livros',
+    category: 'substantivo',
+    jlpt: 'N3',
+    categoryLabelPt: 'Substantivo N3',
+    exampleSentence: {
+      jp: '図書室で静かに本を読む。',
+      reading: 'としょしつで しずかに ほんを よむ。',
+      romaji: 'toshoshitsu de shizuka ni hon o yomu.',
+      meaningPt: 'Ler um livro silenciosamente na sala de leitura.'
+    }
+  },
+  {
+    id: 'n3_noun_batch2_1787422304647_47',
+    word: '通学',
+    reading: 'つうがく',
+    romaji: 'tsuugaku',
+    meaningPt: 'trajeto para a escola',
+    category: 'substantivo',
+    jlpt: 'N3',
+    categoryLabelPt: 'Substantivo N3',
+    exampleSentence: {
+      jp: '電車で通学している。',
+      reading: 'でんしゃで つうがくしている。',
+      romaji: 'densha de tsuugaku shiteiru.',
+      meaningPt: 'Faço o trajeto para a escola de trem.'
+    }
+  },
+  {
+    id: 'n3_noun_batch2_1787422304647_48',
+    word: '運転',
+    reading: 'うんてん',
+    romaji: 'unten',
+    meaningPt: 'direção; condução',
+    category: 'substantivo',
+    jlpt: 'N3',
+    categoryLabelPt: 'Substantivo N3',
+    exampleSentence: {
+      jp: '車の運転に気をつけてください。',
+      reading: 'くるまの うんてんに きをつけてください。',
+      romaji: 'kuruma no unten ni ki o tsukete kudasai.',
+      meaningPt: 'Por favor, tome cuidado ao dirigir.'
+    }
+  },
+  {
+    id: 'n3_noun_batch2_1787422304647_49',
+    word: '悪口',
+    reading: 'わるぐち',
+    romaji: 'waruguchi',
+    meaningPt: 'falar mal; insulto',
+    category: 'substantivo',
+    jlpt: 'N3',
+    categoryLabelPt: 'Substantivo N3',
+    exampleSentence: {
+      jp: '人の悪口を言ってはいけない。',
+      reading: 'ひとの わるぐちを いってはいけない。',
+      romaji: 'hito no waruguchi o itte wa ikenai.',
+      meaningPt: 'Não se deve falar mal dos outros.'
+    }
+  },
+  {
+    id: 'n3_noun_batch2_1787422304647_50',
+    word: '夜明け',
+    reading: 'よあけ',
+    romaji: 'yoake',
+    meaningPt: 'amanhecer; aurora',
+    category: 'substantivo',
+    jlpt: 'N3',
+    categoryLabelPt: 'Substantivo N3',
+    exampleSentence: {
+      jp: '夜明けとともに出発する。',
+      reading: 'よあけとともに しゅっぱつする。',
+      romaji: 'yoake to tomo ni shuppatsu suru.',
+      meaningPt: 'Partiremos ao amanhecer.'
+    }
+  },
+  {
+    id: 'n3_noun_batch2_1787422304647_51',
+    word: '余分',
+    reading: 'よぶん',
+    romaji: 'yobun',
+    meaningPt: 'extra; excedente',
+    category: 'substantivo',
+    jlpt: 'N3',
+    categoryLabelPt: 'Substantivo N3',
+    exampleSentence: {
+      jp: '余分なお金は持っていない。',
+      reading: 'よぶんな おかねは もっていない。',
+      romaji: 'yobun na okane wa motteinai.',
+      meaningPt: 'Não tenho dinheiro extra.'
+    }
+  },
+  {
+    id: 'n3_noun_batch2_1787422304647_52',
+    word: '読み',
+    reading: 'よみ',
+    romaji: 'yomi',
+    meaningPt: 'leitura (de algo)',
+    category: 'substantivo',
+    jlpt: 'N3',
+    categoryLabelPt: 'Substantivo N3',
+    exampleSentence: {
+      jp: 'この漢字の読みがわからない。',
+      reading: 'この かんじの よみが わからない。',
+      romaji: 'kono kanji no yomi ga wakaranai.',
+      meaningPt: 'Não sei a leitura deste kanji.'
+    }
+  },
+  {
+    id: 'n3_noun_batch2_1787422304647_53',
+    word: '夜中',
+    reading: 'よなか',
+    romaji: 'yonaka',
+    meaningPt: 'meio da noite; madrugada',
+    category: 'substantivo',
+    jlpt: 'N3',
+    categoryLabelPt: 'Substantivo N3',
+    exampleSentence: {
+      jp: '夜中に電話がかかってきた。',
+      reading: 'よなかに でんわが かかってきた。',
+      romaji: 'yonaka ni denwa ga kakatte kita.',
+      meaningPt: 'Recebi uma ligação no meio da noite.'
+    }
+  },
+  {
+    id: 'n3_noun_batch2_1787422304647_54',
+    word: '唯一',
+    reading: 'ゆいいつ',
+    romaji: 'yuiitsu',
+    meaningPt: 'único; exclusivo',
+    category: 'substantivo',
+    jlpt: 'N3',
+    categoryLabelPt: 'Substantivo N3',
+    exampleSentence: {
+      jp: 'これが唯一の解決策だ。',
+      reading: 'これが ゆいいつの かいけつさくだ。',
+      romaji: 'kore ga yuiitsu no kaiketsusaku da.',
+      meaningPt: 'Esta é a única solução.'
+    }
+  },
+  {
+    id: 'n3_noun_batch2_1787422304647_55',
+    word: '輸入',
+    reading: 'ゆにゅう',
+    romaji: 'yunyuu',
+    meaningPt: 'importação',
+    category: 'substantivo',
+    jlpt: 'N3',
+    categoryLabelPt: 'Substantivo N3',
+    exampleSentence: {
+      jp: '外国から車を輸入する。',
+      reading: 'がいこくから くるまを ゆにゅうする。',
+      romaji: 'gaikoku kara kuruma o yunyuu suru.',
+      meaningPt: 'Importar carros do exterior.'
+    }
+  },
+  {
+    id: 'n3_noun_batch2_1787422304647_56',
+    word: '輸出',
+    reading: 'ゆしゅつ',
+    romaji: 'yushutsu',
+    meaningPt: 'exportação',
+    category: 'substantivo',
+    jlpt: 'N3',
+    categoryLabelPt: 'Substantivo N3',
+    exampleSentence: {
+      jp: '日本の製品を海外へ輸出する。',
+      reading: 'にほんの せいひんを かいがいへ ゆしゅつする。',
+      romaji: 'nihon no seihin o kaigai e yushutsu suru.',
+      meaningPt: 'Exportar produtos japoneses para o exterior.'
+    }
+  },
+  {
+    id: 'n3_noun_batch2_1787422304647_57',
+    word: '夕べ',
+    reading: 'ゆうべ',
+    romaji: 'yuube',
+    meaningPt: 'entardecer; noite passada',
+    category: 'substantivo',
+    jlpt: 'N3',
+    categoryLabelPt: 'Substantivo N3',
+    exampleSentence: {
+      jp: '夕べは友達と飲みに行った。',
+      reading: 'ゆうべは ともだちと のみに いった。',
+      romaji: 'yuube wa tomodachi to nomi ni itta.',
+      meaningPt: 'Noite passada fui beber com meus amigos.'
+    }
+  },
+  {
+    id: 'n3_noun_batch2_1787422304647_58',
+    word: '有利',
+    reading: 'ゆうり',
+    romaji: 'yuuri',
+    meaningPt: 'vantajoso; favorável',
+    category: 'substantivo',
+    jlpt: 'N3',
+    categoryLabelPt: 'Substantivo N3',
+    exampleSentence: {
+      jp: '試合は我々に有利に進んでいる。',
+      reading: 'しあいは われわれに ゆうりに すすんでいる。',
+      romaji: 'shiai wa wareware ni yuuri ni susundeiru.',
+      meaningPt: 'A partida está progredindo favoravelmente para nós.'
+    }
+  },
+  {
+    id: 'n3_noun_batch2_1787422304647_59',
+    word: '全国',
+    reading: 'ぜんこく',
+    romaji: 'zenkoku',
+    meaningPt: 'todo o país; nacional',
+    category: 'substantivo',
+    jlpt: 'N3',
+    categoryLabelPt: 'Substantivo N3',
+    exampleSentence: {
+      jp: '全国から参加者が集まった。',
+      reading: 'ぜんこくから さんかしゃが あつまった。',
+      romaji: 'zenkoku kara sankasha ga atsumatta.',
+      meaningPt: 'Reuniram-se participantes de todo o país.'
+    }
+  },
+
+  {
     id: 'n3_noun_1787421977134_0',
     word: '明かり',
     reading: 'あかり',
