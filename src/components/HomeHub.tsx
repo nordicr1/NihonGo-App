@@ -58,8 +58,8 @@ const CHANGELOG = [
   },
   {
     date: '22 Ago 2026',
-    title: 'Mais de 400 Substantivos Adicionados!',
-    desc: 'Adicionamos 422 substantivos para o N5 e 160 para o N3, todos com traduções, frases de exemplo exclusivas e áudio.',
+    title: 'Mais de 900 Substantivos Adicionados!',
+    desc: 'Adicionamos 422 substantivos para o N5, 363 para o N4 e 160 para o N3, todos com traduções, frases de exemplo exclusivas e áudio.',
   },
   {
     date: '22 Ago 2026',
