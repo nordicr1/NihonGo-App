@@ -3,10 +3,11 @@ import { RotateCcw, Eye, EyeOff, Sparkles, Check, AlertTriangle } from 'lucide-r
 
 interface KanjiDrawCanvasProps {
   kanji: string;
+  expectedStrokes?: number;
   onSuccess?: () => void;
 }
 
-export const KanjiDrawCanvas: React.FC<KanjiDrawCanvasProps> = ({ kanji, onSuccess }) => {
+export const KanjiDrawCanvas: React.FC<KanjiDrawCanvasProps> = ({ kanji, expectedStrokes, onSuccess }) => {
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
   const [isDrawing, setIsDrawing] = useState(false);
   const [showGuide, setShowGuide] = useState(true);
@@ -128,6 +129,8 @@ export const KanjiDrawCanvas: React.FC<KanjiDrawCanvasProps> = ({ kanji, onSucce
       setAccuracyMsg({ text: 'Muito fora do guia! Tente seguir os traços.', type: 'error' });
     } else if (coverage < 0.3) {
       setAccuracyMsg({ text: 'Incompleto! Desenhe todo o caractere.', type: 'error' });
+    } else if (expectedStrokes && strokeCount !== expectedStrokes) {
+      setAccuracyMsg({ text: `Número de traços incorreto. Esperado: ${expectedStrokes}, Você fez: ${strokeCount}. Refaça na ordem certa!`, type: 'error' });
     } else {
       setAccuracyMsg({ text: 'Excelente! Desenho validado.', type: 'success' });
       if (onSuccess) {
