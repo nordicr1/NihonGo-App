@@ -5586,4 +5586,117 @@ export const VOCAB_ADJ_NA: VocabItem[] =
       "meaningPt": "É rude."
     }
   }
+,
+{
+  "id": "v_adj_na_n4_1204",
+  "word": "大事",
+  "reading": "だいじ",
+  "romaji": "daiji",
+  "meaningPt": "Importante",
+  "category": "adjetivo_na",
+  "jlpt": "N4",
+  "categoryLabelPt": "Adjetivo Na",
+  "exampleSentence": {
+    "jp": "大事な物です。",
+    "reading": "だいじ な もの です。",
+    "romaji": "daiji na mono desu.",
+    "meaningPt": "É uma coisa importante."
+  }
+},
+{
+  "id": "v_adj_na_n4_1208",
+  "word": "変",
+  "reading": "へん",
+  "romaji": "hen",
+  "meaningPt": "Estranho, esquisito",
+  "category": "adjetivo_na",
+  "jlpt": "N4",
+  "categoryLabelPt": "Adjetivo Na",
+  "exampleSentence": {
+    "jp": "変な音がする。",
+    "reading": "へん な おと が する。",
+    "romaji": "hen na oto ga suru.",
+    "meaningPt": "Está fazendo um som estranho."
+  }
+},
+{
+  "id": "v_adj_na_n4_1209",
+  "word": "久しぶり",
+  "reading": "ひさしぶり",
+  "romaji": "hisashiburi",
+  "meaningPt": "Há muito tempo, muito tempo sem ver",
+  "category": "adjetivo_na",
+  "jlpt": "N4",
+  "categoryLabelPt": "Adjetivo Na",
+  "exampleSentence": {
+    "jp": "お久しぶりですね。",
+    "reading": "おひさしぶり ですね。",
+    "romaji": "ohisashiburi desu ne.",
+    "meaningPt": "Quanto tempo não nos vemos, né."
+  }
+},
+{
+  "id": "v_adj_na_n4_1210",
+  "word": "いっぱい",
+  "reading": "full",
+  "romaji": "ippai",
+  "meaningPt": "Cheio",
+  "category": "adjetivo_na",
+  "jlpt": "N4",
+  "categoryLabelPt": "Adjetivo Na",
+  "exampleSentence": {
+    "jp": "お腹がいっぱいです。",
+    "reading": "おなか が いっぱい です。",
+    "romaji": "onaka ga ippai desu.",
+    "meaningPt": "Estou de barriga cheia."
+  }
+},
+{
+  "id": "v_adj_na_n4_1211",
+  "word": "一生懸命",
+  "reading": "いっしょうけんめい",
+  "romaji": "isshoukenmei",
+  "meaningPt": "Com muito esforço",
+  "category": "adjetivo_na",
+  "jlpt": "N4",
+  "categoryLabelPt": "Adjetivo Na",
+  "exampleSentence": {
+    "jp": "一生懸命勉強します。",
+    "reading": "いっしょうけんめい べんきょうします。",
+    "romaji": "isshoukenmei benkyou shimasu.",
+    "meaningPt": "Estudo com todo o esforço."
+  }
+},
+{
+  "id": "v_adj_na_n4_1220",
+  "word": "たいてい",
+  "reading": "usually",
+  "romaji": "taitei",
+  "meaningPt": "Geralmente, na maioria das vezes",
+  "category": "adjetivo_na",
+  "jlpt": "N4",
+  "categoryLabelPt": "Adjetivo Na",
+  "exampleSentence": {
+    "jp": "たいてい家にいます。",
+    "reading": "たいてい いえ に います。",
+    "romaji": "taitei ie ni imasu.",
+    "meaningPt": "Geralmente estou em casa."
+  }
+},
+{
+  "id": "v_adj_na_n4_1221",
+  "word": "楽しみ",
+  "reading": "たのしみ",
+  "romaji": "tanoshimi",
+  "meaningPt": "Expectativa, algo esperado",
+  "category": "adjetivo_na",
+  "jlpt": "N4",
+  "categoryLabelPt": "Adjetivo Na",
+  "exampleSentence": {
+    "jp": "楽しみにしています。",
+    "reading": "たのしみ に しています。",
+    "romaji": "tanoshimi ni shiteimasu.",
+    "meaningPt": "Estou ansioso por isso."
+  }
+}
 ];

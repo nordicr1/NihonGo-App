@@ -50,6 +50,34 @@ const JAPANESE_TIPS = [
   }
 ];
 
+const CHANGELOG = [
+  {
+    date: '22 Ago 2026',
+    title: 'Adjetivos Na (N4) Adicionados!',
+    desc: 'Adicionamos 24 novos Adjetivos Na do nível N4, incluindo palavras importantes como 安全 (Segurança) e 大事 (Importante) com exemplos práticos.',
+  },
+  {
+    date: '20 Ago 2026',
+    title: 'Mais de 100 Kanjis no N2!',
+    desc: 'Adicionado um grande lote com 117 novos Kanjis ao JLPT N2, indo de 互 até 干, completando mais uma etapa dos seus estudos.',
+  },
+  {
+    date: '20 Ago 2026',
+    title: 'Novos Kanjis no JLPT N2',
+    desc: 'Foram incluídos novos lotes (Batch 7 a 11) totalizando centenas de Kanjis cruciais para o nível N2, com suas respectivas leituras e traduções.',
+  },
+  {
+    date: '19 Ago 2026',
+    title: 'Vocabulários e Adjetivos Expandidos',
+    desc: 'Adicionados novos conjuntos de adjetivos-I e adjetivos-NA aos dicionários, cobrindo níveis essenciais para a fluência.',
+  },
+  {
+    date: '18 Ago 2026',
+    title: 'Expansão do Banco de Dados Kana',
+    desc: 'Alfabetos Hiragana e Katakana aprimorados com mais tabelas, áudios e recursos visuais para prática e memorização.',
+  },
+];
+
 interface HomeHubProps {
   onTabChange: (tab: 'hub' | 'kana' | 'kanji' | 'grammar' | 'verbs' | 'games' | 'analyzer' | 'sensei' | 'drawing' | 'conversation') => void;
   selectedJlpt: JLPTLevel;
@@ -373,6 +401,30 @@ export const HomeHub: React.FC<HomeHubProps> = ({
         >
           {currentTip.buttonText}
         </button>
+      </div>
+
+      {/* Changelog / Atualizações Recentes */}
+      <div className="bg-stone-50 border border-stone-200 rounded-3xl p-6 sm:p-8 space-y-4">
+        <div className="flex items-center gap-2 mb-2">
+          <div className="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center text-blue-600">
+            <Sparkles size={16} />
+          </div>
+          <h3 className="text-xl font-black text-stone-900">Novidades e Atualizações</h3>
+        </div>
+        
+        <div className="max-h-64 overflow-y-auto pr-2 space-y-3 scrollbar-thin scrollbar-thumb-stone-300 scrollbar-track-transparent">
+          {CHANGELOG.map((log, i) => (
+             <div key={i} className="bg-white border border-stone-100 rounded-xl p-4 flex flex-col sm:flex-row gap-2 sm:gap-4 items-start shadow-sm hover:shadow transition-shadow">
+               <div className="text-xs font-bold text-stone-400 whitespace-nowrap pt-1 sm:w-24 shrink-0">
+                 {log.date}
+               </div>
+               <div>
+                 <h4 className="text-sm font-bold text-stone-800">{log.title}</h4>
+                 <p className="text-xs text-stone-600 mt-1 leading-relaxed">{log.desc}</p>
+               </div>
+             </div>
+          ))}
+        </div>
       </div>
     </div>
   );
