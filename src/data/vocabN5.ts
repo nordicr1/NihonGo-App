@@ -103,8 +103,6 @@ export const VOCAB_N5: VocabItem[] = [
     }
   }
 ,
-  
-,
   {
     id: "v_n5_irr_300",
     word: "電話する",
@@ -1646,4 +1644,565 @@ export const VOCAB_N5: VocabItem[] = [
     }
   }
 
+,
+  {
+    id: 'v_adv_n5_1',
+    word: 'ちょっと',
+    reading: 'ちょっと',
+    romaji: 'chotto',
+    meaningPt: 'Um pouco',
+    category: 'adverbio',
+    jlpt: 'N5',
+    categoryLabelPt: 'Advérbio',
+    exampleSentence: {
+      jp: 'ちょっと待ってください。',
+      reading: 'ちょっと まって ください。',
+      romaji: 'Chotto matte kudasai.',
+      meaningPt: 'Por favor, espere um pouco.'
+    }
+  },
+  {
+    id: 'v_adv_n5_2',
+    word: '丁度',
+    reading: 'ちょうど',
+    romaji: 'choudo',
+    meaningPt: 'Exatamente, na hora',
+    category: 'adverbio',
+    jlpt: 'N5',
+    categoryLabelPt: 'Advérbio',
+    exampleSentence: {
+      jp: '丁度いいです。',
+      reading: 'ちょうど いい です。',
+      romaji: 'Choudo ii desu.',
+      meaningPt: 'Está na medida certa.'
+    }
+  },
+  {
+    id: 'v_adv_n5_3',
+    word: '大丈夫',
+    reading: 'だいじょうぶ',
+    romaji: 'daijoubu',
+    meaningPt: 'Tudo bem, OK',
+    category: 'adverbio',
+    jlpt: 'N5',
+    categoryLabelPt: 'Advérbio',
+    exampleSentence: {
+      jp: '私は大丈夫です。',
+      reading: 'わたし は だいじょうぶ です。',
+      romaji: 'Watashi wa daijoubu desu.',
+      meaningPt: 'Eu estou bem.'
+    }
+  },
+  {
+    id: 'v_adv_n5_4',
+    word: 'だんだん',
+    reading: 'だんだん',
+    romaji: 'dandan',
+    meaningPt: 'Gradualmente',
+    category: 'adverbio',
+    jlpt: 'N5',
+    categoryLabelPt: 'Advérbio',
+    exampleSentence: {
+      jp: 'だんだん寒くなります。',
+      reading: 'だんだん さむく なります。',
+      romaji: 'Dandan samuku narimasu.',
+      meaningPt: 'Vai esfriando gradualmente.'
+    }
+  },
+  {
+    id: 'v_adv_n5_5',
+    word: 'どう',
+    reading: 'どう',
+    romaji: 'dou',
+    meaningPt: 'Como, de que forma',
+    category: 'adverbio',
+    jlpt: 'N5',
+    categoryLabelPt: 'Advérbio',
+    exampleSentence: {
+      jp: 'それはどうですか。',
+      reading: 'それ は どう ですか。',
+      romaji: 'Sore wa dou desu ka.',
+      meaningPt: 'Como é aquilo?'
+    }
+  },
+  {
+    id: 'v_adv_n5_6',
+    word: 'どうも',
+    reading: 'どうも',
+    romaji: 'doumo',
+    meaningPt: 'Muito (obrigado)',
+    category: 'adverbio',
+    jlpt: 'N5',
+    categoryLabelPt: 'Advérbio',
+    exampleSentence: {
+      jp: 'どうもありがとうございます。',
+      reading: 'どうも ありがとう ございます。',
+      romaji: 'Doumo arigatou gozaimasu.',
+      meaningPt: 'Muito obrigado.'
+    }
+  },
+  {
+    id: 'v_adv_n5_7',
+    word: 'どうして',
+    reading: 'どうして',
+    romaji: 'doushite',
+    meaningPt: 'Por que',
+    category: 'adverbio',
+    jlpt: 'N5',
+    categoryLabelPt: 'Advérbio',
+    exampleSentence: {
+      jp: 'どうして来なかったの。',
+      reading: 'どうして こなかった の。',
+      romaji: 'Doushite konakatta no.',
+      meaningPt: 'Por que você não veio?'
+    }
+  },
+  {
+    id: 'v_adv_n5_8',
+    word: 'どうぞ',
+    reading: 'どうぞ',
+    romaji: 'douzo',
+    meaningPt: 'Por favor, sinta-se à vontade',
+    category: 'adverbio',
+    jlpt: 'N5',
+    categoryLabelPt: 'Advérbio',
+    exampleSentence: {
+      jp: 'どうぞ入ってください。',
+      reading: 'どうぞ はいって ください。',
+      romaji: 'Douzo haitte kudasai.',
+      meaningPt: 'Por favor, entre.'
+    }
+  },
+  {
+    id: 'v_adv_n5_9',
+    word: '初めて',
+    reading: 'はじめて',
+    romaji: 'hajimete',
+    meaningPt: 'Pela primeira vez',
+    category: 'adverbio',
+    jlpt: 'N5',
+    categoryLabelPt: 'Advérbio',
+    exampleSentence: {
+      jp: '日本は初めてです。',
+      reading: 'にほん は はじめて です。',
+      romaji: 'Nihon wa hajimete desu.',
+      meaningPt: 'É minha primeira vez no Japão.'
+    }
+  },
+  {
+    id: 'v_adv_n5_10',
+    word: '一人',
+    reading: 'ひとり',
+    romaji: 'hitori',
+    meaningPt: 'Sozinho(a), uma pessoa',
+    category: 'adverbio',
+    jlpt: 'N5',
+    categoryLabelPt: 'Advérbio',
+    exampleSentence: {
+      jp: '一人で行きます。',
+      reading: 'ひとりで いきます。',
+      romaji: 'Hitori de ikimasu.',
+      meaningPt: 'Eu irei sozinho.'
+    }
+  },
+  {
+    id: 'v_adv_n5_11',
+    word: '一番',
+    reading: 'いちばん',
+    romaji: 'ichiban',
+    meaningPt: 'O número um, o mais',
+    category: 'adverbio',
+    jlpt: 'N5',
+    categoryLabelPt: 'Advérbio',
+    exampleSentence: {
+      jp: 'これが一番好きです。',
+      reading: 'これ が いちばん すき です。',
+      romaji: 'Kore ga ichiban suki desu.',
+      meaningPt: 'Este é o que mais gosto.'
+    }
+  },
+  {
+    id: 'v_adv_n5_12',
+    word: 'いかが',
+    reading: 'いかが',
+    romaji: 'ikaga',
+    meaningPt: 'Como, que tal (polido)',
+    category: 'adverbio',
+    jlpt: 'N5',
+    categoryLabelPt: 'Advérbio',
+    exampleSentence: {
+      jp: 'お茶はいかがですか。',
+      reading: 'おちゃ は いかが ですか。',
+      romaji: 'Ocha wa ikaga desu ka.',
+      meaningPt: 'Aceita um chá?'
+    }
+  },
+  {
+    id: 'v_adv_n5_13',
+    word: 'いくら',
+    reading: 'いくら',
+    romaji: 'ikura',
+    meaningPt: 'Quanto custa',
+    category: 'adverbio',
+    jlpt: 'N5',
+    categoryLabelPt: 'Advérbio',
+    exampleSentence: {
+      jp: 'これはいくらですか。',
+      reading: 'これ は いくら ですか。',
+      romaji: 'Kore wa ikura desu ka.',
+      meaningPt: 'Quanto custa isso?'
+    }
+  },
+  {
+    id: 'v_adv_n5_14',
+    word: 'いくつ',
+    reading: 'いくつ',
+    romaji: 'ikutsu',
+    meaningPt: 'Quantos',
+    category: 'adverbio',
+    jlpt: 'N5',
+    categoryLabelPt: 'Advérbio',
+    exampleSentence: {
+      jp: 'りんごをいくつ買いましたか。',
+      reading: 'りんご を いくつ かいましたか。',
+      romaji: 'Ringo o ikutsu kaimashita ka.',
+      meaningPt: 'Quantas maçãs você comprou?'
+    }
+  },
+  {
+    id: 'v_adv_n5_15',
+    word: '色々',
+    reading: 'いろいろ',
+    romaji: 'iroiro',
+    meaningPt: 'Vários, muitas coisas',
+    category: 'adverbio',
+    jlpt: 'N5',
+    categoryLabelPt: 'Advérbio',
+    exampleSentence: {
+      jp: '色々ありがとうございます。',
+      reading: 'いろいろ ありがとう ございます。',
+      romaji: 'Iroiro arigatou gozaimasu.',
+      meaningPt: 'Muito obrigado por tudo.'
+    }
+  },
+  {
+    id: 'v_adv_n5_16',
+    word: '一緒に',
+    reading: 'いっしょに',
+    romaji: 'issho ni',
+    meaningPt: 'Junto',
+    category: 'adverbio',
+    jlpt: 'N5',
+    categoryLabelPt: 'Advérbio',
+    exampleSentence: {
+      jp: '一緒に食べましょう。',
+      reading: 'いっしょに たべましょう。',
+      romaji: 'Issho ni tabemashou.',
+      meaningPt: 'Vamos comer juntos.'
+    }
+  },
+  {
+    id: 'v_adv_n5_17',
+    word: 'いつも',
+    reading: 'いつも',
+    romaji: 'itsumo',
+    meaningPt: 'Sempre',
+    category: 'adverbio',
+    jlpt: 'N5',
+    categoryLabelPt: 'Advérbio',
+    exampleSentence: {
+      jp: 'いつも元気ですね。',
+      reading: 'いつも げんき ですね。',
+      romaji: 'Itsumo genki desu ne.',
+      meaningPt: 'Você está sempre animado, não é.'
+    }
+  },
+  {
+    id: 'v_adv_n5_18',
+    word: '結構',
+    reading: 'けっこう',
+    romaji: 'kekkou',
+    meaningPt: 'Suficiente, não (obrigado)',
+    category: 'adverbio',
+    jlpt: 'N5',
+    categoryLabelPt: 'Advérbio',
+    exampleSentence: {
+      jp: 'もう結構です。',
+      reading: 'もう けっこう です。',
+      romaji: 'Mou kekkou desu.',
+      meaningPt: 'Já é o suficiente / Não, obrigado.'
+    }
+  },
+  {
+    id: 'v_adv_n5_19',
+    word: 'まだ',
+    reading: 'まだ',
+    romaji: 'mada',
+    meaningPt: 'Ainda',
+    category: 'adverbio',
+    jlpt: 'N5',
+    categoryLabelPt: 'Advérbio',
+    exampleSentence: {
+      jp: 'まだ終わっていません。',
+      reading: 'まだ おわって いません。',
+      romaji: 'Mada owatte imasen.',
+      meaningPt: 'Ainda não terminei.'
+    }
+  },
+  {
+    id: 'v_adv_n5_20',
+    word: 'まだ～ていません',
+    reading: 'まだ～ていません',
+    romaji: 'mada ~te imasen',
+    meaningPt: 'Ainda não (fez)',
+    category: 'adverbio',
+    jlpt: 'N5',
+    categoryLabelPt: 'Advérbio',
+    exampleSentence: {
+      jp: 'まだ食べていません。',
+      reading: 'まだ たべて いません。',
+      romaji: 'Mada tabete imasen.',
+      meaningPt: 'Ainda não comi.'
+    }
+  },
+  {
+    id: 'v_adv_n5_21',
+    word: '前に',
+    reading: 'まえに',
+    romaji: 'mae ni',
+    meaningPt: 'Antes de',
+    category: 'adverbio',
+    jlpt: 'N5',
+    categoryLabelPt: 'Advérbio',
+    exampleSentence: {
+      jp: '寝る前に本を読む。',
+      reading: 'ねる まえに ほん を よむ。',
+      romaji: 'Neru mae ni hon o yomu.',
+      meaningPt: 'Eu leio um livro antes de dormir.'
+    }
+  },
+  {
+    id: 'v_adv_n5_22',
+    word: '真っ直ぐ',
+    reading: 'まっすぐ',
+    romaji: 'massugu',
+    meaningPt: 'Reto, em frente',
+    category: 'adverbio',
+    jlpt: 'N5',
+    categoryLabelPt: 'Advérbio',
+    exampleSentence: {
+      jp: '真っ直ぐ進んでください。',
+      reading: 'まっすぐ すすんで ください。',
+      romaji: 'Massugu susunde kudasai.',
+      meaningPt: 'Por favor, siga em frente.'
+    }
+  },
+  {
+    id: 'v_adv_n5_23',
+    word: 'みんな',
+    reading: 'みんな',
+    romaji: 'minna',
+    meaningPt: 'Todos',
+    category: 'adverbio',
+    jlpt: 'N5',
+    categoryLabelPt: 'Advérbio',
+    exampleSentence: {
+      jp: 'みんなで行きましょう。',
+      reading: 'みんな で いきましょう。',
+      romaji: 'Minna de ikimashou.',
+      meaningPt: 'Vamos todos juntos.'
+    }
+  },
+  {
+    id: 'v_adv_n5_24',
+    word: 'もっと',
+    reading: 'もっと',
+    romaji: 'motto',
+    meaningPt: 'Mais',
+    category: 'adverbio',
+    jlpt: 'N5',
+    categoryLabelPt: 'Advérbio',
+    exampleSentence: {
+      jp: 'もっと勉強します。',
+      reading: 'もっと べんきょう します。',
+      romaji: 'Motto benkyou shimasu.',
+      meaningPt: 'Vou estudar mais.'
+    }
+  },
+  {
+    id: 'v_adv_n5_25',
+    word: 'もう',
+    reading: 'もう',
+    romaji: 'mou',
+    meaningPt: 'Já, não mais',
+    category: 'adverbio',
+    jlpt: 'N5',
+    categoryLabelPt: 'Advérbio',
+    exampleSentence: {
+      jp: 'もう食べました。',
+      reading: 'もう たべました。',
+      romaji: 'Mou tabemashita.',
+      meaningPt: 'Eu já comi.'
+    }
+  },
+  {
+    id: 'v_adv_n5_26',
+    word: '何故',
+    reading: 'なぜ',
+    romaji: 'naze',
+    meaningPt: 'Por que',
+    category: 'adverbio',
+    jlpt: 'N5',
+    categoryLabelPt: 'Advérbio',
+    exampleSentence: {
+      jp: '何故泣いているの。',
+      reading: 'なぜ ないて いる の。',
+      romaji: 'Naze naite iru no.',
+      meaningPt: 'Por que você está chorando?'
+    }
+  },
+  {
+    id: 'v_adv_n5_27',
+    word: '同じ',
+    reading: 'おなじ',
+    romaji: 'onaji',
+    meaningPt: 'Mesmo, igual',
+    category: 'adverbio',
+    jlpt: 'N5',
+    categoryLabelPt: 'Advérbio',
+    exampleSentence: {
+      jp: '同じ本を持っています。',
+      reading: 'おなじ ほん を もって います。',
+      romaji: 'Onaji hon o motte imasu.',
+      meaningPt: 'Tenho o mesmo livro.'
+    }
+  },
+  {
+    id: 'v_adv_n5_28',
+    word: '直ぐに',
+    reading: 'すぐに',
+    romaji: 'sugu ni',
+    meaningPt: 'Imediatamente',
+    category: 'adverbio',
+    jlpt: 'N5',
+    categoryLabelPt: 'Advérbio',
+    exampleSentence: {
+      jp: '直ぐに行きます。',
+      reading: 'すぐに いきます。',
+      romaji: 'Sugu ni ikimasu.',
+      meaningPt: 'Vou imediatamente.'
+    }
+  },
+  {
+    id: 'v_adv_n5_29',
+    word: '少し',
+    reading: 'すこし',
+    romaji: 'sukoshi',
+    meaningPt: 'Um pouco',
+    category: 'adverbio',
+    jlpt: 'N5',
+    categoryLabelPt: 'Advérbio',
+    exampleSentence: {
+      jp: '少し休みましょう。',
+      reading: 'すこし やすみましょう。',
+      romaji: 'Sukoshi yasumimashou.',
+      meaningPt: 'Vamos descansar um pouco.'
+    }
+  },
+  {
+    id: 'v_adv_n5_30',
+    word: '多分',
+    reading: 'たぶん',
+    romaji: 'tabun',
+    meaningPt: 'Talvez, provavelmente',
+    category: 'adverbio',
+    jlpt: 'N5',
+    categoryLabelPt: 'Advérbio',
+    exampleSentence: {
+      jp: '明日は多分雨です。',
+      reading: 'あした は たぶん あめ です。',
+      romaji: 'Ashita wa tabun ame desu.',
+      meaningPt: 'Provavelmente choverá amanhã.'
+    }
+  },
+  {
+    id: 'v_adv_n5_31',
+    word: '大変',
+    reading: 'たいへん',
+    romaji: 'taihen',
+    meaningPt: 'Muito',
+    category: 'adverbio',
+    jlpt: 'N5',
+    categoryLabelPt: 'Advérbio',
+    exampleSentence: {
+      jp: '大変疲れました。',
+      reading: 'たいへん つかれました。',
+      romaji: 'Taihen tsukaremashita.',
+      meaningPt: 'Estou muito cansado.'
+    }
+  },
+  {
+    id: 'v_adv_n5_32',
+    word: '時々',
+    reading: 'ときどき',
+    romaji: 'tokidoki',
+    meaningPt: 'Às vezes',
+    category: 'adverbio',
+    jlpt: 'N5',
+    categoryLabelPt: 'Advérbio',
+    exampleSentence: {
+      jp: '時々映画を見ます。',
+      reading: 'ときどき えいが を みます。',
+      romaji: 'Tokidoki eiga o mimasu.',
+      meaningPt: 'Às vezes assisto a filmes.'
+    }
+  },
+  {
+    id: 'v_adv_n5_33',
+    word: 'とても',
+    reading: 'とても',
+    romaji: 'totemo',
+    meaningPt: 'Muito',
+    category: 'adverbio',
+    jlpt: 'N5',
+    categoryLabelPt: 'Advérbio',
+    exampleSentence: {
+      jp: 'とても美味しいです。',
+      reading: 'とても おいしい です。',
+      romaji: 'Totemo oishii desu.',
+      meaningPt: 'Está muito gostoso.'
+    }
+  },
+  {
+    id: 'v_adv_n5_34',
+    word: 'よく',
+    reading: 'よく',
+    romaji: 'yoku',
+    meaningPt: 'Frequentemente, bem',
+    category: 'adverbio',
+    jlpt: 'N5',
+    categoryLabelPt: 'Advérbio',
+    exampleSentence: {
+      jp: 'よく映画館に行きます。',
+      reading: 'よく えいがかん に いきます。',
+      romaji: 'Yoku eigakan ni ikimasu.',
+      meaningPt: 'Vou frequentemente ao cinema.'
+    }
+  },
+  {
+    id: 'v_adv_n5_35',
+    word: 'ゆっくり',
+    reading: 'ゆっくり',
+    romaji: 'yukkuri',
+    meaningPt: 'Devagar',
+    category: 'adverbio',
+    jlpt: 'N5',
+    categoryLabelPt: 'Advérbio',
+    exampleSentence: {
+      jp: 'ゆっくり話してください。',
+      reading: 'ゆっくり はなして ください。',
+      romaji: 'Yukkuri hanashite kudasai.',
+      meaningPt: 'Por favor, fale devagar.'
+    }
+  }
 ];
