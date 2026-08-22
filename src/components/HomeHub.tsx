@@ -53,6 +53,21 @@ const JAPANESE_TIPS = [
 const CHANGELOG = [
   {
     date: '22 Ago 2026',
+    title: 'Validador de Ordem e Traços de Kanji',
+    desc: 'Adicionamos um validador de escrita (caligrafia) rigoroso que verifica a quantidade correta de traços, guiando você a escrever Kanjis e Letras da forma correta.',
+  },
+  {
+    date: '22 Ago 2026',
+    title: 'Mais de 400 Substantivos Adicionados!',
+    desc: 'Adicionamos 422 substantivos para o N5 e 160 para o N3, todos com traduções, frases de exemplo exclusivas e áudio.',
+  },
+  {
+    date: '22 Ago 2026',
+    title: 'Nova Categoria de Testes JLPT!',
+    desc: 'O hub de verbos e adjetivos foi reformulado para "Testes JLPT". Adicionamos suporte do N5 ao N1 para simular testes oficiais.',
+  },
+  {
+    date: '22 Ago 2026',
     title: 'Mais de 170 Advérbios Adicionados!',
     desc: 'Expandimos a categoria de advérbios com mais de 170 novas palavras e expressões (N5, N4, N3 e N2), todas com tradução e exemplos práticos com áudio.',
   },
@@ -64,12 +79,12 @@ const CHANGELOG = [
   {
     date: '22 Ago 2026',
     title: 'Adjetivos Na (N4) Adicionados!',
-    desc: 'Adicionamos 24 novos Adjetivos Na do nível N4, incluindo palavras importantes como 安全 (Segurança) e 大事 (Importante) com exemplos práticos.',
+    desc: 'Adicionamos 24 novos Adjetivos Na do nível N4, com exemplos práticos.',
   },
   {
     date: '20 Ago 2026',
     title: 'Mais de 100 Kanjis no N2!',
-    desc: 'Adicionado um grande lote com 117 novos Kanjis ao JLPT N2, indo de 互 até 干, completando mais uma etapa dos seus estudos.',
+    desc: 'Adicionado um grande lote com 117 novos Kanjis ao JLPT N2, completando mais uma etapa dos seus estudos.',
   },
   {
     date: '20 Ago 2026',
