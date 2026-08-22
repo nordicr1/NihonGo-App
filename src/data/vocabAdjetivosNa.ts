@@ -770,4 +770,373 @@ export const VOCAB_ADJ_NA: VocabItem[] = [
       meaningPt: 'Que pena, não é.'
     }
   }
+,
+  {
+    id: 'v_adj_na_n3_1',
+    word: '明らか',
+    reading: 'あきらか',
+    romaji: 'akiraka',
+    meaningPt: 'Claro, óbvio',
+    category: 'adjetivo_na',
+    jlpt: 'N3',
+    categoryLabelPt: 'Adjetivo Na',
+    exampleSentence: {
+      jp: 'それは明らかな間違いです。',
+      reading: 'それ は あきらかな まちがい です。',
+      romaji: 'Sore wa akiraka na machigai desu.',
+      meaningPt: 'Isso é um erro óbvio.'
+    }
+  },
+  {
+    id: 'v_adj_na_n3_2',
+    word: '新た',
+    reading: 'あらた',
+    romaji: 'arata',
+    meaningPt: 'Novo',
+    category: 'adjetivo_na',
+    jlpt: 'N3',
+    categoryLabelPt: 'Adjetivo Na',
+    exampleSentence: {
+      jp: '新たな計画を立てます。',
+      reading: 'あらたな けいかく を たてます。',
+      romaji: 'Arata na keikaku o tatemasu.',
+      meaningPt: 'Elaboraremos um novo plano.'
+    }
+  },
+  {
+    id: 'v_adj_na_n3_3',
+    word: '駄目',
+    reading: 'だめ',
+    romaji: 'dame',
+    meaningPt: 'Ruim, inútil, proibido',
+    category: 'adjetivo_na',
+    jlpt: 'N3',
+    categoryLabelPt: 'Adjetivo Na',
+    exampleSentence: {
+      jp: 'ここに車を止めては駄目です。',
+      reading: 'ここ に くるま を とめて は だめ です。',
+      romaji: 'Koko ni kuruma o tomete wa dame desu.',
+      meaningPt: 'É proibido estacionar o carro aqui.'
+    }
+  },
+  {
+    id: 'v_adj_na_n3_4',
+    word: '同一',
+    reading: 'どういつ',
+    romaji: 'douitsu',
+    meaningPt: 'Idêntico, mesmo',
+    category: 'adjetivo_na',
+    jlpt: 'N3',
+    categoryLabelPt: 'Adjetivo Na',
+    exampleSentence: {
+      jp: '彼らは同一人物です。',
+      reading: 'かれら は どういつ じんぶつ です。',
+      romaji: 'Karera wa douitsu jinbutsu desu.',
+      meaningPt: 'Eles são a mesma pessoa.'
+    }
+  },
+  {
+    id: 'v_adj_na_n3_5',
+    word: '不利',
+    reading: 'ふり',
+    romaji: 'furi',
+    meaningPt: 'Desvantajoso',
+    category: 'adjetivo_na',
+    jlpt: 'N3',
+    categoryLabelPt: 'Adjetivo Na',
+    exampleSentence: {
+      jp: '不利な条件です。',
+      reading: 'ふりな じょうけん です。',
+      romaji: 'Furi na jouken desu.',
+      meaningPt: 'É uma condição desvantajosa.'
+    }
+  },
+  {
+    id: 'v_adj_na_n3_6',
+    word: '不足',
+    reading: 'ふそく',
+    romaji: 'fusoku',
+    meaningPt: 'Falta, insuficiente',
+    category: 'adjetivo_na',
+    jlpt: 'N3',
+    categoryLabelPt: 'Adjetivo Na',
+    exampleSentence: {
+      jp: '今は水が不足しています。',
+      reading: 'いま は みず が ふそく しています。',
+      romaji: 'Ima wa mizu ga fusoku shite imasu.',
+      meaningPt: 'Falta água no momento.'
+    }
+  },
+  {
+    id: 'v_adj_na_n3_7',
+    word: '発明',
+    reading: 'はつめい',
+    romaji: 'hatsumei',
+    meaningPt: 'Invenção',
+    category: 'adjetivo_na',
+    jlpt: 'N3',
+    categoryLabelPt: 'Adjetivo Na',
+    exampleSentence: {
+      jp: '新しい技術を発明しました。',
+      reading: 'あたらしい ぎじゅつ を はつめい しました。',
+      romaji: 'Atarashii gijutsu o hatsumei shimashita.',
+      meaningPt: 'Inventei uma nova tecnologia.'
+    }
+  },
+  {
+    id: 'v_adj_na_n3_8',
+    word: '意外',
+    reading: 'いがい',
+    romaji: 'igai',
+    meaningPt: 'Inesperado, surpreendente',
+    category: 'adjetivo_na',
+    jlpt: 'N3',
+    categoryLabelPt: 'Adjetivo Na',
+    exampleSentence: {
+      jp: '意外な結果になりました。',
+      reading: 'いがいな けっか に なりました。',
+      romaji: 'Igai na kekka ni narimashita.',
+      meaningPt: 'Tornou-se um resultado inesperado.'
+    }
+  },
+  {
+    id: 'v_adj_na_n3_9',
+    word: '一般',
+    reading: 'いっぱん',
+    romaji: 'ippan',
+    meaningPt: 'Geral, comum',
+    category: 'adjetivo_na',
+    jlpt: 'N3',
+    categoryLabelPt: 'Adjetivo Na',
+    exampleSentence: {
+      jp: 'これは一般的な考えです。',
+      reading: 'これ は いっぱんてきな かんがえ です。',
+      romaji: 'Kore wa ippanteki na kangae desu.',
+      meaningPt: 'Esta é uma ideia comum.'
+    }
+  },
+  {
+    id: 'v_adj_na_n3_10',
+    word: '邪魔',
+    reading: 'じゃま',
+    romaji: 'jama',
+    meaningPt: 'Estorvo, obstáculo',
+    category: 'adjetivo_na',
+    jlpt: 'N3',
+    categoryLabelPt: 'Adjetivo Na',
+    exampleSentence: {
+      jp: '勉強の邪魔をしないでください。',
+      reading: 'べんきょう の じゃま を しないで ください。',
+      romaji: 'Benkyou no jama o shinaide kudasai.',
+      meaningPt: 'Por favor, não atrapalhe os estudos.'
+    }
+  },
+  {
+    id: 'v_adj_na_n3_11',
+    word: '高速',
+    reading: 'こうそく',
+    romaji: 'kousoku',
+    meaningPt: 'Alta velocidade',
+    category: 'adjetivo_na',
+    jlpt: 'N3',
+    categoryLabelPt: 'Adjetivo Na',
+    exampleSentence: {
+      jp: '高速なインターネットが必要です。',
+      reading: 'こうそくな インターネット が ひつよう です。',
+      romaji: 'Kousoku na intaanetto ga hitsuyou desu.',
+      meaningPt: 'É necessária uma internet de alta velocidade.'
+    }
+  },
+  {
+    id: 'v_adj_na_n3_12',
+    word: '強力',
+    reading: 'きょうりょく',
+    romaji: 'kyouryoku',
+    meaningPt: 'Poderoso',
+    category: 'adjetivo_na',
+    jlpt: 'N3',
+    categoryLabelPt: 'Adjetivo Na',
+    exampleSentence: {
+      jp: '強力な武器を手に入れました。',
+      reading: 'きょうりょくな ぶき を てに いれました。',
+      romaji: 'Kyouryoku na buki o te ni iremashita.',
+      meaningPt: 'Obtive uma arma poderosa.'
+    }
+  },
+  {
+    id: 'v_adj_na_n3_13',
+    word: '急激',
+    reading: 'きゅうげき',
+    romaji: 'kyuugeki',
+    meaningPt: 'Repentino, drástico',
+    category: 'adjetivo_na',
+    jlpt: 'N3',
+    categoryLabelPt: 'Adjetivo Na',
+    exampleSentence: {
+      jp: '急激な変化がありました。',
+      reading: 'きゅうげきな へんか が ありました。',
+      romaji: 'Kyuugeki na henka ga arimashita.',
+      meaningPt: 'Houve uma mudança drástica.'
+    }
+  },
+  {
+    id: 'v_adj_na_n3_14',
+    word: '急速',
+    reading: 'きゅうそく',
+    romaji: 'kyuusoku',
+    meaningPt: 'Rápido (progresso)',
+    category: 'adjetivo_na',
+    jlpt: 'N3',
+    categoryLabelPt: 'Adjetivo Na',
+    exampleSentence: {
+      jp: '町は急速に発展しました。',
+      reading: 'まち は きゅうそくに はってん しました。',
+      romaji: 'Machi wa kyuusoku ni hatten shimashita.',
+      meaningPt: 'A cidade se desenvolveu rapidamente.'
+    }
+  },
+  {
+    id: 'v_adj_na_n3_15',
+    word: '真面目',
+    reading: 'まじめ',
+    romaji: 'majime',
+    meaningPt: 'Sério, honesto',
+    category: 'adjetivo_na',
+    jlpt: 'N3',
+    categoryLabelPt: 'Adjetivo Na',
+    exampleSentence: {
+      jp: '彼は真面目な学生です。',
+      reading: 'かれ は まじめな がくせい です。',
+      romaji: 'Kare wa majime na gakusei desu.',
+      meaningPt: 'Ele é um estudante sério.'
+    }
+  },
+  {
+    id: 'v_adj_na_n3_16',
+    word: '真っ赤',
+    reading: 'まっか',
+    romaji: 'makka',
+    meaningPt: 'Vermelho brilhante',
+    category: 'adjetivo_na',
+    jlpt: 'N3',
+    categoryLabelPt: 'Adjetivo Na',
+    exampleSentence: {
+      jp: '顔が真っ赤になりました。',
+      reading: 'かお が まっかに なりました。',
+      romaji: 'Kao ga makka ni narimashita.',
+      meaningPt: 'O rosto ficou todo vermelho.'
+    }
+  },
+  {
+    id: 'v_adj_na_n3_17',
+    word: '満足',
+    reading: 'まんぞく',
+    romaji: 'manzoku',
+    meaningPt: 'Satisfeito',
+    category: 'adjetivo_na',
+    jlpt: 'N3',
+    categoryLabelPt: 'Adjetivo Na',
+    exampleSentence: {
+      jp: '今の生活に満足しています。',
+      reading: 'いま の せいかつ に まんぞく しています。',
+      romaji: 'Ima no seikatsu ni manzoku shite imasu.',
+      meaningPt: 'Estou satisfeito com a minha vida atual.'
+    }
+  },
+  {
+    id: 'v_adj_na_n3_18',
+    word: '明確',
+    reading: 'めいかく',
+    romaji: 'meikaku',
+    meaningPt: 'Claro, preciso',
+    category: 'adjetivo_na',
+    jlpt: 'N3',
+    categoryLabelPt: 'Adjetivo Na',
+    exampleSentence: {
+      jp: '明確な指示を出してください。',
+      reading: 'めいかくな しじ を だして ください。',
+      romaji: 'Meikaku na shiji o dashite kudasai.',
+      meaningPt: 'Por favor, dê instruções claras.'
+    }
+  },
+  {
+    id: 'v_adj_na_n3_19',
+    word: '熱心',
+    reading: 'ねっしん',
+    romaji: 'nesshin',
+    meaningPt: 'Entusiasta, empenhado',
+    category: 'adjetivo_na',
+    jlpt: 'N3',
+    categoryLabelPt: 'Adjetivo Na',
+    exampleSentence: {
+      jp: '熱心に仕事に取り組む。',
+      reading: 'ねっしんに しごと に とりくむ。',
+      romaji: 'Nesshin ni shigoto ni torikumu.',
+      meaningPt: 'Dedica-se ao trabalho com entusiasmo.'
+    }
+  },
+  {
+    id: 'v_adj_na_n3_20',
+    word: '利口',
+    reading: 'りこう',
+    romaji: 'rikou',
+    meaningPt: 'Inteligente, esperto',
+    category: 'adjetivo_na',
+    jlpt: 'N3',
+    categoryLabelPt: 'Adjetivo Na',
+    exampleSentence: {
+      jp: 'とても利口な犬ですね。',
+      reading: 'とても りこうな いぬ ですね。',
+      romaji: 'Totemo rikou na inu desu ne.',
+      meaningPt: 'É um cachorro muito esperto, né.'
+    }
+  },
+  {
+    id: 'v_adj_na_n3_21',
+    word: '新鮮',
+    reading: 'しんせん',
+    romaji: 'shinsen',
+    meaningPt: 'Fresco',
+    category: 'adjetivo_na',
+    jlpt: 'N3',
+    categoryLabelPt: 'Adjetivo Na',
+    exampleSentence: {
+      jp: '新鮮な魚を食べました。',
+      reading: 'しんせんな さかな を たべました。',
+      romaji: 'Shinsen na sakana o tabemashita.',
+      meaningPt: 'Comi um peixe fresco.'
+    }
+  },
+  {
+    id: 'v_adj_na_n3_22',
+    word: '有利',
+    reading: 'ゆうり',
+    romaji: 'yuuri',
+    meaningPt: 'Vantajoso',
+    category: 'adjetivo_na',
+    jlpt: 'N3',
+    categoryLabelPt: 'Adjetivo Na',
+    exampleSentence: {
+      jp: '試合は我々に有利です。',
+      reading: 'しあい は われわれ に ゆうり です。',
+      romaji: 'Shiai wa wareware ni yuuri desu.',
+      meaningPt: 'A partida é vantajosa para nós.'
+    }
+  },
+  {
+    id: 'v_adj_na_n3_23',
+    word: '随分',
+    reading: 'ずいぶん',
+    romaji: 'zuibun',
+    meaningPt: 'Muito, bastante',
+    category: 'adjetivo_na',
+    jlpt: 'N3',
+    categoryLabelPt: 'Adjetivo Na',
+    exampleSentence: {
+      jp: '今日は随分寒いです。',
+      reading: 'きょう は ずいぶん さむい です。',
+      romaji: 'Kyou wa zuibun samui desu.',
+      meaningPt: 'Hoje está bastante frio.'
+    }
+  }
 ];

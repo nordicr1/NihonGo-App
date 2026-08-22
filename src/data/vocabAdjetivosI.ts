@@ -1298,4 +1298,53 @@ export const VOCAB_ADJ_I: VocabItem[] = [
       meaningPt: 'O pão está macio.'
     }
   }
+,
+  {
+    id: 'v_adj_i_n3_1',
+    word: '激しい',
+    reading: 'はげしい',
+    romaji: 'hageshii',
+    meaningPt: 'Violento, intenso',
+    category: 'adjetivo_i',
+    jlpt: 'N3',
+    categoryLabelPt: 'Adjetivo I',
+    exampleSentence: {
+      jp: '激しい雨が降っています。',
+      reading: 'はげしい あめ が ふって います。',
+      romaji: 'Hageshii ame ga futte imasu.',
+      meaningPt: 'Está caindo uma chuva intensa.'
+    }
+  },
+  {
+    id: 'v_adj_i_n3_2',
+    word: '上手い',
+    reading: 'うまい',
+    romaji: 'umai',
+    meaningPt: 'Habilidoso, delicioso',
+    category: 'adjetivo_i',
+    jlpt: 'N3',
+    categoryLabelPt: 'Adjetivo I',
+    exampleSentence: {
+      jp: '彼女は歌が上手いです。',
+      reading: 'かのじょ は うた が うまい です。',
+      romaji: 'Kanojo wa uta ga umai desu.',
+      meaningPt: 'Ela é habilidosa cantando.'
+    }
+  },
+  {
+    id: 'v_adj_i_n3_3',
+    word: '宜しい',
+    reading: 'よろしい',
+    romaji: 'yoroshii',
+    meaningPt: 'Tudo bem, OK (formal)',
+    category: 'adjetivo_i',
+    jlpt: 'N3',
+    categoryLabelPt: 'Adjetivo I',
+    exampleSentence: {
+      jp: 'これで宜しいでしょうか。',
+      reading: 'これ で よろしい でしょうか。',
+      romaji: 'Kore de yoroshii deshou ka.',
+      meaningPt: 'Isto está bom para você?'
+    }
+  }
 ];
