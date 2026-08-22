@@ -6,7 +6,7 @@ import { HomeHub } from './components/HomeHub';
 import { KanaExplorer } from './components/KanaExplorer';
 import { KanjiDictionary } from './components/KanjiDictionary';
 import { VocabGrammarHub } from './components/VocabGrammarHub';
-import { VerbsAdjectivesHub } from './components/VerbsAdjectivesHub';
+import { JlptTestsHub } from './components/JlptTestsHub';
 import { GamesHub } from './components/GamesHub';
 import { SentenceAnalyzer } from './components/SentenceAnalyzer';
 import { SenseiChat } from './components/SenseiChat';
@@ -17,7 +17,7 @@ import { Sparkles, Bot, Zap } from 'lucide-react';
 
 export default function App() {
   const [currentTab, setCurrentTab] = useState<
-    'hub' | 'kana' | 'kanji' | 'grammar' | 'verbs' | 'games' | 'analyzer' | 'sensei' | 'drawing' | 'conversation'
+    'hub' | 'kana' | 'kanji' | 'grammar' | 'tests' | 'games' | 'analyzer' | 'sensei' | 'drawing' | 'conversation'
   >('hub');
   const [selectedJlpt, setSelectedJlpt] = useState<JLPTLevel>('N5');
   const [userStats, setUserStats] = useState<UserStats>(loadUserStats);
@@ -153,8 +153,8 @@ export default function App() {
           />
         )}
 
-        {currentTab === 'verbs' && (
-          <VerbsAdjectivesHub
+        {currentTab === 'tests' && (
+          <JlptTestsHub
             selectedJlpt={selectedJlpt}
             onSelectJlpt={setSelectedJlpt}
             onGainXp={handleGainXp}

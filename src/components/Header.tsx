@@ -4,8 +4,8 @@ import { getLevelTitle } from '../utils/storage';
 import { Sparkles, Flame, Trophy, Bot, BookOpen, Compass, Gamepad2, Layers, PenTool } from 'lucide-react';
 
 interface HeaderProps {
-  currentTab: 'hub' | 'kana' | 'kanji' | 'grammar' | 'verbs' | 'games' | 'analyzer' | 'sensei' | 'drawing' | 'conversation';
-  onTabChange: (tab: 'hub' | 'kana' | 'kanji' | 'grammar' | 'verbs' | 'games' | 'analyzer' | 'sensei' | 'drawing' | 'conversation') => void;
+  currentTab: 'hub' | 'kana' | 'kanji' | 'grammar' | 'tests' | 'games' | 'analyzer' | 'sensei' | 'drawing' | 'conversation';
+  onTabChange: (tab: 'hub' | 'kana' | 'kanji' | 'grammar' | 'tests' | 'games' | 'analyzer' | 'sensei' | 'drawing' | 'conversation') => void;
   selectedJlpt: JLPTLevel;
   onJlptChange: (level: JLPTLevel) => void;
   userStats: UserStats;
@@ -176,15 +176,15 @@ export const Header: React.FC<HeaderProps> = ({
 
           <button
             type="button"
-            onClick={() => onTabChange('verbs')}
+            onClick={() => onTabChange('tests')}
             className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg transition-all whitespace-nowrap cursor-pointer ${
-              currentTab === 'verbs'
+              currentTab === 'tests'
                 ? 'bg-emerald-600 text-white font-semibold shadow-sm'
                 : 'text-stone-300 hover:text-white hover:bg-stone-800'
             }`}
           >
             <Layers size={16} />
-            <span>Verbos & Adjetivos</span>
+            <span>Testes JLPT</span>
           </button>
 
           <button

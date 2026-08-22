@@ -31,10 +31,10 @@ const JAPANESE_TIPS = [
     tab: 'grammar' as const
   },
   {
-    title: 'Adjetivos I e Adjetivos NA',
-    content: 'Adjetivos em japonês se dividem em dois grupos. Os <strong>Adjetivos-I</strong> terminam em "i" e se conjugam como verbos (ex: atsui -> atsuknai). Os <strong>Adjetivos-NA</strong> precisam do "na" antes de um substantivo (ex: kirei na hana).',
-    buttonText: 'Ver Adjetivos ➔',
-    tab: 'verbs' as const
+    title: 'Testes de Proficiência JLPT',
+    content: 'Para se acostumar com o estilo da prova, pratique com os <strong>Testes JLPT</strong>. Resolva questões focadas no nível que você está estudando (N5 ao N1).',
+    buttonText: 'Acessar Testes ➔',
+    tab: 'tests' as const
   },
   {
     title: 'Não existe som de L nem V no japonês',
@@ -89,7 +89,7 @@ const CHANGELOG = [
 ];
 
 interface HomeHubProps {
-  onTabChange: (tab: 'hub' | 'kana' | 'kanji' | 'grammar' | 'verbs' | 'games' | 'analyzer' | 'sensei' | 'drawing' | 'conversation') => void;
+  onTabChange: (tab: 'hub' | 'kana' | 'kanji' | 'grammar' | 'tests' | 'games' | 'analyzer' | 'sensei' | 'drawing' | 'conversation') => void;
   selectedJlpt: JLPTLevel;
   onJlptChange: (level: JLPTLevel) => void;
   userStats: UserStats;
@@ -281,24 +281,24 @@ export const HomeHub: React.FC<HomeHubProps> = ({
           </div>
         </div>
 
-        {/* Module 5: Verbos & Adjetivos */}
+        {/* Module 5: Testes JLPT */}
         <div
-          onClick={() => onTabChange('verbs')}
+          onClick={() => onTabChange('tests')}
           className="bg-white p-6 rounded-3xl border border-stone-200 shadow-sm hover:border-teal-400 hover:shadow-lg transition-all duration-300 cursor-pointer flex flex-col justify-between group"
         >
           <div className="space-y-3">
             <div className="w-12 h-12 rounded-2xl bg-teal-100 text-teal-700 flex items-center justify-center font-bold text-xl group-hover:scale-110 transition-transform">
-              <BookOpen size={22} />
+              <Layers size={22} />
             </div>
             <h3 className="font-extrabold text-lg text-stone-900 group-hover:text-teal-700 transition-colors">
-              Verbos & Adjetivos
+              Testes JLPT
             </h3>
             <p className="text-xs text-stone-600 leading-relaxed">
-              Banco completo de Verbos (Godan, Ichidan, Irregulares) e Adjetivos (い e な) com áudio e frases.
+              Pratique para os exames oficiais de proficiência em japonês do N5 ao N1.
             </p>
           </div>
           <div className="mt-4 pt-4 border-t border-stone-100 flex items-center justify-between text-xs font-bold text-teal-700">
-            <span>Ações & Descrições</span>
+            <span>Simulados Oficiais</span>
             <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
           </div>
         </div>
