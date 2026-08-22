@@ -961,4 +961,341 @@ export const VOCAB_ADJ_I: VocabItem[] = [
       meaningPt: 'Meu corpo é fraco.'
     }
   }
+,
+  {
+    id: 'v_adj_i_n4_1',
+    word: '浅い',
+    reading: 'あさい',
+    romaji: 'asai',
+    meaningPt: 'Raso',
+    category: 'adjetivo_i',
+    jlpt: 'N4',
+    categoryLabelPt: 'Adjetivo I',
+    exampleSentence: {
+      jp: '川が浅いです。',
+      reading: 'かわ が あさい です。',
+      romaji: 'Kawa ga asai desu.',
+      meaningPt: 'O rio é raso.'
+    }
+  },
+  {
+    id: 'v_adj_i_n4_2',
+    word: '深い',
+    reading: 'ふかい',
+    romaji: 'fukai',
+    meaningPt: 'Profundo',
+    category: 'adjetivo_i',
+    jlpt: 'N4',
+    categoryLabelPt: 'Adjetivo I',
+    exampleSentence: {
+      jp: '海は深いです。',
+      reading: 'うみ は ふかい です。',
+      romaji: 'Umi wa fukai desu.',
+      meaningPt: 'O mar é profundo.'
+    }
+  },
+  {
+    id: 'v_adj_i_n4_3',
+    word: '恥ずかしい',
+    reading: 'はずかしい',
+    romaji: 'hazukashii',
+    meaningPt: 'Envergonhado',
+    category: 'adjetivo_i',
+    jlpt: 'N4',
+    categoryLabelPt: 'Adjetivo I',
+    exampleSentence: {
+      jp: '恥ずかしいです。',
+      reading: 'はずかしい です。',
+      romaji: 'Hazukashii desu.',
+      meaningPt: 'Estou com vergonha.'
+    }
+  },
+  {
+    id: 'v_adj_i_n4_4',
+    word: '酷い',
+    reading: 'ひどい',
+    romaji: 'hidoi',
+    meaningPt: 'Terrível, cruel',
+    category: 'adjetivo_i',
+    jlpt: 'N4',
+    categoryLabelPt: 'Adjetivo I',
+    exampleSentence: {
+      jp: '酷い雨ですね。',
+      reading: 'ひどい あめ ですね。',
+      romaji: 'Hidoi ame desu ne.',
+      meaningPt: 'Chuva terrível, né.'
+    }
+  },
+  {
+    id: 'v_adj_i_n4_5',
+    word: '悲しい',
+    reading: 'かなしい',
+    romaji: 'kanashii',
+    meaningPt: 'Triste',
+    category: 'adjetivo_i',
+    jlpt: 'N4',
+    categoryLabelPt: 'Adjetivo I',
+    exampleSentence: {
+      jp: '悲しい映画を見ました。',
+      reading: 'かなしい えいが を みました。',
+      romaji: 'Kanashii eiga o mimashita.',
+      meaningPt: 'Assisti a um filme triste.'
+    }
+  },
+  {
+    id: 'v_adj_i_n4_6',
+    word: '硬い',
+    reading: 'かたい',
+    romaji: 'katai',
+    meaningPt: 'Duro, firme',
+    category: 'adjetivo_i',
+    jlpt: 'N4',
+    categoryLabelPt: 'Adjetivo I',
+    exampleSentence: {
+      jp: 'この肉は硬いです。',
+      reading: 'この にく は かたい です。',
+      romaji: 'Kono niku wa katai desu.',
+      meaningPt: 'Esta carne está dura.'
+    }
+  },
+  {
+    id: 'v_adj_i_n4_7',
+    word: '厳しい',
+    reading: 'きびしい',
+    romaji: 'kibishii',
+    meaningPt: 'Rigoroso',
+    category: 'adjetivo_i',
+    jlpt: 'N4',
+    categoryLabelPt: 'Adjetivo I',
+    exampleSentence: {
+      jp: '先生は厳しいです。',
+      reading: 'せんせい は きびしい です。',
+      romaji: 'Sensei wa kibishii desu.',
+      meaningPt: 'O professor é rigoroso.'
+    }
+  },
+  {
+    id: 'v_adj_i_n4_8',
+    word: '細かい',
+    reading: 'こまかい',
+    romaji: 'komakai',
+    meaningPt: 'Fino, pequeno',
+    category: 'adjetivo_i',
+    jlpt: 'N4',
+    categoryLabelPt: 'Adjetivo I',
+    exampleSentence: {
+      jp: '細かいお金がありますか。',
+      reading: 'こまかい おかね が ありますか。',
+      romaji: 'Komakai okane ga arimasu ka?',
+      meaningPt: 'Você tem dinheiro trocado?'
+    }
+  },
+  {
+    id: 'v_adj_i_n4_9',
+    word: '怖い',
+    reading: 'こわい',
+    romaji: 'kowai',
+    meaningPt: 'Assustador',
+    category: 'adjetivo_i',
+    jlpt: 'N4',
+    categoryLabelPt: 'Adjetivo I',
+    exampleSentence: {
+      jp: '犬が怖いです。',
+      reading: 'いぬ が こわい です。',
+      romaji: 'Inu ga kowai desu.',
+      meaningPt: 'Tenho medo de cachorro.'
+    }
+  },
+  {
+    id: 'v_adj_i_n4_10',
+    word: '珍しい',
+    reading: 'めずらしい',
+    romaji: 'mezurashii',
+    meaningPt: 'Raro, incomum',
+    category: 'adjetivo_i',
+    jlpt: 'N4',
+    categoryLabelPt: 'Adjetivo I',
+    exampleSentence: {
+      jp: '珍しい鳥ですね。',
+      reading: 'めずらしい とり ですね。',
+      romaji: 'Mezurashii tori desu ne.',
+      meaningPt: 'É um pássaro raro, né.'
+    }
+  },
+  {
+    id: 'v_adj_i_n4_11',
+    word: '眠い',
+    reading: 'ねむい',
+    romaji: 'nemui',
+    meaningPt: 'Sonolento',
+    category: 'adjetivo_i',
+    jlpt: 'N4',
+    categoryLabelPt: 'Adjetivo I',
+    exampleSentence: {
+      jp: '今はとても眠いです。',
+      reading: 'いま は とても ねむい です。',
+      romaji: 'Ima wa totemo nemui desu.',
+      meaningPt: 'Agora estou muito sonolento.'
+    }
+  },
+  {
+    id: 'v_adj_i_n4_12',
+    word: '苦い',
+    reading: 'にがい',
+    romaji: 'nigai',
+    meaningPt: 'Amargo',
+    category: 'adjetivo_i',
+    jlpt: 'N4',
+    categoryLabelPt: 'Adjetivo I',
+    exampleSentence: {
+      jp: '薬は苦いです。',
+      reading: 'くすり は にがい です。',
+      romaji: 'Kusuri wa nigai desu.',
+      meaningPt: 'O remédio é amargo.'
+    }
+  },
+  {
+    id: 'v_adj_i_n4_13',
+    word: '可笑しい',
+    reading: 'おかしい',
+    romaji: 'okashii',
+    meaningPt: 'Engraçado, estranho',
+    category: 'adjetivo_i',
+    jlpt: 'N4',
+    categoryLabelPt: 'Adjetivo I',
+    exampleSentence: {
+      jp: 'その話は可笑しいですね。',
+      reading: 'その はなし は おかしい ですね。',
+      romaji: 'Sono hanashi wa okashii desu ne.',
+      meaningPt: 'Essa história é engraçada.'
+    }
+  },
+  {
+    id: 'v_adj_i_n4_14',
+    word: '寂しい',
+    reading: 'さびしい',
+    romaji: 'sabishii',
+    meaningPt: 'Solitário, triste',
+    category: 'adjetivo_i',
+    jlpt: 'N4',
+    categoryLabelPt: 'Adjetivo I',
+    exampleSentence: {
+      jp: '一人で寂しいです。',
+      reading: 'ひとりで さびしい です。',
+      romaji: 'Hitori de sabishii desu.',
+      meaningPt: 'Estou solitário sozinho.'
+    }
+  },
+  {
+    id: 'v_adj_i_n4_15',
+    word: '素晴らしい',
+    reading: 'すばらしい',
+    romaji: 'subarashii',
+    meaningPt: 'Maravilhoso',
+    category: 'adjetivo_i',
+    jlpt: 'N4',
+    categoryLabelPt: 'Adjetivo I',
+    exampleSentence: {
+      jp: '素晴らしい景色です。',
+      reading: 'すばらしい けしき です。',
+      romaji: 'Subarashii keshiki desu.',
+      meaningPt: 'É uma vista maravilhosa.'
+    }
+  },
+  {
+    id: 'v_adj_i_n4_16',
+    word: '凄い',
+    reading: 'すごい',
+    romaji: 'sugoi',
+    meaningPt: 'Incrível',
+    category: 'adjetivo_i',
+    jlpt: 'N4',
+    categoryLabelPt: 'Adjetivo I',
+    exampleSentence: {
+      jp: '凄いですね！',
+      reading: 'すごい ですね！',
+      romaji: 'Sugoi desu ne!',
+      meaningPt: 'Incrível!'
+    }
+  },
+  {
+    id: 'v_adj_i_n4_17',
+    word: '正しい',
+    reading: 'ただしい',
+    romaji: 'tadashii',
+    meaningPt: 'Correto',
+    category: 'adjetivo_i',
+    jlpt: 'N4',
+    categoryLabelPt: 'Adjetivo I',
+    exampleSentence: {
+      jp: '正しい答えを選んでください。',
+      reading: 'ただしい こたえ を えらんで ください。',
+      romaji: 'Tadashii kotae o erande kudasai.',
+      meaningPt: 'Escolha a resposta correta.'
+    }
+  },
+  {
+    id: 'v_adj_i_n4_18',
+    word: '嬉しい',
+    reading: 'うれしい',
+    romaji: 'ureshii',
+    meaningPt: 'Feliz, contente',
+    category: 'adjetivo_i',
+    jlpt: 'N4',
+    categoryLabelPt: 'Adjetivo I',
+    exampleSentence: {
+      jp: 'プレゼントが嬉しいです。',
+      reading: 'プレゼント が うれしい です。',
+      romaji: 'Purezento ga ureshii desu.',
+      meaningPt: 'Estou feliz com o presente.'
+    }
+  },
+  {
+    id: 'v_adj_i_n4_19',
+    word: '美しい',
+    reading: 'うつくしい',
+    romaji: 'utsukushii',
+    meaningPt: 'Belo, bonito',
+    category: 'adjetivo_i',
+    jlpt: 'N4',
+    categoryLabelPt: 'Adjetivo I',
+    exampleSentence: {
+      jp: '美しい花ですね。',
+      reading: 'うつくしい はな ですね。',
+      romaji: 'Utsukushii hana desu ne.',
+      meaningPt: 'É uma flor linda.'
+    }
+  },
+  {
+    id: 'v_adj_i_n4_20',
+    word: '優しい',
+    reading: 'やさしい',
+    romaji: 'yasashii',
+    meaningPt: 'Gentil',
+    category: 'adjetivo_i',
+    jlpt: 'N4',
+    categoryLabelPt: 'Adjetivo I',
+    exampleSentence: {
+      jp: '母は優しいです。',
+      reading: 'はは は やさしい です。',
+      romaji: 'Haha wa yasashii desu.',
+      meaningPt: 'Minha mãe é gentil.'
+    }
+  },
+  {
+    id: 'v_adj_i_n4_21',
+    word: '柔らかい',
+    reading: 'やわらかい',
+    romaji: 'yawarakai',
+    meaningPt: 'Macio',
+    category: 'adjetivo_i',
+    jlpt: 'N4',
+    categoryLabelPt: 'Adjetivo I',
+    exampleSentence: {
+      jp: 'パンが柔らかいです。',
+      reading: 'パン が やわらかい です。',
+      romaji: 'Pan ga yawarakai desu.',
+      meaningPt: 'O pão está macio.'
+    }
+  }
 ];
