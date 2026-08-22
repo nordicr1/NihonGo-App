@@ -24,15 +24,16 @@ export const VerbsAdjectivesHub: React.FC<VerbsAdjectivesHubProps> = ({
   // Filter vocab items (only verbs and adjectives)
   const allowedCategories = ['verbo_godan', 'verbo_ichidan', 'verbo_irregular', 'adjetivo_i', 'adjetivo_na'];
   const filteredVocab = VOCAB_DATA.filter((v) => {
+    if (!v) return false;
     const matchesLevel = v.jlpt === selectedJlpt;
     const matchesType = allowedCategories.includes(v.category);
     const matchesCategory =
       vocabCategoryFilter === 'all' || v.category === vocabCategoryFilter;
     const matchesSearch =
-      v.word.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      v.reading.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      v.romaji.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      v.meaningPt.toLowerCase().includes(searchQuery.toLowerCase());
+      v.word?.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      v.reading?.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      v.romaji?.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      v.meaningPt?.toLowerCase().includes(searchQuery.toLowerCase());
     return matchesLevel && matchesType && matchesCategory && matchesSearch;
   });
 
@@ -162,14 +163,16 @@ export const VerbsAdjectivesHub: React.FC<VerbsAdjectivesHubProps> = ({
                 </div>
 
                 {/* Example sentence */}
-                <div className="p-3 rounded-xl bg-stone-50 border border-stone-100 space-y-1 text-xs">
-                  <div className="flex items-center justify-between">
-                    <span className="font-bold text-stone-800">{v.exampleSentence.jp}</span>
-                    <AudioButton text={v.exampleSentence.jp} size="sm" />
+                {v.exampleSentence && (
+                  <div className="p-3 rounded-xl bg-stone-50 border border-stone-100 space-y-1 text-xs">
+                    <div className="flex items-center justify-between">
+                      <span className="font-bold text-stone-800">{v.exampleSentence.jp}</span>
+                      <AudioButton text={v.exampleSentence.jp} size="sm" />
+                    </div>
+                    <p className="text-stone-500 font-mono">{v.exampleSentence.reading}</p>
+                    <p className="text-indigo-700 font-medium">{v.exampleSentence.meaningPt}</p>
                   </div>
-                  <p className="text-stone-500 font-mono">{v.exampleSentence.reading}</p>
-                  <p className="text-indigo-700 font-medium">{v.exampleSentence.meaningPt}</p>
-                </div>
+                )}
               </div>
             ))}
           </div>
