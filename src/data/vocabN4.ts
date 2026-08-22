@@ -2,6 +2,1015 @@ import { VocabItem } from '../types';
 
 export const VOCAB_N4: VocabItem[] = [
   {
+    id: 'n4_noun_batch4_1787424298748_0',
+    word: '祖父',
+    reading: 'そふ',
+    romaji: 'sofu',
+    meaningPt: 'avô',
+    category: 'substantivo',
+    jlpt: 'N4',
+    categoryLabelPt: 'Substantivo N4',
+    exampleSentence: {
+      jp: '祖父は庭の掃除をしています。',
+      reading: 'そふは にわの そうじを しています。',
+      romaji: 'sofu wa niwa no souji o shiteimasu.',
+      meaningPt: 'Meu avô está limpando o jardim.'
+    }
+  },
+  {
+    id: 'n4_noun_batch4_1787424298748_1',
+    word: 'ソフト',
+    reading: 'ソフト',
+    romaji: 'sofuto',
+    meaningPt: 'macio; software',
+    category: 'substantivo',
+    jlpt: 'N4',
+    categoryLabelPt: 'Substantivo N4',
+    exampleSentence: {
+      jp: 'パソコンのソフトを更新します。',
+      reading: 'パソコンの ソフトを こうしんします。',
+      romaji: 'pasokon no sofuto o koushinshimasu.',
+      meaningPt: 'Vou atualizar o software do computador.'
+    }
+  },
+  {
+    id: 'n4_noun_batch4_1787424298748_2',
+    word: '卒業',
+    reading: 'そつぎょう',
+    romaji: 'sotsugyou',
+    meaningPt: 'formatura; graduação',
+    category: 'substantivo',
+    jlpt: 'N4',
+    categoryLabelPt: 'Substantivo N4',
+    exampleSentence: {
+      jp: '来年、大学を卒業します。',
+      reading: 'らいねん、だいがくを そつぎょうします。',
+      romaji: 'rainen, daigaku o sotsugyoushimasu.',
+      meaningPt: 'No ano que vem, me formarei na universidade.'
+    }
+  },
+  {
+    id: 'n4_noun_batch4_1787424298748_3',
+    word: '相談',
+    reading: 'そうだん',
+    romaji: 'soudan',
+    meaningPt: 'discussão; conselho',
+    category: 'substantivo',
+    jlpt: 'N4',
+    categoryLabelPt: 'Substantivo N4',
+    exampleSentence: {
+      jp: '先生に相談があります。',
+      reading: 'せんせいに そうだんが あります。',
+      romaji: 'sensei ni soudan ga arimasu.',
+      meaningPt: 'Tenho algo a discutir (pedir conselho) ao professor.'
+    }
+  },
+  {
+    id: 'n4_noun_batch4_1787424298748_4',
+    word: '水道',
+    reading: 'すいどう',
+    romaji: 'suidou',
+    meaningPt: 'abastecimento de água; encanamento',
+    category: 'substantivo',
+    jlpt: 'N4',
+    categoryLabelPt: 'Substantivo N4',
+    exampleSentence: {
+      jp: '水道の水が出ません。',
+      reading: 'すいどうの みずが でません。',
+      romaji: 'suidou no mizu ga demasen.',
+      meaningPt: 'A água do encanamento não sai.'
+    }
+  },
+  {
+    id: 'n4_noun_batch4_1787424298748_5',
+    word: '水泳',
+    reading: 'すいえい',
+    romaji: 'suiei',
+    meaningPt: 'natação',
+    category: 'substantivo',
+    jlpt: 'N4',
+    categoryLabelPt: 'Substantivo N4',
+    exampleSentence: {
+      jp: '趣味は水泳です。',
+      reading: 'しゅみは すいえいです。',
+      romaji: 'shumi wa suiei desu.',
+      meaningPt: 'Meu hobby é natação.'
+    }
+  },
+  {
+    id: 'n4_noun_batch4_1787424298748_6',
+    word: 'スクリーン',
+    reading: 'スクリーン',
+    romaji: 'sukuriin',
+    meaningPt: 'tela',
+    category: 'substantivo',
+    jlpt: 'N4',
+    categoryLabelPt: 'Substantivo N4',
+    exampleSentence: {
+      jp: '映画のスクリーンは大きいです。',
+      reading: 'えいがの スクリーンは おおきいです。',
+      romaji: 'eiga no sukuriin wa ookii desu.',
+      meaningPt: 'A tela do cinema é grande.'
+    }
+  },
+  {
+    id: 'n4_noun_batch4_1787424298748_7',
+    word: '隅',
+    reading: 'すみ',
+    romaji: 'sumi',
+    meaningPt: 'canto',
+    category: 'substantivo',
+    jlpt: 'N4',
+    categoryLabelPt: 'Substantivo N4',
+    exampleSentence: {
+      jp: '部屋の隅に箱があります。',
+      reading: 'へやの すみに はこが あります。',
+      romaji: 'heya no sumi ni hako ga arimasu.',
+      meaningPt: 'Há uma caixa no canto da sala.'
+    }
+  },
+  {
+    id: 'n4_noun_batch4_1787424298748_8',
+    word: '砂',
+    reading: 'すな',
+    romaji: 'suna',
+    meaningPt: 'areia',
+    category: 'substantivo',
+    jlpt: 'N4',
+    categoryLabelPt: 'Substantivo N4',
+    exampleSentence: {
+      jp: '靴に砂が入りました。',
+      reading: 'くつに すなが はいりました。',
+      romaji: 'kutsu ni suna ga hairimashita.',
+      meaningPt: 'Entrou areia no sapato.'
+    }
+  },
+  {
+    id: 'n4_noun_batch4_1787424298748_9',
+    word: 'すり',
+    reading: 'すり',
+    romaji: 'suri',
+    meaningPt: 'batedor de carteiras',
+    category: 'substantivo',
+    jlpt: 'N4',
+    categoryLabelPt: 'Substantivo N4',
+    exampleSentence: {
+      jp: '電車ですりに遭いました。',
+      reading: 'でんしゃで すりに あいました。',
+      romaji: 'densha de suri ni aimashita.',
+      meaningPt: 'Fui vítima de um batedor de carteiras no trem.'
+    }
+  },
+  {
+    id: 'n4_noun_batch4_1787424298748_10',
+    word: 'スーツケース',
+    reading: 'スーツケース',
+    romaji: 'sustsukeesu',
+    meaningPt: 'mala (de viagem)',
+    category: 'substantivo',
+    jlpt: 'N4',
+    categoryLabelPt: 'Substantivo N4',
+    exampleSentence: {
+      jp: '旅行にスーツケースを持っていきます。',
+      reading: 'りょこうに スーツケースを もっていきます。',
+      romaji: 'ryokou ni suutsukeesu o motteikimasu.',
+      meaningPt: 'Vou levar a mala de viagem na viagem.'
+    }
+  },
+  {
+    id: 'n4_noun_batch4_1787424298748_11',
+    word: 'ステーキ',
+    reading: 'ステーキ',
+    romaji: 'suteeki',
+    meaningPt: 'bife; bife (steak)',
+    category: 'substantivo',
+    jlpt: 'N4',
+    categoryLabelPt: 'Substantivo N4',
+    exampleSentence: {
+      jp: '夕食はステーキを食べます。',
+      reading: 'ゆうしょくは ステーキを たべます。',
+      romaji: 'yuushoku wa suteeki o tabemasu.',
+      meaningPt: 'No jantar, comerei bife.'
+    }
+  },
+  {
+    id: 'n4_noun_batch4_1787424298748_12',
+    word: 'ステレオ',
+    reading: 'ステレオ',
+    romaji: 'sutereo',
+    meaningPt: 'estéreo; aparelho de som',
+    category: 'substantivo',
+    jlpt: 'N4',
+    categoryLabelPt: 'Substantivo N4',
+    exampleSentence: {
+      jp: 'ステレオで音楽を聞きます。',
+      reading: 'ステレオで おんがくを ききます。',
+      romaji: 'sutereo de ongaku o kikimasu.',
+      meaningPt: 'Ouço música no aparelho de som.'
+    }
+  },
+  {
+    id: 'n4_noun_batch4_1787424298748_13',
+    word: '数学',
+    reading: 'すうがく',
+    romaji: 'suugaku',
+    meaningPt: 'matemática',
+    category: 'substantivo',
+    jlpt: 'N4',
+    categoryLabelPt: 'Substantivo N4',
+    exampleSentence: {
+      jp: '数学のテストは難しかったです。',
+      reading: 'すうがくの テストは むずかしかったです。',
+      romaji: 'suugaku no tesuto wa muzukashikatta desu.',
+      meaningPt: 'O teste de matemática estava difícil.'
+    }
+  },
+  {
+    id: 'n4_noun_batch4_1787424298748_14',
+    word: 'スーツ',
+    reading: 'スーツ',
+    romaji: 'suutsu',
+    meaningPt: 'terno; traje',
+    category: 'substantivo',
+    jlpt: 'N4',
+    categoryLabelPt: 'Substantivo N4',
+    exampleSentence: {
+      jp: '会社にスーツを着て行きます。',
+      reading: 'かいしゃに スーツを きて いきます。',
+      romaji: 'kaisha ni suutsu o kite ikimasu.',
+      meaningPt: 'Vou trabalhar vestindo terno.'
+    }
+  },
+  {
+    id: 'n4_noun_batch4_1787424298748_15',
+    word: '退院',
+    reading: 'たいいん',
+    romaji: 'tai\'in',
+    meaningPt: 'alta (do hospital)',
+    category: 'substantivo',
+    jlpt: 'N4',
+    categoryLabelPt: 'Substantivo N4',
+    exampleSentence: {
+      jp: '明日、病院を退院します。',
+      reading: 'あした、びょういんを たいいんします。',
+      romaji: 'ashita, byouin o taiinshimasu.',
+      meaningPt: 'Amanhã terei alta do hospital.'
+    }
+  },
+  {
+    id: 'n4_noun_batch4_1787424298748_16',
+    word: '台風',
+    reading: 'たいふう',
+    romaji: 'taifuu',
+    meaningPt: 'tufão',
+    category: 'substantivo',
+    jlpt: 'N4',
+    categoryLabelPt: 'Substantivo N4',
+    exampleSentence: {
+      jp: '台風が近づいています。',
+      reading: 'たいふうが ちかづいています。',
+      romaji: 'taifuu ga chikazuiteimasu.',
+      meaningPt: 'O tufão está se aproximando.'
+    }
+  },
+  {
+    id: 'n4_noun_batch4_1787424298748_17',
+    word: 'タイプ',
+    reading: 'タイプ',
+    romaji: 'taipu',
+    meaningPt: 'tipo; estilo; datilografia',
+    category: 'substantivo',
+    jlpt: 'N4',
+    categoryLabelPt: 'Substantivo N4',
+    exampleSentence: {
+      jp: '彼は私の好きなタイプです。',
+      reading: 'かれは わたしの すきな タイプです。',
+      romaji: 'kare wa watashi no suki na taipu desu.',
+      meaningPt: 'Ele é o meu tipo.'
+    }
+  },
+  {
+    id: 'n4_noun_batch4_1787424298748_18',
+    word: 'たいてい',
+    reading: 'たいてい',
+    romaji: 'taitei',
+    meaningPt: 'geralmente; a maioria',
+    category: 'substantivo',
+    jlpt: 'N4',
+    categoryLabelPt: 'Substantivo N4',
+    exampleSentence: {
+      jp: '休日はたいてい家にいます。',
+      reading: 'きゅうじつは たいてい いえに います。',
+      romaji: 'kyuujitsu wa taitei ie ni imasu.',
+      meaningPt: 'Nos feriados geralmente fico em casa.'
+    }
+  },
+  {
+    id: 'n4_noun_batch4_1787424298748_19',
+    word: '棚',
+    reading: 'たな',
+    romaji: 'tana',
+    meaningPt: 'prateleira',
+    category: 'substantivo',
+    jlpt: 'N4',
+    categoryLabelPt: 'Substantivo N4',
+    exampleSentence: {
+      jp: '本を棚に並べます。',
+      reading: 'ほんを たなに ならべます。',
+      romaji: 'hon o tana ni narabemasu.',
+      meaningPt: 'Alinho os livros na prateleira.'
+    }
+  },
+  {
+    id: 'n4_noun_batch4_1787424298748_20',
+    word: '誕生',
+    reading: 'たんじょう',
+    romaji: 'tanjou',
+    meaningPt: 'nascimento',
+    category: 'substantivo',
+    jlpt: 'N4',
+    categoryLabelPt: 'Substantivo N4',
+    exampleSentence: {
+      jp: '新しい命の誕生を祝います。',
+      reading: 'あたらしい いのちの たんじょうを いわいます。',
+      romaji: 'atarashii inochi no tanjou o iwaimasu.',
+      meaningPt: 'Celebramos o nascimento de uma nova vida.'
+    }
+  },
+  {
+    id: 'n4_noun_batch4_1787424298748_21',
+    word: '楽しみ',
+    reading: 'たのしみ',
+    romaji: 'tanoshimi',
+    meaningPt: 'ansioso por; diversão',
+    category: 'substantivo',
+    jlpt: 'N4',
+    categoryLabelPt: 'Substantivo N4',
+    exampleSentence: {
+      jp: '夏休みが楽しみです。',
+      reading: 'なつやすみが たのしみです。',
+      romaji: 'natsuyasumi ga tanoshimi desu.',
+      meaningPt: 'Estou ansioso pelas férias de verão.'
+    }
+  },
+  {
+    id: 'n4_noun_batch4_1787424298748_22',
+    word: '畳',
+    reading: 'たたみ',
+    romaji: 'tatami',
+    meaningPt: 'tatame (esteira de palha japonesa)',
+    category: 'substantivo',
+    jlpt: 'N4',
+    categoryLabelPt: 'Substantivo N4',
+    exampleSentence: {
+      jp: '和室には畳があります。',
+      reading: 'わしつには たたみが あります。',
+      romaji: 'washitsu ni wa tatami ga arimasu.',
+      meaningPt: 'Nos quartos japoneses (Washitsu) há tatame.'
+    }
+  },
+  {
+    id: 'n4_noun_batch4_1787424298748_23',
+    word: '手袋',
+    reading: 'てぶくろ',
+    romaji: 'tebukuro',
+    meaningPt: 'luva',
+    category: 'substantivo',
+    jlpt: 'N4',
+    categoryLabelPt: 'Substantivo N4',
+    exampleSentence: {
+      jp: '冬は手袋をします。',
+      reading: 'ふゆは てぶくろを します。',
+      romaji: 'fuyu wa tebukuro o shimasu.',
+      meaningPt: 'No inverno eu uso luvas.'
+    }
+  },
+  {
+    id: 'n4_noun_batch4_1787424298748_24',
+    word: '丁寧',
+    reading: 'ていねい',
+    romaji: 'teinei',
+    meaningPt: 'educado; polido',
+    category: 'substantivo',
+    jlpt: 'N4',
+    categoryLabelPt: 'Substantivo N4',
+    exampleSentence: {
+      jp: '先生は丁寧に教えてくれます。',
+      reading: 'せんせいは ていねいに おしえてくれます。',
+      romaji: 'sensei wa teinei ni oshietekuremasu.',
+      meaningPt: 'O professor ensina educadamente.'
+    }
+  },
+  {
+    id: 'n4_noun_batch4_1787424298748_25',
+    word: 'テキスト',
+    reading: 'テキスト',
+    romaji: 'tekisuto',
+    meaningPt: 'texto; livro didático',
+    category: 'substantivo',
+    jlpt: 'N4',
+    categoryLabelPt: 'Substantivo N4',
+    exampleSentence: {
+      jp: '日本語のテキストを買いました。',
+      reading: 'にほんごの テキストを かいました。',
+      romaji: 'nihongo no tekisuto o kaimashita.',
+      meaningPt: 'Comprei o livro didático de japonês.'
+    }
+  },
+  {
+    id: 'n4_noun_batch4_1787424298748_26',
+    word: '適当',
+    reading: 'てきとう',
+    romaji: 'tekitou',
+    meaningPt: 'adequado; apropriado; "de qualquer jeito"',
+    category: 'substantivo',
+    jlpt: 'N4',
+    categoryLabelPt: 'Substantivo N4',
+    exampleSentence: {
+      jp: '適当なサイズを選びます。',
+      reading: 'てきとうな サイズを えらびます。',
+      romaji: 'tekitou na saizu o erabimasu.',
+      meaningPt: 'Escolho um tamanho adequado.'
+    }
+  },
+  {
+    id: 'n4_noun_batch4_1787424298748_27',
+    word: '点',
+    reading: 'てん',
+    romaji: 'ten',
+    meaningPt: 'ponto; nota (em prova)',
+    category: 'substantivo',
+    jlpt: 'N4',
+    categoryLabelPt: 'Substantivo N4',
+    exampleSentence: {
+      jp: 'テストで良い点を取りました。',
+      reading: 'テストで いい てんを とりました。',
+      romaji: 'tesuto de ii ten o torimashita.',
+      meaningPt: 'Tirei uma boa nota no teste.'
+    }
+  },
+  {
+    id: 'n4_noun_batch4_1787424298748_28',
+    word: '店員',
+    reading: 'てんいん',
+    romaji: 'ten\'in',
+    meaningPt: 'funcionário de loja; atendente',
+    category: 'substantivo',
+    jlpt: 'N4',
+    categoryLabelPt: 'Substantivo N4',
+    exampleSentence: {
+      jp: '店員に値段を聞きます。',
+      reading: 'てんいんに ねだんを ききます。',
+      romaji: 'tenin ni nedan o kikimasu.',
+      meaningPt: 'Pergunto o preço ao funcionário da loja.'
+    }
+  },
+  {
+    id: 'n4_noun_batch4_1787424298748_29',
+    word: 'テニス',
+    reading: 'テニス',
+    romaji: 'tenisu',
+    meaningPt: 'tênis (esporte)',
+    category: 'substantivo',
+    jlpt: 'N4',
+    categoryLabelPt: 'Substantivo N4',
+    exampleSentence: {
+      jp: '友達とテニスをします。',
+      reading: 'ともだちと テニスを します。',
+      romaji: 'tomodachi to tenisu o shimasu.',
+      meaningPt: 'Vou jogar tênis com o amigo.'
+    }
+  },
+  {
+    id: 'n4_noun_batch4_1787424298748_30',
+    word: '天気予報',
+    reading: 'てんきよほう',
+    romaji: 'tenkiyohou',
+    meaningPt: 'previsão do tempo',
+    category: 'substantivo',
+    jlpt: 'N4',
+    categoryLabelPt: 'Substantivo N4',
+    exampleSentence: {
+      jp: '天気予報を見ます。',
+      reading: 'てんきよほうを みます。',
+      romaji: 'tenkiyohou o mimasu.',
+      meaningPt: 'Vou ver a previsão do tempo.'
+    }
+  },
+  {
+    id: 'n4_noun_batch4_1787424298748_31',
+    word: '展覧会',
+    reading: 'てんらんかい',
+    romaji: 'tenrankai',
+    meaningPt: 'exposição; exibição',
+    category: 'substantivo',
+    jlpt: 'N4',
+    categoryLabelPt: 'Substantivo N4',
+    exampleSentence: {
+      jp: '美術館の展覧会に行きます。',
+      reading: 'びじゅつかんの てんらんかいに いきます。',
+      romaji: 'bijutsukan no tenrankai ni ikimasu.',
+      meaningPt: 'Vou à exposição do museu de arte.'
+    }
+  },
+  {
+    id: 'n4_noun_batch4_1787424298748_32',
+    word: '寺',
+    reading: 'てら',
+    romaji: 'tera',
+    meaningPt: 'templo budista',
+    category: 'substantivo',
+    jlpt: 'N4',
+    categoryLabelPt: 'Substantivo N4',
+    exampleSentence: {
+      jp: '京都には古い寺が多いです。',
+      reading: 'きょうとには ふるい てらが おおいです。',
+      romaji: 'kyouto ni wa furui tera ga ooi desu.',
+      meaningPt: 'Há muitos templos antigos em Quioto.'
+    }
+  },
+  {
+    id: 'n4_noun_batch4_1787424298748_33',
+    word: '途中',
+    reading: 'とちゅう',
+    romaji: 'tochuu',
+    meaningPt: 'no caminho; no meio',
+    category: 'substantivo',
+    jlpt: 'N4',
+    categoryLabelPt: 'Substantivo N4',
+    exampleSentence: {
+      jp: '学校へ行く途中で雨が降りました。',
+      reading: 'がっこうへ いく と中で あめが ふりました。',
+      romaji: 'gakkou e iku tochuu de ame ga furimashita.',
+      meaningPt: 'Choveu no caminho para a escola.'
+    }
+  },
+  {
+    id: 'n4_noun_batch4_1787424298748_34',
+    word: '特急',
+    reading: 'とっきゅう',
+    romaji: 'tokkyuu',
+    meaningPt: 'trem expresso especial',
+    category: 'substantivo',
+    jlpt: 'N4',
+    categoryLabelPt: 'Substantivo N4',
+    exampleSentence: {
+      jp: '特急電車に乗ると早いです。',
+      reading: 'とっきゅうでんしゃに のると はやいです。',
+      romaji: 'tokkyuudensha ni noru to hayai desu.',
+      meaningPt: 'É mais rápido se você pegar o trem expresso.'
+    }
+  },
+  {
+    id: 'n4_noun_batch4_1787424298748_35',
+    word: '床屋',
+    reading: 'とこや',
+    romaji: 'tokoya',
+    meaningPt: 'barbeiro; barbearia',
+    category: 'substantivo',
+    jlpt: 'N4',
+    categoryLabelPt: 'Substantivo N4',
+    exampleSentence: {
+      jp: '床屋で髪を切りました。',
+      reading: 'とこやで かみを きりました。',
+      romaji: 'tokoya de kami o kirimashita.',
+      meaningPt: 'Cortei o cabelo no barbeiro.'
+    }
+  },
+  {
+    id: 'n4_noun_batch4_1787424298748_36',
+    word: '特別',
+    reading: 'とくべつ',
+    romaji: 'tokubetsu',
+    meaningPt: 'especial',
+    category: 'substantivo',
+    jlpt: 'N4',
+    categoryLabelPt: 'Substantivo N4',
+    exampleSentence: {
+      jp: '今日は特別な日です。',
+      reading: 'きょうは とくべつな ひです。',
+      romaji: 'kyou wa tokubetsu na hi desu.',
+      meaningPt: 'Hoje é um dia especial.'
+    }
+  },
+  {
+    id: 'n4_noun_batch4_1787424298748_37',
+    word: '遠く',
+    reading: 'とおく',
+    romaji: 'tooku',
+    meaningPt: 'longe; distante',
+    category: 'substantivo',
+    jlpt: 'N4',
+    categoryLabelPt: 'Substantivo N4',
+    exampleSentence: {
+      jp: '遠くに山が見えます。',
+      reading: 'とおくに やまが みえます。',
+      romaji: 'tooku ni yama ga miemasu.',
+      meaningPt: 'Vejo montanhas ao longe.'
+    }
+  },
+  {
+    id: 'n4_noun_batch4_1787424298748_38',
+    word: '都合',
+    reading: 'つごう',
+    romaji: 'tsugou',
+    meaningPt: 'conveniência; circunstâncias',
+    category: 'substantivo',
+    jlpt: 'N4',
+    categoryLabelPt: 'Substantivo N4',
+    exampleSentence: {
+      jp: '明日は都合が悪いです。',
+      reading: 'あしたは つごうが わるいです。',
+      romaji: 'ashita wa tsugou ga warui desu.',
+      meaningPt: 'Amanhã não é conveniente (estou ocupado/inconveniente).'
+    }
+  },
+  {
+    id: 'n4_noun_batch4_1787424298748_39',
+    word: '月',
+    reading: 'つき',
+    romaji: 'tsuki',
+    meaningPt: 'lua; mês',
+    category: 'substantivo',
+    jlpt: 'N4',
+    categoryLabelPt: 'Substantivo N4',
+    exampleSentence: {
+      jp: '空に月が出ています。',
+      reading: 'そらに つきが でています。',
+      romaji: 'sora ni tsuki ga deteimasu.',
+      meaningPt: 'A lua apareceu no céu.'
+    }
+  },
+  {
+    id: 'n4_noun_batch4_1787424298748_40',
+    word: '妻',
+    reading: 'つま',
+    romaji: 'tsuma',
+    meaningPt: 'esposa (minha esposa)',
+    category: 'substantivo',
+    jlpt: 'N4',
+    categoryLabelPt: 'Substantivo N4',
+    exampleSentence: {
+      jp: '妻は料理が上手です。',
+      reading: 'つまは りょうりが じょうずです。',
+      romaji: 'tsuma wa ryouri ga jouzu desu.',
+      meaningPt: 'Minha esposa cozinha bem.'
+    }
+  },
+  {
+    id: 'n4_noun_batch4_1787424298748_41',
+    word: '腕',
+    reading: 'うで',
+    romaji: 'ude',
+    meaningPt: 'braço; habilidade',
+    category: 'substantivo',
+    jlpt: 'N4',
+    categoryLabelPt: 'Substantivo N4',
+    exampleSentence: {
+      jp: '時計を腕につけます。',
+      reading: 'とけいを うでに つけます。',
+      romaji: 'tokei o ude ni tsukemasu.',
+      meaningPt: 'Coloco o relógio no braço.'
+    }
+  },
+  {
+    id: 'n4_noun_batch4_1787424298748_42',
+    word: '受付',
+    reading: 'うけつけ',
+    romaji: 'uketsuke',
+    meaningPt: 'recepção',
+    category: 'substantivo',
+    jlpt: 'N4',
+    categoryLabelPt: 'Substantivo N4',
+    exampleSentence: {
+      jp: '受付で名前を書いてください。',
+      reading: 'うけつけで なまえを かいてください。',
+      romaji: 'uketsuke de namae o kaite kudasai.',
+      meaningPt: 'Por favor, escreva o seu nome na recepção.'
+    }
+  },
+  {
+    id: 'n4_noun_batch4_1787424298748_43',
+    word: '生まれ',
+    reading: 'うまれ',
+    romaji: 'umare',
+    meaningPt: 'nascimento; terra natal',
+    category: 'substantivo',
+    jlpt: 'N4',
+    categoryLabelPt: 'Substantivo N4',
+    exampleSentence: {
+      jp: '私は東京生まれです。',
+      reading: 'わたしは とうきょう うまれです。',
+      romaji: 'watashi wa toukyou umare desu.',
+      meaningPt: 'Sou nascido(a) em Tóquio.'
+    }
+  },
+  {
+    id: 'n4_noun_batch4_1787424298748_44',
+    word: '運転手',
+    reading: 'うんてんしゅ',
+    romaji: 'untenshu',
+    meaningPt: 'motorista',
+    category: 'substantivo',
+    jlpt: 'N4',
+    categoryLabelPt: 'Substantivo N4',
+    exampleSentence: {
+      jp: 'バスの運転手さんに道を聞きました。',
+      reading: 'バスの うんてんしゅさんに みちを ききました。',
+      romaji: 'basu no untenshusan ni michi o kikimashita.',
+      meaningPt: 'Perguntei o caminho ao motorista do ônibus.'
+    }
+  },
+  {
+    id: 'n4_noun_batch4_1787424298748_45',
+    word: '裏',
+    reading: 'うら',
+    romaji: 'ura',
+    meaningPt: 'lado oposto; parte de trás; avesso',
+    category: 'substantivo',
+    jlpt: 'N4',
+    categoryLabelPt: 'Substantivo N4',
+    exampleSentence: {
+      jp: '紙の裏に書きます。',
+      reading: 'かみの うらに かきます。',
+      romaji: 'kami no ura ni kakimasu.',
+      meaningPt: 'Vou escrever na parte de trás da folha.'
+    }
+  },
+  {
+    id: 'n4_noun_batch4_1787424298748_46',
+    word: '売り場',
+    reading: 'うりば',
+    romaji: 'uriba',
+    meaningPt: 'seção de vendas; balcão',
+    category: 'substantivo',
+    jlpt: 'N4',
+    categoryLabelPt: 'Substantivo N4',
+    exampleSentence: {
+      jp: '靴の売り場は三階です。',
+      reading: 'くつの うりばは さんがいです。',
+      romaji: 'kutsu no uriba wa sangai desu.',
+      meaningPt: 'A seção de sapatos é no terceiro andar.'
+    }
+  },
+  {
+    id: 'n4_noun_batch4_1787424298748_47',
+    word: '嘘',
+    reading: 'うそ',
+    romaji: 'uso',
+    meaningPt: 'mentira',
+    category: 'substantivo',
+    jlpt: 'N4',
+    categoryLabelPt: 'Substantivo N4',
+    exampleSentence: {
+      jp: '嘘をついてはいけません。',
+      reading: 'うそを ついては いけません。',
+      romaji: 'uso o tsuite wa ikemasen.',
+      meaningPt: 'Não deve contar mentiras.'
+    }
+  },
+  {
+    id: 'n4_noun_batch4_1787424298748_48',
+    word: 'ワープロ',
+    reading: 'ワープロ',
+    romaji: 'waapuro',
+    meaningPt: 'processador de texto',
+    category: 'substantivo',
+    jlpt: 'N4',
+    categoryLabelPt: 'Substantivo N4',
+    exampleSentence: {
+      jp: '昔はワープロを使っていました。',
+      reading: 'むかしは ワープロを つかっていました。',
+      romaji: 'mukashi wa waapuro o tsukatteimashita.',
+      meaningPt: 'Antigamente usava-se processador de texto.'
+    }
+  },
+  {
+    id: 'n4_noun_batch4_1787424298748_49',
+    word: '割合',
+    reading: 'わりあい',
+    romaji: 'wariai',
+    meaningPt: 'taxa; proporção; relativamente',
+    category: 'substantivo',
+    jlpt: 'N4',
+    categoryLabelPt: 'Substantivo N4',
+    exampleSentence: {
+      jp: 'このクラスは女性の割合が高いです。',
+      reading: 'この クラスは じょせいの わりあいが たかいです。',
+      romaji: 'kono kurasu wa josei no wariai ga takai desu.',
+      meaningPt: 'Nesta turma a proporção de mulheres é alta.'
+    }
+  },
+  {
+    id: 'n4_noun_batch4_1787424298748_50',
+    word: '忘れ物',
+    reading: 'わすれもの',
+    romaji: 'wasuremono',
+    meaningPt: 'objeto perdido/esquecido',
+    category: 'substantivo',
+    jlpt: 'N4',
+    categoryLabelPt: 'Substantivo N4',
+    exampleSentence: {
+      jp: '電車に忘れ物をしました。',
+      reading: 'でんしゃに わすれものを しました。',
+      romaji: 'densha ni wasuremono o shimashita.',
+      meaningPt: 'Esqueci um objeto (deixei algo) no trem.'
+    }
+  },
+  {
+    id: 'n4_noun_batch4_1787424298748_51',
+    word: '約束',
+    reading: 'やくそく',
+    romaji: 'yakusoku',
+    meaningPt: 'promessa; compromisso',
+    category: 'substantivo',
+    jlpt: 'N4',
+    categoryLabelPt: 'Substantivo N4',
+    exampleSentence: {
+      jp: '友達と遊ぶ約束をしました。',
+      reading: 'ともだちと あそぶ やくそくを しました。',
+      romaji: 'tomodachi to asobu yakusoku o shimashita.',
+      meaningPt: 'Fiz um compromisso de sair (brincar) com o meu amigo.'
+    }
+  },
+  {
+    id: 'n4_noun_batch4_1787424298748_52',
+    word: '予習',
+    reading: 'よしゅう',
+    romaji: 'yoshuu',
+    meaningPt: 'preparação (estudo prévio para aula)',
+    category: 'substantivo',
+    jlpt: 'N4',
+    categoryLabelPt: 'Substantivo N4',
+    exampleSentence: {
+      jp: '授業の前に予習します。',
+      reading: 'じゅぎょうの まえに よしゅうします。',
+      romaji: 'jugyou no mae ni yoshuushimasu.',
+      meaningPt: 'Faço a preparação (estudo prévio) antes da aula.'
+    }
+  },
+  {
+    id: 'n4_noun_batch4_1787424298748_53',
+    word: '予定',
+    reading: 'よてい',
+    romaji: 'yotei',
+    meaningPt: 'plano; programação',
+    category: 'substantivo',
+    jlpt: 'N4',
+    categoryLabelPt: 'Substantivo N4',
+    exampleSentence: {
+      jp: '休日の予定を決めます。',
+      reading: 'きゅうじつの よていを きめます。',
+      romaji: 'kyuujitsu no yotei o kimemasu.',
+      meaningPt: 'Vou decidir os planos para o feriado.'
+    }
+  },
+  {
+    id: 'n4_noun_batch4_1787424298748_54',
+    word: '用',
+    reading: 'よう',
+    romaji: 'you',
+    meaningPt: 'assunto; uso; compromisso',
+    category: 'substantivo',
+    jlpt: 'N4',
+    categoryLabelPt: 'Substantivo N4',
+    exampleSentence: {
+      jp: 'ちょっと用があります。',
+      reading: 'ちょっと ようが あります。',
+      romaji: 'chotto you ga arimasu.',
+      meaningPt: 'Tenho um pequeno compromisso/assunto.'
+    }
+  },
+  {
+    id: 'n4_noun_batch4_1787424298748_55',
+    word: '用意',
+    reading: 'ようい',
+    romaji: 'youi',
+    meaningPt: 'preparação; arranjo',
+    category: 'substantivo',
+    jlpt: 'N4',
+    categoryLabelPt: 'Substantivo N4',
+    exampleSentence: {
+      jp: '食事の用意ができました。',
+      reading: 'しょくじの よういが できました。',
+      romaji: 'shokuji no youi ga dekimashita.',
+      meaningPt: 'A preparação da refeição está pronta.'
+    }
+  },
+  {
+    id: 'n4_noun_batch4_1787424298748_56',
+    word: '用事',
+    reading: 'ようじ',
+    romaji: 'youji',
+    meaningPt: 'tarefa; compromisso',
+    category: 'substantivo',
+    jlpt: 'N4',
+    categoryLabelPt: 'Substantivo N4',
+    exampleSentence: {
+      jp: '今日は用事があるので行けません。',
+      reading: 'きょうは ようじが あるので いけません。',
+      romaji: 'kyou wa youji ga aru node ikemasen.',
+      meaningPt: 'Como tenho um compromisso hoje, não poderei ir.'
+    }
+  },
+  {
+    id: 'n4_noun_batch4_1787424298748_57',
+    word: '予約',
+    reading: 'よやく',
+    romaji: 'yoyaku',
+    meaningPt: 'reserva',
+    category: 'substantivo',
+    jlpt: 'N4',
+    categoryLabelPt: 'Substantivo N4',
+    exampleSentence: {
+      jp: 'ホテルの部屋を予約しました。',
+      reading: 'ホテルの へやを よやくしました。',
+      romaji: 'hoteru no heya o yoyakushimashita.',
+      meaningPt: 'Fiz a reserva de um quarto no hotel.'
+    }
+  },
+  {
+    id: 'n4_noun_batch4_1787424298748_58',
+    word: '湯',
+    reading: 'ゆ',
+    romaji: 'yu',
+    meaningPt: 'água quente; banho público',
+    category: 'substantivo',
+    jlpt: 'N4',
+    categoryLabelPt: 'Substantivo N4',
+    exampleSentence: {
+      jp: 'お湯を沸かします。',
+      reading: 'おゆを わかします。',
+      romaji: 'oyu o wakashimasu.',
+      meaningPt: 'Ferver a água.'
+    }
+  },
+  {
+    id: 'n4_noun_batch4_1787424298748_59',
+    word: '指',
+    reading: 'ゆび',
+    romaji: 'yubi',
+    meaningPt: 'dedo',
+    category: 'substantivo',
+    jlpt: 'N4',
+    categoryLabelPt: 'Substantivo N4',
+    exampleSentence: {
+      jp: '指を切りました。',
+      reading: 'ゆびを きりました。',
+      romaji: 'yubi o kirimashita.',
+      meaningPt: 'Cortei o dedo.'
+    }
+  },
+  {
+    id: 'n4_noun_batch4_1787424298748_60',
+    word: '指輪',
+    reading: 'ゆびわ',
+    romaji: 'yubiwa',
+    meaningPt: 'anel',
+    category: 'substantivo',
+    jlpt: 'N4',
+    categoryLabelPt: 'Substantivo N4',
+    exampleSentence: {
+      jp: '彼女に指輪をプレゼントしました。',
+      reading: 'かのじょに ゆびわを プレゼントしました。',
+      romaji: 'kanojo ni yubiwa o purezentoshimashita.',
+      meaningPt: 'Presenteei ela com um anel.'
+    }
+  },
+  {
+    id: 'n4_noun_batch4_1787424298748_61',
+    word: '夢',
+    reading: 'ゆめ',
+    romaji: 'yume',
+    meaningPt: 'sonho',
+    category: 'substantivo',
+    jlpt: 'N4',
+    categoryLabelPt: 'Substantivo N4',
+    exampleSentence: {
+      jp: '怖い夢を見ました。',
+      reading: 'こわい ゆめを みました。',
+      romaji: 'kowai yume o mimashita.',
+      meaningPt: 'Tive (vi) um sonho assustador.'
+    }
+  },
+  {
+    id: 'n4_noun_batch4_1787424298748_62',
+    word: '残念',
+    reading: 'ざんねん',
+    romaji: 'zannen',
+    meaningPt: 'lamentável; pena',
+    category: 'substantivo',
+    jlpt: 'N4',
+    categoryLabelPt: 'Substantivo N4',
+    exampleSentence: {
+      jp: '試合に負けて残念です。',
+      reading: 'しあいに まけて ざんねんです。',
+      romaji: 'shiai ni makete zannen desu.',
+      meaningPt: 'É uma pena que tenhamos perdido o jogo.'
+    }
+  },
+
+  {
     id: 'n4_noun_batch3_1787424171068_0',
     word: '港',
     reading: 'みなと',
