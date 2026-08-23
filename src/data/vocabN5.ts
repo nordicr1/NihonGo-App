@@ -2,6 +2,1607 @@ import { VocabItem } from '../types';
 
 export const VOCAB_N5: VocabItem[] = [
   {
+    id: 'n5_verb_batch1_1787460186879_0',
+    word: '浴びる',
+    reading: 'あびる',
+    romaji: 'abiru',
+    meaningPt: 'tomar banho',
+    category: 'verbo_ichidan',
+    jlpt: 'N5',
+    categoryLabelPt: 'Verbo Tipo 2 (Ichidan)',
+    exampleSentence: {
+      jp: 'シャワーを浴びます。',
+      reading: 'シャワーを あびます。',
+      romaji: 'shawaa o abimasu.',
+      meaningPt: 'Tomo banho (de chuveiro).'
+    }
+  },
+  {
+    id: 'n5_verb_batch1_1787460186879_1',
+    word: '上げる',
+    reading: 'あげる',
+    romaji: 'ageru',
+    meaningPt: 'elevar; levantar; dar',
+    category: 'verbo_ichidan',
+    jlpt: 'N5',
+    categoryLabelPt: 'Verbo Tipo 2 (Ichidan)',
+    exampleSentence: {
+      jp: '手を上げてください。',
+      reading: 'てを あげてください。',
+      romaji: 'te o agete kudasai.',
+      meaningPt: 'Por favor, levante a mão.'
+    }
+  },
+  {
+    id: 'n5_verb_batch1_1787460186879_2',
+    word: '開ける',
+    reading: 'あける',
+    romaji: 'akeru',
+    meaningPt: 'abrir',
+    category: 'verbo_ichidan',
+    jlpt: 'N5',
+    categoryLabelPt: 'Verbo Tipo 2 (Ichidan)',
+    exampleSentence: {
+      jp: '窓を開けます。',
+      reading: 'まどを あけます。',
+      romaji: 'mado o akemasu.',
+      meaningPt: 'Vou abrir a janela.'
+    }
+  },
+  {
+    id: 'n5_verb_batch1_1787460186879_3',
+    word: '開く',
+    reading: 'あく',
+    romaji: 'aku',
+    meaningPt: 'abrir (intransitivo)',
+    category: 'verbo_godan',
+    jlpt: 'N5',
+    categoryLabelPt: 'Verbo Tipo 1 (Godan)',
+    exampleSentence: {
+      jp: 'ドアが開きます。',
+      reading: 'ドアが あきます。',
+      romaji: 'doa ga akimasu.',
+      meaningPt: 'A porta abre.'
+    }
+  },
+  {
+    id: 'n5_verb_batch1_1787460186879_4',
+    word: '洗う',
+    reading: 'あらう',
+    romaji: 'arau',
+    meaningPt: 'lavar',
+    category: 'verbo_godan',
+    jlpt: 'N5',
+    categoryLabelPt: 'Verbo Tipo 1 (Godan)',
+    exampleSentence: {
+      jp: '手を洗います。',
+      reading: 'てを あらいます。',
+      romaji: 'te o araimasu.',
+      meaningPt: 'Lavo as mãos.'
+    }
+  },
+  {
+    id: 'n5_verb_batch1_1787460186879_5',
+    word: 'ある',
+    reading: 'ある',
+    romaji: 'aru',
+    meaningPt: 'ser; existir; ter',
+    category: 'verbo_godan',
+    jlpt: 'N5',
+    categoryLabelPt: 'Verbo Tipo 1 (Godan)',
+    exampleSentence: {
+      jp: '机の上に本があります。',
+      reading: 'つくえの うえに ほんが あります。',
+      romaji: 'tsukue no ue ni hon ga arimasu.',
+      meaningPt: 'Há um livro em cima da mesa.'
+    }
+  },
+  {
+    id: 'n5_verb_batch1_1787460186879_6',
+    word: '歩く',
+    reading: 'あるく',
+    romaji: 'aruku',
+    meaningPt: 'andar',
+    category: 'verbo_godan',
+    jlpt: 'N5',
+    categoryLabelPt: 'Verbo Tipo 1 (Godan)',
+    exampleSentence: {
+      jp: '駅まで歩きます。',
+      reading: 'えきまで あるきます。',
+      romaji: 'eki made arukimasu.',
+      meaningPt: 'Ando (caminho) até a estação.'
+    }
+  },
+  {
+    id: 'n5_verb_batch1_1787460186880_7',
+    word: '遊ぶ',
+    reading: 'あそぶ',
+    romaji: 'asobu',
+    meaningPt: 'brincar; jogar; divertir-se',
+    category: 'verbo_godan',
+    jlpt: 'N5',
+    categoryLabelPt: 'Verbo Tipo 1 (Godan)',
+    exampleSentence: {
+      jp: '公園で遊びます。',
+      reading: 'こうえんで あそびます。',
+      romaji: 'kouen de asobimasu.',
+      meaningPt: 'Brinco no parque.'
+    }
+  },
+  {
+    id: 'n5_verb_batch1_1787460186880_8',
+    word: '会う',
+    reading: 'あう',
+    romaji: 'au',
+    meaningPt: 'encontrar-se',
+    category: 'verbo_godan',
+    jlpt: 'N5',
+    categoryLabelPt: 'Verbo Tipo 1 (Godan)',
+    exampleSentence: {
+      jp: '友達に会います。',
+      reading: 'ともだちに あいます。',
+      romaji: 'tomodachi ni aimasu.',
+      meaningPt: 'Encontro um amigo.'
+    }
+  },
+  {
+    id: 'n5_verb_batch1_1787460186880_9',
+    word: '勉強する',
+    reading: 'べんきょうする',
+    romaji: 'benkyousuru',
+    meaningPt: 'estudar',
+    category: 'verbo_irregular',
+    jlpt: 'N5',
+    categoryLabelPt: 'Verbo Irregular',
+    exampleSentence: {
+      jp: '日本語を勉強します。',
+      reading: 'にほんごを べんきょうします。',
+      romaji: 'nihongo o benkyoushimasu.',
+      meaningPt: 'Estudo japonês.'
+    }
+  },
+  {
+    id: 'n5_verb_batch1_1787460186880_10',
+    word: '違う',
+    reading: 'ちがう',
+    romaji: 'chigau',
+    meaningPt: 'diferir; estar errado',
+    category: 'verbo_godan',
+    jlpt: 'N5',
+    categoryLabelPt: 'Verbo Tipo 1 (Godan)',
+    exampleSentence: {
+      jp: 'それは違います。',
+      reading: 'それは ちがいます。',
+      romaji: 'sore wa chigaimasu.',
+      meaningPt: 'Isso está errado (difere).'
+    }
+  },
+  {
+    id: 'n5_verb_batch1_1787460186880_11',
+    word: '出す',
+    reading: 'だす',
+    romaji: 'dasu',
+    meaningPt: 'tirar; entregar',
+    category: 'verbo_godan',
+    jlpt: 'N5',
+    categoryLabelPt: 'Verbo Tipo 1 (Godan)',
+    exampleSentence: {
+      jp: '手紙を出します。',
+      reading: 'てがみを だします。',
+      romaji: 'tegami o dashimasu.',
+      meaningPt: 'Entrego a carta (ou tiro para fora).'
+    }
+  },
+  {
+    id: 'n5_verb_batch1_1787460186880_12',
+    word: '出かける',
+    reading: 'でかける',
+    romaji: 'dekakeru',
+    meaningPt: 'sair',
+    category: 'verbo_ichidan',
+    jlpt: 'N5',
+    categoryLabelPt: 'Verbo Tipo 2 (Ichidan)',
+    exampleSentence: {
+      jp: '明日出かけます。',
+      reading: 'あした でかけます。',
+      romaji: 'ashita dekakemasu.',
+      meaningPt: 'Vou sair amanhã.'
+    }
+  },
+  {
+    id: 'n5_verb_batch1_1787460186880_13',
+    word: '電話する',
+    reading: 'でんわする',
+    romaji: 'denwasuru',
+    meaningPt: 'telefonar',
+    category: 'verbo_irregular',
+    jlpt: 'N5',
+    categoryLabelPt: 'Verbo Irregular',
+    exampleSentence: {
+      jp: '母に電話します。',
+      reading: 'ははに でんわします。',
+      romaji: 'haha ni denwashimasu.',
+      meaningPt: 'Ligo para a minha mãe.'
+    }
+  },
+  {
+    id: 'n5_verb_batch1_1787460186880_14',
+    word: '出る',
+    reading: 'でる',
+    romaji: 'deru',
+    meaningPt: 'sair; aparecer',
+    category: 'verbo_ichidan',
+    jlpt: 'N5',
+    categoryLabelPt: 'Verbo Tipo 2 (Ichidan)',
+    exampleSentence: {
+      jp: '部屋を出ます。',
+      reading: 'へやを でます。',
+      romaji: 'heya o demasu.',
+      meaningPt: 'Saio do quarto.'
+    }
+  },
+  {
+    id: 'n5_verb_batch1_1787460186880_15',
+    word: '吹く',
+    reading: 'ふく',
+    romaji: 'fuku',
+    meaningPt: 'soprar',
+    category: 'verbo_godan',
+    jlpt: 'N5',
+    categoryLabelPt: 'Verbo Tipo 1 (Godan)',
+    exampleSentence: {
+      jp: '風が吹いています。',
+      reading: 'かぜが ふいています。',
+      romaji: 'kaze ga fuiteimasu.',
+      meaningPt: 'O vento está soprando.'
+    }
+  },
+  {
+    id: 'n5_verb_batch1_1787460186880_16',
+    word: '降る',
+    reading: 'ふる',
+    romaji: 'furu',
+    meaningPt: 'chover; nevar (cair do céu)',
+    category: 'verbo_godan',
+    jlpt: 'N5',
+    categoryLabelPt: 'Verbo Tipo 1 (Godan)',
+    exampleSentence: {
+      jp: '雨が降っています。',
+      reading: 'あめが ふっています。',
+      romaji: 'ame ga futteimasu.',
+      meaningPt: 'Está chovendo.'
+    }
+  },
+  {
+    id: 'n5_verb_batch1_1787460186880_17',
+    word: '入る',
+    reading: 'はいる',
+    romaji: 'hairu',
+    meaningPt: 'entrar',
+    category: 'verbo_godan',
+    jlpt: 'N5',
+    categoryLabelPt: 'Verbo Tipo 1 (Godan)',
+    exampleSentence: {
+      jp: '部屋に入ります。',
+      reading: 'へやに はいります。',
+      romaji: 'heya ni hairimasu.',
+      meaningPt: 'Entro na sala.'
+    }
+  },
+  {
+    id: 'n5_verb_batch1_1787460186880_18',
+    word: '始まる',
+    reading: 'はじまる',
+    romaji: 'hajimaru',
+    meaningPt: 'começar',
+    category: 'verbo_godan',
+    jlpt: 'N5',
+    categoryLabelPt: 'Verbo Tipo 1 (Godan)',
+    exampleSentence: {
+      jp: '映画が始まります。',
+      reading: 'えいがが はじまります。',
+      romaji: 'eiga ga hajimarimasu.',
+      meaningPt: 'O filme vai começar.'
+    }
+  },
+  {
+    id: 'n5_verb_batch1_1787460186880_19',
+    word: '履く',
+    reading: 'はく',
+    romaji: 'haku',
+    meaningPt: 'vestir (da cintura para baixo); calçar',
+    category: 'verbo_godan',
+    jlpt: 'N5',
+    categoryLabelPt: 'Verbo Tipo 1 (Godan)',
+    exampleSentence: {
+      jp: '靴を履きます。',
+      reading: 'くつを はきます。',
+      romaji: 'kutsu o hakimasu.',
+      meaningPt: 'Calço os sapatos.'
+    }
+  },
+  {
+    id: 'n5_verb_batch1_1787460186880_20',
+    word: '話す',
+    reading: 'はなす',
+    romaji: 'hanasu',
+    meaningPt: 'falar',
+    category: 'verbo_godan',
+    jlpt: 'N5',
+    categoryLabelPt: 'Verbo Tipo 1 (Godan)',
+    exampleSentence: {
+      jp: '日本語で話します。',
+      reading: 'にほんごで はなします。',
+      romaji: 'nihongo de hanashimasu.',
+      meaningPt: 'Falo em japonês.'
+    }
+  },
+  {
+    id: 'n5_verb_batch1_1787460186880_21',
+    word: '晴れる',
+    reading: 'はれる',
+    romaji: 'hareru',
+    meaningPt: 'fazer sol; tempo limpar',
+    category: 'verbo_ichidan',
+    jlpt: 'N5',
+    categoryLabelPt: 'Verbo Tipo 2 (Ichidan)',
+    exampleSentence: {
+      jp: '今日はよく晴れています。',
+      reading: 'きょうは よく はれています。',
+      romaji: 'kyou wa yoku hareteimasu.',
+      meaningPt: 'Hoje o tempo está bem ensolarado.'
+    }
+  },
+  {
+    id: 'n5_verb_batch1_1787460186880_22',
+    word: '貼る',
+    reading: 'はる',
+    romaji: 'haru',
+    meaningPt: 'colar; fixar',
+    category: 'verbo_godan',
+    jlpt: 'N5',
+    categoryLabelPt: 'Verbo Tipo 1 (Godan)',
+    exampleSentence: {
+      jp: '切手を貼ります。',
+      reading: 'きってを はります。',
+      romaji: 'kitte o harimasu.',
+      meaningPt: 'Colo um selo.'
+    }
+  },
+  {
+    id: 'n5_verb_batch1_1787460186880_23',
+    word: '走る',
+    reading: 'はしる',
+    romaji: 'hashiru',
+    meaningPt: 'correr',
+    category: 'verbo_godan',
+    jlpt: 'N5',
+    categoryLabelPt: 'Verbo Tipo 1 (Godan)',
+    exampleSentence: {
+      jp: '駅まで走ります。',
+      reading: 'えきまで はしります。',
+      romaji: 'eki made hashirimasu.',
+      meaningPt: 'Corro até a estação.'
+    }
+  },
+  {
+    id: 'n5_verb_batch1_1787460186880_24',
+    word: '働く',
+    reading: 'はたらく',
+    romaji: 'hataraku',
+    meaningPt: 'trabalhar',
+    category: 'verbo_godan',
+    jlpt: 'N5',
+    categoryLabelPt: 'Verbo Tipo 1 (Godan)',
+    exampleSentence: {
+      jp: '会社で働きます。',
+      reading: 'かいしゃで はたらきます。',
+      romaji: 'kaisha de hatarakimasu.',
+      meaningPt: 'Trabalho na empresa.'
+    }
+  },
+  {
+    id: 'n5_verb_batch1_1787460186880_25',
+    word: '引く',
+    reading: 'ひく',
+    romaji: 'hiku',
+    meaningPt: 'puxar',
+    category: 'verbo_godan',
+    jlpt: 'N5',
+    categoryLabelPt: 'Verbo Tipo 1 (Godan)',
+    exampleSentence: {
+      jp: 'ドアを引きます。',
+      reading: 'ドアを ひきます。',
+      romaji: 'doa o hikimasu.',
+      meaningPt: 'Puxo a porta.'
+    }
+  },
+  {
+    id: 'n5_verb_batch1_1787460186880_26',
+    word: '弾く',
+    reading: 'ひく',
+    romaji: 'hiku',
+    meaningPt: 'tocar (instrumento de corda/teclado)',
+    category: 'verbo_godan',
+    jlpt: 'N5',
+    categoryLabelPt: 'Verbo Tipo 1 (Godan)',
+    exampleSentence: {
+      jp: 'ピアノを弾きます。',
+      reading: 'ピアノを ひきます。',
+      romaji: 'piano o hikimasu.',
+      meaningPt: 'Toco piano.'
+    }
+  },
+  {
+    id: 'n5_verb_batch1_1787460186880_27',
+    word: '行く',
+    reading: 'いく',
+    romaji: 'iku',
+    meaningPt: 'ir',
+    category: 'verbo_godan',
+    jlpt: 'N5',
+    categoryLabelPt: 'Verbo Tipo 1 (Godan)',
+    exampleSentence: {
+      jp: '学校へ行きます。',
+      reading: 'がっこうへ いきます。',
+      romaji: 'gakkou e ikimasu.',
+      meaningPt: 'Vou para a escola.'
+    }
+  },
+  {
+    id: 'n5_verb_batch1_1787460186880_28',
+    word: '入れる',
+    reading: 'いれる',
+    romaji: 'ireru',
+    meaningPt: 'colocar dentro; inserir',
+    category: 'verbo_ichidan',
+    jlpt: 'N5',
+    categoryLabelPt: 'Verbo Tipo 2 (Ichidan)',
+    exampleSentence: {
+      jp: 'コーヒーに砂糖を入れます。',
+      reading: 'コーヒーに さとうを いれます。',
+      romaji: 'koohii ni satou o iremasu.',
+      meaningPt: 'Coloco açúcar no café.'
+    }
+  },
+  {
+    id: 'n5_verb_batch1_1787460186880_29',
+    word: '要る',
+    reading: 'いる',
+    romaji: 'iru',
+    meaningPt: 'precisar; ser necessário',
+    category: 'verbo_godan',
+    jlpt: 'N5',
+    categoryLabelPt: 'Verbo Tipo 1 (Godan)',
+    exampleSentence: {
+      jp: 'お金が要ります。',
+      reading: 'おかねが いります。',
+      romaji: 'okane ga irimasu.',
+      meaningPt: 'Preciso de dinheiro.'
+    }
+  },
+  {
+    id: 'n5_verb_batch1_1787460186880_30',
+    word: '居る',
+    reading: 'いる',
+    romaji: 'iru',
+    meaningPt: 'estar; existir (seres vivos)',
+    category: 'verbo_ichidan',
+    jlpt: 'N5',
+    categoryLabelPt: 'Verbo Tipo 2 (Ichidan)',
+    exampleSentence: {
+      jp: '犬がいます。',
+      reading: 'いぬが います。',
+      romaji: 'inu ga imasu.',
+      meaningPt: 'Tem um cachorro.'
+    }
+  },
+  {
+    id: 'n5_verb_batch1_1787460186880_31',
+    word: '言う',
+    reading: 'いう',
+    romaji: 'iu',
+    meaningPt: 'dizer',
+    category: 'verbo_godan',
+    jlpt: 'N5',
+    categoryLabelPt: 'Verbo Tipo 1 (Godan)',
+    exampleSentence: {
+      jp: '「はい」と言いました。',
+      reading: '「はい」と いいました。',
+      romaji: '"hai" to iimashita.',
+      meaningPt: 'Disse "Sim".'
+    }
+  },
+  {
+    id: 'n5_verb_batch1_1787460186880_32',
+    word: '授業する',
+    reading: 'じゅぎょうする',
+    romaji: 'jugyousuru',
+    meaningPt: 'dar aula; ter aula',
+    category: 'verbo_irregular',
+    jlpt: 'N5',
+    categoryLabelPt: 'Verbo Irregular',
+    exampleSentence: {
+      jp: '今、授業しています。',
+      reading: 'いま、じゅぎょうしています。',
+      romaji: 'ima, jugyoushiteimasu.',
+      meaningPt: 'Agora estou em aula / dando aula.'
+    }
+  },
+  {
+    id: 'n5_verb_batch1_1787460186880_33',
+    word: '帰る',
+    reading: 'かえる',
+    romaji: 'kaeru',
+    meaningPt: 'voltar (para casa)',
+    category: 'verbo_godan',
+    jlpt: 'N5',
+    categoryLabelPt: 'Verbo Tipo 1 (Godan)',
+    exampleSentence: {
+      jp: '家に帰ります。',
+      reading: 'いえに かえります。',
+      romaji: 'ie ni kaerimasu.',
+      meaningPt: 'Volto para casa.'
+    }
+  },
+  {
+    id: 'n5_verb_batch1_1787460186880_34',
+    word: '返す',
+    reading: 'かえす',
+    romaji: 'kaesu',
+    meaningPt: 'devolver',
+    category: 'verbo_godan',
+    jlpt: 'N5',
+    categoryLabelPt: 'Verbo Tipo 1 (Godan)',
+    exampleSentence: {
+      jp: '本を返します。',
+      reading: 'ほんを かえします。',
+      romaji: 'hon o kaeshimasu.',
+      meaningPt: 'Devolvo o livro.'
+    }
+  },
+  {
+    id: 'n5_verb_batch1_1787460186880_35',
+    word: '掛かる',
+    reading: 'かかる',
+    romaji: 'kakaru',
+    meaningPt: 'levar (tempo/dinheiro)',
+    category: 'verbo_godan',
+    jlpt: 'N5',
+    categoryLabelPt: 'Verbo Tipo 1 (Godan)',
+    exampleSentence: {
+      jp: '一時間掛かります。',
+      reading: 'いちじかん かかります。',
+      romaji: 'ichijikan kakarimasu.',
+      meaningPt: 'Leva (demora) uma hora.'
+    }
+  },
+  {
+    id: 'n5_verb_batch1_1787460186880_36',
+    word: '掛ける',
+    reading: 'かける',
+    romaji: 'kakeru',
+    meaningPt: 'pendurar; ligar (telefone); sentar',
+    category: 'verbo_ichidan',
+    jlpt: 'N5',
+    categoryLabelPt: 'Verbo Tipo 2 (Ichidan)',
+    exampleSentence: {
+      jp: '友達に電話を掛けます。',
+      reading: 'ともだちに でんわを かけます。',
+      romaji: 'tomodachi ni denwa o kakemasu.',
+      meaningPt: 'Ligo (faço uma ligação) para um amigo.'
+    }
+  },
+  {
+    id: 'n5_verb_batch1_1787460186880_37',
+    word: '書く',
+    reading: 'かく',
+    romaji: 'kaku',
+    meaningPt: 'escrever; desenhar',
+    category: 'verbo_godan',
+    jlpt: 'N5',
+    categoryLabelPt: 'Verbo Tipo 1 (Godan)',
+    exampleSentence: {
+      jp: '手紙を書きます。',
+      reading: 'てがみを かきます。',
+      romaji: 'tegami o kakimasu.',
+      meaningPt: 'Escrevo uma carta.'
+    }
+  },
+  {
+    id: 'n5_verb_batch1_1787460186880_38',
+    word: '借りる',
+    reading: 'かりる',
+    romaji: 'kariru',
+    meaningPt: 'emprestar (pegar emprestado)',
+    category: 'verbo_ichidan',
+    jlpt: 'N5',
+    categoryLabelPt: 'Verbo Tipo 2 (Ichidan)',
+    exampleSentence: {
+      jp: '本を借ります。',
+      reading: 'ほんを かります。',
+      romaji: 'hon o karimasu.',
+      meaningPt: 'Pego um livro emprestado.'
+    }
+  },
+  {
+    id: 'n5_verb_batch1_1787460186880_39',
+    word: '貸す',
+    reading: 'かす',
+    romaji: 'kasu',
+    meaningPt: 'emprestar (para alguém)',
+    category: 'verbo_godan',
+    jlpt: 'N5',
+    categoryLabelPt: 'Verbo Tipo 1 (Godan)',
+    exampleSentence: {
+      jp: 'ペンを貸してください。',
+      reading: 'ペンを かしてください。',
+      romaji: 'pen o kashite kudasai.',
+      meaningPt: 'Me empreste uma caneta, por favor.'
+    }
+  },
+  {
+    id: 'n5_verb_batch1_1787460186880_40',
+    word: '買う',
+    reading: 'かう',
+    romaji: 'kau',
+    meaningPt: 'comprar',
+    category: 'verbo_godan',
+    jlpt: 'N5',
+    categoryLabelPt: 'Verbo Tipo 1 (Godan)',
+    exampleSentence: {
+      jp: '新しい靴を買います。',
+      reading: 'あたらしい くつを かいます。',
+      romaji: 'atarashii kutsu o kaimasu.',
+      meaningPt: 'Compro sapatos novos.'
+    }
+  },
+  {
+    id: 'n5_verb_batch1_1787460186880_41',
+    word: '結婚する',
+    reading: 'けっこんする',
+    romaji: 'kekkonsuru',
+    meaningPt: 'casar-se',
+    category: 'verbo_irregular',
+    jlpt: 'N5',
+    categoryLabelPt: 'Verbo Irregular',
+    exampleSentence: {
+      jp: '来年、結婚します。',
+      reading: 'らいねん、けっこんします。',
+      romaji: 'rainen, kekkonshimasu.',
+      meaningPt: 'Ano que vem vou me casar.'
+    }
+  },
+  {
+    id: 'n5_verb_batch1_1787460186880_42',
+    word: '消す',
+    reading: 'けす',
+    romaji: 'kesu',
+    meaningPt: 'apagar; desligar',
+    category: 'verbo_godan',
+    jlpt: 'N5',
+    categoryLabelPt: 'Verbo Tipo 1 (Godan)',
+    exampleSentence: {
+      jp: '電気を消します。',
+      reading: 'でんきを けします。',
+      romaji: 'denki o keshimasu.',
+      meaningPt: 'Desligo a luz (apago a luz).'
+    }
+  },
+  {
+    id: 'n5_verb_batch1_1787460186880_43',
+    word: '消える',
+    reading: 'きえる',
+    romaji: 'kieru',
+    meaningPt: 'desaparecer; apagar-se',
+    category: 'verbo_ichidan',
+    jlpt: 'N5',
+    categoryLabelPt: 'Verbo Tipo 2 (Ichidan)',
+    exampleSentence: {
+      jp: '電気が消えました。',
+      reading: 'でんきが きえました。',
+      romaji: 'denki ga kiemashita.',
+      meaningPt: 'A luz se apagou.'
+    }
+  },
+  {
+    id: 'n5_verb_batch1_1787460186880_44',
+    word: '聞く',
+    reading: 'きく',
+    romaji: 'kiku',
+    meaningPt: 'ouvir; perguntar',
+    category: 'verbo_godan',
+    jlpt: 'N5',
+    categoryLabelPt: 'Verbo Tipo 1 (Godan)',
+    exampleSentence: {
+      jp: '音楽を聞きます。',
+      reading: 'おんがくを ききます。',
+      romaji: 'ongaku o kikimasu.',
+      meaningPt: 'Escuto música.'
+    }
+  },
+  {
+    id: 'n5_verb_batch1_1787460186880_45',
+    word: '切る',
+    reading: 'きる',
+    romaji: 'kiru',
+    meaningPt: 'cortar',
+    category: 'verbo_godan',
+    jlpt: 'N5',
+    categoryLabelPt: 'Verbo Tipo 1 (Godan)',
+    exampleSentence: {
+      jp: '紙を切ります。',
+      reading: 'かみを きります。',
+      romaji: 'kami o kirimasu.',
+      meaningPt: 'Corto o papel.'
+    }
+  },
+  {
+    id: 'n5_verb_batch1_1787460186880_46',
+    word: '着る',
+    reading: 'きる',
+    romaji: 'kiru',
+    meaningPt: 'vestir (da cintura para cima)',
+    category: 'verbo_ichidan',
+    jlpt: 'N5',
+    categoryLabelPt: 'Verbo Tipo 2 (Ichidan)',
+    exampleSentence: {
+      jp: 'シャツを着ます。',
+      reading: 'シャツを きます。',
+      romaji: 'shatsu o kimasu.',
+      meaningPt: 'Visto a camisa.'
+    }
+  },
+  {
+    id: 'n5_verb_batch1_1787460186880_47',
+    word: '困る',
+    reading: 'こまる',
+    romaji: 'komaru',
+    meaningPt: 'ter problemas; estar em apuros',
+    category: 'verbo_godan',
+    jlpt: 'N5',
+    categoryLabelPt: 'Verbo Tipo 1 (Godan)',
+    exampleSentence: {
+      jp: '道がわからなくて困りました。',
+      reading: 'みちが わからなくて こまりました。',
+      romaji: 'michi ga wakaranakute komarimashita.',
+      meaningPt: 'Fiquei com problemas (em apuros) porque não sabia o caminho.'
+    }
+  },
+  {
+    id: 'n5_verb_batch1_1787460186880_48',
+    word: 'コピーする',
+    reading: 'コピーする',
+    romaji: 'kopiisuru',
+    meaningPt: 'fazer cópia; fotocopiar',
+    category: 'verbo_irregular',
+    jlpt: 'N5',
+    categoryLabelPt: 'Verbo Irregular',
+    exampleSentence: {
+      jp: '書類をコピーします。',
+      reading: 'しょるいを コピーします。',
+      romaji: 'shorui o kopiishimasu.',
+      meaningPt: 'Vou tirar cópia dos documentos.'
+    }
+  },
+  {
+    id: 'n5_verb_batch1_1787460186880_49',
+    word: '答える',
+    reading: 'こたえる',
+    romaji: 'kotaeru',
+    meaningPt: 'responder',
+    category: 'verbo_ichidan',
+    jlpt: 'N5',
+    categoryLabelPt: 'Verbo Tipo 2 (Ichidan)',
+    exampleSentence: {
+      jp: '質問に答えます。',
+      reading: 'しつもんに こたえます。',
+      romaji: 'shitsumon ni kotaemasu.',
+      meaningPt: 'Respondo à pergunta.'
+    }
+  },
+  {
+    id: 'n5_verb_batch1_1787460186880_50',
+    word: '曇る',
+    reading: 'くもる',
+    romaji: 'kumoru',
+    meaningPt: 'ficar nublado',
+    category: 'verbo_godan',
+    jlpt: 'N5',
+    categoryLabelPt: 'Verbo Tipo 1 (Godan)',
+    exampleSentence: {
+      jp: '空が曇ってきました。',
+      reading: 'そらが くもってきました。',
+      romaji: 'sora ga kumottekimashita.',
+      meaningPt: 'O céu começou a ficar nublado.'
+    }
+  },
+  {
+    id: 'n5_verb_batch1_1787460186880_51',
+    word: '来る',
+    reading: 'くる',
+    romaji: 'kuru',
+    meaningPt: 'vir',
+    category: 'verbo_irregular',
+    jlpt: 'N5',
+    categoryLabelPt: 'Verbo Irregular',
+    exampleSentence: {
+      jp: '友達が家に来ます。',
+      reading: 'ともだちが いえに きます。',
+      romaji: 'tomodachi ga ie ni kimasu.',
+      meaningPt: 'Um amigo virá em casa.'
+    }
+  },
+  {
+    id: 'n5_verb_batch1_1787460186880_52',
+    word: '曲がる',
+    reading: 'まがる',
+    romaji: 'magaru',
+    meaningPt: 'virar; dobrar',
+    category: 'verbo_godan',
+    jlpt: 'N5',
+    categoryLabelPt: 'Verbo Tipo 1 (Godan)',
+    exampleSentence: {
+      jp: '右に曲がります。',
+      reading: 'みぎに まがります。',
+      romaji: 'migi ni magarimasu.',
+      meaningPt: 'Viro à direita.'
+    }
+  },
+  {
+    id: 'n5_verb_batch1_1787460186880_53',
+    word: '待つ',
+    reading: 'まつ',
+    romaji: 'matsu',
+    meaningPt: 'esperar',
+    category: 'verbo_godan',
+    jlpt: 'N5',
+    categoryLabelPt: 'Verbo Tipo 1 (Godan)',
+    exampleSentence: {
+      jp: '駅で友達を待ちます。',
+      reading: 'えきで ともだちを まちます。',
+      romaji: 'eki de tomodachi o machimasu.',
+      meaningPt: 'Espero o amigo na estação.'
+    }
+  },
+  {
+    id: 'n5_verb_batch1_1787460186880_54',
+    word: '磨く',
+    reading: 'みがく',
+    romaji: 'migaku',
+    meaningPt: 'escovar (dentes); polir',
+    category: 'verbo_godan',
+    jlpt: 'N5',
+    categoryLabelPt: 'Verbo Tipo 1 (Godan)',
+    exampleSentence: {
+      jp: '歯を磨きます。',
+      reading: 'はを みがきます。',
+      romaji: 'ha o migakimasu.',
+      meaningPt: 'Escovo os dentes.'
+    }
+  },
+  {
+    id: 'n5_verb_batch1_1787460186880_55',
+    word: '見る',
+    reading: 'みる',
+    romaji: 'miru',
+    meaningPt: 'ver; assistir; olhar',
+    category: 'verbo_ichidan',
+    jlpt: 'N5',
+    categoryLabelPt: 'Verbo Tipo 2 (Ichidan)',
+    exampleSentence: {
+      jp: '映画を見ます。',
+      reading: 'えいがを みます。',
+      romaji: 'eiga o mimasu.',
+      meaningPt: 'Assisto ao filme.'
+    }
+  },
+  {
+    id: 'n5_verb_batch1_1787460186880_56',
+    word: '見せる',
+    reading: 'みせる',
+    romaji: 'miseru',
+    meaningPt: 'mostrar',
+    category: 'verbo_ichidan',
+    jlpt: 'N5',
+    categoryLabelPt: 'Verbo Tipo 2 (Ichidan)',
+    exampleSentence: {
+      jp: '写真を見せます。',
+      reading: 'しゃしんを みせます。',
+      romaji: 'shashin o misemasu.',
+      meaningPt: 'Mostro a foto.'
+    }
+  },
+  {
+    id: 'n5_verb_batch1_1787460186880_57',
+    word: '持つ',
+    reading: 'もつ',
+    romaji: 'motsu',
+    meaningPt: 'segurar; ter',
+    category: 'verbo_godan',
+    jlpt: 'N5',
+    categoryLabelPt: 'Verbo Tipo 1 (Godan)',
+    exampleSentence: {
+      jp: 'カバンを持ちます。',
+      reading: 'カバンを もちます。',
+      romaji: 'kaban o mochimasu.',
+      meaningPt: 'Seguro a bolsa.'
+    }
+  },
+  {
+    id: 'n5_verb_batch1_1787460186880_58',
+    word: '鳴く',
+    reading: 'なく',
+    romaji: 'naku',
+    meaningPt: 'fazer som de animal (latir, miar, etc)',
+    category: 'verbo_godan',
+    jlpt: 'N5',
+    categoryLabelPt: 'Verbo Tipo 1 (Godan)',
+    exampleSentence: {
+      jp: '犬が鳴いています。',
+      reading: 'いぬが ないています。',
+      romaji: 'inu ga naiteimasu.',
+      meaningPt: 'O cachorro está latindo.'
+    }
+  },
+  {
+    id: 'n5_verb_batch1_1787460186880_59',
+    word: '無くす',
+    reading: 'なくす',
+    romaji: 'nakusu',
+    meaningPt: 'perder',
+    category: 'verbo_godan',
+    jlpt: 'N5',
+    categoryLabelPt: 'Verbo Tipo 1 (Godan)',
+    exampleSentence: {
+      jp: '鍵を無くしました。',
+      reading: 'かぎを なくしました。',
+      romaji: 'kagi o nakushimashita.',
+      meaningPt: 'Perdi a chave.'
+    }
+  },
+  {
+    id: 'n5_verb_batch1_1787460186880_60',
+    word: '並べる',
+    reading: 'ならべる',
+    romaji: 'naraberu',
+    meaningPt: 'enfileirar; alinhar',
+    category: 'verbo_ichidan',
+    jlpt: 'N5',
+    categoryLabelPt: 'Verbo Tipo 2 (Ichidan)',
+    exampleSentence: {
+      jp: '椅子を並べます。',
+      reading: 'いすを ならべます。',
+      romaji: 'isu o narabemasu.',
+      meaningPt: 'Enfileiro as cadeiras.'
+    }
+  },
+  {
+    id: 'n5_verb_batch1_1787460186880_61',
+    word: '並ぶ',
+    reading: 'ならぶ',
+    romaji: 'narabu',
+    meaningPt: 'fazer fila',
+    category: 'verbo_godan',
+    jlpt: 'N5',
+    categoryLabelPt: 'Verbo Tipo 1 (Godan)',
+    exampleSentence: {
+      jp: 'バス停に並びます。',
+      reading: 'バスていに ならびます。',
+      romaji: 'basutei ni narabimasu.',
+      meaningPt: 'Faço fila no ponto de ônibus.'
+    }
+  },
+  {
+    id: 'n5_verb_batch1_1787460186880_62',
+    word: '習う',
+    reading: 'ならう',
+    romaji: 'narau',
+    meaningPt: 'aprender (de alguém)',
+    category: 'verbo_godan',
+    jlpt: 'N5',
+    categoryLabelPt: 'Verbo Tipo 1 (Godan)',
+    exampleSentence: {
+      jp: '先生に日本語を習います。',
+      reading: 'せんせいに にほんごを ならいます。',
+      romaji: 'sensei ni nihongo o naraimasu.',
+      meaningPt: 'Aprendo japonês com o professor.'
+    }
+  },
+  {
+    id: 'n5_verb_batch1_1787460186880_63',
+    word: '寝る',
+    reading: 'ねる',
+    romaji: 'neru',
+    meaningPt: 'dormir',
+    category: 'verbo_ichidan',
+    jlpt: 'N5',
+    categoryLabelPt: 'Verbo Tipo 2 (Ichidan)',
+    exampleSentence: {
+      jp: '夜十時に寝ます。',
+      reading: 'よる じゅうじに ねます。',
+      romaji: 'yoru juuji ni nemasu.',
+      meaningPt: 'Durmo às dez horas da noite.'
+    }
+  },
+  {
+    id: 'n5_verb_batch1_1787460186880_64',
+    word: '登る',
+    reading: 'のぼる',
+    romaji: 'noboru',
+    meaningPt: 'escalar; subir',
+    category: 'verbo_godan',
+    jlpt: 'N5',
+    categoryLabelPt: 'Verbo Tipo 1 (Godan)',
+    exampleSentence: {
+      jp: '山に登ります。',
+      reading: 'やまに のぼります。',
+      romaji: 'yama ni noborimasu.',
+      meaningPt: 'Escalo (subo) a montanha.'
+    }
+  },
+  {
+    id: 'n5_verb_batch1_1787460186880_65',
+    word: '飲む',
+    reading: 'のむ',
+    romaji: 'nomu',
+    meaningPt: 'beber',
+    category: 'verbo_godan',
+    jlpt: 'N5',
+    categoryLabelPt: 'Verbo Tipo 1 (Godan)',
+    exampleSentence: {
+      jp: '水を飲みます。',
+      reading: 'みずを のみます。',
+      romaji: 'mizu o nomimasu.',
+      meaningPt: 'Bebo água.'
+    }
+  },
+  {
+    id: 'n5_verb_batch1_1787460186880_66',
+    word: '乗る',
+    reading: 'のる',
+    romaji: 'noru',
+    meaningPt: 'andar em; embarcar',
+    category: 'verbo_godan',
+    jlpt: 'N5',
+    categoryLabelPt: 'Verbo Tipo 1 (Godan)',
+    exampleSentence: {
+      jp: '電車に乗ります。',
+      reading: 'でんしゃに のります。',
+      romaji: 'densha ni norimasu.',
+      meaningPt: 'Pego (embarco no) trem.'
+    }
+  },
+  {
+    id: 'n5_verb_batch1_1787460186880_67',
+    word: '脱ぐ',
+    reading: 'ぬぐ',
+    romaji: 'nugu',
+    meaningPt: 'tirar (a roupa)',
+    category: 'verbo_godan',
+    jlpt: 'N5',
+    categoryLabelPt: 'Verbo Tipo 1 (Godan)',
+    exampleSentence: {
+      jp: '靴を脱ぎます。',
+      reading: 'くつを ぬぎます。',
+      romaji: 'kutsu o nugimasu.',
+      meaningPt: 'Tiro os sapatos.'
+    }
+  },
+  {
+    id: 'n5_verb_batch1_1787460186880_68',
+    word: '覚える',
+    reading: 'おぼえる',
+    romaji: 'oboeru',
+    meaningPt: 'lembrar; memorizar',
+    category: 'verbo_ichidan',
+    jlpt: 'N5',
+    categoryLabelPt: 'Verbo Tipo 2 (Ichidan)',
+    exampleSentence: {
+      jp: '漢字を覚えます。',
+      reading: 'かんじを おぼえます。',
+      romaji: 'kanji o oboemasu.',
+      meaningPt: 'Memorizo (aprendo) os kanjis.'
+    }
+  },
+  {
+    id: 'n5_verb_batch1_1787460186880_69',
+    word: '起きる',
+    reading: 'おきる',
+    romaji: 'okiru',
+    meaningPt: 'acordar; levantar-se',
+    category: 'verbo_ichidan',
+    jlpt: 'N5',
+    categoryLabelPt: 'Verbo Tipo 2 (Ichidan)',
+    exampleSentence: {
+      jp: '朝六時に起きます。',
+      reading: 'あさ ろくじに おきます。',
+      romaji: 'asa rokuji ni okimasu.',
+      meaningPt: 'Acordo às seis da manhã.'
+    }
+  },
+  {
+    id: 'n5_verb_batch1_1787460186880_70',
+    word: '置く',
+    reading: 'おく',
+    romaji: 'oku',
+    meaningPt: 'colocar; pôr',
+    category: 'verbo_godan',
+    jlpt: 'N5',
+    categoryLabelPt: 'Verbo Tipo 1 (Godan)',
+    exampleSentence: {
+      jp: '机の上に本を置きます。',
+      reading: 'つくえの うえに ほんを おきます。',
+      romaji: 'tsukue no ue ni hon o okimasu.',
+      meaningPt: 'Coloco o livro em cima da mesa.'
+    }
+  },
+  {
+    id: 'n5_verb_batch1_1787460186880_71',
+    word: '降りる',
+    reading: 'おりる',
+    romaji: 'oriru',
+    meaningPt: 'descer (de um veículo)',
+    category: 'verbo_ichidan',
+    jlpt: 'N5',
+    categoryLabelPt: 'Verbo Tipo 2 (Ichidan)',
+    exampleSentence: {
+      jp: 'バスを降ります。',
+      reading: 'バスを おります。',
+      romaji: 'basu o orimasu.',
+      meaningPt: 'Desço do ônibus.'
+    }
+  },
+  {
+    id: 'n5_verb_batch1_1787460186880_72',
+    word: '教える',
+    reading: 'おしえる',
+    romaji: 'oshieru',
+    meaningPt: 'ensinar',
+    category: 'verbo_ichidan',
+    jlpt: 'N5',
+    categoryLabelPt: 'Verbo Tipo 2 (Ichidan)',
+    exampleSentence: {
+      jp: '英語を教えます。',
+      reading: 'えいごを おしえます。',
+      romaji: 'eigo o oshiemasu.',
+      meaningPt: 'Ensino inglês.'
+    }
+  },
+  {
+    id: 'n5_verb_batch1_1787460186880_73',
+    word: '押す',
+    reading: 'おす',
+    romaji: 'osu',
+    meaningPt: 'apertar; empurrar',
+    category: 'verbo_godan',
+    jlpt: 'N5',
+    categoryLabelPt: 'Verbo Tipo 1 (Godan)',
+    exampleSentence: {
+      jp: 'ボタンを押します。',
+      reading: 'ボタンを おします。',
+      romaji: 'botan o oshimasu.',
+      meaningPt: 'Aperto o botão.'
+    }
+  },
+  {
+    id: 'n5_verb_batch1_1787460186880_74',
+    word: '終わる',
+    reading: 'おわる',
+    romaji: 'owaru',
+    meaningPt: 'terminar',
+    category: 'verbo_godan',
+    jlpt: 'N5',
+    categoryLabelPt: 'Verbo Tipo 1 (Godan)',
+    exampleSentence: {
+      jp: '仕事が終わりました。',
+      reading: 'しごとが おわりました。',
+      romaji: 'shigoto ga owarimashita.',
+      meaningPt: 'O trabalho terminou.'
+    }
+  },
+  {
+    id: 'n5_verb_batch1_1787460186880_75',
+    word: '泳ぐ',
+    reading: 'およぐ',
+    romaji: 'oyogu',
+    meaningPt: 'nadar',
+    category: 'verbo_godan',
+    jlpt: 'N5',
+    categoryLabelPt: 'Verbo Tipo 1 (Godan)',
+    exampleSentence: {
+      jp: 'プールで泳ぎます。',
+      reading: 'プールで およぎます。',
+      romaji: 'puuru de oyogimasu.',
+      meaningPt: 'Nado na piscina.'
+    }
+  },
+  {
+    id: 'n5_verb_batch1_1787460186880_76',
+    word: '練習する',
+    reading: 'れんしゅうする',
+    romaji: 'renshuusuru',
+    meaningPt: 'praticar',
+    category: 'verbo_irregular',
+    jlpt: 'N5',
+    categoryLabelPt: 'Verbo Irregular',
+    exampleSentence: {
+      jp: '毎日ピアノを練習します。',
+      reading: 'まいにち ピアノを れんしゅうします。',
+      romaji: 'mainichi piano o renshuushimasu.',
+      meaningPt: 'Pratico piano todos os dias.'
+    }
+  },
+  {
+    id: 'n5_verb_batch1_1787460186880_77',
+    word: '旅行する',
+    reading: 'りょこうする',
+    romaji: 'ryokousuru',
+    meaningPt: 'viajar',
+    category: 'verbo_irregular',
+    jlpt: 'N5',
+    categoryLabelPt: 'Verbo Irregular',
+    exampleSentence: {
+      jp: '来月、日本を旅行します。',
+      reading: 'らいげつ、にほんを りょこうします。',
+      romaji: 'raigetsu, nihon o ryokoushimasu.',
+      meaningPt: 'No próximo mês, vou viajar pelo Japão.'
+    }
+  },
+  {
+    id: 'n5_verb_batch1_1787460186880_78',
+    word: '料理する',
+    reading: 'りょうりする',
+    romaji: 'ryourisuru',
+    meaningPt: 'cozinhar',
+    category: 'verbo_irregular',
+    jlpt: 'N5',
+    categoryLabelPt: 'Verbo Irregular',
+    exampleSentence: {
+      jp: '夕食を料理します。',
+      reading: 'ゆうしょくを りょうりします。',
+      romaji: 'yuushoku o ryourishimasu.',
+      meaningPt: 'Vou cozinhar o jantar.'
+    }
+  },
+  {
+    id: 'n5_verb_batch1_1787460186880_79',
+    word: '咲く',
+    reading: 'さく',
+    romaji: 'saku',
+    meaningPt: 'florescer',
+    category: 'verbo_godan',
+    jlpt: 'N5',
+    categoryLabelPt: 'Verbo Tipo 1 (Godan)',
+    exampleSentence: {
+      jp: '桜が咲きました。',
+      reading: 'さくらが さきました。',
+      romaji: 'sakura ga sakimashita.',
+      meaningPt: 'As flores de cerejeira floresceram.'
+    }
+  },
+  {
+    id: 'n5_verb_batch1_1787460186880_80',
+    word: '散歩する',
+    reading: 'さんぽする',
+    romaji: 'sanposuru',
+    meaningPt: 'passear (a pé)',
+    category: 'verbo_irregular',
+    jlpt: 'N5',
+    categoryLabelPt: 'Verbo Irregular',
+    exampleSentence: {
+      jp: '朝、公園を散歩します。',
+      reading: 'あさ、こうえんを さんぽします。',
+      romaji: 'asa, kouen o sanposhimasu.',
+      meaningPt: 'De manhã, eu passeio pelo parque.'
+    }
+  },
+  {
+    id: 'n5_verb_batch1_1787460186880_81',
+    word: '差す',
+    reading: 'さす',
+    romaji: 'sasu',
+    meaningPt: 'abrir guarda-chuva',
+    category: 'verbo_godan',
+    jlpt: 'N5',
+    categoryLabelPt: 'Verbo Tipo 1 (Godan)',
+    exampleSentence: {
+      jp: '傘を差します。',
+      reading: 'かさを さします。',
+      romaji: 'kasa o sashimasu.',
+      meaningPt: 'Abro o guarda-chuva.'
+    }
+  },
+  {
+    id: 'n5_verb_batch1_1787460186880_82',
+    word: '洗濯する',
+    reading: 'せんたくする',
+    romaji: 'sentakusuru',
+    meaningPt: 'lavar roupa',
+    category: 'verbo_irregular',
+    jlpt: 'N5',
+    categoryLabelPt: 'Verbo Irregular',
+    exampleSentence: {
+      jp: '服を洗濯します。',
+      reading: 'ふくを せんたくします。',
+      romaji: 'fuku o sentakushimasu.',
+      meaningPt: 'Lavo as roupas.'
+    }
+  },
+  {
+    id: 'n5_verb_batch1_1787460186880_83',
+    word: '仕事する',
+    reading: 'しごとする',
+    romaji: 'shigotosuru',
+    meaningPt: 'trabalhar',
+    category: 'verbo_irregular',
+    jlpt: 'N5',
+    categoryLabelPt: 'Verbo Irregular',
+    exampleSentence: {
+      jp: '今日もしっかり仕事します。',
+      reading: 'きょうも しっかり しごとする。',
+      romaji: 'kyou mo shikkari shigoto shimasu.',
+      meaningPt: 'Trabalho firme hoje também.'
+    }
+  },
+  {
+    id: 'n5_verb_batch1_1787460186880_84',
+    word: '閉まる',
+    reading: 'しまる',
+    romaji: 'shimaru',
+    meaningPt: 'fechar (intransitivo)',
+    category: 'verbo_godan',
+    jlpt: 'N5',
+    categoryLabelPt: 'Verbo Tipo 1 (Godan)',
+    exampleSentence: {
+      jp: 'ドアが閉まります。',
+      reading: 'ドアが しまります。',
+      romaji: 'doa ga shimarimasu.',
+      meaningPt: 'A porta se fecha.'
+    }
+  },
+  {
+    id: 'n5_verb_batch1_1787460186880_85',
+    word: '閉める',
+    reading: 'しめる',
+    romaji: 'shimeru',
+    meaningPt: 'fechar',
+    category: 'verbo_ichidan',
+    jlpt: 'N5',
+    categoryLabelPt: 'Verbo Tipo 2 (Ichidan)',
+    exampleSentence: {
+      jp: '窓を閉めます。',
+      reading: 'まどを しめます。',
+      romaji: 'mado o shimemasu.',
+      meaningPt: 'Fecho a janela.'
+    }
+  },
+  {
+    id: 'n5_verb_batch1_1787460186880_86',
+    word: '締める',
+    reading: 'しめる',
+    romaji: 'shimeru',
+    meaningPt: 'apertar (cinto); amarrar',
+    category: 'verbo_ichidan',
+    jlpt: 'N5',
+    categoryLabelPt: 'Verbo Tipo 2 (Ichidan)',
+    exampleSentence: {
+      jp: 'シートベルトを締めます。',
+      reading: 'シートベルトを しめます。',
+      romaji: 'shiitoberuto o shimemasu.',
+      meaningPt: 'Aperto (amarro) o cinto de segurança.'
+    }
+  },
+  {
+    id: 'n5_verb_batch1_1787460186880_87',
+    word: '死ぬ',
+    reading: 'しぬ',
+    romaji: 'shinu',
+    meaningPt: 'morrer',
+    category: 'verbo_godan',
+    jlpt: 'N5',
+    categoryLabelPt: 'Verbo Tipo 1 (Godan)',
+    exampleSentence: {
+      jp: '花が死にました。',
+      reading: 'はなが しにました。',
+      romaji: 'hana ga shinimashita.',
+      meaningPt: 'A flor morreu.'
+    }
+  },
+  {
+    id: 'n5_verb_batch1_1787460186880_88',
+    word: '知る',
+    reading: 'しる',
+    romaji: 'shiru',
+    meaningPt: 'saber; conhecer',
+    category: 'verbo_godan',
+    jlpt: 'N5',
+    categoryLabelPt: 'Verbo Tipo 1 (Godan)',
+    exampleSentence: {
+      jp: 'そのニュースを知っています。',
+      reading: 'その ニュースを しっています。',
+      romaji: 'sono nyuusu o shitteimasu.',
+      meaningPt: 'Eu sei daquela notícia.'
+    }
+  },
+  {
+    id: 'n5_verb_batch1_1787460186880_89',
+    word: '質問する',
+    reading: 'しつもんする',
+    romaji: 'shitsumonsuru',
+    meaningPt: 'perguntar; fazer uma pergunta',
+    category: 'verbo_irregular',
+    jlpt: 'N5',
+    categoryLabelPt: 'Verbo Irregular',
+    exampleSentence: {
+      jp: '先生に質問します。',
+      reading: 'せんせいに しつもんします。',
+      romaji: 'sensei ni shitsumonshimasu.',
+      meaningPt: 'Faço uma pergunta ao professor.'
+    }
+  },
+  {
+    id: 'n5_verb_batch1_1787460186880_90',
+    word: '掃除する',
+    reading: 'そうじする',
+    romaji: 'soujisuru',
+    meaningPt: 'fazer faxina; limpar',
+    category: 'verbo_irregular',
+    jlpt: 'N5',
+    categoryLabelPt: 'Verbo Irregular',
+    exampleSentence: {
+      jp: '部屋を掃除します。',
+      reading: 'へやを そうじします。',
+      romaji: 'heya o soujishimasu.',
+      meaningPt: 'Limpo o quarto (faço faxina).'
+    }
+  },
+  {
+    id: 'n5_verb_batch1_1787460186880_91',
+    word: '住む',
+    reading: 'すむ',
+    romaji: 'sumu',
+    meaningPt: 'morar',
+    category: 'verbo_godan',
+    jlpt: 'N5',
+    categoryLabelPt: 'Verbo Tipo 1 (Godan)',
+    exampleSentence: {
+      jp: '東京に住んでいます。',
+      reading: 'とうきょうに すんでいます。',
+      romaji: 'toukyou ni sundeimasu.',
+      meaningPt: 'Moro em Tóquio.'
+    }
+  },
+  {
+    id: 'n5_verb_batch1_1787460186880_92',
+    word: '吸う',
+    reading: 'すう',
+    romaji: 'suu',
+    meaningPt: 'fumar; inspirar/sugar',
+    category: 'verbo_godan',
+    jlpt: 'N5',
+    categoryLabelPt: 'Verbo Tipo 1 (Godan)',
+    exampleSentence: {
+      jp: 'タバコを吸いますか。',
+      reading: 'タバコを すいますか。',
+      romaji: 'tabako o suimasu ka.',
+      meaningPt: 'Você fuma (suga cigarro)?'
+    }
+  },
+  {
+    id: 'n5_verb_batch1_1787460186880_93',
+    word: '座る',
+    reading: 'すわる',
+    romaji: 'suwaru',
+    meaningPt: 'sentar',
+    category: 'verbo_godan',
+    jlpt: 'N5',
+    categoryLabelPt: 'Verbo Tipo 1 (Godan)',
+    exampleSentence: {
+      jp: '椅子に座ります。',
+      reading: 'いすに すわります。',
+      romaji: 'isu ni suwarimasu.',
+      meaningPt: 'Sento-me na cadeira.'
+    }
+  },
+  {
+    id: 'n5_verb_batch1_1787460186880_94',
+    word: '食べる',
+    reading: 'たべる',
+    romaji: 'taberu',
+    meaningPt: 'comer',
+    category: 'verbo_ichidan',
+    jlpt: 'N5',
+    categoryLabelPt: 'Verbo Tipo 2 (Ichidan)',
+    exampleSentence: {
+      jp: 'ご飯を食べます。',
+      reading: 'ごはんを たべます。',
+      romaji: 'gohan o tabemasu.',
+      meaningPt: 'Como a comida.'
+    }
+  },
+  {
+    id: 'n5_verb_batch1_1787460186880_95',
+    word: '頼む',
+    reading: 'たのむ',
+    romaji: 'tanomu',
+    meaningPt: 'pedir',
+    category: 'verbo_godan',
+    jlpt: 'N5',
+    categoryLabelPt: 'Verbo Tipo 1 (Godan)',
+    exampleSentence: {
+      jp: '友達に頼みます。',
+      reading: 'ともだちに たのみます。',
+      romaji: 'tomodachi ni tanomimasu.',
+      meaningPt: 'Faço um pedido a um amigo.'
+    }
+  },
+  {
+    id: 'n5_verb_batch1_1787460186880_96',
+    word: '立つ',
+    reading: 'たつ',
+    romaji: 'tatsu',
+    meaningPt: 'ficar de pé; levantar',
+    category: 'verbo_godan',
+    jlpt: 'N5',
+    categoryLabelPt: 'Verbo Tipo 1 (Godan)',
+    exampleSentence: {
+      jp: '立ってください。',
+      reading: 'たってください。',
+      romaji: 'tatte kudasai.',
+      meaningPt: 'Fique de pé, por favor.'
+    }
+  },
+  {
+    id: 'n5_verb_batch1_1787460186880_97',
+    word: 'テストする',
+    reading: 'テストする',
+    romaji: 'tesutosuru',
+    meaningPt: 'fazer teste',
+    category: 'verbo_irregular',
+    jlpt: 'N5',
+    categoryLabelPt: 'Verbo Irregular',
+    exampleSentence: {
+      jp: 'システムをテストします。',
+      reading: 'システムを テストします。',
+      romaji: 'shisutemu o tesutoshimasu.',
+      meaningPt: 'Testar o sistema.'
+    }
+  },
+  {
+    id: 'n5_verb_batch1_1787460186880_98',
+    word: '飛ぶ',
+    reading: 'とぶ',
+    romaji: 'tobu',
+    meaningPt: 'voar',
+    category: 'verbo_godan',
+    jlpt: 'N5',
+    categoryLabelPt: 'Verbo Tipo 1 (Godan)',
+    exampleSentence: {
+      jp: '鳥が飛んでいます。',
+      reading: 'とりが とんでいます。',
+      romaji: 'tori ga tondeimasu.',
+      meaningPt: 'O pássaro está voando.'
+    }
+  },
+  {
+    id: 'n5_verb_batch1_1787460186880_99',
+    word: '止まる',
+    reading: 'とまる',
+    romaji: 'tomaru',
+    meaningPt: 'parar',
+    category: 'verbo_godan',
+    jlpt: 'N5',
+    categoryLabelPt: 'Verbo Tipo 1 (Godan)',
+    exampleSentence: {
+      jp: '車が止まりました。',
+      reading: 'くるまが とまりました。',
+      romaji: 'kuruma ga tomarimashita.',
+      meaningPt: 'O carro parou.'
+    }
+  },
+
+  {
     id: 'n5_noun_batch5_1787423483115_0',
     word: 'ワイシャツ',
     reading: 'ワイシャツ',
