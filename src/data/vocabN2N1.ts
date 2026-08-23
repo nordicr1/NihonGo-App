@@ -2,6 +2,519 @@ import { VocabItem } from '../types';
 
 export const VOCAB_N2_N1: VocabItem[] = [
   {
+    id: 'n2_verb_batch1_1787461593760_0',
+    word: '売買する',
+    reading: 'ばいばいする',
+    romaji: 'baibaisuru',
+    meaningPt: 'comerciar; comprar e vender',
+    category: 'verbo_irregular',
+    jlpt: 'N2',
+    categoryLabelPt: 'Verbo Irregular',
+    exampleSentence: {
+      jp: '土地を売買します。',
+      reading: 'とちを ばいばいします。',
+      romaji: 'tochi o baibaishimasu.',
+      meaningPt: 'Compro e vendo terrenos.'
+    }
+  },
+  {
+    id: 'n2_verb_batch1_1787461593760_1',
+    word: '募集する',
+    reading: 'ぼしゅうする',
+    romaji: 'boshuusuru',
+    meaningPt: 'recrutar; convidar inscrições',
+    category: 'verbo_irregular',
+    jlpt: 'N2',
+    categoryLabelPt: 'Verbo Irregular',
+    exampleSentence: {
+      jp: '新しい社員を募集しています。',
+      reading: 'あたらしい しゃいんを ぼしゅうしています。',
+      romaji: 'atarashii shain o boshuushiteimasu.',
+      meaningPt: 'Estamos recrutando novos funcionários.'
+    }
+  },
+  {
+    id: 'n2_verb_batch1_1787461593760_2',
+    word: '遠足',
+    reading: 'えんそく',
+    romaji: 'ensoku',
+    meaningPt: 'excursão; passeio escolar',
+    category: 'substantivo',
+    jlpt: 'N2',
+    categoryLabelPt: 'Substantivo N2',
+    exampleSentence: {
+      jp: '明日は学校の遠足です。',
+      reading: 'あしたは がっこうの えんそくです。',
+      romaji: 'ashita wa gakkou no ensoku desu.',
+      meaningPt: 'Amanhã é a excursão da escola.'
+    }
+  },
+  {
+    id: 'n2_verb_batch1_1787461593760_3',
+    word: '発売する',
+    reading: 'はつばいする',
+    romaji: 'hatsubaisuru',
+    meaningPt: 'lançar à venda; colocar à venda',
+    category: 'verbo_irregular',
+    jlpt: 'N2',
+    categoryLabelPt: 'Verbo Irregular',
+    exampleSentence: {
+      jp: '新しいゲームが発売されました。',
+      reading: 'あたらしい ゲームが はつばいされました。',
+      romaji: 'atarashii geemu ga hatsubaisaremashita.',
+      meaningPt: 'Um novo jogo foi lançado.'
+    }
+  },
+  {
+    id: 'n2_verb_batch1_1787461593760_4',
+    word: '外れる',
+    reading: 'はずれる',
+    romaji: 'hazureru',
+    meaningPt: 'desprender-se; errar (alvo); sair (do lugar)',
+    category: 'verbo_ichidan',
+    jlpt: 'N2',
+    categoryLabelPt: 'Verbo Tipo 2 (Ichidan)',
+    exampleSentence: {
+      jp: 'ボタンが外れました。',
+      reading: 'ボタンが はずれました。',
+      romaji: 'botan ga hazuremashita.',
+      meaningPt: 'O botão se desprendeu.'
+    }
+  },
+  {
+    id: 'n2_verb_batch1_1787461593760_5',
+    word: '閉会する',
+    reading: 'へいかいする',
+    romaji: 'heikaisuru',
+    meaningPt: 'encerrar a sessão/reunião',
+    category: 'verbo_irregular',
+    jlpt: 'N2',
+    categoryLabelPt: 'Verbo Irregular',
+    exampleSentence: {
+      jp: 'これで会議を閉会します。',
+      reading: 'これで かいぎを へいかいします。',
+      romaji: 'kore de kaigi o heikaishimasu.',
+      meaningPt: 'Com isso, encerramos a reunião.'
+    }
+  },
+  {
+    id: 'n2_verb_batch1_1787461593760_6',
+    word: '昼寝する',
+    reading: 'ひるねする',
+    romaji: 'hirunesuru',
+    meaningPt: 'tirar uma soneca',
+    category: 'verbo_irregular',
+    jlpt: 'N2',
+    categoryLabelPt: 'Verbo Irregular',
+    exampleSentence: {
+      jp: '日曜日はよく昼寝します。',
+      reading: 'にちようびは よく ひるねします。',
+      romaji: 'nichiyoubi wa yoku hiruneshimasu.',
+      meaningPt: 'Aos domingos costumo tirar uma soneca.'
+    }
+  },
+  {
+    id: 'n2_verb_batch1_1787461593760_7',
+    word: '意地悪する',
+    reading: 'いじわるする',
+    romaji: 'ijiwarusuru',
+    meaningPt: 'fazer maldade; ser maldoso',
+    category: 'verbo_irregular',
+    jlpt: 'N2',
+    categoryLabelPt: 'Verbo Irregular',
+    exampleSentence: {
+      jp: '弟に意地悪をしてはいけません。',
+      reading: 'おとうとに いじわるを しては いけません。',
+      romaji: 'otouto ni ijiwaru o shitewa ikemasen.',
+      meaningPt: 'Não se deve fazer maldade com o irmão mais novo.'
+    }
+  },
+  {
+    id: 'n2_verb_batch1_1787461593760_8',
+    word: '移転する',
+    reading: 'いてんする',
+    romaji: 'itensuru',
+    meaningPt: 'mudar-se (empresa/sede); transferir',
+    category: 'verbo_irregular',
+    jlpt: 'N2',
+    categoryLabelPt: 'Verbo Irregular',
+    exampleSentence: {
+      jp: '会社が新しいビルに移転しました。',
+      reading: 'かいしゃが あたらしい ビルに いてんしました。',
+      romaji: 'kaisha ga atarashii biru ni itenshimashita.',
+      meaningPt: 'A empresa mudou-se para um prédio novo.'
+    }
+  },
+  {
+    id: 'n2_verb_batch1_1787461593760_9',
+    word: '自習する',
+    reading: 'じしゅうする',
+    romaji: 'jishuusuru',
+    meaningPt: 'estudar sozinho',
+    category: 'verbo_irregular',
+    jlpt: 'N2',
+    categoryLabelPt: 'Verbo Irregular',
+    exampleSentence: {
+      jp: '図書館で自習します。',
+      reading: 'としょかんで じしゅうします。',
+      romaji: 'toshokan de jishuushimasu.',
+      meaningPt: 'Vou estudar sozinho na biblioteca.'
+    }
+  },
+  {
+    id: 'n2_verb_batch1_1787461593760_10',
+    word: '実習する',
+    reading: 'じっしゅうする',
+    romaji: 'jisshuusuru',
+    meaningPt: 'fazer aula prática; treinar na prática',
+    category: 'verbo_irregular',
+    jlpt: 'N2',
+    categoryLabelPt: 'Verbo Irregular',
+    exampleSentence: {
+      jp: '病院で実習します。',
+      reading: 'びょういんで じっしゅうします。',
+      romaji: 'byouin de jisshuushimasu.',
+      meaningPt: 'Farei treinamento prático no hospital.'
+    }
+  },
+  {
+    id: 'n2_verb_batch1_1787461593760_11',
+    word: '開会する',
+    reading: 'かいかいする',
+    romaji: 'kaikaisuru',
+    meaningPt: 'abrir a sessão/evento',
+    category: 'verbo_irregular',
+    jlpt: 'N2',
+    categoryLabelPt: 'Verbo Irregular',
+    exampleSentence: {
+      jp: '午後一時から開会します。',
+      reading: 'ごご いちじから かいかいします。',
+      romaji: 'gogo ichiji kara kaikaishimasu.',
+      meaningPt: 'A abertura será a partir da uma hora da tarde.'
+    }
+  },
+  {
+    id: 'n2_verb_batch1_1787461593760_12',
+    word: '回転する',
+    reading: 'かいてんする',
+    romaji: 'kaitensuru',
+    meaningPt: 'girar; rotacionar',
+    category: 'verbo_irregular',
+    jlpt: 'N2',
+    categoryLabelPt: 'Verbo Irregular',
+    exampleSentence: {
+      jp: '地球は回転しています。',
+      reading: 'ちきゅうは かいてんしています。',
+      romaji: 'chikyuu wa kaitenshiteimasu.',
+      meaningPt: 'A Terra está rotacionando.'
+    }
+  },
+  {
+    id: 'n2_verb_batch1_1787461593760_13',
+    word: '加速する',
+    reading: 'かそくする',
+    romaji: 'kasokusuru',
+    meaningPt: 'acelerar',
+    category: 'verbo_irregular',
+    jlpt: 'N2',
+    categoryLabelPt: 'Verbo Irregular',
+    exampleSentence: {
+      jp: '車が加速します。',
+      reading: 'くるまが かそくします。',
+      romaji: 'kuruma ga kasokushimasu.',
+      meaningPt: 'O carro acelera.'
+    }
+  },
+  {
+    id: 'n2_verb_batch1_1787461593760_14',
+    word: '見学する',
+    reading: 'けんがくする',
+    romaji: 'kengakusuru',
+    meaningPt: 'visitar para estudo; observar',
+    category: 'verbo_irregular',
+    jlpt: 'N2',
+    categoryLabelPt: 'Verbo Irregular',
+    exampleSentence: {
+      jp: '工場を見学します。',
+      reading: 'こうじょうを けんがくします。',
+      romaji: 'koujou o kengakushimasu.',
+      meaningPt: 'Faremos uma visita de observação à fábrica.'
+    }
+  },
+  {
+    id: 'n2_verb_batch1_1787461593760_15',
+    word: '転がる',
+    reading: 'ころがる',
+    romaji: 'korogaru',
+    meaningPt: 'rolar; tombar (intransitivo)',
+    category: 'verbo_godan',
+    jlpt: 'N2',
+    categoryLabelPt: 'Verbo Tipo 1 (Godan)',
+    exampleSentence: {
+      jp: 'ボールが転がります。',
+      reading: 'ボールが ころがります。',
+      romaji: 'booru ga korogarimasu.',
+      meaningPt: 'A bola rola.'
+    }
+  },
+  {
+    id: 'n2_verb_batch1_1787461593760_16',
+    word: '転がす',
+    reading: 'ころがす',
+    romaji: 'korogasu',
+    meaningPt: 'rolar algo (transitivo)',
+    category: 'verbo_godan',
+    jlpt: 'N2',
+    categoryLabelPt: 'Verbo Tipo 1 (Godan)',
+    exampleSentence: {
+      jp: '雪だるまを作るために雪を転がします。',
+      reading: 'ゆきだるまを つくる ために ゆきを ころがします。',
+      romaji: 'yukidaruma o tsukuru tame ni yuki o korogasimasu.',
+      meaningPt: 'Rolo a neve para fazer um boneco de neve.'
+    }
+  },
+  {
+    id: 'n2_verb_batch1_1787461593760_17',
+    word: '待ち合わせる',
+    reading: 'まちあわせる',
+    romaji: 'machiawaseru',
+    meaningPt: 'encontrar-se (com horário e local marcados)',
+    category: 'verbo_ichidan',
+    jlpt: 'N2',
+    categoryLabelPt: 'Verbo Tipo 2 (Ichidan)',
+    exampleSentence: {
+      jp: '駅前で友達と待ち合わせました。',
+      reading: 'えきまえで ともだちと まちあわせました。',
+      romaji: 'ekimae de tomodachi to machiawasemashita.',
+      meaningPt: 'Encontrei-me com um amigo em frente à estação (combinado previamente).'
+    }
+  },
+  {
+    id: 'n2_verb_batch1_1787461593760_18',
+    word: '入社する',
+    reading: 'にゅうしゃする',
+    romaji: 'nyuushasuru',
+    meaningPt: 'ingressar em uma empresa',
+    category: 'verbo_irregular',
+    jlpt: 'N2',
+    categoryLabelPt: 'Verbo Irregular',
+    exampleSentence: {
+      jp: '四月に会社に入社します。',
+      reading: 'しがつに かいしゃに にゅうしゃします。',
+      romaji: 'shigatsu ni kaisha ni nyuushashimasu.',
+      meaningPt: 'Ingressarei na empresa em abril.'
+    }
+  },
+  {
+    id: 'n2_verb_batch1_1787461593760_19',
+    word: '押さえる',
+    reading: 'おさえる',
+    romaji: 'osaeru',
+    meaningPt: 'pressionar; segurar firmemente',
+    category: 'verbo_ichidan',
+    jlpt: 'N2',
+    categoryLabelPt: 'Verbo Tipo 2 (Ichidan)',
+    exampleSentence: {
+      jp: 'ドアを押さえてください。',
+      reading: 'ドアを おさえてください。',
+      romaji: 'doa o osaete kudasai.',
+      meaningPt: 'Por favor, segure a porta.'
+    }
+  },
+  {
+    id: 'n2_verb_batch1_1787461593760_20',
+    word: '領収する',
+    reading: 'りょうしゅうする',
+    romaji: 'ryoushuusuru',
+    meaningPt: 'receber (pagamento/dinheiro)',
+    category: 'verbo_irregular',
+    jlpt: 'N2',
+    categoryLabelPt: 'Verbo Irregular',
+    exampleSentence: {
+      jp: '確かにお金を領収しました。',
+      reading: 'たしかに おかねを りょうしゅうしました。',
+      romaji: 'tashika ni okane o ryoushuushimashita.',
+      meaningPt: 'Certamente recebi o dinheiro.'
+    }
+  },
+  {
+    id: 'n2_verb_batch1_1787461593760_21',
+    word: '刺さる',
+    reading: 'ささる',
+    romaji: 'sasaru',
+    meaningPt: 'espetar-se; fincar-se',
+    category: 'verbo_godan',
+    jlpt: 'N2',
+    categoryLabelPt: 'Verbo Tipo 1 (Godan)',
+    exampleSentence: {
+      jp: '指にトゲが刺さりました。',
+      reading: 'ゆびに トゲが ささりました。',
+      romaji: 'yubi ni toge ga sasarimashita.',
+      meaningPt: 'Um espinho espetou no meu dedo.'
+    }
+  },
+  {
+    id: 'n2_verb_batch1_1787461593760_22',
+    word: '刺す',
+    reading: 'さす',
+    romaji: 'sasu',
+    meaningPt: 'espetar; apunhalar; picar',
+    category: 'verbo_godan',
+    jlpt: 'N2',
+    categoryLabelPt: 'Verbo Tipo 1 (Godan)',
+    exampleSentence: {
+      jp: '虫が腕を刺しました。',
+      reading: 'むしが うでを さしました。',
+      romaji: 'mushi ga ude o sashimashita.',
+      meaningPt: 'O inseto picou meu braço.'
+    }
+  },
+  {
+    id: 'n2_verb_batch1_1787461593760_23',
+    word: '司会する',
+    reading: 'しかいする',
+    romaji: 'shikaisuru',
+    meaningPt: 'apresentar; ser o mestre de cerimônias',
+    category: 'verbo_irregular',
+    jlpt: 'N2',
+    categoryLabelPt: 'Verbo Irregular',
+    exampleSentence: {
+      jp: '結婚式で司会をします。',
+      reading: 'けっこんしきで しかいを します。',
+      romaji: 'kekkonshiki de shikai o shimasu.',
+      meaningPt: 'Serei o mestre de cerimônias no casamento.'
+    }
+  },
+  {
+    id: 'n2_verb_batch1_1787461593760_24',
+    word: '集合する',
+    reading: 'しゅうごうする',
+    romaji: 'shuugousuru',
+    meaningPt: 'reunir-se; concentrar-se (grupo)',
+    category: 'verbo_irregular',
+    jlpt: 'N2',
+    categoryLabelPt: 'Verbo Irregular',
+    exampleSentence: {
+      jp: '朝八時に学校へ集合してください。',
+      reading: 'あさ はちじに がっこうへ しゅうごうしてください。',
+      romaji: 'asa hachiji ni gakkou e shuugoushite kudasai.',
+      meaningPt: 'Por favor, reúnam-se na escola às oito da manhã.'
+    }
+  },
+  {
+    id: 'n2_verb_batch1_1787461593760_25',
+    word: '集会',
+    reading: 'しゅうかい',
+    romaji: 'shuukai',
+    meaningPt: 'assembleia; reunião; encontro',
+    category: 'substantivo',
+    jlpt: 'N2',
+    categoryLabelPt: 'Substantivo N2',
+    exampleSentence: {
+      jp: '広場で集会が行われます。',
+      reading: 'ひろばで しゅうかいが おこなわれます。',
+      romaji: 'hiroba de shuukai ga okonawaremasu.',
+      meaningPt: 'Uma assembleia será realizada na praça.'
+    }
+  },
+  {
+    id: 'n2_verb_batch1_1787461593760_26',
+    word: '速達',
+    reading: 'そくたつ',
+    romaji: 'sokutatsu',
+    meaningPt: 'entrega expressa (correio)',
+    category: 'substantivo',
+    jlpt: 'N2',
+    categoryLabelPt: 'Substantivo N2',
+    exampleSentence: {
+      jp: '手紙を速達で送ります。',
+      reading: 'てがみを そくたつで おくります。',
+      romaji: 'tegami o sokutatsu de okurimasu.',
+      meaningPt: 'Envio a carta por entrega expressa.'
+    }
+  },
+  {
+    id: 'n2_verb_batch1_1787461593760_27',
+    word: '足る',
+    reading: 'たる',
+    romaji: 'taru',
+    meaningPt: 'bastar; ser suficiente; ser digno de',
+    category: 'verbo_godan',
+    jlpt: 'N2',
+    categoryLabelPt: 'Verbo Tipo 1 (Godan)',
+    exampleSentence: {
+      jp: '彼は信頼に足る人物です。',
+      reading: 'かれは しんらいに たる じんぶつです。',
+      romaji: 'kare wa shinrai ni taru jinbutsu desu.',
+      meaningPt: 'Ele é uma pessoa digna de confiança.'
+    }
+  },
+  {
+    id: 'n2_verb_batch1_1787461593760_28',
+    word: '特売する',
+    reading: 'とくばいする',
+    romaji: 'tokubaisuru',
+    meaningPt: 'fazer venda especial/promoção',
+    category: 'verbo_irregular',
+    jlpt: 'N2',
+    categoryLabelPt: 'Verbo Irregular',
+    exampleSentence: {
+      jp: 'スーパーで卵を特売しています。',
+      reading: 'スーパーで たまごを とくばいしています。',
+      romaji: 'suupaa de tamago o tokubaishiteimasu.',
+      meaningPt: 'Estão fazendo uma venda especial de ovos no supermercado.'
+    }
+  },
+  {
+    id: 'n2_verb_batch1_1787461593760_29',
+    word: '売り切れる',
+    reading: 'うりきれる',
+    romaji: 'urikireru',
+    meaningPt: 'esgotar-se (vendas)',
+    category: 'verbo_ichidan',
+    jlpt: 'N2',
+    categoryLabelPt: 'Verbo Tipo 2 (Ichidan)',
+    exampleSentence: {
+      jp: 'チケットはすぐに売り切れました。',
+      reading: 'チケットは すぐに うりきれました。',
+      romaji: 'chiketto wa sugu ni urikiremashita.',
+      meaningPt: 'Os ingressos esgotaram-se rapidamente.'
+    }
+  },
+  {
+    id: 'n2_verb_batch1_1787461593760_30',
+    word: '輸血する',
+    reading: 'ゆけつする',
+    romaji: 'yuketsusuru',
+    meaningPt: 'fazer transfusão de sangue',
+    category: 'verbo_irregular',
+    jlpt: 'N2',
+    categoryLabelPt: 'Verbo Irregular',
+    exampleSentence: {
+      jp: '患者に輸血しました。',
+      reading: 'かんじゃに ゆけつしました。',
+      romaji: 'kanja ni yuketsushimashita.',
+      meaningPt: 'Fizeram transfusão de sangue no paciente.'
+    }
+  },
+  {
+    id: 'n2_verb_batch1_1787461593760_31',
+    word: '輸送する',
+    reading: 'ゆそうする',
+    romaji: 'yusousuru',
+    meaningPt: 'transportar (mercadorias/pessoas)',
+    category: 'verbo_irregular',
+    jlpt: 'N2',
+    categoryLabelPt: 'Verbo Irregular',
+    exampleSentence: {
+      jp: 'トラックで荷物を輸送します。',
+      reading: 'トラックで にもつを ゆそうします。',
+      romaji: 'torakku de nimotsu o yusoushimasu.',
+      meaningPt: 'Transportaremos as cargas com o caminhão.'
+    }
+  },
+
+  {
     id: 'n2_noun_batch1_1787424591036_0',
     word: '明け方',
     reading: 'あけがた',

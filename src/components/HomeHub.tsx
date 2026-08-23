@@ -58,8 +58,8 @@ const CHANGELOG = [
   },
   {
     date: '22 Ago 2026',
-    title: 'Mais de 1.385 Palavras Adicionadas!',
-    desc: 'Adicionamos 120 verbos no N5, 212 verbos no N4 e 55 verbos no N3 categorizados por tipo (Godan, Ichidan e Irregulares), além de mais de 1.000 substantivos divididos entre N5, N4, N3 e N2, com traduções, frases de exemplo exclusivas e áudio.',
+    title: 'Mais de 1.415 Palavras Adicionadas!',
+    desc: 'Adicionamos 120 verbos no N5, 212 verbos no N4, 55 verbos no N3 e 32 verbos no N2 categorizados por tipo (Godan, Ichidan e Irregulares), além de mais de 1.000 substantivos divididos entre N5, N4, N3 e N2, com traduções, frases de exemplo exclusivas e áudio.',
   },
   {
     date: '22 Ago 2026',
