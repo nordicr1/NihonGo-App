@@ -2,6 +2,199 @@ import { VocabItem } from '../types';
 
 export const VOCAB_N4: VocabItem[] = [
   {
+    id: 'n4_verb_batch3_1787461099638_0',
+    word: '役に立つ',
+    reading: 'やくにたつ',
+    romaji: 'yaku ni tatsu',
+    meaningPt: 'ser útil; servir para algo',
+    category: 'verbo_godan',
+    jlpt: 'N4',
+    categoryLabelPt: 'Verbo Tipo 1 (Godan)',
+    exampleSentence: {
+      jp: 'この本は役に立ちます。',
+      reading: 'この ほんは やくにたちます。',
+      romaji: 'kono hon wa yaku ni tachimasu.',
+      meaningPt: 'Este livro é útil.'
+    }
+  },
+  {
+    id: 'n4_verb_batch3_1787461099638_1',
+    word: '約束する',
+    reading: 'やくそくする',
+    romaji: 'yakusokusuru',
+    meaningPt: 'prometer',
+    category: 'verbo_irregular',
+    jlpt: 'N4',
+    categoryLabelPt: 'Verbo Irregular',
+    exampleSentence: {
+      jp: '明日行くことを約束します。',
+      reading: 'あした いく ことを やくそくします。',
+      romaji: 'ashita iku koto o yakusokushimasu.',
+      meaningPt: 'Prometo que irei amanhã.'
+    }
+  },
+  {
+    id: 'n4_verb_batch3_1787461099638_2',
+    word: '止む',
+    reading: 'やむ',
+    romaji: 'yamu',
+    meaningPt: 'parar (chuva, neve, vento)',
+    category: 'verbo_godan',
+    jlpt: 'N4',
+    categoryLabelPt: 'Verbo Tipo 1 (Godan)',
+    exampleSentence: {
+      jp: '雨が止みました。',
+      reading: 'あめが やみました。',
+      romaji: 'ame ga yamimashita.',
+      meaningPt: 'A chuva parou.'
+    }
+  },
+  {
+    id: 'n4_verb_batch3_1787461099638_3',
+    word: '痩せる',
+    reading: 'やせる',
+    romaji: 'yaseru',
+    meaningPt: 'emagrecer',
+    category: 'verbo_ichidan',
+    jlpt: 'N4',
+    categoryLabelPt: 'Verbo Tipo 2 (Ichidan)',
+    exampleSentence: {
+      jp: 'ダイエットをして痩せました。',
+      reading: 'ダイエットを して やせました。',
+      romaji: 'daietto o shite yasemashita.',
+      meaningPt: 'Fiz dieta e emagreci.'
+    }
+  },
+  {
+    id: 'n4_verb_batch3_1787461099638_4',
+    word: '汚れる',
+    reading: 'よごれる',
+    romaji: 'yogoreru',
+    meaningPt: 'sujar-se',
+    category: 'verbo_ichidan',
+    jlpt: 'N4',
+    categoryLabelPt: 'Verbo Tipo 2 (Ichidan)',
+    exampleSentence: {
+      jp: '服が汚れました。',
+      reading: 'ふくが よごれました。',
+      romaji: 'fuku ga yogoremashita.',
+      meaningPt: 'A roupa sujou.'
+    }
+  },
+  {
+    id: 'n4_verb_batch3_1787461099638_5',
+    word: '喜ぶ',
+    reading: 'よろこぶ',
+    romaji: 'yorokobu',
+    meaningPt: 'alegrar-se; ficar feliz',
+    category: 'verbo_godan',
+    jlpt: 'N4',
+    categoryLabelPt: 'Verbo Tipo 1 (Godan)',
+    exampleSentence: {
+      jp: 'プレゼントを喜んでくれました。',
+      reading: 'プレゼントを よろこんでくれました。',
+      romaji: 'purezento o yorokonde kuremashita.',
+      meaningPt: 'Ele ficou feliz com o presente.'
+    }
+  },
+  {
+    id: 'n4_verb_batch3_1787461099638_6',
+    word: '寄る',
+    reading: 'よる',
+    romaji: 'yoru',
+    meaningPt: 'dar uma passada; encostar',
+    category: 'verbo_godan',
+    jlpt: 'N4',
+    categoryLabelPt: 'Verbo Tipo 1 (Godan)',
+    exampleSentence: {
+      jp: '帰りにスーパーに寄ります。',
+      reading: 'かえりに スーパーに よります。',
+      romaji: 'kaeri ni suupaa ni yorimasu.',
+      meaningPt: 'Vou dar uma passada no supermercado na volta.'
+    }
+  },
+  {
+    id: 'n4_verb_batch3_1787461099638_7',
+    word: '予習する',
+    reading: 'よしゅうする',
+    romaji: 'yoshuusuru',
+    meaningPt: 'preparar-se para a aula',
+    category: 'verbo_irregular',
+    jlpt: 'N4',
+    categoryLabelPt: 'Verbo Irregular',
+    exampleSentence: {
+      jp: '明日の授業を予習します。',
+      reading: 'あしたの じゅぎょうを よしゅうします。',
+      romaji: 'ashita no jugyou o yoshuushimasu.',
+      meaningPt: 'Vou preparar a matéria da aula de amanhã.'
+    }
+  },
+  {
+    id: 'n4_verb_batch3_1787461099638_8',
+    word: '予定する',
+    reading: 'よていする',
+    romaji: 'yoteisuru',
+    meaningPt: 'planejar; programar',
+    category: 'verbo_irregular',
+    jlpt: 'N4',
+    categoryLabelPt: 'Verbo Irregular',
+    exampleSentence: {
+      jp: '旅行を予定しています。',
+      reading: 'りょこうを よていしています。',
+      romaji: 'ryokou o yoteishiteimasu.',
+      meaningPt: 'Estou planejando uma viagem.'
+    }
+  },
+  {
+    id: 'n4_verb_batch3_1787461099638_9',
+    word: '用意する',
+    reading: 'よういする',
+    romaji: 'youisuru',
+    meaningPt: 'preparar; providenciar',
+    category: 'verbo_irregular',
+    jlpt: 'N4',
+    categoryLabelPt: 'Verbo Irregular',
+    exampleSentence: {
+      jp: '食事を用意します。',
+      reading: 'しょくじを よういします。',
+      romaji: 'shokuji o youishimasu.',
+      meaningPt: 'Vou preparar a refeição.'
+    }
+  },
+  {
+    id: 'n4_verb_batch3_1787461099638_10',
+    word: '予約する',
+    reading: 'よやくする',
+    romaji: 'yoyakusuru',
+    meaningPt: 'reservar',
+    category: 'verbo_irregular',
+    jlpt: 'N4',
+    categoryLabelPt: 'Verbo Irregular',
+    exampleSentence: {
+      jp: 'レストランを予約します。',
+      reading: 'レストランを よやくします。',
+      romaji: 'resutoran o yoyakushimasu.',
+      meaningPt: 'Vou reservar o restaurante.'
+    }
+  },
+  {
+    id: 'n4_verb_batch3_1787461099638_11',
+    word: '揺れる',
+    reading: 'ゆれる',
+    romaji: 'yureru',
+    meaningPt: 'tremer; balançar',
+    category: 'verbo_ichidan',
+    jlpt: 'N4',
+    categoryLabelPt: 'Verbo Tipo 2 (Ichidan)',
+    exampleSentence: {
+      jp: '地震で家が揺れました。',
+      reading: 'じしんで いえが ゆれました。',
+      romaji: 'jishin de ie ga yuremashita.',
+      meaningPt: 'A casa tremeu com o terremoto.'
+    }
+  },
+
+  {
     id: 'n4_verb_batch2_1787460973565_0',
     word: '亡くなる',
     reading: 'なくなる',
