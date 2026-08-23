@@ -2,6 +2,327 @@ import { VocabItem } from '../types';
 
 export const VOCAB_N5: VocabItem[] = [
   {
+    id: 'n5_verb_batch2_1787460360889_0',
+    word: '取る',
+    reading: 'とる',
+    romaji: 'toru',
+    meaningPt: 'pegar; tirar',
+    category: 'verbo_godan',
+    jlpt: 'N5',
+    categoryLabelPt: 'Verbo Tipo 1 (Godan)',
+    exampleSentence: {
+      jp: '塩を取ってください。',
+      reading: 'しおを とってください。',
+      romaji: 'shio o totte kudasai.',
+      meaningPt: 'Por favor, me passe (pegue) o sal.'
+    }
+  },
+  {
+    id: 'n5_verb_batch2_1787460360889_1',
+    word: '撮る',
+    reading: 'とる',
+    romaji: 'toru',
+    meaningPt: 'tirar foto; gravar',
+    category: 'verbo_godan',
+    jlpt: 'N5',
+    categoryLabelPt: 'Verbo Tipo 1 (Godan)',
+    exampleSentence: {
+      jp: '写真を撮ります。',
+      reading: 'しゃしんを とります。',
+      romaji: 'shashin o torimasu.',
+      meaningPt: 'Tiro uma foto.'
+    }
+  },
+  {
+    id: 'n5_verb_batch2_1787460360889_2',
+    word: '疲れる',
+    reading: 'つかれる',
+    romaji: 'tsukareru',
+    meaningPt: 'cansar-se',
+    category: 'verbo_ichidan',
+    jlpt: 'N5',
+    categoryLabelPt: 'Verbo Tipo 2 (Ichidan)',
+    exampleSentence: {
+      jp: '仕事で疲れました。',
+      reading: 'しごとで つかれました。',
+      romaji: 'shigoto de tsukaremashita.',
+      meaningPt: 'Me cansei com o trabalho.'
+    }
+  },
+  {
+    id: 'n5_verb_batch2_1787460360889_3',
+    word: '使う',
+    reading: 'つかう',
+    romaji: 'tsukau',
+    meaningPt: 'usar; utilizar',
+    category: 'verbo_godan',
+    jlpt: 'N5',
+    categoryLabelPt: 'Verbo Tipo 1 (Godan)',
+    exampleSentence: {
+      jp: '辞書を使います。',
+      reading: 'じしょを つかいます。',
+      romaji: 'jisho o tsukaimasu.',
+      meaningPt: 'Uso o dicionário.'
+    }
+  },
+  {
+    id: 'n5_verb_batch2_1787460360889_4',
+    word: 'つける',
+    reading: 'つける',
+    romaji: 'tsukeru',
+    meaningPt: 'ligar (energia/eletrônicos)',
+    category: 'verbo_ichidan',
+    jlpt: 'N5',
+    categoryLabelPt: 'Verbo Tipo 2 (Ichidan)',
+    exampleSentence: {
+      jp: 'テレビをつけます。',
+      reading: 'テレビを つけます。',
+      romaji: 'terebi o tsukemasu.',
+      meaningPt: 'Ligo a televisão.'
+    }
+  },
+  {
+    id: 'n5_verb_batch2_1787460360889_5',
+    word: '付ける',
+    reading: 'つける',
+    romaji: 'tsukeru',
+    meaningPt: 'anexar; fixar; aplicar',
+    category: 'verbo_ichidan',
+    jlpt: 'N5',
+    categoryLabelPt: 'Verbo Tipo 2 (Ichidan)',
+    exampleSentence: {
+      jp: '服にボタンを付けます。',
+      reading: 'ふくに ボタンを つけます。',
+      romaji: 'fuku ni botan o tsukemasu.',
+      meaningPt: 'Prego (anexo) um botão na roupa.'
+    }
+  },
+  {
+    id: 'n5_verb_batch2_1787460360889_6',
+    word: '着く',
+    reading: 'つく',
+    romaji: 'tsuku',
+    meaningPt: 'chegar',
+    category: 'verbo_godan',
+    jlpt: 'N5',
+    categoryLabelPt: 'Verbo Tipo 1 (Godan)',
+    exampleSentence: {
+      jp: '駅に着きました。',
+      reading: 'えきに つきました。',
+      romaji: 'eki ni tsukimashita.',
+      meaningPt: 'Cheguei à estação.'
+    }
+  },
+  {
+    id: 'n5_verb_batch2_1787460360889_7',
+    word: '作る',
+    reading: 'つくる',
+    romaji: 'tsukuru',
+    meaningPt: 'fazer; criar; produzir',
+    category: 'verbo_godan',
+    jlpt: 'N5',
+    categoryLabelPt: 'Verbo Tipo 1 (Godan)',
+    exampleSentence: {
+      jp: 'ケーキを作ります。',
+      reading: 'ケーキを つくります。',
+      romaji: 'keeki o tsukurimasu.',
+      meaningPt: 'Faço um bolo.'
+    }
+  },
+  {
+    id: 'n5_verb_batch2_1787460360889_8',
+    word: '勤める',
+    reading: 'つとめる',
+    romaji: 'tsutomeru',
+    meaningPt: 'trabalhar (para alguém)',
+    category: 'verbo_ichidan',
+    jlpt: 'N5',
+    categoryLabelPt: 'Verbo Tipo 2 (Ichidan)',
+    exampleSentence: {
+      jp: '会社に勤めています。',
+      reading: 'かいしゃに つとめています。',
+      romaji: 'kaisha ni tsutometeimasu.',
+      meaningPt: 'Trabalho numa empresa.'
+    }
+  },
+  {
+    id: 'n5_verb_batch2_1787460360889_9',
+    word: '生まれる',
+    reading: 'うまれる',
+    romaji: 'umareru',
+    meaningPt: 'nascer',
+    category: 'verbo_ichidan',
+    jlpt: 'N5',
+    categoryLabelPt: 'Verbo Tipo 2 (Ichidan)',
+    exampleSentence: {
+      jp: '赤ちゃんが生まれました。',
+      reading: 'あかちゃんが うまれました。',
+      romaji: 'akachan ga umaremashita.',
+      meaningPt: 'O bebê nasceu.'
+    }
+  },
+  {
+    id: 'n5_verb_batch2_1787460360889_10',
+    word: '売る',
+    reading: 'うる',
+    romaji: 'uru',
+    meaningPt: 'vender',
+    category: 'verbo_godan',
+    jlpt: 'N5',
+    categoryLabelPt: 'Verbo Tipo 1 (Godan)',
+    exampleSentence: {
+      jp: '古い本を売ります。',
+      reading: 'ふるい ほんを うります。',
+      romaji: 'furui hon o urimasu.',
+      meaningPt: 'Vendo livros velhos.'
+    }
+  },
+  {
+    id: 'n5_verb_batch2_1787460360889_11',
+    word: '歌う',
+    reading: 'うたう',
+    romaji: 'utau',
+    meaningPt: 'cantar',
+    category: 'verbo_godan',
+    jlpt: 'N5',
+    categoryLabelPt: 'Verbo Tipo 1 (Godan)',
+    exampleSentence: {
+      jp: '歌を歌います。',
+      reading: 'うたを うたいます。',
+      romaji: 'uta o utaimasu.',
+      meaningPt: 'Canto uma música.'
+    }
+  },
+  {
+    id: 'n5_verb_batch2_1787460360889_12',
+    word: '分かる',
+    reading: 'わかる',
+    romaji: 'wakaru',
+    meaningPt: 'entender; compreender',
+    category: 'verbo_godan',
+    jlpt: 'N5',
+    categoryLabelPt: 'Verbo Tipo 1 (Godan)',
+    exampleSentence: {
+      jp: '日本語が分かります。',
+      reading: 'にほんごが わかります。',
+      romaji: 'nihongo ga wakarimasu.',
+      meaningPt: 'Entendo japonês.'
+    }
+  },
+  {
+    id: 'n5_verb_batch2_1787460360889_13',
+    word: '忘れる',
+    reading: 'わすれる',
+    romaji: 'wasureru',
+    meaningPt: 'esquecer',
+    category: 'verbo_ichidan',
+    jlpt: 'N5',
+    categoryLabelPt: 'Verbo Tipo 2 (Ichidan)',
+    exampleSentence: {
+      jp: '宿題を忘れました。',
+      reading: 'しゅくだいを わすれました。',
+      romaji: 'shukudai o wasuremashita.',
+      meaningPt: 'Esqueci a lição de casa.'
+    }
+  },
+  {
+    id: 'n5_verb_batch2_1787460360889_14',
+    word: '渡る',
+    reading: 'わたる',
+    romaji: 'wataru',
+    meaningPt: 'atravessar',
+    category: 'verbo_godan',
+    jlpt: 'N5',
+    categoryLabelPt: 'Verbo Tipo 1 (Godan)',
+    exampleSentence: {
+      jp: '橋を渡ります。',
+      reading: 'はしを わたります。',
+      romaji: 'hashi o watarimasu.',
+      meaningPt: 'Atravesso a ponte.'
+    }
+  },
+  {
+    id: 'n5_verb_batch2_1787460360889_15',
+    word: '渡す',
+    reading: 'わたす',
+    romaji: 'watasu',
+    meaningPt: 'entregar (em mãos)',
+    category: 'verbo_godan',
+    jlpt: 'N5',
+    categoryLabelPt: 'Verbo Tipo 1 (Godan)',
+    exampleSentence: {
+      jp: 'プレゼントを渡します。',
+      reading: 'プレゼントを わたします。',
+      romaji: 'purezento o watashimasu.',
+      meaningPt: 'Entrego o presente.'
+    }
+  },
+  {
+    id: 'n5_verb_batch2_1787460360889_16',
+    word: 'やる',
+    reading: 'やる',
+    romaji: 'yaru',
+    meaningPt: 'fazer; dar (para animal/planta/inferior)',
+    category: 'verbo_godan',
+    jlpt: 'N5',
+    categoryLabelPt: 'Verbo Tipo 1 (Godan)',
+    exampleSentence: {
+      jp: '宿題をやります。',
+      reading: 'しゅくだいを やります。',
+      romaji: 'shukudai o yarimasu.',
+      meaningPt: 'Faço a lição de casa.'
+    }
+  },
+  {
+    id: 'n5_verb_batch2_1787460360889_17',
+    word: '休む',
+    reading: 'やすむ',
+    romaji: 'yasumu',
+    meaningPt: 'descansar; faltar (ausentar-se)',
+    category: 'verbo_godan',
+    jlpt: 'N5',
+    categoryLabelPt: 'Verbo Tipo 1 (Godan)',
+    exampleSentence: {
+      jp: '学校を休みます。',
+      reading: 'がっこうを やすみます。',
+      romaji: 'gakkou o yasumimasu.',
+      meaningPt: 'Falto na escola.'
+    }
+  },
+  {
+    id: 'n5_verb_batch2_1787460360889_18',
+    word: '呼ぶ',
+    reading: 'よぶ',
+    romaji: 'yobu',
+    meaningPt: 'chamar; convidar',
+    category: 'verbo_godan',
+    jlpt: 'N5',
+    categoryLabelPt: 'Verbo Tipo 1 (Godan)',
+    exampleSentence: {
+      jp: '友達を呼びます。',
+      reading: 'ともだちを よびます。',
+      romaji: 'tomodachi o yobimasu.',
+      meaningPt: 'Chamo um amigo.'
+    }
+  },
+  {
+    id: 'n5_verb_batch2_1787460360889_19',
+    word: '読む',
+    reading: 'よむ',
+    romaji: 'yomu',
+    meaningPt: 'ler',
+    category: 'verbo_godan',
+    jlpt: 'N5',
+    categoryLabelPt: 'Verbo Tipo 1 (Godan)',
+    exampleSentence: {
+      jp: '本を読みます。',
+      reading: 'ほんを よみます。',
+      romaji: 'hon o yomimasu.',
+      meaningPt: 'Leio um livro.'
+    }
+  },
+
+  {
     id: 'n5_verb_batch1_1787460186879_0',
     word: '浴びる',
     reading: 'あびる',
