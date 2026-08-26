@@ -1,7 +1,7 @@
 import React from 'react';
 import { JLPTLevel, UserStats } from '../types';
 import { getLevelTitle } from '../utils/storage';
-import { Sparkles, Flame, Trophy, Bot, BookOpen, Compass, Gamepad2, Layers, PenTool } from 'lucide-react';
+import { Sparkles, Flame, Trophy, Bot, BookOpen, Compass, Gamepad2, Layers, PenTool, LogOut } from 'lucide-react';
 
 interface HeaderProps {
   currentTab: 'hub' | 'kana' | 'kanji' | 'grammar' | 'tests' | 'games' | 'analyzer' | 'sensei' | 'drawing' | 'conversation';
@@ -103,6 +103,23 @@ export const Header: React.FC<HeaderProps> = ({
             >
               <Bot size={15} />
               <span className="hidden sm:inline">Sensei IA</span>
+            </button>
+
+            {/* Logout Button */}
+            <button
+              type="button"
+              onClick={() => {
+                import('firebase/auth').then(({ signOut }) => {
+                  import('../config/firebase').then(({ auth }) => {
+                    signOut(auth);
+                  });
+                });
+              }}
+              title="Sair da Conta"
+              className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-stone-800 border border-stone-700 text-stone-300 hover:text-white hover:bg-stone-700 text-xs font-bold shadow-sm transition active:scale-95 cursor-pointer ml-2"
+            >
+              <LogOut size={15} />
+              <span className="hidden sm:inline">Sair</span>
             </button>
           </div>
         </div>

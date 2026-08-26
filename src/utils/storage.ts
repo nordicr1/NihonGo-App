@@ -52,7 +52,18 @@ export function loadUserStats(): UserStats {
     const raw = localStorage.getItem(STATS_STORAGE_KEY);
     if (raw) {
       const parsed = JSON.parse(raw);
-      return parsed;
+      return {
+        xp: 50,
+        level: 1,
+        streakDays: 1,
+        lastActiveDate: new Date().toISOString().split('T')[0],
+        gamesPlayed: 0,
+        quizzesCompleted: 0,
+        kanjisLearned: [],
+        kanasMastered: [],
+        unlockedBadges: ['first_step'],
+        ...parsed
+      };
     }
   } catch (err) {
     console.error('Failed to load user stats:', err);

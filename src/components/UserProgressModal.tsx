@@ -170,12 +170,6 @@ export const UserProgressModal: React.FC<UserProgressModalProps> = ({
               <span>Sair da Conta</span>
             </button>
           </div>
-          <button
-            className="flex items-center gap-1 text-xs text-rose-600 hover:text-rose-800 font-semibold cursor-pointer"
-          >
-            <RotateCcw size={13} />
-            <span>Resetar Progresso</span>
-          </button>
 
           <button
             type="button"

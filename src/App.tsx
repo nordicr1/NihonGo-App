@@ -24,6 +24,15 @@ export default function App() {
   const [user, setUser] = useState<any>(null);
   const [loadingAuth, setLoadingAuth] = useState(true);
 
+  const [currentTab, setCurrentTab] = useState<
+    'hub' | 'kana' | 'kanji' | 'grammar' | 'tests' | 'games' | 'analyzer' | 'sensei' | 'drawing' | 'conversation'
+  >('hub');
+  const [selectedJlpt, setSelectedJlpt] = useState<JLPTLevel>('N5');
+  const [userStats, setUserStats] = useState<UserStats>(loadUserStats);
+  const [isStatsOpen, setIsStatsOpen] = useState(false);
+  const [isSenseiOpen, setIsSenseiOpen] = useState(false);
+  const [xpToast, setXpToast] = useState<{ amount: number; reason: string } | null>(null);
+
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
       setUser(currentUser);
@@ -31,6 +40,11 @@ export default function App() {
     });
     return () => unsubscribe();
   }, []);
+
+  // Save stats on update
+  useEffect(() => {
+    saveUserStats(userStats);
+  }, [userStats]);
 
   if (loadingAuth) {
     return (
@@ -43,20 +57,6 @@ export default function App() {
   if (!user) {
     return <LoginScreen />;
   }
-
-  const [currentTab, setCurrentTab] = useState<
-    'hub' | 'kana' | 'kanji' | 'grammar' | 'tests' | 'games' | 'analyzer' | 'sensei' | 'drawing' | 'conversation'
-  >('hub');
-  const [selectedJlpt, setSelectedJlpt] = useState<JLPTLevel>('N5');
-  const [userStats, setUserStats] = useState<UserStats>(loadUserStats);
-  const [isStatsOpen, setIsStatsOpen] = useState(false);
-  const [isSenseiOpen, setIsSenseiOpen] = useState(false);
-  const [xpToast, setXpToast] = useState<{ amount: number; reason: string } | null>(null);
-
-  // Save stats on update
-  useEffect(() => {
-    saveUserStats(userStats);
-  }, [userStats]);
 
   const handleGainXp = (amount: number, reason: string) => {
     setUserStats((prev) => {

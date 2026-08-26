@@ -33,7 +33,7 @@ export function LoginScreen() {
       } else if (err.code === 'auth/invalid-email') {
         setError('Formato de email inválido.');
       } else {
-        setError('Ocorreu um erro ao conectar. Tente novamente.');
+        setError('Ocorreu um erro: ' + err.message);
       }
     } finally {
       setLoading(false);
