@@ -1,5 +1,8 @@
 import React from 'react';
 import { UserStats } from '../types';
+import { auth } from '../config/firebase';
+import { signOut } from 'firebase/auth';
+import { LogOut } from 'lucide-react';
 import { INITIAL_BADGES, getLevelTitle } from '../utils/storage';
 import { Trophy, Flame, Zap, Award, CheckCircle2, Lock, X, RotateCcw } from 'lucide-react';
 
@@ -148,10 +151,26 @@ export const UserProgressModal: React.FC<UserProgressModalProps> = ({
         </div>
 
         {/* Footer */}
-        <div className="p-4 bg-stone-50 border-t border-stone-200 flex items-center justify-between">
+                <div className="p-4 bg-stone-50 border-t border-stone-200 flex items-center justify-between">
+          <div className="flex gap-4">
+            <button
+              type="button"
+              onClick={onResetStats}
+              className="flex items-center gap-1 text-xs text-rose-600 hover:text-rose-800 font-semibold cursor-pointer"
+            >
+              <RotateCcw size={13} />
+              <span>Resetar Progresso</span>
+            </button>
+            <button
+              type="button"
+              onClick={() => signOut(auth)}
+              className="flex items-center gap-1 text-xs text-stone-500 hover:text-stone-800 font-semibold cursor-pointer"
+            >
+              <LogOut size={13} />
+              <span>Sair da Conta</span>
+            </button>
+          </div>
           <button
-            type="button"
-            onClick={onResetStats}
             className="flex items-center gap-1 text-xs text-rose-600 hover:text-rose-800 font-semibold cursor-pointer"
           >
             <RotateCcw size={13} />

@@ -1,4 +1,9 @@
 import React, { useState, useEffect } from 'react';
+import { auth } from './config/firebase';
+import { onAuthStateChanged } from 'firebase/auth';
+import { LoginScreen } from './components/LoginScreen';
+import { Loader2 } from 'lucide-react';
+
 import { JLPTLevel, UserStats } from './types';
 import { loadUserStats, saveUserStats, calculateLevel } from './utils/storage';
 import { Header } from './components/Header';
@@ -16,6 +21,29 @@ import { ConversationHub } from './components/ConversationHub';
 import { Sparkles, Bot, Zap } from 'lucide-react';
 
 export default function App() {
+  const [user, setUser] = useState<any>(null);
+  const [loadingAuth, setLoadingAuth] = useState(true);
+
+  useEffect(() => {
+    const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
+      setUser(currentUser);
+      setLoadingAuth(false);
+    });
+    return () => unsubscribe();
+  }, []);
+
+  if (loadingAuth) {
+    return (
+      <div className="min-h-screen bg-stone-900 flex items-center justify-center">
+        <Loader2 size={48} className="text-rose-500 animate-spin" />
+      </div>
+    );
+  }
+
+  if (!user) {
+    return <LoginScreen />;
+  }
+
   const [currentTab, setCurrentTab] = useState<
     'hub' | 'kana' | 'kanji' | 'grammar' | 'tests' | 'games' | 'analyzer' | 'sensei' | 'drawing' | 'conversation'
   >('hub');
