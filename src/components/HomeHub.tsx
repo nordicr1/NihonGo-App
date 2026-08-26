@@ -52,6 +52,11 @@ const JAPANESE_TIPS = [
 
 const CHANGELOG = [
   {
+    date: '25 Ago 2026',
+    title: 'Módulo de Conversação & Prática de Fala 🎙️',
+    desc: 'Lançamos a aba de Conversação! Pratique centenas de frases reais (do N5 ao N1) e use o novo Validador de Pronúncia com Microfone para checar se sua fala está correta. Incluímos mais de 90 frases exclusivas focadas em gramática, adjetivos e estruturas de todos os níveis do JLPT.',
+  },
+  {
     date: '22 Ago 2026',
     title: 'Validador de Ordem e Traços de Kanji',
     desc: 'Adicionamos um validador de escrita (caligrafia) rigoroso que verifica a quantidade correta de traços, guiando você a escrever Kanjis e Letras da forma correta.',
