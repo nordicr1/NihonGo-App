@@ -28,7 +28,7 @@ export const Header: React.FC<HeaderProps> = ({
     <header className="sticky top-0 z-40 bg-stone-900/95 text-stone-100 backdrop-blur border-b border-stone-800 shadow-md">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         {/* Top bar: Brand & Stats */}
-        <div className="flex items-center justify-between py-3 border-b border-stone-800/80 gap-4">
+        <div className="flex flex-wrap items-center justify-between py-3 border-b border-stone-800/80 gap-4">
           <div className="flex items-center gap-3">
             <div 
               onClick={() => onTabChange('hub')} 
@@ -125,11 +125,12 @@ export const Header: React.FC<HeaderProps> = ({
         </div>
 
         {/* Navigation Tabs */}
-        <nav className="flex flex-wrap items-center gap-1 sm:gap-2 py-2 text-xs sm:text-sm font-medium justify-center w-full">
+        <nav className="flex overflow-x-auto pb-2 -mb-2 items-center gap-2 py-2 text-xs sm:text-sm font-medium w-full scrollbar-none snap-x" style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
+          <style>{`nav::-webkit-scrollbar { display: none; }`}</style>
           <button
             type="button"
             onClick={() => onTabChange('hub')}
-            className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg transition-all whitespace-nowrap cursor-pointer ${
+            className={`shrink-0 snap-center flex items-center gap-1.5 px-3 py-1.5 rounded-lg transition-all whitespace-nowrap cursor-pointer ${
               currentTab === 'hub'
                 ? 'bg-rose-600 text-white font-semibold shadow-sm'
                 : 'text-stone-300 hover:text-white hover:bg-stone-800'
@@ -142,7 +143,7 @@ export const Header: React.FC<HeaderProps> = ({
           <button
             type="button"
             onClick={() => onTabChange('kana')}
-            className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg transition-all whitespace-nowrap cursor-pointer ${
+            className={`shrink-0 snap-center flex items-center gap-1.5 px-3 py-1.5 rounded-lg transition-all whitespace-nowrap cursor-pointer ${
               currentTab === 'kana'
                 ? 'bg-rose-600 text-white font-semibold shadow-sm'
                 : 'text-stone-300 hover:text-white hover:bg-stone-800'
@@ -155,7 +156,7 @@ export const Header: React.FC<HeaderProps> = ({
           <button
             type="button"
             onClick={() => onTabChange('kanji')}
-            className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg transition-all whitespace-nowrap cursor-pointer ${
+            className={`shrink-0 snap-center flex items-center gap-1.5 px-3 py-1.5 rounded-lg transition-all whitespace-nowrap cursor-pointer ${
               currentTab === 'kanji'
                 ? 'bg-rose-600 text-white font-semibold shadow-sm'
                 : 'text-stone-300 hover:text-white hover:bg-stone-800'
@@ -168,7 +169,7 @@ export const Header: React.FC<HeaderProps> = ({
                     <button
             type="button"
             onClick={() => onTabChange('conversation')}
-            className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg transition-all whitespace-nowrap cursor-pointer ${
+            className={`shrink-0 snap-center flex items-center gap-1.5 px-3 py-1.5 rounded-lg transition-all whitespace-nowrap cursor-pointer ${
               currentTab === 'conversation'
                 ? 'bg-rose-600 text-white font-semibold shadow-sm'
                 : 'text-stone-300 hover:text-white hover:bg-stone-800'
@@ -181,7 +182,7 @@ export const Header: React.FC<HeaderProps> = ({
           <button
             type="button"
             onClick={() => onTabChange('grammar')}
-            className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg transition-all whitespace-nowrap cursor-pointer ${
+            className={`shrink-0 snap-center flex items-center gap-1.5 px-3 py-1.5 rounded-lg transition-all whitespace-nowrap cursor-pointer ${
               currentTab === 'grammar'
                 ? 'bg-rose-600 text-white font-semibold shadow-sm'
                 : 'text-stone-300 hover:text-white hover:bg-stone-800'
@@ -194,7 +195,7 @@ export const Header: React.FC<HeaderProps> = ({
           <button
             type="button"
             onClick={() => onTabChange('tests')}
-            className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg transition-all whitespace-nowrap cursor-pointer ${
+            className={`shrink-0 snap-center flex items-center gap-1.5 px-3 py-1.5 rounded-lg transition-all whitespace-nowrap cursor-pointer ${
               currentTab === 'tests'
                 ? 'bg-emerald-600 text-white font-semibold shadow-sm'
                 : 'text-stone-300 hover:text-white hover:bg-stone-800'
@@ -207,7 +208,7 @@ export const Header: React.FC<HeaderProps> = ({
           <button
             type="button"
             onClick={() => onTabChange('drawing')}
-            className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg transition-all whitespace-nowrap cursor-pointer ${
+            className={`shrink-0 snap-center flex items-center gap-1.5 px-3 py-1.5 rounded-lg transition-all whitespace-nowrap cursor-pointer ${
               currentTab === 'drawing'
                 ? 'bg-rose-500 text-white font-semibold shadow-sm'
                 : 'text-stone-300 hover:text-white hover:bg-stone-800'
@@ -220,7 +221,7 @@ export const Header: React.FC<HeaderProps> = ({
           <button
             type="button"
             onClick={() => onTabChange('games')}
-            className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg transition-all whitespace-nowrap cursor-pointer ${
+            className={`shrink-0 snap-center flex items-center gap-1.5 px-3 py-1.5 rounded-lg transition-all whitespace-nowrap cursor-pointer ${
               currentTab === 'games'
                 ? 'bg-rose-600 text-white font-semibold shadow-sm'
                 : 'text-stone-300 hover:text-white hover:bg-stone-800'
@@ -233,7 +234,7 @@ export const Header: React.FC<HeaderProps> = ({
           <button
             type="button"
             onClick={() => onTabChange('analyzer')}
-            className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg transition-all whitespace-nowrap cursor-pointer ${
+            className={`shrink-0 snap-center flex items-center gap-1.5 px-3 py-1.5 rounded-lg transition-all whitespace-nowrap cursor-pointer ${
               currentTab === 'analyzer'
                 ? 'bg-rose-600 text-white font-semibold shadow-sm'
                 : 'text-stone-300 hover:text-white hover:bg-stone-800'
