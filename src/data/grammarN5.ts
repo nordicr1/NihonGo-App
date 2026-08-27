@@ -32,32 +32,74 @@ export const GRAMMAR_N5: GrammarItem[] = [
     ]
   },
   {
-    id: 'g_n5_2',
-    pattern: 'Partículas Principais (を, に, で, へ, と, も, が, から, まで)',
-    titlePt: 'Guia Completo de Partículas Essenciais (助詞)',
+    id: 'g_n5_2_1',
+    pattern: 'Partículas Básicas: は (wa), が (ga), を (o), も (mo)',
+    titlePt: 'Partículas (Parte 1): Tópico, Sujeito e Objeto',
     jlpt: 'N5',
     category: 'Partículas',
-    formationFormula: '[Substantivo] + [Partícula] + [Verbo / Predicado]',
-    explanationPt: 'As partículas são sufixos gramaticais fundamentais no japonês que conectam palavras e definem seu papel na oração.',
-    keyRulePt: '• を (o): Marca o Objeto Direto da ação (本を読む - ler livro).\n• に (ni): Destino exato, tempo pontual (7時に) ou localização estática (部屋にいる).\n• で (de): Local de ação dinâmica (学校で勉強する) ou meio/instrumento (バスで行く).\n• へ (e): Direção geral do movimento (日本へ行く).\n• と (to): Conjunção "e" e companhia "com" (友達と).\n• も (mo): "Também / Nem" (substitui は, が e を).\n• が (ga): Sujeito ativo ou foco de identificação.\n• から / まで (kara / made): "De / A partir de" e "Até".',
+    formationFormula: '[Substantivo] + は / が / を / も + [Predicado]',
+    explanationPt: 'As partículas são o "coração" da gramática japonesa. Elas indicam qual o papel da palavra dentro da frase (se é o sujeito, o objeto, etc.). Esta primeira parte cobre as partículas essenciais de identificação.',
+    keyRulePt: '• は (wa): Marca o Tópico (sobre o que estamos falando). Ex: 私は学生です (Eu sou estudante).\n• が (ga): Marca o Sujeito da ação ou o foco de uma nova informação (quem fez algo). Ex: 雨が降る (A chuva cai).\n• を (o): Marca o Objeto Direto (a coisa/alvo que sofre a ação). Ex: 本を読む (Ler livro).\n• も (mo): Significa "Também". Ele substitui as partículas は, が e を. Ex: 私も行く (Eu também vou).',
     examples: [
       {
-        jp: 'レストランで寿司を食べます。',
-        reading: 'レストラン で すし を たべます。',
-        romaji: 'Resutoran de sushi o tabemasu.',
-        meaningPt: 'Como sushi no restaurante.'
+        jp: '私はりんごを食べます。',
+        reading: 'わたし は りんご を たべます。',
+        romaji: 'Watashi wa ringo o tabemasu.',
+        meaningPt: 'Quanto a mim (Tópico は), eu como maçã (Objeto を).'
       },
       {
-        jp: '朝八時に学校へ行きます。',
-        reading: 'あさ はちじ に がっこう へ いきます。',
-        romaji: 'Asa hachiji ni gakkou e ikimasu.',
-        meaningPt: 'Vou para a escola às 8h da manhã.'
+        jp: '田中さんも行きます。',
+        reading: 'たなかさん も いきます。',
+        romaji: 'Tanaka-san mo ikimasu.',
+        meaningPt: 'O Sr. Tanaka também vai.'
+      }
+    ]
+  },
+  {
+    id: 'g_n5_2_2',
+    pattern: 'Partículas de Local: に (ni), で (de), へ (e)',
+    titlePt: 'Partículas (Parte 2): Local e Direção',
+    jlpt: 'N5',
+    category: 'Partículas',
+    formationFormula: '[Local / Meio] + に / で / へ + [Verbo]',
+    explanationPt: 'Estas partículas são usadas para indicar onde uma ação acontece, para onde você está indo, ou com qual ferramenta algo é feito.',
+    keyRulePt: '• に (ni): Indica um destino exato (日本に行く - ir ao Japão), um local estático (部屋にいる - estar no quarto) ou um tempo pontual (7時に - às 7h).\n• で (de): Indica o local onde uma ação ocorre (学校で勉強する - estudar na escola) ou a ferramenta/meio utilizado (箸で食べる - comer com hashi; バスで行く - ir de ônibus).\n• へ (e): Indica a direção geral de um movimento. É parecido com "ni", mas enfatiza o trajeto/direção (家へ帰る - voltar em direção a casa).',
+    examples: [
+      {
+        jp: '公園で遊びます。',
+        reading: 'こうえん で あそびます。',
+        romaji: 'Kouen de asobimasu.',
+        meaningPt: 'Brincar no parque (Ação no local - で).'
       },
       {
-        jp: '九時から五時まで働きます。',
-        reading: 'くじ から ごじ まで はたらきます。',
-        romaji: 'Kuji kara goji made hatarakimasu.',
-        meaningPt: 'Trabalho das 9h às 17h.'
+        jp: '三時に学校へ行きます。',
+        reading: 'さんじ に がっこう へ いきます。',
+        romaji: 'Sanji ni gakkou e ikimasu.',
+        meaningPt: 'Vou em direção à escola (へ) às 3 horas (に).'
+      }
+    ]
+  },
+  {
+    id: 'g_n5_2_3',
+    pattern: 'Partículas de Ligação: と (to), から (kara), まで (made)',
+    titlePt: 'Partículas (Parte 3): Ligação e Períodos',
+    jlpt: 'N5',
+    category: 'Partículas',
+    formationFormula: '[Substantivo] + と / から / まで',
+    explanationPt: 'Aqui veremos as partículas usadas para conectar múltiplos itens, indicar companhias e determinar o início e o fim de algo (no tempo ou no espaço).',
+    keyRulePt: '• と (to): Funciona como a conjunção "e" ao listar substantivos (犬と猫 - cachorro e gato) ou como "com" para indicar companhia (友達と行く - ir com o amigo).\n• から (kara): Indica o ponto de origem, equivalente a "de" ou "a partir de" (ここから - a partir daqui; 9時から - a partir das 9h).\n• まで (made): Indica o limite ou fim, equivalente a "até" (東京まで - até Tóquio; 5時まで - até as 5h).',
+    examples: [
+      {
+        jp: '友達と東京から大阪まで行きます。',
+        reading: 'ともだち と とうきょう から おおさか まで いきます。',
+        romaji: 'Tomodachi to Toukyou kara Oosaka made ikimasu.',
+        meaningPt: 'Vou com meu amigo de Tóquio até Osaka.'
+      },
+      {
+        jp: 'パンと牛乳を買いました。',
+        reading: 'パン と ぎゅうにゅう を かいました。',
+        romaji: 'Pan to gyuunyuu o kaimashita.',
+        meaningPt: 'Comprei pão e leite.'
       }
     ]
   },
@@ -364,6 +406,198 @@ export const GRAMMAR_N5: GrammarItem[] = [
         reading: 'としょかん へ ほん を かりに いきました。',
         romaji: 'Toshokan e hon o kari ni ikimashita.',
         meaningPt: 'Fui à biblioteca para pegar livros emprestados.'
+      }
+    ]
+  },
+  {
+    id: 'g_n5_16',
+    pattern: 'あります / います (arimasu / imasu)',
+    titlePt: 'Verbos de Existência: "Há / Existe / Ter"',
+    jlpt: 'N5',
+    category: 'Estruturas Básicas',
+    formationFormula: '[Local] に + [Substantivo] が + あります / います',
+    explanationPt: 'Estes verbos indicam a existência ou posse de algo. A principal diferença é que "arimasu" é usado para coisas inanimadas e plantas, enquanto "imasu" é para pessoas e animais (coisas animadas).',
+    keyRulePt: '• あります (arimasu): Objetos inanimados, plantas, ideias.\n• います (imasu): Pessoas e animais (seres vivos que se movem sozinhos).\n• Partícula に indica o local de existência e が marca o que existe.',
+    examples: [
+      {
+        jp: '机の上に本があります。',
+        reading: 'つくえ の うえ に ほん が あります。',
+        romaji: 'Tsukue no ue ni hon ga arimasu.',
+        meaningPt: 'Há um livro em cima da mesa.'
+      },
+      {
+        jp: '庭に犬がいます。',
+        reading: 'にわ に いぬ が います。',
+        romaji: 'Niwa ni inu ga imasu.',
+        meaningPt: 'Tem um cachorro no quintal.'
+      }
+    ]
+  },
+  {
+    id: 'g_n5_17',
+    pattern: '〜ましょう / 〜ましょうか (~mashou / ~mashou ka)',
+    titlePt: 'Convites e Sugestões: "Vamos... / Que tal...?"',
+    jlpt: 'N5',
+    category: 'Convites & Propostas',
+    formationFormula: '[Raiz do Verbo] + ましょう / ましょうか',
+    explanationPt: 'Usado para propor uma ação em conjunto ("Vamos fazer algo") ou para se oferecer para fazer algo por alguém ("Quer que eu faça?").',
+    keyRulePt: '• ましょう (mashou): Proposta afirmativa (Vamos comer!).\n• ましょうか (mashou ka): Pergunta ou oferecimento gentil (Vamos comer? / Quer que eu carregue isso?).',
+    examples: [
+      {
+        jp: '一緒に昼ご飯を食べましょう。',
+        reading: 'いっしょ に ひるごはん を たべましょう。',
+        romaji: 'Issho ni hirugohan o tabemashou.',
+        meaningPt: 'Vamos almoçar juntos.'
+      },
+      {
+        jp: '窓を開けましょうか。',
+        reading: 'まど を あけましょう か。',
+        romaji: 'Mado o akemashou ka.',
+        meaningPt: 'Quer que eu abra a janela?'
+      }
+    ]
+  },
+  {
+    id: 'g_n5_18',
+    pattern: '〜ませんか (~masen ka)',
+    titlePt: 'Convites Delicados: "Você não quer...?"',
+    jlpt: 'N5',
+    category: 'Convites & Propostas',
+    formationFormula: '[Raiz do Verbo] + ませんか',
+    explanationPt: 'Forma mais polida e indireta de convidar alguém do que usar "mashou". Ao fazer a pergunta na negativa, você dá à pessoa a liberdade de recusar educadamente.',
+    keyRulePt: 'Embora a estrutura seja negativa, o sentido é de um convite: "Você não gostaria de...?"',
+    examples: [
+      {
+        jp: '明日、映画を見に行きませんか。',
+        reading: 'あした、えいが を みに いきませんか。',
+        romaji: 'Ashita, eiga o mini ikimasen ka.',
+        meaningPt: 'Você não quer ir ver um filme amanhã?'
+      },
+      {
+        jp: 'お茶を飲みませんか。',
+        reading: 'おちゃ を のみませんか。',
+        romaji: 'Ocha o nomimasen ka.',
+        meaningPt: 'Não gostaria de tomar um chá?'
+      }
+    ]
+  },
+  {
+    id: 'g_n5_19',
+    pattern: 'から / ので (kara / node)',
+    titlePt: 'Razão e Causa: "Porque / Como..."',
+    jlpt: 'N5',
+    category: 'Causa & Efeito',
+    formationFormula: '[Motivo/Razão] + から / ので + [Consequência]',
+    explanationPt: 'Ambos conectam duas frases para indicar causa e efeito. "Kara" é mais subjetivo e focado na vontade do falante, enquanto "node" soa mais objetivo, suave e educado.',
+    keyRulePt: '• [Frase] + から (Porque): Usado com ordens, opiniões e pedidos pessoais.\n• [Frase] + ので (Como / Visto que): Usado para explicações factuais e desculpas formais (Adjetivos-NA e Substantivos levam な antes do ので).',
+    examples: [
+      {
+        jp: '時間がありませんから、急いでください。',
+        reading: 'じかん が ありません から、いそいで ください。',
+        romaji: 'Jikan ga arimasen kara, isoide kudasai.',
+        meaningPt: 'Porque não temos tempo, por favor, apresse-se.'
+      },
+      {
+        jp: '雨が降っているので、行きません。',
+        reading: 'あめ が ふっている ので、いきません。',
+        romaji: 'Ame ga futte iru node, ikimasen.',
+        meaningPt: 'Como está chovendo, eu não vou.'
+      }
+    ]
+  },
+  {
+    id: 'g_n5_20',
+    pattern: 'が / けれども (ga / keredomo)',
+    titlePt: 'Conjunções de Contraste: "Mas / Porém"',
+    jlpt: 'N5',
+    category: 'Causa & Efeito',
+    formationFormula: '[Frase 1] + が / けれども + [Frase 2]',
+    explanationPt: 'Ligam duas frases com sentido oposto ou contrastante. A partícula が é comum em frases formais com "masu/desu", enquanto "keredomo" (ou suas versões mais curtas "keredo/kedo") é amplamente usado na fala.',
+    keyRulePt: 'Frequentemente usados não apenas para contraste, mas como uma introdução suave antes de fazer um pedido ou fazer uma pergunta.',
+    examples: [
+      {
+        jp: '日本語は難しいですが、面白いです。',
+        reading: 'にほんご は むずかしい です が、おもしろい です。',
+        romaji: 'Nihongo wa muzukashii desu ga, omoshiroi desu.',
+        meaningPt: 'O japonês é difícil, mas é interessante.'
+      },
+      {
+        jp: 'すみませんが、駅はどこですか。',
+        reading: 'すみません が、えき は どこ です か。',
+        romaji: 'Sumimasen ga, eki wa doko desu ka.',
+        meaningPt: 'Com licença (lit. me desculpe, mas...), onde fica a estação?'
+      }
+    ]
+  },
+  {
+    id: 'g_n5_21',
+    pattern: 'Verbo (Dicionário) + つもりです (tsumori desu)',
+    titlePt: 'Intenção e Planos: "Pretendo fazer..."',
+    jlpt: 'N5',
+    category: 'Desejos & Vontades',
+    formationFormula: '[Verbo na Forma Dicionário / NAI] + つもりです',
+    explanationPt: 'Expressa uma intenção forte ou plano que já foi decidido pelo falante na sua mente.',
+    keyRulePt: '• Afirmativa: 行くつもりです (Pretendo ir).\n• Negativa: 行かないつもりです (Pretendo não ir).',
+    examples: [
+      {
+        jp: '来年、日本へ行くつもりです。',
+        reading: 'らいねん、にほん へ いく つもり です。',
+        romaji: 'Rainen, Nihon e iku tsumori desu.',
+        meaningPt: 'Ano que vem, pretendo ir ao Japão.'
+      },
+      {
+        jp: '今日は何もしないつもりです。',
+        reading: 'きょう は なにも しない つもり です。',
+        romaji: 'Kyou wa nanimo shinai tsumori desu.',
+        meaningPt: 'Hoje, pretendo não fazer nada.'
+      }
+    ]
+  },
+  {
+    id: 'g_n5_22',
+    pattern: 'だけ / しか (dake / shika)',
+    titlePt: 'Limitação: "Somente / Apenas / Nada além de"',
+    jlpt: 'N5',
+    category: 'Partículas',
+    formationFormula: '[Substantivo] + だけ (afirmativa) / しか (com verbo negativo)',
+    explanationPt: 'Palavras usadas para delimitar quantidades ou opções. A diferença principal está na construção da frase ao seu redor.',
+    keyRulePt: '• だけ (dake) = Pode ser usado com verbos afirmativos. Ex: 100円だけあります (Tenho apenas 100 ienes).\n• しか (shika) = OBRIGATORIAMENTE pede o verbo na negativa, carregando um tom de escassez ou insuficiência. Ex: 100円しかありません (Não tenho nada além de 100 ienes).',
+    examples: [
+      {
+        jp: '日曜日だけ休みます。',
+        reading: 'にちようび だけ やすみます。',
+        romaji: 'Nichiyoubi dake yasumimasu.',
+        meaningPt: 'Eu descanso apenas no domingo.'
+      },
+      {
+        jp: '水しか飲みませんでした。',
+        reading: 'みず しか のみません でした。',
+        romaji: 'Mizu shika nomimasen deshita.',
+        meaningPt: 'Não bebi nada além de água (Só bebi água).'
+      }
+    ]
+  },
+  {
+    id: 'g_n5_23',
+    pattern: 'もう / まだ (mou / mada)',
+    titlePt: 'Tempo: "Já / Ainda não"',
+    jlpt: 'N5',
+    category: 'Marcadores de Tempo',
+    formationFormula: 'もう + [Passado] / まだ + [Negativa ou Forma-TE います]',
+    explanationPt: 'Advérbios usados para expressar a conclusão de uma ação ou um estado que permanece incompleto.',
+    keyRulePt: '• もう (mou) + Passado: A ação já foi concluída. (Já comi).\n• まだ (mada) + Verbo Negativo / Forma-TE います: A ação ainda não aconteceu ou o estado continua ocorrendo (Ainda não comi / Ainda está chovendo).',
+    examples: [
+      {
+        jp: 'もう宿題をしました。',
+        reading: 'もう しゅくだい を しました。',
+        romaji: 'Mou shukudai o shimashita.',
+        meaningPt: 'Eu já fiz a lição de casa.'
+      },
+      {
+        jp: '田中さんはまだ来ていません。',
+        reading: 'たなかさん は まだ きて いません。',
+        romaji: 'Tanaka-san wa mada kite imasen.',
+        meaningPt: 'O Sr. Tanaka ainda não chegou.'
       }
     ]
   }
