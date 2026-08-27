@@ -415,17 +415,17 @@ export const HomeHub: React.FC<HomeHubProps> = ({
       </div>
 
       {/* Didactic Tip of the Day */}
-      <div className="bg-amber-50/80 border border-amber-200/80 rounded-3xl p-6 sm:p-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
-        <div className="space-y-2 max-w-2xl">
-          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-200/70 text-amber-900 text-xs font-bold uppercase tracking-wider">
+      <div className="bg-gradient-to-br from-amber-50 to-orange-50 border border-amber-200 rounded-3xl p-6 sm:p-10 flex flex-col items-center text-center justify-center gap-5 shadow-sm">
+        <div className="space-y-4 max-w-3xl flex flex-col items-center">
+          <div className="inline-flex items-center justify-center gap-1.5 px-4 py-1.5 rounded-full bg-amber-200/70 border border-amber-300 text-amber-900 text-[10px] sm:text-xs font-black uppercase tracking-wider shadow-sm">
             <Sparkles size={14} />
-            <span>Dica de Ouro de Japonês (日本語のヒント)</span>
+            <span>Dica de Ouro de Japonês <span className="opacity-75 hidden sm:inline">(日本語のヒント)</span></span>
           </div>
-          <h3 className="text-lg sm:text-xl font-black text-amber-950">
+          <h3 className="text-xl sm:text-2xl lg:text-3xl font-black text-amber-950 leading-tight">
             {currentTip.title}
           </h3>
           <p 
-            className="text-xs sm:text-sm text-amber-900 leading-relaxed"
+            className="text-sm sm:text-base text-amber-900/90 leading-relaxed max-w-2xl"
             dangerouslySetInnerHTML={{ __html: currentTip.content }}
           />
         </div>
@@ -433,7 +433,7 @@ export const HomeHub: React.FC<HomeHubProps> = ({
         <button
           type="button"
           onClick={() => onTabChange(currentTip.tab)}
-          className="px-5 py-3 bg-amber-900 text-white font-bold text-xs sm:text-sm rounded-2xl hover:bg-amber-800 transition cursor-pointer shrink-0 shadow"
+          className="mt-2 w-full sm:w-auto px-8 py-3.5 bg-amber-900 text-white font-bold text-sm sm:text-base rounded-2xl hover:bg-amber-800 hover:scale-105 active:scale-95 transition-all cursor-pointer shadow-lg shadow-amber-900/20"
         >
           {currentTip.buttonText}
         </button>
