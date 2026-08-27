@@ -102,52 +102,74 @@ export const SentenceAnalyzer: React.FC<{ onGainXp: (amt: number, reason: string
       </div>
 
       {/* Input Box & Presets */}
-      <div className="bg-white rounded-2xl p-6 border border-stone-200 shadow-sm space-y-4">
-        <div className="space-y-2">
-          <label className="text-xs font-bold uppercase tracking-wider text-stone-500">
+      <div className="bg-white rounded-3xl p-6 sm:p-10 border border-stone-200 shadow-sm space-y-6 flex flex-col items-center text-center">
+        <div className="w-full max-w-3xl space-y-4">
+          <label className="text-xs sm:text-sm font-black uppercase tracking-wider text-stone-500 block">
             Digite ou cole uma frase em Japonês:
           </label>
-          <div className="flex gap-2 flex-col sm:flex-row">
+          <div className="flex flex-col gap-3">
             <input
               type="text"
               value={inputText}
               onChange={(e) => setInputText(e.target.value)}
               placeholder="Ex: 私は日本語を勉強しています。"
-              className="flex-1 px-4 py-3 text-base bg-stone-50 border border-stone-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-purple-500 focus:bg-white transition"
+              className="w-full px-5 py-4 text-center text-base sm:text-lg bg-stone-50 border-2 border-stone-200 rounded-2xl focus:outline-none focus:border-purple-500 focus:bg-white transition-all shadow-inner"
             />
             <button
               type="button"
               onClick={() => handleAnalyze()}
               disabled={isLoading}
-              className="px-6 py-3 bg-purple-600 hover:bg-purple-500 text-white font-bold text-sm rounded-xl shadow-md transition disabled:opacity-50 flex items-center justify-center gap-2 cursor-pointer whitespace-nowrap"
+              className="w-full py-4 bg-purple-600 hover:bg-purple-500 text-white font-black text-sm sm:text-base rounded-2xl shadow-lg shadow-purple-600/30 transition-all disabled:opacity-50 flex items-center justify-center gap-2 cursor-pointer hover:scale-[1.02] active:scale-[0.98]"
             >
-              <Sparkles size={16} />
-              <span>{isLoading ? 'Analisando...' : 'Analisar Frase'}</span>
+              {isLoading ? (
+                <>
+                  <div className="animate-spin rounded-full h-5 w-5 border-2 border-purple-200 border-t-white"></div>
+                  <span>Processando com IA...</span>
+                </>
+              ) : (
+                <>
+                  <Sparkles size={18} />
+                  <span>Analisar Frase</span>
+                </>
+              )}
             </button>
           </div>
         </div>
 
-        {/* Presets */}
-        <div className="space-y-1.5 pt-1">
-          <span className="text-[11px] font-bold text-stone-400 uppercase">
-            Ou escolha um exemplo didático pronto:
-          </span>
-          <div className="flex flex-wrap gap-2">
-            {PRESET_SENTENCES.map((p, i) => (
-              <button
-                key={i}
-                type="button"
-                onClick={() => {
-                  setInputText(p);
-                  handleAnalyze(p);
-                }}
-                className="px-3 py-1.5 bg-stone-100 hover:bg-purple-50 hover:text-purple-700 hover:border-purple-200 border border-stone-200 rounded-lg text-xs font-medium text-stone-700 transition cursor-pointer"
-              >
-                {p}
-              </button>
-            ))}
+        {/* Loading Indicator */}
+        {isLoading && (
+          <div className="w-full max-w-3xl py-4 flex flex-col items-center justify-center space-y-2 animate-pulse">
+            <div className="text-purple-600 font-bold text-sm sm:text-base flex items-center gap-2">
+              <Search className="animate-bounce" size={18} />
+              O Sensei está analisando a estrutura gramatical...
+            </div>
+            <p className="text-xs text-stone-400">Isso pode levar alguns segundos dependendo da complexidade da frase.</p>
           </div>
-        </div>
+        )}
+
+        {/* Presets */}
+        {!isLoading && (
+          <div className="w-full max-w-3xl space-y-3 pt-4 border-t border-stone-100">
+            <span className="text-[11px] sm:text-xs font-bold text-stone-400 uppercase tracking-wider block">
+              Ou escolha um exemplo didático pronto:
+            </span>
+            <div className="flex flex-col gap-2">
+              {PRESET_SENTENCES.map((p, i) => (
+                <button
+                  key={i}
+                  type="button"
+                  onClick={() => {
+                    setInputText(p);
+                    handleAnalyze(p);
+                  }}
+                  className="w-full px-4 py-3 bg-stone-50 hover:bg-purple-50 hover:text-purple-700 hover:border-purple-200 border border-stone-200 rounded-xl text-xs sm:text-sm font-medium text-stone-600 transition-all cursor-pointer shadow-sm hover:shadow"
+                >
+                  {p}
+                </button>
+              ))}
+            </div>
+          </div>
+        )}
       </div>
 
       {/* Analysis Output Result */}
