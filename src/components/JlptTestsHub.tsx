@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { JLPTLevel } from '../types';
 import { Layers, HelpCircle, CheckCircle, XCircle, ArrowRight, RotateCcw } from 'lucide-react';
 import { JLPT_N5_TEST, JLPTQuestion } from '../data/jlptN5TestData';
@@ -19,6 +19,50 @@ export const JlptTestsHub: React.FC<JlptTestsHubProps> = ({
 }) => {
   const levels: JLPTLevel[] = ['N5', 'N4', 'N3', 'N2', 'N1'];
   
+
+  const [testQuestions, setTestQuestions] = useState<JLPTQuestion[]>([]);
+
+  // Shuffle Helper
+  const shuffleArray = <T,>(array: T[]): T[] => {
+    const newArr = [...array];
+    for (let i = newArr.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [newArr[i], newArr[j]] = [newArr[j], newArr[i]];
+    }
+    return newArr;
+  };
+
+  const prepareTest = () => {
+    // Randomize Questions
+    const shuffledQuestions = shuffleArray(testQuestions);
+    
+    // Randomize Options
+    const preparedQuestions = shuffledQuestions.map((q: JLPTQuestion) => {
+      const correctAnswerStr = q.options[q.correctAnswer];
+      const shuffledOptions = shuffleArray(q.options);
+      const newCorrectIdx = shuffledOptions.indexOf(correctAnswerStr);
+      
+      return {
+        ...q,
+        options: shuffledOptions,
+        correctAnswer: newCorrectIdx
+      };
+    });
+    
+    setTestQuestions(preparedQuestions);
+    setCurrentQuestionIdx(0);
+    setSelectedOption(null);
+    setShowResult(false);
+    setScore(0);
+    setIsTestFinished(false);
+  };
+
+  useEffect(() => {
+    if (selectedJlpt === 'N5') {
+      prepareTest();
+    }
+  }, [selectedJlpt]);
+
   // Test State
   const [currentQuestionIdx, setCurrentQuestionIdx] = useState(0);
   const [selectedOption, setSelectedOption] = useState<number | null>(null);
@@ -27,11 +71,9 @@ export const JlptTestsHub: React.FC<JlptTestsHubProps> = ({
   const [isTestFinished, setIsTestFinished] = useState(false);
 
   const resetTest = () => {
-    setCurrentQuestionIdx(0);
-    setSelectedOption(null);
-    setShowResult(false);
-    setScore(0);
-    setIsTestFinished(false);
+    if (selectedJlpt === 'N5') {
+      prepareTest();
+    }
   };
 
   const handleOptionSelect = (idx: number) => {
@@ -39,7 +81,7 @@ export const JlptTestsHub: React.FC<JlptTestsHubProps> = ({
     setSelectedOption(idx);
     setShowResult(true);
 
-    const question = FULL_N5_TEST[currentQuestionIdx];
+    const question = testQuestions[currentQuestionIdx];
     if (idx === question.correctAnswer) {
       setScore(prev => prev + 1);
       onGainXp(15, 'Acertou questão do Simulado N5!');
@@ -47,7 +89,7 @@ export const JlptTestsHub: React.FC<JlptTestsHubProps> = ({
   };
 
   const nextQuestion = () => {
-    if (currentQuestionIdx < FULL_N5_TEST.length - 1) {
+    if (currentQuestionIdx < testQuestions.length - 1) {
       setCurrentQuestionIdx(prev => prev + 1);
       setSelectedOption(null);
       setShowResult(false);
@@ -56,6 +98,11 @@ export const JlptTestsHub: React.FC<JlptTestsHubProps> = ({
       onGainXp(150, 'Concluiu o Simulado Oficial N5!');
     }
   };
+
+
+  if (selectedJlpt === 'N5' && testQuestions.length === 0) {
+    return <div className="p-10 text-center">Carregando simulado...</div>;
+  }
 
   // Render question text with highlight
   const renderQuestion = (q: JLPTQuestion) => {
@@ -130,7 +177,7 @@ export const JlptTestsHub: React.FC<JlptTestsHubProps> = ({
                 <CheckCircle size={40} />
               </div>
               <h3 className="text-2xl font-black text-stone-900">Simulado N5 Concluído!</h3>
-              <p className="text-stone-600 text-lg">Você acertou <span className="font-bold text-teal-600">{score}</span> de {FULL_N5_TEST.length} questões.</p>
+              <p className="text-stone-600 text-lg">Você acertou <span className="font-bold text-teal-600">{score}</span> de {testQuestions.length} questões.</p>
               
               <button 
                 onClick={resetTest}
@@ -143,22 +190,22 @@ export const JlptTestsHub: React.FC<JlptTestsHubProps> = ({
           ) : (
             <div className="space-y-8">
               <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 text-sm font-bold text-stone-400">
-                <span className="uppercase tracking-wider">Questão {currentQuestionIdx + 1} de {FULL_N5_TEST.length}</span>
+                <span className="uppercase tracking-wider">Questão {currentQuestionIdx + 1} de {testQuestions.length}</span>
                 <span className="bg-stone-100 px-3 py-1 rounded-full text-stone-600">
-                  {FULL_N5_TEST[currentQuestionIdx].type === 'vocab_reading' ? '文字・語彙 (Leitura)' :
-                   FULL_N5_TEST[currentQuestionIdx].type === 'vocab_kanji' ? '文字・語彙 (Kanji)' :
-                   FULL_N5_TEST[currentQuestionIdx].type === 'grammar' ? '文法 (Gramática)' :
+                  {testQuestions[currentQuestionIdx].type === 'vocab_reading' ? '文字・語彙 (Leitura)' :
+                   testQuestions[currentQuestionIdx].type === 'vocab_kanji' ? '文字・語彙 (Kanji)' :
+                   testQuestions[currentQuestionIdx].type === 'grammar' ? '文法 (Gramática)' :
                    '読解 (Interpretação)'}
                 </span>
               </div>
 
               <div className="p-6 sm:p-8 bg-stone-50 rounded-2xl border border-stone-200 text-left sm:text-center shadow-inner">
-                {renderQuestion(FULL_N5_TEST[currentQuestionIdx])}
+                {renderQuestion(testQuestions[currentQuestionIdx])}
               </div>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                {FULL_N5_TEST[currentQuestionIdx].options.map((opt, idx) => {
-                  const isCorrect = FULL_N5_TEST[currentQuestionIdx].correctAnswer === idx;
+                {testQuestions[currentQuestionIdx].options.map((opt, idx) => {
+                  const isCorrect = testQuestions[currentQuestionIdx].correctAnswer === idx;
                   const isSelected = selectedOption === idx;
                   
                   let btnClass = "bg-white border-2 border-stone-200 hover:border-teal-400 text-stone-700";
@@ -192,11 +239,11 @@ export const JlptTestsHub: React.FC<JlptTestsHubProps> = ({
                 <div className="mt-8 p-6 bg-stone-800 text-white rounded-2xl animate-fadeIn space-y-4">
                   <div>
                     <span className="text-xs uppercase font-bold text-stone-400 tracking-wider">Tradução</span>
-                    <p className="text-stone-100 font-medium">{FULL_N5_TEST[currentQuestionIdx].translation}</p>
+                    <p className="text-stone-100 font-medium">{testQuestions[currentQuestionIdx].translation}</p>
                   </div>
                   <div>
                     <span className="text-xs uppercase font-bold text-stone-400 tracking-wider">Explicação</span>
-                    <p className="text-stone-300 text-sm">{FULL_N5_TEST[currentQuestionIdx].explanation}</p>
+                    <p className="text-stone-300 text-sm">{testQuestions[currentQuestionIdx].explanation}</p>
                   </div>
                   
                   <div className="pt-4 flex justify-end">
