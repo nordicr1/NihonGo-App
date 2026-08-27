@@ -52,6 +52,11 @@ const JAPANESE_TIPS = [
 
 const CHANGELOG = [
   {
+    date: '26 Ago 2026',
+    title: 'Super Expansão da Gramática (N5 ao N1) 📖',
+    desc: 'Adicionamos dezenas de novos tópicos gramaticais aprofundados para todos os níveis do JLPT! Desde explicações detalhadas sobre as partículas do N5 até as estruturas complexas e literárias do N1. Cada regra vem acompanhada de fórmulas, explicações, regras cruciais e exemplos práticos.',
+  },
+  {
     date: '25 Ago 2026',
     title: 'Módulo de Conversação & Prática de Fala 🎙️',
     desc: 'Lançamos a aba de Conversação! Pratique centenas de frases reais (do N5 ao N1) e use o novo Validador de Pronúncia com Microfone para checar se sua fala está correta. Incluímos mais de 90 frases exclusivas focadas em gramática, adjetivos e estruturas de todos os níveis do JLPT.',
