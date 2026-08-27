@@ -341,6 +341,7 @@ export const GRAMMAR_N4: GrammarItem[] = [
         romaji: 'Gogo kara ame ga furu kamoshiremasen.',
         meaningPt: 'Talvez chova a partir da tarde.'
       }
+    ]
   },
   {
     id: 'g_n4_16',

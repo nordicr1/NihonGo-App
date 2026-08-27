@@ -329,6 +329,7 @@ export const GRAMMAR_N3: GrammarItem[] = [
         romaji: 'Kenkou desae areba, nan demo dekimasu.',
         meaningPt: 'Contanto que você tenha saúde, você pode fazer qualquer coisa.'
       }
+    ]
   },
   {
     id: 'g_n3_16',
