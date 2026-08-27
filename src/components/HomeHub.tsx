@@ -166,30 +166,30 @@ export const HomeHub: React.FC<HomeHubProps> = ({
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 py-6 space-y-8">
       {/* Hero Welcome Banner */}
-      <div className="bg-gradient-to-r from-stone-900 via-stone-800 to-rose-950 text-white rounded-3xl p-6 sm:p-10 border border-rose-900/30 shadow-xl relative overflow-hidden">
-        <div className="absolute right-0 top-0 opacity-10 text-[140px] font-serif select-none pointer-events-none pr-6 leading-none">
+      <div className="bg-gradient-to-br from-stone-900 via-stone-800 to-rose-950 text-white rounded-3xl p-6 sm:p-12 border border-rose-900/30 shadow-2xl relative overflow-hidden flex items-center justify-center">
+        <div className="absolute right-0 top-0 opacity-5 sm:opacity-10 text-[120px] sm:text-[180px] font-serif select-none pointer-events-none pr-6 leading-none translate-y-4">
           日本語
         </div>
-        <div className="max-w-3xl space-y-4 relative z-10">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-rose-500/20 border border-rose-500/40 text-rose-300 text-xs font-semibold">
+        <div className="max-w-4xl mx-auto flex flex-col items-center text-center space-y-5 relative z-10">
+          <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-rose-500/20 border border-rose-500/40 text-rose-300 text-xs sm:text-sm font-semibold shadow-sm">
             <Sparkles size={14} />
             <span>Guia Completo de Japonês Didático em Português</span>
           </div>
 
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight leading-tight">
-            Aprenda Japonês do Zero até o JLPT N1 com Jogos & IA
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black tracking-tight leading-tight md:leading-[1.1]">
+            Aprenda Japonês do Zero<br className="hidden md:block" /> até o JLPT N1 com Jogos & IA
           </h1>
 
-          <p className="text-stone-300 text-sm sm:text-base leading-relaxed">
-            Bem-vindo ao <strong>NihonGo!</strong> Estude os alfabetos Hiragana e Katakana, domine os ideogramas Kanji, compreenda a gramática explicada com clareza em Português e divirta-se com jogos de memória e montagem de frases.
+          <p className="text-stone-300 text-sm sm:text-base md:text-lg leading-relaxed max-w-2xl">
+            Bem-vindo ao <strong className="text-white">NihonGo!</strong> Estude os alfabetos Hiragana e Katakana, domine os ideogramas Kanji, compreenda a gramática explicada com clareza em Português e divirta-se com jogos de memória e montagem de frases.
           </p>
 
           {/* Action CTAs */}
-          <div className="flex flex-wrap gap-3 pt-2">
+          <div className="flex flex-col sm:flex-row flex-wrap justify-center items-stretch sm:items-center gap-3 sm:gap-4 pt-4 w-full sm:w-auto">
             <button
               type="button"
               onClick={() => onTabChange('games')}
-              className="px-5 py-3 rounded-2xl bg-emerald-500 hover:bg-emerald-400 text-stone-950 font-extrabold text-sm shadow-lg shadow-emerald-950/30 transition-all hover:scale-105 active:scale-95 flex items-center gap-2 cursor-pointer"
+              className="w-full sm:w-auto flex justify-center items-center gap-2 px-6 py-3.5 rounded-2xl bg-emerald-500 hover:bg-emerald-400 text-stone-950 font-extrabold text-sm sm:text-base shadow-lg shadow-emerald-950/30 transition-all hover:scale-105 active:scale-95 cursor-pointer"
             >
               <Gamepad2 size={18} />
               <span>Jogar Minigames & Memória</span>
@@ -198,16 +198,16 @@ export const HomeHub: React.FC<HomeHubProps> = ({
             <button
               type="button"
               onClick={() => onTabChange('kana')}
-              className="px-5 py-3 rounded-2xl bg-rose-600 hover:bg-rose-500 text-white font-bold text-sm shadow-lg shadow-rose-950/30 transition-all hover:scale-105 active:scale-95 flex items-center gap-2 cursor-pointer"
+              className="w-full sm:w-auto flex justify-center items-center gap-2 px-6 py-3.5 rounded-2xl bg-rose-600 hover:bg-rose-500 text-white font-bold text-sm sm:text-base shadow-lg shadow-rose-950/30 transition-all hover:scale-105 active:scale-95 cursor-pointer"
             >
               <span>Explorar Hiragana & Katakana</span>
-              <ArrowRight size={16} />
+              <ArrowRight size={18} />
             </button>
 
             <button
               type="button"
               onClick={onOpenSensei}
-              className="px-5 py-3 rounded-2xl bg-stone-800 hover:bg-stone-700 text-stone-100 border border-stone-700 font-bold text-sm transition-all flex items-center gap-2 cursor-pointer"
+              className="w-full sm:w-auto flex justify-center items-center gap-2 px-6 py-3.5 rounded-2xl bg-stone-800 hover:bg-stone-700 text-stone-100 border border-stone-700 font-bold text-sm sm:text-base transition-all hover:scale-105 active:scale-95 cursor-pointer"
             >
               <Bot size={18} className="text-rose-400" />
               <span>Tirar Dúvida com o Sensei Kenji</span>
