@@ -52,6 +52,11 @@ const JAPANESE_TIPS = [
 
 const CHANGELOG = [
   {
+    date: '27 Ago 2026',
+    title: 'Simulado JLPT N5 Oficial Adicionado! 🎯',
+    desc: 'O módulo de Testes JLPT N5 agora conta com 52 questões baseadas em provas oficiais reais, focando em vocabulário, kanji, gramática (partículas, sentenças em estrela ★) e textos de leitura e interpretação, tudo com explicações completas.',
+  },
+  {
     date: '26 Ago 2026',
     title: 'Super Expansão da Gramática (N5 ao N1) 📖',
     desc: 'Adicionamos dezenas de novos tópicos gramaticais aprofundados para todos os níveis do JLPT! Desde explicações detalhadas sobre as partículas do N5 até as estruturas complexas e literárias do N1. Cada regra vem acompanhada de fórmulas, explicações, regras cruciais e exemplos práticos.',
