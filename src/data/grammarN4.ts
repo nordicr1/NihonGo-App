@@ -341,6 +341,197 @@ export const GRAMMAR_N4: GrammarItem[] = [
         romaji: 'Gogo kara ame ga furu kamoshiremasen.',
         meaningPt: 'Talvez chova a partir da tarde.'
       }
+  },
+  {
+    id: 'g_n4_16',
+    pattern: '〜んです / 〜んだ (~n desu / ~n da)',
+    titlePt: 'Ênfase e Explicação: "É que..."',
+    jlpt: 'N4',
+    category: 'Expressões de Explicação',
+    formationFormula: '[Forma Simples] + んです (Subst/Adj-NA adicionam な antes do んです)',
+    explanationPt: 'Muito usado na fala para dar explicações, pedir justificativas, demonstrar curiosidade ou conectar fatos de maneira emocional.',
+    keyRulePt: '• Pergunta (どうしたんですか): "O que aconteceu?" (Demonstra preocupação/curiosidade).\n• Resposta (頭が痛いんです): "É que estou com dor de cabeça" (Dá o contexto/explicação).',
+    examples: [
+      {
+        jp: 'どうして遅れたんですか。',
+        reading: 'どうして おくれた ん です か。',
+        romaji: 'Doushite okureta n desu ka.',
+        meaningPt: 'Por que (diabos) você se atrasou? (ênfase na curiosidade)'
+      },
+      {
+        jp: 'バスが来なかったんです。',
+        reading: 'バス が こなかった ん です。',
+        romaji: 'Basu ga konakatta n desu.',
+        meaningPt: 'É que o ônibus não veio. (ênfase na explicação)'
+      }
+    ]
+  },
+  {
+    id: 'g_n4_17',
+    pattern: '〜のに (~noni)',
+    titlePt: 'Contraste e Frustração: "Apesar de / Mesmo que"',
+    jlpt: 'N4',
+    category: 'Causa & Efeito',
+    formationFormula: '[Forma Simples] + のに (Subst/Adj-NA adicionam な antes)',
+    explanationPt: 'Diferente de "ga" ou "keredomo", "noni" carrega um sentimento de surpresa, insatisfação, pena ou frustração com o resultado inesperado.',
+    keyRulePt: 'Não pode ser usado com pedidos, ordens ou sugestões na segunda metade da frase.',
+    examples: [
+      {
+        jp: 'たくさん勉強したのに、テストに落ちました。',
+        reading: 'たくさん べんきょう した のに、テスト に おちました。',
+        romaji: 'Takusan benkyou shita noni, tesuto ni ochimashita.',
+        meaningPt: 'Apesar de ter estudado muito, reprovei no teste.'
+      },
+      {
+        jp: '日曜日なのに、仕事をしなければなりません。',
+        reading: 'にちようび なのに、しごと を しなければ なりません。',
+        romaji: 'Nichiyoubi na noni, shigoto o shinakereba narimasen.',
+        meaningPt: 'Mesmo sendo domingo, tenho que trabalhar.'
+      }
+    ]
+  },
+  {
+    id: 'g_n4_18',
+    pattern: '〜はずです (~hazu desu)',
+    titlePt: 'Expectativa Lógica: "Deve ser / É de se esperar que"',
+    jlpt: 'N4',
+    category: 'Suposição',
+    formationFormula: '[Forma Simples] + はずです (Subst + のはず / Adj-NA + なはず)',
+    explanationPt: 'Expressa uma forte convicção ou expectativa baseada em fatos objetivos ou lógica. Não é apenas um "eu acho".',
+    keyRulePt: '• Negativa: 〜はずがありません (É impossível que... / Não deve ser...).',
+    examples: [
+      {
+        jp: '田中さんは今、会社にいるはずです。',
+        reading: 'たなかさん は いま、かいしゃ に いる はず です。',
+        romaji: 'Tanaka-san wa ima, kaisha ni iru hazu desu.',
+        meaningPt: 'O Sr. Tanaka deve estar na empresa agora (porque é o horário de expediente dele).'
+      },
+      {
+        jp: 'あんな高い車、買えるはずがありません。',
+        reading: 'あんな たかい くるま、かえる はず が ありません。',
+        romaji: 'Anna takai kuruma, kaeru hazu ga arimasen.',
+        meaningPt: 'É impossível que eu consiga comprar um carro caro daquele.'
+      }
+    ]
+  },
+  {
+    id: 'g_n4_19',
+    pattern: '〜ながら (~nagara)',
+    titlePt: 'Ações Simultâneas: "Fazendo A enquanto faz B"',
+    jlpt: 'N4',
+    category: 'Listagem de Ações',
+    formationFormula: '[Raiz do Verbo (sem "masu")] + ながら + [Verbo Secundário]',
+    explanationPt: 'Usado para descrever duas ações acontecendo ao mesmo tempo pela mesma pessoa.',
+    keyRulePt: 'A ação principal (a mais importante) é o verbo que vem DEPOIS do "nagara".',
+    examples: [
+      {
+        jp: '音楽を聴きながら、勉強します。',
+        reading: 'おんがく を ききながら、べんきょう します。',
+        romaji: 'Ongaku o kikinagara, benkyou shimasu.',
+        meaningPt: 'Estudo enquanto ouço música. (A ação principal é estudar)'
+      },
+      {
+        jp: '歩きながらスマホを見ないでください。',
+        reading: 'あるきながら スマホ を みないで ください。',
+        romaji: 'Arukinagara sumaho o minaide kudasai.',
+        meaningPt: 'Por favor, não olhe o celular enquanto caminha.'
+      }
+    ]
+  },
+  {
+    id: 'g_n4_20',
+    pattern: '〜そうです (~sou desu) [2 Usos]',
+    titlePt: 'Aparência vs Boatos: "Parece que / Ouvi dizer que"',
+    jlpt: 'N4',
+    category: 'Probabilidade & Hearsay',
+    formationFormula: '1) Aparência: [Raiz de Adj/Verbo] + そうです | 2) Boato: [Forma Simples] + そうです',
+    explanationPt: 'Este é um dos pontos mais testados no N4, pois a conjugação altera completamente o sentido da frase.',
+    keyRulePt: '• Aparência (baseado na visão/feeling): 美味しそう (Parece gostoso) / 降りそう (Parece que vai chover).\n• Hearsay (baseado no que ouviu): 美味しいそうです (Ouvi dizer que é gostoso) / 降るそうです (Disseram que vai chover).',
+    examples: [
+      {
+        jp: 'このケーキは美味しそうです。',
+        reading: 'この ケーキ は おいしそう です。',
+        romaji: 'Kono keeki wa oishisou desu.',
+        meaningPt: 'Este bolo parece estar delicioso. (Estou olhando pra ele)'
+      },
+      {
+        jp: '天気予報によると、明日は雨が降るそうです。',
+        reading: 'てんきよほう に よると、あした は あめ が ふる そう です。',
+        romaji: 'Tenkiyohou ni yoru to, ashita wa ame ga furu sou desu.',
+        meaningPt: 'De acordo com a previsão do tempo, ouvi dizer que amanhã choverá.'
+      }
+    ]
+  },
+  {
+    id: 'g_n4_21',
+    pattern: '〜ようです / 〜みたいです / 〜らしいです',
+    titlePt: 'Suposições: "Parece / Tem jeito de..."',
+    jlpt: 'N4',
+    category: 'Suposição',
+    formationFormula: 'Diversos (geralmente conectados na Forma Simples)',
+    explanationPt: 'Três formas de dizer "parece". "You desu" é objetivo/formal (baseado nos sentidos e lógica). "Mitai desu" é coloquial (muito falado). "Rashii desu" é baseado em fatos fortes ou indica "ser típico de".',
+    keyRulePt: '• みたい (mitai) age gramaticalmente como Adjetivo-NA.\n• 男らしい (otokorashii) = "típico de homem" (masculino/viril) / 子供みたい (kodomo mitai) = "parece uma criança" (mas não é).',
+    examples: [
+      {
+        jp: '誰もいないようです。',
+        reading: 'だれも いない よう です。',
+        romaji: 'Daremo inai you desu.',
+        meaningPt: 'Parece que não tem ninguém (as luzes estão apagadas e está silêncio).'
+      },
+      {
+        jp: '彼は日本人みたいに話します。',
+        reading: 'かれ は にほんじん みたい に はなします。',
+        romaji: 'Kare wa nihonjin mitai ni hanashimasu.',
+        meaningPt: 'Ele fala como se fosse um japonês (mas não é).'
+      }
+    ]
+  },
+  {
+    id: 'g_n4_22',
+    pattern: '〜し、〜し (~shi, ~shi)',
+    titlePt: 'Listando Múltiplas Razões: "Além disso / E também"',
+    jlpt: 'N4',
+    category: 'Causa & Efeito',
+    formationFormula: '[Forma Simples] + し、[Forma Simples] + し、',
+    explanationPt: 'Usado para enumerar duas ou mais razões ou fatos que suportam uma conclusão, num tom um pouco mais empático e abrangente que apenas "kara".',
+    keyRulePt: 'Muitas vezes, a conclusão (o motivo principal) fica implícita. É comum vir acompanhado da partícula も (também).',
+    examples: [
+      {
+        jp: 'この店は安いし、美味しいし、よく来ます。',
+        reading: 'この みせ は やすい し、おいしい し、よく きます。',
+        romaji: 'Kono mise wa yasui shi, oishii shi, yoku kimasu.',
+        meaningPt: 'Este restaurante é barato, é gostoso, (além disso...) por isso venho muito aqui.'
+      },
+      {
+        jp: '雨も降っているし、今日は出かけません。',
+        reading: 'あめ も ふっている し、きょう は でかけません。',
+        romaji: 'Ame mo futte iru shi, kyou wa dekakemasen.',
+        meaningPt: 'Além de estar chovendo (entre outros motivos), hoje não vou sair.'
+      }
+    ]
+  },
+  {
+    id: 'g_n4_23',
+    pattern: '〜てよかった (~te yokatta)',
+    titlePt: 'Alívio e Gratidão: "Ainda bem que / Que bom que..."',
+    jlpt: 'N4',
+    category: 'Aspecto Verbal & Emoção',
+    formationFormula: '[Verbo na Forma-TE] + よかった | Negativo: [Forma-NAI sem o "i"] + なくてよかった',
+    explanationPt: 'Expressa forte alívio do falante por uma ação ter acontecido ou não ter acontecido. Literalmente: "Foi bom ter feito X".',
+    keyRulePt: 'Diferente do português, usa-se a forma "te" e não uma condicional "se".',
+    examples: [
+      {
+        jp: '傘を持ってきてよかったです。',
+        reading: 'かさ を もってきて よかった です。',
+        romaji: 'Kasa o motte kite yokatta desu.',
+        meaningPt: 'Ainda bem que eu trouxe o guarda-chuva.'
+      },
+      {
+        jp: '事故にならなくてよかったです。',
+        reading: 'じこ に ならなくて よかった です。',
+        romaji: 'Jiko ni naranakute yokatta desu.',
+        meaningPt: 'Que bom que não sofremos um acidente.'
+      }
     ]
   }
 ];

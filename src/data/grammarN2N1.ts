@@ -200,6 +200,180 @@ export const GRAMMAR_N2_N1: GrammarItem[] = [
       }
     ]
   },
+  {
+    id: 'g_n2_11',
+    pattern: '〜かねる / 〜かねない (~kaneru / ~kanenai)',
+    titlePt: 'Hesitação e Risco: "Não consigo / Há o perigo de..."',
+    jlpt: 'N2',
+    category: 'Possibilidade & Sentimentos',
+    formationFormula: '[Raiz do Verbo (sem "masu")] + かねる (não conseguir) / かねない (poder acontecer algo ruim)',
+    explanationPt: 'Muito usado em negócios. "Kaneru" é uma forma polida de dizer que você não pode fazer algo (por motivos psicológicos ou de posição). "Kanenai" expressa o temor de que o pior cenário pode acabar acontecendo.',
+    keyRulePt: '• わかりかねます (Não sei lhe informar - muito formal).\n• 事故を起こしかねない (Temo que possa causar um acidente).',
+    examples: [
+      {
+        jp: 'その件については、私からはお答えしかねます。',
+        reading: 'その けん に ついて は、わたし から は おこたえ しかねます。',
+        romaji: 'Sono ken ni tsuite wa, watashi kara wa okotae shikanemasu.',
+        meaningPt: 'Sobre este assunto, eu infelizmente não posso responder (hesito/não tenho autoridade).'
+      },
+      {
+        jp: 'あんな運転をしていたら、いつか事故を起こしかねない。',
+        reading: 'あんな うんてん を していたら、いつか じこ を おこしかねない。',
+        romaji: 'Anna unten o shite itara, itsuka jiko o okoshikanenai.',
+        meaningPt: 'Dirigindo daquele jeito, ele pode acabar causando um acidente qualquer dia.'
+      }
+    ]
+  },
+  {
+    id: 'g_n2_12',
+    pattern: '〜がち (~gachi)',
+    titlePt: 'Tendência Frequente: "Tende a / Costuma acontecer..."',
+    jlpt: 'N2',
+    category: 'Tendência & Frequência',
+    formationFormula: '[Raiz do Verbo / Substantivo] + がち (gachi)',
+    explanationPt: 'Expressa que algo acontece com muita frequência ou que há uma forte propensão de algo ocorrer, geralmente com conotação negativa (um mau hábito).',
+    keyRulePt: 'Funciona como Substantivo/Adjetivo-NA na frase: 〜がちな人 (uma pessoa que costuma...).',
+    examples: [
+      {
+        jp: '雪の日は、電車が遅れがちだ。',
+        reading: 'ゆき の ひ は、でんしゃ が おくれがち だ。',
+        romaji: 'Yuki no hi wa, densha ga okuregachi da.',
+        meaningPt: 'Em dias de neve, os trens costumam/tendem a atrasar.'
+      },
+      {
+        jp: '彼は最近、学校を休みがちです。',
+        reading: 'かれ は さいきん、がっこう を やすみがち です。',
+        romaji: 'Kare wa saikin, gakkou o yasumigachi desu.',
+        meaningPt: 'Recentemente, ele tem faltado muito à escola (criou essa tendência).'
+      }
+    ]
+  },
+  {
+    id: 'g_n2_13',
+    pattern: '〜気味 (~gimi)',
+    titlePt: 'Ligeira Sensação: "Meio que... / Com um toque de..."',
+    jlpt: 'N2',
+    category: 'Sensação & Sintomas',
+    formationFormula: '[Raiz do Verbo / Substantivo] + 気味 (gimi)',
+    explanationPt: 'Diferente de "gachi" (frequência), "gimi" expressa que você está sentindo um leve sintoma, sensação ou estado no presente momento.',
+    keyRulePt: 'Geralmente usado para indisposições de saúde ou pequenas quedas de desempenho.',
+    examples: [
+      {
+        jp: '今日は少し風邪気味なので、早く寝ます。',
+        reading: 'きょう は すこし かぜぎみ な ので、はやく ねます。',
+        romaji: 'Kyou wa sukoshi kazegimi na node, hayaku nemasu.',
+        meaningPt: 'Hoje estou me sentindo meio resfriado, por isso vou dormir cedo.'
+      },
+      {
+        jp: '最近、太り気味です。',
+        reading: 'さいきん、ふとりぎみ です。',
+        romaji: 'Saikin, futorigimi desu.',
+        meaningPt: 'Ultimamente, sinto que estou engordando um pouco.'
+      }
+    ]
+  },
+  {
+    id: 'g_n2_14',
+    pattern: '〜だらけ (~darake)',
+    titlePt: 'Coberto de Aspectos Negativos: "Cheio de / Coberto de..."',
+    jlpt: 'N2',
+    category: 'Excesso de Coisas Negativas',
+    formationFormula: '[Substantivo] + だらけ (darake)',
+    explanationPt: 'Indica que um lugar ou objeto está completamente preenchido ou coberto por coisas indesejáveis, sujas ou ruins.',
+    keyRulePt: 'Nunca se usa para coisas boas. (Certo: 泥だらけ - coberto de lama. Errado: お金だらけ - usar "ippai" para dinheiro).',
+    examples: [
+      {
+        jp: '彼の部屋はゴミだらけだ。',
+        reading: 'かれ の へや は ゴミ だらけ だ。',
+        romaji: 'Kare no heya wa gomi darake da.',
+        meaningPt: 'O quarto dele está cheio de (coberto de) lixo.'
+      },
+      {
+        jp: 'このテストは間違いだらけですね。',
+        reading: 'この テスト は まちがい だらけ です ね。',
+        romaji: 'Kono tesuto wa machigai darake desu ne.',
+        meaningPt: 'Este teste está repleto de erros, né.'
+      }
+    ]
+  },
+  {
+    id: 'g_n2_15',
+    pattern: '〜っぽい (~ppoi)',
+    titlePt: 'Aparência e Personalidade: "Com jeito de / Tem cara de..."',
+    jlpt: 'N2',
+    category: 'Aparência & Caráter',
+    formationFormula: '[Raiz do Verbo / Substantivo / Adj-I (sem い)] + っぽい',
+    explanationPt: 'Transmite a ideia de que algo ou alguém se assemelha fortemente àquela característica, comportando-se gramaticalmente como um Adjetivo-I.',
+    keyRulePt: 'Muitas vezes usado para personalidades (怒りっぽい - irritadiço / 忘れっぽい - esquecido) ou texturas (水っぽい - aguado).',
+    examples: [
+      {
+        jp: 'あの人は大人なのに、子供っぽいところがある。',
+        reading: 'あの ひと は おとな なのに、こどもっぽい ところ が ある。',
+        romaji: 'Ano hito wa otona na noni, kodomoppoi tokoro ga aru.',
+        meaningPt: 'Aquela pessoa, apesar de adulta, tem um lado meio infantil.'
+      },
+      {
+        jp: '祖父は最近、忘れっぽくなりました。',
+        reading: 'そふ は さいきん、わすれっぽく なりました。',
+        romaji: 'Sofu wa saikin, wasureppoku narimashita.',
+        meaningPt: 'Meu avô ultimamente ficou esquecido.'
+      }
+    ]
+  },
+  {
+    id: 'g_n2_16',
+    pattern: '〜を問わず (~o towazu)',
+    titlePt: 'Universalidade: "Independentemente de / Sem importar..."',
+    jlpt: 'N2',
+    category: 'Condição Irrelevante',
+    formationFormula: '[Substantivo com opostos lógicos (ex: 男女, 昼夜, 年齢)] + を問わず (o towazu)',
+    explanationPt: 'Indica que uma condição se aplica universalmente a todos os espectros mencionados, não importando a classe ou categoria.',
+    keyRulePt: 'Muitíssimo comum em anúncios de vagas de emprego ou placas de regras.',
+    examples: [
+      {
+        jp: 'この仕事は、年齢や性別を問わず誰でも応募できます。',
+        reading: 'この しごと は、ねんれい や せいべつ を とわず だれ でも おうぼ できます。',
+        romaji: 'Kono shigoto wa, nenrei ya seibetsu o towazu dare demo oubo dekimasu.',
+        meaningPt: 'Independentemente de idade ou sexo, qualquer um pode se candidatar a este trabalho.'
+      }
+    ]
+  },
+  {
+    id: 'g_n2_17',
+    pattern: '〜からして (~kara shite)',
+    titlePt: 'Julgamento pelo Básico: "A começar pelo(a)... já se vê que..."',
+    jlpt: 'N2',
+    category: 'Dedução',
+    formationFormula: '[Substantivo (geralmente uma característica superficial)] + からして',
+    explanationPt: 'Expressa que baseando-se apenas num único pequeno detalhe já dá pra deduzir que todo o resto segue o mesmo (geralmente ruim) padrão.',
+    keyRulePt: 'Frequentemente carrega uma avaliação crítica ou negativa do falante.',
+    examples: [
+      {
+        jp: 'このレストランは、店員の態度からして良くない。味も期待できないだろう。',
+        reading: 'この レストラン は、てんいん の たいど からして よく ない。あじ も きたい できない だろう。',
+        romaji: 'Kono resutoran wa, ten\'in no taido karashite yoku nai. Aji mo kitai dekinai darou.',
+        meaningPt: 'A começar pela atitude dos funcionários, este restaurante já é ruim. O sabor também não deve ser lá essas coisas.'
+      }
+    ]
+  },
+  {
+    id: 'g_n2_18',
+    pattern: '〜っこない (~kkonai)',
+    titlePt: 'Negação Veemente: "Não tem como / É totalmente impossível"',
+    jlpt: 'N2',
+    category: 'Impossibilidade Absoluta',
+    formationFormula: '[Raiz do Verbo (Forma Masu sem ます)] + っこない',
+    explanationPt: 'É a versão hiper coloquial e enfática de "waka ga nai / hazu ga nai". Usado casualmente entre amigos para refutar uma possibilidade de forma absoluta.',
+    keyRulePt: 'Usado exclusivamente na língua falada (conversas).',
+    examples: [
+      {
+        jp: 'こんなにたくさん、一人で食べられっこないよ！',
+        reading: 'こんなに たくさん、ひとりで たべられっこない よ！',
+        romaji: 'Konna ni takusan, hitori de taberarekkonai yo!',
+        meaningPt: 'É humanamente impossível eu conseguir comer tudo isso sozinho!'
+      }
+    ]
+  },
 
   // ===================== N1 GRAMMAR =====================
   {

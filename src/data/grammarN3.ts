@@ -329,6 +329,179 @@ export const GRAMMAR_N3: GrammarItem[] = [
         romaji: 'Kenkou desae areba, nan demo dekimasu.',
         meaningPt: 'Contanto que você tenha saúde, você pode fazer qualquer coisa.'
       }
+  },
+  {
+    id: 'g_n3_16',
+    pattern: '〜くせに (~kuse ni)',
+    titlePt: 'Contraste com Crítica: "Apesar de / Mesmo..." (Tom de Censura)',
+    jlpt: 'N3',
+    category: 'Crítica & Sentimentos',
+    formationFormula: '[Forma Simples (Substantivo+の / Adj-NA+な)] + くせに',
+    explanationPt: 'Muito parecido com "noni" (apesar de), mas com um tom forte de crítica, desprezo ou acusação. Usado para apontar a hipocrisia ou falha de alguém.',
+    keyRulePt: 'Só pode ser usado quando o sujeito das duas orações é a mesma pessoa (geralmente não você mesmo, a não ser que seja autodepreciação).',
+    examples: [
+      {
+        jp: '彼は何も知らないくせに、偉そうに話す。',
+        reading: 'かれ は なにも しらない くせに、えらそう に はなす。',
+        romaji: 'Kare wa nani mo shiranai kuse ni, erasou ni hanasu.',
+        meaningPt: 'Apesar de não saber de nada, ele fala com ar de superioridade.'
+      },
+      {
+        jp: '男のくせに泣くな。',
+        reading: 'おとこ の くせに なくな。',
+        romaji: 'Otoko no kuse ni naku na.',
+        meaningPt: 'Mesmo sendo homem, não chore. (Expressão antiquada de repreensão)'
+      }
+    ]
+  },
+  {
+    id: 'g_n3_17',
+    pattern: '〜にもかかわらず (~ni mo kakawarazu)',
+    titlePt: 'Contraste Formal: "A despeito de / Não obstante"',
+    jlpt: 'N3',
+    category: 'Contraste & Formalidade',
+    formationFormula: '[Forma Simples (Subst e Adj-NA dispensam o だ)] + にもかかわらず',
+    explanationPt: 'Expressa forte surpresa de que um resultado ocorreu apesar das condições desfavoráveis. É a versão escrita e muito mais formal de "noni".',
+    keyRulePt: 'Usado em notícias, avisos formais e discursos.',
+    examples: [
+      {
+        jp: '大雨にもかかわらず、多くの人が集まった。',
+        reading: 'おおあめ に も かかわらず、おおく の ひと が あつまった。',
+        romaji: 'Ooame ni mo kakawarazu, ooku no hito ga atsumatta.',
+        meaningPt: 'A despeito da forte chuva, muitas pessoas se reuniram.'
+      }
+    ]
+  },
+  {
+    id: 'g_n3_18',
+    pattern: '〜ば〜ほど (~ba ~hodo)',
+    titlePt: 'Proporcionalidade: "Quanto mais... mais..."',
+    jlpt: 'N3',
+    category: 'Proporção & Grau',
+    formationFormula: '[Verbo na Condicional 〜ば] + [Mesmo Verbo no Dicionário] + ほど',
+    explanationPt: 'Indica que à medida que uma ação ou estado se intensifica, o resultado também aumenta na mesma proporção.',
+    keyRulePt: 'O verbo ou adjetivo é repetido duas vezes. (Ex: 読めば 読むほど = Quanto mais leio, mais...)',
+    examples: [
+      {
+        jp: '日本語は、勉強すればするほど面白くなります。',
+        reading: 'にほんご は、べんきょう すれば する ほど おもしろく なります。',
+        romaji: 'Nihongo wa, benkyou sureba suru hodo omoshiroku narimasu.',
+        meaningPt: 'Quanto mais estudo japonês, mais interessante ele fica.'
+      },
+      {
+        jp: 'スーパーは家から近ければ近いほど便利です。',
+        reading: 'スーパー は いえ から ちかければ ちかい ほど べんり です。',
+        romaji: 'Suupaa wa ie kara chikakereba chikai hodo benri desu.',
+        meaningPt: 'Quanto mais perto de casa for o supermercado, mais conveniente é.'
+      }
+    ]
+  },
+  {
+    id: 'g_n3_19',
+    pattern: '〜ばよかった (~ba yokatta)',
+    titlePt: 'Arrependimento: "Eu deveria ter... / Teria sido melhor se..."',
+    jlpt: 'N3',
+    category: 'Arrependimento & Emoção',
+    formationFormula: '[Condicional 〜ば / 〜たら] + よかった',
+    explanationPt: 'Expressa um forte remorso sobre algo no passado que você fez e não deveria, ou que não fez e deveria ter feito.',
+    keyRulePt: 'Na negativa: 〜なければよかった (Eu não deveria ter feito isso).',
+    examples: [
+      {
+        jp: 'あんなこと、言わなければよかった。',
+        reading: 'あんな こと、いわなければ よかった。',
+        romaji: 'Anna koto, iwanakereba yokatta.',
+        meaningPt: 'Eu não deveria ter dito aquilo.'
+      },
+      {
+        jp: 'もっと早く起きればよかったです。',
+        reading: 'もっと はやく おきれば よかった です。',
+        romaji: 'Motto hayaku okireba yokatta desu.',
+        meaningPt: 'Eu deveria ter acordado mais cedo.'
+      }
+    ]
+  },
+  {
+    id: 'g_n3_20',
+    pattern: '〜ところ (~tokoro) [Passado, Presente, Futuro]',
+    titlePt: 'Ponto Exato no Tempo: "Prestes a / No meio de / Acabou de"',
+    jlpt: 'N3',
+    category: 'Fases da Ação',
+    formationFormula: '[Verbo (Dicionário / ている / た)] + ところ',
+    explanationPt: 'Foca no momento exato em que uma ação se encontra. O tempo do verbo define o significado.',
+    keyRulePt: '• Dicionário + ところ = Prestes a começar (これから食べるところ: Estou prestes a comer).\n• ている + ところ = Bem no meio da ação (今食べているところ: Estou no meio da refeição).\n• た + ところ = Acabou de acontecer neste segundo (今食べたところ: Acabei de comer agora).',
+    examples: [
+      {
+        jp: '今、家を出るところです。',
+        reading: 'いま、いえ を でる ところ です。',
+        romaji: 'Ima, ie o deru tokoro desu.',
+        meaningPt: 'Estou prestes a sair de casa agora mesmo.'
+      }
+    ]
+  },
+  {
+    id: 'g_n3_21',
+    pattern: '〜わけだ (~wake da)',
+    titlePt: 'Conclusão Lógica: "Por isso que... / Com razão..."',
+    jlpt: 'N3',
+    category: 'Conclusão & Compreensão',
+    formationFormula: '[Forma Simples (Subst+な / Adj-NA+な)] + わけだ',
+    explanationPt: 'Usado quando o falante descobre uma razão e finalmente compreende porque algo é do jeito que é ("Ah, então é por isso!").',
+    keyRulePt: 'Frequentemente acompanhado de 道理で (doori de - não é à toa).',
+    examples: [
+      {
+        jp: '彼は10年も日本に住んでいたのか。日本語が上手なわけだ。',
+        reading: 'かれ は じゅうねん も にほん に すんでいた の か。にほんご が じょうずな わけ だ。',
+        romaji: 'Kare wa juunen mo nihon ni sunde ita no ka. Nihongo ga jouzu na wake da.',
+        meaningPt: 'Ah, ele morou 10 anos no Japão? Com razão (então é por isso que) o japonês dele é tão bom.'
+      }
+    ]
+  },
+  {
+    id: 'g_n3_22',
+    pattern: '〜っけ (~kke)',
+    titlePt: 'Tentando Lembrar: "Como era mesmo? / O que era mesmo?"',
+    jlpt: 'N3',
+    category: 'Dúvida & Memória',
+    formationFormula: '[Passado Simples do Verbo / Subst+だ / Adj] + っけ',
+    explanationPt: 'Sufixo coloquial muito comum na fala. O falante usa quando está tentando vasculhar a própria memória ou pede para alguém confirmar uma informação que ele esqueceu.',
+    keyRulePt: 'Sempre tem uma nuance de "falha de memória momentânea".',
+    examples: [
+      {
+        jp: '明日の会議は何時からだっけ？',
+        reading: 'あした の かいぎ は なんじ から だっけ？',
+        romaji: 'Ashita no kaigi wa nanji kara dakke?',
+        meaningPt: 'A que horas é a reunião de amanhã mesmo?'
+      },
+      {
+        jp: 'あの人の名前、何て言ったっけ。',
+        reading: 'あの ひと の なまえ、なんて いった っけ。',
+        romaji: 'Ano hito no namae, nan te ittakke.',
+        meaningPt: 'Qual era mesmo o nome daquela pessoa?'
+      }
+    ]
+  },
+  {
+    id: 'g_n3_23',
+    pattern: '〜くらい / 〜ぐらい (~kurai / ~gurai)',
+    titlePt: 'Nível Mínimo & Extensão: "Ao menos / A ponto de..."',
+    jlpt: 'N3',
+    category: 'Grau & Extensão',
+    formationFormula: '[Forma Simples / Substantivo] + くらい / ぐらい',
+    explanationPt: 'Tem dois usos principais: 1) Expressar que algo atingiu um nível absurdo ("Estava com tanta dor a ponto de chorar"), 2) Menosprezar algo como sendo o mínimo exigido ("Pelo menos isso você deveria saber").',
+    keyRulePt: 'As formas "kurai" e "gurai" são intercambiáveis na maioria das situações.',
+    examples: [
+      {
+        jp: '死ぬくらい疲れました。',
+        reading: 'しぬ くらい つかれました。',
+        romaji: 'Shinu kurai tsukaremashita.',
+        meaningPt: 'Estou cansado a ponto de morrer.'
+      },
+      {
+        jp: '自分の名前ぐらい漢字で書けるよ。',
+        reading: 'じぶん の なまえ ぐらい かんじ で かける よ。',
+        romaji: 'Jibun no namae gurai kanji de kakeru yo.',
+        meaningPt: 'Eu consigo escrever pelo menos o meu próprio nome em kanji, né.'
+      }
     ]
   }
 ];
