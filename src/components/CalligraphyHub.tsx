@@ -75,20 +75,21 @@ export const CalligraphyHub: React.FC<CalligraphyHubProps> = ({ selectedJlpt, on
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 py-6 space-y-6">
-      {/* Header */}
-      <div className="bg-white rounded-3xl p-6 sm:p-8 border border-stone-200 shadow-sm relative overflow-hidden">
-        <div className="absolute top-0 right-0 p-8 opacity-5">
-          <PenTool size={120} />
+      {/* Header Banner */}
+      <div className="bg-gradient-to-br from-white to-stone-50 rounded-3xl p-6 sm:p-10 border border-stone-200 shadow-sm relative overflow-hidden flex items-center justify-center">
+        <div className="absolute right-0 top-0 p-8 opacity-5 pointer-events-none translate-x-4 -translate-y-4">
+          <PenTool size={160} />
         </div>
-        <div className="relative z-10 max-w-2xl">
-          <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-rose-100 text-rose-700 text-xs font-bold uppercase tracking-wider mb-4">
+        
+        <div className="relative z-10 flex flex-col items-center text-center space-y-4 max-w-3xl">
+          <div className="inline-flex items-center justify-center gap-1.5 px-3 py-1.5 rounded-full bg-rose-100/80 border border-rose-200/80 text-rose-700 text-[10px] sm:text-xs font-black uppercase tracking-wider shadow-sm">
             <PenTool size={14} />
             <span>Treino Prático</span>
           </div>
-          <h1 className="text-3xl sm:text-4xl font-black text-stone-900 mb-4">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-black text-stone-900 tracking-tight leading-tight">
             Estúdio de Caligrafia
           </h1>
-          <p className="text-stone-600 text-base sm:text-lg">
+          <p className="text-stone-600 text-sm sm:text-base md:text-lg max-w-2xl font-medium leading-relaxed">
             Aprenda a desenhar Hiragana, Katakana e Kanjis (N5 ao N1) diretamente na tela do seu celular. A prática da escrita ajuda na memorização rápida!
           </p>
         </div>

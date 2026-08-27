@@ -82,20 +82,20 @@ export const SentenceAnalyzer: React.FC<{ onGainXp: (amt: number, reason: string
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 py-6 space-y-6">
-      {/* Header */}
-      <div className="bg-gradient-to-r from-stone-900 via-stone-800 to-purple-950 text-white rounded-2xl p-6 sm:p-8 border border-purple-900/30 shadow-lg relative overflow-hidden">
-        <div className="absolute right-4 top-2 opacity-10 text-9xl font-serif select-none pointer-events-none">
+      {/* Header Banner */}
+      <div className="bg-gradient-to-br from-stone-900 via-stone-800 to-purple-950 text-white rounded-3xl p-6 sm:p-10 border border-purple-900/30 shadow-xl relative overflow-hidden flex items-center justify-center flex-col">
+        <div className="absolute right-0 top-0 opacity-5 sm:opacity-10 text-[100px] sm:text-[140px] font-serif select-none pointer-events-none pr-6 leading-none translate-y-4">
           解析
         </div>
-        <div className="max-w-3xl space-y-3 relative z-10">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-purple-500/20 border border-purple-500/40 text-purple-300 text-xs font-semibold">
+        <div className="max-w-4xl mx-auto flex flex-col items-center text-center space-y-4 relative z-10">
+          <div className="inline-flex items-center justify-center gap-1.5 px-3 py-1.5 rounded-full bg-purple-500/20 border border-purple-500/40 text-purple-300 text-[10px] sm:text-xs font-black uppercase tracking-wider shadow-sm">
             <Sparkles size={14} />
             <span>Análise Morfológica & Furigana</span>
           </div>
-          <h1 className="text-2xl sm:text-3xl font-extrabold tracking-tight">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl font-black tracking-tight leading-tight">
             Analisador Inteligente de Frases em Japonês
           </h1>
-          <p className="text-stone-300 text-sm sm:text-base leading-relaxed">
+          <p className="text-stone-300 text-sm sm:text-base leading-relaxed max-w-2xl">
             Cole ou digite qualquer frase em japonês para obter a quebra palavra por palavra, furigana, romaji, classe gramatical de cada partícula e tradução completa para o Português Brasileiro.
           </p>
         </div>

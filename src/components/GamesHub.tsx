@@ -544,25 +544,25 @@ export const GamesHub: React.FC<GamesHubProps> = ({ selectedJlpt: globalJlpt, on
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 py-6 space-y-6">
       {/* Header Banner */}
-      <div className="bg-gradient-to-r from-stone-900 via-stone-800 to-emerald-950 text-white rounded-2xl p-6 sm:p-8 border border-emerald-900/30 shadow-lg relative overflow-hidden">
-        <div className="absolute right-4 top-2 opacity-10 text-9xl font-serif select-none pointer-events-none">
+      <div className="bg-gradient-to-br from-stone-900 via-stone-800 to-emerald-950 text-white rounded-3xl p-6 sm:p-10 border border-emerald-900/30 shadow-xl relative overflow-hidden flex items-center justify-center flex-col">
+        <div className="absolute right-0 top-0 opacity-5 sm:opacity-10 text-[100px] sm:text-[140px] font-serif select-none pointer-events-none pr-6 leading-none translate-y-4">
           遊
         </div>
-        <div className="max-w-3xl space-y-4 relative z-10">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/20 border border-emerald-500/40 text-emerald-300 text-xs font-semibold">
+        <div className="max-w-4xl mx-auto flex flex-col items-center text-center space-y-4 relative z-10">
+          <div className="inline-flex items-center justify-center gap-1.5 px-3 py-1.5 rounded-full bg-emerald-500/20 border border-emerald-500/40 text-emerald-300 text-[10px] sm:text-xs font-black uppercase tracking-wider shadow-sm">
             <Sparkles size={14} />
             <span>Aprendizado Gamificado & Prática Interativa N5 ao N1</span>
           </div>
-          <h1 className="text-2xl sm:text-3xl font-extrabold tracking-tight">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl font-black tracking-tight leading-tight">
             Jogos & Minigames Didáticos de Japonês
           </h1>
-          <p className="text-stone-300 text-sm sm:text-base leading-relaxed">
+          <p className="text-stone-300 text-sm sm:text-base leading-relaxed max-w-2xl">
             Fixe a escrita, memorize kanjis e domine a gramática do N5 ao N1 jogando. Escolha um minigame e filtre pelo nível do exame!
           </p>
 
           {/* Level Filter Selector in Minigames */}
-          <div className="flex flex-wrap items-center gap-2 pt-1">
-            <span className="text-xs font-bold text-stone-400 uppercase tracking-wider mr-1">
+          <div className="flex flex-wrap justify-center items-center gap-2 pt-4">
+            <span className="text-xs font-bold text-stone-400 uppercase tracking-wider w-full sm:w-auto mb-2 sm:mb-0">
               Filtrar Nível do Jogo:
             </span>
             {(['ALL', 'N5', 'N4', 'N3', 'N2', 'N1'] as const).map((lvl) => (
@@ -570,9 +570,9 @@ export const GamesHub: React.FC<GamesHubProps> = ({ selectedJlpt: globalJlpt, on
                 key={lvl}
                 type="button"
                 onClick={() => setLocalJlpt(lvl)}
-                className={`px-3 py-1 rounded-lg text-xs font-bold transition cursor-pointer ${
+                className={`px-4 py-2 rounded-xl text-xs sm:text-sm font-bold transition-all cursor-pointer shadow-md ${
                   localJlpt === lvl
-                    ? 'bg-rose-600 text-white shadow font-black scale-105'
+                    ? 'bg-rose-600 text-white font-extrabold scale-105 ring-2 ring-rose-400/50'
                     : 'bg-stone-800/90 text-stone-300 hover:bg-stone-700 hover:text-white'
                 }`}
               >
@@ -582,7 +582,7 @@ export const GamesHub: React.FC<GamesHubProps> = ({ selectedJlpt: globalJlpt, on
           </div>
 
           {/* Game Selector Tabs */}
-          <div className="flex flex-wrap items-center gap-2 pt-2 border-t border-stone-700/60">
+          <div className="flex flex-wrap justify-center items-center gap-2 pt-6 w-full border-t border-stone-700/40 mt-6">
             {[
               { id: 'memory', label: '🧠 Jogo da Memória' },
               { id: 'sentence', label: '📜 Montador de Frases' },
@@ -595,9 +595,9 @@ export const GamesHub: React.FC<GamesHubProps> = ({ selectedJlpt: globalJlpt, on
                 key={g.id}
                 type="button"
                 onClick={() => setActiveGame(g.id as GameType)}
-                className={`px-4 py-2 rounded-xl text-xs sm:text-sm font-bold transition cursor-pointer ${
+                className={`px-5 py-2.5 rounded-2xl text-xs sm:text-sm font-bold transition-all cursor-pointer shadow-md ${
                   activeGame === g.id
-                    ? 'bg-emerald-500 text-stone-950 shadow-md font-black scale-105'
+                    ? 'bg-emerald-500 text-stone-950 font-black scale-105 ring-2 ring-emerald-400/30'
                     : 'bg-stone-800/80 text-stone-300 hover:bg-stone-700 hover:text-white'
                 }`}
               >
