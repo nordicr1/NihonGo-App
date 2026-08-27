@@ -28,8 +28,8 @@ export const Header: React.FC<HeaderProps> = ({
     <header className="sticky top-0 z-40 bg-stone-900/95 text-stone-100 backdrop-blur border-b border-stone-800 shadow-md">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         {/* Top bar: Brand & Stats */}
-        <div className="flex flex-wrap items-center justify-between py-3 border-b border-stone-800/80 gap-4">
-          <div className="flex items-center gap-3">
+        <div className="flex flex-col sm:flex-row items-center justify-between py-3 border-b border-stone-800/80 gap-4">
+          <div className="flex items-center gap-3 w-full sm:w-auto justify-center sm:justify-start">
             <div 
               onClick={() => onTabChange('hub')} 
               className="flex items-center gap-2.5 cursor-pointer group"
@@ -37,7 +37,7 @@ export const Header: React.FC<HeaderProps> = ({
               <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-rose-600 to-amber-500 flex items-center justify-center text-white font-bold text-xl shadow-lg shadow-rose-900/30 group-hover:scale-105 transition-transform">
                 日
               </div>
-              <div>
+              <div className="flex flex-col items-center sm:items-start">
                 <div className="flex items-center gap-1.5">
                   <span className="font-extrabold text-lg tracking-tight text-white">NihonGo!</span>
                   <span className="text-[10px] px-1.5 py-0.5 rounded bg-rose-500/20 text-rose-300 font-semibold border border-rose-500/30">
@@ -50,7 +50,7 @@ export const Header: React.FC<HeaderProps> = ({
           </div>
 
           {/* Quick JLPT Level Selector */}
-          <div className="hidden md:flex items-center bg-stone-800/90 p-1 rounded-xl border border-stone-700/60">
+          <div className="hidden lg:flex items-center bg-stone-800/90 p-1 rounded-xl border border-stone-700/60">
             <span className="text-xs font-semibold px-2.5 text-stone-400">Nível JLPT:</span>
             <div className="flex gap-1">
               {jlptLevels.map((lvl) => {
@@ -74,12 +74,12 @@ export const Header: React.FC<HeaderProps> = ({
           </div>
 
           {/* Stats & Sensei AI Shortcut */}
-          <div className="flex items-center gap-2.5 sm:gap-3">
+          <div className="flex items-center justify-center gap-2 sm:gap-3 w-full sm:w-auto">
             {/* Streak */}
             <div 
               onClick={onOpenStats}
               title={`Sequência de estudo: ${userStats.streakDays} dias!`}
-              className="flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg bg-stone-800/80 border border-stone-700/60 text-amber-400 text-xs font-semibold cursor-pointer hover:bg-stone-700/60 transition"
+              className="flex-1 sm:flex-none flex justify-center items-center gap-1.5 px-2.5 py-2 sm:py-1.5 rounded-lg bg-stone-800/80 border border-stone-700/60 text-amber-400 text-xs font-semibold cursor-pointer hover:bg-stone-700/60 transition"
             >
               <Flame size={15} className="fill-amber-400 text-amber-500 animate-bounce" />
               <span>{userStats.streakDays}d</span>
@@ -89,7 +89,7 @@ export const Header: React.FC<HeaderProps> = ({
             <div 
               onClick={onOpenStats}
               title={`Nível ${userStats.level} - ${getLevelTitle(userStats.level)}`}
-              className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-stone-800/80 border border-stone-700/60 text-rose-400 text-xs font-semibold cursor-pointer hover:bg-stone-700/60 transition"
+              className="flex-1 sm:flex-none flex justify-center items-center gap-1.5 px-3 py-2 sm:py-1.5 rounded-lg bg-stone-800/80 border border-stone-700/60 text-rose-400 text-xs font-semibold cursor-pointer hover:bg-stone-700/60 transition"
             >
               <Trophy size={14} className="text-amber-400" />
               <span className="text-stone-200 font-bold">{userStats.xp} <span className="text-[10px] text-stone-400 font-normal">XP</span></span>
@@ -99,7 +99,7 @@ export const Header: React.FC<HeaderProps> = ({
             <button
               type="button"
               onClick={onOpenSensei}
-              className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-gradient-to-r from-rose-600 to-red-500 text-white text-xs font-bold hover:brightness-110 shadow-sm transition active:scale-95 cursor-pointer"
+              className="flex-1 sm:flex-none flex justify-center items-center gap-1.5 px-3 py-2 sm:py-1.5 rounded-lg bg-gradient-to-r from-rose-600 to-red-500 text-white text-xs font-bold hover:brightness-110 shadow-sm transition active:scale-95 cursor-pointer"
             >
               <Bot size={15} />
               <span className="hidden sm:inline">Sensei IA</span>
@@ -116,7 +116,7 @@ export const Header: React.FC<HeaderProps> = ({
                 });
               }}
               title="Sair da Conta"
-              className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-stone-800 border border-stone-700 text-stone-300 hover:text-white hover:bg-stone-700 text-xs font-bold shadow-sm transition active:scale-95 cursor-pointer ml-2"
+              className="flex justify-center items-center gap-1.5 px-3 py-2 sm:py-1.5 rounded-lg bg-stone-800 border border-stone-700 text-stone-300 hover:text-white hover:bg-stone-700 text-xs font-bold shadow-sm transition active:scale-95 cursor-pointer ml-1 sm:ml-2"
             >
               <LogOut size={15} />
               <span className="hidden sm:inline">Sair</span>
