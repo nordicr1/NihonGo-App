@@ -19,8 +19,13 @@ export const JlptTestsHub: React.FC<JlptTestsHubProps> = ({
 }) => {
   const levels: JLPTLevel[] = ['N5', 'N4', 'N3', 'N2', 'N1'];
   
-
+  // Test State
   const [testQuestions, setTestQuestions] = useState<JLPTQuestion[]>([]);
+  const [currentQuestionIdx, setCurrentQuestionIdx] = useState(0);
+  const [selectedOption, setSelectedOption] = useState<number | null>(null);
+  const [showResult, setShowResult] = useState(false);
+  const [score, setScore] = useState(0);
+  const [isTestFinished, setIsTestFinished] = useState(false);
 
   // Shuffle Helper
   const shuffleArray = <T,>(array: T[]): T[] => {
@@ -34,7 +39,7 @@ export const JlptTestsHub: React.FC<JlptTestsHubProps> = ({
 
   const prepareTest = () => {
     // Randomize Questions
-    const shuffledQuestions = shuffleArray(testQuestions);
+    const shuffledQuestions = shuffleArray(FULL_N5_TEST);
     
     // Randomize Options
     const preparedQuestions = shuffledQuestions.map((q: JLPTQuestion) => {
@@ -62,13 +67,6 @@ export const JlptTestsHub: React.FC<JlptTestsHubProps> = ({
       prepareTest();
     }
   }, [selectedJlpt]);
-
-  // Test State
-  const [currentQuestionIdx, setCurrentQuestionIdx] = useState(0);
-  const [selectedOption, setSelectedOption] = useState<number | null>(null);
-  const [showResult, setShowResult] = useState(false);
-  const [score, setScore] = useState(0);
-  const [isTestFinished, setIsTestFinished] = useState(false);
 
   const resetTest = () => {
     if (selectedJlpt === 'N5') {
@@ -99,13 +97,9 @@ export const JlptTestsHub: React.FC<JlptTestsHubProps> = ({
     }
   };
 
-
-  if (selectedJlpt === 'N5' && testQuestions.length === 0) {
-    return <div className="p-10 text-center">Carregando simulado...</div>;
-  }
-
   // Render question text with highlight
   const renderQuestion = (q: JLPTQuestion) => {
+    if (!q) return null;
     if (!q.highlight) {
       return <p className="text-xl sm:text-2xl font-medium text-stone-900 whitespace-pre-wrap leading-relaxed">{q.question}</p>;
     }
@@ -154,7 +148,11 @@ export const JlptTestsHub: React.FC<JlptTestsHubProps> = ({
                 key={level}
                 onClick={() => {
                   onSelectJlpt(level);
-                  resetTest();
+                  if (level === 'N5') {
+                     // State resets on useEffect, but we can do it explicitly
+                     // Actually, if it's already N5, useEffect won't run again, so we reset manually
+                     prepareTest();
+                  }
                 }}
                 className={`px-5 py-2.5 rounded-xl font-bold text-sm transition-all shadow-md active:scale-95 cursor-pointer ${
                   selectedJlpt === level 
@@ -170,8 +168,13 @@ export const JlptTestsHub: React.FC<JlptTestsHubProps> = ({
       </div>
 
       {selectedJlpt === 'N5' ? (
-        <div className="bg-white rounded-3xl p-6 sm:p-8 border border-stone-200 shadow-sm animate-fadeIn">
-          {isTestFinished ? (
+        <div className="bg-white rounded-3xl p-6 sm:p-8 border border-stone-200 shadow-sm animate-fadeIn min-h-[400px]">
+          {testQuestions.length === 0 ? (
+            <div className="flex flex-col items-center justify-center h-full text-center space-y-4 py-20">
+               <div className="w-10 h-10 border-4 border-teal-200 border-t-teal-600 rounded-full animate-spin"></div>
+               <p className="text-stone-500 font-medium">Carregando simulado...</p>
+            </div>
+          ) : isTestFinished ? (
             <div className="text-center space-y-6 py-10">
               <div className="inline-flex items-center justify-center w-20 h-20 bg-teal-100 text-teal-600 rounded-full mb-4">
                 <CheckCircle size={40} />
@@ -249,7 +252,7 @@ export const JlptTestsHub: React.FC<JlptTestsHubProps> = ({
                   <div className="pt-4 flex justify-end">
                     <button 
                       onClick={nextQuestion}
-                      className="flex items-center gap-2 bg-teal-500 hover:bg-teal-400 text-teal-950 px-6 py-3 rounded-xl font-black transition-all active:scale-95 shadow-md"
+                      className="flex items-center gap-2 bg-teal-500 hover:bg-teal-400 text-teal-950 px-6 py-3 rounded-xl font-black transition-all active:scale-95 shadow-md cursor-pointer"
                     >
                       <span>Próxima Questão</span>
                       <ArrowRight size={18} />
