@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { auth } from '../config/firebase';
-import { signInWithEmailAndPassword, createUserWithEmailAndPassword } from 'firebase/auth';
+import { signInWithEmailAndPassword, createUserWithEmailAndPassword, sendPasswordResetEmail } from 'firebase/auth';
 import { Mail, Lock, Loader2, LogIn, UserPlus, Eye, EyeOff } from 'lucide-react';
 
 export function LoginScreen() {
@@ -10,7 +10,27 @@ export function LoginScreen() {
   const [showPassword, setShowPassword] = useState(false);
   
   const [error, setError] = useState<string | null>(null);
+  const [resetMessage, setResetMessage] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
+
+  const handleResetPassword = async () => {
+    setError(null);
+    setResetMessage(null);
+    if (!email) {
+      setError('Por favor, digite seu email no campo acima para recuperar a senha.');
+      return;
+    }
+    try {
+      await sendPasswordResetEmail(auth, email);
+      setResetMessage('Email de recuperação enviado! Verifique sua caixa de entrada (e spam).');
+    } catch (err: any) {
+      if (err.code === 'auth/invalid-email') {
+        setError('Formato de email inválido.');
+      } else {
+        setError('Ocorreu um erro. Verifique se o email está correto.');
+      }
+    }
+  };
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -135,13 +155,30 @@ export function LoginScreen() {
             </button>
           </form>
 
-          {/* Toggle Login/Signup */}
-          <div className="mt-8 text-center">
+          {resetMessage && (
+            <div className="mt-4 p-3.5 rounded-xl bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-semibold animate-fadeIn flex items-center justify-center text-center">
+              {resetMessage}
+            </div>
+          )}
+
+          {/* Additional Actions */}
+          <div className="mt-8 flex flex-col items-center space-y-4">
+            {isLogin && (
+              <button
+                type="button"
+                onClick={handleResetPassword}
+                className="text-xs text-stone-500 hover:text-rose-400 font-medium transition-colors underline-offset-4 hover:underline"
+              >
+                Esqueci minha senha
+              </button>
+            )}
+
             <button
               type="button"
               onClick={() => {
                 setIsLogin(!isLogin);
                 setError(null);
+                setResetMessage(null);
               }}
               className="text-sm text-stone-400 font-medium hover:text-white transition-colors"
             >
