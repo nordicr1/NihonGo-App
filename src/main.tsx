@@ -5,27 +5,25 @@ import './index.css';
 
 import React from 'react';
 
-class ErrorBoundary extends React.Component<{children: React.ReactNode}, {hasError: boolean, error: Error | null}> {
-  constructor(props: {children: React.ReactNode}) {
-    super(props);
-    this.state = { hasError: false, error: null };
-  }
+class ErrorBoundary extends React.Component<any, any> {
+  state = { hasError: false, error: null as Error | null };
 
   static getDerivedStateFromError(error: Error) {
     return { hasError: true, error };
   }
 
   render() {
-    if (this.state.hasError) {
+    const self = this as any;
+    if (self.state.hasError) {
       return (
         <div style={{ padding: 20, color: 'red', backgroundColor: '#fee' }}>
           <h1>Ocorreu um erro no aplicativo!</h1>
-          <pre>{this.state.error?.message}</pre>
-          <pre style={{ fontSize: '0.8em' }}>{this.state.error?.stack}</pre>
+          <pre>{self.state.error?.message}</pre>
+          <pre style={{ fontSize: '0.8em' }}>{self.state.error?.stack}</pre>
         </div>
       );
     }
-    return this.props.children;
+    return self.props.children;
   }
 }
 
