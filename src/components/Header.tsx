@@ -125,11 +125,12 @@ export const Header: React.FC<HeaderProps> = ({
         </div>
 
         {/* Navigation Tabs */}
-        <nav className="flex overflow-x-auto md:flex-wrap pb-2 md:pb-0 items-center md:justify-center gap-2 py-2 text-xs md:text-sm font-medium w-full snap-x md:snap-none" style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
-          <style>{`@media (max-width: 767px) { nav::-webkit-scrollbar { display: none; } }`}</style>
-          <button
-            type="button"
-            onClick={() => onTabChange('hub')}
+        <div className="relative w-full">
+          <nav className="flex overflow-x-auto md:flex-wrap pb-2 md:pb-0 items-center md:justify-center gap-2 py-2 text-xs md:text-sm font-medium w-full snap-x md:snap-none" style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
+            <style>{`@media (max-width: 767px) { nav::-webkit-scrollbar { display: none; } }`}</style>
+            <button
+              type="button"
+              onClick={() => onTabChange('hub')}
             className={`shrink-0 snap-center flex items-center gap-1.5 px-3 py-1.5 rounded-lg transition-all whitespace-nowrap cursor-pointer ${
               currentTab === 'hub'
                 ? 'bg-rose-600 text-white font-semibold shadow-sm'
@@ -243,7 +244,17 @@ export const Header: React.FC<HeaderProps> = ({
             <Sparkles size={16} className="text-purple-400" />
             <span>Analisador de Frases</span>
           </button>
-        </nav>
+          </nav>
+          
+          {/* Fading indicator to show scrollability on mobile */}
+          <div className="absolute right-0 top-0 bottom-2 w-12 bg-gradient-to-l from-stone-900/95 to-transparent pointer-events-none md:hidden flex items-center justify-end pr-1">
+            <div className="w-5 h-5 bg-stone-700/80 rounded-full flex items-center justify-center animate-pulse shadow-md">
+              <svg className="w-3.5 h-3.5 text-stone-200 ml-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M9 5l7 7-7 7" />
+              </svg>
+            </div>
+          </div>
+        </div>
       </div>
     </header>
   );
