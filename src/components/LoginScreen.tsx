@@ -126,7 +126,7 @@ export function LoginScreen() {
                 <button
                   type="button"
                   onClick={() => setShowPassword(!showPassword)}
-                  className="absolute inset-y-0 right-0 pr-4 flex items-center text-stone-500 hover:text-stone-300 transition-colors"
+                  className="absolute inset-y-0 right-0 pr-4 flex items-center text-stone-500 hover:text-stone-300 transition-colors cursor-pointer"
                 >
                   {showPassword ? <EyeOff size={18} /> : <Eye size={18} />}
                 </button>
@@ -142,7 +142,7 @@ export function LoginScreen() {
             <button
               type="submit"
               disabled={loading}
-              className="w-full mt-4 bg-white hover:bg-stone-200 text-black font-bold py-4 px-4 rounded-2xl transition-all flex items-center justify-center gap-2 disabled:opacity-70 disabled:cursor-not-allowed active:scale-[0.98] text-sm"
+              className="w-full mt-4 bg-white hover:bg-stone-200 text-black font-bold py-4 px-4 rounded-2xl transition-all flex items-center justify-center gap-2 disabled:opacity-70 disabled:cursor-not-allowed active:scale-[0.98] text-sm cursor-pointer"
             >
               {loading ? (
                 <Loader2 size={18} className="animate-spin text-stone-500" />
@@ -167,7 +167,7 @@ export function LoginScreen() {
               <button
                 type="button"
                 onClick={handleResetPassword}
-                className="text-xs text-stone-500 hover:text-rose-400 font-medium transition-colors underline-offset-4 hover:underline"
+                className="text-xs text-stone-500 hover:text-rose-400 font-medium transition-colors underline-offset-4 hover:underline cursor-pointer"
               >
                 Esqueci minha senha
               </button>
@@ -180,7 +180,7 @@ export function LoginScreen() {
                 setError(null);
                 setResetMessage(null);
               }}
-              className="text-sm text-stone-400 font-medium hover:text-white transition-colors"
+              className="text-sm text-stone-400 font-medium hover:text-white transition-colors cursor-pointer"
             >
               {isLogin ? (
                 <>Não possui uma conta? <span className="text-rose-400 font-bold ml-1">Criar agora</span></>
