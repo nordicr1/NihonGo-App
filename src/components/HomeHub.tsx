@@ -352,18 +352,19 @@ export const HomeHub: React.FC<HomeHubProps> = ({
 
       {/* JLPT Levels Progression Track */}
       <div className="bg-white rounded-3xl p-6 sm:p-8 border border-stone-200 shadow-sm space-y-6">
-        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-stone-100 pb-4">
-          <div>
-            <span className="text-xs font-bold uppercase tracking-wider text-rose-600">
+        <div className="flex flex-col items-center text-center gap-3 border-b border-stone-100 pb-6 mb-2">
+          <div className="space-y-2">
+            <span className="inline-block text-[10px] sm:text-xs font-black uppercase tracking-wider text-rose-600 bg-rose-50 border border-rose-100 px-3 py-1 rounded-full">
               Estrutura Oficial de Exames
             </span>
-            <h2 className="text-2xl font-black text-stone-900">
-              Trilha de Proficiência JLPT (日本語能力試験)
+            <h2 className="text-2xl sm:text-3xl font-black text-stone-900 leading-tight">
+              Trilha de Proficiência JLPT <br className="sm:hidden" />
+              <span className="text-stone-500 whitespace-nowrap text-xl sm:text-2xl">(日本語能力試験)</span>
             </h2>
           </div>
-          <span className="text-xs text-stone-500">
-            Clique em qualquer nível para selecionar e estudar seus kanjis e gramática
-          </span>
+          <p className="text-xs sm:text-sm text-stone-500 max-w-lg leading-relaxed">
+            Clique em qualquer nível abaixo para selecionar e começar a estudar seus <strong>Kanjis</strong> e <strong>Gramática</strong> instantaneamente.
+          </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
