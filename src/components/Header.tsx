@@ -125,8 +125,8 @@ export const Header: React.FC<HeaderProps> = ({
         </div>
 
         {/* Navigation Tabs */}
-        <nav className="flex overflow-x-auto pb-2 -mb-2 items-center gap-2 py-2 text-xs sm:text-sm font-medium w-full scrollbar-none snap-x" style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
-          <style>{`nav::-webkit-scrollbar { display: none; }`}</style>
+        <nav className="flex overflow-x-auto md:flex-wrap pb-2 md:pb-0 items-center gap-2 py-2 text-xs md:text-sm font-medium w-full snap-x md:snap-none" style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
+          <style>{`@media (max-width: 767px) { nav::-webkit-scrollbar { display: none; } }`}</style>
           <button
             type="button"
             onClick={() => onTabChange('hub')}
