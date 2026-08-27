@@ -135,25 +135,25 @@ export const VocabGrammarHub: React.FC<VocabGrammarHubProps> = ({
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 py-6 space-y-6">
       {/* Header Banner */}
-      <div className="bg-gradient-to-r from-stone-900 via-stone-800 to-indigo-950 text-white rounded-2xl p-6 sm:p-8 border border-indigo-900/30 shadow-lg relative overflow-hidden">
-        <div className="absolute right-4 top-2 opacity-10 text-9xl font-serif select-none pointer-events-none">
+      <div className="bg-gradient-to-br from-stone-900 via-stone-800 to-indigo-950 text-white rounded-3xl p-6 sm:p-10 border border-indigo-900/30 shadow-xl relative overflow-hidden flex items-center justify-center">
+        <div className="absolute right-0 top-0 opacity-5 sm:opacity-10 text-[100px] sm:text-[140px] font-serif select-none pointer-events-none pr-6 leading-none translate-y-4">
           文法
         </div>
-        <div className="max-w-3xl space-y-3 relative z-10">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-500/20 border border-indigo-500/40 text-indigo-300 text-xs font-semibold">
+        <div className="max-w-4xl mx-auto flex flex-col items-center text-center space-y-4 relative z-10">
+          <div className="inline-flex items-center justify-center gap-1.5 px-3 py-1.5 rounded-full bg-indigo-500/20 border border-indigo-500/40 text-indigo-300 text-[10px] sm:text-xs font-black uppercase tracking-wider shadow-sm">
             <Sparkles size={14} />
             <span>Gramática & Vocabulário JLPT ({selectedJlpt})</span>
           </div>
-          <h1 className="text-2xl sm:text-3xl font-extrabold tracking-tight">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl font-black tracking-tight leading-tight">
             Termos da Gramática & Dicionário com Frases Reais
           </h1>
-          <p className="text-stone-300 text-sm sm:text-base leading-relaxed">
+          <p className="text-stone-300 text-sm sm:text-base leading-relaxed max-w-2xl">
             Domine as estruturas gramaticais, regras de conjugação (Verbos Godan, Ichidan e Irregulares; Adjetivos い e な) e vocabulário com pronúncia nativa e exemplos traduzidos para Português do Brasil.
           </p>
 
           {/* Level Switcher */}
-          <div className="flex flex-wrap items-center gap-2 pt-2">
-            <span className="text-xs font-semibold text-stone-400 mr-1">Nível JLPT:</span>
+          <div className="flex flex-wrap justify-center items-center gap-2 pt-4">
+            <span className="text-xs font-semibold text-stone-400 mr-1 w-full sm:w-auto mb-2 sm:mb-0">Nível JLPT:</span>
             {jlptLevels.map((lvl) => (
               <button
                 key={lvl}
@@ -162,9 +162,9 @@ export const VocabGrammarHub: React.FC<VocabGrammarHubProps> = ({
                   onSelectJlpt(lvl);
                   setSelectedGrammar(null);
                 }}
-                className={`px-3 py-1.5 rounded-xl text-xs font-bold transition cursor-pointer ${
+                className={`px-4 py-2 rounded-xl text-xs sm:text-sm font-bold transition-all cursor-pointer shadow-md ${
                   selectedJlpt === lvl
-                    ? 'bg-indigo-500 text-white shadow-md font-extrabold scale-105'
+                    ? 'bg-indigo-500 text-white font-extrabold scale-105 ring-2 ring-indigo-400/50'
                     : 'bg-stone-800/80 text-stone-300 hover:bg-stone-700 hover:text-white'
                 }`}
               >

@@ -44,25 +44,25 @@ export const KanjiDictionary: React.FC<KanjiDictionaryProps> = ({
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 py-6 space-y-6">
       {/* Header Banner */}
-      <div className="bg-gradient-to-r from-stone-900 via-stone-800 to-amber-950 text-white rounded-2xl p-6 sm:p-8 border border-amber-900/30 shadow-lg relative overflow-hidden">
-        <div className="absolute right-4 top-2 opacity-10 text-9xl font-serif select-none pointer-events-none">
+      <div className="bg-gradient-to-br from-stone-900 via-stone-800 to-amber-950 text-white rounded-3xl p-6 sm:p-10 border border-amber-900/30 shadow-xl relative overflow-hidden flex items-center justify-center">
+        <div className="absolute right-0 top-0 opacity-5 sm:opacity-10 text-[100px] sm:text-[140px] font-serif select-none pointer-events-none pr-6 leading-none translate-y-4">
           漢字
         </div>
-        <div className="max-w-3xl space-y-3 relative z-10">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/20 border border-amber-500/40 text-amber-300 text-xs font-semibold">
+        <div className="max-w-4xl mx-auto flex flex-col items-center text-center space-y-4 relative z-10">
+          <div className="inline-flex items-center justify-center gap-1.5 px-3 py-1.5 rounded-full bg-amber-500/20 border border-amber-500/40 text-amber-300 text-[10px] sm:text-xs font-black uppercase tracking-wider shadow-sm">
             <Sparkles size={14} />
             <span>Ideogramas Japoneses (漢字 - Kanji)</span>
           </div>
-          <h1 className="text-2xl sm:text-3xl font-extrabold tracking-tight">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl font-black tracking-tight leading-tight">
             Dicionário de Kanjis por Nível JLPT ({selectedJlpt})
           </h1>
-          <p className="text-stone-300 text-sm sm:text-base leading-relaxed">
-            Cada Kanji possui uma essência de significado (Significado em Português), leituras de origem chinesa (<strong>On'yomi</strong>) usadas em palavras compostas, e leituras nativas japonesas (<strong>Kun'yomi</strong>).
+          <p className="text-stone-300 text-sm sm:text-base leading-relaxed max-w-2xl">
+            Cada Kanji possui uma essência de significado (Significado em Português), leituras de origem chinesa (<strong className="text-white">On'yomi</strong>) usadas em palavras compostas, e leituras nativas japonesas (<strong className="text-white">Kun'yomi</strong>).
           </p>
 
           {/* Level Switcher */}
-          <div className="flex flex-wrap items-center gap-2 pt-2">
-            <span className="text-xs font-semibold text-stone-400 mr-1">Filtrar por Nível:</span>
+          <div className="flex flex-wrap justify-center items-center gap-2 pt-4">
+            <span className="text-xs font-semibold text-stone-400 mr-1 w-full sm:w-auto mb-2 sm:mb-0">Filtrar por Nível:</span>
             {jlptList.map((lvl) => (
               <button
                 key={lvl}
@@ -71,9 +71,9 @@ export const KanjiDictionary: React.FC<KanjiDictionaryProps> = ({
                   onSelectJlpt(lvl);
                   setSelectedKanji(null);
                 }}
-                className={`px-3 py-1.5 rounded-xl text-xs font-bold transition cursor-pointer ${
+                className={`px-4 py-2 rounded-xl text-xs sm:text-sm font-bold transition-all cursor-pointer shadow-md ${
                   selectedJlpt === lvl
-                    ? 'bg-amber-500 text-stone-950 shadow-md font-extrabold scale-105'
+                    ? 'bg-amber-500 text-stone-950 font-extrabold scale-105 ring-2 ring-amber-300/50'
                     : 'bg-stone-800/80 text-stone-300 hover:bg-stone-700 hover:text-white'
                 }`}
               >

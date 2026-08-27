@@ -37,20 +37,21 @@ export function ConversationHub({ selectedJlpt, onGainXp }: Props) {
   return (
     <div className="max-w-4xl mx-auto p-4 md:p-6 space-y-6">
       {/* Header Info */}
-      <div className="bg-gradient-to-br from-emerald-600 to-teal-800 rounded-3xl p-6 md:p-8 text-white shadow-xl relative overflow-hidden">
-        <div className="absolute top-0 right-0 p-8 opacity-10 pointer-events-none">
-          <MessageSquare size={120} />
+      <div className="bg-gradient-to-br from-emerald-600 to-teal-800 rounded-3xl p-6 sm:p-10 text-white shadow-xl relative overflow-hidden flex items-center justify-center">
+        <div className="absolute right-0 top-0 p-8 opacity-5 sm:opacity-10 pointer-events-none translate-x-4 -translate-y-4">
+          <MessageSquare size={160} />
         </div>
         
-        <div className="relative z-10">
-          <div className="flex items-center gap-3 mb-3">
-            <div className="p-2 bg-white/20 backdrop-blur-sm rounded-xl">
-              <MessageSquare size={24} className="text-emerald-50" />
-            </div>
-            <h1 className="text-2xl md:text-3xl font-black tracking-tight">Conversação & Frases</h1>
+        <div className="relative z-10 flex flex-col items-center text-center space-y-4 max-w-3xl">
+          <div className="inline-flex items-center justify-center gap-1.5 px-3 py-1.5 rounded-full bg-emerald-500/20 border border-emerald-500/40 text-emerald-100 text-[10px] sm:text-xs font-black uppercase tracking-wider shadow-sm">
+            <MessageSquare size={14} />
+            <span>Prática de Diálogo e Pronúncia</span>
           </div>
-          <p className="text-emerald-100 text-sm md:text-base max-w-xl font-medium leading-relaxed">
-            Pratique estruturas reais do dia a dia japonês. Aprenda a usar verbos, partículas e adjetivos em contexto no nível {selectedJlpt}.
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-black tracking-tight leading-tight">
+            Conversação & Frases
+          </h1>
+          <p className="text-emerald-100/90 text-sm sm:text-base md:text-lg max-w-2xl font-medium leading-relaxed">
+            Pratique estruturas reais do dia a dia japonês. Aprenda a usar verbos, partículas e adjetivos em contexto no nível <strong className="text-white">{selectedJlpt}</strong>.
           </p>
         </div>
       </div>

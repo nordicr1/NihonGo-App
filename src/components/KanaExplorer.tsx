@@ -86,23 +86,23 @@ export const KanaExplorer: React.FC<KanaExplorerProps> = ({ onGainXp }) => {
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 py-6 space-y-6">
       {/* Title & Introduction */}
-      <div className="bg-gradient-to-r from-stone-900 via-stone-800 to-rose-950 text-white rounded-2xl p-6 sm:p-8 border border-rose-900/30 shadow-lg relative overflow-hidden">
-        <div className="absolute right-0 top-0 opacity-10 text-9xl font-serif select-none pointer-events-none pr-4">
+      <div className="bg-gradient-to-br from-stone-900 via-stone-800 to-rose-950 text-white rounded-3xl p-6 sm:p-10 border border-rose-900/30 shadow-xl relative overflow-hidden flex items-center justify-center">
+        <div className="absolute right-0 top-0 opacity-5 sm:opacity-10 text-[100px] sm:text-[140px] font-serif select-none pointer-events-none pr-6 leading-none translate-y-4">
           あア
         </div>
-        <div className="max-w-3xl space-y-3 relative z-10">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-rose-500/20 border border-rose-500/40 text-rose-300 text-xs font-semibold">
+        <div className="max-w-4xl mx-auto flex flex-col items-center text-center space-y-4 relative z-10">
+          <div className="inline-flex items-center justify-center gap-1.5 px-3 py-1.5 rounded-full bg-rose-500/20 border border-rose-500/40 text-rose-300 text-[10px] sm:text-xs font-black uppercase tracking-wider shadow-sm">
             <Sparkles size={14} />
             <span>Fundamentos da Escrita Japonesa (かな)</span>
           </div>
-          <h1 className="text-2xl sm:text-3xl font-extrabold tracking-tight">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl font-black tracking-tight leading-tight">
             Alfabetos Silábicos: Hiragana & Katakana
           </h1>
-          <p className="text-stone-300 text-sm sm:text-base leading-relaxed">
-            O Japonês possui dois alfabetos fonéticos com 46 sons fundamentais cada. O <strong>Hiragana (ひらがな)</strong> é usado para palavras nativas e gramática; o <strong>Katakana (カタカナ)</strong> é usado para palavras de origem estrangeira, onomatopeias e nomes internacionais.
+          <p className="text-stone-300 text-sm sm:text-base leading-relaxed max-w-2xl">
+            O Japonês possui dois alfabetos fonéticos com 46 sons fundamentais cada. O <strong className="text-white">Hiragana (ひらがな)</strong> é usado para palavras nativas e gramática; o <strong className="text-white">Katakana (カタカナ)</strong> é usado para palavras de origem estrangeira, onomatopeias e nomes internacionais.
           </p>
 
-          <div className="flex flex-wrap items-center gap-3 pt-2">
+          <div className="flex flex-col sm:flex-row flex-wrap justify-center items-stretch sm:items-center gap-3 sm:gap-4 pt-4 w-full sm:w-auto">
             <button
               type="button"
               onClick={() => {
@@ -112,13 +112,13 @@ export const KanaExplorer: React.FC<KanaExplorerProps> = ({ onGainXp }) => {
                   startKanaQuiz();
                 }
               }}
-              className={`px-4 py-2 rounded-xl text-sm font-bold shadow-md transition-all cursor-pointer flex items-center gap-2 ${
+              className={`w-full sm:w-auto flex justify-center items-center gap-2 px-6 py-3.5 rounded-2xl text-sm sm:text-base font-bold shadow-lg transition-all hover:scale-105 active:scale-95 cursor-pointer ${
                 quizMode
-                  ? 'bg-amber-500 text-stone-950 hover:bg-amber-400'
-                  : 'bg-rose-600 text-white hover:bg-rose-500'
+                  ? 'bg-amber-500 text-stone-950 hover:bg-amber-400 shadow-amber-950/30'
+                  : 'bg-rose-600 text-white hover:bg-rose-500 shadow-rose-950/30'
               }`}
             >
-              <HelpCircle size={16} />
+              <HelpCircle size={18} />
               <span>{quizMode ? 'Voltar para Tabela' : 'Treinar Reconhecimento (Mini-Quiz)'}</span>
             </button>
           </div>
