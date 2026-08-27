@@ -524,6 +524,149 @@ export const GRAMMAR_N2_N1: GrammarItem[] = [
         romaji: 'Kare no kandouteki na supiichi wa, choushuu o nakasezu ni wa okanakatta.',
         meaningPt: 'O discurso emocionante dele inevitavelmente levou toda a plateia às lágrimas.'
       }
+  },
+  {
+    id: 'g_n1_9',
+    pattern: '〜が早いか (~ga hayai ka)',
+    titlePt: 'Sucessão Imediata: "Assim que / Mal..."',
+    jlpt: 'N1',
+    category: 'Tempo & Ação Instantânea',
+    formationFormula: '[Verbo (Dicionário ou Forma-TA)] + が早いか',
+    explanationPt: 'Expressa que no exato momento em que a ação A ocorreu, a ação B aconteceu de forma quase simultânea. Tem a nuance de que o evento B ocorreu de supetão ou surpreendeu o falante.',
+    keyRulePt: 'Não pode ser usado para expressar a vontade, pedido ou intenção do próprio falante na segunda parte da frase.',
+    examples: [
+      {
+        jp: 'ベルが鳴るが早いか、生徒たちは教室を飛び出していった。',
+        reading: 'ベル が なる が はやい か、せいとたち は きょうしつ を とびだしていった。',
+        romaji: 'Beru ga naru ga hayai ka, seitotachi wa kyoushitsu o tobidashite itta.',
+        meaningPt: 'Mal o sinal tocou, os alunos saíram correndo da sala de aula.'
+      }
+    ]
+  },
+  {
+    id: 'g_n1_10',
+    pattern: '〜そばから (~soba kara)',
+    titlePt: 'Repetição Frustrante: "Assim que... logo em seguida..."',
+    jlpt: 'N1',
+    category: 'Tempo & Repetição',
+    formationFormula: '[Verbo (Dicionário ou Forma-TA)] + そばから',
+    explanationPt: 'Indica que, mesmo fazendo algo repetidas vezes, o resultado é imediatamente desfeito logo em seguida, gerando uma sensação de inutilidade ou frustração.',
+    keyRulePt: 'Sempre carrega um tom de resignação ou aborrecimento.',
+    examples: [
+      {
+        jp: '子供が片付けるそばから、またおもちゃを散らかしている。',
+        reading: 'こども が かたづける そば から、また おもちゃ を ちらかしている。',
+        romaji: 'Kodomo ga katadukeru soba kara, mata omocha o chirakashite iru.',
+        meaningPt: 'Assim que eu guardo, as crianças logo espalham os brinquedos de novo.'
+      }
+    ]
+  },
+  {
+    id: 'g_n1_11',
+    pattern: '〜ゆえに / 〜がゆえに (~yue ni)',
+    titlePt: 'Causalidade Formal: "Por causa de / Devido a..."',
+    jlpt: 'N1',
+    category: 'Causa & Consequência (Formal)',
+    formationFormula: '[Forma Simples] + (が)ゆえに (Subst e Adj-NA adicionam である/な)',
+    explanationPt: 'Forma altamente literária e clássica para dizer "kara" ou "node". Geralmente indica uma causa intrínseca ou uma consequência lógica natural.',
+    keyRulePt: 'Geralmente usado em cartas formais, literatura, ensaios e discursos públicos.',
+    examples: [
+      {
+        jp: '彼は有名人であるがゆえに、プライバシーがない。',
+        reading: 'かれ は ゆうめいじん で ある が ゆえ に、プライバシー が ない。',
+        romaji: 'Kare wa yuumeijin de aru ga yue ni, puraibashii ga nai.',
+        meaningPt: 'Exatamente pelo fato de ser famoso, ele não tem privacidade.'
+      }
+    ]
+  },
+  {
+    id: 'g_n1_12',
+    pattern: '〜てやまない (~te yamanai)',
+    titlePt: 'Desejo Profundo: "Do fundo do coração / Não cesso de..."',
+    jlpt: 'N1',
+    category: 'Sentimento Profundo',
+    formationFormula: '[Verbo na Forma-TE] + やまない',
+    explanationPt: 'Expressa um sentimento de longo prazo e muito forte que o falante nutre por alguém ou por uma causa. É a negação do verbo 止む (yamu = parar).',
+    keyRulePt: 'Costuma ser usado com verbos de oração, esperança, respeito e arrependimento (ex: 祈る - orar, 願う - desejar, 期待する - esperar).',
+    examples: [
+      {
+        jp: '皆さんのご健康とご多幸を祈ってやみません。',
+        reading: 'みなさん の ごけんこう と ごたこう を いのって やみません。',
+        romaji: 'Minasan no gokenkou to gotakou o inotte yamimasen.',
+        meaningPt: 'Desejo-lhes do fundo do meu coração saúde e muita felicidade.'
+      }
+    ]
+  },
+  {
+    id: 'g_n1_13',
+    pattern: '〜たるもの (~taru mono)',
+    titlePt: 'Dever da Posição: "Como alguém na posição de..."',
+    jlpt: 'N1',
+    category: 'Postura & Responsabilidade',
+    formationFormula: '[Substantivo (Cargo/Título)] + たるもの(は)',
+    explanationPt: 'Indica as obrigações morais ou as expectativas sobre como uma pessoa que ocupa uma certa posição elevada deve agir.',
+    keyRulePt: 'O substantivo anterior sempre é um cargo, profissão de prestígio ou status (ex: médico, líder, educador).',
+    examples: [
+      {
+        jp: '経営者たるもの、常に社員の模範でなければならない。',
+        reading: 'けいえいしゃ たる もの、つねに しゃいん の もはん で なければ ならない。',
+        romaji: 'Keieisha taru mono, tsuneni shain no mohan de nakereba naranai.',
+        meaningPt: 'Aquele que ocupa a posição de gestor deve ser constantemente um exemplo para os funcionários.'
+      }
+    ]
+  },
+  {
+    id: 'g_n1_14',
+    pattern: '〜と相まって (~to aimatte)',
+    titlePt: 'Sinergia: "Combinado com / Aliado a..."',
+    jlpt: 'N1',
+    category: 'Combinação & Sinergia',
+    formationFormula: '[Substantivo] + と相まって (to aimatte)',
+    explanationPt: 'Descreve que dois ou mais elementos se fundiram ou cooperaram para criar um efeito (geralmente positivo) muito maior e extraordinário.',
+    keyRulePt: 'Usado muito para críticas de arte, comida, turismo e análises de sucesso.',
+    examples: [
+      {
+        jp: '彼の才能は、絶え間ない努力と相まって、素晴らしい結果を生んだ。',
+        reading: 'かれ の さいのう は、たえまない どりょく と あいまって、すばらしい けっか を うんだ。',
+        romaji: 'Kare no sainou wa, taemanai doryoku to aimatte, subarashii kekka o unda.',
+        meaningPt: 'O talento dele, aliado ao esforço contínuo, gerou um resultado esplêndido.'
+      }
+    ]
+  },
+  {
+    id: 'g_n1_15',
+    pattern: '〜にかまけて (~ni kamakete)',
+    titlePt: 'Negligência: "Distraído por / Tão focado em X que..."',
+    jlpt: 'N1',
+    category: 'Foco & Negligência',
+    formationFormula: '[Substantivo] + にかまけて',
+    explanationPt: 'Indica que a pessoa ficou tão absorvida ou sobrecarregada com a atividade X, que acabou negligenciando a atividade Y (que também era importante).',
+    keyRulePt: 'O resultado após essa gramática é sempre algo negativo (falha, esquecimento, atraso).',
+    examples: [
+      {
+        jp: '仕事の忙しさにかまけて、家族との時間を犠牲にしてしまった。',
+        reading: 'しごと の いそがしさ に かまけて、かぞく と の じかん を ぎせい に して しまった。',
+        romaji: 'Shigoto no isogashisa ni kamakete, kazoku to no jikan o gisei ni shite shimatta.',
+        meaningPt: 'Acabei me deixando levar pela correria do trabalho e negligenciei (sacrifiquei) o tempo com minha família.'
+      }
+    ]
+  },
+  {
+    id: 'g_n1_16',
+    pattern: '〜ないではすまない / 〜ずにはすまない',
+    titlePt: 'Obrigação Moral Severa: "Não dá para não... / Terei que..."',
+    jlpt: 'N1',
+    category: 'Obrigação Social Inevitável',
+    formationFormula: '[Verbo na Forma-NAI] + ないではすまない / [Verbo Forma Nai sem ない] + ずにはすまない',
+    explanationPt: 'Ao contrário de "nakereba naranai" (obrigação geral), esta expressão indica que pelas regras morais, de conduta ou pressão social da situação, a pessoa não escapará de ter que fazer X (ex: pedir perdão, pagar uma multa, assumir a culpa).',
+    keyRulePt: 'O verbo する vira せずにはすまない na segunda forma.',
+    examples: [
+      {
+        jp: 'あれだけ大きな失敗をしたのだから、辞表を出さないではすまないだろう。',
+        reading: 'あれ だけ おおきな しっぱい を した の だから、じひょう を ださない では すまない だろう。',
+        romaji: 'Are dake ookina shippai o shita no dakara, jihyou o dasanai dewa sumanai darou.',
+        meaningPt: 'Tendo cometido uma falha daquela magnitude, ele não sairá ileso sem ter que apresentar a carta de demissão.'
+      }
     ]
   }
 ];
