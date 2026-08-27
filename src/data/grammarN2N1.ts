@@ -524,6 +524,7 @@ export const GRAMMAR_N2_N1: GrammarItem[] = [
         romaji: 'Kare no kandouteki na supiichi wa, choushuu o nakasezu ni wa okanakatta.',
         meaningPt: 'O discurso emocionante dele inevitavelmente levou toda a plateia às lágrimas.'
       }
+    ]
   },
   {
     id: 'g_n1_9',
