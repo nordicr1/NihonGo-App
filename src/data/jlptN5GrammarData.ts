@@ -234,5 +234,89 @@ export const JLPT_N5_GRAMMAR_TEST: JLPTQuestion[] = [
     correctAnswer: 0,
     translation: 'Pergunta 26: O que entra na lacuna 26?',
     explanation: 'Ela enumerou vários motivos para gostar da loja (é grande, tem livro estrangeiro, do país dela, de culinária). "POR ISSO (だから), sempre compro lá."'
+  },
+  {
+    id: 60,
+    type: 'reading',
+    question: '【読解 - Texto 3】\nわたしは 今日、友だちと 買い物に 行きました。3か月前に 見た えいがの DVDが ほしかったからです。買った DVDは、友だちや 姉と いっしょに 見ます。\n\n--- 27 「わたし」は 今日、何を しましたか。',
+    options: [
+      '友だちと えいがを 見に 行きました。',
+      '友だちと DVDを 買いに 行きました。',
+      '姉と えいがを 見に 行きました。',
+      '姉と DVDを 買いに 行きました。'
+    ],
+    correctAnswer: 1,
+    translation: 'Pergunta 27: O que "eu" fiz hoje?',
+    explanation: 'O texto diz explicitamente "わたしは 今日、友だちと 買い物に 行きました" (Hoje eu fui fazer compras com meu amigo) e logo depois cita que foi comprar o DVD. Portanto: Foi comprar o DVD com o amigo.'
+  },
+  {
+    id: 61,
+    type: 'reading',
+    question: '【読解 - Texto 4】\nわたしの へやには、テーブルが 一つと いすが 二つと 本だなが 一つ あります。本が たくさん ありますから、もっと 大きい 本だなが ほしいです。\n\n--- 28 今の へやは どれですか。',
+    options: [
+      'テーブル 1, いす 2, 本だな pequeno',
+      'テーブル 1, いす 2, 本だな pequeno e livros no chão',
+      'テーブル 1, いす 1, 本だな grande',
+      'テーブル 1, いす 2, 本だな grande'
+    ],
+    correctAnswer: 2,
+    translation: 'Pergunta 28: Qual é o quarto atual?',
+    explanation: 'A descrição diz "1 mesa, 2 cadeiras, 1 estante". E depois "como tenho muitos livros, quero uma estante MAIOR" (então a atual é pequena). Na prova com imagens, a resposta correta era a que tinha 1 mesa, 2 cadeiras, 1 estante pequena e livros amontoados no chão.'
+  },
+  {
+    id: 62,
+    type: 'reading',
+    question: '【読解 - Texto 5】\n森さんの 机の 上に、山口先生の メモと 本が あります。\n[MEMO]\n森さん\nクラスで 使う 本を 中川先生に かりました。5ページを 25枚 コピーして ください。コピーは 南さんに わたして ください。本は、わたしが あした かえしますから、わたしの 机の 上に おいて ください。 -- 山口\n\n--- 29 森さんは コピーを した あとで、本を どうしますか。',
+    options: [
+      'クラスで 使います。',
+      '南さんに わたします。',
+      '中川先生に かえします。',
+      '山口先生の 机の 上に おきます。'
+    ],
+    correctAnswer: 3,
+    translation: 'Pergunta 29: O que o sr. Mori fará com o livro DEPOIS de tirar as cópias?',
+    explanation: 'O bilhete do professor Yamaguchi diz: "本は(...) わたしの 机の 上に おいて ください" (O livro, por favor, coloque em cima da MINHA mesa). Apenas as cópias vão para o sr. Minami.'
+  },
+  {
+    id: 63,
+    type: 'reading',
+    question: '【読解 - Texto 6】\nきのうの 夜は おそくまで しごとを しました。とても つかれました。しごとの あと、電車で 帰りました。家の 近くの 駅で 電車を おりました。外は 雨でしたが、わたしは かさが ありませんでした。とても こまりました。駅の 人が わたしを 見て、「あの はこの 中の かさを 使って ください」と 言いました。(...) 「お金は いりません。あした、あの はこに かえして ください」と。\n\n--- 30 どうして こまりましたか。',
+    options: [
+      'おそい 時間に 駅に 着いたから',
+      'しごとが たくさん あったから',
+      'とても つかれたから',
+      'かさが なかったから'
+    ],
+    correctAnswer: 3,
+    translation: 'Pergunta 30: Por que ele ficou em apuros (komarimashita)?',
+    explanation: 'O texto diz "外は 雨でしたが、わたしは かさが ありませんでした。とても こまりました" (Lá fora chovia, mas eu não tinha guarda-chuva. Fiquei muito em apuros). A causa é a falta de guarda-chuva.'
+  },
+  {
+    id: 64,
+    type: 'reading',
+    question: '【読解 - Texto 6】\n（Texto anterior...）駅の 人が わたしを 見て、「あの はこの 中の かさを 使って ください」と 言いました。(...) 「お金は いりません。あした、あの はこに かえして ください」と。\n\n--- 31 「わたし」は、あした どうしますか。',
+    options: [
+      'かさを はこの 中に 入れます。',
+      'かさを 駅の 人に わたします。',
+      'お金を はこの 中に 入れます。',
+      'お金を 駅の 人に わたします。'
+    ],
+    correctAnswer: 0,
+    translation: 'Pergunta 31: O que o narrador fará "amanhã"?',
+    explanation: 'O funcionário da estação disse: "あした、あの はこに かえして ください" (Amanhã devolva dentro daquela caixa). Logo, ele colocará o guarda-chuva dentro da caixa.'
+  },
+  {
+    id: 65,
+    type: 'reading',
+    question: '【読解 - Texto 7】\nあらきやで トイレットペーパーと にくと やさいを 同じ 日に 買いたいです。いつが 安いですか。\n[Folheto de Promoções]\n11(Seg) a 14(Qui): Papel Higiênico 490 yen\n15(Sex) a 18(Seg): Papel Toalha\nPromoção Semanal:\nSeg/Ter: Frutas, Peixe, Suco\nQua/Qui: Tofu, Carne, Verduras (やさい)\nSex/Sab: Pão, Leite, Peixe, Verduras\n\n--- 32 いつが 安いですか。',
+    options: [
+      '6月11日（月）と 12日（火）',
+      '6月13日（水）と 14日（木）',
+      '6月15日（金）と 16日（土）',
+      '6月17日（日）と 18日（月）'
+    ],
+    correctAnswer: 1,
+    translation: 'Pergunta 32: Quando sai barato comprar Papel higiênico, carne e verduras no mesmo dia?',
+    explanation: 'Papel higiênico (トイレットペーパー) está barato de 11 a 14 (Seg-Qui). Carne (にく) e Verduras (やさい) ficam baratos toda Qua/Qui (水・木). A interseção onde as 3 coisas estão baratas é de 13(Qua) e 14(Qui).'
   }
 ];
