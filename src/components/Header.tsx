@@ -1,7 +1,7 @@
 import React from 'react';
 import { JLPTLevel, UserStats } from '../types';
 import { getLevelTitle } from '../utils/storage';
-import { Sparkles, Flame, Trophy, Bot, BookOpen, Compass, Gamepad2, Layers, PenTool, LogOut } from 'lucide-react';
+import { Sparkles, Flame, Trophy, Bot, BookOpen, Compass, Gamepad2, Layers, PenTool, LogOut, Sword, Shield, Crown, Zap, Star, Medal, Ghost, Skull, Rocket, Gem } from 'lucide-react';
 
 interface HeaderProps {
   currentTab: 'hub' | 'kana' | 'kanji' | 'grammar' | 'tests' | 'games' | 'analyzer' | 'sensei' | 'drawing' | 'conversation';
@@ -12,6 +12,22 @@ interface HeaderProps {
   onOpenStats: () => void;
   onOpenSensei: () => void;
 }
+
+const AnimatedLevelIcon = ({ level }: { level: number }) => {
+  if (level < 10) return <Medal size={14} className="text-stone-400 animate-pulse" />;
+  if (level < 20) return <Shield size={14} className="text-stone-300 animate-pulse" />;
+  if (level < 30) return <Sword size={14} className="text-emerald-400 animate-bounce" />;
+  if (level < 40) return <Ghost size={14} className="text-teal-300 animate-pulse" />;
+  if (level < 50) return <Zap size={14} className="text-yellow-400 animate-pulse" />;
+  if (level < 60) return <Star size={14} className="text-amber-400 animate-spin" style={{ animationDuration: '3s' }} />;
+  if (level < 70) return <Flame size={14} className="text-orange-500 animate-bounce" />;
+  if (level < 80) return <Rocket size={14} className="text-red-400 animate-pulse" />;
+  if (level < 90) return <Skull size={14} className="text-stone-200 animate-pulse" />;
+  if (level < 100) return <Gem size={14} className="text-cyan-400 animate-bounce" />;
+  if (level < 120) return <Crown size={14} className="text-amber-300 animate-pulse" />;
+  if (level < 140) return <Sparkles size={14} className="text-fuchsia-400 animate-pulse" />;
+  return <Crown size={15} className="text-yellow-200 fill-yellow-200 animate-bounce" />;
+};
 
 export const Header: React.FC<HeaderProps> = ({
   currentTab,
@@ -91,6 +107,7 @@ export const Header: React.FC<HeaderProps> = ({
               title={`Nível ${userStats.level} - ${getLevelTitle(userStats.level)}`}
               className="flex-1 sm:flex-none flex justify-center items-center gap-1.5 px-3 py-2 sm:py-1.5 rounded-lg bg-stone-800/80 border border-stone-700/60 text-rose-400 text-xs font-semibold cursor-pointer hover:bg-stone-700/60 transition"
             >
+              <AnimatedLevelIcon level={userStats.level} />
               <Trophy size={14} className="text-amber-400" />
               <span className="text-stone-200 font-bold">{userStats.xp} <span className="text-[10px] text-stone-400 font-normal">XP</span></span>
             </div>
