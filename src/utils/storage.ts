@@ -91,14 +91,31 @@ export function saveUserStats(stats: UserStats): void {
 }
 
 export function calculateLevel(xp: number): number {
-  return Math.floor(Math.sqrt(xp / 100)) + 1;
+  const calculatedLevel = Math.floor(Math.sqrt(xp / 100)) + 1;
+  return Math.min(calculatedLevel, 150); // Nível máximo 150
 }
 
 export function getLevelTitle(level: number): string {
-  if (level === 1) return 'Iniciante (初心者 - Shoshinsha)';
-  if (level === 2) return 'Aprendiz Ninja (見習い - Minarai)';
-  if (level === 3) return 'Guerreiro da Gramática (武士 - Bushi)';
-  if (level === 4) return 'Samurai do JLPT (侍 - Samurai)';
-  if (level === 5) return 'Mestre Sensei (先生 - Sensei)';
-  return 'Shogun do Japonês (将軍 - Shogun)';
+  if (level < 8) return 'Aldeão de Isekai (異世界の村人)';
+  if (level < 15) return 'Genin (下忍)';
+  if (level < 22) return 'Chunin (中忍)';
+  if (level < 29) return 'Jonin (上忍)';
+  if (level < 36) return 'Caçador de Demônios (鬼殺隊)';
+  if (level < 43) return 'Hashira (柱)';
+  if (level < 50) return 'Habilidoso de Shikai (始解)';
+  if (level < 57) return 'Dominador da Bankai (卍解)';
+  if (level < 64) return 'Cavaleiro de Atena (青銅聖闘士)';
+  if (level < 71) return 'Cavaleiro de Ouro (黄金聖闘士)';
+  if (level < 78) return 'Mestre do Santuário (教皇)';
+  if (level < 85) return 'Super Sayajin 1 (超サイヤ人)';
+  if (level < 92) return 'Super Sayajin 2 (超サイヤ人2)';
+  if (level < 99) return 'Super Sayajin 3 (超サイヤ人3)';
+  if (level < 106) return 'Super Sayajin 4 (超サイヤ人4)';
+  if (level < 113) return 'Gear 4 (ギア4)';
+  if (level < 120) return 'Gear 5 (ギア5)';
+  if (level < 127) return 'Yonkou (四皇)';
+  if (level < 134) return 'Deus do Submundo (冥王)';
+  if (level < 141) return 'Instinto Superior (身勝手の極意)';
+  if (level < 150) return 'Deus da Destruição (破壊神)';
+  return 'Hokage / Rei dos Piratas (火影/海賊王)';
 }

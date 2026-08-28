@@ -34,8 +34,20 @@ export default function App() {
   const [xpToast, setXpToast] = useState<{ amount: number; reason: string } | null>(null);
 
   useEffect(() => {
-    const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
+    const unsubscribe = onAuthStateChanged(auth, async (currentUser) => {
       setUser(currentUser);
+      if (currentUser) {
+        import('./services/progressService').then(async ({ fetchUserStatsFromCloud, saveUserStatsToCloud }) => {
+          const cloudStats = await fetchUserStatsFromCloud(currentUser.uid);
+          if (cloudStats) {
+            setUserStats(cloudStats);
+          } else {
+            // Se não existe na nuvem, salva o localStorage atual lá
+            const localStats = loadUserStats();
+            await saveUserStatsToCloud(currentUser.uid, localStats);
+          }
+        }).catch(err => console.error(err));
+      }
       setLoadingAuth(false);
     });
     return () => unsubscribe();
@@ -44,7 +56,12 @@ export default function App() {
   // Save stats on update
   useEffect(() => {
     saveUserStats(userStats);
-  }, [userStats]);
+    if (user) {
+      import('./services/progressService').then(({ saveUserStatsToCloud }) => {
+        saveUserStatsToCloud(user.uid, userStats);
+      }).catch(err => console.error(err));
+    }
+  }, [userStats, user]);
 
   if (loadingAuth) {
     return (
