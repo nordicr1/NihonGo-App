@@ -5,7 +5,7 @@ import { LoginScreen } from './components/LoginScreen';
 import { Loader2 } from 'lucide-react';
 
 import { JLPTLevel, UserStats } from './types';
-import { loadUserStats, saveUserStats, calculateLevel } from './utils/storage';
+import { loadUserStats, saveUserStats, calculateLevel, getLevelTitle } from './utils/storage';
 import { Header } from './components/Header';
 import { HomeHub } from './components/HomeHub';
 import { KanaExplorer } from './components/KanaExplorer';
@@ -32,6 +32,8 @@ export default function App() {
   const [isStatsOpen, setIsStatsOpen] = useState(false);
   const [isSenseiOpen, setIsSenseiOpen] = useState(false);
   const [xpToast, setXpToast] = useState<{ amount: number; reason: string } | null>(null);
+  const [levelUpToast, setLevelUpToast] = useState<{ level: number; title: string } | null>(null);
+  const prevLevelRef = React.useRef(userStats.level);
 
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, async (currentUser) => {
@@ -62,6 +64,18 @@ export default function App() {
       }).catch(err => console.error(err));
     }
   }, [userStats, user]);
+
+  // Check for Level Up
+  useEffect(() => {
+    if (userStats.level > prevLevelRef.current) {
+      const title = getLevelTitle(userStats.level);
+      setLevelUpToast({ level: userStats.level, title });
+      setTimeout(() => {
+        setLevelUpToast(null);
+      }, 5000);
+    }
+    prevLevelRef.current = userStats.level;
+  }, [userStats.level]);
 
   if (loadingAuth) {
     return (
@@ -237,6 +251,22 @@ export default function App() {
               +{xpToast.amount} XP Ganho!
             </div>
             <div className="text-[11px] text-stone-300">{xpToast.reason}</div>
+          </div>
+        </div>
+      )}
+
+      {/* Level Up Toast Notification */}
+      {levelUpToast && (
+        <div className="fixed top-24 left-1/2 -translate-x-1/2 z-50 flex flex-col items-center gap-1 px-8 py-5 bg-gradient-to-br from-amber-500 to-rose-600 text-white rounded-2xl shadow-2xl border-2 border-white/20 animate-bounce">
+          <div className="flex items-center gap-2">
+            <Sparkles size={28} className="text-yellow-200 fill-yellow-200" />
+            <span className="text-2xl font-black tracking-widest text-yellow-100 uppercase drop-shadow-md">
+              Nível {levelUpToast.level}!
+            </span>
+            <Sparkles size={28} className="text-yellow-200 fill-yellow-200" />
+          </div>
+          <div className="text-sm font-bold text-white drop-shadow mt-1">
+            Novo Rank: <span className="text-yellow-200 text-base">{levelUpToast.title}</span>
           </div>
         </div>
       )}
