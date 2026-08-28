@@ -6,43 +6,49 @@ import { AudioButton } from './AudioButton';
 import { BookOpen, Search, Sparkles, Filter, ChevronRight, Layers, Bookmark } from 'lucide-react';
 import { playJapaneseAudio } from '../utils/audio';
 
-const GrammarDetailContent = ({ selectedGrammar }: { selectedGrammar: GrammarItem }) => (
+const GrammarDetailContent = ({ selectedGrammar, isMobile = false }: { selectedGrammar: GrammarItem, isMobile?: boolean }) => (
   <>
-    <div className="border-b border-stone-100 pb-4">
-      <div className="flex items-center gap-2">
-        <span className="text-xs px-2 py-0.5 rounded bg-indigo-100 text-indigo-800 font-bold">
-          JLPT {selectedGrammar.jlpt}
-        </span>
-        <span className="text-xs text-stone-500">{selectedGrammar.category}</span>
-      </div>
-      <h2 className="text-xl font-extrabold text-stone-900 mt-2">
-        {selectedGrammar.pattern}
-      </h2>
-      <p className="text-sm font-semibold text-indigo-600">
-        {selectedGrammar.titlePt}
-      </p>
-    </div>
-
-    <div className="space-y-4 text-sm mt-4">
-      {/* Formula */}
-      <div className="bg-indigo-50/70 p-3.5 rounded-xl border border-indigo-100">
-        <span className="text-xs font-bold text-indigo-900 block uppercase mb-1">
-          Estrutura / Fórmula de Formação
-        </span>
-        <p className="text-xs font-mono font-bold text-indigo-950">
-          {selectedGrammar.formationFormula}
+    {!isMobile && (
+      <div className="border-b border-stone-100 pb-4">
+        <div className="flex items-center gap-2">
+          <span className="text-xs px-2 py-0.5 rounded bg-indigo-100 text-indigo-800 font-bold">
+            JLPT {selectedGrammar.jlpt}
+          </span>
+          <span className="text-xs text-stone-500">{selectedGrammar.category}</span>
+        </div>
+        <h2 className="text-xl font-extrabold text-stone-900 mt-2">
+          {selectedGrammar.pattern}
+        </h2>
+        <p className="text-sm font-semibold text-indigo-600">
+          {selectedGrammar.titlePt}
         </p>
       </div>
+    )}
+
+    <div className={`space-y-4 text-sm ${isMobile ? 'mt-0' : 'mt-4'}`}>
+      {/* Formula */}
+      {!isMobile && (
+        <div className="bg-indigo-50/70 p-3.5 rounded-xl border border-indigo-100">
+          <span className="text-xs font-bold text-indigo-900 block uppercase mb-1">
+            Estrutura / Fórmula de Formação
+          </span>
+          <p className="text-xs font-mono font-bold text-indigo-950">
+            {selectedGrammar.formationFormula}
+          </p>
+        </div>
+      )}
 
       {/* Explanation */}
-      <div className="space-y-1">
-        <span className="text-xs text-stone-400 font-bold uppercase block">
-          Explicação Didática
-        </span>
-        <p className="text-xs text-stone-700 leading-relaxed">
-          {selectedGrammar.explanationPt}
-        </p>
-      </div>
+      {!isMobile && (
+        <div className="space-y-1">
+          <span className="text-xs text-stone-400 font-bold uppercase block">
+            Explicação Didática
+          </span>
+          <p className="text-xs text-stone-700 leading-relaxed">
+            {selectedGrammar.explanationPt}
+          </p>
+        </div>
+      )}
 
       {/* Key Rules */}
       {selectedGrammar.keyRulePt && (
@@ -274,7 +280,7 @@ export const VocabGrammarHub: React.FC<VocabGrammarHubProps> = ({
 
                   {isSelected && (
                     <div className="mt-4 pt-4 border-t border-stone-200 lg:hidden block cursor-default animate-in fade-in zoom-in-95 duration-200" onClick={(e) => e.stopPropagation()}>
-                      <GrammarDetailContent selectedGrammar={item} />
+                      <GrammarDetailContent selectedGrammar={item} isMobile={true} />
                     </div>
                   )}
                 </div>
