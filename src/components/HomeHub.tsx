@@ -52,6 +52,11 @@ const JAPANESE_TIPS = [
 
 const CHANGELOG = [
   {
+    date: '28 Ago 2026',
+    title: 'Quase 1.000 Novos Kanjis do N1 Adicionados! 🐉',
+    desc: 'O banco de Kanjis do JLPT N1 passou por uma atualização massiva e ininterrupta! Injetamos quase 1.000 novos Kanjis avançados de uma só vez. Cada um com leituras On/Kun-yomi, significados e exemplos práticos. Tudo inserido com filtro inteligente global para evitar Kanjis repetidos de outros níveis. O dicionário N1 está fenomenal!',
+  },
+  {
     date: '27 Ago 2026',
     title: 'Simulado JLPT N5 Oficial Adicionado! 🎯',
     desc: 'O módulo de Testes JLPT N5 agora conta com 52 questões baseadas em provas oficiais reais, focando em vocabulário, kanji, gramática (partículas, sentenças em estrela ★) e textos de leitura e interpretação, tudo com explicações completas.',
