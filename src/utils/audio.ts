@@ -3,6 +3,38 @@
  */
 export function playJapaneseAudio(text: string, rate = 0.9): Promise<void> {
   return new Promise((resolve) => {
+    try {
+      if (!text) {
+        resolve();
+        return;
+      }
+      
+      // Use unofficial Google Translate TTS (tw-ob client allows Audio tag usage without CORS issues)
+      // Provides much higher quality (often WaveNet-based) neural voice than standard window.speechSynthesis
+      const url = `https://translate.google.com/translate_tts?ie=UTF-8&q=${encodeURIComponent(text)}&tl=ja&client=tw-ob`;
+      
+      const audio = new Audio(url);
+      audio.playbackRate = rate;
+      
+      audio.onended = () => resolve();
+      
+      // If the neural fetch fails (e.g., text too long, offline, or rate limited), fallback to native
+      audio.onerror = () => {
+        fallbackToSpeechSynthesis(text, rate).then(resolve);
+      };
+      
+      audio.play().catch(err => {
+        fallbackToSpeechSynthesis(text, rate).then(resolve);
+      });
+      
+    } catch (err) {
+      fallbackToSpeechSynthesis(text, rate).then(resolve);
+    }
+  });
+}
+
+function fallbackToSpeechSynthesis(text: string, rate = 0.9): Promise<void> {
+  return new Promise((resolve) => {
     if (typeof window === 'undefined' || !('speechSynthesis' in window)) {
       console.warn('Speech synthesis not supported on this browser');
       resolve();
@@ -30,7 +62,7 @@ export function playJapaneseAudio(text: string, rate = 0.9): Promise<void> {
 
       window.speechSynthesis.speak(utterance);
     } catch (err) {
-      console.error('Audio playback error:', err);
+      console.error('Audio fallback error:', err);
       resolve();
     }
   });
