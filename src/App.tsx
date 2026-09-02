@@ -6,6 +6,7 @@ import { Loader2 } from 'lucide-react';
 
 import { JLPTLevel, UserStats } from './types';
 import { loadUserStats, saveUserStats, calculateLevel, getLevelTitle } from './utils/storage';
+import { generateDailyQuests } from './utils/quests';
 import { Header } from './components/Header';
 import { HomeHub } from './components/HomeHub';
 import { KanaExplorer } from './components/KanaExplorer';
@@ -96,6 +97,18 @@ export default function App() {
     }
   }, [userStats.hearts, userStats.lastHeartRegenTime]);
 
+  // Daily Quests Generation
+  useEffect(() => {
+    const today = new Date().toISOString().split('T')[0];
+    if (userStats.lastQuestDate !== today) {
+      setUserStats(prev => ({
+        ...prev,
+        dailyQuests: generateDailyQuests(),
+        lastQuestDate: today
+      }));
+    }
+  }, [userStats.lastQuestDate]);
+
   if (loadingAuth) {
     return (
       <div className="min-h-screen bg-stone-900 flex items-center justify-center">
@@ -150,12 +163,30 @@ export default function App() {
       checkBadge('xp_5000', newXp >= 5000, 'Super Saiyajin', '⚡');
       checkBadge('sensei_friend', reason.includes('Sensei'), 'Discípulo do Sensei Kenji', '🤖');
 
+      // Update Daily Quests Progress
+      const updatedQuests = prev.dailyQuests.map(q => {
+        if (q.isRedeemed || q.progress >= q.target) return q;
+        let increment = 0;
+        if (q.type === 'gain_xp') increment = amount;
+        else if (q.type === 'study_grammar' && reason.includes('Gramática')) increment = 1;
+        else if (q.type === 'study_vocab' && reason.includes('Vocabulário')) increment = 1;
+        else if (q.type === 'talk_sensei' && reason.includes('Sensei')) increment = 1;
+        else if (q.type === 'play_memory' && reason.includes('Memória')) increment = 1;
+        else if (q.type === 'play_jlpt' && reason.includes('JLPT') && !reason.includes('Concluiu')) increment = 1; // 1 per question answered correctly
+
+        if (increment > 0) {
+          return { ...q, progress: Math.min(q.target, q.progress + increment) };
+        }
+        return q;
+      });
+
       return {
         ...prev,
         xp: newXp,
         level: newLevel,
         hearts: newHearts,
         unlockedBadges: unlocked,
+        dailyQuests: updatedQuests,
         lastHeartRegenTime: (prev.hearts < 5 && newHearts === 5) ? Date.now() : prev.lastHeartRegenTime
       };
     });
@@ -164,6 +195,27 @@ export default function App() {
     setTimeout(() => {
       setXpToast(null);
     }, 2800);
+  };
+
+  const handleRedeemQuest = (questId: string) => {
+    const quest = userStats.dailyQuests.find(q => q.id === questId);
+    if (!quest || quest.isRedeemed || quest.progress < quest.target) return;
+
+    setUserStats(prev => ({
+      ...prev,
+      dailyQuests: prev.dailyQuests.map(q => q.id === questId ? { ...q, isRedeemed: true } : q)
+    }));
+    
+    // Add XP
+    handleGainXp(quest.xpReward, 'Recompensa de Missão Diária');
+
+    // Check if all quests are now redeemed
+    const allRedeemed = userStats.dailyQuests.every(q => q.id === questId ? true : q.isRedeemed);
+    if (allRedeemed) {
+      setTimeout(() => {
+        handleGainXp(100, 'Bônus Baú Diário! 🎁');
+      }, 1000);
+    }
   };
 
   const handleResetStats = () => {
@@ -178,7 +230,9 @@ export default function App() {
       kanasMastered: [],
       unlockedBadges: ['first_step'],
       hearts: 5,
-      lastHeartRegenTime: Date.now()
+      lastHeartRegenTime: Date.now(),
+      dailyQuests: [],
+      lastQuestDate: ''
     };
     setUserStats(fresh);
     saveUserStats(fresh);
@@ -219,6 +273,7 @@ export default function App() {
             onJlptChange={setSelectedJlpt}
             userStats={userStats}
             onOpenSensei={() => setIsSenseiOpen(true)}
+            onRedeemQuest={handleRedeemQuest}
           />
         )}
 

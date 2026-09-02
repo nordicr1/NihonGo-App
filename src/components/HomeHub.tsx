@@ -13,7 +13,8 @@ import {
   CheckCircle,
   HelpCircle,
   Volume2,
-  PenTool
+  PenTool,
+  Target
 } from 'lucide-react';
 import { AudioButton } from './AudioButton';
 
@@ -53,8 +54,8 @@ const JAPANESE_TIPS = [
 const CHANGELOG = [
   {
     date: '02 Set 2026',
-    title: 'Gamificação Elevada: Vidas e Novas Conquistas ❤️🏆',
-    desc: 'O app virou um jogo! Adicionamos um Sistema de Vidas (❤️). Agora, ao errar quizzes ou testes, você perde vidas. Mas não se preocupe: você pode recuperar corações estudando teoria (Gramática/Vocabulário) ou aguardando. Além disso, a Galeria de Troféus foi redesenhada com mais de 10 novas conquistas épicas, incluindo Super Saiyajin (5.000 XP) e ofensiva de dias seguidos. Com notificações pop-up de desbloqueio incríveis!',
+    title: 'Missões Diárias & Sistema de Vidas! 🎯❤️',
+    desc: 'O app virou um jogo de verdade! Agora todo dia você recebe 3 Missões Diárias (Fácil, Média e Épica). Cumpra os desafios (como ler gramática ou fazer XP) para ganhar muita experiência, e se fechar as 3 no mesmo dia, você ganha o Bônus do Baú Diário! Além disso, adicionamos as Vidas (❤️) que você perde ao errar testes, mas pode recuperar estudando a teoria. A nova Galeria de Troféus tem dezenas de novas conquistas!',
   },
   {
     date: '28 Ago 2026',
@@ -139,6 +140,7 @@ interface HomeHubProps {
   onJlptChange: (level: JLPTLevel) => void;
   userStats: UserStats;
   onOpenSensei: () => void;
+  onRedeemQuest: (id: string) => void;
 }
 
 export const HomeHub: React.FC<HomeHubProps> = ({
@@ -147,6 +149,7 @@ export const HomeHub: React.FC<HomeHubProps> = ({
   onJlptChange,
   userStats,
   onOpenSensei,
+  onRedeemQuest
 }) => {
   const currentTip = React.useMemo(() => JAPANESE_TIPS[Math.floor(Math.random() * JAPANESE_TIPS.length)], []);
 
@@ -235,6 +238,64 @@ export const HomeHub: React.FC<HomeHubProps> = ({
           </div>
         </div>
       </div>
+
+      {/* Daily Quests Panel */}
+      {userStats.dailyQuests && userStats.dailyQuests.length > 0 && (
+        <div className="bg-white border border-stone-200 rounded-3xl p-6 sm:p-8 shadow-sm">
+          <div className="flex items-center gap-2 mb-6">
+            <div className="w-10 h-10 rounded-full bg-amber-100 flex items-center justify-center text-amber-600">
+              <Target size={20} />
+            </div>
+            <h3 className="text-xl sm:text-2xl font-black text-stone-900">Missões Diárias</h3>
+          </div>
+          
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
+            {userStats.dailyQuests.map((quest) => (
+              <div key={quest.id} className={`border rounded-2xl p-5 flex flex-col justify-between transition-colors ${quest.isRedeemed ? 'bg-stone-50 border-stone-200 opacity-60' : quest.progress >= quest.target ? 'bg-emerald-50 border-emerald-300' : 'bg-white border-stone-200 hover:border-amber-300'}`}>
+                <div className="mb-4">
+                  <div className="flex justify-between items-start mb-2">
+                    <span className={`text-[10px] font-black uppercase tracking-wider px-2 py-0.5 rounded-full ${quest.difficulty === 'epic' ? 'bg-rose-100 text-rose-700' : quest.difficulty === 'medium' ? 'bg-amber-100 text-amber-700' : 'bg-emerald-100 text-emerald-700'}`}>
+                      {quest.difficulty === 'epic' ? 'Épica' : quest.difficulty === 'medium' ? 'Média' : 'Fácil'}
+                    </span>
+                    <span className="text-amber-500 font-bold text-xs flex items-center gap-1">
+                      <Sparkles size={12} /> +{quest.xpReward} XP
+                    </span>
+                  </div>
+                  <h4 className={`font-bold text-sm ${quest.isRedeemed ? 'text-stone-500 line-through' : 'text-stone-800'}`}>
+                    {quest.title}
+                  </h4>
+                </div>
+                
+                {quest.isRedeemed ? (
+                  <div className="text-center font-bold text-xs text-stone-500 py-2 border border-stone-200 rounded-xl bg-stone-100">
+                    Resgatada
+                  </div>
+                ) : quest.progress >= quest.target ? (
+                  <button
+                    onClick={() => onRedeemQuest(quest.id)}
+                    className="w-full bg-emerald-500 hover:bg-emerald-400 text-emerald-950 font-bold text-sm py-2 rounded-xl transition-all shadow-md active:scale-95"
+                  >
+                    Resgatar +{quest.xpReward} XP
+                  </button>
+                ) : (
+                  <div className="space-y-1.5">
+                    <div className="flex justify-between text-[11px] font-bold text-stone-500">
+                      <span>Progresso</span>
+                      <span>{quest.progress} / {quest.target}</span>
+                    </div>
+                    <div className="w-full bg-stone-100 h-2 rounded-full overflow-hidden">
+                      <div 
+                        className="h-full bg-amber-400 rounded-full transition-all duration-500"
+                        style={{ width: `${(quest.progress / quest.target) * 100}%` }}
+                      />
+                    </div>
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
 
       {/* Main 6 Learning Modules Cards */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">

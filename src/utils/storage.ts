@@ -127,6 +127,8 @@ export function loadUserStats(): UserStats {
         unlockedBadges: ['first_step'],
         hearts: 5,
         lastHeartRegenTime: Date.now(),
+        dailyQuests: [],
+        lastQuestDate: '',
         ...parsed
       };
     }
@@ -145,7 +147,9 @@ export function loadUserStats(): UserStats {
     kanasMastered: [],
     unlockedBadges: ['first_step'],
     hearts: 5,
-    lastHeartRegenTime: Date.now()
+    lastHeartRegenTime: Date.now(),
+    dailyQuests: [],
+    lastQuestDate: ''
   };
 }
 

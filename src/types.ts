@@ -111,6 +111,19 @@ export interface UserStats {
   unlockedBadges: string[];
   hearts: number;
   lastHeartRegenTime: number;
+  dailyQuests: DailyQuest[];
+  lastQuestDate: string;
+}
+
+export interface DailyQuest {
+  id: string;
+  title: string;
+  target: number;
+  progress: number;
+  xpReward: number;
+  difficulty: 'easy' | 'medium' | 'epic';
+  isRedeemed: boolean;
+  type: 'study_grammar' | 'study_vocab' | 'play_memory' | 'play_jlpt' | 'gain_xp' | 'talk_sensei';
 }
 
 export interface Badge {
