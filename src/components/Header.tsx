@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { JLPTLevel, UserStats } from '../types';
 import { getLevelTitle } from '../utils/storage';
 import { Sparkles, Flame, Trophy, Bot, BookOpen, Compass, Gamepad2, Layers, PenTool, LogOut, Sword, Shield, Crown, Zap, Star, Medal, Ghost, Skull, Rocket, Gem, Heart } from 'lucide-react';
@@ -39,6 +39,7 @@ export const Header: React.FC<HeaderProps> = ({
   onOpenSensei,
 }) => {
   const jlptLevels: JLPTLevel[] = ['N5', 'N4', 'N3', 'N2', 'N1'];
+  const [showHeartsInfo, setShowHeartsInfo] = useState(false);
 
   return (
     <header className="sticky top-0 z-40 bg-stone-900/95 text-stone-100 backdrop-blur border-b border-stone-800 shadow-md">
@@ -92,13 +93,34 @@ export const Header: React.FC<HeaderProps> = ({
           {/* Stats & Sensei AI Shortcut */}
           <div className="flex items-center justify-center gap-2 sm:gap-3 w-full sm:w-auto">
             {/* Hearts (Vidas) */}
-            <div 
-              onClick={onOpenStats}
-              title={`Vidas: ${userStats.hearts}/5`}
-              className={`flex-1 sm:flex-none flex justify-center items-center gap-1.5 px-2.5 py-2 sm:py-1.5 rounded-lg bg-stone-800/80 border border-stone-700/60 text-xs font-semibold cursor-pointer hover:bg-stone-700/60 transition ${userStats.hearts > 0 ? 'text-rose-400' : 'text-stone-500'}`}
-            >
-              <Heart size={15} className={userStats.hearts > 0 ? 'fill-rose-500 text-rose-500 animate-pulse' : 'text-stone-500'} />
-              <span>{userStats.hearts}</span>
+            <div className="relative">
+              <div 
+                onClick={() => setShowHeartsInfo(!showHeartsInfo)}
+                title={`Vidas: ${userStats.hearts}/5`}
+                className={`flex justify-center items-center gap-1.5 px-2.5 py-2 sm:py-1.5 rounded-lg bg-stone-800/80 border border-stone-700/60 text-xs font-semibold cursor-pointer hover:bg-stone-700/60 transition ${userStats.hearts > 0 ? 'text-rose-400' : 'text-stone-500'}`}
+              >
+                <Heart size={15} className={userStats.hearts > 0 ? 'fill-rose-500 text-rose-500 animate-pulse' : 'text-stone-500'} />
+                <span>{userStats.hearts}</span>
+              </div>
+              
+              {showHeartsInfo && (
+                <div className="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-64 bg-stone-800 border border-stone-700 rounded-xl p-4 shadow-xl z-50">
+                  <div className="flex justify-between items-start mb-2">
+                    <h4 className="font-black text-rose-400 flex items-center gap-2">
+                      <Heart size={16} className="fill-rose-500" /> Suas Vidas
+                    </h4>
+                    <button onClick={() => setShowHeartsInfo(false)} className="text-stone-400 hover:text-white">&times;</button>
+                  </div>
+                  <p className="text-xs text-stone-300 mb-3">
+                    Você perde vidas ao errar em jogos e simulados. 
+                  </p>
+                  <p className="text-xs text-stone-300 font-bold mb-1 border-t border-stone-700 pt-2">Como recuperar?</p>
+                  <ul className="text-[11px] text-stone-400 space-y-1 list-disc pl-4">
+                    <li>Aguardar (recupera 1 a cada hora)</li>
+                    <li><strong>Estudar a Teoria:</strong> Ganhe qualquer quantidade de XP em Gramática, Vocabulário ou Kana para recuperar 1 ❤️ instantaneamente!</li>
+                  </ul>
+                </div>
+              )}
             </div>
 
             {/* Streak */}
