@@ -113,6 +113,7 @@ export interface UserStats {
   lastHeartRegenTime: number;
   dailyQuests: DailyQuest[];
   lastQuestDate: string;
+  kanaForHeartProgress?: number;
 }
 
 export interface DailyQuest {

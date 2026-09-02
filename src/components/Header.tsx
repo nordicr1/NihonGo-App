@@ -115,9 +115,25 @@ export const Header: React.FC<HeaderProps> = ({
                     Você perde vidas ao errar em jogos e simulados. 
                   </p>
                   <p className="text-xs text-stone-300 font-bold mb-1 border-t border-stone-700 pt-2">Como recuperar?</p>
-                  <ul className="text-[11px] text-stone-400 space-y-1 list-disc pl-4">
+                  <ul className="text-[11px] text-stone-400 space-y-2 list-disc pl-4">
                     <li>Aguardar (recupera 1 a cada hora)</li>
-                    <li><strong>Estudar a Teoria:</strong> Ganhe qualquer quantidade de XP em Gramática, Vocabulário ou Kana para recuperar 1 ❤️ instantaneamente!</li>
+                    <li><strong>Gramática / Vocabulário:</strong> Ganhe qualquer quantidade de XP nessas áreas para recuperar 1 ❤️ instantaneamente!</li>
+                    <li>
+                      <strong>Kana:</strong> Estude 15 letras para recuperar 1 ❤️.
+                      {userStats.hearts < 5 && (
+                        <div className="mt-1 w-full bg-stone-700 h-1.5 rounded-full overflow-hidden">
+                          <div 
+                            className="h-full bg-rose-500 rounded-full transition-all duration-300"
+                            style={{ width: `${((userStats.kanaForHeartProgress || 0) / 15) * 100}%` }}
+                          />
+                        </div>
+                      )}
+                      {userStats.hearts < 5 && (
+                        <div className="text-[9px] text-stone-500 mt-0.5 text-right">
+                          {userStats.kanaForHeartProgress || 0}/15 letras
+                        </div>
+                      )}
+                    </li>
                   </ul>
                 </div>
               )}

@@ -137,10 +137,21 @@ export default function App() {
       let newHearts = prev.hearts;
 
       // Heart recovery by studying theory (Grammar, Vocab, Kanji Read)
-      const isStudyTheory = reason.includes('Gramática') || reason.includes('Vocabulário') || reason.includes('Kana') || reason.includes('Kanji');
-      if (isStudyTheory && newHearts < 5 && amount > 0) {
+      const isKana = reason.includes('Kana') && !reason.toLowerCase().includes('quiz');
+      const isOtherTheory = reason.includes('Gramática') || reason.includes('Vocabulário') || reason.includes('Kanji');
+      
+      let newKanaForHeart = prev.kanaForHeartProgress || 0;
+
+      if (isOtherTheory && newHearts < 5 && amount > 0) {
         newHearts = Math.min(5, newHearts + 1);
         if (!unlocked.includes('heart_recovery')) unlocked.push('heart_recovery');
+      } else if (isKana && newHearts < 5 && amount > 0) {
+        newKanaForHeart += 1;
+        if (newKanaForHeart >= 15) {
+          newHearts = Math.min(5, newHearts + 1);
+          newKanaForHeart = 0;
+          if (!unlocked.includes('heart_recovery')) unlocked.push('heart_recovery');
+        }
       }
 
       // Check Badges
@@ -187,6 +198,7 @@ export default function App() {
         hearts: newHearts,
         unlockedBadges: unlocked,
         dailyQuests: updatedQuests,
+        kanaForHeartProgress: newKanaForHeart,
         lastHeartRegenTime: (prev.hearts < 5 && newHearts === 5) ? Date.now() : prev.lastHeartRegenTime
       };
     });
