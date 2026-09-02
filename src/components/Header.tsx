@@ -1,7 +1,7 @@
 import React from 'react';
 import { JLPTLevel, UserStats } from '../types';
 import { getLevelTitle } from '../utils/storage';
-import { Sparkles, Flame, Trophy, Bot, BookOpen, Compass, Gamepad2, Layers, PenTool, LogOut, Sword, Shield, Crown, Zap, Star, Medal, Ghost, Skull, Rocket, Gem } from 'lucide-react';
+import { Sparkles, Flame, Trophy, Bot, BookOpen, Compass, Gamepad2, Layers, PenTool, LogOut, Sword, Shield, Crown, Zap, Star, Medal, Ghost, Skull, Rocket, Gem, Heart } from 'lucide-react';
 
 interface HeaderProps {
   currentTab: 'hub' | 'kana' | 'kanji' | 'grammar' | 'tests' | 'games' | 'analyzer' | 'sensei' | 'drawing' | 'conversation';
@@ -91,6 +91,16 @@ export const Header: React.FC<HeaderProps> = ({
 
           {/* Stats & Sensei AI Shortcut */}
           <div className="flex items-center justify-center gap-2 sm:gap-3 w-full sm:w-auto">
+            {/* Hearts (Vidas) */}
+            <div 
+              onClick={onOpenStats}
+              title={`Vidas: ${userStats.hearts}/5`}
+              className={`flex-1 sm:flex-none flex justify-center items-center gap-1.5 px-2.5 py-2 sm:py-1.5 rounded-lg bg-stone-800/80 border border-stone-700/60 text-xs font-semibold cursor-pointer hover:bg-stone-700/60 transition ${userStats.hearts > 0 ? 'text-rose-400' : 'text-stone-500'}`}
+            >
+              <Heart size={15} className={userStats.hearts > 0 ? 'fill-rose-500 text-rose-500 animate-pulse' : 'text-stone-500'} />
+              <span>{userStats.hearts}</span>
+            </div>
+
             {/* Streak */}
             <div 
               onClick={onOpenStats}

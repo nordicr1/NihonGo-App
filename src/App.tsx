@@ -76,6 +76,25 @@ export default function App() {
     }
     prevLevelRef.current = userStats.level;
   }, [userStats.level]);
+  const [achievementToast, setAchievementToast] = useState<{ title: string; icon: string } | null>(null);
+
+  // Heart Regeneration Timer (1 per hour)
+  useEffect(() => {
+    if (userStats.hearts < 5) {
+      const interval = setInterval(() => {
+        const now = Date.now();
+        const timePassed = now - userStats.lastHeartRegenTime;
+        if (timePassed > 60 * 60 * 1000) { // 1 hora
+          setUserStats(prev => ({
+            ...prev,
+            hearts: Math.min(5, prev.hearts + 1),
+            lastHeartRegenTime: now
+          }));
+        }
+      }, 60000); // Check every minute
+      return () => clearInterval(interval);
+    }
+  }, [userStats.hearts, userStats.lastHeartRegenTime]);
 
   if (loadingAuth) {
     return (
@@ -89,34 +108,55 @@ export default function App() {
     return <LoginScreen />;
   }
 
+  const handleLoseHeart = () => {
+    setUserStats(prev => ({
+      ...prev,
+      hearts: Math.max(0, prev.hearts - 1),
+      lastHeartRegenTime: prev.hearts === 5 ? Date.now() : prev.lastHeartRegenTime
+    }));
+  };
+
   const handleGainXp = (amount: number, reason: string) => {
     setUserStats((prev) => {
       const newXp = prev.xp + amount;
       const newLevel = calculateLevel(newXp);
       const unlocked = [...prev.unlockedBadges];
+      let newHearts = prev.hearts;
 
-      // Badges triggers
-      if (!unlocked.includes('kana_novice') && reason.includes('Kana')) {
-        unlocked.push('kana_novice');
+      // Heart recovery by studying theory (Grammar, Vocab, Kanji Read)
+      const isStudyTheory = reason.includes('Gramática') || reason.includes('Vocabulário') || reason.includes('Kana') || reason.includes('Kanji');
+      if (isStudyTheory && newHearts < 5 && amount > 0) {
+        newHearts = Math.min(5, newHearts + 1);
+        if (!unlocked.includes('heart_recovery')) unlocked.push('heart_recovery');
       }
-      if (!unlocked.includes('kanji_hunter') && reason.includes('Kanji')) {
-        unlocked.push('kanji_hunter');
-      }
-      if (!unlocked.includes('memory_master') && reason.includes('Memória')) {
-        unlocked.push('memory_master');
-      }
-      if (!unlocked.includes('jlpt_challenger') && reason.includes('JLPT')) {
-        unlocked.push('jlpt_challenger');
-      }
-      if (!unlocked.includes('sentence_builder') && reason.includes('Frase')) {
-        unlocked.push('sentence_builder');
-      }
+
+      // Check Badges
+      const checkBadge = (id: string, cond: boolean, title: string, icon: string) => {
+        if (!unlocked.includes(id) && cond) {
+          unlocked.push(id);
+          setAchievementToast({ title, icon });
+          setTimeout(() => setAchievementToast(null), 5000);
+        }
+      };
+
+      checkBadge('kana_novice', reason.includes('Kana'), 'Iniciante do Kana', '🌸');
+      checkBadge('kanji_hunter', reason.includes('Kanji'), 'Caçador de Kanjis', '⛩️');
+      checkBadge('memory_master', reason.includes('Memória'), 'Mestre da Memória', '🧠');
+      checkBadge('jlpt_challenger', reason.includes('JLPT'), 'Aspirante ao JLPT', '🏆');
+      checkBadge('sentence_builder', reason.includes('Frase'), 'Arquiteto de Frases', '📜');
+      checkBadge('streak_3', prev.streakDays >= 3, 'Dedicação Contínua', '🔥');
+      checkBadge('streak_7', prev.streakDays >= 7, 'Estudioso Implacável', '☄️');
+      checkBadge('xp_1000', newXp >= 1000, 'Despertar do Poder', '✨');
+      checkBadge('xp_5000', newXp >= 5000, 'Super Saiyajin', '⚡');
+      checkBadge('sensei_friend', reason.includes('Sensei'), 'Discípulo do Sensei Kenji', '🤖');
 
       return {
         ...prev,
         xp: newXp,
         level: newLevel,
+        hearts: newHearts,
         unlockedBadges: unlocked,
+        lastHeartRegenTime: (prev.hearts < 5 && newHearts === 5) ? Date.now() : prev.lastHeartRegenTime
       };
     });
 
@@ -137,6 +177,8 @@ export default function App() {
       kanjisLearned: [],
       kanasMastered: [],
       unlockedBadges: ['first_step'],
+      hearts: 5,
+      lastHeartRegenTime: Date.now()
     };
     setUserStats(fresh);
     saveUserStats(fresh);
@@ -217,11 +259,18 @@ export default function App() {
             selectedJlpt={selectedJlpt}
             onSelectJlpt={setSelectedJlpt}
             onGainXp={handleGainXp}
+            userStats={userStats}
+            onLoseHeart={handleLoseHeart}
           />
         )}
 
         {currentTab === 'games' && (
-          <GamesHub selectedJlpt={selectedJlpt} onGainXp={handleGainXp} />
+          <GamesHub 
+            selectedJlpt={selectedJlpt} 
+            onGainXp={handleGainXp} 
+            userStats={userStats}
+            onLoseHeart={handleLoseHeart}
+          />
         )}
 
         {currentTab === 'analyzer' && <SentenceAnalyzer onGainXp={handleGainXp} />}
@@ -239,6 +288,17 @@ export default function App() {
           <span className="font-bold text-sm hidden sm:inline">Sensei Kenji</span>
         </button>
       </div>
+
+      {/* Achievement Toast */}
+      {achievementToast && (
+        <div className="fixed top-6 left-1/2 -translate-x-1/2 z-50 flex items-center gap-3 px-6 py-4 bg-indigo-950 text-white rounded-2xl shadow-2xl border border-indigo-500/50 animate-bounce">
+          <div className="text-3xl drop-shadow-md">{achievementToast.icon}</div>
+          <div className="flex flex-col">
+            <span className="text-xs text-indigo-300 font-bold uppercase tracking-wider">Conquista Desbloqueada!</span>
+            <span className="font-black text-white text-base">{achievementToast.title}</span>
+          </div>
+        </div>
+      )}
 
       {/* XP Toast Notification */}
       {xpToast && (

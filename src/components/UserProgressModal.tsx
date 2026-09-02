@@ -106,26 +106,20 @@ export const UserProgressModal: React.FC<UserProgressModalProps> = ({
           </div>
 
           {/* Badges / Conquistas */}
-          <div className="space-y-3">
-            <div className="flex items-center gap-2">
-              <Award size={18} className="text-stone-800" />
-              <h4 className="font-extrabold text-stone-900 text-sm">
-                Conquistas & Emblemas Desbloqueados
-              </h4>
-            </div>
-
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-              {INITIAL_BADGES.map((b) => {
-                const isUnlocked = stats.unlockedBadges.includes(b.id);
-
-                return (
+          <div className="space-y-6">
+            {/* Unlocked Badges */}
+            <div className="space-y-3">
+              <div className="flex items-center gap-2">
+                <Award size={18} className="text-amber-600" />
+                <h4 className="font-extrabold text-stone-900 text-sm">
+                  Conquistas Desbloqueadas
+                </h4>
+              </div>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                {INITIAL_BADGES.filter(b => stats.unlockedBadges.includes(b.id)).map((b) => (
                   <div
                     key={b.id}
-                    className={`p-3.5 rounded-2xl border flex items-start gap-3 transition ${
-                      isUnlocked
-                        ? 'bg-white border-amber-300 shadow-sm'
-                        : 'bg-stone-50 border-stone-200 opacity-60'
-                    }`}
+                    className="p-3.5 rounded-2xl bg-white border border-amber-300 shadow-sm flex items-start gap-3 transition hover:scale-[1.02]"
                   >
                     <div className="text-3xl select-none">{b.icon}</div>
                     <div className="flex-1 min-w-0">
@@ -133,19 +127,48 @@ export const UserProgressModal: React.FC<UserProgressModalProps> = ({
                         <span className="text-xs font-bold text-stone-900 truncate">
                           {b.title}
                         </span>
-                        {isUnlocked ? (
-                          <CheckCircle2 size={15} className="text-emerald-600 shrink-0" />
-                        ) : (
-                          <Lock size={13} className="text-stone-400 shrink-0" />
-                        )}
+                        <CheckCircle2 size={15} className="text-emerald-600 shrink-0" />
                       </div>
                       <p className="text-[11px] text-stone-600 leading-tight mt-0.5">
                         {b.description}
                       </p>
                     </div>
                   </div>
-                );
-              })}
+                ))}
+                {INITIAL_BADGES.filter(b => stats.unlockedBadges.includes(b.id)).length === 0 && (
+                  <p className="text-sm text-stone-500 italic col-span-2">Nenhuma conquista desbloqueada ainda.</p>
+                )}
+              </div>
+            </div>
+
+            {/* Locked Badges */}
+            <div className="space-y-3">
+              <div className="flex items-center gap-2">
+                <Lock size={16} className="text-stone-400" />
+                <h4 className="font-extrabold text-stone-500 text-sm">
+                  Conquistas a Desbloquear
+                </h4>
+              </div>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                {INITIAL_BADGES.filter(b => !stats.unlockedBadges.includes(b.id)).map((b) => (
+                  <div
+                    key={b.id}
+                    className="p-3.5 rounded-2xl bg-stone-50 border border-stone-200 opacity-60 flex items-start gap-3"
+                  >
+                    <div className="text-3xl select-none grayscale">{b.icon}</div>
+                    <div className="flex-1 min-w-0">
+                      <div className="flex items-center justify-between">
+                        <span className="text-xs font-bold text-stone-600 truncate">
+                          {b.title}
+                        </span>
+                      </div>
+                      <p className="text-[10px] font-semibold text-rose-500 uppercase mt-1">
+                        Desafio: {b.condition}
+                      </p>
+                    </div>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </div>

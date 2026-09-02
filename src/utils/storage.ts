@@ -44,6 +44,69 @@ export const INITIAL_BADGES: Badge[] = [
     description: 'Montou frases completas com sucesso no jogo de frases.',
     icon: '📜',
     condition: 'Acertar um desafio de construção de frase'
+  },
+  {
+    id: 'streak_3',
+    title: 'Dedicação Contínua (3 Dias)',
+    description: 'Estudou por 3 dias seguidos.',
+    icon: '🔥',
+    condition: 'Atingir uma ofensiva de 3 dias'
+  },
+  {
+    id: 'streak_7',
+    title: 'Estudioso Implacável (7 Dias)',
+    description: 'Estudou por uma semana inteira!',
+    icon: '☄️',
+    condition: 'Atingir uma ofensiva de 7 dias'
+  },
+  {
+    id: 'sensei_friend',
+    title: 'Discípulo do Sensei Kenji',
+    description: 'Conversou com a IA do Sensei Kenji.',
+    icon: '🤖',
+    condition: 'Usar o Sensei AI para tirar dúvidas'
+  },
+  {
+    id: 'kanji_master_10',
+    title: 'Amante de Ideogramas (10 Kanjis)',
+    description: 'Desbloqueou e estudou 10 Kanjis únicos.',
+    icon: '🖌️',
+    condition: 'Aprender 10 Kanjis'
+  },
+  {
+    id: 'xp_1000',
+    title: 'Despertar do Poder (1.000 XP)',
+    description: 'Acumulou 1.000 XP no total.',
+    icon: '✨',
+    condition: 'Atingir 1.000 XP'
+  },
+  {
+    id: 'xp_5000',
+    title: 'Super Saiyajin (5.000 XP)',
+    description: 'O seu nível de poder é surpreendente.',
+    icon: '⚡',
+    condition: 'Atingir 5.000 XP'
+  },
+  {
+    id: 'perfect_jlpt',
+    title: 'Olhos de Shinigami',
+    description: 'Acertou todas as perguntas em um quiz JLPT sem perder vidas.',
+    icon: '🍎',
+    condition: '100% de precisão em um Quiz JLPT'
+  },
+  {
+    id: 'grammar_scholar',
+    title: 'Pesquisador de Ouro',
+    description: 'Mergulhou a fundo nos pontos gramaticais.',
+    icon: '📚',
+    condition: 'Ler 5 pontos gramaticais'
+  },
+  {
+    id: 'heart_recovery',
+    title: 'Fênix Renascida',
+    description: 'Recuperou uma vida estudando a teoria após quase falhar.',
+    icon: '❤️‍🔥',
+    condition: 'Recuperar vida estudando'
   }
 ];
 
@@ -62,6 +125,8 @@ export function loadUserStats(): UserStats {
         kanjisLearned: [],
         kanasMastered: [],
         unlockedBadges: ['first_step'],
+        hearts: 5,
+        lastHeartRegenTime: Date.now(),
         ...parsed
       };
     }
@@ -78,7 +143,9 @@ export function loadUserStats(): UserStats {
     quizzesCompleted: 0,
     kanjisLearned: [],
     kanasMastered: [],
-    unlockedBadges: ['first_step']
+    unlockedBadges: ['first_step'],
+    hearts: 5,
+    lastHeartRegenTime: Date.now()
   };
 }
 

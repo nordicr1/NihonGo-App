@@ -109,6 +109,8 @@ export interface UserStats {
   kanjisLearned: string[];
   kanasMastered: string[];
   unlockedBadges: string[];
+  hearts: number;
+  lastHeartRegenTime: number;
 }
 
 export interface Badge {

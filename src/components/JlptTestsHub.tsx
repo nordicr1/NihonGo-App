@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { JLPTLevel } from '../types';
-import { Layers, HelpCircle, CheckCircle, XCircle, ArrowRight, RotateCcw } from 'lucide-react';
+import { JLPTLevel, UserStats } from '../types';
+import { Layers, HelpCircle, CheckCircle, XCircle, ArrowRight, RotateCcw, HeartCrack } from 'lucide-react';
 import { JLPT_N5_TEST, JLPTQuestion } from '../data/jlptN5TestData';
 import { JLPT_N5_GRAMMAR_TEST } from '../data/jlptN5GrammarData';
 
@@ -10,12 +10,16 @@ interface JlptTestsHubProps {
   selectedJlpt: JLPTLevel;
   onSelectJlpt: (level: JLPTLevel) => void;
   onGainXp: (amount: number, reason: string) => void;
+  userStats: UserStats;
+  onLoseHeart: () => void;
 }
 
 export const JlptTestsHub: React.FC<JlptTestsHubProps> = ({
   selectedJlpt,
   onSelectJlpt,
-  onGainXp
+  onGainXp,
+  userStats,
+  onLoseHeart
 }) => {
   const levels: JLPTLevel[] = ['N5', 'N4', 'N3', 'N2', 'N1'];
   
@@ -83,6 +87,8 @@ export const JlptTestsHub: React.FC<JlptTestsHubProps> = ({
     if (idx === question.correctAnswer) {
       setScore(prev => prev + 1);
       onGainXp(15, 'Acertou questão do Simulado N5!');
+    } else {
+      onLoseHeart();
     }
   };
 
@@ -120,6 +126,27 @@ export const JlptTestsHub: React.FC<JlptTestsHubProps> = ({
       </p>
     );
   };
+
+  if (userStats.hearts === 0) {
+    return (
+      <div className="w-full max-w-5xl mx-auto p-4 sm:p-6 lg:p-8 animate-fadeIn">
+        <div className="bg-stone-900 border border-rose-900/40 rounded-3xl p-10 text-center shadow-2xl flex flex-col items-center justify-center min-h-[50vh]">
+          <HeartCrack size={64} className="text-rose-500 mb-6 animate-pulse" />
+          <h2 className="text-3xl font-black text-white mb-4">Você está sem Vidas!</h2>
+          <p className="text-stone-400 mb-8 max-w-md">
+            Você não tem ❤️ suficientes para fazer Simulados. 
+            Estude a teoria (Gramática ou Vocabulário) para recuperar vidas ou aguarde!
+          </p>
+          <button
+            onClick={() => window.location.reload()}
+            className="px-6 py-3 bg-rose-600 hover:bg-rose-500 text-white font-bold rounded-xl shadow-lg transition"
+          >
+            Estudar Teoria agora
+          </button>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 py-6 space-y-6">

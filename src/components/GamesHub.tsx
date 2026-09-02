@@ -5,7 +5,7 @@ import { KANJI_DATA } from '../data/kanjiData';
 import { VOCAB_DATA } from '../data/vocabData';
 import { SENTENCE_CHALLENGES } from '../data/sentenceData';
 import { QUIZ_QUESTIONS } from '../data/quizData';
-import { JLPTLevel, QuizQuestion, SentenceChallenge } from '../types';
+import { JLPTLevel, QuizQuestion, SentenceChallenge, UserStats } from '../types';
 import { AudioButton } from './AudioButton';
 import { playJapaneseAudio, soundFX } from '../utils/audio';
 import {
@@ -21,12 +21,15 @@ import {
   ArrowRight,
   Bot,
   Layers,
-  Zap
+  Zap,
+  HeartCrack
 } from 'lucide-react';
 
 interface GamesHubProps {
   selectedJlpt: JLPTLevel;
   onGainXp: (amount: number, reason: string) => void;
+  userStats: UserStats;
+  onLoseHeart: () => void;
 }
 
 type GameType = 'memory' | 'sentence' | 'quiz' | 'rush' | 'missing-char' | 'spot-diff';
@@ -143,7 +146,7 @@ export const GamesHub: React.FC<GamesHubProps> = ({ selectedJlpt: globalJlpt, on
       onGainXp(10, `Palavra Completa: ${wcTarget.word}`);
       generateWordCompletion();
     } else {
-      soundFX.playError();
+      soundFX.playError(); onLoseHeart();
       setWcScore(0);
       generateWordCompletion();
     }
@@ -171,7 +174,7 @@ export const GamesHub: React.FC<GamesHubProps> = ({ selectedJlpt: globalJlpt, on
       onGainXp(15, 'Encontrou o Kanji Diferente!');
       generateSpotDiff();
     } else {
-      soundFX.playError();
+      soundFX.playError(); onLoseHeart();
       setSdActive(false);
     }
   };
@@ -232,7 +235,7 @@ export const GamesHub: React.FC<GamesHubProps> = ({ selectedJlpt: globalJlpt, on
       interval = setInterval(() => {
         setRushTimer((prev) => {
           if (prev <= 1) {
-            soundFX.playError();
+            soundFX.playError(); onLoseHeart();
             setRushActive(false);
             return 0;
           }
@@ -251,7 +254,7 @@ export const GamesHub: React.FC<GamesHubProps> = ({ selectedJlpt: globalJlpt, on
       interval = setInterval(() => {
         setSdTimer((prev) => {
           if (prev <= 1) {
-            soundFX.playError();
+            soundFX.playError(); onLoseHeart();
             setSdActive(false);
             return 0;
           }
@@ -376,7 +379,7 @@ export const GamesHub: React.FC<GamesHubProps> = ({ selectedJlpt: globalJlpt, on
         }, 500);
       } else {
         // MISMATCH
-        soundFX.playError();
+        soundFX.playError(); onLoseHeart();
         setTimeout(() => {
           setMemoryCards((prev) => {
             const updated = [...prev];
@@ -427,7 +430,7 @@ export const GamesHub: React.FC<GamesHubProps> = ({ selectedJlpt: globalJlpt, on
       playJapaneseAudio(currentSentence.fullJp);
       onGainXp(25, `Montou frase ${currentSentence.jlpt} com perfeição!`);
     } else {
-      soundFX.playError();
+      soundFX.playError(); onLoseHeart();
       setSentenceResult('wrong');
     }
   };
@@ -452,7 +455,7 @@ export const GamesHub: React.FC<GamesHubProps> = ({ selectedJlpt: globalJlpt, on
       setQuizStreak((prev) => prev + 1);
       onGainXp(bonus, `Acertou questão JLPT ${currentQuizQ.jlpt}!`);
     } else {
-      soundFX.playError();
+      soundFX.playError(); onLoseHeart();
       setQuizStreak(0);
     }
   };
@@ -536,10 +539,31 @@ export const GamesHub: React.FC<GamesHubProps> = ({ selectedJlpt: globalJlpt, on
       onGainXp(6, `Rush Acerto Rápido (${rushTarget.char})!`);
       generateRushQuestion();
     } else {
-      soundFX.playError();
+      soundFX.playError(); onLoseHeart();
       setRushActive(false);
     }
   };
+
+  if (userStats.hearts === 0) {
+    return (
+      <div className="w-full max-w-5xl mx-auto p-4 sm:p-6 lg:p-8 animate-fadeIn">
+        <div className="bg-stone-900 border border-rose-900/40 rounded-3xl p-10 text-center shadow-2xl flex flex-col items-center justify-center min-h-[50vh]">
+          <HeartCrack size={64} className="text-rose-500 mb-6 animate-pulse" />
+          <h2 className="text-3xl font-black text-white mb-4">Você está sem Vidas!</h2>
+          <p className="text-stone-400 mb-8 max-w-md">
+            Você perdeu todos os seus ❤️ jogando e errando. 
+            Para recuperar vidas e continuar jogando, você precisa <strong>Estudar Gramática, Vocabulário ou Kana</strong>, ou esperar até 1 hora.
+          </p>
+          <button
+            onClick={() => window.location.reload()} // Quick hack or can just tell them to navigate using tabs
+            className="px-6 py-3 bg-rose-600 hover:bg-rose-500 text-white font-bold rounded-xl shadow-lg transition"
+          >
+            Estudar Teoria agora
+          </button>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 py-6 space-y-6">
