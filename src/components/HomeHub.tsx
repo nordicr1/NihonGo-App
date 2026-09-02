@@ -52,6 +52,16 @@ const JAPANESE_TIPS = [
 
 const CHANGELOG = [
   {
+    date: '02 Set 2026',
+    title: 'Gamificação Elevada: Vidas e Novas Conquistas ❤️🏆',
+    desc: 'O app virou um jogo! Adicionamos um Sistema de Vidas (❤️). Agora, ao errar quizzes ou testes, você perde vidas. Mas não se preocupe: você pode recuperar corações estudando teoria (Gramática/Vocabulário) ou aguardando. Além disso, a Galeria de Troféus foi redesenhada com mais de 10 novas conquistas épicas, incluindo Super Saiyajin (5.000 XP) e ofensiva de dias seguidos. Com notificações pop-up de desbloqueio incríveis!',
+  },
+  {
+    date: '28 Ago 2026',
+    title: 'Melhoria na Qualidade do Áudio (TTS Neural) 🗣️✨',
+    desc: 'Esqueça as vozes robóticas antigas! O aplicativo agora processa as leituras de áudio (palavras e frases) utilizando inteligência artificial através de Text-to-Speech (TTS) Neural em tempo real. A entonação, as pausas e os "Pitch Accents" soam exatamente como um nativo falando. Em caso de falta de internet, criamos um sistema infalível que ativa uma voz secundária (fallback) para que você nunca fique no silêncio.',
+  },
+  {
     date: '28 Ago 2026',
     title: 'Quase 1.000 Novos Kanjis do N1 Adicionados! 🐉',
     desc: 'O banco de Kanjis do JLPT N1 passou por uma atualização massiva e ininterrupta! Injetamos quase 1.000 novos Kanjis avançados de uma só vez. Cada um com leituras On/Kun-yomi, significados e exemplos práticos. Tudo inserido com filtro inteligente global para evitar Kanjis repetidos de outros níveis. O dicionário N1 está fenomenal!',
