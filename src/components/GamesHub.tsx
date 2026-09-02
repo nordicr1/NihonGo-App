@@ -56,7 +56,7 @@ const KANJI_LOOKALIKES = [
   { base: '幸', diff: '辛' }, { base: '水', diff: '氷' }
 ];
 
-export const GamesHub: React.FC<GamesHubProps> = ({ selectedJlpt: globalJlpt, onGainXp }) => {
+export const GamesHub: React.FC<GamesHubProps> = ({ selectedJlpt: globalJlpt, onGainXp, userStats, onLoseHeart }) => {
   const [activeGame, setActiveGame] = useState<GameType>('memory');
   const [localJlpt, setLocalJlpt] = useState<JLPTLevel | 'ALL'>(globalJlpt);
 
