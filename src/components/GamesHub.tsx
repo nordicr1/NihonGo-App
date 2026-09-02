@@ -379,7 +379,7 @@ export const GamesHub: React.FC<GamesHubProps> = ({ selectedJlpt: globalJlpt, on
         }, 500);
       } else {
         // MISMATCH
-        soundFX.playError(); onLoseHeart();
+        soundFX.playError();
         setTimeout(() => {
           setMemoryCards((prev) => {
             const updated = [...prev];
