@@ -241,58 +241,88 @@ export const HomeHub: React.FC<HomeHubProps> = ({
 
       {/* Daily Quests Panel */}
       {userStats.dailyQuests && userStats.dailyQuests.length > 0 && (
-        <div className="bg-white border border-stone-200 rounded-3xl p-6 sm:p-8 shadow-sm">
-          <div className="flex items-center gap-2 mb-6">
-            <div className="w-10 h-10 rounded-full bg-amber-100 flex items-center justify-center text-amber-600">
-              <Target size={20} />
+        <div className="mb-2">
+          <div className="flex items-center gap-2 mb-4 px-2">
+            <div className="w-8 h-8 rounded-xl bg-amber-200 flex items-center justify-center text-amber-700 shadow-sm">
+              <Target size={16} />
             </div>
             <h3 className="text-xl sm:text-2xl font-black text-stone-900">Missões Diárias</h3>
           </div>
           
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
-            {userStats.dailyQuests.map((quest) => (
-              <div key={quest.id} className={`border rounded-2xl p-5 flex flex-col justify-between transition-colors ${quest.isRedeemed ? 'bg-stone-50 border-stone-200 opacity-60' : quest.progress >= quest.target ? 'bg-emerald-50 border-emerald-300' : 'bg-white border-stone-200 hover:border-amber-300'}`}>
-                <div className="mb-4">
-                  <div className="flex justify-between items-start mb-2">
-                    <span className={`text-[10px] font-black uppercase tracking-wider px-2 py-0.5 rounded-full ${quest.difficulty === 'epic' ? 'bg-rose-100 text-rose-700' : quest.difficulty === 'medium' ? 'bg-amber-100 text-amber-700' : 'bg-emerald-100 text-emerald-700'}`}>
-                      {quest.difficulty === 'epic' ? 'Épica' : quest.difficulty === 'medium' ? 'Média' : 'Fácil'}
-                    </span>
-                    <span className="text-amber-500 font-bold text-xs flex items-center gap-1">
-                      <Sparkles size={12} /> +{quest.xpReward} XP
-                    </span>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            {userStats.dailyQuests.map((quest) => {
+              const IconToRender = quest.type === 'study_grammar' ? BookOpen :
+                                   quest.type === 'play_memory' ? Gamepad2 :
+                                   quest.type === 'play_jlpt' ? Trophy :
+                                   quest.type === 'gain_xp' ? Flame :
+                                   quest.type === 'talk_sensei' ? Bot : Target;
+                                   
+              return (
+                <div 
+                  key={quest.id} 
+                  className={`p-6 rounded-3xl border shadow-sm flex flex-col justify-between group transition-all duration-300 ${
+                    quest.isRedeemed ? 'bg-stone-50 border-stone-200 opacity-70' : 
+                    quest.progress >= quest.target ? 'bg-emerald-50 border-emerald-200 hover:border-emerald-400 hover:shadow-lg' : 
+                    'bg-white border-stone-200 hover:border-amber-400 hover:shadow-lg'
+                  }`}
+                >
+                  <div className="space-y-3">
+                    <div className="flex justify-between items-start">
+                      <div className={`w-12 h-12 rounded-2xl flex items-center justify-center font-bold text-xl transition-transform ${!quest.isRedeemed && quest.progress < quest.target ? 'group-hover:scale-110' : ''} ${
+                        quest.difficulty === 'epic' ? 'bg-rose-100 text-rose-700' : 
+                        quest.difficulty === 'medium' ? 'bg-amber-100 text-amber-700' : 
+                        'bg-emerald-100 text-emerald-700'
+                      }`}>
+                        <IconToRender size={24} />
+                      </div>
+                      <span className="text-amber-600 font-bold text-xs flex items-center gap-1 bg-amber-50 px-2.5 py-1.5 rounded-xl border border-amber-200/60 shadow-sm">
+                        <Sparkles size={14} /> +{quest.xpReward} XP
+                      </span>
+                    </div>
+                    
+                    <h3 className={`font-extrabold text-lg transition-colors leading-tight ${
+                      quest.isRedeemed ? 'text-stone-500 line-through' : 
+                      quest.progress >= quest.target ? 'text-emerald-800' : 
+                      'text-stone-900 group-hover:text-amber-600'
+                    }`}>
+                      {quest.title}
+                    </h3>
+                    
+                    <p className="text-xs font-bold text-stone-400 uppercase tracking-wider">
+                      {quest.difficulty === 'epic' ? 'Missão Épica' : quest.difficulty === 'medium' ? 'Missão Média' : 'Missão Fácil'}
+                    </p>
                   </div>
-                  <h4 className={`font-bold text-sm ${quest.isRedeemed ? 'text-stone-500 line-through' : 'text-stone-800'}`}>
-                    {quest.title}
-                  </h4>
+                  
+                  <div className="mt-4 pt-4 border-t border-stone-100">
+                    {quest.isRedeemed ? (
+                      <div className="text-center font-bold text-xs text-stone-400 py-2">
+                        Recompensa Resgatada
+                      </div>
+                    ) : quest.progress >= quest.target ? (
+                      <button
+                        onClick={() => onRedeemQuest(quest.id)}
+                        className="w-full bg-emerald-500 hover:bg-emerald-400 text-emerald-950 font-extrabold text-sm py-2.5 rounded-xl transition-all shadow-sm active:scale-95 cursor-pointer flex justify-center items-center gap-2"
+                      >
+                        <CheckCircle size={16} /> Resgatar XP
+                      </button>
+                    ) : (
+                      <div className="space-y-2">
+                        <div className="flex justify-between text-xs font-bold text-stone-500">
+                          <span>Progresso</span>
+                          <span>{quest.progress} / {quest.target}</span>
+                        </div>
+                        <div className="w-full bg-stone-100 h-2.5 rounded-full overflow-hidden">
+                          <div 
+                            className="h-full bg-amber-400 rounded-full transition-all duration-500"
+                            style={{ width: `${(quest.progress / quest.target) * 100}%` }}
+                          />
+                        </div>
+                      </div>
+                    )}
+                  </div>
                 </div>
-                
-                {quest.isRedeemed ? (
-                  <div className="text-center font-bold text-xs text-stone-500 py-2 border border-stone-200 rounded-xl bg-stone-100">
-                    Resgatada
-                  </div>
-                ) : quest.progress >= quest.target ? (
-                  <button
-                    onClick={() => onRedeemQuest(quest.id)}
-                    className="w-full bg-emerald-500 hover:bg-emerald-400 text-emerald-950 font-bold text-sm py-2 rounded-xl transition-all shadow-md active:scale-95"
-                  >
-                    Resgatar +{quest.xpReward} XP
-                  </button>
-                ) : (
-                  <div className="space-y-1.5">
-                    <div className="flex justify-between text-[11px] font-bold text-stone-500">
-                      <span>Progresso</span>
-                      <span>{quest.progress} / {quest.target}</span>
-                    </div>
-                    <div className="w-full bg-stone-100 h-2 rounded-full overflow-hidden">
-                      <div 
-                        className="h-full bg-amber-400 rounded-full transition-all duration-500"
-                        style={{ width: `${(quest.progress / quest.target) * 100}%` }}
-                      />
-                    </div>
-                  </div>
-                )}
-              </div>
-            ))}
+              );
+            })}
           </div>
         </div>
       )}
