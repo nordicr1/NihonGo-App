@@ -3,8 +3,9 @@ import { GRAMMAR_DATA } from '../data/grammarData';
 import { VOCAB_DATA } from '../data/vocabData';
 import { GrammarItem, JLPTLevel, VocabCategory, VocabItem } from '../types';
 import { AudioButton } from './AudioButton';
-import { BookOpen, Search, Sparkles, Filter, ChevronRight, Layers, Bookmark } from 'lucide-react';
+import { BookOpen, Search, Sparkles, Filter, ChevronRight, Layers, Bookmark, Lock } from 'lucide-react';
 import { playJapaneseAudio } from '../utils/audio';
+import { getRequiredLevel } from '../utils/progression';
 
 const GrammarDetailContent = ({ selectedGrammar, isMobile = false }: { selectedGrammar: GrammarItem, isMobile?: boolean }) => (
   <>
@@ -95,12 +96,14 @@ interface VocabGrammarHubProps {
   selectedJlpt: JLPTLevel;
   onSelectJlpt: (lvl: JLPTLevel) => void;
   onGainXp: (amount: number, reason: string) => void;
+  userLevel: number;
 }
 
 export const VocabGrammarHub: React.FC<VocabGrammarHubProps> = ({
   selectedJlpt,
   onSelectJlpt,
   onGainXp,
+  userLevel
 }) => {
   const [subTab, setSubTab] = useState<'grammar' | 'vocab'>('grammar');
   const [searchQuery, setSearchQuery] = useState('');
@@ -233,18 +236,23 @@ export const VocabGrammarHub: React.FC<VocabGrammarHubProps> = ({
           {/* Grammar List */}
           <div className="lg:col-span-2 space-y-3">
             {filteredGrammar.map((item) => {
-              const isSelected = selectedGrammar?.id === item.id;
+              const reqLevel = getRequiredLevel('grammar', selectedJlpt, item.category);
+              const isLocked = userLevel < reqLevel;
+              const isSelected = selectedGrammar?.id === item.id && !isLocked;
+
               return (
                 <div
                   key={item.id}
-                  onClick={() => handleSelectGrammar(item)}
-                  className={`p-5 rounded-2xl border transition-all cursor-pointer group ${
-                    isSelected
+                  onClick={() => !isLocked && handleSelectGrammar(item)}
+                  className={`p-5 rounded-2xl border transition-all cursor-pointer group relative overflow-hidden ${
+                    isLocked
+                      ? 'bg-stone-50 border-stone-200 opacity-60 cursor-not-allowed'
+                      : isSelected
                       ? 'bg-indigo-50/80 border-indigo-500 ring-2 ring-indigo-400 shadow-md'
                       : 'bg-white border-stone-200 hover:border-indigo-300 hover:shadow-md'
                   }`}
                 >
-                  <div className="flex items-start justify-between">
+                  <div className={`flex items-start justify-between ${isLocked ? 'blur-[1px]' : ''}`}>
                     <div>
                       <div className="flex items-center gap-2">
                         <span className="text-xs px-2 py-0.5 rounded bg-indigo-100 text-indigo-800 font-bold">
@@ -281,6 +289,14 @@ export const VocabGrammarHub: React.FC<VocabGrammarHubProps> = ({
                   {isSelected && (
                     <div className="mt-4 pt-4 border-t border-stone-200 lg:hidden block cursor-default animate-in fade-in zoom-in-95 duration-200" onClick={(e) => e.stopPropagation()}>
                       <GrammarDetailContent selectedGrammar={item} isMobile={true} />
+                    </div>
+                  )}
+
+                  {isLocked && (
+                    <div className="absolute inset-0 z-10 flex flex-col items-center justify-center bg-stone-100/40 backdrop-blur-[2px]">
+                      <div className="bg-stone-800 text-stone-100 px-3 py-1.5 rounded-full flex items-center gap-1.5 text-xs font-bold shadow-lg">
+                        <Lock size={14} className="text-amber-400" /> Nível {reqLevel}
+                      </div>
                     </div>
                   )}
                 </div>
@@ -348,12 +364,18 @@ export const VocabGrammarHub: React.FC<VocabGrammarHubProps> = ({
 
           {/* Vocab Cards Grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {filteredVocab.map((v) => (
+            {filteredVocab.map((v) => {
+              const reqLevel = getRequiredLevel('vocab', selectedJlpt, v.categoryLabelPt);
+              const isLocked = userLevel < reqLevel;
+
+              return (
               <div
                 key={v.id}
-                className="bg-white p-5 rounded-2xl border border-stone-200 shadow-sm hover:border-indigo-300 hover:shadow-md transition flex flex-col justify-between space-y-4"
+                className={`p-5 rounded-2xl border shadow-sm transition flex flex-col justify-between space-y-4 relative overflow-hidden ${
+                  isLocked ? 'bg-stone-50 border-stone-200 opacity-60 pointer-events-none' : 'bg-white border-stone-200 hover:border-indigo-300 hover:shadow-md'
+                }`}
               >
-                <div>
+                <div className={isLocked ? 'blur-[1px]' : ''}>
                   <div className="flex items-start justify-between">
                     <div>
                       <span className="text-[10px] px-2 py-0.5 rounded bg-stone-100 text-stone-600 font-bold border border-stone-200">
@@ -386,8 +408,16 @@ export const VocabGrammarHub: React.FC<VocabGrammarHubProps> = ({
                   <p className="text-stone-500 font-mono">{v.exampleSentence.reading}</p>
                   <p className="text-indigo-700 font-medium">{v.exampleSentence.meaningPt}</p>
                 </div>
+
+                {isLocked && (
+                  <div className="absolute inset-0 z-10 flex flex-col items-center justify-center bg-stone-100/40 backdrop-blur-[2px]">
+                    <div className="bg-stone-800 text-stone-100 px-3 py-1.5 rounded-full flex items-center gap-1.5 text-xs font-bold shadow-lg">
+                      <Lock size={14} className="text-amber-400" /> Nível {reqLevel}
+                    </div>
+                  </div>
+                )}
               </div>
-            ))}
+            )})}
           </div>
 
           {filteredVocab.length === 0 && (

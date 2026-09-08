@@ -296,6 +296,7 @@ export default function App() {
             selectedJlpt={selectedJlpt}
             onSelectJlpt={setSelectedJlpt}
             onGainXp={handleGainXp}
+            userLevel={userStats.level}
           />
         )}
 
@@ -304,6 +305,7 @@ export default function App() {
             selectedJlpt={selectedJlpt}
             onSelectJlpt={setSelectedJlpt}
             onGainXp={handleGainXp}
+            userLevel={userStats.level}
           />
         )}
 

@@ -3,19 +3,22 @@ import { KANJI_DATA } from '../data/kanjiData';
 import { JLPTLevel, KanjiItem } from '../types';
 import { AudioButton } from './AudioButton';
 import { KanjiDrawCanvas } from './KanjiDrawCanvas';
-import { Search, Sparkles, BookOpen, Layers, Edit3, Volume2 } from 'lucide-react';
+import { Search, Sparkles, BookOpen, Layers, Edit3, Volume2, Lock } from 'lucide-react';
 import { playJapaneseAudio } from '../utils/audio';
+import { getRequiredLevel } from '../utils/progression';
 
 interface KanjiDictionaryProps {
   selectedJlpt: JLPTLevel;
   onSelectJlpt: (lvl: JLPTLevel) => void;
   onGainXp: (amount: number, reason: string) => void;
+  userLevel: number;
 }
 
 export const KanjiDictionary: React.FC<KanjiDictionaryProps> = ({
   selectedJlpt,
   onSelectJlpt,
   onGainXp,
+  userLevel
 }) => {
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedKanji, setSelectedKanji] = useState<KanjiItem | null>(null);
@@ -63,23 +66,31 @@ export const KanjiDictionary: React.FC<KanjiDictionaryProps> = ({
           {/* Level Switcher */}
           <div className="flex flex-wrap justify-center items-center gap-2 pt-4">
             <span className="text-xs font-semibold text-stone-400 mr-1 w-full sm:w-auto mb-2 sm:mb-0">Filtrar por Nível:</span>
-            {jlptList.map((lvl) => (
+            {jlptList.map((lvl) => {
+              const reqLevel = getRequiredLevel('kanji', lvl);
+              const isLocked = userLevel < reqLevel;
+
+              return (
               <button
                 key={lvl}
                 type="button"
                 onClick={() => {
+                  if (isLocked) return;
                   onSelectJlpt(lvl);
                   setSelectedKanji(null);
                 }}
-                className={`px-4 py-2 rounded-xl text-xs sm:text-sm font-bold transition-all cursor-pointer shadow-md ${
-                  selectedJlpt === lvl
-                    ? 'bg-amber-500 text-stone-950 font-extrabold scale-105 ring-2 ring-amber-300/50'
-                    : 'bg-stone-800/80 text-stone-300 hover:bg-stone-700 hover:text-white'
+                className={`flex items-center justify-center gap-1.5 px-4 py-2 rounded-xl text-xs sm:text-sm font-bold transition-all shadow-md ${
+                  isLocked 
+                    ? 'bg-stone-800/40 text-stone-500 cursor-not-allowed opacity-70'
+                    : selectedJlpt === lvl
+                      ? 'bg-amber-500 text-stone-950 font-extrabold scale-105 ring-2 ring-amber-300/50 cursor-pointer'
+                      : 'bg-stone-800/80 text-stone-300 hover:bg-stone-700 hover:text-white cursor-pointer'
                 }`}
               >
+                {isLocked && <Lock size={12} className="text-stone-500" />}
                 {lvl} {lvl === 'N5' ? '(Básico)' : lvl === 'N1' ? '(Avançado)' : ''}
               </button>
-            ))}
+            )})}
           </div>
         </div>
       </div>
