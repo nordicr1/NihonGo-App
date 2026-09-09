@@ -117,43 +117,58 @@ export const KanjiDictionary: React.FC<KanjiDictionaryProps> = ({
 
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
             {filteredKanjis.map((item) => {
-              const isSelected = selectedKanji?.id === item.id;
+              const reqLevel = getRequiredLevel('kanji', selectedJlpt);
+              const isLocked = userLevel < reqLevel;
+              const isSelected = selectedKanji?.id === item.id && !isLocked;
+
               return (
                 <div
                   key={item.id}
-                  onClick={() => handleSelectKanji(item)}
-                  className={`p-4 rounded-2xl border transition-all cursor-pointer flex flex-col justify-between group ${
-                    isSelected
+                  onClick={() => !isLocked && handleSelectKanji(item)}
+                  className={`p-4 rounded-2xl border transition-all cursor-pointer flex flex-col justify-between group relative overflow-hidden ${
+                    isLocked
+                      ? 'bg-stone-50 border-stone-200 opacity-60 cursor-not-allowed'
+                      : isSelected
                       ? 'bg-amber-50/80 border-amber-500 ring-2 ring-amber-400 shadow-md scale-105'
                       : 'bg-white border-stone-200 hover:border-amber-300 hover:shadow-md hover:-translate-y-0.5'
                   }`}
                 >
-                  <div className="flex items-start justify-between">
-                    <span className="text-4xl font-serif font-black text-stone-900 group-hover:text-amber-700 transition">
-                      {item.kanji}
-                    </span>
-                    <span className="text-[10px] px-1.5 py-0.5 rounded bg-stone-100 text-stone-600 font-bold border border-stone-200">
-                      {item.strokes} traços
-                    </span>
-                  </div>
+                  <div className={isLocked ? 'blur-[2px]' : ''}>
+                    <div className="flex items-start justify-between">
+                      <span className="text-4xl font-serif font-black text-stone-900 group-hover:text-amber-700 transition">
+                        {item.kanji}
+                      </span>
+                      <span className="text-[10px] px-1.5 py-0.5 rounded bg-stone-100 text-stone-600 font-bold border border-stone-200">
+                        {item.strokes} traços
+                      </span>
+                    </div>
 
-                  <div className="mt-3 space-y-1">
-                    <p className="text-xs font-bold text-stone-800 line-clamp-1">
-                      {item.meaningPt}
-                    </p>
-                    <div className="text-[11px] text-stone-500 flex flex-col gap-0.5 font-mono">
-                      {item.kunyomi.length > 0 && (
-                        <span className="text-rose-600 line-clamp-1">
-                          KUN: {item.kunyomi.join(', ')}
-                        </span>
-                      )}
-                      {item.onyomi.length > 0 && (
-                        <span className="text-sky-700 line-clamp-1">
-                          ON: {item.onyomi.join(', ')}
-                        </span>
-                      )}
+                    <div className="mt-3 space-y-1">
+                      <p className="text-xs font-bold text-stone-800 line-clamp-1">
+                        {item.meaningPt}
+                      </p>
+                      <div className="text-[11px] text-stone-500 flex flex-col gap-0.5 font-mono">
+                        {item.kunyomi.length > 0 && (
+                          <span className="text-rose-600 line-clamp-1">
+                            KUN: {item.kunyomi.join(', ')}
+                          </span>
+                        )}
+                        {item.onyomi.length > 0 && (
+                          <span className="text-sky-700 line-clamp-1">
+                            ON: {item.onyomi.join(', ')}
+                          </span>
+                        )}
+                      </div>
                     </div>
                   </div>
+
+                  {isLocked && (
+                    <div className="absolute inset-0 z-10 flex flex-col items-center justify-center bg-stone-100/40 backdrop-blur-[2px]">
+                      <div className="bg-stone-800 text-stone-100 px-3 py-1.5 rounded-full flex items-center gap-1.5 text-xs font-bold shadow-lg">
+                        <Lock size={14} className="text-amber-400" /> Nível {reqLevel}
+                      </div>
+                    </div>
+                  )}
                 </div>
               );
             })}
