@@ -1,4 +1,4 @@
-export const SRS_COOLDOWN_MS = 60 * 1000; // 1 minuto (para testes)
+export const SRS_COOLDOWN_MS = 24 * 60 * 60 * 1000; // 24 horas
 
 export function isReadyForReview(lastStudiedMs: number | undefined): boolean {
   if (!lastStudiedMs) return false;
