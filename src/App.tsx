@@ -312,7 +312,8 @@ export default function App() {
             selectedJlpt={selectedJlpt}
             onSelectJlpt={setSelectedJlpt}
             onGainXp={handleGainXp}
-            userLevel={userStats.level}
+            onStudyItem={handleStudyItem}
+            userStats={userStats}
           />
         )}
 
@@ -321,7 +322,8 @@ export default function App() {
             selectedJlpt={selectedJlpt}
             onSelectJlpt={setSelectedJlpt}
             onGainXp={handleGainXp}
-            userLevel={userStats.level}
+            onStudyItem={handleStudyItem}
+            userStats={userStats}
           />
         )}
 
