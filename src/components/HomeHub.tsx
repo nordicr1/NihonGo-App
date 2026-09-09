@@ -53,6 +53,11 @@ const JAPANESE_TIPS = [
 
 const CHANGELOG = [
   {
+    date: '09 Set 2026',
+    title: 'Árvore de Habilidades & Revisão Inteligente (SRS) 🌳✨',
+    desc: 'A gameficação de estudos chegou! Agora os Kanjis e as lições de Gramática avançadas estão bloqueados por Nível (Skill Tree) e você precisa ganhar XP para desbloqueá-los. Além disso, introduzimos o sistema de Revisão (SRS): reler um tópico que você não vê há muito tempo garante um selo brilhante que te dá XP em Dobro! Ideal para memorizar para sempre.',
+  },
+  {
     date: '02 Set 2026',
     title: 'Missões Diárias & Sistema de Vidas! 🎯❤️',
     desc: 'O app virou um jogo de verdade! Agora todo dia você recebe 3 Missões Diárias (Fácil, Média e Épica). Cumpra os desafios (como ler gramática ou fazer XP) para ganhar muita experiência, e se fechar as 3 no mesmo dia, você ganha o Bônus do Baú Diário! Além disso, adicionamos as Vidas (❤️) que você perde ao errar testes, mas pode recuperar estudando a teoria. A nova Galeria de Troféus tem dezenas de novas conquistas!',

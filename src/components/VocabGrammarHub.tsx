@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { GRAMMAR_DATA } from '../data/grammarData';
 import { VOCAB_DATA } from '../data/vocabData';
 import { GrammarItem, JLPTLevel, VocabCategory, VocabItem } from '../types';
@@ -111,6 +111,14 @@ export const VocabGrammarHub: React.FC<VocabGrammarHubProps> = ({
   userStats
 }) => {
   const userLevel = userStats.level;
+  
+  // Force re-render periodically so SRS tags appear live without needing to refresh
+  const [, setTick] = useState(0);
+  useEffect(() => {
+    const timer = setInterval(() => setTick(t => t + 1), 10000);
+    return () => clearInterval(timer);
+  }, []);
+
   const [subTab, setSubTab] = useState<'grammar' | 'vocab'>('grammar');
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedGrammar, setSelectedGrammar] = useState<GrammarItem | null>(null);

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { KANJI_DATA } from '../data/kanjiData';
 import { JLPTLevel, KanjiItem } from '../types';
 import { AudioButton } from './AudioButton';
@@ -26,6 +26,14 @@ export const KanjiDictionary: React.FC<KanjiDictionaryProps> = ({
   userStats
 }) => {
   const userLevel = userStats.level;
+  
+  // Force re-render periodically so SRS tags appear live without needing to refresh
+  const [, setTick] = useState(0);
+  useEffect(() => {
+    const timer = setInterval(() => setTick(t => t + 1), 10000);
+    return () => clearInterval(timer);
+  }, []);
+
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedKanji, setSelectedKanji] = useState<KanjiItem | null>(null);
   const [showDrawCanvas, setShowDrawCanvas] = useState(false);
