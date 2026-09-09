@@ -6,6 +6,7 @@ import { AudioButton } from './AudioButton';
 import { BookOpen, Search, Sparkles, Filter, ChevronRight, Layers, Bookmark, Lock } from 'lucide-react';
 import { playJapaneseAudio } from '../utils/audio';
 import { getRequiredLevel } from '../utils/progression';
+import { isReadyForReview } from '../utils/srs';
 
 const GrammarDetailContent = ({ selectedGrammar, isMobile = false }: { selectedGrammar: GrammarItem, isMobile?: boolean }) => (
   <>
@@ -92,19 +93,24 @@ const GrammarDetailContent = ({ selectedGrammar, isMobile = false }: { selectedG
   </>
 );
 
+import { UserStats } from '../types';
+
 interface VocabGrammarHubProps {
   selectedJlpt: JLPTLevel;
   onSelectJlpt: (lvl: JLPTLevel) => void;
   onGainXp: (amount: number, reason: string) => void;
-  userLevel: number;
+  onStudyItem: (itemId: string, baseAmount: number, reason: string, isReview: boolean) => void;
+  userStats: UserStats;
 }
 
 export const VocabGrammarHub: React.FC<VocabGrammarHubProps> = ({
   selectedJlpt,
   onSelectJlpt,
   onGainXp,
-  userLevel
+  onStudyItem,
+  userStats
 }) => {
+  const userLevel = userStats.level;
   const [subTab, setSubTab] = useState<'grammar' | 'vocab'>('grammar');
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedGrammar, setSelectedGrammar] = useState<GrammarItem | null>(null);
@@ -136,9 +142,12 @@ export const VocabGrammarHub: React.FC<VocabGrammarHubProps> = ({
     return matchesLevel && matchesCategory && matchesSearch;
   });
 
-  const handleSelectGrammar = (g: GrammarItem) => {
-    setSelectedGrammar(g);
-    onGainXp(3, 'Estudou Ponto Gramatical');
+  const handleSelectGrammar = (grammar: GrammarItem) => {
+    setSelectedGrammar(grammar);
+    
+    // Check if it's a review
+    const isReview = isReadyForReview(userStats.studyHistory?.[grammar.id]);
+    onStudyItem(grammar.id, 3, 'Estudou Ponto Gramatical', isReview);
   };
 
   return (
@@ -239,6 +248,7 @@ export const VocabGrammarHub: React.FC<VocabGrammarHubProps> = ({
               const reqLevel = getRequiredLevel('grammar', selectedJlpt, item.category);
               const isLocked = userLevel < reqLevel;
               const isSelected = selectedGrammar?.id === item.id && !isLocked;
+              const isReview = !isLocked && isReadyForReview(userStats.studyHistory?.[item.id]);
 
               return (
                 <div
@@ -249,7 +259,9 @@ export const VocabGrammarHub: React.FC<VocabGrammarHubProps> = ({
                       ? 'bg-stone-50 border-stone-200 opacity-60 cursor-not-allowed'
                       : isSelected
                       ? 'bg-indigo-50/80 border-indigo-500 ring-2 ring-indigo-400 shadow-md'
-                      : 'bg-white border-stone-200 hover:border-indigo-300 hover:shadow-md'
+                      : isReview 
+                        ? 'bg-amber-50 border-amber-200 hover:border-amber-400 shadow-sm'
+                        : 'bg-white border-stone-200 hover:border-indigo-300 hover:shadow-md'
                   }`}
                 >
                   <div className={`flex items-start justify-between ${isLocked ? 'blur-[1px]' : ''}`}>
@@ -261,6 +273,12 @@ export const VocabGrammarHub: React.FC<VocabGrammarHubProps> = ({
                         <span className="text-xs text-stone-500 font-semibold">
                           {item.category}
                         </span>
+                        {isReview && (
+                          <span className="flex items-center gap-1 text-[10px] px-2 py-0.5 rounded-full bg-amber-100 text-amber-700 font-bold border border-amber-300 animate-pulse">
+                            <Sparkles size={10} />
+                            Revisão (XP x2)
+                          </span>
+                        )}
                       </div>
                       <h3 className="text-lg font-bold text-stone-900 mt-1.5 group-hover:text-indigo-600 transition">
                         {item.pattern}
@@ -407,6 +425,24 @@ export const VocabGrammarHub: React.FC<VocabGrammarHubProps> = ({
                   </div>
                   <p className="text-stone-500 font-mono">{v.exampleSentence.reading}</p>
                   <p className="text-indigo-700 font-medium">{v.exampleSentence.meaningPt}</p>
+                </div>
+
+                <div className="flex gap-2 relative z-20">
+                  <button
+                    onClick={() => {
+                      playJapaneseAudio(v.word);
+                      const isReview = isReadyForReview(userStats.studyHistory?.[v.id]);
+                      onStudyItem(v.id, 2, 'Praticou Vocabulário', isReview);
+                    }}
+                    className={`flex-1 flex items-center justify-center gap-1.5 px-3 py-2 rounded-xl text-xs font-bold transition shadow-sm active:scale-95 cursor-pointer ${
+                      isReadyForReview(userStats.studyHistory?.[v.id])
+                        ? 'bg-amber-500 hover:bg-amber-600 text-stone-950 animate-pulse'
+                        : 'bg-stone-900 hover:bg-stone-800 text-white'
+                    }`}
+                  >
+                    <Sparkles size={14} className={isReadyForReview(userStats.studyHistory?.[v.id]) ? 'text-stone-900' : 'text-amber-400'} />
+                    {isReadyForReview(userStats.studyHistory?.[v.id]) ? 'Revisar (XP x2)' : 'Praticar (+2 XP)'}
+                  </button>
                 </div>
 
                 {isLocked && (

@@ -114,6 +114,7 @@ export interface UserStats {
   dailyQuests: DailyQuest[];
   lastQuestDate: string;
   kanaForHeartProgress?: number;
+  studyHistory?: Record<string, number>;
 }
 
 export interface DailyQuest {

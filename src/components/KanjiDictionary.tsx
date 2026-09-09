@@ -6,20 +6,26 @@ import { KanjiDrawCanvas } from './KanjiDrawCanvas';
 import { Search, Sparkles, BookOpen, Layers, Edit3, Volume2, Lock } from 'lucide-react';
 import { playJapaneseAudio } from '../utils/audio';
 import { getRequiredLevel } from '../utils/progression';
+import { isReadyForReview } from '../utils/srs';
+
+import { UserStats } from '../types';
 
 interface KanjiDictionaryProps {
   selectedJlpt: JLPTLevel;
   onSelectJlpt: (lvl: JLPTLevel) => void;
   onGainXp: (amount: number, reason: string) => void;
-  userLevel: number;
+  onStudyItem: (itemId: string, baseAmount: number, reason: string, isReview: boolean) => void;
+  userStats: UserStats;
 }
 
 export const KanjiDictionary: React.FC<KanjiDictionaryProps> = ({
   selectedJlpt,
   onSelectJlpt,
   onGainXp,
-  userLevel
+  onStudyItem,
+  userStats
 }) => {
+  const userLevel = userStats.level;
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedKanji, setSelectedKanji] = useState<KanjiItem | null>(null);
   const [showDrawCanvas, setShowDrawCanvas] = useState(false);
@@ -41,7 +47,8 @@ export const KanjiDictionary: React.FC<KanjiDictionaryProps> = ({
     setSelectedKanji(kanji);
     setShowDrawCanvas(false);
     playJapaneseAudio(kanji.kanji);
-    onGainXp(3, 'Consultou Kanji');
+    const isReview = isReadyForReview(userStats.studyHistory?.[kanji.id]);
+    onStudyItem(kanji.id, 3, 'Consultou Kanji', isReview);
   };
 
   return (
@@ -138,9 +145,17 @@ export const KanjiDictionary: React.FC<KanjiDictionaryProps> = ({
                       <span className="text-4xl font-serif font-black text-stone-900 group-hover:text-amber-700 transition">
                         {item.kanji}
                       </span>
-                      <span className="text-[10px] px-1.5 py-0.5 rounded bg-stone-100 text-stone-600 font-bold border border-stone-200">
-                        {item.strokes} traços
-                      </span>
+                      <div className="flex flex-col items-end gap-1">
+                        <span className="text-[10px] px-1.5 py-0.5 rounded bg-stone-100 text-stone-600 font-bold border border-stone-200">
+                          {item.strokes} traços
+                        </span>
+                        {!isLocked && isReadyForReview(userStats.studyHistory?.[item.id]) && (
+                          <span className="flex items-center gap-1 text-[9px] px-1.5 py-0.5 rounded-full bg-amber-100 text-amber-700 font-bold border border-amber-300 animate-pulse">
+                            <Sparkles size={10} />
+                            XP x2
+                          </span>
+                        )}
+                      </div>
                     </div>
 
                     <div className="mt-3 space-y-1">

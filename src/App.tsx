@@ -209,6 +209,22 @@ export default function App() {
     }, 2800);
   };
 
+  const handleStudyItem = (itemId: string, baseAmount: number, reason: string, isReview: boolean) => {
+    setUserStats((prev) => ({
+      ...prev,
+      studyHistory: {
+        ...(prev.studyHistory || {}),
+        [itemId]: Date.now()
+      }
+    }));
+    
+    if (isReview) {
+      handleGainXp(baseAmount * 2, `${reason} (Bônus de Revisão x2)`);
+    } else {
+      handleGainXp(baseAmount, reason);
+    }
+  };
+
   const handleRedeemQuest = (questId: string) => {
     const quest = userStats.dailyQuests.find(q => q.id === questId);
     if (!quest || quest.isRedeemed || quest.progress < quest.target) return;
