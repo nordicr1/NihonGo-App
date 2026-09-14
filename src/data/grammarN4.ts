@@ -98,14 +98,14 @@ export const GRAMMAR_N4: GrammarItem[] = [
     ]
   },
   {
-    id: 'g_n4_5',
-    pattern: 'As 4 Condicionais do Japonês (〜たら, 〜ば, 〜なら, 〜と)',
-    titlePt: 'Guia Definitivo das Condicionais em Japonês',
+    id: 'g_n4_5_1',
+    pattern: 'Condicional: 〜たら (~tara)',
+    titlePt: 'Se / Quando (Foco Temporal)',
     jlpt: 'N4',
     category: 'Condicionais',
-    formationFormula: '1) 〜たら (Passado + ら) | 2) 〜ば (troca "u" por "eba") | 3) 〜なら (Substantivo/Adj direto) | 4) 〜と (Forma Dicionário + と)',
-    explanationPt: 'Cada condicional possui um tom e aplicação lógica distinta no dia a dia:',
-    keyRulePt: '• 〜たら (tara): Condicional universal ("Se/Quando"). Muito natural e usada para sequências temporais (雨が降ったら行かない).\n• 〜ば (ba): Condicional lógica ("Se e somente se"): 安ければ買います (Se for barato, eu compro).\n• 〜なら (nara): Condicional contextual ("Se for o caso de... / Se você for..."): 京都に行くなら、金閣寺がおすすめ.\n• 〜と (to): Condicional natural/mecânica ("Sempre que acontece A, inevitavelmente ocorre B"): ボタンを押すと、水が出ます (Ao apertar o botão, a água sai).',
+    formationFormula: '[Verbo/Adjetivo no Passado] + ら',
+    explanationPt: 'A condicional mais comum. Indica que se/quando a ação A acontecer, a ação B ocorrerá em seguida.',
+    keyRulePt: '• Muito usado para sequências (quando terminar X, farei Y).\n• Pode expressar descobertas inesperadas (fui até lá e vi que...).',
     examples: [
       {
         jp: '時間が合ったら、映画を見に行きましょう。',
@@ -114,10 +114,82 @@ export const GRAMMAR_N4: GrammarItem[] = [
         meaningPt: 'Se tivermos tempo, vamos ao cinema.'
       },
       {
+        jp: '日本に着いたら、電話します。',
+        reading: 'にほん に ついたら、でんわ します。',
+        romaji: 'Nihon ni tsuitara, denwa shimasu.',
+        meaningPt: 'Quando eu chegar no Japão, ligarei.'
+      }
+    ]
+  },
+  {
+    id: 'g_n4_5_2',
+    pattern: 'Condicional: 〜ば (~ba)',
+    titlePt: 'Condicional Lógica (Se e somente se)',
+    jlpt: 'N4',
+    category: 'Condicionais',
+    formationFormula: 'Verbos: troca o último "u" por "eba" (行く → 行けば).',
+    explanationPt: 'Foca estritamente na condição. "Para que B aconteça, A é obrigatório". Não se preocupa com o fator tempo.',
+    keyRulePt: '• Frequentemente usado para expressar conselhos: "O que eu deveria fazer?" (どうすればいいですか).',
+    examples: [
+      {
+        jp: '安ければ、買います。',
+        reading: 'やすければ、かいます。',
+        romaji: 'Yasukereba, kaimasu.',
+        meaningPt: 'Se for barato, eu compro.'
+      },
+      {
+        jp: '練習すれば、上手になりますよ。',
+        reading: 'れんしゅう すれば、じょうず に なります よ。',
+        romaji: 'Renshuu sureba, jouzu ni narimasu yo.',
+        meaningPt: 'Se você praticar, ficará bom nisso.'
+      }
+    ]
+  },
+  {
+    id: 'g_n4_5_3',
+    pattern: 'Condicional: 〜なら (~nara)',
+    titlePt: 'Condicional Contextual (Caso seja...)',
+    jlpt: 'N4',
+    category: 'Condicionais',
+    formationFormula: '[Substantivo / Adjetivo / Forma Simples] + なら',
+    explanationPt: 'Usado para responder ou reagir a uma informação que o ouvinte acabou de trazer (ou que já é conhecida no contexto).',
+    keyRulePt: '• Exemplo: "Estou indo para Tóquio". A pessoa responde: "Se é para Tóquio que você vai (なら), visite a Tokyo Tower".',
+    examples: [
+      {
+        jp: '京都に行くなら、金閣寺がおすすめです。',
+        reading: 'きょうと に いく なら、きんかくじ が おすすめ です。',
+        romaji: 'Kyouto ni iku nara, kinkakuji ga osusume desu.',
+        meaningPt: 'Se você vai para Kyoto, o Templo Kinkakuji é a minha recomendação.'
+      },
+      {
+        jp: '嫌なら、やらなくてもいいです。',
+        reading: 'いや なら、やらなくても いい です。',
+        romaji: 'Iya nara, yaranakute mo ii desu.',
+        meaningPt: 'Se não quiser (se achar desagradável), não precisa fazer.'
+      }
+    ]
+  },
+  {
+    id: 'g_n4_5_4',
+    pattern: 'Condicional: 〜と (~to)',
+    titlePt: 'Condicional Natural (Sempre que...)',
+    jlpt: 'N4',
+    category: 'Condicionais',
+    formationFormula: '[Verbo na Forma Dicionário] + と',
+    explanationPt: 'Expressa um resultado natural, inevitável ou mecânico. "Sempre que A acontece, B inevitavelmente ocorre".',
+    keyRulePt: '• Muito usado para direções (Vire à direita e a escola estará lá), máquinas e fenômenos da natureza.\n• Não pode ser seguido de pedidos ou vontades do falante.',
+    examples: [
+      {
         jp: 'このボタンを押すと、ドアが開きます。',
         reading: 'この ボタン を おす と、ドア が あきます。',
         romaji: 'Kono botan o osu to, doa ga akimasu.',
         meaningPt: 'Ao apertar este botão, a porta se abre.'
+      },
+      {
+        jp: '春になると、桜が咲きます。',
+        reading: 'はる に なる と、さくら が さきます。',
+        romaji: 'Haru ni naru to, sakura ga sakimasu.',
+        meaningPt: 'Quando chega a primavera, as cerejeiras florescem.'
       }
     ]
   },
@@ -236,21 +308,51 @@ export const GRAMMAR_N4: GrammarItem[] = [
     ]
   },
   {
-    id: 'g_n4_11',
-    pattern: 'Ações de Dar e Receber Favor (〜てあげる, 〜てくれる, 〜てもらう)',
-    titlePt: 'O Sistema de Favores e Benefícios em Japonês',
+    id: 'g_n4_11_1',
+    pattern: 'Ação de Fazer Favor: 〜てあげる (~te ageru)',
+    titlePt: 'Favores: Fazer por Alguém',
     jlpt: 'N4',
     category: 'Dar & Receber',
-    formationFormula: '[Verbo na forma-TE] + あげる (eu faço para outro) / くれる (alguém faz para mim) / もらう (eu recebo a gentileza de alguém)',
-    explanationPt: 'Em japonês é fundamental explicitar a direção da gentileza e o sentimento de gratidão em relação a quem realizou o favor.',
-    keyRulePt: '• 〜てあげる: Eu ou alguém do meu grupo faz em benefício de outro.\n• 〜てくれる: Alguém faz espontaneamente em meu benefício (sou o recebedor).\n• 〜てもらう: Eu solicito/recebo a ação de outra pessoa (marcada por に).',
+    formationFormula: '[Verbo na forma-TE] + あげる / あげます',
+    explanationPt: 'Usado quando eu (ou alguém do meu grupo) realiza uma ação benéfica para outra pessoa.',
+    keyRulePt: '• Nunca use para seus superiores diretos (parece arrogante).\n• Eu [wa] Pessoa [ni] Ação [te ageru].',
+    examples: [
+      {
+        jp: '妹に本を読んであげました。',
+        reading: 'いもうと に ほん を よんで あげました。',
+        romaji: 'Imouto ni hon o yonde agemashita.',
+        meaningPt: 'Eu li o livro para a minha irmã mais nova.'
+      }
+    ]
+  },
+  {
+    id: 'g_n4_11_2',
+    pattern: 'Ação de Receber Favor Espontâneo: 〜てくれる (~te kureru)',
+    titlePt: 'Favores: Alguém faz por mim',
+    jlpt: 'N4',
+    category: 'Dar & Receber',
+    formationFormula: '[Verbo na forma-TE] + くれる / くれます',
+    explanationPt: 'Usado quando outra pessoa faz um favor para mim (ou para minha família) espontaneamente. A pessoa que fez a ação é o sujeito.',
+    keyRulePt: '• O recebedor quase sempre sou eu (私に), então frequentemente o "watashi ni" é omitido.',
     examples: [
       {
         jp: '友達が日本語を教えてくれました。',
         reading: 'ともだち が にほんご を おしえて くれました。',
         romaji: 'Tomodachi ga nihongo o oshiete kuremashita.',
         meaningPt: 'Meu amigo me ensinou japonês (fez esse favor para mim).'
-      },
+      }
+    ]
+  },
+  {
+    id: 'g_n4_11_3',
+    pattern: 'Ação de Receber Favor Solicitado: 〜てもらう (~te morau)',
+    titlePt: 'Favores: Receber a Gentileza',
+    jlpt: 'N4',
+    category: 'Dar & Receber',
+    formationFormula: '[Verbo na forma-TE] + もらう / もらいます',
+    explanationPt: 'Significa "receber a ação". Eu (sujeito) recebo o favor de alguém (marcado com に). Mostra profunda gratidão.',
+    keyRulePt: '• Eu [wa] Pessoa [ni] Ação [te morau].\n• Diferente de "kureru", aqui EU sou o sujeito da frase.',
+    examples: [
       {
         jp: '先生に推薦状を書いてもらいました。',
         reading: 'せんせい に すいせんじょう を かいて もらいました。',
@@ -440,21 +542,33 @@ export const GRAMMAR_N4: GrammarItem[] = [
     ]
   },
   {
-    id: 'g_n4_20',
-    pattern: '〜そうです (~sou desu) [2 Usos]',
-    titlePt: 'Aparência vs Boatos: "Parece que / Ouvi dizer que"',
+    id: 'g_n4_20_1',
+    pattern: 'Aparência Visual: 〜そうです (~sou desu)',
+    titlePt: 'Aparência: "Parece (baseado no que vejo)"',
     jlpt: 'N4',
     category: 'Probabilidade & Hearsay',
-    formationFormula: '1) Aparência: [Raiz de Adj/Verbo] + そうです | 2) Boato: [Forma Simples] + そうです',
-    explanationPt: 'Este é um dos pontos mais testados no N4, pois a conjugação altera completamente o sentido da frase.',
-    keyRulePt: '• Aparência (baseado na visão/feeling): 美味しそう (Parece gostoso) / 降りそう (Parece que vai chover).\n• Hearsay (baseado no que ouviu): 美味しいそうです (Ouvi dizer que é gostoso) / 降るそうです (Disseram que vai chover).',
+    formationFormula: '[Raiz do Verbo / Adj sem い] + そうです',
+    explanationPt: 'Usado quando você olha para algo e tira uma conclusão visual (parece gostoso, parece que vai chover).',
+    keyRulePt: '• Adjetivos: 美味しい (oishii) → 美味しそう (oishisou = parece gostoso).\n• Verbos: 降る (furu) → 降りそう (furisou = parece que vai chover).\n• Exceção: いい (ii) vira よさそう (yosasou).',
     examples: [
       {
         jp: 'このケーキは美味しそうです。',
         reading: 'この ケーキ は おいしそう です。',
         romaji: 'Kono keeki wa oishisou desu.',
         meaningPt: 'Este bolo parece estar delicioso. (Estou olhando pra ele)'
-      },
+      }
+    ]
+  },
+  {
+    id: 'g_n4_20_2',
+    pattern: 'Boatos / Hearsay: 〜そうです (~sou desu)',
+    titlePt: 'Fofoca / Notícia: "Ouvi dizer que..."',
+    jlpt: 'N4',
+    category: 'Probabilidade & Hearsay',
+    formationFormula: '[Forma Simples da frase inteira] + そうです',
+    explanationPt: 'Usado para repassar uma informação que você ouviu, leu ou ficou sabendo através de terceiros.',
+    keyRulePt: '• Diferente da aparência visual, a palavra fica inteira na forma simples: 美味しいそうです (Ouvi dizer que é gostoso) em vez de 美味しそう (Parece gostoso).',
+    examples: [
       {
         jp: '天気予報によると、明日は雨が降るそうです。',
         reading: 'てんきよほう に よると、あした は あめ が ふる そう です。',
@@ -464,26 +578,56 @@ export const GRAMMAR_N4: GrammarItem[] = [
     ]
   },
   {
-    id: 'g_n4_21',
-    pattern: '〜ようです / 〜みたいです / 〜らしいです',
-    titlePt: 'Suposições: "Parece / Tem jeito de..."',
+    id: 'g_n4_21_1',
+    pattern: 'Suposição Subjetiva: 〜ようです (~you desu)',
+    titlePt: 'Suposição Lógica: "Aparenta / Tudo indica que..."',
     jlpt: 'N4',
     category: 'Suposição',
-    formationFormula: 'Diversos (geralmente conectados na Forma Simples)',
-    explanationPt: 'Três formas de dizer "parece". "You desu" é objetivo/formal (baseado nos sentidos e lógica). "Mitai desu" é coloquial (muito falado). "Rashii desu" é baseado em fatos fortes ou indica "ser típico de".',
-    keyRulePt: '• みたい (mitai) age gramaticalmente como Adjetivo-NA.\n• 男らしい (otokorashii) = "típico de homem" (masculino/viril) / 子供みたい (kodomo mitai) = "parece uma criança" (mas não é).',
+    formationFormula: '[Forma Simples] + ようです (Substantivo pede の)',
+    explanationPt: 'Suposição formal baseada nos 5 sentidos ou em evidências concretas. É um pouco mais objetivo.',
+    keyRulePt: 'Com substantivos: 病気のようです (Parece que é doença).',
     examples: [
       {
         jp: '誰もいないようです。',
         reading: 'だれも いない よう です。',
         romaji: 'Daremo inai you desu.',
         meaningPt: 'Parece que não tem ninguém (as luzes estão apagadas e está silêncio).'
-      },
+      }
+    ]
+  },
+  {
+    id: 'g_n4_21_2',
+    pattern: 'Suposição Coloquial: 〜みたいです (~mitai desu)',
+    titlePt: 'Suposição / Metáfora: "Parece / Tipo..."',
+    jlpt: 'N4',
+    category: 'Suposição',
+    formationFormula: '[Substantivo / Forma Simples] + みたいです',
+    explanationPt: 'A versão mais coloquial e falada do "you desu". Também muito usada para metáforas (dizer que algo parece com outra coisa, mesmo não sendo).',
+    keyRulePt: 'Age gramaticalmente como um Adjetivo-NA.',
+    examples: [
       {
         jp: '彼は日本人みたいに話します。',
         reading: 'かれ は にほんじん みたい に はなします。',
         romaji: 'Kare wa nihonjin mitai ni hanashimasu.',
         meaningPt: 'Ele fala como se fosse um japonês (mas não é).'
+      }
+    ]
+  },
+  {
+    id: 'g_n4_21_3',
+    pattern: 'Características: 〜らしいです (~rashii desu)',
+    titlePt: 'Essência / Hearsay Forte: "Típico de / Pelo visto"',
+    jlpt: 'N4',
+    category: 'Suposição',
+    formationFormula: '[Substantivo / Forma Simples] + らしいです',
+    explanationPt: 'Tem 2 grandes usos: 1) Expressar que algo tem as qualidades esperadas ("típico de..."). 2) Uma suposição baseada em fortes boatos objetivos.',
+    keyRulePt: '男らしい (otoko-rashii) = típico de um homem autêntico. (Diferente de 男みたい = parece um homem, mas não é).',
+    examples: [
+      {
+        jp: '今日は春らしい天気ですね。',
+        reading: 'きょう は はる らしい てんき です ね。',
+        romaji: 'Kyou wa harurashii tenki desu ne.',
+        meaningPt: 'O tempo hoje está típico de primavera, não acha?'
       }
     ]
   },
