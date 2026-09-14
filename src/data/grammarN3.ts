@@ -92,26 +92,38 @@ export const GRAMMAR_N3: GrammarItem[] = [
     ]
   },
   {
-    id: 'g_n3_5',
-    pattern: '〜おかげで (Positivo) vs 〜せいで (Negativo)',
-    titlePt: 'Causa e Efeito: "Graças a..." vs "Por culpa de..."',
+    id: 'g_n3_5_1',
+    pattern: 'Graças a: 〜おかげで (~okage de)',
+    titlePt: 'Causa Positiva: "Graças a..."',
     jlpt: 'N3',
     category: 'Causa & Consequência',
-    formationFormula: '[Forma Simples (Adj-NA+な / Substantivo+の)] + おかげで (resultado bom) / せいで (resultado ruim)',
-    explanationPt: 'Ambas explicam o motivo de algo, porém com forte carga emocional do falante:\n• おかげで: Expressa agradecimento pelo resultado próspero ou positivo.\n• せいで: Atribui culpa ou responsabilidade por um revés ou prejuízo.',
-    keyRulePt: 'Cuidado com o uso irônico de おかげで em alguns contextos conversacionais.',
+    formationFormula: '[Forma Simples (Adj-NA+な / Substantivo+の)] + おかげで',
+    explanationPt: 'Usado exclusivamente para razões que trouxeram um bom resultado. Expressa gratidão e mérito.',
+    keyRulePt: 'Não pode ser usado para resultados ruins, a menos que seja com forte sarcasmo (raro).',
     examples: [
       {
-        jp: '先生のおかげで、試験に合格できました。',
-        reading: 'せんせい の おかげ で、しけん に ごうかく できました。',
-        romaji: 'Sensei no okage de, shiken ni goukaku dekimashita.',
-        meaningPt: 'Graças ao professor, consegui ser aprovado no exame.'
-      },
+        jp: '先生のおかげで、試験に合格しました。',
+        reading: 'せんせい の おかげ で、しけん に ごうかく しました。',
+        romaji: 'Sensei no okage de, shiken ni goukaku shimashita.',
+        meaningPt: 'Graças ao professor, fui aprovado no exame.'
+      }
+    ]
+  },
+  {
+    id: 'g_n3_5_2',
+    pattern: 'Por culpa de: 〜せいで (~sei de)',
+    titlePt: 'Causa Negativa: "Por culpa de..."',
+    jlpt: 'N3',
+    category: 'Causa & Consequência',
+    formationFormula: '[Forma Simples (Adj-NA+な / Substantivo+の)] + せいで',
+    explanationPt: 'Usado exclusivamente para razões que trouxeram um mau resultado. Expressa culpa ou aborrecimento.',
+    keyRulePt: 'Não pode ser usado para resultados positivos.',
+    examples: [
       {
-        jp: '大雨のせいで、電車が遅れました。',
-        reading: 'おおあめ の せい で、でんしゃ が おくれました。',
-        romaji: 'Ooame no sei de, densha ga okuremashita.',
-        meaningPt: 'Por culpa da tempestade, o trem atrasou.'
+        jp: '雨が降ったせいで、試合が中止になりました。',
+        reading: 'あめ が ふった せい で、しあい が ちゅうし に なりました。',
+        romaji: 'Ame ga futta sei de, shiai ga chuushi ni narimashita.',
+        meaningPt: 'Por culpa da chuva, a partida foi cancelada.'
       }
     ]
   },
@@ -164,26 +176,38 @@ export const GRAMMAR_N3: GrammarItem[] = [
     ]
   },
   {
-    id: 'g_n3_8',
-    pattern: '〜について / 〜に関して (~ni tsuite / ~ni kanshite)',
-    titlePt: 'Tópico de Discussão: "A respeito de / Relativo a..."',
+    id: 'g_n3_8_1',
+    pattern: 'A respeito de: 〜について (~ni tsuite)',
+    titlePt: 'Tema: "Sobre / A respeito de..."',
     jlpt: 'N3',
     category: 'Tema & Assunto',
-    formationFormula: '[Substantivo] + について / に関して',
-    explanationPt: 'Usado para introduzir o assunto, tema ou objeto de estudo, pesquisa ou debate. に関して é mais formal que について.',
-    keyRulePt: 'Para ligar a um substantivo: 〜についての + [Substantivo] ou 〜に関する + [Substantivo].',
+    formationFormula: '[Substantivo] + について',
+    explanationPt: 'Usado para indicar o tema sobre o qual se pensa, fala, pesquisa ou escreve. É o equivalente direto a "about" em inglês.',
+    keyRulePt: 'Para modificar um substantivo logo em seguida, usa-se 〜についての [Subst]. Ex: 日本についての本 (Um livro sobre o Japão).',
     examples: [
       {
         jp: '日本の歴史について調べています。',
         reading: 'にほん の れきし に ついて しらべて います。',
         romaji: 'Nihon no rekishi ni tsuite shirabete imasu.',
         meaningPt: 'Estou pesquisando a respeito da história do Japão.'
-      },
+      }
+    ]
+  },
+  {
+    id: 'g_n3_8_2',
+    pattern: 'Com relação a: 〜に関して (~ni kanshite)',
+    titlePt: 'Tema Formal: "Relacionado a..."',
+    jlpt: 'N3',
+    category: 'Tema & Assunto',
+    formationFormula: '[Substantivo] + に関して (ni kanshite)',
+    explanationPt: 'Significa "a respeito de" assim como について, mas é mais amplo e muito mais formal. Usado em discursos, notícias e e-mails profissionais.',
+    keyRulePt: 'Para modificar um substantivo seguinte, usa-se 〜に関する [Subst].',
+    examples: [
       {
         jp: 'この問題に関する意見を聞かせてください。',
         reading: 'この もんだい に かんする いけん を きかせて ください。',
         romaji: 'Kono mondai ni kansuru iken o kikasete kudasai.',
-        meaningPt: 'Por favor, deixe-me ouvir sua opinião relativa a esta questão.'
+        meaningPt: 'Por favor, deixe-me ouvir sua opinião relativa (relacionada) a esta questão.'
       }
     ]
   },
@@ -502,6 +526,336 @@ export const GRAMMAR_N3: GrammarItem[] = [
         reading: 'じぶん の なまえ ぐらい かんじ で かける よ。',
         romaji: 'Jibun no namae gurai kanji de kakeru yo.',
         meaningPt: 'Eu consigo escrever pelo menos o meu próprio nome em kanji, né.'
+      }
+    ]
+  },
+  {
+    id: 'g_n3_24',
+    pattern: '〜にとって (~ni totte)',
+    titlePt: 'Perspectiva: "Para (mim) / Do ponto de vista de..."',
+    jlpt: 'N3',
+    category: 'Perspectiva & Julgamento',
+    formationFormula: '[Substantivo] + にとって',
+    explanationPt: 'Usado para indicar de qual ponto de vista ou para quem algo tem valor, importância ou dificuldade.',
+    keyRulePt: 'Normalmente, a frase que se segue a "ni totte" contém um julgamento ou avaliação (ex: "é importante", "é difícil", "é perigoso").',
+    examples: [
+      {
+        jp: '私にとって、家族は一番大切なものです。',
+        reading: 'わたし に とって、かぞく は いちばん たいせつな もの です。',
+        romaji: 'Watashi ni totte, kazoku wa ichiban taisetsu na mono desu.',
+        meaningPt: 'Para mim (do meu ponto de vista), a família é a coisa mais importante.'
+      }
+    ]
+  },
+  {
+    id: 'g_n3_25',
+    pattern: '〜として (~to shite)',
+    titlePt: 'Papel ou Posição: "Como / Na qualidade de..."',
+    jlpt: 'N3',
+    category: 'Papel & Função',
+    formationFormula: '[Substantivo] + として',
+    explanationPt: 'Indica a posição, papel, qualificação ou título sob o qual alguém age ou algo é usado.',
+    keyRulePt: 'Equivale ao "como" do português no sentido de função. Ex: Trabalhar "como" professor.',
+    examples: [
+      {
+        jp: '彼は留学生として日本に来ました。',
+        reading: 'かれ は りゅうがくせい として にほん に きました。',
+        romaji: 'Kare wa ryuugakusei to shite nihon ni kimashita.',
+        meaningPt: 'Ele veio ao Japão como (na qualidade de) estudante de intercâmbio.'
+      }
+    ]
+  },
+  {
+    id: 'g_n3_26',
+    pattern: '〜べきだ (~beki da)',
+    titlePt: 'Dever Moral ou Conselho Forte: "Deveria..."',
+    jlpt: 'N3',
+    category: 'Obrigação & Dever',
+    formationFormula: '[Verbo na Forma Dicionário] + べきだ',
+    explanationPt: 'Expressa um dever baseado no senso comum, na moralidade ou uma forte recomendação do falante.',
+    keyRulePt: '• O verbo する (fazer) frequentemente vira すべき (subeki) em vez de するべき (suru beki).\n• Para dizer que "não deveria", usa-se べきではない (beki dewa nai).',
+    examples: [
+      {
+        jp: '学生はもっと勉強すべきだ。',
+        reading: 'がくせい は もっと べんきょう すべき だ。',
+        romaji: 'Gakusei wa motto benkyou subeki da.',
+        meaningPt: 'Os estudantes deveriam estudar mais (é o dever deles).'
+      },
+      {
+        jp: 'そんなことを言うべきではありません。',
+        reading: 'そんな こと を いう べき ではありません。',
+        romaji: 'Sonna koto o iu beki dewa arimasen.',
+        meaningPt: 'Você não deveria dizer coisas desse tipo.'
+      }
+    ]
+  },
+  {
+    id: 'g_n3_27',
+    pattern: '〜に違いない (~ni chigainai)',
+    titlePt: 'Certeza Absoluta: "Sem dúvida / Com certeza é..."',
+    jlpt: 'N3',
+    category: 'Impossibilidade & Certeza',
+    formationFormula: '[Forma Simples (Substantivo/Adj-Na sem だ)] + に違いない',
+    explanationPt: 'Expressa uma convicção fortíssima do falante baseada em dedução. Literalmente "não há como errar sobre..."',
+    keyRulePt: 'É mais formal que 〜に決まっている. Muito comum em textos escritos e deduções lógicas.',
+    examples: [
+      {
+        jp: '犯人はあの男に違いない。',
+        reading: 'はんにん は あの おとこ に ちがいない。',
+        romaji: 'Hannin wa ano otoko ni chigainai.',
+        meaningPt: 'O culpado sem dúvida alguma é aquele homem.'
+      }
+    ]
+  },
+  {
+    id: 'g_n3_28',
+    pattern: '〜に決まっている (~ni kimatte iru)',
+    titlePt: 'Certeza Óbvia: "É óbvio que / Está claro que..."',
+    jlpt: 'N3',
+    category: 'Impossibilidade & Certeza',
+    formationFormula: '[Forma Simples (Substantivo/Adj-Na sem だ)] + に決まっている',
+    explanationPt: 'Similar ao に違いない, mas com um tom muito mais subjetivo e coloquial. "Está decidido/óbvio para mim que é assim".',
+    keyRulePt: 'Na fala casual, pode ser encurtado para に決まってる (ni kimatteru).',
+    examples: [
+      {
+        jp: 'そんなの、嘘に決まっているよ。',
+        reading: 'そんな の、うそ に きまっている よ。',
+        romaji: 'Sonna no, uso ni kimatte iru yo.',
+        meaningPt: 'Isso é óbvio que é mentira, né.'
+      }
+    ]
+  },
+  {
+    id: 'g_n3_29',
+    pattern: '〜っこない (~kkonai)',
+    titlePt: 'Negação Absoluta Forte: "Não tem jeito de / Sem chance..."',
+    jlpt: 'N3',
+    category: 'Impossibilidade & Certeza',
+    formationFormula: '[Raiz do Verbo (sem "masu")] + っこない',
+    explanationPt: 'Uma forma extremamente coloquial e expressiva de dizer que algo é absolutamente impossível de acontecer.',
+    keyRulePt: 'Pode substituir a forma potencial negativa para soar mais dramático ou teimoso (ex: できない → できっこない).',
+    examples: [
+      {
+        jp: '今日中にこんなたくさんの仕事、終わりっこないよ。',
+        reading: 'きょうじゅう に こんな たくさん の しごと、おわりっこない よ。',
+        romaji: 'Kyoujuu ni konna takusan no shigoto, owarikkonai yo.',
+        meaningPt: 'Sem chance de terminar esse monte de trabalho ainda hoje.'
+      }
+    ]
+  },
+  {
+    id: 'g_n3_30',
+    pattern: '〜最中に (~saichuu ni)',
+    titlePt: 'No ápice / Bem no meio de...',
+    jlpt: 'N3',
+    category: 'Tempo & Interrupção',
+    formationFormula: '[Verbo no Contínuo 〜ている / Substantivo+の] + 最中に',
+    explanationPt: 'Enfatiza que uma ação estava no seu clímax, bem no meio da execução, quando geralmente algo (muitas vezes inconveniente) aconteceu e a interrompeu.',
+    keyRulePt: 'Diferente do 間に (que é mais amplo), o 最中に foca no momento de maior intensidade. Ex: Bem no meio do discurso, a luz acabou.',
+    examples: [
+      {
+        jp: '会議の最中に、携帯電話が鳴ってしまった。',
+        reading: 'かいぎ の さいちゅう に、けいたいでんわ が なって しまった。',
+        romaji: 'Kaigi no saichuu ni, keitai denwa ga natte shimatta.',
+        meaningPt: 'Bem no meio da reunião, o celular tocou.'
+      }
+    ]
+  },
+  {
+    id: 'g_n3_31',
+    pattern: '〜てからでないと (~te kara de nai to)',
+    titlePt: 'Pré-requisito: "A menos que faça X primeiro..."',
+    jlpt: 'N3',
+    category: 'Condição Restritiva',
+    formationFormula: '[Verbo na Forma-TE] + からでないと / からでなければ',
+    explanationPt: 'Indica que a ação A é um pré-requisito absoluto para que a ação B aconteça. Sem fazer A, B é impossível.',
+    keyRulePt: 'A frase que se segue a essa estrutura (ação B) é sempre negativa ou indica impossibilidade.',
+    examples: [
+      {
+        jp: '親に相談してからでないと、決められません。',
+        reading: 'おや に そうだん して から でないと、きめられません。',
+        romaji: 'Oya ni soudan shite kara de nai to, kimeraremasen.',
+        meaningPt: 'A menos que eu converse com meus pais primeiro, não posso decidir.'
+      }
+    ]
+  },
+  {
+    id: 'g_n3_32',
+    pattern: '〜ことにしている (~koto ni shite iru)',
+    titlePt: 'Hábito Pessoal: "Eu decidi / Tenho a regra de..."',
+    jlpt: 'N3',
+    category: 'Hábito & Decisão',
+    formationFormula: '[Verbo Dicionário / Forma-NAI] + ことにしている',
+    explanationPt: 'Expressa um hábito ou rotina que o próprio falante decidiu estabelecer para si mesmo (uma regra pessoal ativa).',
+    keyRulePt: 'O verbo する (fazer) indica que é uma escolha/esforço individual.',
+    examples: [
+      {
+        jp: '健康のため、毎朝走ることにしている。',
+        reading: 'けんこう の ため、まいあさ はしる こと に している。',
+        romaji: 'Kenkou no tame, maiasa hashiru koto ni shite iru.',
+        meaningPt: 'Pela minha saúde, tenho a regra de (decidi) correr todas as manhãs.'
+      }
+    ]
+  },
+  {
+    id: 'g_n3_33',
+    pattern: '〜ことになっている (~koto ni natte iru)',
+    titlePt: 'Regras e Leis: "Está determinado que..."',
+    jlpt: 'N3',
+    category: 'Hábito & Decisão',
+    formationFormula: '[Verbo Dicionário / Forma-NAI] + ことになっている',
+    explanationPt: 'Expressa uma regra, costume, lei ou cronograma que foi decidido por outras pessoas ou pela sociedade.',
+    keyRulePt: 'O verbo なる (tornar-se/ser decidido) indica que o falante apenas segue a regra, ele não a criou.',
+    examples: [
+      {
+        jp: '日本では、家の中で靴を脱ぐことになっています。',
+        reading: 'にほん では、いえ の なか で くつ を ぬぐ こと に なっています。',
+        romaji: 'Nihon dewa, ie no naka de kutsu o nugu koto ni natte imasu.',
+        meaningPt: 'No Japão, é regra (costume) tirar os sapatos dentro de casa.'
+      }
+    ]
+  },
+  {
+    id: 'g_n3_34',
+    pattern: '〜ようにしている (~you ni shite iru)',
+    titlePt: 'Esforço Contínuo: "Faço questão de / Esforço-me para..."',
+    jlpt: 'N3',
+    category: 'Hábito & Esforço',
+    formationFormula: '[Verbo Dicionário / Forma-NAI] + ようにしている',
+    explanationPt: 'Parecido com "koto ni shite iru", mas o foco aqui não é a criação de uma regra estrita, e sim o esforço diário para tentar cumprir um objetivo.',
+    keyRulePt: 'Mostra uma tentativa contínua: "Tento ao máximo fazer X".',
+    examples: [
+      {
+        jp: '野菜をたくさん食べるようにしています。',
+        reading: 'やさい を たくさん たべる よう に しています。',
+        romaji: 'Yasai o takusan taberu you ni shite imasu.',
+        meaningPt: 'Estou me esforçando (fazendo questão) de comer bastantes vegetais.'
+      }
+    ]
+  },
+  {
+    id: 'g_n3_35',
+    pattern: '〜わりに (~wari ni)',
+    titlePt: 'Quebra de Expectativa: "Para um(a)... / Considerando que..."',
+    jlpt: 'N3',
+    category: 'Contraste & Proporção',
+    formationFormula: '[Forma Simples / Adj-NA+な / Substantivo+の] + わりに',
+    explanationPt: 'Usado quando há um contraste entre o nível/status da pessoa e o que ela realmente faz ou aparenta. Expressa surpresa (positiva ou negativa).',
+    keyRulePt: 'Diferente de にしては, o わりに pode ser usado com adjetivos que indicam níveis abstratos (ex: Para um lugar barato, é gostoso).',
+    examples: [
+      {
+        jp: '彼はたくさん食べるわりに、太らない。',
+        reading: 'かれ は たくさん たべる わりに、ふとらない。',
+        romaji: 'Kare wa takusan taberu wari ni, futoranai.',
+        meaningPt: 'Considerando o tanto que ele come, ele não engorda.'
+      }
+    ]
+  },
+  {
+    id: 'g_n3_36',
+    pattern: '〜にしては (~ni shite wa)',
+    titlePt: 'Quebra de Expectativa Específica: "Para um..."',
+    jlpt: 'N3',
+    category: 'Contraste & Proporção',
+    formationFormula: '[Forma Simples / Substantivo] + にしては',
+    explanationPt: 'Muito parecido com o わりに, mas o にしては é usado quando você menciona um fato concreto, um número ou uma pessoa específica como parâmetro de comparação.',
+    keyRulePt: 'Não pode ser usado com adjetivos gerais. Ex: "Para um estrangeiro (fato concreto), o japonês dele é bom" = 外国人にしては (Correto). "Para algo barato..." = 安いにしては (Incorreto, use わりに).',
+    examples: [
+      {
+        jp: '初めてケーキを作ったにしては、上手にできました。',
+        reading: 'はじめて ケーキ を つくった にしては、じょうず に できました。',
+        romaji: 'Hajimete keeki o tsukutta ni shite wa, jouzu ni dekimashita.',
+        meaningPt: 'Para (alguém que) fez um bolo pela primeira vez, ficou muito bom.'
+      }
+    ]
+  },
+  {
+    id: 'g_n3_37',
+    pattern: 'たとえ〜ても (tatoe ~te mo)',
+    titlePt: 'Suposição Extrema: "Mesmo que..."',
+    jlpt: 'N3',
+    category: 'Condição Concessiva',
+    formationFormula: 'たとえ + [Verbo-TEも / Adj-I くても / Adj-NA/Subst でも]',
+    explanationPt: 'Enfatiza fortemente que não importa a condição extrema que aconteça, a resolução ou resultado não mudará.',
+    keyRulePt: 'A palavra たとえ (tatoe) funciona como um sinalizador antecipado para o "ても" (te mo) que vem no final.',
+    examples: [
+      {
+        jp: 'たとえ雨が降っても、試合は行います。',
+        reading: 'たとえ あめ が ふっても、しあい は おこないます。',
+        romaji: 'Tatoe ame ga futte mo, shiai wa okonaimasu.',
+        meaningPt: 'Mesmo que chova, a partida será realizada.'
+      }
+    ]
+  },
+  {
+    id: 'g_n3_38',
+    pattern: '〜ばかりでなく (~bakari de naku)',
+    titlePt: 'Adição: "Não apenas X, mas também..."',
+    jlpt: 'N3',
+    category: 'Adição',
+    formationFormula: '[Forma Simples / Substantivo] + ばかりでなく / ばかりか',
+    explanationPt: 'Expressa que há algo a mais, além daquilo que já era esperado. É uma variação formal de だけでなく.',
+    keyRulePt: 'Frequentemente acompanhado por も (também) na segunda parte da frase.',
+    examples: [
+      {
+        jp: '彼は英語ばかりでなく、フランス語も話せる。',
+        reading: 'かれ は えいご ばかりでなく、フランスご も はなせる。',
+        romaji: 'Kare wa eigo bakari de naku, furansugo mo hanaseru.',
+        meaningPt: 'Ele consegue falar não apenas inglês, mas também francês.'
+      }
+    ]
+  },
+  {
+    id: 'g_n3_39',
+    pattern: '〜ついでに (~tsuide ni)',
+    titlePt: 'Aproveitando a chance: "Já que estou fazendo..."',
+    jlpt: 'N3',
+    category: 'Ação Paralela',
+    formationFormula: '[Verbo Dicionário / Verbo-TA / Subst+の] + ついでに',
+    explanationPt: 'Indica que enquanto você está realizando uma ação principal A, você aproveita o momento/oportunidade para realizar a ação secundária B.',
+    keyRulePt: 'A ação principal fica ANTES do tsuide ni.',
+    examples: [
+      {
+        jp: '散歩のついでに、パンを買ってきます。',
+        reading: 'さんぽ の ついで に、パン を かって きます。',
+        romaji: 'Sanpo no tsuide ni, pan o katte kimasu.',
+        meaningPt: 'Aproveitando a caminhada (o momento de passear), comprarei pão.'
+      }
+    ]
+  },
+  {
+    id: 'g_n3_40',
+    pattern: '〜とともに (~to tomo ni)',
+    titlePt: 'Mudanças Conjuntas: "À medida que / Junto com"',
+    jlpt: 'N3',
+    category: 'Tempo & Mudança Simultânea',
+    formationFormula: '[Verbo Dicionário / Substantivo] + とともに',
+    explanationPt: 'Usado na escrita para expressar que duas coisas progridem simultaneamente. "À medida que X muda, Y muda também".',
+    keyRulePt: 'Muito comum em jornais e artigos para descrever envelhecimento, crescimento populacional e economia.',
+    examples: [
+      {
+        jp: '年をとるとともに、体力が落ちてきた。',
+        reading: 'とし を とる と ともに、たいりょく が おちて きた。',
+        romaji: 'Toshi o toru to tomo ni, tairyoku ga ochite kita.',
+        meaningPt: 'À medida que envelheço, minha força física vem caindo.'
+      }
+    ]
+  },
+  {
+    id: 'g_n3_41',
+    pattern: '〜てたまらない (~te tamaranai)',
+    titlePt: 'Sentimento Incontrolável: "Insuportavelmente..."',
+    jlpt: 'N3',
+    category: 'Emoção Forte',
+    formationFormula: '[Verbo-TE / Adj-I くて / Adj-NA で] + たまらない / しょうがない',
+    explanationPt: 'Expressa um sentimento (físico ou emocional) tão forte que o falante mal consegue suportar.',
+    keyRulePt: 'É estritamente subjetivo e usado apenas para descrever os sentimentos da própria pessoa (eu).',
+    examples: [
+      {
+        jp: '暑くてたまらない。',
+        reading: 'あつくて たまらない。',
+        romaji: 'Atsukute tamaranai.',
+        meaningPt: 'Está quente de forma insuportável (Não aguento mais o calor).'
       }
     ]
   }
