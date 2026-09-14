@@ -4440,5 +4440,357 @@ export const VOCAB_N3: VocabItem[] = [
       romaji: 'Zuibun osoi ne.',
       meaningPt: 'Você está bastante atrasado, né.'
     }
+  },
+  {
+  "id": "v3_new_1789404800218_1",
+  "word": "戻る",
+  "reading": "もどる",
+  "romaji": "modoru",
+  "meaningPt": "retornar, voltar",
+  "category": "verbo_godan",
+  "jlpt": "N3",
+  "categoryLabelPt": "Verbo Tipo 1 (Godan)",
+  "exampleSentence": {
+    "jp": "席に戻ってください。",
+    "reading": "せきに もどって ください。",
+    "romaji": "seki ni modotte kudasai.",
+    "meaningPt": "Por favor, retorne ao seu assento."
   }
+},
+  {
+  "id": "v3_new_1789404800218_2",
+  "word": "残る",
+  "reading": "のこる",
+  "romaji": "nokoru",
+  "meaningPt": "sobrar, restar",
+  "category": "verbo_godan",
+  "jlpt": "N3",
+  "categoryLabelPt": "Verbo Tipo 1 (Godan)",
+  "exampleSentence": {
+    "jp": "ご飯が少し残っている。",
+    "reading": "ごはんが すこし のこっている。",
+    "romaji": "gohan ga sukoshi nokotte iru.",
+    "meaningPt": "Ainda resta um pouco de arroz."
+  }
+},
+  {
+  "id": "v3_new_1789404800218_3",
+  "word": "治る",
+  "reading": "なおる",
+  "romaji": "naoru",
+  "meaningPt": "curar-se (doença)",
+  "category": "verbo_godan",
+  "jlpt": "N3",
+  "categoryLabelPt": "Verbo Tipo 1 (Godan)",
+  "exampleSentence": {
+    "jp": "風邪が治りました。",
+    "reading": "かぜが なおりました。",
+    "romaji": "kaze ga naorimashita.",
+    "meaningPt": "Curei-me do resfriado."
+  }
+},
+  {
+  "id": "v3_new_1789404800218_4",
+  "word": "悩む",
+  "reading": "なやむ",
+  "romaji": "nayamu",
+  "meaningPt": "preocupar-se, estar indeciso",
+  "category": "verbo_godan",
+  "jlpt": "N3",
+  "categoryLabelPt": "Verbo Tipo 1 (Godan)",
+  "exampleSentence": {
+    "jp": "将来のことで悩んでいる。",
+    "reading": "しょうらいの ことで なやんでいる。",
+    "romaji": "shourai no koto de nayande iru.",
+    "meaningPt": "Estou preocupado/indeciso com o futuro."
+  }
+},
+  {
+  "id": "v3_new_1789404800218_5",
+  "word": "減る",
+  "reading": "へる",
+  "romaji": "heru",
+  "meaningPt": "diminuir (intransitivo)",
+  "category": "verbo_godan",
+  "jlpt": "N3",
+  "categoryLabelPt": "Verbo Tipo 1 (Godan)",
+  "exampleSentence": {
+    "jp": "体重が減りました。",
+    "reading": "たいじゅうが へりました。",
+    "romaji": "taijuu ga herimashita.",
+    "meaningPt": "Meu peso diminuiu."
+  }
+},
+  {
+  "id": "v3_new_1789404800218_6",
+  "word": "目立つ",
+  "reading": "めだつ",
+  "romaji": "medatsu",
+  "meaningPt": "destacar-se, chamar atenção",
+  "category": "verbo_godan",
+  "jlpt": "N3",
+  "categoryLabelPt": "Verbo Tipo 1 (Godan)",
+  "exampleSentence": {
+    "jp": "彼女はクラスで目立っている。",
+    "reading": "かのじょは クラスで めだっている。",
+    "romaji": "kanojo wa kurasu de medatte iru.",
+    "meaningPt": "Ela se destaca na sala de aula."
+  }
+},
+  {
+  "id": "v3_new_1789404800218_7",
+  "word": "断る",
+  "reading": "ことわる",
+  "romaji": "kotowaru",
+  "meaningPt": "recusar",
+  "category": "verbo_godan",
+  "jlpt": "N3",
+  "categoryLabelPt": "Verbo Tipo 1 (Godan)",
+  "exampleSentence": {
+    "jp": "その誘いは断りました。",
+    "reading": "その さそいは ことわりました。",
+    "romaji": "sono sasoi wa kotowarimashita.",
+    "meaningPt": "Recusei esse convite."
+  }
+},
+  {
+  "id": "v3_new_1789404800218_8",
+  "word": "向かう",
+  "reading": "むかう",
+  "romaji": "mukau",
+  "meaningPt": "ir em direção a",
+  "category": "verbo_godan",
+  "jlpt": "N3",
+  "categoryLabelPt": "Verbo Tipo 1 (Godan)",
+  "exampleSentence": {
+    "jp": "駅に向かっています。",
+    "reading": "えきに むかっています。",
+    "romaji": "eki ni mukatte imasu.",
+    "meaningPt": "Estou indo em direção à estação."
+  }
+},
+  {
+  "id": "v3_new_1789404800218_9",
+  "word": "諦める",
+  "reading": "あきらめる",
+  "romaji": "akirameru",
+  "meaningPt": "desistir",
+  "category": "verbo_ichidan",
+  "jlpt": "N3",
+  "categoryLabelPt": "Verbo Tipo 2 (Ichidan)",
+  "exampleSentence": {
+    "jp": "夢を諦めないでください。",
+    "reading": "ゆめを あきらめないで ください。",
+    "romaji": "yume o akiramenaide kudasai.",
+    "meaningPt": "Por favor, não desista dos seus sonhos."
+  }
+},
+  {
+  "id": "v3_new_1789404800218_10",
+  "word": "確かめる",
+  "reading": "たしかめる",
+  "romaji": "tashikameru",
+  "meaningPt": "verificar, confirmar",
+  "category": "verbo_ichidan",
+  "jlpt": "N3",
+  "categoryLabelPt": "Verbo Tipo 2 (Ichidan)",
+  "exampleSentence": {
+    "jp": "答えを確かめましょう。",
+    "reading": "こたえを たしかめましょう。",
+    "romaji": "kotae o tashikamemashou.",
+    "meaningPt": "Vamos confirmar a resposta."
+  }
+},
+  {
+  "id": "v3_new_1789404800218_11",
+  "word": "比べる",
+  "reading": "くらべる",
+  "romaji": "kuraberu",
+  "meaningPt": "comparar",
+  "category": "verbo_ichidan",
+  "jlpt": "N3",
+  "categoryLabelPt": "Verbo Tipo 2 (Ichidan)",
+  "exampleSentence": {
+    "jp": "二つの車を比べてみた。",
+    "reading": "ふたつの くるまを くらべて みた。",
+    "romaji": "futatsu no kuruma o kurabete mita.",
+    "meaningPt": "Comparei os dois carros."
+  }
+},
+  {
+  "id": "v3_new_1789404800218_12",
+  "word": "伝える",
+  "reading": "つたえる",
+  "romaji": "tsutaeru",
+  "meaningPt": "transmitir, avisar (mensagem)",
+  "category": "verbo_ichidan",
+  "jlpt": "N3",
+  "categoryLabelPt": "Verbo Tipo 2 (Ichidan)",
+  "exampleSentence": {
+    "jp": "彼によろしく伝えてください。",
+    "reading": "かれに よろしく つたえて ください。",
+    "romaji": "kare ni yoroshiku tsutaete kudasai.",
+    "meaningPt": "Por favor, mande lembranças a ele."
+  }
+},
+  {
+  "id": "v3_new_1789404800218_13",
+  "word": "求める",
+  "reading": "もとめる",
+  "romaji": "motomeru",
+  "meaningPt": "exigir, solicitar, buscar",
+  "category": "verbo_ichidan",
+  "jlpt": "N3",
+  "categoryLabelPt": "Verbo Tipo 2 (Ichidan)",
+  "exampleSentence": {
+    "jp": "会社は新しい人材を求めている。",
+    "reading": "かいしゃは あたらしい じんざいを もとめている。",
+    "romaji": "kaisha wa atarashii jinzai o motomete iru.",
+    "meaningPt": "A empresa está buscando novos talentos."
+  }
+},
+  {
+  "id": "v3_new_1789404800218_14",
+  "word": "細かい",
+  "reading": "こまかい",
+  "romaji": "komakai",
+  "meaningPt": "pequeno, detalhado, miúdo",
+  "category": "adjetivo_i",
+  "jlpt": "N3",
+  "categoryLabelPt": "Adjetivo I",
+  "exampleSentence": {
+    "jp": "細かいお金がありません。",
+    "reading": "こまかい おかねが ありません。",
+    "romaji": "komakai okane ga arimasen.",
+    "meaningPt": "Não tenho dinheiro trocado (miúdo)."
+  }
+},
+  {
+  "id": "v3_new_1789404800218_15",
+  "word": "悔しい",
+  "reading": "くやしい",
+  "romaji": "kuyashii",
+  "meaningPt": "frustrante, lamentável, mortificante",
+  "category": "adjetivo_i",
+  "jlpt": "N3",
+  "categoryLabelPt": "Adjetivo I",
+  "exampleSentence": {
+    "jp": "試合に負けて悔しいです。",
+    "reading": "しあいに まけて くやしい です。",
+    "romaji": "shiai ni makete kuyashii desu.",
+    "meaningPt": "Perdi o jogo e estou frustrado."
+  }
+},
+  {
+  "id": "v3_new_1789404800218_16",
+  "word": "惜しい",
+  "reading": "おしい",
+  "romaji": "oshii",
+  "meaningPt": "por pouco, decepcionante (perder algo bom)",
+  "category": "adjetivo_i",
+  "jlpt": "N3",
+  "categoryLabelPt": "Adjetivo I",
+  "exampleSentence": {
+    "jp": "惜しい！もう少しで勝てたのに。",
+    "reading": "おしい！もう すこしで かてた のに。",
+    "romaji": "oshii! mou sukoshi de kateta noni.",
+    "meaningPt": "Por pouco! Falou tão pouco para vencermos."
+  }
+},
+  {
+  "id": "v3_new_1789404800218_17",
+  "word": "珍しい",
+  "reading": "めずらしい",
+  "romaji": "mezurashii",
+  "meaningPt": "raro, incomum",
+  "category": "adjetivo_i",
+  "jlpt": "N3",
+  "categoryLabelPt": "Adjetivo I",
+  "exampleSentence": {
+    "jp": "これは珍しい花ですね。",
+    "reading": "これは めずらしい はな ですね。",
+    "romaji": "kore wa mezurashii hana desu ne.",
+    "meaningPt": "Esta é uma flor rara, não acha?"
+  }
+},
+  {
+  "id": "v3_new_1789404800218_18",
+  "word": "苦しい",
+  "reading": "くるしい",
+  "romaji": "kurushii",
+  "meaningPt": "doloroso, difícil, angustiante",
+  "category": "adjetivo_i",
+  "jlpt": "N3",
+  "categoryLabelPt": "Adjetivo I",
+  "exampleSentence": {
+    "jp": "息が苦しいです。",
+    "reading": "いきが くるしい です。",
+    "romaji": "iki ga kurushii desu.",
+    "meaningPt": "Está difícil de respirar (Sinto falta de ar)."
+  }
+},
+  {
+  "id": "v3_new_1789404800218_19",
+  "word": "面倒",
+  "reading": "めんどう",
+  "romaji": "mendou",
+  "meaningPt": "trabalhoso, incômodo (mendoukusai)",
+  "category": "adjetivo_na",
+  "jlpt": "N3",
+  "categoryLabelPt": "Adjetivo Na",
+  "exampleSentence": {
+    "jp": "料理を作るのは面倒です。",
+    "reading": "りょうりを つくる のは めんどう です。",
+    "romaji": "ryouri o tsukuru no wa mendou desu.",
+    "meaningPt": "Fazer comida dá trabalho (é incômodo)."
+  }
+},
+  {
+  "id": "v3_new_1789404800218_20",
+  "word": "豊か",
+  "reading": "ゆたか",
+  "romaji": "yutaka",
+  "meaningPt": "abundante, rico",
+  "category": "adjetivo_na",
+  "jlpt": "N3",
+  "categoryLabelPt": "Adjetivo Na",
+  "exampleSentence": {
+    "jp": "ブラジルは自然が豊かです。",
+    "reading": "ブラジルは しぜんが ゆたか です。",
+    "romaji": "Burajiru wa shizen ga yutaka desu.",
+    "meaningPt": "O Brasil é rico em natureza."
+  }
+},
+  {
+  "id": "v3_new_1789404800218_21",
+  "word": "複雑",
+  "reading": "ふくざつ",
+  "romaji": "fukuzatsu",
+  "meaningPt": "complexo, complicado",
+  "category": "adjetivo_na",
+  "jlpt": "N3",
+  "categoryLabelPt": "Adjetivo Na",
+  "exampleSentence": {
+    "jp": "この問題はとても複雑だ。",
+    "reading": "この もんだいは とても ふくざつだ。",
+    "romaji": "kono mondai wa totemo fukuzatsu da.",
+    "meaningPt": "Este problema é muito complexo."
+  }
+},
+  {
+  "id": "v3_new_1789404800218_22",
+  "word": "夢中",
+  "reading": "むちゅう",
+  "romaji": "muchuu",
+  "meaningPt": "absorvido, fascinado, louco por",
+  "category": "adjetivo_na",
+  "jlpt": "N3",
+  "categoryLabelPt": "Adjetivo Na",
+  "exampleSentence": {
+    "jp": "子供はゲームに夢中です。",
+    "reading": "こどもは ゲームに むちゅう です。",
+    "romaji": "kodomo wa geemu ni muchuu desu.",
+    "meaningPt": "A criança está fissurada no jogo."
+  }
+}
 ];
