@@ -4792,5 +4792,405 @@ export const VOCAB_N3: VocabItem[] = [
     "romaji": "kodomo wa geemu ni muchuu desu.",
     "meaningPt": "A criança está fissurada no jogo."
   }
+},
+  {
+  "id": "v3_new_1789404968258_23",
+  "word": "越える",
+  "reading": "こえる",
+  "romaji": "koeru",
+  "meaningPt": "atravessar, ultrapassar",
+  "category": "verbo_ichidan",
+  "jlpt": "N3",
+  "categoryLabelPt": "Verbo Tipo 2 (Ichidan)",
+  "exampleSentence": {
+    "jp": "山を越えると海が見える。",
+    "reading": "やまを こえると うみが みえる。",
+    "romaji": "yama o koeru to umi ga mieru.",
+    "meaningPt": "Ao atravessar a montanha, pode-se ver o mar."
+  }
+},
+  {
+  "id": "v3_new_1789404968258_24",
+  "word": "滑る",
+  "reading": "すべる",
+  "romaji": "suberu",
+  "meaningPt": "escorregar, deslizar",
+  "category": "verbo_godan",
+  "jlpt": "N3",
+  "categoryLabelPt": "Verbo Tipo 1 (Godan)",
+  "exampleSentence": {
+    "jp": "雪で道が滑りやすい。",
+    "reading": "ゆきで みちが すべりやすい。",
+    "romaji": "yuki de michi ga suberiyasui.",
+    "meaningPt": "A rua está escorregadia por causa da neve."
+  }
+},
+  {
+  "id": "v3_new_1789404968258_25",
+  "word": "倒れる",
+  "reading": "たおれる",
+  "romaji": "taoreru",
+  "meaningPt": "cair, desabar (intransitivo)",
+  "category": "verbo_ichidan",
+  "jlpt": "N3",
+  "categoryLabelPt": "Verbo Tipo 2 (Ichidan)",
+  "exampleSentence": {
+    "jp": "強風で木が倒れた。",
+    "reading": "きょうふうで きが たおれた。",
+    "romaji": "kyoufuu de ki ga taoreta.",
+    "meaningPt": "A árvore caiu devido ao vento forte."
+  }
+},
+  {
+  "id": "v3_new_1789404968258_26",
+  "word": "隠れる",
+  "reading": "かくれる",
+  "romaji": "kakureru",
+  "meaningPt": "esconder-se",
+  "category": "verbo_ichidan",
+  "jlpt": "N3",
+  "categoryLabelPt": "Verbo Tipo 2 (Ichidan)",
+  "exampleSentence": {
+    "jp": "猫がベッドの下に隠れた。",
+    "reading": "ねこが ベッドの したに かくれた。",
+    "romaji": "neko ga beddo no shita ni kakureta.",
+    "meaningPt": "O gato se escondeu debaixo da cama."
+  }
+},
+  {
+  "id": "v3_new_1789404968258_27",
+  "word": "逃げる",
+  "reading": "にげる",
+  "romaji": "nigeru",
+  "meaningPt": "fugir, escapar",
+  "category": "verbo_ichidan",
+  "jlpt": "N3",
+  "categoryLabelPt": "Verbo Tipo 2 (Ichidan)",
+  "exampleSentence": {
+    "jp": "泥棒が逃げました。",
+    "reading": "どろぼうが にげました。",
+    "romaji": "dorobou ga nigemashita.",
+    "meaningPt": "O ladrão fugiu."
+  }
+},
+  {
+  "id": "v3_new_1789404968258_28",
+  "word": "ぶつかる",
+  "reading": "ぶつかる",
+  "romaji": "butsukaru",
+  "meaningPt": "colidir, bater contra",
+  "category": "verbo_godan",
+  "jlpt": "N3",
+  "categoryLabelPt": "Verbo Tipo 1 (Godan)",
+  "exampleSentence": {
+    "jp": "車が壁にぶつかった。",
+    "reading": "くるまが かべに ぶつかった。",
+    "romaji": "kuruma ga kabe ni butsukatta.",
+    "meaningPt": "O carro bateu na parede."
+  }
+},
+  {
+  "id": "v3_new_1789404968258_29",
+  "word": "追う",
+  "reading": "おう",
+  "romaji": "ou",
+  "meaningPt": "perseguir, ir atrás",
+  "category": "verbo_godan",
+  "jlpt": "N3",
+  "categoryLabelPt": "Verbo Tipo 1 (Godan)",
+  "exampleSentence": {
+    "jp": "夢を追って東京に来た。",
+    "reading": "ゆめを おって とうきょうに きた。",
+    "romaji": "yume o otte toukyou ni kita.",
+    "meaningPt": "Vim a Tóquio perseguindo meus sonhos."
+  }
+},
+  {
+  "id": "v3_new_1789404968258_30",
+  "word": "誘う",
+  "reading": "さそう",
+  "romaji": "sasou",
+  "meaningPt": "convidar, chamar para sair",
+  "category": "verbo_godan",
+  "jlpt": "N3",
+  "categoryLabelPt": "Verbo Tipo 1 (Godan)",
+  "exampleSentence": {
+    "jp": "彼女を映画に誘いました。",
+    "reading": "かのじょを えいがに さそいました。",
+    "romaji": "kanojo o eiga ni sasoimashita.",
+    "meaningPt": "Convidei-a para ir ao cinema."
+  }
+},
+  {
+  "id": "v3_new_1789404968258_31",
+  "word": "怒る",
+  "reading": "おこる",
+  "romaji": "okoru",
+  "meaningPt": "ficar bravo, zangar-se",
+  "category": "verbo_godan",
+  "jlpt": "N3",
+  "categoryLabelPt": "Verbo Tipo 1 (Godan)",
+  "exampleSentence": {
+    "jp": "父はとても怒っている。",
+    "reading": "ちちは とても おこっている。",
+    "romaji": "chichi wa totemo okotte iru.",
+    "meaningPt": "Meu pai está muito bravo."
+  }
+},
+  {
+  "id": "v3_new_1789404968258_32",
+  "word": "謝る",
+  "reading": "あやまる",
+  "romaji": "ayamaru",
+  "meaningPt": "pedir desculpas",
+  "category": "verbo_godan",
+  "jlpt": "N3",
+  "categoryLabelPt": "Verbo Tipo 1 (Godan)",
+  "exampleSentence": {
+    "jp": "彼に謝らなければならない。",
+    "reading": "かれに あやまらなければ ならない。",
+    "romaji": "kare ni ayamaranakereba naranai.",
+    "meaningPt": "Preciso pedir desculpas a ele."
+  }
+},
+  {
+  "id": "v3_new_1789404968258_33",
+  "word": "信じる",
+  "reading": "しんじる",
+  "romaji": "shinjiru",
+  "meaningPt": "acreditar, confiar",
+  "category": "verbo_ichidan",
+  "jlpt": "N3",
+  "categoryLabelPt": "Verbo Tipo 2 (Ichidan)",
+  "exampleSentence": {
+    "jp": "自分を信じて頑張れ。",
+    "reading": "じぶんを しんじて がんばれ。",
+    "romaji": "jibun o shinjite ganbare.",
+    "meaningPt": "Acredite em si mesmo e dê o seu melhor."
+  }
+},
+  {
+  "id": "v3_new_1789404968258_34",
+  "word": "疑う",
+  "reading": "うたがう",
+  "romaji": "utagau",
+  "meaningPt": "duvidar, suspeitar",
+  "category": "verbo_godan",
+  "jlpt": "N3",
+  "categoryLabelPt": "Verbo Tipo 1 (Godan)",
+  "exampleSentence": {
+    "jp": "彼の言葉を疑っている。",
+    "reading": "かれの ことばを うたがっている。",
+    "romaji": "kare no kotoba o utagatte iru.",
+    "meaningPt": "Estou duvidando das palavras dele."
+  }
+},
+  {
+  "id": "v3_new_1789404968258_35",
+  "word": "環境",
+  "reading": "かんきょう",
+  "romaji": "kankyou",
+  "meaningPt": "meio ambiente, ambiente",
+  "category": "substantivo",
+  "jlpt": "N3",
+  "categoryLabelPt": "Substantivo",
+  "exampleSentence": {
+    "jp": "地球の環境を守るべきだ。",
+    "reading": "ちきゅうの かんきょうを まもる べきだ。",
+    "romaji": "chikyuu no kankyou o mamoru beki da.",
+    "meaningPt": "Devemos proteger o meio ambiente da Terra."
+  }
+},
+  {
+  "id": "v3_new_1789404968258_36",
+  "word": "影響",
+  "reading": "えいきょう",
+  "romaji": "eikyou",
+  "meaningPt": "influência, impacto",
+  "category": "substantivo",
+  "jlpt": "N3",
+  "categoryLabelPt": "Substantivo",
+  "exampleSentence": {
+    "jp": "親の影響は大きい。",
+    "reading": "おやの えいきょうは おおきい。",
+    "romaji": "oya no eikyou wa ookii.",
+    "meaningPt": "A influência dos pais é grande."
+  }
+},
+  {
+  "id": "v3_new_1789404968258_37",
+  "word": "結果",
+  "reading": "けっか",
+  "romaji": "kekka",
+  "meaningPt": "resultado",
+  "category": "substantivo",
+  "jlpt": "N3",
+  "categoryLabelPt": "Substantivo",
+  "exampleSentence": {
+    "jp": "努力の結果が出た。",
+    "reading": "どりょくの けっかが でた。",
+    "romaji": "doryoku no kekka ga deta.",
+    "meaningPt": "Surgiu o resultado do esforço."
+  }
+},
+  {
+  "id": "v3_new_1789404968258_38",
+  "word": "原因",
+  "reading": "げんいん",
+  "romaji": "gen'in",
+  "meaningPt": "causa, origem (de um problema)",
+  "category": "substantivo",
+  "jlpt": "N3",
+  "categoryLabelPt": "Substantivo",
+  "exampleSentence": {
+    "jp": "事故の原因を調べる。",
+    "reading": "じこの げんいんを しらべる。",
+    "romaji": "jiko no gen'in o shiraberu.",
+    "meaningPt": "Investigar a causa do acidente."
+  }
+},
+  {
+  "id": "v3_new_1789404968258_39",
+  "word": "目標",
+  "reading": "もくひょう",
+  "romaji": "mokuhyou",
+  "meaningPt": "meta, objetivo",
+  "category": "substantivo",
+  "jlpt": "N3",
+  "categoryLabelPt": "Substantivo",
+  "exampleSentence": {
+    "jp": "今年の目標を立てる。",
+    "reading": "ことしの もくひょうを たてる。",
+    "romaji": "kotoshi no mokuhyou o tateru.",
+    "meaningPt": "Estabelecer as metas deste ano."
+  }
+},
+  {
+  "id": "v3_new_1789404968258_40",
+  "word": "状態",
+  "reading": "じょうたい",
+  "romaji": "joutai",
+  "meaningPt": "estado, condição (física/situação)",
+  "category": "substantivo",
+  "jlpt": "N3",
+  "categoryLabelPt": "Substantivo",
+  "exampleSentence": {
+    "jp": "患者の状態は安定している。",
+    "reading": "かんじゃの じょうたいは あんてい している。",
+    "romaji": "kanja no joutai wa antei shite iru.",
+    "meaningPt": "O estado do paciente é estável."
+  }
+},
+  {
+  "id": "v3_new_1789404968258_41",
+  "word": "経験",
+  "reading": "けいけん",
+  "romaji": "keiken",
+  "meaningPt": "experiência",
+  "category": "substantivo",
+  "jlpt": "N3",
+  "categoryLabelPt": "Substantivo",
+  "exampleSentence": {
+    "jp": "海外で働く経験が欲しい。",
+    "reading": "かいがいで はたらく けいけんが ほしい。",
+    "romaji": "kaigai de hataraku keiken ga hoshii.",
+    "meaningPt": "Quero ter a experiência de trabalhar no exterior."
+  }
+},
+  {
+  "id": "v3_new_1789404968258_42",
+  "word": "種類",
+  "reading": "しゅるい",
+  "romaji": "shurui",
+  "meaningPt": "tipo, espécie, variedade",
+  "category": "substantivo",
+  "jlpt": "N3",
+  "categoryLabelPt": "Substantivo",
+  "exampleSentence": {
+    "jp": "色々な種類の花がある。",
+    "reading": "いろいろな しゅるいの はなが ある。",
+    "romaji": "iroiro na shurui no hana ga aru.",
+    "meaningPt": "Há vários tipos de flores."
+  }
+},
+  {
+  "id": "v3_new_1789404968258_43",
+  "word": "必ず",
+  "reading": "かならず",
+  "romaji": "kanarazu",
+  "meaningPt": "sem falta, de certeza",
+  "category": "adverbio",
+  "jlpt": "N3",
+  "categoryLabelPt": "Advérbio",
+  "exampleSentence": {
+    "jp": "明日は必ず来てください。",
+    "reading": "あしたは かならず きて ください。",
+    "romaji": "ashita wa kanarazu kite kudasai.",
+    "meaningPt": "Por favor, venha amanhã sem falta."
+  }
+},
+  {
+  "id": "v3_new_1789404968258_44",
+  "word": "偶然",
+  "reading": "ぐうぜん",
+  "romaji": "guuzen",
+  "meaningPt": "por acaso, coincidência",
+  "category": "adverbio",
+  "jlpt": "N3",
+  "categoryLabelPt": "Advérbio",
+  "exampleSentence": {
+    "jp": "駅で偶然彼に会った。",
+    "reading": "えきで ぐうぜん かれに あった。",
+    "romaji": "eki de guuzen kare ni atta.",
+    "meaningPt": "Encontrei-o por acaso na estação."
+  }
+},
+  {
+  "id": "v3_new_1789404968258_45",
+  "word": "なるべく",
+  "reading": "なるべく",
+  "romaji": "narubeku",
+  "meaningPt": "o máximo possível, se possível",
+  "category": "adverbio",
+  "jlpt": "N3",
+  "categoryLabelPt": "Advérbio",
+  "exampleSentence": {
+    "jp": "なるべく早く来てください。",
+    "reading": "なるべく はやく きて ください。",
+    "romaji": "narubeku hayaku kite kudasai.",
+    "meaningPt": "Por favor, venha o mais rápido possível."
+  }
+},
+  {
+  "id": "v3_new_1789404968258_46",
+  "word": "つい",
+  "reading": "つい",
+  "romaji": "tsui",
+  "meaningPt": "sem querer, acidentalmente",
+  "category": "adverbio",
+  "jlpt": "N3",
+  "categoryLabelPt": "Advérbio",
+  "exampleSentence": {
+    "jp": "つい甘い物を食べてしまう。",
+    "reading": "つい あまい ものを たべて しまう。",
+    "romaji": "tsui amai mono o tabete shimau.",
+    "meaningPt": "Acabo comendo doces sem querer."
+  }
+},
+  {
+  "id": "v3_new_1789404968258_47",
+  "word": "すっかり",
+  "reading": "すっかり",
+  "romaji": "sukkari",
+  "meaningPt": "completamente, totalmente",
+  "category": "adverbio",
+  "jlpt": "N3",
+  "categoryLabelPt": "Advérbio",
+  "exampleSentence": {
+    "jp": "彼の名前をすっかり忘れた。",
+    "reading": "かれの なまえを すっかり わすれた。",
+    "romaji": "kare no namae o sukkari wasureta.",
+    "meaningPt": "Esqueci completamente o nome dele."
+  }
 }
 ];
