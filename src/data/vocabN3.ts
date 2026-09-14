@@ -5192,5 +5192,565 @@ export const VOCAB_N3: VocabItem[] = [
     "romaji": "kare no namae o sukkari wasureta.",
     "meaningPt": "Esqueci completamente o nome dele."
   }
+},
+  {
+  "word": "社会",
+  "reading": "しゃかい",
+  "romaji": "shakai",
+  "meaningPt": "sociedade",
+  "category": "substantivo",
+  "jlpt": "N3",
+  "categoryLabelPt": "Substantivo N3",
+  "exampleSentence": {
+    "jp": "社会のルールを守る。",
+    "reading": "しゃかいの ルールを まもる。",
+    "romaji": "shakai no ruuru o mamoru.",
+    "meaningPt": "Cumprir as regras da sociedade."
+  },
+  "id": "v3_super_1789408955232_0"
+},
+  {
+  "word": "経済",
+  "reading": "けいざい",
+  "romaji": "keizai",
+  "meaningPt": "economia",
+  "category": "substantivo",
+  "jlpt": "N3",
+  "categoryLabelPt": "Substantivo N3",
+  "exampleSentence": {
+    "jp": "国の経済が悪化した。",
+    "reading": "くにの けいざいが あっか した。",
+    "romaji": "kuni no keizai ga akka shita.",
+    "meaningPt": "A economia do país piorou."
+  },
+  "id": "v3_super_1789408955232_1"
+},
+  {
+  "word": "企業",
+  "reading": "きぎょう",
+  "romaji": "kigyou",
+  "meaningPt": "empresa, corporação",
+  "category": "substantivo",
+  "jlpt": "N3",
+  "categoryLabelPt": "Substantivo N3",
+  "exampleSentence": {
+    "jp": "大きな企業に就職した。",
+    "reading": "おおきな きぎょうに しゅうしょく した。",
+    "romaji": "ookina kigyou ni shuushoku shita.",
+    "meaningPt": "Consegui emprego em uma grande corporação."
+  },
+  "id": "v3_super_1789408955232_2"
+},
+  {
+  "word": "面接",
+  "reading": "めんせつ",
+  "romaji": "mensetsu",
+  "meaningPt": "entrevista",
+  "category": "substantivo",
+  "jlpt": "N3",
+  "categoryLabelPt": "Substantivo N3",
+  "exampleSentence": {
+    "jp": "明日は会社の面接がある。",
+    "reading": "あしたは かいしゃの めんせつが ある。",
+    "romaji": "ashita wa kaisha no mensetsu ga aru.",
+    "meaningPt": "Amanhã tenho uma entrevista de emprego."
+  },
+  "id": "v3_super_1789408955232_3"
+},
+  {
+  "word": "資料",
+  "reading": "しりょう",
+  "romaji": "shiryou",
+  "meaningPt": "documentos, dados, materiais",
+  "category": "substantivo",
+  "jlpt": "N3",
+  "categoryLabelPt": "Substantivo N3",
+  "exampleSentence": {
+    "jp": "会議の資料を準備する。",
+    "reading": "かいぎの しりょうを じゅんび する。",
+    "romaji": "kaigi no shiryou o junbi suru.",
+    "meaningPt": "Preparar os documentos da reunião."
+  },
+  "id": "v3_super_1789408955232_4"
+},
+  {
+  "word": "情報",
+  "reading": "じょうほう",
+  "romaji": "jouhou",
+  "meaningPt": "informação",
+  "category": "substantivo",
+  "jlpt": "N3",
+  "categoryLabelPt": "Substantivo N3",
+  "exampleSentence": {
+    "jp": "インターネットで情報を集める。",
+    "reading": "インターネットで じょうほうを あつめる。",
+    "romaji": "intaanetto de jouhou o atsumeru.",
+    "meaningPt": "Reunir informações pela internet."
+  },
+  "id": "v3_super_1789408955232_5"
+},
+  {
+  "word": "技術",
+  "reading": "ぎじゅつ",
+  "romaji": "gijutsu",
+  "meaningPt": "tecnologia, habilidade técnica",
+  "category": "substantivo",
+  "jlpt": "N3",
+  "categoryLabelPt": "Substantivo N3",
+  "exampleSentence": {
+    "jp": "新しい技術を開発する。",
+    "reading": "あたらしい ぎじゅつを かいはつ する。",
+    "romaji": "atarashii gijutsu o kaihatsu suru.",
+    "meaningPt": "Desenvolver novas tecnologias."
+  },
+  "id": "v3_super_1789408955232_6"
+},
+  {
+  "word": "製品",
+  "reading": "せいひん",
+  "romaji": "seihin",
+  "meaningPt": "produto (manufaturado)",
+  "category": "substantivo",
+  "jlpt": "N3",
+  "categoryLabelPt": "Substantivo N3",
+  "exampleSentence": {
+    "jp": "この製品は日本製です。",
+    "reading": "この せいひんは にほんせい です。",
+    "romaji": "kono seihin wa nihonsei desu.",
+    "meaningPt": "Este produto é fabricado no Japão."
+  },
+  "id": "v3_super_1789408955232_7"
+},
+  {
+  "word": "商品",
+  "reading": "しょうひん",
+  "romaji": "shouhin",
+  "meaningPt": "mercadoria, produto (para venda)",
+  "category": "substantivo",
+  "jlpt": "N3",
+  "categoryLabelPt": "Substantivo N3",
+  "exampleSentence": {
+    "jp": "新商品が発売された。",
+    "reading": "しんしょうひんが はつばい された。",
+    "romaji": "shinshouhin ga hatsubai sareta.",
+    "meaningPt": "A nova mercadoria foi lançada."
+  },
+  "id": "v3_super_1789408955232_8"
+},
+  {
+  "word": "現金",
+  "reading": "げんきん",
+  "romaji": "genkin",
+  "meaningPt": "dinheiro em espécie",
+  "category": "substantivo",
+  "jlpt": "N3",
+  "categoryLabelPt": "Substantivo N3",
+  "exampleSentence": {
+    "jp": "現金で払います。",
+    "reading": "げんきんで はらいます。",
+    "romaji": "genkin de haraimasu.",
+    "meaningPt": "Pagarei em dinheiro físico."
+  },
+  "id": "v3_super_1789408955232_9"
+},
+  {
+  "word": "税金",
+  "reading": "ぜいきん",
+  "romaji": "zeikin",
+  "meaningPt": "imposto, taxa",
+  "category": "substantivo",
+  "jlpt": "N3",
+  "categoryLabelPt": "Substantivo N3",
+  "exampleSentence": {
+    "jp": "税金を払わなければならない。",
+    "reading": "ぜいきんを はらわなければ ならない。",
+    "romaji": "zeikin o harawanakereba naranai.",
+    "meaningPt": "É necessário pagar os impostos."
+  },
+  "id": "v3_super_1789408955232_10"
+},
+  {
+  "word": "料金",
+  "reading": "りょうきん",
+  "romaji": "ryoukin",
+  "meaningPt": "tarifa, taxa de serviço",
+  "category": "substantivo",
+  "jlpt": "N3",
+  "categoryLabelPt": "Substantivo N3",
+  "exampleSentence": {
+    "jp": "電気の料金が上がった。",
+    "reading": "でんきの りょうきんが あがった。",
+    "romaji": "denki no ryoukin ga agatta.",
+    "meaningPt": "A tarifa de energia elétrica subiu."
+  },
+  "id": "v3_super_1789408955232_11"
+},
+  {
+  "word": "交通",
+  "reading": "こうつう",
+  "romaji": "koutsuu",
+  "meaningPt": "trânsito, transporte",
+  "category": "substantivo",
+  "jlpt": "N3",
+  "categoryLabelPt": "Substantivo N3",
+  "exampleSentence": {
+    "jp": "ここは交通が便利だ。",
+    "reading": "ここは こうつうが べんり だ。",
+    "romaji": "koko wa koutsuu ga benri da.",
+    "meaningPt": "O transporte é conveniente aqui."
+  },
+  "id": "v3_super_1789408955232_12"
+},
+  {
+  "word": "事故",
+  "reading": "じこ",
+  "romaji": "jiko",
+  "meaningPt": "acidente",
+  "category": "substantivo",
+  "jlpt": "N3",
+  "categoryLabelPt": "Substantivo N3",
+  "exampleSentence": {
+    "jp": "交通事故に遭った。",
+    "reading": "こうつう じこに あった。",
+    "romaji": "koutsuu jiko ni atta.",
+    "meaningPt": "Sofri um acidente de trânsito."
+  },
+  "id": "v3_super_1789408955232_13"
+},
+  {
+  "word": "警察",
+  "reading": "けいさつ",
+  "romaji": "keisatsu",
+  "meaningPt": "polícia",
+  "category": "substantivo",
+  "jlpt": "N3",
+  "categoryLabelPt": "Substantivo N3",
+  "exampleSentence": {
+    "jp": "警察を呼んでください。",
+    "reading": "けいさつを よんで ください。",
+    "romaji": "keisatsu o yonde kudasai.",
+    "meaningPt": "Por favor, chame a polícia."
+  },
+  "id": "v3_super_1789408955232_14"
+},
+  {
+  "word": "増える",
+  "reading": "ふえる",
+  "romaji": "fueru",
+  "meaningPt": "aumentar, crescer (intransitivo)",
+  "category": "verbo_ichidan",
+  "jlpt": "N3",
+  "categoryLabelPt": "Verbo Tipo 2 (Ichidan)",
+  "exampleSentence": {
+    "jp": "人口が増えている。",
+    "reading": "じんこうが ふえている。",
+    "romaji": "jinkou ga fuete iru.",
+    "meaningPt": "A população está aumentando."
+  },
+  "id": "v3_super_1789408955232_15"
+},
+  {
+  "word": "増やす",
+  "reading": "ふやす",
+  "romaji": "fuyasu",
+  "meaningPt": "aumentar, acrescentar (transitivo)",
+  "category": "verbo_godan",
+  "jlpt": "N3",
+  "categoryLabelPt": "Verbo Tipo 1 (Godan)",
+  "exampleSentence": {
+    "jp": "貯金を増やす。",
+    "reading": "ちょきんを ふやす。",
+    "romaji": "chokin o fuyasu.",
+    "meaningPt": "Aumentar as economias."
+  },
+  "id": "v3_super_1789408955232_16"
+},
+  {
+  "word": "減らす",
+  "reading": "へらす",
+  "romaji": "herasu",
+  "meaningPt": "diminuir, reduzir (transitivo)",
+  "category": "verbo_godan",
+  "jlpt": "N3",
+  "categoryLabelPt": "Verbo Tipo 1 (Godan)",
+  "exampleSentence": {
+    "jp": "ごみを減らしましょう。",
+    "reading": "ごみを へらしましょう。",
+    "romaji": "gomi o herashimashou.",
+    "meaningPt": "Vamos reduzir o lixo."
+  },
+  "id": "v3_super_1789408955232_17"
+},
+  {
+  "word": "変わる",
+  "reading": "かわる",
+  "romaji": "kawaru",
+  "meaningPt": "mudar, sofrer alteração",
+  "category": "verbo_godan",
+  "jlpt": "N3",
+  "categoryLabelPt": "Verbo Tipo 1 (Godan)",
+  "exampleSentence": {
+    "jp": "予定が変わりました。",
+    "reading": "よていが かわりました。",
+    "romaji": "yotei ga kawarimashita.",
+    "meaningPt": "A programação mudou."
+  },
+  "id": "v3_super_1789408955232_18"
+},
+  {
+  "word": "変える",
+  "reading": "かえる",
+  "romaji": "kaeru",
+  "meaningPt": "mudar, alterar (transitivo)",
+  "category": "verbo_ichidan",
+  "jlpt": "N3",
+  "categoryLabelPt": "Verbo Tipo 2 (Ichidan)",
+  "exampleSentence": {
+    "jp": "髪の色を変えた。",
+    "reading": "かみの いろを かえた。",
+    "romaji": "kami no iro o kaeta.",
+    "meaningPt": "Mudei a cor do cabelo."
+  },
+  "id": "v3_super_1789408955232_19"
+},
+  {
+  "word": "落ちる",
+  "reading": "おちる",
+  "romaji": "ochiru",
+  "meaningPt": "cair, ser reprovado",
+  "category": "verbo_ichidan",
+  "jlpt": "N3",
+  "categoryLabelPt": "Verbo Tipo 2 (Ichidan)",
+  "exampleSentence": {
+    "jp": "試験に落ちた。",
+    "reading": "しけんに おちた。",
+    "romaji": "shiken ni ochita.",
+    "meaningPt": "Fui reprovado no exame."
+  },
+  "id": "v3_super_1789408955232_20"
+},
+  {
+  "word": "落とす",
+  "reading": "おとす",
+  "romaji": "otosu",
+  "meaningPt": "deixar cair, perder (transitivo)",
+  "category": "verbo_godan",
+  "jlpt": "N3",
+  "categoryLabelPt": "Verbo Tipo 1 (Godan)",
+  "exampleSentence": {
+    "jp": "財布を落としてしまった。",
+    "reading": "さいふを おとして しまった。",
+    "romaji": "saifu o otoshite shimatta.",
+    "meaningPt": "Acabei deixando a carteira cair (perdi)."
+  },
+  "id": "v3_super_1789408955232_21"
+},
+  {
+  "word": "片付く",
+  "reading": "かたづく",
+  "romaji": "kataduku",
+  "meaningPt": "ser arrumado, resolvido (intransitivo)",
+  "category": "verbo_godan",
+  "jlpt": "N3",
+  "categoryLabelPt": "Verbo Tipo 1 (Godan)",
+  "exampleSentence": {
+    "jp": "部屋が片付いた。",
+    "reading": "へやが かたづいた。",
+    "romaji": "heya ga kataduita.",
+    "meaningPt": "O quarto foi arrumado."
+  },
+  "id": "v3_super_1789408955232_22"
+},
+  {
+  "word": "片付ける",
+  "reading": "かたづける",
+  "romaji": "katadukeru",
+  "meaningPt": "arrumar, guardar (transitivo)",
+  "category": "verbo_ichidan",
+  "jlpt": "N3",
+  "categoryLabelPt": "Verbo Tipo 2 (Ichidan)",
+  "exampleSentence": {
+    "jp": "机の上を片付けてください。",
+    "reading": "つくえの うえを かたづけて ください。",
+    "romaji": "tsukue no ue o katadukete kudasai.",
+    "meaningPt": "Por favor, arrume a mesa."
+  },
+  "id": "v3_super_1789408955232_23"
+},
+  {
+  "word": "慣れる",
+  "reading": "なれる",
+  "romaji": "nareru",
+  "meaningPt": "acostumar-se",
+  "category": "verbo_ichidan",
+  "jlpt": "N3",
+  "categoryLabelPt": "Verbo Tipo 2 (Ichidan)",
+  "exampleSentence": {
+    "jp": "日本の生活に慣れました。",
+    "reading": "にほんの せいかつに なれました。",
+    "romaji": "nihon no seikatsu ni naremashita.",
+    "meaningPt": "Acostumei-me com a vida no Japão."
+  },
+  "id": "v3_super_1789408955232_24"
+},
+  {
+  "word": "交際する",
+  "reading": "こうさいする",
+  "romaji": "kousai suru",
+  "meaningPt": "relacionar-se, namorar",
+  "category": "verbo_irregular",
+  "jlpt": "N3",
+  "categoryLabelPt": "Verbo Irregular",
+  "exampleSentence": {
+    "jp": "彼と交際しています。",
+    "reading": "かれと こうさい しています。",
+    "romaji": "kare to kousai shite imasu.",
+    "meaningPt": "Estou me relacionando (namorando) com ele."
+  },
+  "id": "v3_super_1789408955232_25"
+},
+  {
+  "word": "厳しい",
+  "reading": "きびしい",
+  "romaji": "kibishii",
+  "meaningPt": "rigoroso, severo",
+  "category": "adjetivo_i",
+  "jlpt": "N3",
+  "categoryLabelPt": "Adjetivo I",
+  "exampleSentence": {
+    "jp": "先生はとても厳しい。",
+    "reading": "せんせいは とても きびしい。",
+    "romaji": "sensei wa totemo kibishii.",
+    "meaningPt": "O professor é muito severo."
+  },
+  "id": "v3_super_1789408955232_26"
+},
+  {
+  "word": "激しい",
+  "reading": "はげしい",
+  "romaji": "hageshii",
+  "meaningPt": "violento, intenso",
+  "category": "adjetivo_i",
+  "jlpt": "N3",
+  "categoryLabelPt": "Adjetivo I",
+  "exampleSentence": {
+    "jp": "雨が激しく降っている。",
+    "reading": "あめが はげしく ふっている。",
+    "romaji": "ame ga hageshiku futte iru.",
+    "meaningPt": "Está chovendo intensamente."
+  },
+  "id": "v3_super_1789408955232_27"
+},
+  {
+  "word": "親しい",
+  "reading": "したしい",
+  "romaji": "shitashii",
+  "meaningPt": "íntimo, próximo (relação)",
+  "category": "adjetivo_i",
+  "jlpt": "N3",
+  "categoryLabelPt": "Adjetivo I",
+  "exampleSentence": {
+    "jp": "親しい友達と遊ぶ。",
+    "reading": "したしい ともだちと あそぶ。",
+    "romaji": "shitashii tomodachi to asobu.",
+    "meaningPt": "Brincar com um amigo íntimo."
+  },
+  "id": "v3_super_1789408955232_28"
+},
+  {
+  "word": "怪しい",
+  "reading": "あやしい",
+  "romaji": "ayashii",
+  "meaningPt": "suspeito, duvidoso",
+  "category": "adjetivo_i",
+  "jlpt": "N3",
+  "categoryLabelPt": "Adjetivo I",
+  "exampleSentence": {
+    "jp": "あの男は怪しい。",
+    "reading": "あの おとこは あやしい。",
+    "romaji": "ano otoko wa ayashii.",
+    "meaningPt": "Aquele homem é suspeito."
+  },
+  "id": "v3_super_1789408955232_29"
+},
+  {
+  "word": "正確",
+  "reading": "せいかく",
+  "romaji": "seikaku",
+  "meaningPt": "preciso, exato",
+  "category": "adjetivo_na",
+  "jlpt": "N3",
+  "categoryLabelPt": "Adjetivo Na",
+  "exampleSentence": {
+    "jp": "正確な時間を教えてください。",
+    "reading": "せいかくな じかんを おしえて ください。",
+    "romaji": "seikaku na jikan o oshiete kudasai.",
+    "meaningPt": "Por favor, diga a hora exata."
+  },
+  "id": "v3_super_1789408955232_30"
+},
+  {
+  "word": "立派",
+  "reading": "りっぱ",
+  "romaji": "rippa",
+  "meaningPt": "esplêndido, admirável",
+  "category": "adjetivo_na",
+  "jlpt": "N3",
+  "categoryLabelPt": "Adjetivo Na",
+  "exampleSentence": {
+    "jp": "立派な家ですね。",
+    "reading": "りっぱな いえ ですね。",
+    "romaji": "rippa na ie desu ne.",
+    "meaningPt": "É uma casa esplêndida, não é?"
+  },
+  "id": "v3_super_1789408955232_31"
+},
+  {
+  "word": "突然",
+  "reading": "とつぜん",
+  "romaji": "totsuzen",
+  "meaningPt": "de repente, abruptamente",
+  "category": "adverbio",
+  "jlpt": "N3",
+  "categoryLabelPt": "Advérbio",
+  "exampleSentence": {
+    "jp": "突然、雨が降り出した。",
+    "reading": "とつぜん、あめが ふりだした。",
+    "romaji": "totsuzen, ame ga furidashita.",
+    "meaningPt": "De repente, começou a chover."
+  },
+  "id": "v3_super_1789408955232_32"
+},
+  {
+  "word": "結局",
+  "reading": "けっきょく",
+  "romaji": "kekkyoku",
+  "meaningPt": "afinal de contas, no fim das contas",
+  "category": "adverbio",
+  "jlpt": "N3",
+  "categoryLabelPt": "Advérbio",
+  "exampleSentence": {
+    "jp": "結局、彼らは別れました。",
+    "reading": "けっきょく、かれらは わかれました。",
+    "romaji": "kekkyoku, karera wa wakaremashita.",
+    "meaningPt": "Afinal de contas, eles terminaram."
+  },
+  "id": "v3_super_1789408955232_33"
+},
+  {
+  "word": "絶対",
+  "reading": "ぜったい",
+  "romaji": "zettai",
+  "meaningPt": "absolutamente, sem falta",
+  "category": "adverbio",
+  "jlpt": "N3",
+  "categoryLabelPt": "Advérbio",
+  "exampleSentence": {
+    "jp": "絶対に秘密を守ります。",
+    "reading": "ぜったいに ひみつを まもります。",
+    "romaji": "zettai ni himitsu o mamorimasu.",
+    "meaningPt": "Absolutamente guardarei o segredo."
+  },
+  "id": "v3_super_1789408955232_34"
 }
 ];
