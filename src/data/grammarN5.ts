@@ -104,14 +104,38 @@ export const GRAMMAR_N5: GrammarItem[] = [
     ]
   },
   {
-    id: 'g_n5_3',
-    pattern: 'Conjugação Formal (〜ます / 〜ません / 〜ました / 〜ませんでした)',
-    titlePt: 'Tempos Verbais Polidos na Forma MASU',
+    id: 'g_n5_3_1',
+    pattern: 'Conjugação Formal Presente (〜ます / 〜ません)',
+    titlePt: 'Verbos Polidos: Presente e Futuro',
     jlpt: 'N5',
     category: 'Verbos & Conjugação',
-    formationFormula: '[Raiz do Verbo] + ます (presente/futuro) / ません (negativo) / ました (passado) / ませんでした (passado negativo)',
-    explanationPt: 'É o padrão de polidez (Teineigo) usado com professores, colegas de trabalho e desconhecidos.',
-    keyRulePt: '• Presente / Futuro Afirmativo: 食べます (como / comerei)\n• Presente / Futuro Negativo: 食べません (não como / não comerei)\n• Passado Afirmativo: 食べました (comi)\n• Passado Negativo: 食べませんでした (não comi)',
+    formationFormula: '[Raiz do Verbo] + ます (afirmativo) / ません (negativo)',
+    explanationPt: 'É o padrão de polidez (Teineigo) usado com professores, colegas de trabalho e desconhecidos para falar de ações habituais ou do futuro.',
+    keyRulePt: '• Afirmativo: 食べます (como / comerei)\n• Negativo: 食べません (não como / não comerei)',
+    examples: [
+      {
+        jp: '私は毎日りんごを食べます。',
+        reading: 'わたし は まいにち りんご を たべます。',
+        romaji: 'Watashi wa mainichi ringo o tabemasu.',
+        meaningPt: 'Eu como maçã todos os dias.'
+      },
+      {
+        jp: '明日は働きません。',
+        reading: 'あした は はたらきません。',
+        romaji: 'Ashita wa hatarakimasen.',
+        meaningPt: 'Amanhã não irei trabalhar.'
+      }
+    ]
+  },
+  {
+    id: 'g_n5_3_2',
+    pattern: 'Conjugação Formal Passada (〜ました / 〜ませんでした)',
+    titlePt: 'Verbos Polidos: O Passado',
+    jlpt: 'N5',
+    category: 'Verbos & Conjugação',
+    formationFormula: '[Raiz do Verbo] + ました (passado afirmativo) / ませんでした (passado negativo)',
+    explanationPt: 'Substituindo o "masu" por "mashita", você cria o tempo passado polido. Para negar no passado, usa-se "masen deshita".',
+    keyRulePt: '• Passado Afirmativo: 食べました (comi)\n• Passado Negativo: 食べませんでした (não comi)',
     examples: [
       {
         jp: '昨日、日本語を勉強しました。',
@@ -120,10 +144,10 @@ export const GRAMMAR_N5: GrammarItem[] = [
         meaningPt: 'Ontem estudei japonês.'
       },
       {
-        jp: '明日は働きません。',
-        reading: 'あした は はたらきません。',
-        romaji: 'Ashita wa hatarakimasen.',
-        meaningPt: 'Amanhã não irei trabalhar.'
+        jp: '朝ごはんを食べませんでした。',
+        reading: 'あさごはん を たべませんでした。',
+        romaji: 'Asagohan o tabemasen deshita.',
+        meaningPt: 'Não tomei café da manhã.'
       }
     ]
   },
@@ -314,14 +338,62 @@ export const GRAMMAR_N5: GrammarItem[] = [
     ]
   },
   {
-    id: 'g_n5_12',
-    pattern: 'Conjugação Completa de Adjetivos (い / な)',
-    titlePt: 'Guia de Adjetivos-I e Adjetivos-NA',
+    id: 'g_n5_12_1',
+    pattern: 'Adjetivos-I: Presente e Negativo',
+    titlePt: 'Adjetivos Tipo-I (い): Presente',
     jlpt: 'N5',
     category: 'Adjetivos & Modificadores',
-    formationFormula: 'Adj-I: [い → くない / かった / くなかった] | Adj-NA: [です / ではありません / でした / ではありませんでした]',
-    explanationPt: 'Em japonês, os adjetivos funcionam como verbos descritivos e conjugam no tempo presente, passado e negações.',
-    keyRulePt: '• Adjetivo-I (ex: 高い takai):\n  - Presente Neg: 高くない (não é caro)\n  - Passado Afir: 高かった (era caro)\n  - Passado Neg: 高くなかった (não era caro)\n  - Exceção: いい (bom) → よくない, よかった, よくなかった.\n• Adjetivo-NA (ex: 静か shizuka):\n  - Modifica substantivo com な: 静かな部屋 (quarto silencioso)\n  - Presente Neg: 静かじゃない (não é silencioso)\n  - Passado: 静かでした (era silencioso)',
+    formationFormula: 'Afirmativo: [〜い] + です | Negativo: [〜くない] + です',
+    explanationPt: 'Os Adjetivos-I terminam com a letra "i" (い). Para negá-los, você sempre remove o último "い" e coloca "くない" (kunai).',
+    keyRulePt: '• Afirmativo: 高い (takai = caro)\n• Negativo: 高くない (taku-nai = não é caro)\n• Exceção Importante: O adjetivo いい (ii = bom) se transforma em よくない (yoku-nai = não é bom).',
+    examples: [
+      {
+        jp: 'この本は面白いです。',
+        reading: 'この ほん は おもしろい です。',
+        romaji: 'Kono hon wa omoshiroi desu.',
+        meaningPt: 'Este livro é interessante.'
+      },
+      {
+        jp: 'そのかばんは高くないです。',
+        reading: 'その かばん は たかくない です。',
+        romaji: 'Sono kaban wa takakunai desu.',
+        meaningPt: 'Essa bolsa não é cara.'
+      }
+    ]
+  },
+  {
+    id: 'g_n5_12_2',
+    pattern: 'Adjetivos-NA: Presente e Negativo',
+    titlePt: 'Adjetivos Tipo-NA (な): Presente',
+    jlpt: 'N5',
+    category: 'Adjetivos & Modificadores',
+    formationFormula: 'Modificando: [Adj] + な + [Subst] | Fim da Frase: [Adj] + です / ではありません',
+    explanationPt: 'Os Adjetivos-NA não terminam em "i". Quando colocados antes de um substantivo, exigem a partícula "na" (な). No fim da frase, comportam-se como substantivos.',
+    keyRulePt: '• Modificando a palavra: 静かな部屋 (shizuka-na heya = quarto silencioso)\n• Afirmativo no final: 静かです (shizuka desu = é silencioso)\n• Negativo no final: 静かじゃありません / 静かではありません (não é silencioso)',
+    examples: [
+      {
+        jp: '京都はきれいな町です。',
+        reading: 'きょうと は きれい な まち です。',
+        romaji: 'Kyouto wa kirei na machi desu.',
+        meaningPt: 'Kyoto é uma cidade bonita.'
+      },
+      {
+        jp: 'この部屋は静かじゃありません。',
+        reading: 'この へや は しずか じゃありません。',
+        romaji: 'Kono heya wa shizuka ja arimasen.',
+        meaningPt: 'Este quarto não é silencioso.'
+      }
+    ]
+  },
+  {
+    id: 'g_n5_12_3',
+    pattern: 'Passado dos Adjetivos (I e NA)',
+    titlePt: 'Adjetivos: Como Falar no Passado',
+    jlpt: 'N5',
+    category: 'Adjetivos & Modificadores',
+    formationFormula: 'Adj-I: [〜かった] / [〜くなかった] | Adj-NA: [〜でした] / [〜じゃありませんでした]',
+    explanationPt: 'Para descrever algo que "foi" ou "era", os dois tipos de adjetivos mudam de forma diferente no tempo passado.',
+    keyRulePt: '• Adjetivo-I: Troca-se o "i" por "katta" (Passado) ou "ku-nakatta" (Passado Negativo). Ex: 高かった (era caro) / 高くなかった (não era caro).\n• Adjetivo-NA: O "desu" vira "deshita". Ex: 静かでした (era silencioso) / 静かじゃありませんでした (não era silencioso).',
     examples: [
       {
         jp: '昨日のテストは難しかったです。',
@@ -330,10 +402,10 @@ export const GRAMMAR_N5: GrammarItem[] = [
         meaningPt: 'A prova de ontem estava difícil.'
       },
       {
-        jp: '京都はとても静かで綺麗な町です。',
-        reading: 'きょうと は とても しずかで きれいな まち です。',
-        romaji: 'Kyouto wa totemo shizuka de kirei na machi desu.',
-        meaningPt: 'Kyoto é uma cidade muito tranquila e bonita.'
+        jp: 'パーティーはあまり賑やかじゃありませんでした。',
+        reading: 'パーティー は あまり にぎやか じゃありませんでした。',
+        romaji: 'Paatii wa amari nigiyaka ja arimasen deshita.',
+        meaningPt: 'A festa não estava muito animada.'
       }
     ]
   },
