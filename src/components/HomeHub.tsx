@@ -53,6 +53,11 @@ const JAPANESE_TIPS = [
 
 const CHANGELOG = [
   {
+    date: '14 Set 2026',
+    title: 'Super Auditoria e Expansão (N5 ao N3) 📚✨',
+    desc: 'O conteúdo de estudos do aplicativo passou por uma revisão e expansão profundas! No N5 e N4, dividimos dezenas de lições gramaticais super densas (como os "4 tipos de SE" e as regras de "Dar e Receber") em tópicos menores e mais didáticos. No N3, injetamos mais de 20 estruturas gramaticais essenciais que faltavam, além de adicionar quase 50 novas palavras de Vocabulário N3 (Verbos, Adjetivos e Advérbios muito cobrados nas provas). O app está blindado para o JLPT!',
+  },
+  {
     date: '09 Set 2026',
     title: 'Árvore de Habilidades & Revisão Inteligente (SRS) 🌳✨',
     desc: 'A gameficação de estudos chegou! Agora os Kanjis e as lições de Gramática avançadas estão bloqueados por Nível (Skill Tree) e você precisa ganhar XP para desbloqueá-los. Além disso, introduzimos o sistema de Revisão (SRS): reler um tópico que você não vê há muito tempo garante um selo brilhante que te dá XP em Dobro! Ideal para memorizar para sempre.',
