@@ -1,6 +1,260 @@
 import { GrammarItem } from '../types';
 
 export const GRAMMAR_N5: GrammarItem[] = [
+  // --- MEGA LOTE DE GRAMÁTICA N5 (OBRIGAÇÕES, DESEJOS, COMPARAÇÃO) ---
+  {
+  "id": "g_n5_deep_1789490554168_1",
+  "pattern": "〜たい (~tai)",
+  "titlePt": "Desejo Pessoal: \"Eu quero (fazer)...\"",
+  "jlpt": "N5",
+  "category": "Desejo",
+  "formationFormula": "[Raiz do Verbo (tirar Masu)] + たい",
+  "explanationPt": "Expressa a vontade do próprio falante de fazer alguma ação. Funciona gramaticalmente exatamente como um Adjetivo-I.",
+  "keyRulePt": "Você NUNCA deve usar 〜たい para descrever o desejo de uma terceira pessoa (ex: \"Ele quer\"). Serve apenas para \"Eu quero\" ou perguntar \"Você quer?\".",
+  "examples": [
+    {
+      "jp": "私は日本へ行きたいです。",
+      "reading": "わたし は にほん へ いきたい です。",
+      "romaji": "Watashi wa nihon e ikitai desu.",
+      "meaningPt": "Eu quero ir para o Japão."
+    }
+  ]
+},
+{
+  "id": "g_n5_deep_1789490554168_2",
+  "pattern": "〜てください (~te kudasai)",
+  "titlePt": "Pedido Gentil: \"Por favor, faça...\"",
+  "jlpt": "N5",
+  "category": "Pedido",
+  "formationFormula": "[Verbo na forma Te] + ください",
+  "explanationPt": "Usado para pedir ou instruir alguém a fazer algo de maneira educada.",
+  "keyRulePt": "Apesar de ter \"por favor\", ainda é uma instrução/ordem leve. Não use com chefes (use formas mais polidas no N4).",
+  "examples": [
+    {
+      "jp": "ここに名前を書いてください。",
+      "reading": "ここ に なまえ を かいて ください。",
+      "romaji": "Koko ni namae o kaite kudasai.",
+      "meaningPt": "Por favor, escreva seu nome aqui."
+    }
+  ]
+},
+{
+  "id": "g_n5_deep_1789490554168_3",
+  "pattern": "〜ないでください (~nai de kudasai)",
+  "titlePt": "Pedido Negativo: \"Por favor, NÃO faça...\"",
+  "jlpt": "N5",
+  "category": "Pedido",
+  "formationFormula": "[Verbo na forma Nai] + でください",
+  "explanationPt": "Usado para pedir educadamente que alguém pare ou não faça uma determinada ação.",
+  "keyRulePt": "O \"de\" (で) é obrigatório aqui. Não diga apenas \"naikudasai\".",
+  "examples": [
+    {
+      "jp": "写真を撮らないでください。",
+      "reading": "しゃしん を とらないで ください。",
+      "romaji": "Shashin o toranaide kudasai.",
+      "meaningPt": "Por favor, não tire fotos."
+    }
+  ]
+},
+{
+  "id": "g_n5_deep_1789490554168_4",
+  "pattern": "〜てもいいです(か) (~te mo ii desu ka)",
+  "titlePt": "Permissão: \"Eu posso / Tudo bem se eu...?\"",
+  "jlpt": "N5",
+  "category": "Permissão",
+  "formationFormula": "[Verbo na forma Te] + もいいですか",
+  "explanationPt": "Usado para pedir permissão para realizar uma ação. Pode ser usado sem o \"ka\" para CONCEDER permissão (Você pode...).",
+  "keyRulePt": "É a forma padrão para pedir para usar o banheiro, sentar em um lugar ou sair cedo.",
+  "examples": [
+    {
+      "jp": "ここに座ってもいいですか。",
+      "reading": "ここ に すわって も いい です か。",
+      "romaji": "Koko ni suwatte mo ii desu ka.",
+      "meaningPt": "Posso me sentar aqui? (Tudo bem se eu sentar aqui?)"
+    }
+  ]
+},
+{
+  "id": "g_n5_deep_1789490554168_5",
+  "pattern": "〜てはいけません (~te wa ikemasen)",
+  "titlePt": "Proibição: \"Não pode / É proibido...\"",
+  "jlpt": "N5",
+  "category": "Proibição",
+  "formationFormula": "[Verbo na forma Te] + はいけません",
+  "explanationPt": "Usado para proibir fortemente uma ação. Geralmente visto em placas, regras de escola ou falado por figuras de autoridade.",
+  "keyRulePt": "Na fala casual, \"te wa\" frequentemente vira \"cha\" (ちゃいけない).",
+  "examples": [
+    {
+      "jp": "ここでタバコを吸ってはいけません。",
+      "reading": "ここ で タバコ を すって は いけません。",
+      "romaji": "Koko de tabako o sutte wa ikemasen.",
+      "meaningPt": "É proibido fumar aqui."
+    }
+  ]
+},
+{
+  "id": "g_n5_deep_1789490554168_6",
+  "pattern": "〜なければなりません (~nakereba narimasen)",
+  "titlePt": "Obrigação: \"Ter que / Precisar fazer...\"",
+  "jlpt": "N5",
+  "category": "Obrigação",
+  "formationFormula": "[Verbo na forma Nai (tira o i)] + ければなりません",
+  "explanationPt": "Uma dupla negação que significa \"Se não fizer, não serve\". Expressa que algo é um dever, obrigação ou necessidade absoluta.",
+  "keyRulePt": "Existem variações como ~ないと e ~なくちゃ, mas no JLPT N5 o foco é nesta forma formal e longa.",
+  "examples": [
+    {
+      "jp": "明日、学校へ行かなければなりません。",
+      "reading": "あした、がっこう へ いかなければなりません。",
+      "romaji": "Ashita, gakkou e ikanakereba narimasen.",
+      "meaningPt": "Amanhã, eu tenho que ir para a escola."
+    }
+  ]
+},
+{
+  "id": "g_n5_deep_1789490554168_7",
+  "pattern": "〜なくてもいいです (~nakute mo ii desu)",
+  "titlePt": "Falta de Obrigação: \"Não precisa fazer...\"",
+  "jlpt": "N5",
+  "category": "Obrigação",
+  "formationFormula": "[Verbo na forma Nai (tira o i)] + くてもいいです",
+  "explanationPt": "É o exato oposto da obrigação. Significa \"Tudo bem mesmo se você não fizer\" (Não há necessidade).",
+  "keyRulePt": "Se alguém te perguntar \"Tenho que ir amanhã?\" e a resposta for \"Não, não precisa\", você usa essa gramática.",
+  "examples": [
+    {
+      "jp": "急がなくてもいいですよ。",
+      "reading": "いそがなくても いい です よ。",
+      "romaji": "Isoganakute mo ii desu yo.",
+      "meaningPt": "Você não precisa se apressar. (Tudo bem não se apressar)."
+    }
+  ]
+},
+{
+  "id": "g_n5_deep_1789490554168_8",
+  "pattern": "〜たことがあります (~ta koto ga arimasu)",
+  "titlePt": "Experiência: \"Já fiz / Tive a experiência de...\"",
+  "jlpt": "N5",
+  "category": "Experiência Passada",
+  "formationFormula": "[Verbo na forma Ta] + ことがあります",
+  "explanationPt": "Usado para falar sobre experiências de vida. \"Eu já comi sushi\", \"Eu já fui ao Japão\".",
+  "keyRulePt": "NÃO pode ser usado para coisas que aconteceram há pouco tempo (ex: \"Já tomei café da manhã hoje\" está errado com essa gramática). É estrito para memórias/experiências passadas.",
+  "examples": [
+    {
+      "jp": "富士山に登ったことがあります。",
+      "reading": "ふじさん に のぼった こと が あります。",
+      "romaji": "Fujisan ni nobotta koto ga arimasu.",
+      "meaningPt": "Eu já escalei o Monte Fuji (alguma vez na vida)."
+    }
+  ]
+},
+{
+  "id": "g_n5_deep_1789490554168_9",
+  "pattern": "〜たり、〜たりする (~tari, ~tari suru)",
+  "titlePt": "Ações não exaustivas: \"Faço coisas como A e B...\"",
+  "jlpt": "N5",
+  "category": "Listagem de Ações",
+  "formationFormula": "[Verbo forma Ta] + り、 [Verbo forma Ta] + りする",
+  "explanationPt": "Usado para listar exemplos de ações entre várias outras possíveis. Não significa que você fez SÓ essas duas coisas, são apenas exemplos do que você fez.",
+  "keyRulePt": "Sempre deve ser fechado com o verbo \"suru\" (fazer) no final, que carrega o tempo verbal da frase inteira (shimasu = farei / shimashita = fiz).",
+  "examples": [
+    {
+      "jp": "日曜日は本を読んだり、映画を見たりします。",
+      "reading": "にちようび は ほん を よんだり、えいが を みたり します。",
+      "romaji": "Nichiyoubi wa hon o yondari, eiga o mitari shimasu.",
+      "meaningPt": "Aos domingos, eu faço coisas como ler livros e ver filmes."
+    }
+  ]
+},
+{
+  "id": "g_n5_deep_1789490554168_10",
+  "pattern": "〜つもりです (~tsumori desu)",
+  "titlePt": "Intenção Forte: \"Eu pretendo / Tenho a intenção de...\"",
+  "jlpt": "N5",
+  "category": "Planos Futuros",
+  "formationFormula": "[Verbo Dicionário / Nai] + つもりです",
+  "explanationPt": "Expressa uma intenção forte ou plano pessoal da sua cabeça que você decidiu fazer.",
+  "keyRulePt": "É mais forte que \"たい\" (desejo), pois indica que você ativamente planeja executar aquilo.",
+  "examples": [
+    {
+      "jp": "来年、日本へ留学するつもりです。",
+      "reading": "らいねん、にほん へ りゅうがく する つもり です。",
+      "romaji": "Rainen, nihon e ryuugaku suru tsumori desu.",
+      "meaningPt": "Ano que vem, tenho a intenção de fazer intercâmbio no Japão."
+    }
+  ]
+},
+{
+  "id": "g_n5_deep_1789490554168_11",
+  "pattern": "A より B のほうが〜 (A yori B no hou ga)",
+  "titlePt": "Comparação (Maior/Melhor): \"B é mais (Adjetivo) do que A\"",
+  "jlpt": "N5",
+  "category": "Comparação",
+  "formationFormula": "A + より + B + のほうが + [Adjetivo]",
+  "explanationPt": "A estrutura fundamental para comparar duas coisas. \"Yori\" marca o perdedor da comparação (do que A). \"Hou ga\" foca no vencedor (o lado do B é...).",
+  "keyRulePt": "Muitos alunos confundem. Lembre-se: o que vem ANTES de \"yori\" é a referência/base (o menos importante). O foco da frase está em B.",
+  "examples": [
+    {
+      "jp": "車より電車のほうが速いです。",
+      "reading": "くるま より でんしゃ の ほう が はやい です。",
+      "romaji": "Kuruma yori densha no hou ga hayai desu.",
+      "meaningPt": "O trem é mais rápido do que o carro."
+    }
+  ]
+},
+{
+  "id": "g_n5_deep_1789490554168_12",
+  "pattern": "〜の中で、〜が一番〜 (...no naka de, ...ga ichiban)",
+  "titlePt": "Superlativo: \"Dentre (grupo), X é o número um (mais)...\"",
+  "jlpt": "N5",
+  "category": "Comparação",
+  "formationFormula": "[Categoria/Grupo] + の中で + [Item escolhido] + が一番 + [Adjetivo]",
+  "explanationPt": "Usado para escolher o melhor, pior, mais bonito, etc., de dentro de um grupo de 3 ou mais coisas.",
+  "keyRulePt": "A palavra 一番 (ichiban) atua como o \"mais\" (the most) do inglês.",
+  "examples": [
+    {
+      "jp": "果物の中で、りんごが一番好きです。",
+      "reading": "くだもの の なか で、りんご が いちばん すき です。",
+      "romaji": "Kudamono no naka de, ringo ga ichiban suki desu.",
+      "meaningPt": "Dentre as frutas, maçã é a que eu mais gosto."
+    }
+  ]
+},
+{
+  "id": "g_n5_deep_1789490554168_13",
+  "pattern": "〜に 行く/来る/帰る (~ni iku/kuru/kaeru)",
+  "titlePt": "Propósito de Movimento: \"Ir/Vir para (fazer algo)\"",
+  "jlpt": "N5",
+  "category": "Movimento",
+  "formationFormula": "[Raiz do Verbo / Substantivo de ação] + に行く",
+  "explanationPt": "Indica o objetivo de ir, vir ou voltar a algum lugar.",
+  "keyRulePt": "Retira-se o Masu do verbo antes de colocar o \"ni iku\". Ex: 食べます (tabemasu) vira 食べに行く (vou para comer).",
+  "examples": [
+    {
+      "jp": "デパートへ靴を買いに行きます。",
+      "reading": "デパート へ くつ を かい に いきます。",
+      "romaji": "Depaato e kutsu o kai ni ikimasu.",
+      "meaningPt": "Vou à loja de departamentos para comprar sapatos."
+    }
+  ]
+},
+{
+  "id": "g_n5_deep_1789490554168_14",
+  "pattern": "〜ましょう / 〜ましょうか (~mashou / ~mashou ka)",
+  "titlePt": "Convite / Sugestão: \"Vamos (fazer)...? / Quer que eu faça?\"",
+  "jlpt": "N5",
+  "category": "Convite e Oferta",
+  "formationFormula": "[Raiz do Verbo (tirar Masu)] + ましょう(か)",
+  "explanationPt": "Pode ser usado como \"Let's\" em inglês (Vamos comer!) ou, se tiver \"ka\", como uma oferta de ajuda (Quer que eu ajude?).",
+  "keyRulePt": "É a maneira mais proativa de sugerir uma ação em grupo ou oferecer um favor a alguém cansado.",
+  "examples": [
+    {
+      "jp": "窓を開けましょうか。",
+      "reading": "まど を あけましょう か。",
+      "romaji": "Mado o akemashou ka.",
+      "meaningPt": "Quer que eu abra a janela? (Devo abrir a janela?)"
+    }
+  ]
+},
+
   {
     id: 'g_n5_1',
     pattern: 'A は B です (A wa B desu)',
