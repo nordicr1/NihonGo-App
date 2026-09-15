@@ -54,6 +54,11 @@ const JAPANESE_TIPS = [
 const CHANGELOG = [
   {
     date: '15 Set 2026',
+    title: 'Tratamento de Choque: Fundações N4/N5 e Novos Simulados 💥🎓',
+    desc: 'Aplicamos uma injeção massiva de conhecimento na base do aplicativo! O N4 recebeu 18 regras mortais (Condicionais, Voz Passiva, Keigo) e o N5 ganhou permissões e comparações vitais. Além da super gramática, introduzimos os Simulados Oficiais N3 e N4, cheios de pegadinhas de kanjis e textos Dokkai. A preparação definitiva para o JLPT está pronta!',
+  },
+  {
+    date: '15 Set 2026 (Manhã)',
     title: 'Blindagem do N3 e Expansão Massiva do N2 🚀🛡️',
     desc: 'Os níveis N3 e N2 atingiram um novo patamar! No N2, fizemos uma "Limpeza Cirúrgica" desmembrando tópicos confusos e injetamos dezenas de regras gramaticais e vocabulários cruciais (Verbos compostos e Termos abstratos). Além disso, blindamos o N3 com 10 estruturas vitais focadas em Interpretação de Texto (Dokkai). O banco de dados agora está um verdadeiro tanque de guerra para o JLPT!',
   },
