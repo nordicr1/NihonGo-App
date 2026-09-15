@@ -1,6 +1,472 @@
 import { VocabItem } from '../types';
 
 export const VOCAB_N2_N1: VocabItem[] = [
+  // --- LOTE MASSIVO N2 (Injetado) ---
+  {
+  "word": "思い込む",
+  "reading": "おもいこむ",
+  "romaji": "omoikomu",
+  "meaningPt": "acreditar firmemente, estar convencido (muitas vezes erroneamente)",
+  "category": "verbo_godan",
+  "jlpt": "N2",
+  "categoryLabelPt": "Verbo Tipo 1 (Godan)",
+  "exampleSentence": {
+    "jp": "彼が犯人だと思い込んでいた。",
+    "reading": "かれが はんにんだと おもいこんでいた。",
+    "romaji": "kare ga hannin da to omoikonde ita.",
+    "meaningPt": "Eu estava firmemente convencido de que ele era o culpado."
+  },
+  "id": "v2_bulk_1789473032259_0"
+},
+{
+  "word": "引き受ける",
+  "reading": "ひきうける",
+  "romaji": "hikiukeru",
+  "meaningPt": "assumir (uma responsabilidade), aceitar (um trabalho)",
+  "category": "verbo_ichidan",
+  "jlpt": "N2",
+  "categoryLabelPt": "Verbo Tipo 2 (Ichidan)",
+  "exampleSentence": {
+    "jp": "難しい仕事を引き受けた。",
+    "reading": "むずかしい しごとを ひきうけた。",
+    "romaji": "muzukashii shigoto o hikiuketa.",
+    "meaningPt": "Assumi um trabalho difícil."
+  },
+  "id": "v2_bulk_1789473032259_1"
+},
+{
+  "word": "打ち消す",
+  "reading": "うちけす",
+  "romaji": "uchikesu",
+  "meaningPt": "negar, desmentir, cancelar (um rumor/ideia)",
+  "category": "verbo_godan",
+  "jlpt": "N2",
+  "categoryLabelPt": "Verbo Tipo 1 (Godan)",
+  "exampleSentence": {
+    "jp": "彼はその噂をきっぱりと打ち消した。",
+    "reading": "かれは その うわさを きっぱりと うちけした。",
+    "romaji": "kare wa sono uwasa o kippari to uchikeshita.",
+    "meaningPt": "Ele desmentiu categoricamente aquele rumor."
+  },
+  "id": "v2_bulk_1789473032259_2"
+},
+{
+  "word": "追い越す",
+  "reading": "おいこす",
+  "romaji": "oikosu",
+  "meaningPt": "ultrapassar (veículo, pessoa, concorrente)",
+  "category": "verbo_godan",
+  "jlpt": "N2",
+  "categoryLabelPt": "Verbo Tipo 1 (Godan)",
+  "exampleSentence": {
+    "jp": "前の車を追い越す。",
+    "reading": "まえの くるまを おいこす。",
+    "romaji": "mae no kuruma o oikosu.",
+    "meaningPt": "Ultrapassar o carro da frente."
+  },
+  "id": "v2_bulk_1789473032259_3"
+},
+{
+  "word": "立ち上がる",
+  "reading": "たちあがる",
+  "romaji": "tachiagaru",
+  "meaningPt": "levantar-se, reerguer-se",
+  "category": "verbo_godan",
+  "jlpt": "N2",
+  "categoryLabelPt": "Verbo Tipo 1 (Godan)",
+  "exampleSentence": {
+    "jp": "失敗から立ち上がる。",
+    "reading": "しっぱいから たちあがる。",
+    "romaji": "shippai kara tachiagaru.",
+    "meaningPt": "Reerguer-se do fracasso."
+  },
+  "id": "v2_bulk_1789473032259_4"
+},
+{
+  "word": "話し合う",
+  "reading": "はなしあう",
+  "romaji": "hanashiau",
+  "meaningPt": "discutir mutuamente, dialogar",
+  "category": "verbo_godan",
+  "jlpt": "N2",
+  "categoryLabelPt": "Verbo Tipo 1 (Godan)",
+  "exampleSentence": {
+    "jp": "家族と将来について話し合う。",
+    "reading": "かぞくと しょうらいについて はなしあう。",
+    "romaji": "kazoku to shourai ni tsuite hanashiau.",
+    "meaningPt": "Dialogar com a família sobre o futuro."
+  },
+  "id": "v2_bulk_1789473032259_5"
+},
+{
+  "word": "支払う",
+  "reading": "しはらう",
+  "romaji": "shiharau",
+  "meaningPt": "pagar (contas, dívidas)",
+  "category": "verbo_godan",
+  "jlpt": "N2",
+  "categoryLabelPt": "Verbo Tipo 1 (Godan)",
+  "exampleSentence": {
+    "jp": "クレジットカードで支払う。",
+    "reading": "クレジットカードで しはらう。",
+    "romaji": "kurejitto kaado de shiharau.",
+    "meaningPt": "Pagar com cartão de crédito."
+  },
+  "id": "v2_bulk_1789473032259_6"
+},
+{
+  "word": "受け取る",
+  "reading": "うけとる",
+  "romaji": "uketoru",
+  "meaningPt": "receber, aceitar",
+  "category": "verbo_godan",
+  "jlpt": "N2",
+  "categoryLabelPt": "Verbo Tipo 1 (Godan)",
+  "exampleSentence": {
+    "jp": "荷物を受け取りました。",
+    "reading": "にもつを うけとりました。",
+    "romaji": "nimotsu o uketorimashita.",
+    "meaningPt": "Recebi a encomenda."
+  },
+  "id": "v2_bulk_1789473032259_7"
+},
+{
+  "word": "くだらない",
+  "reading": "くだらない",
+  "romaji": "kudaranai",
+  "meaningPt": "fútil, inútil, sem sentido",
+  "category": "adjetivo_i",
+  "jlpt": "N2",
+  "categoryLabelPt": "Adjetivo I",
+  "exampleSentence": {
+    "jp": "くだらない話はやめてください。",
+    "reading": "くだらない はなしは やめてください。",
+    "romaji": "kudaranai hanashi wa yamete kudasai.",
+    "meaningPt": "Por favor, pare com essas conversas fúteis."
+  },
+  "id": "v2_bulk_1789473032259_8"
+},
+{
+  "word": "仕方がない",
+  "reading": "しかたがない",
+  "romaji": "shikata ga nai",
+  "meaningPt": "não tem jeito, é inevitável",
+  "category": "adjetivo_i",
+  "jlpt": "N2",
+  "categoryLabelPt": "Adjetivo I",
+  "exampleSentence": {
+    "jp": "雨だから、試合が中止になるのも仕方がない。",
+    "reading": "あめだから、しあいが ちゅうしに なるのも しかたがない。",
+    "romaji": "ame dakara, shiai ga chuushi ni naru no mo shikata ga nai.",
+    "meaningPt": "Como está chovendo, é inevitável que o jogo seja cancelado."
+  },
+  "id": "v2_bulk_1789473032259_9"
+},
+{
+  "word": "思いがけない",
+  "reading": "おもいがけない",
+  "romaji": "omoigakenai",
+  "meaningPt": "inesperado, imprevisto",
+  "category": "adjetivo_i",
+  "jlpt": "N2",
+  "categoryLabelPt": "Adjetivo I",
+  "exampleSentence": {
+    "jp": "思いがけない出来事が起こった。",
+    "reading": "おもいがけない できごとが おこった。",
+    "romaji": "omoigakenai dekigoto ga okotta.",
+    "meaningPt": "Aconteceu um incidente inesperado."
+  },
+  "id": "v2_bulk_1789473032259_10"
+},
+{
+  "word": "深刻",
+  "reading": "しんこく",
+  "romaji": "shinkoku",
+  "meaningPt": "sério, grave (problema)",
+  "category": "adjetivo_na",
+  "jlpt": "N2",
+  "categoryLabelPt": "Adjetivo Na",
+  "exampleSentence": {
+    "jp": "地球温暖化は深刻な問題だ。",
+    "reading": "ちきゅうおんだんかは しんこくな もんだいだ。",
+    "romaji": "chikyuu ondanka wa shinkoku na mondai da.",
+    "meaningPt": "O aquecimento global é um problema grave."
+  },
+  "id": "v2_bulk_1789473032259_11"
+},
+{
+  "word": "曖昧",
+  "reading": "あいまい",
+  "romaji": "aimai",
+  "meaningPt": "vago, ambíguo, incerto",
+  "category": "adjetivo_na",
+  "jlpt": "N2",
+  "categoryLabelPt": "Adjetivo Na",
+  "exampleSentence": {
+    "jp": "彼の返事はいつも曖昧だ。",
+    "reading": "かれの へんじは いつも あいまいだ。",
+    "romaji": "kare no henji wa itsumo aimai da.",
+    "meaningPt": "A resposta dele é sempre vaga."
+  },
+  "id": "v2_bulk_1789473032259_12"
+},
+{
+  "word": "責任",
+  "reading": "せきにん",
+  "romaji": "sekinin",
+  "meaningPt": "responsabilidade",
+  "category": "substantivo",
+  "jlpt": "N2",
+  "categoryLabelPt": "Substantivo N2",
+  "exampleSentence": {
+    "jp": "リーダーとしての責任を果たす。",
+    "reading": "リーダーとしての せきにんを はたす。",
+    "romaji": "riidaa to shite no sekinin o hatasu.",
+    "meaningPt": "Cumprir com as responsabilidades como líder."
+  },
+  "id": "v2_bulk_1789473032259_13"
+},
+{
+  "word": "条件",
+  "reading": "じょうけん",
+  "romaji": "jouken",
+  "meaningPt": "condição, requisito",
+  "category": "substantivo",
+  "jlpt": "N2",
+  "categoryLabelPt": "Substantivo N2",
+  "exampleSentence": {
+    "jp": "契約の条件を確認する。",
+    "reading": "けいやくの じょうけんを かくにんする。",
+    "romaji": "keiyaku no jouken o kakunin suru.",
+    "meaningPt": "Verificar as condições do contrato."
+  },
+  "id": "v2_bulk_1789473032259_14"
+},
+{
+  "word": "権利",
+  "reading": "けんり",
+  "romaji": "kenri",
+  "meaningPt": "direito (civil, legal)",
+  "category": "substantivo",
+  "jlpt": "N2",
+  "categoryLabelPt": "Substantivo N2",
+  "exampleSentence": {
+    "jp": "全ての人には生きる権利がある。",
+    "reading": "すべての ひとには いきる けんりがある。",
+    "romaji": "subete no hito ni wa ikiru kenri ga aru.",
+    "meaningPt": "Todas as pessoas têm o direito de viver."
+  },
+  "id": "v2_bulk_1789473032259_15"
+},
+{
+  "word": "義務",
+  "reading": "ぎむ",
+  "romaji": "gimu",
+  "meaningPt": "dever, obrigação",
+  "category": "substantivo",
+  "jlpt": "N2",
+  "categoryLabelPt": "Substantivo N2",
+  "exampleSentence": {
+    "jp": "国民には税金を払う義務がある。",
+    "reading": "こくみんには ぜいきんを はらう ぎむがある。",
+    "romaji": "kokumin ni wa zeikin o harau gimu ga aru.",
+    "meaningPt": "Os cidadãos têm o dever de pagar impostos."
+  },
+  "id": "v2_bulk_1789473032259_16"
+},
+{
+  "word": "協力",
+  "reading": "きょうりょく",
+  "romaji": "kyouryoku",
+  "meaningPt": "cooperação, colaboração",
+  "category": "substantivo",
+  "jlpt": "N2",
+  "categoryLabelPt": "Substantivo N2",
+  "exampleSentence": {
+    "jp": "お互いに協力して頑張りましょう。",
+    "reading": "おたがいに きょうりょくして がんばりましょう。",
+    "romaji": "otagai ni kyouryoku shite ganbarimashou.",
+    "meaningPt": "Vamos cooperar uns com os outros e dar o nosso melhor."
+  },
+  "id": "v2_bulk_1789473032259_17"
+},
+{
+  "word": "努力",
+  "reading": "どりょく",
+  "romaji": "doryoku",
+  "meaningPt": "esforço, empenho",
+  "category": "substantivo",
+  "jlpt": "N2",
+  "categoryLabelPt": "Substantivo N2",
+  "exampleSentence": {
+    "jp": "努力は必ず報われる。",
+    "reading": "どりょくは かならず むくわれる。",
+    "romaji": "doryoku wa kanarazu mukuwareru.",
+    "meaningPt": "O esforço é sempre recompensado."
+  },
+  "id": "v2_bulk_1789473032259_18"
+},
+{
+  "word": "評価",
+  "reading": "ひょうか",
+  "romaji": "hyouka",
+  "meaningPt": "avaliação, estimativa",
+  "category": "substantivo",
+  "jlpt": "N2",
+  "categoryLabelPt": "Substantivo N2",
+  "exampleSentence": {
+    "jp": "彼の仕事は高く評価されている。",
+    "reading": "かれの しごとは たかく ひょうかされている。",
+    "romaji": "kare no shigoto wa takaku hyouka sarete iru.",
+    "meaningPt": "O trabalho dele é muito bem avaliado."
+  },
+  "id": "v2_bulk_1789473032259_19"
+},
+{
+  "word": "比較",
+  "reading": "ひかく",
+  "romaji": "hikaku",
+  "meaningPt": "comparação",
+  "category": "substantivo",
+  "jlpt": "N2",
+  "categoryLabelPt": "Substantivo N2",
+  "exampleSentence": {
+    "jp": "二つのデータを比較する。",
+    "reading": "ふたつの データを ひかくする。",
+    "romaji": "futatsu no deeta o hikaku suru.",
+    "meaningPt": "Comparar os dois dados."
+  },
+  "id": "v2_bulk_1789473032259_20"
+},
+{
+  "word": "提案",
+  "reading": "ていあん",
+  "romaji": "teian",
+  "meaningPt": "proposta, sugestão",
+  "category": "substantivo",
+  "jlpt": "N2",
+  "categoryLabelPt": "Substantivo N2",
+  "exampleSentence": {
+    "jp": "新しいプロジェクトを提案した。",
+    "reading": "あたらしい プロジェクトを ていあんした。",
+    "romaji": "atarashii purojekuto o teian shita.",
+    "meaningPt": "Propus um novo projeto."
+  },
+  "id": "v2_bulk_1789473032259_21"
+},
+{
+  "word": "結論",
+  "reading": "けつろん",
+  "romaji": "ketsuron",
+  "meaningPt": "conclusão",
+  "category": "substantivo",
+  "jlpt": "N2",
+  "categoryLabelPt": "Substantivo N2",
+  "exampleSentence": {
+    "jp": "話し合いの結論が出た。",
+    "reading": "はなしあいの けつろんが でた。",
+    "romaji": "hanashiai no ketsuron ga deta.",
+    "meaningPt": "Chegou-se a uma conclusão na discussão."
+  },
+  "id": "v2_bulk_1789473032259_22"
+},
+{
+  "word": "解決",
+  "reading": "かいけつ",
+  "romaji": "kaiketsu",
+  "meaningPt": "solução, resolução",
+  "category": "substantivo",
+  "jlpt": "N2",
+  "categoryLabelPt": "Substantivo N2",
+  "exampleSentence": {
+    "jp": "問題が無事に解決した。",
+    "reading": "もんだいが ぶじに かいけつした。",
+    "romaji": "mondai ga buji ni kaiketsu shita.",
+    "meaningPt": "O problema foi resolvido em paz."
+  },
+  "id": "v2_bulk_1789473032259_23"
+},
+{
+  "word": "お互いに",
+  "reading": "おたがいに",
+  "romaji": "otagai ni",
+  "meaningPt": "mutuamente, um ao outro",
+  "category": "adverbio",
+  "jlpt": "N2",
+  "categoryLabelPt": "Advérbio",
+  "exampleSentence": {
+    "jp": "お互いに助け合うことが大切だ。",
+    "reading": "おたがいに たすけあうことが たいせつだ。",
+    "romaji": "otagai ni tasukeau koto ga taisetsu da.",
+    "meaningPt": "É importante ajudarmos mutuamente."
+  },
+  "id": "v2_bulk_1789473032259_24"
+},
+{
+  "word": "実は",
+  "reading": "じつは",
+  "romaji": "jitsu wa",
+  "meaningPt": "na verdade, o fato é que",
+  "category": "adverbio",
+  "jlpt": "N2",
+  "categoryLabelPt": "Advérbio",
+  "exampleSentence": {
+    "jp": "実は、来月結婚するんです。",
+    "reading": "じつは、らいげつ けっこんするんです。",
+    "romaji": "jitsu wa, raigetsu kekkon surun desu.",
+    "meaningPt": "Na verdade, eu vou me casar no mês que vem."
+  },
+  "id": "v2_bulk_1789473032259_25"
+},
+{
+  "word": "とにかく",
+  "reading": "とにかく",
+  "romaji": "tonikaku",
+  "meaningPt": "de qualquer forma, seja como for",
+  "category": "adverbio",
+  "jlpt": "N2",
+  "categoryLabelPt": "Advérbio",
+  "exampleSentence": {
+    "jp": "理由はいいから、とにかく来てください。",
+    "reading": "りゆうは いいから、とにかく きてください。",
+    "romaji": "riyuu wa ii kara, tonikaku kite kudasai.",
+    "meaningPt": "Não importa o motivo, de qualquer forma, por favor venha."
+  },
+  "id": "v2_bulk_1789473032259_26"
+},
+{
+  "word": "わざと",
+  "reading": "わざと",
+  "romaji": "wazato",
+  "meaningPt": "de propósito, intencionalmente",
+  "category": "adverbio",
+  "jlpt": "N2",
+  "categoryLabelPt": "Advérbio",
+  "exampleSentence": {
+    "jp": "彼はわざと負けた。",
+    "reading": "かれは わざと まけた。",
+    "romaji": "kare wa wazato maketa.",
+    "meaningPt": "Ele perdeu de propósito."
+  },
+  "id": "v2_bulk_1789473032259_27"
+},
+{
+  "word": "次々に",
+  "reading": "つぎつぎに",
+  "romaji": "tsugitsugi ni",
+  "meaningPt": "um após o outro, sucessivamente",
+  "category": "adverbio",
+  "jlpt": "N2",
+  "categoryLabelPt": "Advérbio",
+  "exampleSentence": {
+    "jp": "新しい問題が次々に起こる。",
+    "reading": "あたらしい もんだいが つぎつぎに おこる。",
+    "romaji": "atarashii mondai ga tsugitsugi ni okoru.",
+    "meaningPt": "Novos problemas ocorrem um após o outro."
+  },
+  "id": "v2_bulk_1789473032259_28"
+},
+
   {
     id: 'n2_verb_batch1_1787461593760_0',
     word: '売買する',
