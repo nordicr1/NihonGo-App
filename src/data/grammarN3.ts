@@ -1,6 +1,422 @@
 import { GrammarItem } from '../types';
 
 export const GRAMMAR_N3: GrammarItem[] = [
+  // --- LOTE DEFINITIVO GRAMÁTICA N3 (100% BLINDADO) ---
+  {
+  "id": "g_n3_final_1789496718182_1",
+  "pattern": "〜てたまらない (~te tamaranai)",
+  "titlePt": "Emoção Extrema: \"Não aguento de tanto...\"",
+  "jlpt": "N3",
+  "category": "Emoção",
+  "formationFormula": "[Adjetivos I (kute) / Na (de) / Verbo Tai (takute)] + たまらない",
+  "explanationPt": "Significa que uma emoção ou desejo é tão forte que você não consegue suprimir ou aguentar. O corpo reage fisicamente.",
+  "keyRulePt": "Normalmente usado para primeira pessoa (Eu). Ex: 暑くてたまらない (Está tão quente que não aguento mais).",
+  "examples": [
+    {
+      "jp": "家族に会いたくてたまらない。",
+      "reading": "かぞく に あいたくて たまらない。",
+      "romaji": "Kazoku ni aitakute tamaranai.",
+      "meaningPt": "Quero tanto ver minha família que não me aguento."
+    }
+  ]
+},
+{
+  "id": "g_n3_final_1789496718182_2",
+  "pattern": "〜てしかたがない / 〜てしょうがない (~te shikata ga nai)",
+  "titlePt": "Falta de Controle: \"Não há o que fazer / Extremamente...\"",
+  "jlpt": "N3",
+  "category": "Emoção",
+  "formationFormula": "[Adjetivos I (kute) / Na (de) / Verbo (te)] + しかたがない",
+  "explanationPt": "Muito similar a \"tamaranai\". Indica que um estado físico ou emocional é tão intenso que você perdeu o controle sobre ele.",
+  "keyRulePt": "Na fala casual, usa-se mais \"〜てしょうがない\".",
+  "examples": [
+    {
+      "jp": "今日は眠くてしかたがない。",
+      "reading": "きょう は ねむくて しかたがない。",
+      "romaji": "Kyou wa nemukute shikataganai.",
+      "meaningPt": "Hoje estou tão com sono que não há o que fazer (estou morrendo de sono)."
+    }
+  ]
+},
+{
+  "id": "g_n3_final_1789496718182_3",
+  "pattern": "〜てならない (~te naranai)",
+  "titlePt": "Sentimento Natural: \"Não consigo deixar de sentir...\"",
+  "jlpt": "N3",
+  "category": "Emoção",
+  "formationFormula": "[Adjetivos I (kute) / Na (de) / Verbo (te)] + ならない",
+  "explanationPt": "É uma expressão formal e literária que indica que um sentimento ou pensamento surge naturalmente e você não consegue evitá-lo.",
+  "keyRulePt": "Muito usado com verbos de pensamento/sentimento: 思えてならない (não consigo deixar de pensar), 気になってならない (estou extremamente preocupado).",
+  "examples": [
+    {
+      "jp": "彼の将来が心配でならない。",
+      "reading": "かれ の しょうらい が しんぱい で ならない。",
+      "romaji": "Kare no shourai ga shinpai de naranai.",
+      "meaningPt": "Não consigo deixar de ficar preocupado com o futuro dele."
+    }
+  ]
+},
+{
+  "id": "g_n3_final_1789496718182_4",
+  "pattern": "〜にきまっている (~ni kimatte iru)",
+  "titlePt": "Óbvio: \"É claro que... / Com certeza absoluta...\"",
+  "jlpt": "N3",
+  "category": "Certeza",
+  "formationFormula": "[Substantivo / Forma Simples] + にきまっている",
+  "explanationPt": "Significa \"Não há outra possibilidade, é óbvio que é assim\". Expressa uma forte convicção subjetiva do falante.",
+  "keyRulePt": "Frequentemente carrega uma emoção de \"Como você pode duvidar disso?\".",
+  "examples": [
+    {
+      "jp": "そんな話、嘘にきまっている。",
+      "reading": "そんな はなし、うそ に きまっている。",
+      "romaji": "Sonna hanashi, uso ni kimatte iru.",
+      "meaningPt": "Uma história dessas, é óbvio que é mentira."
+    }
+  ]
+},
+{
+  "id": "g_n3_final_1789496718182_5",
+  "pattern": "〜にちがいない (~ni chigainai)",
+  "titlePt": "Dedução Lógica Forte: \"Não há dúvidas de que...\"",
+  "jlpt": "N3",
+  "category": "Certeza",
+  "formationFormula": "[Substantivo / Forma Simples] + にちがいない",
+  "explanationPt": "Significa \"Sem dúvidas\" (lit. não há erro). É uma dedução baseada em alguma evidência observada.",
+  "keyRulePt": "Mais formal e lógico que \"にきまっている\" (que é mais emocional). Muito comum em testes de leitura.",
+  "examples": [
+    {
+      "jp": "犯人はあいつにちがいない。",
+      "reading": "はんにん は あいつ に ちがいない。",
+      "romaji": "Hannin wa aitsu ni chigainai.",
+      "meaningPt": "O criminoso não pode ser outro senão ele (Não há dúvidas de que é ele)."
+    }
+  ]
+},
+{
+  "id": "g_n3_final_1789496718182_6",
+  "pattern": "〜わけではない (~wake de wa nai)",
+  "titlePt": "Negação Parcial: \"Não é bem assim / Não quer dizer que...\"",
+  "jlpt": "N3",
+  "category": "Negação Parcial",
+  "formationFormula": "[Forma Simples (Na/No)] + わけではない",
+  "explanationPt": "Usado para negar parcialmente uma afirmação que parece lógica, mas não é 100% verdade. \"Só porque é rico, não quer dizer que é feliz\".",
+  "keyRulePt": "Frequentemente usado junto com \"だからといって\" (Só por causa disso...).",
+  "examples": [
+    {
+      "jp": "嫌いなわけではないが、肉はあまり食べない。",
+      "reading": "きらいな わけ で は ない が、にく は あまり たべない。",
+      "romaji": "Kiraina wake de wa nai ga, niku wa amari tabenai.",
+      "meaningPt": "Não é que eu odeie, mas eu não como muita carne."
+    }
+  ]
+},
+{
+  "id": "g_n3_final_1789496718182_7",
+  "pattern": "〜わけにはいかない (~wake ni wa ikanai)",
+  "titlePt": "Impedimento Moral: \"Não posso me dar ao luxo de...\"",
+  "jlpt": "N3",
+  "category": "Impossibilidade Moral",
+  "formationFormula": "[Verbo Dicionário / Nai] + わけにはいかない",
+  "explanationPt": "Significa \"Eu não posso fazer isso porque meu dever, o senso comum ou a sociedade não permite\". Não é uma falta de capacidade física, é uma restrição psicológica/moral.",
+  "keyRulePt": "Com verbo na negativa (ないわけにはいかない), vira \"Eu sou OBRIGADO a fazer\" (Eu não posso NÃO fazer).",
+  "examples": [
+    {
+      "jp": "明日はテストだから、遊ぶわけにはいかない。",
+      "reading": "あした は テスト だから、あそぶ わけ に は いかない。",
+      "romaji": "Ashita wa tesuto dakara, asobu wake ni wa ikanai.",
+      "meaningPt": "Como amanhã é o teste, eu não posso (não devo/não me permito) brincar."
+    }
+  ]
+},
+{
+  "id": "g_n3_final_1789496718182_8",
+  "pattern": "〜くらい / 〜ぐらい (~kurai / ~gurai)",
+  "titlePt": "Grau / Nível: \"A ponto de / Tão... que\"",
+  "jlpt": "N3",
+  "category": "Extensão / Grau",
+  "formationFormula": "[Verbo / Substantivo / Adjetivo] + くらい",
+  "explanationPt": "Usa um exemplo extremo para demonstrar o grau de algo. \"Estava doendo tanto [a ponto de] eu querer chorar\".",
+  "keyRulePt": "Também pode expressar desdém/algo mínimo: \"Pelo menos o próprio nome você devia saber escrever (名前くらい...)\".",
+  "examples": [
+    {
+      "jp": "死ぬくらい疲れました。",
+      "reading": "しぬ くらい つかれました。",
+      "romaji": "Shinu kurai tsukaremashita.",
+      "meaningPt": "Fiquei cansado a ponto de (quase) morrer."
+    }
+  ]
+},
+{
+  "id": "g_n3_final_1789496718182_9",
+  "pattern": "〜ほど (~hodo)",
+  "titlePt": "Nível Máximo: \"Ao ponto de / Não há nada tão...\"",
+  "jlpt": "N3",
+  "category": "Extensão / Grau",
+  "formationFormula": "[Verbo / Substantivo / Adjetivo] + ほど",
+  "explanationPt": "Similar a \"kurai\" (grau), mas \"hodo\" soa mais formal e geralmente indica um nível ainda mais alto ou o superlativo absoluto.",
+  "keyRulePt": "Fórmula clássica: [A] ほど [B] はない = Não existe nada tão [B] quanto [A].",
+  "examples": [
+    {
+      "jp": "彼ほど優しい人はいない。",
+      "reading": "かれ ほど やさしい ひと は いない。",
+      "romaji": "Kare hodo yasashii hito wa inai.",
+      "meaningPt": "Não existe pessoa tão gentil quanto ele."
+    }
+  ]
+},
+{
+  "id": "g_n3_final_1789496718182_10",
+  "pattern": "〜にわたって / 〜にわたり (~ni watatte)",
+  "titlePt": "Extensão Espacial/Temporal: \"Ao longo de / Por todo...\"",
+  "jlpt": "N3",
+  "category": "Extensão",
+  "formationFormula": "[Substantivo (Tempo/Lugar)] + にわたって",
+  "explanationPt": "Indica que um estado, ação ou evento se estendeu e cobriu completamente um longo período de tempo ou uma vasta área geográfica.",
+  "keyRulePt": "Usado para escalas grandes (ex: A tempestade durou 3 dias / O festival acontece em toda a região de Kanto).",
+  "examples": [
+    {
+      "jp": "会議は５時間にわたって行われた。",
+      "reading": "かいぎ は ごじかん に わたって おこなわれた。",
+      "romaji": "Kaigi wa gojikan ni watatte okonawareta.",
+      "meaningPt": "A reunião ocorreu ao longo de (durante) 5 horas."
+    }
+  ]
+},
+{
+  "id": "g_n3_final_1789496718182_11",
+  "pattern": "〜を通じて / 〜を通して (~o tsuujite / ~o tooshite)",
+  "titlePt": "Meio ou Período Completo: \"Através de / Durante todo...\"",
+  "jlpt": "N3",
+  "category": "Meio / Tempo",
+  "formationFormula": "[Substantivo] + を通じて",
+  "explanationPt": "Tem dois usos. 1. Fazer algo utilizando um intermediário (Conheci através de um amigo). 2. Uma ação que se manteve constante do início ao fim de um período (Neva o ano todo).",
+  "keyRulePt": "Diferente de にわたって (escala/expansão), を通じて foca em algo que foi constante do dia 1 até o último.",
+  "examples": [
+    {
+      "jp": "この島は一年を通じて暖かい。",
+      "reading": "この しま は いちねん を つうじて あたたかい。",
+      "romaji": "Kono shima wa ichinen o tsuujite atatakai.",
+      "meaningPt": "Esta ilha é quente durante o ano inteiro (constantemente)."
+    }
+  ]
+},
+{
+  "id": "g_n3_final_1789496718182_12",
+  "pattern": "〜おかげで (~okage de)",
+  "titlePt": "Causa Positiva: \"Graças a...\"",
+  "jlpt": "N3",
+  "category": "Causa e Efeito",
+  "formationFormula": "[Forma Simples (Na/No)] + おかげで",
+  "explanationPt": "Indica que algo bom aconteceu graças à ajuda de alguém ou de um fator positivo. Carrega um sentimento de gratidão.",
+  "keyRulePt": "Se você usar ironicamente para algo ruim, significa \"Só por sua causa... (ironia brava)\".",
+  "examples": [
+    {
+      "jp": "先生のおかげで、合格できました。",
+      "reading": "せんせい の おかげ で、ごうかく できました。",
+      "romaji": "Sensei no okage de, goukaku dekimashita.",
+      "meaningPt": "Graças ao professor, consegui ser aprovado."
+    }
+  ]
+},
+{
+  "id": "g_n3_final_1789496718182_13",
+  "pattern": "〜せいで (~sei de)",
+  "titlePt": "Causa Negativa: \"Por culpa de...\"",
+  "jlpt": "N3",
+  "category": "Causa e Efeito",
+  "formationFormula": "[Forma Simples (Na/No)] + せいで",
+  "explanationPt": "Indica que algo ruim aconteceu por culpa de uma pessoa ou fator. Carrega ressentimento e acusação.",
+  "keyRulePt": "NUNCA use \"sei de\" para coisas boas. É estritamente para culpar algo/alguém.",
+  "examples": [
+    {
+      "jp": "バスが遅れたせいで、遅刻した。",
+      "reading": "バス が おくれた せい で、ちこく した。",
+      "romaji": "Basu ga okureta sei de, chikoku shita.",
+      "meaningPt": "Por culpa do ônibus ter atrasado, eu cheguei tarde."
+    }
+  ]
+},
+{
+  "id": "g_n3_final_1789496718182_14",
+  "pattern": "〜かわりに (~kawari ni)",
+  "titlePt": "Substituição ou Compensação: \"Em vez de / Em troca de...\"",
+  "jlpt": "N3",
+  "category": "Substituição",
+  "formationFormula": "[Verbo Dicionário / Substantivo + の] + かわりに",
+  "explanationPt": "Significa trocar a ação original por outra (Fui de trem em vez de carro) ou fazer algo em compensação (Eu te ajudo agora, em troca você me paga depois).",
+  "keyRulePt": "Literalmente a palavra 代わり significa \"substituto\".",
+  "examples": [
+    {
+      "jp": "映画を見るかわりに、家で本を読んだ。",
+      "reading": "えいが を みる かわりに、いえ で ほん を よんだ。",
+      "romaji": "Eiga o miru kawari ni, ie de hon o yonda.",
+      "meaningPt": "Em vez de assistir a um filme, li um livro em casa."
+    }
+  ]
+},
+{
+  "id": "g_n3_final_1789496718182_15",
+  "pattern": "〜たびに (~tabi ni)",
+  "titlePt": "Repetição: \"Toda vez que / Sempre que...\"",
+  "jlpt": "N3",
+  "category": "Tempo / Repetição",
+  "formationFormula": "[Verbo Dicionário / Substantivo + の] + たびに",
+  "explanationPt": "Significa que sempre que A acontece, B obrigatoriamente acontece junto.",
+  "keyRulePt": "Enfatiza a repetição de uma ação. Não se usa para coisas cotidianas normais (como respirar ou acordar), mas sim para eventos notáveis.",
+  "examples": [
+    {
+      "jp": "この曲を聞くたびに、学生時代を思い出す。",
+      "reading": "この きょく を きく たび に、がくせい じだい を おもいだす。",
+      "romaji": "Kono kyoku o kiku tabi ni, gakusei jidai o omoidasu.",
+      "meaningPt": "Toda vez que escuto essa música, lembro da época de estudante."
+    }
+  ]
+},
+{
+  "id": "g_n3_final_1789496718182_16",
+  "pattern": "〜について (~ni tsuite)",
+  "titlePt": "Assunto: \"Sobre / A respeito de...\"",
+  "jlpt": "N3",
+  "category": "Foco / Assunto",
+  "formationFormula": "[Substantivo] + について",
+  "explanationPt": "Marca o tema ou assunto sobre o qual você está falando, pesquisando, ou pensando. Equivalente a \"about\" em inglês.",
+  "keyRulePt": "Como modificador de substantivo, vira についての (ex: 日本についての本 - Um livro sobre o Japão).",
+  "examples": [
+    {
+      "jp": "日本の歴史について調べています。",
+      "reading": "にほん の れきし に ついて しらべて います。",
+      "romaji": "Nihon no rekishi ni tsuite shirabete imasu.",
+      "meaningPt": "Estou pesquisando sobre a história do Japão."
+    }
+  ]
+},
+{
+  "id": "g_n3_final_1789496718182_17",
+  "pattern": "〜に対して (~ni taishite)",
+  "titlePt": "Contraste ou Atitude: \"Em direção a / Em contraste com...\"",
+  "jlpt": "N3",
+  "category": "Oposição / Direção",
+  "formationFormula": "[Substantivo] + に対して",
+  "explanationPt": "Tem dois sentidos. 1. Ação dirigida a um alvo (Foi gentil com/para com o cliente). 2. Contraste claro entre duas coisas (A cidade A é quente, em contraste, a B é fria).",
+  "keyRulePt": "No contraste, pode-se usar a fórmula [A] に対して [B] (Enquanto A é assim, B é assado).",
+  "examples": [
+    {
+      "jp": "彼は誰に対しても親切だ。",
+      "reading": "かれ は だれ に たいして も しんせつ だ。",
+      "romaji": "Kare wa dare ni taishite mo shinsetsu da.",
+      "meaningPt": "Ele é gentil com (em direção a) qualquer um."
+    }
+  ]
+},
+{
+  "id": "g_n3_final_1789496718182_18",
+  "pattern": "〜にとって (~ni totte)",
+  "titlePt": "Ponto de Vista: \"Para (mim) / Na perspectiva de...\"",
+  "jlpt": "N3",
+  "category": "Perspectiva",
+  "formationFormula": "[Substantivo (Pessoa/Entidade)] + にとって",
+  "explanationPt": "Usado para dar uma opinião ou julgamento baseado na perspectiva de alguém em específico.",
+  "keyRulePt": "O verbo que segue NÃO pode ser de ação (ex: \"Para mim, vou comer\" está errado). Deve ser uma opinião/avaliação (ex: \"Para mim, é difícil\").",
+  "examples": [
+    {
+      "jp": "私にとって、家族が一番大切です。",
+      "reading": "わたし に とって、かぞく が いちばん たいせつ です。",
+      "romaji": "Watashi ni totte, kazoku ga ichiban taisetsu desu.",
+      "meaningPt": "Para mim (na minha perspectiva), a família é o mais importante."
+    }
+  ]
+},
+{
+  "id": "g_n3_final_1789496718182_19",
+  "pattern": "〜として (~to shite)",
+  "titlePt": "Papel ou Capacidade: \"Como um(a)... / Na posição de...\"",
+  "jlpt": "N3",
+  "category": "Papel",
+  "formationFormula": "[Substantivo] + として",
+  "explanationPt": "Usado para falar sobre a posição, função, capacidade ou cargo de alguém/algo. \"Trabalhar como professor\", \"Usar como ferramenta\".",
+  "keyRulePt": "Não confunda com にとって. \"Como estudante, você deve estudar\" usa として (papel/função).",
+  "examples": [
+    {
+      "jp": "彼は医者として働いている。",
+      "reading": "かれ は いしゃ と して はたらいている。",
+      "romaji": "Kare wa isha to shite hataraite iru.",
+      "meaningPt": "Ele trabalha como médico."
+    }
+  ]
+},
+{
+  "id": "g_n3_final_1789496718182_20",
+  "pattern": "〜によると / 〜によれば (~ni yoruto)",
+  "titlePt": "Fonte de Informação: \"De acordo com / Segundo...\"",
+  "jlpt": "N3",
+  "category": "Informação Relatada",
+  "formationFormula": "[Substantivo (fonte de informação)] + によると",
+  "explanationPt": "Cita a fonte original de onde você obteve a informação (notícias, clima, pessoas, jornais).",
+  "keyRulePt": "O final da frase DEVE SEMPRE terminar com uma gramática de rumor/reporte (〜そうだ, 〜らしい, 〜ということだ).",
+  "examples": [
+    {
+      "jp": "天気予報によると、明日は雨だそうです。",
+      "reading": "てんきよほう に よると、あした は あめ だ そう です。",
+      "romaji": "Tenki yohou ni yoru to, ashita wa ame da sou desu.",
+      "meaningPt": "De acordo com a previsão do tempo, (dizem que) amanhã vai chover."
+    }
+  ]
+},
+{
+  "id": "g_n3_final_1789496718182_21",
+  "pattern": "〜たとたん(に) (~ta totan)",
+  "titlePt": "Ação Imediata: \"No momento que / Assim que...\"",
+  "jlpt": "N3",
+  "category": "Sequência de Ações",
+  "formationFormula": "[Verbo na forma Ta] + とたん",
+  "explanationPt": "Assim que a ação 1 aconteceu, a ação 2 aconteceu INESPERADAMENTE logo em seguida.",
+  "keyRulePt": "A segunda ação carrega surpresa. Não pode ser usada para seus próprios planos normais (\"Assim que chegar em casa, vou dormir\" - errado com totan).",
+  "examples": [
+    {
+      "jp": "窓を開けたとたん、強い風が入ってきた。",
+      "reading": "まど を あけた とたん、つよい かぜ が はいって きた。",
+      "romaji": "Mado o aketa totan, tsuyoi kaze ga haitte kita.",
+      "meaningPt": "No instante em que abri a janela, um vento forte entrou (inesperadamente)."
+    }
+  ]
+},
+{
+  "id": "g_n3_final_1789496718182_22",
+  "pattern": "〜次第 (~shidai)",
+  "titlePt": "Ação Assim Que Possível: \"Assim que (X), farei (Y)\"",
+  "jlpt": "N3",
+  "category": "Sequência de Ações (Profissional)",
+  "formationFormula": "[Raiz do Verbo (tirar Masu)] + 次第",
+  "explanationPt": "Uma expressão muito usada em negócios (Business Japanese). Significa \"Assim que isso estiver concluído, farei a próxima coisa imediatamente\".",
+  "keyRulePt": "Diferente de とたん (que é surpresa no passado), 次第 é sempre para planos futuros, geralmente como uma promessa de fazer algo logo.",
+  "examples": [
+    {
+      "jp": "スケジュールが決まり次第、連絡します。",
+      "reading": "スケジュール が きまり しだい、れんらく します。",
+      "romaji": "Sukejuuru ga kimari shidai, renraku shimasu.",
+      "meaningPt": "Assim que o cronograma for decidido, entrarei em contato."
+    }
+  ]
+},
+{
+  "id": "g_n3_final_1789496718182_23",
+  "pattern": "〜恐れがある (~osore ga aru)",
+  "titlePt": "Risco Formal: \"Há o temor/risco de que...\"",
+  "jlpt": "N3",
+  "category": "Notícia / Alerta",
+  "formationFormula": "[Verbo Dicionário / Substantivo + の] + 恐れがある",
+  "explanationPt": "Uma forma dura e jornalística de dizer que há a possibilidade (ruim) de que um evento terrível vá ocorrer (ex: tsunami, falência, terremoto).",
+  "keyRulePt": "Você não usará isso com amigos (\"Tem o risco de eu perder a hora\"), e sim em noticiários.",
+  "examples": [
+    {
+      "jp": "明日は台風が来る恐れがあります。",
+      "reading": "あした は たいふう が くる おそれ が あります。",
+      "romaji": "Ashita wa taifuu ga kuru osore ga arimasu.",
+      "meaningPt": "Há o temor (risco) de que o tufão chegue amanhã."
+    }
+  ]
+},
+
   // --- MEGA LOTE DE PESQUISA PROFUNDA (N3) ---
   {
   "id": "g_n3_deep_1789475072535_1",
