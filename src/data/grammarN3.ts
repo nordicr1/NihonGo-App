@@ -1,6 +1,200 @@
 import { GrammarItem } from '../types';
 
 export const GRAMMAR_N3: GrammarItem[] = [
+  // --- LOTE BLINDAGEM N3 ---
+  {
+  "id": "g_n3_bulk_1789473293556_1",
+  "pattern": "〜だらけ (~darake)",
+  "titlePt": "Excesso Negativo: \"Cheio de / Repleto de...\"",
+  "jlpt": "N3",
+  "category": "Estado & Condição",
+  "formationFormula": "[Substantivo] + だらけ",
+  "explanationPt": "Significa que algo está coberto ou completamente cheio de coisas desagradáveis (sujeira, erros, problemas). Não pode ser usado para coisas boas (como \"cheio de dinheiro\" ou \"cheio de sorte\").",
+  "keyRulePt": "Usos clássicos: 泥だらけ (cheio de lama), 間違いだらけ (cheio de erros), ゴミだらけ (cheio de lixo).",
+  "examples": [
+    {
+      "jp": "彼のテストは間違いだらけだった。",
+      "reading": "かれ の テスト は まちがい だらけ だった。",
+      "romaji": "Kare no tesuto wa machigai darake datta.",
+      "meaningPt": "A prova dele estava cheia de erros."
+    },
+    {
+      "jp": "子供が泥だらけになって帰ってきた。",
+      "reading": "こども が どろ だらけ に なって かえってきた。",
+      "romaji": "Kodomo ga doro darake ni natte kaette kita.",
+      "meaningPt": "A criança voltou para casa coberta (cheia) de lama."
+    }
+  ]
+},
+{
+  "id": "g_n3_bulk_1789473293556_2",
+  "pattern": "〜っぽい (~ppoi)",
+  "titlePt": "Tendência ou Aparência: \"Com jeito de / Tem a tendência de...\"",
+  "jlpt": "N3",
+  "category": "Impressão & Tendência",
+  "formationFormula": "[Substantivo / Raiz do Verbo / Adj-I sem い] + っぽい",
+  "explanationPt": "Indica que algo possui a qualidade ou aparência daquilo (mesmo não sendo), ou que uma pessoa tem uma forte tendência a fazer tal ação (ex: esquecer facilmente, enjoar fácil).",
+  "keyRulePt": "Trata-se como um Adjetivo do tipo I (っぽい -> っぽく -> っぽくない).",
+  "examples": [
+    {
+      "jp": "あの人は大人なのに、子供っぽい。",
+      "reading": "あの ひと は おとな なのに、こどもっぽい。",
+      "romaji": "Ano hito wa otona na noni, kodomoppoi.",
+      "meaningPt": "Apesar de ser adulto, aquela pessoa tem um jeito infantil (de criança)."
+    },
+    {
+      "jp": "私は忘れっぽい性格です。",
+      "reading": "わたし は わすれっぽい せいかく です。",
+      "romaji": "Watashi wa wasureppoi seikaku desu.",
+      "meaningPt": "Eu tenho uma personalidade esquecida (tendência a esquecer fácil)."
+    }
+  ]
+},
+{
+  "id": "g_n3_bulk_1789473293556_3",
+  "pattern": "〜というより (~to iu yori)",
+  "titlePt": "Reclassificação: \"Mais do que X, é Y / Em vez de X, é melhor dizer Y\"",
+  "jlpt": "N3",
+  "category": "Comparação & Avaliação",
+  "formationFormula": "[Fato A] + というより + [Fato B]",
+  "explanationPt": "Usado para corrigir suavemente uma descrição. Você concorda com o Fato A, mas acha que o Fato B descreve a situação com muito mais exatidão.",
+  "keyRulePt": "Na estrutura \"A というより B\", o B é sempre a afirmação que o falante considera ser a correta.",
+  "examples": [
+    {
+      "jp": "彼は学者というより、ジャーナリストだ。",
+      "reading": "かれ は がくしゃ という より、ジャーナリスト だ。",
+      "romaji": "Kare wa gakusha to iu yori, jaanarisuto da.",
+      "meaningPt": "Em vez de chamá-lo de acadêmico, ele é mais um jornalista."
+    }
+  ]
+},
+{
+  "id": "g_n3_bulk_1789473293556_4",
+  "pattern": "〜くらいなら (~kurai nara)",
+  "titlePt": "Preferência Extrema: \"Se for para (X), eu prefiro (Y)\"",
+  "jlpt": "N3",
+  "category": "Condição Extrema",
+  "formationFormula": "[Verbo Dicionário] + くらいなら",
+  "explanationPt": "Expressa um sentimento de extrema aversão em relação à primeira opção (A). O falante acha \"A\" tão ruim que qualquer outra coisa (B) seria melhor.",
+  "keyRulePt": "A segunda parte da frase geralmente traz palavras de preferência: 〜ほうがいい (é melhor) ou 〜ほうがましだ (é menos pior).",
+  "examples": [
+    {
+      "jp": "あいつに謝るくらいなら、死んだほうがましだ。",
+      "reading": "あいつ に あやまる くらい なら、しんだ ほうが まし だ。",
+      "romaji": "Aitsu ni ayamaru kurai nara, shinda hou ga mashi da.",
+      "meaningPt": "Se for para pedir desculpas para aquele cara, eu prefiro morrer."
+    }
+  ]
+},
+{
+  "id": "g_n3_bulk_1789473293556_5",
+  "pattern": "〜ふりをする (~furi o suru)",
+  "titlePt": "Falsidade: \"Fingir que... / Passar-se por...\"",
+  "jlpt": "N3",
+  "category": "Ação & Aparência",
+  "formationFormula": "[Forma Simples / Substantivo + の / Adj-Na + な] + ふりをする",
+  "explanationPt": "Significa agir como se algo fosse verdade, mesmo não sendo. Criar uma fachada ou aparência intencionalmente.",
+  "keyRulePt": "Comumente usado em situações como: 知らないふりをする (Fingir que não sabe) e 寝たふりをする (Fingir que está dormindo).",
+  "examples": [
+    {
+      "jp": "彼女は聞こえないふりをした。",
+      "reading": "かのじょ は きこえない ふり を した。",
+      "romaji": "Kanojo wa kikoenai furi o shita.",
+      "meaningPt": "Ela fingiu que não conseguia ouvir (se fez de surda)."
+    }
+  ]
+},
+{
+  "id": "g_n3_bulk_1789473293556_6",
+  "pattern": "〜にしても (~ni shite mo)",
+  "titlePt": "Concessão: \"Mesmo se / Ainda que seja o caso...\"",
+  "jlpt": "N3",
+  "category": "Condição & Oposição",
+  "formationFormula": "[Forma Simples / Substantivo / Adj-Na (sem だ)] + にしても",
+  "explanationPt": "Significa \"mesmo admitindo que isso seja verdade, ainda assim a conclusão não muda\". Usado para expressar compreensão por uma situação, mas mantendo a própria opinião.",
+  "keyRulePt": "Geralmente a segunda parte da frase contém uma crítica, julgamento ou conselho do falante.",
+  "examples": [
+    {
+      "jp": "遅れるにしても、電話くらいしてほしい。",
+      "reading": "おくれる に しても、でんわ くらい して ほしい。",
+      "romaji": "Okureru ni shite mo, denwa kurai shite hoshii.",
+      "meaningPt": "Ainda que você vá se atrasar, eu queria que pelo menos desse um telefonema."
+    }
+  ]
+},
+{
+  "id": "g_n3_bulk_1789473293556_7",
+  "pattern": "〜にしたら / 〜にすれば (~ni shitara / ~ni sureba)",
+  "titlePt": "Empatia e Perspectiva: \"Se colocar-se no lugar de...\"",
+  "jlpt": "N3",
+  "category": "Perspectiva & Julgamento",
+  "formationFormula": "[Substantivo (Pessoa)] + にしたら / にすれば",
+  "explanationPt": "Significa \"pensando do ponto de vista daquela pessoa\". Usado para tentar entender os sentimentos ou a situação de terceiros.",
+  "keyRulePt": "Nunca use essa gramática com você mesmo (ex: 私にしたら = INCORRETO). É exclusivo para especular os sentimentos de outra pessoa.",
+  "examples": [
+    {
+      "jp": "親にすれば、子供はいつまでも子供だ。",
+      "reading": "おや に すれば、こども は いつまでも こども だ。",
+      "romaji": "Oya ni sureba, kodomo wa itsumademo kodomo da.",
+      "meaningPt": "Do ponto de vista dos pais, os filhos sempre serão crianças."
+    }
+  ]
+},
+{
+  "id": "g_n3_bulk_1789473293556_8",
+  "pattern": "〜てごらん (~te goran)",
+  "titlePt": "Sugestão Leve: \"Tente fazer... (Dê uma olhada)\"",
+  "jlpt": "N3",
+  "category": "Sugestão & Pedido",
+  "formationFormula": "[Verbo Forma Te] + ごらん(なさい)",
+  "explanationPt": "É uma forma amigável de dizer 〜てみてください (tente fazer). É usado apenas de superiores para subordinados ou de pais para filhos.",
+  "keyRulePt": "Não pode ser usado com o chefe ou pessoas mais velhas, soaria extremamente rude e paternalista.",
+  "examples": [
+    {
+      "jp": "美味しいから、一度食べてごらん。",
+      "reading": "おいしい から、いちど たべて ごらん。",
+      "romaji": "Oishii kara, ichido tabete goran.",
+      "meaningPt": "Está delicioso, tente comer uma vez."
+    }
+  ]
+},
+{
+  "id": "g_n3_bulk_1789473293556_9",
+  "pattern": "〜ずにはいられない (~zu ni wa irarenai)",
+  "titlePt": "Impulso Incontrolável: \"Não consigo evitar de...\"",
+  "jlpt": "N3",
+  "category": "Emoção Forte",
+  "formationFormula": "[Verbo Nai (sem ない)] + ずにはいられない (exceção: する -> せずにはいられない)",
+  "explanationPt": "Expressa que uma ação ocorre instintivamente devido a uma forte emoção ou estímulo físico. \"Tento não fazer, mas não consigo\".",
+  "keyRulePt": "Forma gramatical formal de 〜ないではいられない. Frequentemente usada em testes de leitura (Dokkai).",
+  "examples": [
+    {
+      "jp": "その映画のラストシーンを見て、泣かずにはいられなかった。",
+      "reading": "その えいが の ラストシーン を みて、なかず に は いられなかった。",
+      "romaji": "Sono eiga no rasutoshiin o mite, nakazu ni wa irarenakatta.",
+      "meaningPt": "Ao ver a cena final daquele filme, não consegui evitar de chorar."
+    }
+  ]
+},
+{
+  "id": "g_n3_bulk_1789473293556_10",
+  "pattern": "〜から〜にかけて (~kara ~ni kakete)",
+  "titlePt": "Extensão de Espaço ou Tempo: \"Desde X até abranger Y\"",
+  "jlpt": "N3",
+  "category": "Tempo & Espaço",
+  "formationFormula": "[Lugar/Tempo A] + から + [Lugar/Tempo B] + にかけて",
+  "explanationPt": "Similar a から〜まで, mas enquanto \"made\" indica um fim exato e claro, \"ni kakete\" indica uma área vaga que se estende por um período ou espaço (abrangendo o trecho entre A e B).",
+  "keyRulePt": "Muito comum em previsões do tempo (ex: de Tóquio abrangendo até Osaka).",
+  "examples": [
+    {
+      "jp": "明日は関東から東北にかけて雨が降るでしょう。",
+      "reading": "あした は かんとう から とうほく に かけて あめ が ふる でしょう。",
+      "romaji": "Ashita wa Kantou kara Touhoku ni kakete ame ga furu deshou.",
+      "meaningPt": "Amanhã choverá da região de Kanto estendendo-se até Tohoku."
+    }
+  ]
+},
+
   {
     id: 'g_n3_1',
     pattern: '〜わけではない (~wake dewa nai)',
