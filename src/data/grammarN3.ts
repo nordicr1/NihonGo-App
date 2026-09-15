@@ -1,6 +1,278 @@
 import { GrammarItem } from '../types';
 
 export const GRAMMAR_N3: GrammarItem[] = [
+  // --- MEGA LOTE DE PESQUISA PROFUNDA (N3) ---
+  {
+  "id": "g_n3_deep_1789475072535_1",
+  "pattern": "〜たて (~tate)",
+  "titlePt": "Fresco / Recém-feito: \"Acabou de ser...\"",
+  "jlpt": "N3",
+  "category": "Estado",
+  "formationFormula": "[Raiz do Verbo (tirar Masu)] + たて",
+  "explanationPt": "Indica que uma ação acabou de ser concluída e está no seu estado mais fresco e ideal. Muito usado para comida e novidades.",
+  "keyRulePt": "Exemplos clássicos: 焼きたて (recém-assado), できたて (recém-feito), 塗りたて (tinta fresca). Não se usa para situações ruins.",
+  "examples": [
+    {
+      "jp": "これは焼きたてのパンです。",
+      "reading": "これ は やきたて の パン です。",
+      "romaji": "Kore wa yakitate no pan desu.",
+      "meaningPt": "Este é um pão recém-assado."
+    }
+  ]
+},
+{
+  "id": "g_n3_deep_1789475072535_2",
+  "pattern": "〜かけ / 〜かける (~kake / ~kakeru)",
+  "titlePt": "Ação Inacabada: \"No meio de / Quase...\"",
+  "jlpt": "N3",
+  "category": "Continuidade",
+  "formationFormula": "[Raiz do Verbo] + かけ / かける",
+  "explanationPt": "Significa que você começou a fazer algo, mas parou no meio, deixando a ação inacabada.",
+  "keyRulePt": "Como modificador de substantivo, usa-se 〜かけの (ex: 飲みかけのコーヒー = café deixado pela metade).",
+  "examples": [
+    {
+      "jp": "テーブルに飲みかけのコーヒーがある。",
+      "reading": "テーブル に のみかけ の コーヒー が ある。",
+      "romaji": "Teeburu ni nomikake no koohii ga aru.",
+      "meaningPt": "Há um café deixado pela metade (no meio de ser bebido) na mesa."
+    }
+  ]
+},
+{
+  "id": "g_n3_deep_1789475072535_3",
+  "pattern": "〜っぱなし (~ppanashi)",
+  "titlePt": "Negligência: \"Deixar (largado) de um jeito...\"",
+  "jlpt": "N3",
+  "category": "Estado (Negativo)",
+  "formationFormula": "[Raiz do Verbo] + っぱなし",
+  "explanationPt": "Indica que uma ação foi feita e não foi desfeita, geralmente resultando em algo inconveniente, descuidado ou cansativo.",
+  "keyRulePt": "É quase sempre usado para reclamar. Ex: 開けっぱなし (deixado aberto), 立ちっぱなし (ficar em pé direto, sem sentar).",
+  "examples": [
+    {
+      "jp": "水を出しっぱなしにしないでください。",
+      "reading": "みず を だしっぱなし に しないで ください。",
+      "romaji": "Mizu o dashippanashi ni shinaide kudasai.",
+      "meaningPt": "Por favor, não deixe a água (torneira) ligada e largada."
+    }
+  ]
+},
+{
+  "id": "g_n3_deep_1789475072535_4",
+  "pattern": "〜がち (~gachi)",
+  "titlePt": "Frequência Negativa: \"Costuma / Tende a...\"",
+  "jlpt": "N3",
+  "category": "Tendência",
+  "formationFormula": "[Substantivo / Raiz do Verbo] + がち",
+  "explanationPt": "Diferente de っぽい, がち foca na FREQUÊNCIA de um acontecimento negativo (algo que acontece muitas vezes ultimamente).",
+  "keyRulePt": "Clássicos: 忘れがち (costuma esquecer), 病気がち (fica doente com frequência), 遠慮がち (costuma hesitar).",
+  "examples": [
+    {
+      "jp": "最近、彼は仕事を休みがちだ。",
+      "reading": "さいきん、かれ は しごと を やすみがち だ。",
+      "romaji": "Saikin, kare wa shigoto o yasumigachi da.",
+      "meaningPt": "Ultimamente, ele tem a tendência de (costuma) faltar ao trabalho."
+    }
+  ]
+},
+{
+  "id": "g_n3_deep_1789475072535_5",
+  "pattern": "〜気味 (~gimi)",
+  "titlePt": "Sensação Leve: \"Um leve toque de / Sentindo-se meio...\"",
+  "jlpt": "N3",
+  "category": "Impressão Física/Mental",
+  "formationFormula": "[Substantivo / Raiz do Verbo] + 気味",
+  "explanationPt": "Significa \"Sinto que está um pouco assim\". Geralmente indica um sintoma físico leve ou uma intuição levemente negativa.",
+  "keyRulePt": "Clássicos: 風邪気味 (meio resfriado), 疲れ気味 (meio cansado), 太り気味 (com tendência a engordar ultimamente).",
+  "examples": [
+    {
+      "jp": "今日は少し風邪気味なので、早く寝ます。",
+      "reading": "きょう は すこし かぜぎみ なので、はやく ねます。",
+      "romaji": "Kyou wa sukoshi kazegimi nanode, hayaku nemasu.",
+      "meaningPt": "Hoje estou com um leve resfriado, então vou dormir cedo."
+    }
+  ]
+},
+{
+  "id": "g_n3_deep_1789475072535_6",
+  "pattern": "〜きり / 〜っきり (~kiri / ~kkiri)",
+  "titlePt": "Isolamento Absoluto: \"Apenas / Desde que... nada mais\"",
+  "jlpt": "N3",
+  "category": "Fim de Ação / Limitação",
+  "formationFormula": "[Substantivo] + きり | [Verbo Ta] + きり",
+  "explanationPt": "Com substantivos significa \"Apenas isso e nada mais\" (ex: 二人きり = só nós dois). Com verbos significa que a ação aconteceu e desde então nada mudou, ou seja, ficou parada no tempo.",
+  "keyRulePt": "〜っきり é a versão mais coloquial e enfática.",
+  "examples": [
+    {
+      "jp": "彼とは去年の春に会ったきりだ。",
+      "reading": "かれ と は きょねん の はる に あった きり だ。",
+      "romaji": "Kare to wa kyonen no haru ni atta kiri da.",
+      "meaningPt": "Eu encontrei com ele na primavera passada, e desde então (apenas isso), nunca mais."
+    }
+  ]
+},
+{
+  "id": "g_n3_deep_1789475072535_7",
+  "pattern": "〜くせに (~kuse ni)",
+  "titlePt": "Crítica Ácida: \"Apesar de / Sendo que...\"",
+  "jlpt": "N3",
+  "category": "Reclamação & Oposição",
+  "formationFormula": "[Forma Simples (igual Noni)] + くせに",
+  "explanationPt": "É o \"のに\" (apesar de) com esteroides. É usado estritamente para criticar ou acusar alguém que não faz o que deveria fazer segundo a sua posição ou habilidade.",
+  "keyRulePt": "Você NUNCA pode usar 〜くせに para si mesmo. Serve apenas para atacar/criticar terceiros.",
+  "examples": [
+    {
+      "jp": "彼は男のくせに、いつも泣いている。",
+      "reading": "かれ は おとこ の くせ に、いつも ないている。",
+      "romaji": "Kare wa otoko no kuse ni, itsumo naite iru.",
+      "meaningPt": "Apesar de ser homem (sendo homem, não deveria agir assim), ele está sempre chorando."
+    }
+  ]
+},
+{
+  "id": "g_n3_deep_1789475072535_8",
+  "pattern": "〜からには (~kara ni wa)",
+  "titlePt": "Resolução: \"Já que... / Agora que...\"",
+  "jlpt": "N3",
+  "category": "Razão & Determinação",
+  "formationFormula": "[Forma Simples do Verbo] + からには",
+  "explanationPt": "Significa \"Já que a situação A é um fato indiscutível, então B é a minha forte determinação/dever\".",
+  "keyRulePt": "A parte final da frase costuma terminar com intenção (つもりだ), dever (べきだ) ou ordem (なさい).",
+  "examples": [
+    {
+      "jp": "約束したからには、必ず守ります。",
+      "reading": "やくそく した からには、かならず まもります。",
+      "romaji": "Yakusoku shita kara ni wa, kanarazu mamorimasu.",
+      "meaningPt": "Já que eu prometi, irei cumprir sem falta."
+    }
+  ]
+},
+{
+  "id": "g_n3_deep_1789475072535_9",
+  "pattern": "〜ことに（は） (~koto ni (wa))",
+  "titlePt": "Ênfase Emocional: \"Para a minha (surpresa/alegria)...\"",
+  "jlpt": "N3",
+  "category": "Emoção",
+  "formationFormula": "[Verbo Ta / Adj-I / Adj-Na + な] + ことに",
+  "explanationPt": "A frase inicia destacando fortemente a emoção que o falante sentiu ao descobrir o fato que será explicado em seguida.",
+  "keyRulePt": "Clássicos: 驚いたことに (Para a minha surpresa...), 嬉しいことに (Felizmente / Para a minha alegria...), 残念なことに (Infelizmente).",
+  "examples": [
+    {
+      "jp": "驚いたことに、彼は試験に合格していた。",
+      "reading": "おどろいた こと に、かれ は しけん に ごうかく していた。",
+      "romaji": "Odoroita koto ni, kare wa shiken ni goukaku shite ita.",
+      "meaningPt": "Para a minha surpresa, ele tinha passado no exame."
+    }
+  ]
+},
+{
+  "id": "g_n3_deep_1789475072535_10",
+  "pattern": "〜ことになっている (~koto ni natte iru)",
+  "titlePt": "Regras e Costumes: \"Está estabelecido que...\"",
+  "jlpt": "N3",
+  "category": "Regra & Decisão Externa",
+  "formationFormula": "[Verbo Dicionário / Nai] + ことになっている",
+  "explanationPt": "Mostra que existe uma regra institucional, lei, ou costume social que não foi você que decidiu, mas que já está em vigor.",
+  "keyRulePt": "Diferente de ことにしている (decisão pessoal). Aqui a pressão é externa (regras da escola, da empresa, leis).",
+  "examples": [
+    {
+      "jp": "この教室では、日本語しか話せないことになっている。",
+      "reading": "この きょうしつ で は、にほんご しか はなせない こと に なっている。",
+      "romaji": "Kono kyoushitsu de wa, nihongo shika hanasenai koto ni natte iru.",
+      "meaningPt": "Nesta sala de aula, está estabelecido (por regra) que só se pode falar japonês."
+    }
+  ]
+},
+{
+  "id": "g_n3_deep_1789475072535_11",
+  "pattern": "〜ば〜ほど (~ba ~hodo)",
+  "titlePt": "Proporção Direta: \"Quanto mais (A)... mais (B)\"",
+  "jlpt": "N3",
+  "category": "Proporção",
+  "formationFormula": "[Condicional ば] + [Mesmo Verbo/Adj] + ほど",
+  "explanationPt": "Significa que à medida que o nível da Ação A aumenta, o nível do Efeito B acompanha na mesma proporção.",
+  "keyRulePt": "A estrutura sempre repete a mesma palavra. Ex: 食べれば (comer) 食べる (comer) ほど = Quanto mais comer, mais...",
+  "examples": [
+    {
+      "jp": "外国語は使えば使うほど、上手になる。",
+      "reading": "がいこくご は つかえば つかう ほど、じょうず に なる。",
+      "romaji": "Gaikokugo wa tsukaeba tsukau hodo, jouzu ni naru.",
+      "meaningPt": "Idiomas estrangeiros, quanto mais você os usa, melhor você fica."
+    }
+  ]
+},
+{
+  "id": "g_n3_deep_1789475072535_12",
+  "pattern": "〜ついでに (~tsuide ni)",
+  "titlePt": "Pegando Carona: \"Aproveitando a chance...\"",
+  "jlpt": "N3",
+  "category": "Ação Simultânea",
+  "formationFormula": "[Verbo Dicionário / Ta / Subst + の] + ついでに",
+  "explanationPt": "Você tinha como objetivo principal fazer a Ação A. Já que ia fazer A, aproveitou a viagem/chance para realizar a Ação B (uma tarefa extra) no mesmo momento.",
+  "keyRulePt": "O evento principal sempre vem antes do ついでに. O evento secundário sempre vem depois.",
+  "examples": [
+    {
+      "jp": "散歩のついでに、手紙を出してきた。",
+      "reading": "さんぽ の ついで に、てがみ を だして きた。",
+      "romaji": "Sanpo no tsuide ni, tegami o dashite kita.",
+      "meaningPt": "Aproveitando que fui caminhar, entreguei a carta no correio."
+    }
+  ]
+},
+{
+  "id": "g_n3_deep_1789475072535_13",
+  "pattern": "〜最中に (~saichuu ni)",
+  "titlePt": "Interrupção: \"Bem no meio de...\"",
+  "jlpt": "N3",
+  "category": "Tempo & Interrupção",
+  "formationFormula": "[Substantivo + の / Verbo Te-iru] + 最中に",
+  "explanationPt": "Enfatiza que uma ação estava no seu pico (bem no meio) quando outra coisa (geralmente uma interrupção inconveniente) aconteceu de repente.",
+  "keyRulePt": "Não confunda com 間に (enquanto). 最中に tem um forte senso de clímax e interrupção. Ex: Bem no meio do banho, o telefone tocou.",
+  "examples": [
+    {
+      "jp": "シャワーを浴びている最中に、電話が鳴った。",
+      "reading": "シャワー を あびている さいちゅう に、でんわ が なった。",
+      "romaji": "Shawaa o abite iru saichuu ni, denwa ga natta.",
+      "meaningPt": "O telefone tocou bem no meio do meu banho."
+    }
+  ]
+},
+{
+  "id": "g_n3_deep_1789475072535_14",
+  "pattern": "〜にかけては (~ni kakete wa)",
+  "titlePt": "Excelência: \"Quando se trata de...\"",
+  "jlpt": "N3",
+  "category": "Avaliação",
+  "formationFormula": "[Substantivo] + にかけては",
+  "explanationPt": "Significa \"Se o assunto for esse campo/habilidade, ninguém supera essa pessoa\". É um grande elogio à habilidade de alguém em um nicho.",
+  "keyRulePt": "A segunda parte da frase sempre tem um significado de \"é o melhor\", \"não perde para ninguém\" ou \"tem extrema confiança\".",
+  "examples": [
+    {
+      "jp": "歌のうまさにかけては、彼に勝てる人はいない。",
+      "reading": "うた の うまさ に かけて は、かれ に かてる ひと は いない。",
+      "romaji": "Uta no umasa ni kakete wa, kare ni kateru hito wa inai.",
+      "meaningPt": "Quando se trata de habilidade para cantar, não há quem possa derrotá-lo."
+    }
+  ]
+},
+{
+  "id": "g_n3_deep_1789475072535_15",
+  "pattern": "〜にこたえて (~ni kotaete)",
+  "titlePt": "Expectativas: \"Em resposta a / Atendendo a...\"",
+  "jlpt": "N3",
+  "category": "Resposta & Expectativa",
+  "formationFormula": "[Substantivo (expectativa, pedido, torcida)] + にこたえて",
+  "explanationPt": "Alguém recebe um pedido, esperança ou incentivo do público, e age para satisfazer esse desejo.",
+  "keyRulePt": "Frequente em linguagem jornalística ou anúncios (ex: Atendendo aos pedidos dos clientes, o produto voltou).",
+  "examples": [
+    {
+      "jp": "ファンの期待にこたえて、彼は素晴らしいプレーを見せた。",
+      "reading": "ファン の きたい に こたえて、かれ は すばらしい プレー を みせた。",
+      "romaji": "Fan no kitai ni kotaete, kare wa subarashii puree o miseta.",
+      "meaningPt": "Em resposta (atendendo) às expectativas dos fãs, ele mostrou uma jogada maravilhosa."
+    }
+  ]
+},
+
   // --- LOTE BLINDAGEM N3 ---
   {
   "id": "g_n3_bulk_1789473293556_1",
