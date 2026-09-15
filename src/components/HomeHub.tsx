@@ -53,6 +53,11 @@ const JAPANESE_TIPS = [
 
 const CHANGELOG = [
   {
+    date: '15 Set 2026',
+    title: 'Blindagem do N3 e Expansão Massiva do N2 🚀🛡️',
+    desc: 'Os níveis N3 e N2 atingiram um novo patamar! No N2, fizemos uma "Limpeza Cirúrgica" desmembrando tópicos confusos e injetamos dezenas de regras gramaticais e vocabulários cruciais (Verbos compostos e Termos abstratos). Além disso, blindamos o N3 com 10 estruturas vitais focadas em Interpretação de Texto (Dokkai). O banco de dados agora está um verdadeiro tanque de guerra para o JLPT!',
+  },
+  {
     date: '14 Set 2026',
     title: 'Super Auditoria e Expansão (N5 ao N3) 📚✨',
     desc: 'O conteúdo de estudos do aplicativo passou por uma revisão e expansão profundas! No N5 e N4, dividimos dezenas de lições gramaticais super densas (como os "4 tipos de SE" e as regras de "Dar e Receber") em tópicos menores e mais didáticos. No N3, injetamos mais de 20 estruturas gramaticais essenciais que faltavam, além de adicionar quase 50 novas palavras de Vocabulário N3 (Verbos, Adjetivos e Advérbios muito cobrados nas provas). O app está blindado para o JLPT!',
