@@ -1,6 +1,680 @@
 import { VocabItem } from '../types';
 
 export const VOCAB_N3: VocabItem[] = [
+  // --- 2 LOTES MASSIVOS DE ENCERRAMENTO N3 ---
+  {
+  "word": "燃える",
+  "reading": "もえる",
+  "romaji": "moeru",
+  "meaningPt": "queimar, pegar fogo",
+  "category": "verbo_ichidan",
+  "jlpt": "N3",
+  "categoryLabelPt": "Verbo",
+  "exampleSentence": {
+    "jp": "家が燃えている。",
+    "reading": "いえ が もえている。",
+    "romaji": "ie ga moete iru.",
+    "meaningPt": "A casa está pegando fogo."
+  },
+  "id": "v3_finalbulk_1789474244258_0"
+},
+{
+  "word": "乾く",
+  "reading": "かわく",
+  "romaji": "kawaku",
+  "meaningPt": "secar (roupa, ar)",
+  "category": "verbo_godan",
+  "jlpt": "N3",
+  "categoryLabelPt": "Verbo",
+  "exampleSentence": {
+    "jp": "洗濯物が乾いた。",
+    "reading": "せんたくもの が かわいた。",
+    "romaji": "sentakumono ga kawaita.",
+    "meaningPt": "A roupa lavada secou."
+  },
+  "id": "v3_finalbulk_1789474244258_1"
+},
+{
+  "word": "冷める",
+  "reading": "さめる",
+  "romaji": "sameru",
+  "meaningPt": "esfriar (comida, paixão)",
+  "category": "verbo_ichidan",
+  "jlpt": "N3",
+  "categoryLabelPt": "Verbo",
+  "exampleSentence": {
+    "jp": "スープが冷めないうちに飲んで。",
+    "reading": "スープ が さめない うち に のんで。",
+    "romaji": "suupu ga samenai uchi ni nonde.",
+    "meaningPt": "Tome a sopa antes que esfrie."
+  },
+  "id": "v3_finalbulk_1789474244258_2"
+},
+{
+  "word": "焦げる",
+  "reading": "こげる",
+  "romaji": "kogeru",
+  "meaningPt": "queimar, chamuscar (comida)",
+  "category": "verbo_ichidan",
+  "jlpt": "N3",
+  "categoryLabelPt": "Verbo",
+  "exampleSentence": {
+    "jp": "魚が真っ黒に焦げた。",
+    "reading": "さかな が まっくろ に こげた。",
+    "romaji": "sakana ga makkuro ni kogeta.",
+    "meaningPt": "O peixe queimou até ficar preto."
+  },
+  "id": "v3_finalbulk_1789474244258_3"
+},
+{
+  "word": "余る",
+  "reading": "あまる",
+  "romaji": "amaru",
+  "meaningPt": "sobrar, restar (em excesso)",
+  "category": "verbo_godan",
+  "jlpt": "N3",
+  "categoryLabelPt": "Verbo",
+  "exampleSentence": {
+    "jp": "ご飯が余ってしまった。",
+    "reading": "ごはん が あまって しまった。",
+    "romaji": "gohan ga amatte shimatta.",
+    "meaningPt": "Acabou sobrando arroz."
+  },
+  "id": "v3_finalbulk_1789474244258_4"
+},
+{
+  "word": "間に合う",
+  "reading": "まにあう",
+  "romaji": "ma ni au",
+  "meaningPt": "chegar a tempo, dar tempo",
+  "category": "verbo_godan",
+  "jlpt": "N3",
+  "categoryLabelPt": "Verbo",
+  "exampleSentence": {
+    "jp": "電車に間に合った。",
+    "reading": "でんしゃ に まにあった。",
+    "romaji": "densha ni ma ni atta.",
+    "meaningPt": "Cheguei a tempo para o trem."
+  },
+  "id": "v3_finalbulk_1789474244258_5"
+},
+{
+  "word": "渋滞",
+  "reading": "じゅうたい",
+  "romaji": "juutai",
+  "meaningPt": "engarrafamento, trânsito lento",
+  "category": "substantivo",
+  "jlpt": "N3",
+  "categoryLabelPt": "Transporte",
+  "exampleSentence": {
+    "jp": "事故で道が渋滞している。",
+    "reading": "じこ で みち が じゅうたい している。",
+    "romaji": "jiko de michi ga juutai shite iru.",
+    "meaningPt": "A estrada está engarrafada devido a um acidente."
+  },
+  "id": "v3_finalbulk_1789474244258_6"
+},
+{
+  "word": "往復",
+  "reading": "おうふく",
+  "romaji": "oufuku",
+  "meaningPt": "ida e volta",
+  "category": "substantivo",
+  "jlpt": "N3",
+  "categoryLabelPt": "Transporte",
+  "exampleSentence": {
+    "jp": "東京まで往復の切符を買う。",
+    "reading": "とうきょう まで おうふく の きっぷ を かう。",
+    "romaji": "toukyou made oufuku no kippu o kau.",
+    "meaningPt": "Comprar uma passagem de ida e volta para Tóquio."
+  },
+  "id": "v3_finalbulk_1789474244258_7"
+},
+{
+  "word": "片道",
+  "reading": "かたみち",
+  "romaji": "katamichi",
+  "meaningPt": "apenas ida (ou apenas volta)",
+  "category": "substantivo",
+  "jlpt": "N3",
+  "categoryLabelPt": "Transporte",
+  "exampleSentence": {
+    "jp": "片道切符をお願いします。",
+    "reading": "かたみち きっぷ を おねがいします。",
+    "romaji": "katamichi kippu o onegaishimasu.",
+    "meaningPt": "Uma passagem só de ida, por favor."
+  },
+  "id": "v3_finalbulk_1789474244258_8"
+},
+{
+  "word": "定期券",
+  "reading": "ていきけん",
+  "romaji": "teikiken",
+  "meaningPt": "passe de transporte (mensal/anual)",
+  "category": "substantivo",
+  "jlpt": "N3",
+  "categoryLabelPt": "Transporte",
+  "exampleSentence": {
+    "jp": "定期券を落としてしまった。",
+    "reading": "ていきけん を おとして しまった。",
+    "romaji": "teikiken o otoshite shimatta.",
+    "meaningPt": "Acabei derrubando meu passe de transporte."
+  },
+  "id": "v3_finalbulk_1789474244258_9"
+},
+{
+  "word": "改札",
+  "reading": "かいさつ",
+  "romaji": "kaisatsu",
+  "meaningPt": "catraca (de estação de trem)",
+  "category": "substantivo",
+  "jlpt": "N3",
+  "categoryLabelPt": "Transporte",
+  "exampleSentence": {
+    "jp": "改札口で待ち合わせましょう。",
+    "reading": "かいさつぐち で まちあわせましょう。",
+    "romaji": "kaisatsuguchi de machiawasemashou.",
+    "meaningPt": "Vamos nos encontrar na catraca da estação."
+  },
+  "id": "v3_finalbulk_1789474244258_10"
+},
+{
+  "word": "踏切",
+  "reading": "ふみきり",
+  "romaji": "fumikiri",
+  "meaningPt": "cruzamento de trem",
+  "category": "substantivo",
+  "jlpt": "N3",
+  "categoryLabelPt": "Transporte",
+  "exampleSentence": {
+    "jp": "踏切で電車を待つ。",
+    "reading": "ふみきり で でんしゃ を まつ。",
+    "romaji": "fumikiri de densha o matsu.",
+    "meaningPt": "Esperar o trem no cruzamento."
+  },
+  "id": "v3_finalbulk_1789474244258_11"
+},
+{
+  "word": "通過する",
+  "reading": "つうかする",
+  "romaji": "tsuuka suru",
+  "meaningPt": "passar por (sem parar)",
+  "category": "verbo_irregular",
+  "jlpt": "N3",
+  "categoryLabelPt": "Transporte / Verbo Irregular",
+  "exampleSentence": {
+    "jp": "この電車は次の駅を通過します。",
+    "reading": "この でんしゃ は つぎ の えき を つうか します。",
+    "romaji": "kono densha wa tsugi no eki o tsuuka shimasu.",
+    "meaningPt": "Este trem passará direto pela próxima estação."
+  },
+  "id": "v3_finalbulk_1789474244258_12"
+},
+{
+  "word": "混雑する",
+  "reading": "こんざつする",
+  "romaji": "konzatsu suru",
+  "meaningPt": "ficar lotado / congestionado",
+  "category": "verbo_irregular",
+  "jlpt": "N3",
+  "categoryLabelPt": "Transporte / Verbo Irregular",
+  "exampleSentence": {
+    "jp": "朝の電車はとても混雑している。",
+    "reading": "あさ の でんしゃ は とても こんざつ している。",
+    "romaji": "asa no densha wa totemo konzatsu shite iru.",
+    "meaningPt": "O trem da manhã está muito lotado."
+  },
+  "id": "v3_finalbulk_1789474244258_13"
+},
+{
+  "word": "毛布",
+  "reading": "もうふ",
+  "romaji": "moufu",
+  "meaningPt": "cobertor, manta",
+  "category": "substantivo",
+  "jlpt": "N3",
+  "categoryLabelPt": "Casa",
+  "exampleSentence": {
+    "jp": "寒いから毛布を出して。",
+    "reading": "さむい から もうふ を だして。",
+    "romaji": "samui kara moufu o dashite.",
+    "meaningPt": "Está frio, então pegue o cobertor."
+  },
+  "id": "v3_finalbulk_1789474244258_14"
+},
+{
+  "word": "水筒",
+  "reading": "すいとう",
+  "romaji": "suitou",
+  "meaningPt": "garrafa térmica, cantil",
+  "category": "substantivo",
+  "jlpt": "N3",
+  "categoryLabelPt": "Dia a Dia",
+  "exampleSentence": {
+    "jp": "学校に水筒を持って行く。",
+    "reading": "がっこう に すいとう を もって いく。",
+    "romaji": "gakkou ni suitou o motte iku.",
+    "meaningPt": "Levar a garrafa térmica para a escola."
+  },
+  "id": "v3_finalbulk_1789474244258_15"
+},
+{
+  "word": "絨毯",
+  "reading": "じゅうたん",
+  "romaji": "juutan",
+  "meaningPt": "tapete, carpete",
+  "category": "substantivo",
+  "jlpt": "N3",
+  "categoryLabelPt": "Casa",
+  "exampleSentence": {
+    "jp": "部屋に新しい絨毯を敷いた。",
+    "reading": "へや に あたらしい じゅうたん を しいた。",
+    "romaji": "heya ni atarashii juutan o shiita.",
+    "meaningPt": "Estendi um tapete novo no quarto."
+  },
+  "id": "v3_finalbulk_1789474244258_16"
+},
+{
+  "word": "家具",
+  "reading": "かぐ",
+  "romaji": "kagu",
+  "meaningPt": "móveis, mobília",
+  "category": "substantivo",
+  "jlpt": "N3",
+  "categoryLabelPt": "Casa",
+  "exampleSentence": {
+    "jp": "ニトリで家具を買う。",
+    "reading": "ニトリ で かぐ を かう。",
+    "romaji": "Nitori de kagu o kau.",
+    "meaningPt": "Comprar móveis na loja Nitori."
+  },
+  "id": "v3_finalbulk_1789474244258_17"
+},
+{
+  "word": "家事",
+  "reading": "かじ",
+  "romaji": "kaji",
+  "meaningPt": "tarefas domésticas",
+  "category": "substantivo",
+  "jlpt": "N3",
+  "categoryLabelPt": "Dia a Dia",
+  "exampleSentence": {
+    "jp": "休日は家事を手伝う。",
+    "reading": "きゅうじつ は かじ を てつだう。",
+    "romaji": "kyuujitsu wa kaji o tetsudau.",
+    "meaningPt": "Ajudar nas tarefas domésticas nos dias de folga."
+  },
+  "id": "v3_finalbulk_1789474244258_18"
+},
+{
+  "word": "割引",
+  "reading": "わりびき",
+  "romaji": "waribiki",
+  "meaningPt": "desconto",
+  "category": "substantivo",
+  "jlpt": "N3",
+  "categoryLabelPt": "Compras",
+  "exampleSentence": {
+    "jp": "学生割引がありますか。",
+    "reading": "がくせい わりびき が あります か。",
+    "romaji": "gakusei waribiki ga arimasu ka.",
+    "meaningPt": "Vocês têm desconto para estudantes?"
+  },
+  "id": "v3_finalbulk_1789474244258_19"
+},
+{
+  "word": "半額",
+  "reading": "はんがく",
+  "romaji": "hangaku",
+  "meaningPt": "metade do preço",
+  "category": "substantivo",
+  "jlpt": "N3",
+  "categoryLabelPt": "Compras",
+  "exampleSentence": {
+    "jp": "お弁当が半額になっている。",
+    "reading": "おべんとう が はんがく に なっている。",
+    "romaji": "obentou ga hangaku ni natte iru.",
+    "meaningPt": "A marmita está pela metade do preço."
+  },
+  "id": "v3_finalbulk_1789474244258_20"
+},
+{
+  "word": "返品",
+  "reading": "へんぴん",
+  "romaji": "henpin",
+  "meaningPt": "devolução (de mercadoria)",
+  "category": "substantivo",
+  "jlpt": "N3",
+  "categoryLabelPt": "Compras",
+  "exampleSentence": {
+    "jp": "不良品を返品する。",
+    "reading": "ふりょうひん を へんぴんする。",
+    "romaji": "furyouhin o henpin suru.",
+    "meaningPt": "Devolver um produto com defeito."
+  },
+  "id": "v3_finalbulk_1789474244258_21"
+},
+{
+  "word": "現金",
+  "reading": "げんきん",
+  "romaji": "genkin",
+  "meaningPt": "dinheiro em espécie",
+  "category": "substantivo",
+  "jlpt": "N3",
+  "categoryLabelPt": "Compras",
+  "exampleSentence": {
+    "jp": "現金で払います。",
+    "reading": "げんきん で はらいます。",
+    "romaji": "genkin de haraimasu.",
+    "meaningPt": "Vou pagar em dinheiro vivo."
+  },
+  "id": "v3_finalbulk_1789474244258_22"
+},
+{
+  "word": "ぎりぎり",
+  "reading": "ぎりぎり",
+  "romaji": "girigiri",
+  "meaningPt": "no limite, por um triz",
+  "category": "adverbio",
+  "jlpt": "N3",
+  "categoryLabelPt": "Onomatopeia",
+  "exampleSentence": {
+    "jp": "電車にぎりぎり間に合った。",
+    "reading": "でんしゃ に ぎりぎり まにあった。",
+    "romaji": "densha ni girigiri ma ni atta.",
+    "meaningPt": "Cheguei a tempo para o trem por um triz."
+  },
+  "id": "v3_finalbulk_1789474244258_23"
+},
+{
+  "word": "ぺらぺら",
+  "reading": "ぺらぺら",
+  "romaji": "perapera",
+  "meaningPt": "fluente (falar um idioma), papel fino",
+  "category": "adverbio",
+  "jlpt": "N3",
+  "categoryLabelPt": "Onomatopeia",
+  "exampleSentence": {
+    "jp": "彼女は英語がぺらぺらだ。",
+    "reading": "かのじょ は えいご が ぺらぺら だ。",
+    "romaji": "kanojo wa eigo ga perapera da.",
+    "meaningPt": "Ela é fluente em inglês."
+  },
+  "id": "v3_finalbulk_1789474244258_24"
+},
+{
+  "word": "ぼろぼろ",
+  "reading": "ぼろぼろ",
+  "romaji": "boroboro",
+  "meaningPt": "desgastado, em pedaços (roupa, objeto, mente)",
+  "category": "adverbio",
+  "jlpt": "N3",
+  "categoryLabelPt": "Onomatopeia",
+  "exampleSentence": {
+    "jp": "この靴はもうぼろぼろだ。",
+    "reading": "この くつ は もう ぼろぼろ だ。",
+    "romaji": "kono kutsu wa mou boroboro da.",
+    "meaningPt": "Este sapato já está caindo aos pedaços."
+  },
+  "id": "v3_finalbulk_1789474244258_25"
+},
+{
+  "word": "わくわく",
+  "reading": "わくわく",
+  "romaji": "wakuwaku",
+  "meaningPt": "animado, empolgado (com expectativa)",
+  "category": "adverbio",
+  "jlpt": "N3",
+  "categoryLabelPt": "Onomatopeia",
+  "exampleSentence": {
+    "jp": "明日の旅行を考えると、わくわくする。",
+    "reading": "あした の りょこう を かんがえる と、わくわく する。",
+    "romaji": "ashita no ryokou o kangaeru to, wakuwaku suru.",
+    "meaningPt": "Quando penso na viagem de amanhã, fico empolgado."
+  },
+  "id": "v3_finalbulk_1789474244258_26"
+},
+{
+  "word": "うろうろ",
+  "reading": "うろうろ",
+  "romaji": "urouro",
+  "meaningPt": "vagando, andando sem rumo",
+  "category": "adverbio",
+  "jlpt": "N3",
+  "categoryLabelPt": "Onomatopeia",
+  "exampleSentence": {
+    "jp": "怪しい男が家の前をうろうろしている。",
+    "reading": "あやしい おとこ が いえ の まえ を うろうろ している。",
+    "romaji": "ayashii otoko ga ie no mae o urouro shite iru.",
+    "meaningPt": "Um homem suspeito está vagando na frente de casa."
+  },
+  "id": "v3_finalbulk_1789474244258_27"
+},
+{
+  "word": "ぐっすり",
+  "reading": "ぐっすり",
+  "romaji": "gussuri",
+  "meaningPt": "dormir profundamente",
+  "category": "adverbio",
+  "jlpt": "N3",
+  "categoryLabelPt": "Onomatopeia",
+  "exampleSentence": {
+    "jp": "昨夜はぐっすり眠れました。",
+    "reading": "さくや は ぐっすり ねむれました。",
+    "romaji": "sakuya wa gussuri nemuremashita.",
+    "meaningPt": "Ontem à noite consegui dormir profundamente."
+  },
+  "id": "v3_finalbulk_1789474244258_28"
+},
+{
+  "word": "親友",
+  "reading": "しんゆう",
+  "romaji": "shinyuu",
+  "meaningPt": "melhor amigo",
+  "category": "substantivo",
+  "jlpt": "N3",
+  "categoryLabelPt": "Relacionamento",
+  "exampleSentence": {
+    "jp": "彼女は私の親友です。",
+    "reading": "かのじょ は わたし の しんゆう です。",
+    "romaji": "kanojo wa watashi no shinyuu desu.",
+    "meaningPt": "Ela é minha melhor amiga."
+  },
+  "id": "v3_finalbulk_1789474244258_29"
+},
+{
+  "word": "仲良し",
+  "reading": "なかよし",
+  "romaji": "nakayoshi",
+  "meaningPt": "amigos íntimos, pessoas que se dão bem",
+  "category": "substantivo",
+  "jlpt": "N3",
+  "categoryLabelPt": "Relacionamento",
+  "exampleSentence": {
+    "jp": "私たちは子供の頃から仲良しだ。",
+    "reading": "わたし たち は こども の ころ から なかよし だ。",
+    "romaji": "watashi tachi wa kodomo no koro kara nakayoshi da.",
+    "meaningPt": "Nós somos muito amigos desde a infância."
+  },
+  "id": "v3_finalbulk_1789474244258_30"
+},
+{
+  "word": "恋人",
+  "reading": "こいびと",
+  "romaji": "koibito",
+  "meaningPt": "namorado(a), amante",
+  "category": "substantivo",
+  "jlpt": "N3",
+  "categoryLabelPt": "Relacionamento",
+  "exampleSentence": {
+    "jp": "恋人と映画を見に行く。",
+    "reading": "こいびと と えいが を み に いく。",
+    "romaji": "koibito to eiga o mi ni iku.",
+    "meaningPt": "Vou ver um filme com a minha namorada."
+  },
+  "id": "v3_finalbulk_1789474244258_31"
+},
+{
+  "word": "同僚",
+  "reading": "どうりょう",
+  "romaji": "douryou",
+  "meaningPt": "colega de trabalho",
+  "category": "substantivo",
+  "jlpt": "N3",
+  "categoryLabelPt": "Relacionamento",
+  "exampleSentence": {
+    "jp": "会社の同僚と飲みに行く。",
+    "reading": "かいしゃ の どうりょう と のみ に いく。",
+    "romaji": "kaisha no douryou to nomi ni iku.",
+    "meaningPt": "Vou beber com os colegas de trabalho."
+  },
+  "id": "v3_finalbulk_1789474244258_32"
+},
+{
+  "word": "相手",
+  "reading": "あいて",
+  "romaji": "aite",
+  "meaningPt": "parceiro, adversário, a outra pessoa",
+  "category": "substantivo",
+  "jlpt": "N3",
+  "categoryLabelPt": "Relacionamento",
+  "exampleSentence": {
+    "jp": "結婚の相手を探している。",
+    "reading": "けっこん の あいて を さがしている。",
+    "romaji": "kekkon no aite o sagashite iru.",
+    "meaningPt": "Estou procurando um parceiro para casamento."
+  },
+  "id": "v3_finalbulk_1789474244258_33"
+},
+{
+  "word": "共通",
+  "reading": "きょうつう",
+  "romaji": "kyoutsuu",
+  "meaningPt": "comum (algo em comum)",
+  "category": "substantivo",
+  "jlpt": "N3",
+  "categoryLabelPt": "Relacionamento",
+  "exampleSentence": {
+    "jp": "二人に共通の趣味がある。",
+    "reading": "ふたり に きょうつう の しゅみ が ある。",
+    "romaji": "futari ni kyoutsuu no shumi ga aru.",
+    "meaningPt": "Os dois têm um hobby em comum."
+  },
+  "id": "v3_finalbulk_1789474244258_34"
+},
+{
+  "word": "嵐",
+  "reading": "あらし",
+  "romaji": "arashi",
+  "meaningPt": "tempestade",
+  "category": "substantivo",
+  "jlpt": "N3",
+  "categoryLabelPt": "Natureza",
+  "exampleSentence": {
+    "jp": "ひどい嵐で木が倒れた。",
+    "reading": "ひどい あらし で き が たおれた。",
+    "romaji": "hidoi arashi de ki ga taoreta.",
+    "meaningPt": "A árvore caiu devido a uma terrível tempestade."
+  },
+  "id": "v3_finalbulk_1789474244258_35"
+},
+{
+  "word": "雷",
+  "reading": "かみなり",
+  "romaji": "kaminari",
+  "meaningPt": "trovão, raio",
+  "category": "substantivo",
+  "jlpt": "N3",
+  "categoryLabelPt": "Natureza",
+  "exampleSentence": {
+    "jp": "雷が鳴っている。",
+    "reading": "かみなり が なっている。",
+    "romaji": "kaminari ga natte iru.",
+    "meaningPt": "Os trovões estão roncando."
+  },
+  "id": "v3_finalbulk_1789474244258_36"
+},
+{
+  "word": "虹",
+  "reading": "にじ",
+  "romaji": "niji",
+  "meaningPt": "arco-íris",
+  "category": "substantivo",
+  "jlpt": "N3",
+  "categoryLabelPt": "Natureza",
+  "exampleSentence": {
+    "jp": "空にきれいな虹が出た。",
+    "reading": "そら に きれいな にじ が でた。",
+    "romaji": "sora ni kireina niji ga deta.",
+    "meaningPt": "Apareceu um lindo arco-íris no céu."
+  },
+  "id": "v3_finalbulk_1789474244258_37"
+},
+{
+  "word": "霧",
+  "reading": "きり",
+  "romaji": "kiri",
+  "meaningPt": "neblina, nevoeiro",
+  "category": "substantivo",
+  "jlpt": "N3",
+  "categoryLabelPt": "Natureza",
+  "exampleSentence": {
+    "jp": "霧が濃くて前が見えない。",
+    "reading": "きり が こくて まえ が みえない。",
+    "romaji": "kiri ga kokute mae ga mienai.",
+    "meaningPt": "A neblina está espessa e não consigo ver à frente."
+  },
+  "id": "v3_finalbulk_1789474244258_38"
+},
+{
+  "word": "太陽",
+  "reading": "たいよう",
+  "romaji": "taiyou",
+  "meaningPt": "sol",
+  "category": "substantivo",
+  "jlpt": "N3",
+  "categoryLabelPt": "Natureza",
+  "exampleSentence": {
+    "jp": "太陽が東から昇る。",
+    "reading": "たいよう が ひがし から のぼる。",
+    "romaji": "taiyou ga higashi kara noboru.",
+    "meaningPt": "O sol nasce no leste."
+  },
+  "id": "v3_finalbulk_1789474244258_39"
+},
+{
+  "word": "地球",
+  "reading": "ちきゅう",
+  "romaji": "chikyuu",
+  "meaningPt": "planeta Terra",
+  "category": "substantivo",
+  "jlpt": "N3",
+  "categoryLabelPt": "Natureza",
+  "exampleSentence": {
+    "jp": "地球は青かった。",
+    "reading": "ちきゅう は あおかった。",
+    "romaji": "chikyuu wa aokatta.",
+    "meaningPt": "A Terra era azul."
+  },
+  "id": "v3_finalbulk_1789474244258_40"
+},
+{
+  "word": "宇宙",
+  "reading": "うちゅう",
+  "romaji": "uchuu",
+  "meaningPt": "espaço, universo",
+  "category": "substantivo",
+  "jlpt": "N3",
+  "categoryLabelPt": "Natureza",
+  "exampleSentence": {
+    "jp": "宇宙旅行に行ってみたい。",
+    "reading": "うちゅう りょこう に いって みたい。",
+    "romaji": "uchuu ryokou ni itte mitai.",
+    "meaningPt": "Queria tentar ir em uma viagem espacial."
+  },
+  "id": "v3_finalbulk_1789474244258_41"
+},
+
   {
     id: 'n3_verb_batch1_1787461292339_0',
     word: '明ける',
