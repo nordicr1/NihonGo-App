@@ -1,6 +1,163 @@
 import { GrammarItem } from '../types';
 
 export const GRAMMAR_N2_N1: GrammarItem[] = [
+  // --- LOTE 1 (Injetado) ---
+  {
+  "id": "g_n2_batch1_1789472794800_1",
+  "pattern": "〜うちに (~uchi ni)",
+  "titlePt": "Janela de Oportunidade: \"Enquanto... / Antes que...\"",
+  "jlpt": "N2",
+  "category": "Tempo & Condição",
+  "formationFormula": "[Verbo Dicionário / Nai / Te-iru] + うちに | [Adj-I] + うちに | [Adj-Na] + なうちに | [Subst] + のうちに",
+  "explanationPt": "Significa aproveitar um período onde uma condição se mantém para fazer algo, porque depois a situação vai mudar e ficará difícil. Também significa \"enquanto fazia X, uma mudança natural aconteceu\".",
+  "keyRulePt": "Na afirmativa traduz-se como \"enquanto\". Na negativa (nai uchi ni) traduz-se como \"antes que (ex: chova)\".",
+  "examples": [
+    {
+      "jp": "温かいうちに、召し上がってください。",
+      "reading": "あたたかい うち に、めしあがって ください。",
+      "romaji": "Atatakai uchi ni, meshiagatte kudasai.",
+      "meaningPt": "Por favor, sirva-se enquanto está quente."
+    },
+    {
+      "jp": "雨が降らないうちに帰りましょう。",
+      "reading": "あめ が ふらない うち に かえりましょう。",
+      "romaji": "Ame ga furanai uchi ni kaerimashou.",
+      "meaningPt": "Vamos voltar antes que comece a chover."
+    }
+  ]
+},
+{
+  "id": "g_n2_batch1_1789472794800_2",
+  "pattern": "〜際（に） (~sai (ni))",
+  "titlePt": "Ocasião Formal: \"No momento de / Na ocasião de...\"",
+  "jlpt": "N2",
+  "category": "Tempo & Ocasião",
+  "formationFormula": "[Verbo Dicionário / Ta] + 際(に) | [Subst] + の際(に)",
+  "explanationPt": "Uma forma extremamente polida e rígida (usada em anúncios, manuais e negócios) para dizer \"quando\" ou \"no momento de\". É a versão formal de 〜とき.",
+  "keyRulePt": "Não se usa no dia a dia com amigos. Apenas em situações públicas ou comerciais.",
+  "examples": [
+    {
+      "jp": "帰国の際、空港でパスポートを落としてしまった。",
+      "reading": "きこく の さい、くうこう で パスポート を おとして しまった。",
+      "romaji": "Kikoku no sai, kuukou de pasupooto o otoshite shimatta.",
+      "meaningPt": "Na ocasião de voltar ao meu país, acabei derrubando o passaporte no aeroporto."
+    }
+  ]
+},
+{
+  "id": "g_n2_batch1_1789472794800_3",
+  "pattern": "〜に先立って (~ni sakidatte)",
+  "titlePt": "Precedência: \"Antes de / Em preparação a...\"",
+  "jlpt": "N2",
+  "category": "Tempo & Ordem",
+  "formationFormula": "[Substantivo / Verbo Dicionário + の] + に先立って",
+  "explanationPt": "Significa \"Antes que o evento principal (B) aconteça, faremos (A) como preparação ou preliminar\".",
+  "keyRulePt": "Muitas vezes usado em inaugurações, eventos públicos e preparativos oficiais.",
+  "examples": [
+    {
+      "jp": "新製品の発売に先立って、説明会が開かれた。",
+      "reading": "しんせいひん の はつばい に さきだって、せつめいかい が ひらかれた。",
+      "romaji": "Shinseihin no hatsubai ni sakidatte, setsumeikai ga hirakareta.",
+      "meaningPt": "Antes (em preparação) ao lançamento do novo produto, uma reunião explicativa foi realizada."
+    }
+  ]
+},
+{
+  "id": "g_n2_batch1_1789472794800_4",
+  "pattern": "〜て以来 (~te irai)",
+  "titlePt": "Continuidade desde o passado: \"Desde que (fez X)...\"",
+  "jlpt": "N2",
+  "category": "Tempo & Continuidade",
+  "formationFormula": "[Verbo Forma Te] + 以来",
+  "explanationPt": "Significa \"Desde o exato momento em que fiz X, o estado das coisas continua exatamente igual até agora, sem interrupção\".",
+  "keyRulePt": "A ação principal já acabou no passado, mas o RESULTADO se manteve contínuo. Não pode ser usado para coisas que acabaram de acontecer (ex: desde ontem).",
+  "examples": [
+    {
+      "jp": "日本に来て以来、一度も国へ帰っていない。",
+      "reading": "にほん に きて いらい、いちど も くに へ かえっていない。",
+      "romaji": "Nihon ni kite irai, ichido mo kuni e kaette inai.",
+      "meaningPt": "Desde que vim para o Japão, não voltei ao meu país nenhuma vez."
+    }
+  ]
+},
+{
+  "id": "g_n2_batch1_1789472794800_5",
+  "pattern": "〜一方だ (~ippou da)",
+  "titlePt": "Tendência Unidirecional: \"Cada vez mais / Só faz (piorar)...\"",
+  "jlpt": "N2",
+  "category": "Tendência",
+  "formationFormula": "[Verbo Dicionário de mudança (ex: 減る, 増える, 悪化する)] + 一方だ",
+  "explanationPt": "Indica que uma mudança está avançando constantemente em uma única direção, sem sinais de parada.",
+  "keyRulePt": "Quase sempre tem conotação negativa (ex: as coisas só pioram, os preços só sobem).",
+  "examples": [
+    {
+      "jp": "祖母の病気は悪くなる一方だ。",
+      "reading": "そぼ の びょうき は わるくなる いっぽう だ。",
+      "romaji": "Sobo no byouki wa warukunaru ippou da.",
+      "meaningPt": "A doença da minha avó só faz piorar (está piorando cada vez mais)."
+    }
+  ]
+},
+{
+  "id": "g_n2_batch1_1789472794800_6",
+  "pattern": "〜しかない / 〜ほかない (~shika nai / ~hoka nai)",
+  "titlePt": "Último Recurso: \"Não há outra escolha senão...\"",
+  "jlpt": "N2",
+  "category": "Falta de Opção",
+  "formationFormula": "[Verbo Dicionário] + しかない / ほか(は)ない",
+  "explanationPt": "Significa \"não existe nenhuma outra opção a não ser fazer isso\". Revela a desistência ou aceitação forçada de um caminho.",
+  "keyRulePt": "〜よりほかない (yori hoka nai) também é uma variação ainda mais formal com o mesmo sentido.",
+  "examples": [
+    {
+      "jp": "電車がないので、歩いて帰るしかない。",
+      "reading": "でんしゃ が ない ので、あるいて かえる しかない。",
+      "romaji": "Densha ga nai node, aruite kaeru shika nai.",
+      "meaningPt": "Como não há trem, não tenho outra escolha a não ser voltar a pé."
+    }
+  ]
+},
+{
+  "id": "g_n2_batch1_1789472794800_7",
+  "pattern": "〜からいうと / 〜からすると (~kara iu to / ~kara suru to)",
+  "titlePt": "Ponto de Julgamento: \"Do ponto de vista de / A julgar por...\"",
+  "jlpt": "N2",
+  "category": "Perspectiva",
+  "formationFormula": "[Substantivo] + からいうと / からすると / からすれば",
+  "explanationPt": "O falante usa um fator específico (um dado, uma posição, uma evidência) como base para emitir uma dedução ou opinião.",
+  "keyRulePt": "Equivale a analisar algo partindo de uma perspectiva definida. Ex: \"Do ponto de vista da habilidade, ele passa, mas da atitude, não\".",
+  "examples": [
+    {
+      "jp": "現状からすると、このプロジェクトの成功は難しい。",
+      "reading": "げんじょう から すると、この プロジェクト の せいこう は むずかしい。",
+      "romaji": "Genjou kara suru to, kono purojekuto no seikou wa muzukashii.",
+      "meaningPt": "A julgar pela situação atual, o sucesso deste projeto é difícil."
+    }
+  ]
+},
+{
+  "id": "g_n2_batch1_1789472794800_8",
+  "pattern": "〜向け / 〜向き (~muke / ~muki)",
+  "titlePt": "Público e Adequação: \"Direcionado para / Adequado para...\"",
+  "jlpt": "N2",
+  "category": "Alvo & Adequação",
+  "formationFormula": "[Substantivo] + 向け (muke) / 向き (muki)",
+  "explanationPt": "向け (muke) significa \"feito DE PROPÓSITO para esse alvo\". 向き (muki) significa \"caiu bem / combinou acidentalmente com esse alvo\".",
+  "keyRulePt": "Como modificador de substantivo: 向け(の) ou 向け(だ).",
+  "examples": [
+    {
+      "jp": "これは外国人向けに書かれたガイドブックです。",
+      "reading": "これ は がいこくじん むけ に かかれた ガイドブック です。",
+      "romaji": "Kore wa gaikokujin muke ni kakareta gaidobukku desu.",
+      "meaningPt": "Este é um guia turístico escrito (direcionado) especificamente para estrangeiros."
+    },
+    {
+      "jp": "この仕事は、体力がある人向きです。",
+      "reading": "この しごと は、たいりょく が ある ひと むき です。",
+      "romaji": "Kono shigoto wa, tairyoku ga aru hito muki desu.",
+      "meaningPt": "Este trabalho é adequado para pessoas que têm vigor físico."
+    }
+  ]
+},
   // ===================== N2 GRAMMAR =====================
   {
     id: 'g_n2_1',
