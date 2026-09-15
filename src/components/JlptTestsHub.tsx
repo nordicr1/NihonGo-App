@@ -3,8 +3,10 @@ import { JLPTLevel, UserStats } from '../types';
 import { Layers, HelpCircle, CheckCircle, XCircle, ArrowRight, RotateCcw, HeartCrack } from 'lucide-react';
 import { JLPT_N5_TEST, JLPTQuestion } from '../data/jlptN5TestData';
 import { JLPT_N5_GRAMMAR_TEST } from '../data/jlptN5GrammarData';
+import { JLPT_N3_TEST } from '../data/jlptN3TestData';
 
 const FULL_N5_TEST = [...JLPT_N5_TEST, ...JLPT_N5_GRAMMAR_TEST];
+const FULL_N3_TEST = [...JLPT_N3_TEST];
 
 interface JlptTestsHubProps {
   selectedJlpt: JLPTLevel;
@@ -42,8 +44,14 @@ export const JlptTestsHub: React.FC<JlptTestsHubProps> = ({
   };
 
   const prepareTest = () => {
+    // Select the appropriate test array
+    let selectedTestArr: JLPTQuestion[] = [];
+    if (selectedJlpt === 'N5') selectedTestArr = FULL_N5_TEST;
+    else if (selectedJlpt === 'N3') selectedTestArr = FULL_N3_TEST;
+    else return; // Outros níveis ainda não possuem teste
+
     // Randomize Questions
-    const shuffledQuestions = shuffleArray(FULL_N5_TEST);
+    const shuffledQuestions = shuffleArray(selectedTestArr);
     
     // Randomize Options
     const preparedQuestions = shuffledQuestions.map((q: JLPTQuestion) => {
@@ -67,15 +75,15 @@ export const JlptTestsHub: React.FC<JlptTestsHubProps> = ({
   };
 
   useEffect(() => {
-    if (selectedJlpt === 'N5') {
+    if (selectedJlpt === 'N5' || selectedJlpt === 'N3') {
       prepareTest();
+    } else {
+      setTestQuestions([]);
     }
   }, [selectedJlpt]);
 
   const resetTest = () => {
-    if (selectedJlpt === 'N5') {
-      prepareTest();
-    }
+    prepareTest();
   };
 
   const handleOptionSelect = (idx: number) => {
@@ -86,7 +94,7 @@ export const JlptTestsHub: React.FC<JlptTestsHubProps> = ({
     const question = testQuestions[currentQuestionIdx];
     if (idx === question.correctAnswer) {
       setScore(prev => prev + 1);
-      onGainXp(15, 'Acertou questão do Simulado N5!');
+      onGainXp(15, `Acertou questão do Simulado ${selectedJlpt}!`);
     } else {
       onLoseHeart();
     }
@@ -175,9 +183,7 @@ export const JlptTestsHub: React.FC<JlptTestsHubProps> = ({
                 key={level}
                 onClick={() => {
                   onSelectJlpt(level);
-                  if (level === 'N5') {
-                     // State resets on useEffect, but we can do it explicitly
-                     // Actually, if it's already N5, useEffect won't run again, so we reset manually
+                  if (level === 'N5' || level === 'N3') {
                      prepareTest();
                   }
                 }}
@@ -194,7 +200,7 @@ export const JlptTestsHub: React.FC<JlptTestsHubProps> = ({
         </div>
       </div>
 
-      {selectedJlpt === 'N5' ? (
+      {selectedJlpt === 'N5' || selectedJlpt === 'N3' ? (
         <div className="bg-white rounded-3xl p-6 sm:p-8 border border-stone-200 shadow-sm animate-fadeIn min-h-[400px]">
           {testQuestions.length === 0 ? (
             <div className="flex flex-col items-center justify-center h-full text-center space-y-4 py-20">
@@ -206,7 +212,7 @@ export const JlptTestsHub: React.FC<JlptTestsHubProps> = ({
               <div className="inline-flex items-center justify-center w-20 h-20 bg-teal-100 text-teal-600 rounded-full mb-4">
                 <CheckCircle size={40} />
               </div>
-              <h3 className="text-2xl font-black text-stone-900">Simulado N5 Concluído!</h3>
+              <h3 className="text-2xl font-black text-stone-900">Simulado {selectedJlpt} Concluído!</h3>
               <p className="text-stone-600 text-lg">Você acertou <span className="font-bold text-teal-600">{score}</span> de {testQuestions.length} questões.</p>
               
               <button 
