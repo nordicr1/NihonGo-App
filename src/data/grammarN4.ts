@@ -1,6 +1,332 @@
 import { GrammarItem } from '../types';
 
 export const GRAMMAR_N4: GrammarItem[] = [
+  // --- MEGA LOTE DE GRAMÁTICA N4 (CONDICIONAIS, CAUSATIVA, KEIGO) ---
+  {
+  "id": "g_n4_deep_1789489397905_1",
+  "pattern": "〜たら (~tara)",
+  "titlePt": "Condicional de Tempo/Ação: \"Se / Quando...\"",
+  "jlpt": "N4",
+  "category": "Condicional",
+  "formationFormula": "[Verbo na forma Ta] + ら",
+  "explanationPt": "A condicional mais segura e comum do japonês. Indica que a segunda ação só vai acontecer DEPOIS que a primeira acontecer. Muito focada na ordem do tempo (Quando isso acontecer, farei aquilo).",
+  "keyRulePt": "Pode expressar suposição no futuro (Se chover...) ou certeza de tempo (Quando chegar em casa...).",
+  "examples": [
+    {
+      "jp": "日本に着いたら、電話します。",
+      "reading": "にほん に ついたら、でんわ します。",
+      "romaji": "Nihon ni tsuitara, denwa shimasu.",
+      "meaningPt": "Quando/Se eu chegar no Japão, ligarei."
+    }
+  ]
+},
+{
+  "id": "g_n4_deep_1789489397905_2",
+  "pattern": "〜ば (~ba)",
+  "titlePt": "Condicional Lógica: \"Se... (então obrigatoriamente)\"",
+  "jlpt": "N4",
+  "category": "Condicional",
+  "formationFormula": "[Raiz Condicional do Verbo] + ば (ex: 食べれば, 行けば)",
+  "explanationPt": "Usada para condições hipotéticas e lógicas. Se a condição A for cumprida, B com certeza será verdade.",
+  "keyRulePt": "Não soa natural se a segunda parte da frase for uma ordem (coma!) ou pedido de favor (ajude!), a não ser que o verbo seja de estado (ex: estar livre).",
+  "examples": [
+    {
+      "jp": "薬を飲めば、良くなります。",
+      "reading": "くすり を のめば、よくなります。",
+      "romaji": "Kusuri o nomeba, yoku narimasu.",
+      "meaningPt": "Se você tomar o remédio, vai melhorar."
+    }
+  ]
+},
+{
+  "id": "g_n4_deep_1789489397905_3",
+  "pattern": "〜なら (~nara)",
+  "titlePt": "Condicional de Contexto: \"Se for o caso de...\"",
+  "jlpt": "N4",
+  "category": "Condicional",
+  "formationFormula": "[Forma Simples / Substantivo] + なら",
+  "explanationPt": "Você usa baseado em algo que o interlocutor acabou de dizer ou no contexto atual. Você assume a informação do outro como verdade e dá um conselho/parecer sobre aquilo.",
+  "keyRulePt": "Diferente de ~tara e ~ba, a ação principal pode acontecer ANTES da condição. Ex: \"Se vai para o Japão (no futuro), compre a passagem agora (no presente)\".",
+  "examples": [
+    {
+      "jp": "パソコンを買うなら、あの店がいいですよ。",
+      "reading": "パソコン を かう なら、あの みせ が いい です よ。",
+      "romaji": "Pasokon o kau nara, ano mise ga ii desu yo.",
+      "meaningPt": "Se (o assunto for) comprar um PC, aquela loja é a melhor."
+    }
+  ]
+},
+{
+  "id": "g_n4_deep_1789489397905_4",
+  "pattern": "〜と (~to)",
+  "titlePt": "Condicional de Consequência Inevitável: \"Toda vez que...\"",
+  "jlpt": "N4",
+  "category": "Condicional",
+  "formationFormula": "[Verbo Dicionário] + と",
+  "explanationPt": "Usado para fatos da natureza, funcionamento de máquinas, ou hábitos inquebráveis. \"Apertou o botão, a luz acende\". Não há intervenção de vontade.",
+  "keyRulePt": "NUNCA pode ser seguido de ordens, pedidos ou vontades do falante.",
+  "examples": [
+    {
+      "jp": "このボタンを押すと、水が出ます。",
+      "reading": "この ボタン を おす と、みず が でます。",
+      "romaji": "Kono botan o osu to, mizu ga demasu.",
+      "meaningPt": "Se você apertar este botão, a água sai."
+    }
+  ]
+},
+{
+  "id": "g_n4_deep_1789489397905_5",
+  "pattern": "れる / られる (Reru / Rareru)",
+  "titlePt": "Voz Passiva: \"Sofrer a ação (Fui roubado, Fui elogiado)\"",
+  "jlpt": "N4",
+  "category": "Conjugação",
+  "formationFormula": "Verbos G1: u -> a + れる (書く -> 書かれる) | G2: +られる (食べる -> 食べられる)",
+  "explanationPt": "O sujeito da frase recebe/sofre a ação, em vez de fazê-la. Muito usado no Japão para expressar que a ação do outro me causou algum dano/incômodo (Passiva de Sofrimento).",
+  "keyRulePt": "A pessoa que FEZ a ação é marcada com a partícula に (ni).",
+  "examples": [
+    {
+      "jp": "私は先生に褒められました。",
+      "reading": "わたし は せんせい に ほめられました。",
+      "romaji": "Watashi wa sensei ni homeraremashita.",
+      "meaningPt": "Eu fui elogiado pelo professor."
+    }
+  ]
+},
+{
+  "id": "g_n4_deep_1789489397905_6",
+  "pattern": "せる / させる (Seru / Saseru)",
+  "titlePt": "Voz Causativa: \"Fazer/Deixar alguém fazer algo\"",
+  "jlpt": "N4",
+  "category": "Conjugação",
+  "formationFormula": "Verbos G1: u -> a + せる (書く -> 書かせる) | G2: +させる (食べる -> 食べさせる)",
+  "explanationPt": "Significa \"forçar alguém a fazer algo\" (obrigação) ou \"permitir/deixar alguém fazer algo\" (permissão), dependendo do contexto.",
+  "keyRulePt": "Para permissão amorosa/respeitosa, costuma-se juntar com favores: させてくれる (Ele deixou eu fazer).",
+  "examples": [
+    {
+      "jp": "母は弟に部屋を掃除させた。",
+      "reading": "はは は おとうと に へや を そうじ させた。",
+      "romaji": "Haha wa otouto ni heya o souji saseta.",
+      "meaningPt": "A mãe fez (obrigou) o irmão mais novo a limpar o quarto."
+    }
+  ]
+},
+{
+  "id": "g_n4_deep_1789489397905_7",
+  "pattern": "あげる / てあげる (Ageru)",
+  "titlePt": "Fazer o bem (para fora): \"Eu dou / Faço favor para outro\"",
+  "jlpt": "N4",
+  "category": "Troca de Favores",
+  "formationFormula": "[Objeto] + を + あげる | [Verbo Te] + あげる",
+  "explanationPt": "Usado quando eu (ou alguém do meu círculo) dá algo ou faz um favor para outra pessoa. É uma ação que sai de mim e vai para fora.",
+  "keyRulePt": "Cuidado ao usar てあげる com chefes ou superiores. Soa arrogante, como \"Vou fazer o grandíssimo favor de te ajudar\".",
+  "examples": [
+    {
+      "jp": "私は友達に本を貸してあげた。",
+      "reading": "わたし は ともだち に ほん を かして あげた。",
+      "romaji": "Watashi wa tomodachi ni hon o kashite ageta.",
+      "meaningPt": "Eu (fiz o favor de) emprestar o livro para o meu amigo."
+    }
+  ]
+},
+{
+  "id": "g_n4_deep_1789489397905_8",
+  "pattern": "もらう / てもらう (Morau)",
+  "titlePt": "Receber gratidão: \"Eu recebi / Alguém fez o favor pra mim\"",
+  "jlpt": "N4",
+  "category": "Troca de Favores",
+  "formationFormula": "[Pessoa] + に + もらう | [Verbo Te] + もらう",
+  "explanationPt": "O sujeito sempre é quem RECEBE o objeto ou o favor. Mostra gratidão por ter recebido a ajuda de outra pessoa.",
+  "keyRulePt": "A frase sempre fica da perspectiva de quem recebeu: \"Eu recebi (o favor de) você me ajudar\".",
+  "examples": [
+    {
+      "jp": "私は彼にパソコンを直してもらった。",
+      "reading": "わたし は かれ に パソコン を なおして もらった。",
+      "romaji": "Watashi wa kare ni pasokon o naoshite moratta.",
+      "meaningPt": "Eu recebi (o favor de) ele consertar o PC para mim. (Ele consertou meu PC)."
+    }
+  ]
+},
+{
+  "id": "g_n4_deep_1789489397905_9",
+  "pattern": "くれる / てくれる (Kureru)",
+  "titlePt": "Ação que vem pra mim: \"Ele me deu / Fez o favor pra mim\"",
+  "jlpt": "N4",
+  "category": "Troca de Favores",
+  "formationFormula": "[Pessoa] + が + くれる | [Verbo Te] + くれる",
+  "explanationPt": "O foco muda: o sujeito da frase (marcado por が ou は) é a OUTRA pessoa, que executou a ação ou deu o presente para você (ou sua família).",
+  "keyRulePt": "Diferente de morau (Eu recebi), no kureru a frase é (Ele me deu). O resultado prático é o mesmo, mas o sujeito gramatical muda.",
+  "examples": [
+    {
+      "jp": "彼が私にパソコンを直してくれた。",
+      "reading": "かれ が わたし に パソコン を なおして くれた。",
+      "romaji": "Kare ga watashi ni pasokon o naoshite kureta.",
+      "meaningPt": "Ele consertou o PC para mim."
+    }
+  ]
+},
+{
+  "id": "g_n4_deep_1789489397905_10",
+  "pattern": "〜そう（だ） [Visual] (~Sou da)",
+  "titlePt": "Impressão Visual: \"Parece que / Tem cara de...\"",
+  "jlpt": "N4",
+  "category": "Especulação",
+  "formationFormula": "[Raiz do Verbo / Adj-I (tira I) / Adj-Na (tira Na)] + そうだ",
+  "explanationPt": "O que você deduz APENAS olhando. Você olha para uma nuvem escura e diz \"parece que vai chover\". Você olha um bolo e diz \"parece delicioso\".",
+  "keyRulePt": "Exceção famosa: O adjetivo いい (bom) vira よさそう (parece bom).",
+  "examples": [
+    {
+      "jp": "このケーキはとても美味しそうです。",
+      "reading": "この ケーキ は とても おいしそう です。",
+      "romaji": "Kono keeki wa totemo oishisou desu.",
+      "meaningPt": "Este bolo parece muito delicioso."
+    }
+  ]
+},
+{
+  "id": "g_n4_deep_1789489397905_11",
+  "pattern": "〜そう（だ） [Rumor] (~Sou da)",
+  "titlePt": "Rumor / Ouvi falar: \"Dizem que...\"",
+  "jlpt": "N4",
+  "category": "Informação Relatada",
+  "formationFormula": "[Forma Simples (Normal)] + そうだ",
+  "explanationPt": "Usado para repassar uma informação que você escutou, leu na notícia ou na previsão do tempo.",
+  "keyRulePt": "Atenção total: A pronúncia é igual à da gramática visual, mas a CONJUGAÇÃO é diferente. (美味しいそうだ = Ouvi falar que é delicioso | 美味しそうだ = Visualmente parece delicioso).",
+  "examples": [
+    {
+      "jp": "天気予報によると、明日は雨が降るそうです。",
+      "reading": "てんきよほう に よると、あした は あめ が ふる そう です。",
+      "romaji": "Tenki yohou ni yoru to, ashita wa ame ga furu sou desu.",
+      "meaningPt": "Segundo a previsão do tempo, ouvi dizer que amanhã vai chover."
+    }
+  ]
+},
+{
+  "id": "g_n4_deep_1789489397905_12",
+  "pattern": "〜かもしれない (~kamo shirenai)",
+  "titlePt": "Probabilidade de 50%: \"Pode ser que / Talvez...\"",
+  "jlpt": "N4",
+  "category": "Probabilidade",
+  "formationFormula": "[Forma Simples] + かもしれない",
+  "explanationPt": "Expressa uma dúvida ou especulação do falante com cerca de 50% de chance de ser verdade. \"Pode ser que chova, pode ser que não\".",
+  "keyRulePt": "Para Substantivos e Adjetivos-Na, retira-se o \"だ\". Ex: 雨かもしれない (Pode ser chuva).",
+  "examples": [
+    {
+      "jp": "約束の時間に遅れるかもしれません。",
+      "reading": "やくそく の じかん に おくれる かもしれません。",
+      "romaji": "Yakusoku no jikan ni okureru kamoshiremasen.",
+      "meaningPt": "Talvez eu me atrase para o horário marcado."
+    }
+  ]
+},
+{
+  "id": "g_n4_deep_1789489397905_13",
+  "pattern": "〜はずだ (~hazu da)",
+  "titlePt": "Expectativa Lógica: \"É esperado que / Com certeza...\"",
+  "jlpt": "N4",
+  "category": "Certeza Lógica",
+  "formationFormula": "[Forma Simples] + はずだ (Subst + のはず, Adj-Na + なはず)",
+  "explanationPt": "O falante tem quase 100% de certeza com base em um cálculo ou lógica indiscutível. \"Ele saiu há 2 horas, então logicamente já DEVE ter chegado\".",
+  "keyRulePt": "Não é um \"acho\". É um \"pelas lógicas e regras, tem que ser isso\".",
+  "examples": [
+    {
+      "jp": "彼はもう出発したから、もうすぐ着くはずです。",
+      "reading": "かれ は もう しゅっぱつ した から、もうすぐ つく はず です。",
+      "romaji": "Kare wa mou shuppatsu shita kara, mousugu tsuku hazu desu.",
+      "meaningPt": "Já que ele partiu, ele deve chegar (logicamente) em breve."
+    }
+  ]
+},
+{
+  "id": "g_n4_deep_1789489397905_14",
+  "pattern": "〜てしまう (~te shimau)",
+  "titlePt": "Arrependimento ou Fim: \"Fiz sem querer / Fiz por completo\"",
+  "jlpt": "N4",
+  "category": "Conclusão & Arrependimento",
+  "formationFormula": "[Verbo Te] + しまう",
+  "explanationPt": "Tem duas utilidades: 1. Terminar algo 100% por completo (Terminei de ler todo o livro). 2. Expressar arrependimento por um acidente (Quebrei o copo [ops]).",
+  "keyRulePt": "Na fala casual, てしまう vira ちゃう (chau) e でしまう vira じゃう (jau). Ex: 食べちゃった (Acabei comendo).",
+  "examples": [
+    {
+      "jp": "大切なパスポートを落としてしまいました。",
+      "reading": "たいせつな パスポート を おとして しまいました。",
+      "romaji": "Taisetsuna pasupooto o otoshite shimaimashita.",
+      "meaningPt": "Acabei (infelizmente/sem querer) derrubando e perdendo meu precioso passaporte."
+    }
+  ]
+},
+{
+  "id": "g_n4_deep_1789489397905_15",
+  "pattern": "〜ておく (~te oku)",
+  "titlePt": "Preparação: \"Fazer com antecedência\"",
+  "jlpt": "N4",
+  "category": "Ação Preparatória",
+  "formationFormula": "[Verbo Te] + おく",
+  "explanationPt": "Fazer uma ação agora para deixar algo preparado para um evento futuro. (Ex: Comprar bebida antes da festa começar).",
+  "keyRulePt": "Na fala casual (anime/manga), ておく vira とく (toku). Ex: 買っとく (Vou já comprar e deixar pronto).",
+  "examples": [
+    {
+      "jp": "友達が来る前に、部屋を掃除しておきます。",
+      "reading": "ともだち が くる まえ に、へや を そうじ して おきます。",
+      "romaji": "Tomodachi ga kuru mae ni, heya o souji shite okimasu.",
+      "meaningPt": "Antes de meus amigos chegarem, vou (antecipadamente) limpar o quarto e deixá-lo pronto."
+    }
+  ]
+},
+{
+  "id": "g_n4_deep_1789489397905_16",
+  "pattern": "〜てある (~te aru)",
+  "titlePt": "Estado Intencional: \"Estar feito (por alguém)\"",
+  "jlpt": "N4",
+  "category": "Estado Intencional",
+  "formationFormula": "[Verbo Transitivo (Te)] + ある",
+  "explanationPt": "Indica o estado atual de algo que foi feito por alguém de propósito no passado. A porta não \"está aberta (natureza)\", a porta \"foi aberta e deixada assim (por alguém)\".",
+  "keyRulePt": "Usa a partícula が com verbos transitivos (que normalmente pediriam を). Ex: カレンダーに予定が書いてある (A agenda está escrita no calendário).",
+  "examples": [
+    {
+      "jp": "黒板に字が書いてあります。",
+      "reading": "こくばん に じ が かいて あります。",
+      "romaji": "Kokuban ni ji ga kaite arimasu.",
+      "meaningPt": "As letras estão (foram) escritas na lousa."
+    }
+  ]
+},
+{
+  "id": "g_n4_deep_1789489397905_17",
+  "pattern": "尊敬語 (Sonkeigo)",
+  "titlePt": "Linguagem de Respeito (Para o Chefe/Cliente)",
+  "jlpt": "N4",
+  "category": "Keigo (Linguagem Honorífica)",
+  "formationFormula": "お + [Raiz do Verbo] + になる (ex: お帰りになる)",
+  "explanationPt": "Eleva a posição da pessoa de quem você está falando. Você SÓ usa Sonkeigo para exaltar as ações do seu cliente, chefe, ou pessoas acima.",
+  "keyRulePt": "Existem verbos especiais absolutos: 行く/来る/いる = いらっしゃる. 食べる/飲む = 召し上がる.",
+  "examples": [
+    {
+      "jp": "社長はもうお帰りになりました。",
+      "reading": "しゃちょう は もう おかえり に なりました。",
+      "romaji": "Shachou wa mou okaeri ni narimashita.",
+      "meaningPt": "O presidente já (teve a honra de) foi embora para casa."
+    }
+  ]
+},
+{
+  "id": "g_n4_deep_1789489397905_18",
+  "pattern": "謙譲語 (Kenjougo)",
+  "titlePt": "Linguagem Humilde (Para as minhas próprias ações)",
+  "jlpt": "N4",
+  "category": "Keigo (Linguagem Honorífica)",
+  "formationFormula": "お / ご + [Raiz do Verbo] + する (ex: お持ちする)",
+  "explanationPt": "Você rebaixa a si mesmo para, por tabela, elevar o status de com quem está falando. Você SÓ usa Kenjougo para AS SUAS PRÓPRIAS AÇÕES perante um superior.",
+  "keyRulePt": "Existem verbos especiais absolutos: 行く/来る = 参る. する = いたす. もらう/食べる = いただく.",
+  "examples": [
+    {
+      "jp": "私がカバンをお持ちします。",
+      "reading": "わたし が カバン を おもち します。",
+      "romaji": "Watashi ga kaban o omochi shimasu.",
+      "meaningPt": "Eu irei (humildemente) carregar a mala (para o senhor)."
+    }
+  ]
+},
+
   {
     id: 'g_n4_1',
     pattern: '〜なければならない / 〜なくてはいけない (~nakereba naranai / nakute wa ikenai)',
