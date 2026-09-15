@@ -1,6 +1,728 @@
 import { VocabItem } from '../types';
 
 export const VOCAB_N3: VocabItem[] = [
+  // --- LOTE DEFINITIVO VOCABULÁRIO N3 (TOPICS FALTANTES) ---
+  {
+  "id": "v_n3_final_1789496853210_1",
+  "word": "書類",
+  "reading": "しょるい",
+  "romaji": "shorui",
+  "meaningPt": "Documento / Papelada",
+  "jlpt": "N3",
+  "category": "substantivo",
+  "categoryLabelPt": "Geral",
+  "exampleSentence": {
+    "jp": "例文",
+    "reading": "れいぶん",
+    "romaji": "reibun",
+    "meaningPt": "Exemplo"
+  }
+},
+{
+  "id": "v_n3_final_1789496853210_2",
+  "word": "提出",
+  "reading": "ていしゅつ",
+  "romaji": "teishutsu",
+  "meaningPt": "Entrega / Submissão (de documentos)",
+  "jlpt": "N3",
+  "category": "substantivo",
+  "categoryLabelPt": "Geral",
+  "exampleSentence": {
+    "jp": "例文",
+    "reading": "れいぶん",
+    "romaji": "reibun",
+    "meaningPt": "Exemplo"
+  }
+},
+{
+  "id": "v_n3_final_1789496853210_3",
+  "word": "打ち合わせ",
+  "reading": "うちあわせ",
+  "romaji": "uchiawase",
+  "meaningPt": "Reunião de alinhamento / Preparação",
+  "jlpt": "N3",
+  "category": "substantivo",
+  "categoryLabelPt": "Geral",
+  "exampleSentence": {
+    "jp": "例文",
+    "reading": "れいぶん",
+    "romaji": "reibun",
+    "meaningPt": "Exemplo"
+  }
+},
+{
+  "id": "v_n3_final_1789496853210_4",
+  "word": "営業",
+  "reading": "えいぎょう",
+  "romaji": "eigyou",
+  "meaningPt": "Vendas / Negócios",
+  "jlpt": "N3",
+  "category": "substantivo",
+  "categoryLabelPt": "Geral",
+  "exampleSentence": {
+    "jp": "例文",
+    "reading": "れいぶん",
+    "romaji": "reibun",
+    "meaningPt": "Exemplo"
+  }
+},
+{
+  "id": "v_n3_final_1789496853210_5",
+  "word": "出張",
+  "reading": "しゅっちょう",
+  "romaji": "shucchou",
+  "meaningPt": "Viagem a negócios",
+  "jlpt": "N3",
+  "category": "substantivo",
+  "categoryLabelPt": "Geral",
+  "exampleSentence": {
+    "jp": "例文",
+    "reading": "れいぶん",
+    "romaji": "reibun",
+    "meaningPt": "Exemplo"
+  }
+},
+{
+  "id": "v_n3_final_1789496853210_6",
+  "word": "名刺",
+  "reading": "めいし",
+  "romaji": "meishi",
+  "meaningPt": "Cartão de visitas",
+  "jlpt": "N3",
+  "category": "substantivo",
+  "categoryLabelPt": "Geral",
+  "exampleSentence": {
+    "jp": "例文",
+    "reading": "れいぶん",
+    "romaji": "reibun",
+    "meaningPt": "Exemplo"
+  }
+},
+{
+  "id": "v_n3_final_1789496853210_7",
+  "word": "面接",
+  "reading": "めんせつ",
+  "romaji": "mensetsu",
+  "meaningPt": "Entrevista de emprego",
+  "jlpt": "N3",
+  "category": "substantivo",
+  "categoryLabelPt": "Geral",
+  "exampleSentence": {
+    "jp": "例文",
+    "reading": "れいぶん",
+    "romaji": "reibun",
+    "meaningPt": "Exemplo"
+  }
+},
+{
+  "id": "v_n3_final_1789496853210_8",
+  "word": "退勤",
+  "reading": "たいきん",
+  "romaji": "taikin",
+  "meaningPt": "Fim do expediente (Sair do trabalho)",
+  "jlpt": "N3",
+  "category": "substantivo",
+  "categoryLabelPt": "Geral",
+  "exampleSentence": {
+    "jp": "例文",
+    "reading": "れいぶん",
+    "romaji": "reibun",
+    "meaningPt": "Exemplo"
+  }
+},
+{
+  "id": "v_n3_final_1789496853210_9",
+  "word": "症状",
+  "reading": "しょうじょう",
+  "romaji": "shoujou",
+  "meaningPt": "Sintoma",
+  "jlpt": "N3",
+  "category": "substantivo",
+  "categoryLabelPt": "Geral",
+  "exampleSentence": {
+    "jp": "例文",
+    "reading": "れいぶん",
+    "romaji": "reibun",
+    "meaningPt": "Exemplo"
+  }
+},
+{
+  "id": "v_n3_final_1789496853210_10",
+  "word": "診察",
+  "reading": "しんさつ",
+  "romaji": "shinsatsu",
+  "meaningPt": "Consulta médica / Exame",
+  "jlpt": "N3",
+  "category": "substantivo",
+  "categoryLabelPt": "Geral",
+  "exampleSentence": {
+    "jp": "例文",
+    "reading": "れいぶん",
+    "romaji": "reibun",
+    "meaningPt": "Exemplo"
+  }
+},
+{
+  "id": "v_n3_final_1789496853210_11",
+  "word": "予防",
+  "reading": "よぼう",
+  "romaji": "yobou",
+  "meaningPt": "Prevenção",
+  "jlpt": "N3",
+  "category": "substantivo",
+  "categoryLabelPt": "Geral",
+  "exampleSentence": {
+    "jp": "例文",
+    "reading": "れいぶん",
+    "romaji": "reibun",
+    "meaningPt": "Exemplo"
+  }
+},
+{
+  "id": "v_n3_final_1789496853210_12",
+  "word": "手術",
+  "reading": "しゅじゅつ",
+  "romaji": "shujutsu",
+  "meaningPt": "Cirurgia",
+  "jlpt": "N3",
+  "category": "substantivo",
+  "categoryLabelPt": "Geral",
+  "exampleSentence": {
+    "jp": "例文",
+    "reading": "れいぶん",
+    "romaji": "reibun",
+    "meaningPt": "Exemplo"
+  }
+},
+{
+  "id": "v_n3_final_1789496853210_13",
+  "word": "胃",
+  "reading": "い",
+  "romaji": "i",
+  "meaningPt": "Estômago",
+  "jlpt": "N3",
+  "category": "substantivo",
+  "categoryLabelPt": "Geral",
+  "exampleSentence": {
+    "jp": "例文",
+    "reading": "れいぶん",
+    "romaji": "reibun",
+    "meaningPt": "Exemplo"
+  }
+},
+{
+  "id": "v_n3_final_1789496853210_14",
+  "word": "血液",
+  "reading": "けつえき",
+  "romaji": "ketsueki",
+  "meaningPt": "Sangue",
+  "jlpt": "N3",
+  "category": "substantivo",
+  "categoryLabelPt": "Geral",
+  "exampleSentence": {
+    "jp": "例文",
+    "reading": "れいぶん",
+    "romaji": "reibun",
+    "meaningPt": "Exemplo"
+  }
+},
+{
+  "id": "v_n3_final_1789496853210_15",
+  "word": "骨折",
+  "reading": "こっせつ",
+  "romaji": "kossetsu",
+  "meaningPt": "Fratura óssea",
+  "jlpt": "N3",
+  "category": "substantivo",
+  "categoryLabelPt": "Geral",
+  "exampleSentence": {
+    "jp": "例文",
+    "reading": "れいぶん",
+    "romaji": "reibun",
+    "meaningPt": "Exemplo"
+  }
+},
+{
+  "id": "v_n3_final_1789496853210_16",
+  "word": "転ぶ",
+  "reading": "ころぶ",
+  "romaji": "korobu",
+  "meaningPt": "Tropeçar e cair",
+  "jlpt": "N3",
+  "category": "verbo_godan",
+  "categoryLabelPt": "Geral",
+  "exampleSentence": {
+    "jp": "例文",
+    "reading": "れいぶん",
+    "romaji": "reibun",
+    "meaningPt": "Exemplo"
+  }
+},
+{
+  "id": "v_n3_final_1789496853210_17",
+  "word": "ぶつかる",
+  "reading": "ぶつかる",
+  "romaji": "butsukaru",
+  "meaningPt": "Colidir / Bater em (alguém/algo)",
+  "jlpt": "N3",
+  "category": "verbo_godan",
+  "categoryLabelPt": "Geral",
+  "exampleSentence": {
+    "jp": "例文",
+    "reading": "れいぶん",
+    "romaji": "reibun",
+    "meaningPt": "Exemplo"
+  }
+},
+{
+  "id": "v_n3_final_1789496853210_18",
+  "word": "叫ぶ",
+  "reading": "さけぶ",
+  "romaji": "sakebu",
+  "meaningPt": "Gritar",
+  "jlpt": "N3",
+  "category": "verbo_godan",
+  "categoryLabelPt": "Geral",
+  "exampleSentence": {
+    "jp": "例文",
+    "reading": "れいぶん",
+    "romaji": "reibun",
+    "meaningPt": "Exemplo"
+  }
+},
+{
+  "id": "v_n3_final_1789496853210_19",
+  "word": "囲む",
+  "reading": "かこむ",
+  "romaji": "kakomu",
+  "meaningPt": "Cercar / Rodear",
+  "jlpt": "N3",
+  "category": "verbo_godan",
+  "categoryLabelPt": "Geral",
+  "exampleSentence": {
+    "jp": "例文",
+    "reading": "れいぶん",
+    "romaji": "reibun",
+    "meaningPt": "Exemplo"
+  }
+},
+{
+  "id": "v_n3_final_1789496853210_20",
+  "word": "隠す",
+  "reading": "かくす",
+  "romaji": "kakusu",
+  "meaningPt": "Esconder",
+  "jlpt": "N3",
+  "category": "verbo_godan",
+  "categoryLabelPt": "Geral",
+  "exampleSentence": {
+    "jp": "例文",
+    "reading": "れいぶん",
+    "romaji": "reibun",
+    "meaningPt": "Exemplo"
+  }
+},
+{
+  "id": "v_n3_final_1789496853210_21",
+  "word": "削る",
+  "reading": "けずる",
+  "romaji": "kezuru",
+  "meaningPt": "Raspar / Apontar (lápis) / Reduzir (orçamento)",
+  "jlpt": "N3",
+  "category": "verbo_godan",
+  "categoryLabelPt": "Geral",
+  "exampleSentence": {
+    "jp": "例文",
+    "reading": "れいぶん",
+    "romaji": "reibun",
+    "meaningPt": "Exemplo"
+  }
+},
+{
+  "id": "v_n3_final_1789496853210_22",
+  "word": "頼る",
+  "reading": "たよる",
+  "romaji": "tayoru",
+  "meaningPt": "Depender de / Confiar em (alguém)",
+  "jlpt": "N3",
+  "category": "verbo_godan",
+  "categoryLabelPt": "Geral",
+  "exampleSentence": {
+    "jp": "例文",
+    "reading": "れいぶん",
+    "romaji": "reibun",
+    "meaningPt": "Exemplo"
+  }
+},
+{
+  "id": "v_n3_final_1789496853210_23",
+  "word": "断る",
+  "reading": "ことわる",
+  "romaji": "kotowaru",
+  "meaningPt": "Recusar / Rejeitar",
+  "jlpt": "N3",
+  "category": "verbo_godan",
+  "categoryLabelPt": "Geral",
+  "exampleSentence": {
+    "jp": "例文",
+    "reading": "れいぶん",
+    "romaji": "reibun",
+    "meaningPt": "Exemplo"
+  }
+},
+{
+  "id": "v_n3_final_1789496853210_24",
+  "word": "資源",
+  "reading": "しげん",
+  "romaji": "shigen",
+  "meaningPt": "Recursos naturais",
+  "jlpt": "N3",
+  "category": "substantivo",
+  "categoryLabelPt": "Geral",
+  "exampleSentence": {
+    "jp": "例文",
+    "reading": "れいぶん",
+    "romaji": "reibun",
+    "meaningPt": "Exemplo"
+  }
+},
+{
+  "id": "v_n3_final_1789496853210_25",
+  "word": "泥",
+  "reading": "どろ",
+  "romaji": "doro",
+  "meaningPt": "Lama",
+  "jlpt": "N3",
+  "category": "substantivo",
+  "categoryLabelPt": "Geral",
+  "exampleSentence": {
+    "jp": "例文",
+    "reading": "れいぶん",
+    "romaji": "reibun",
+    "meaningPt": "Exemplo"
+  }
+},
+{
+  "id": "v_n3_final_1789496853210_26",
+  "word": "太陽",
+  "reading": "たいよう",
+  "romaji": "taiyou",
+  "meaningPt": "Sol",
+  "jlpt": "N3",
+  "category": "substantivo",
+  "categoryLabelPt": "Geral",
+  "exampleSentence": {
+    "jp": "例文",
+    "reading": "れいぶん",
+    "romaji": "reibun",
+    "meaningPt": "Exemplo"
+  }
+},
+{
+  "id": "v_n3_final_1789496853210_27",
+  "word": "宇宙",
+  "reading": "うちゅう",
+  "romaji": "uchuu",
+  "meaningPt": "Espaço / Universo",
+  "jlpt": "N3",
+  "category": "substantivo",
+  "categoryLabelPt": "Geral",
+  "exampleSentence": {
+    "jp": "例文",
+    "reading": "れいぶん",
+    "romaji": "reibun",
+    "meaningPt": "Exemplo"
+  }
+},
+{
+  "id": "v_n3_final_1789496853210_28",
+  "word": "砂",
+  "reading": "すな",
+  "romaji": "suna",
+  "meaningPt": "Areia",
+  "jlpt": "N3",
+  "category": "substantivo",
+  "categoryLabelPt": "Geral",
+  "exampleSentence": {
+    "jp": "例文",
+    "reading": "れいぶん",
+    "romaji": "reibun",
+    "meaningPt": "Exemplo"
+  }
+},
+{
+  "id": "v_n3_final_1789496853210_29",
+  "word": "気候",
+  "reading": "きこう",
+  "romaji": "kikou",
+  "meaningPt": "Clima",
+  "jlpt": "N3",
+  "category": "substantivo",
+  "categoryLabelPt": "Geral",
+  "exampleSentence": {
+    "jp": "例文",
+    "reading": "れいぶん",
+    "romaji": "reibun",
+    "meaningPt": "Exemplo"
+  }
+},
+{
+  "id": "v_n3_final_1789496853210_30",
+  "word": "気温",
+  "reading": "きおん",
+  "romaji": "kion",
+  "meaningPt": "Temperatura (atmosférica)",
+  "jlpt": "N3",
+  "category": "substantivo",
+  "categoryLabelPt": "Geral",
+  "exampleSentence": {
+    "jp": "例文",
+    "reading": "れいぶん",
+    "romaji": "reibun",
+    "meaningPt": "Exemplo"
+  }
+},
+{
+  "id": "v_n3_final_1789496853210_31",
+  "word": "事件",
+  "reading": "じけん",
+  "romaji": "jiken",
+  "meaningPt": "Incidente / Caso criminal",
+  "jlpt": "N3",
+  "category": "substantivo",
+  "categoryLabelPt": "Geral",
+  "exampleSentence": {
+    "jp": "例文",
+    "reading": "れいぶん",
+    "romaji": "reibun",
+    "meaningPt": "Exemplo"
+  }
+},
+{
+  "id": "v_n3_final_1789496853210_32",
+  "word": "規則",
+  "reading": "きそく",
+  "romaji": "kisoku",
+  "meaningPt": "Regras / Regulamentos",
+  "jlpt": "N3",
+  "category": "substantivo",
+  "categoryLabelPt": "Geral",
+  "exampleSentence": {
+    "jp": "例文",
+    "reading": "れいぶん",
+    "romaji": "reibun",
+    "meaningPt": "Exemplo"
+  }
+},
+{
+  "id": "v_n3_final_1789496853210_33",
+  "word": "税金",
+  "reading": "ぜいきん",
+  "romaji": "zeikin",
+  "meaningPt": "Impostos",
+  "jlpt": "N3",
+  "category": "substantivo",
+  "categoryLabelPt": "Geral",
+  "exampleSentence": {
+    "jp": "例文",
+    "reading": "れいぶん",
+    "romaji": "reibun",
+    "meaningPt": "Exemplo"
+  }
+},
+{
+  "id": "v_n3_final_1789496853210_34",
+  "word": "法律",
+  "reading": "ほうりつ",
+  "romaji": "houritsu",
+  "meaningPt": "Lei",
+  "jlpt": "N3",
+  "category": "substantivo",
+  "categoryLabelPt": "Geral",
+  "exampleSentence": {
+    "jp": "例文",
+    "reading": "れいぶん",
+    "romaji": "reibun",
+    "meaningPt": "Exemplo"
+  }
+},
+{
+  "id": "v_n3_final_1789496853210_35",
+  "word": "渋滞",
+  "reading": "じゅうたい",
+  "romaji": "juutai",
+  "meaningPt": "Engarrafamento (trânsito)",
+  "jlpt": "N3",
+  "category": "substantivo",
+  "categoryLabelPt": "Geral",
+  "exampleSentence": {
+    "jp": "例文",
+    "reading": "れいぶん",
+    "romaji": "reibun",
+    "meaningPt": "Exemplo"
+  }
+},
+{
+  "id": "v_n3_final_1789496853210_36",
+  "word": "犯罪",
+  "reading": "はんざい",
+  "romaji": "hanzai",
+  "meaningPt": "Crime",
+  "jlpt": "N3",
+  "category": "substantivo",
+  "categoryLabelPt": "Geral",
+  "exampleSentence": {
+    "jp": "例文",
+    "reading": "れいぶん",
+    "romaji": "reibun",
+    "meaningPt": "Exemplo"
+  }
+},
+{
+  "id": "v_n3_final_1789496853210_37",
+  "word": "家事",
+  "reading": "かじ",
+  "romaji": "kaji",
+  "meaningPt": "Tarefas domésticas",
+  "jlpt": "N3",
+  "category": "substantivo",
+  "categoryLabelPt": "Geral",
+  "exampleSentence": {
+    "jp": "例文",
+    "reading": "れいぶん",
+    "romaji": "reibun",
+    "meaningPt": "Exemplo"
+  }
+},
+{
+  "id": "v_n3_final_1789496853210_38",
+  "word": "貯金",
+  "reading": "ちょきん",
+  "romaji": "chokin",
+  "meaningPt": "Poupança / Guardar dinheiro",
+  "jlpt": "N3",
+  "category": "substantivo",
+  "categoryLabelPt": "Geral",
+  "exampleSentence": {
+    "jp": "例文",
+    "reading": "れいぶん",
+    "romaji": "reibun",
+    "meaningPt": "Exemplo"
+  }
+},
+{
+  "id": "v_n3_final_1789496853210_39",
+  "word": "物価",
+  "reading": "ぶっか",
+  "romaji": "bukka",
+  "meaningPt": "Custo de vida / Preço das coisas",
+  "jlpt": "N3",
+  "category": "substantivo",
+  "categoryLabelPt": "Geral",
+  "exampleSentence": {
+    "jp": "例文",
+    "reading": "れいぶん",
+    "romaji": "reibun",
+    "meaningPt": "Exemplo"
+  }
+},
+{
+  "id": "v_n3_final_1789496853210_40",
+  "word": "現金",
+  "reading": "げんきん",
+  "romaji": "genkin",
+  "meaningPt": "Dinheiro em espécie (cash)",
+  "jlpt": "N3",
+  "category": "substantivo",
+  "categoryLabelPt": "Geral",
+  "exampleSentence": {
+    "jp": "例文",
+    "reading": "れいぶん",
+    "romaji": "reibun",
+    "meaningPt": "Exemplo"
+  }
+},
+{
+  "id": "v_n3_final_1789496853210_41",
+  "word": "等しい",
+  "reading": "ひとしい",
+  "romaji": "hitoshii",
+  "meaningPt": "Igual / Equivalente",
+  "jlpt": "N3",
+  "category": "adjetivo_i",
+  "categoryLabelPt": "Geral",
+  "exampleSentence": {
+    "jp": "例文",
+    "reading": "れいぶん",
+    "romaji": "reibun",
+    "meaningPt": "Exemplo"
+  }
+},
+{
+  "id": "v_n3_final_1789496853210_42",
+  "word": "険しい",
+  "reading": "けわしい",
+  "romaji": "kewashii",
+  "meaningPt": "Íngreme / Severo (expressão)",
+  "jlpt": "N3",
+  "category": "adjetivo_i",
+  "categoryLabelPt": "Geral",
+  "exampleSentence": {
+    "jp": "例文",
+    "reading": "れいぶん",
+    "romaji": "reibun",
+    "meaningPt": "Exemplo"
+  }
+},
+{
+  "id": "v_n3_final_1789496853210_43",
+  "word": "貧しい",
+  "reading": "まずしい",
+  "romaji": "mazushii",
+  "meaningPt": "Pobre / Escasso",
+  "jlpt": "N3",
+  "category": "adjetivo_i",
+  "categoryLabelPt": "Geral",
+  "exampleSentence": {
+    "jp": "例文",
+    "reading": "れいぶん",
+    "romaji": "reibun",
+    "meaningPt": "Exemplo"
+  }
+},
+{
+  "id": "v_n3_final_1789496853210_44",
+  "word": "清潔",
+  "reading": "せいけつ",
+  "romaji": "seiketsu",
+  "meaningPt": "Limpo / Higiênico",
+  "jlpt": "N3",
+  "category": "adjetivo_i",
+  "categoryLabelPt": "Geral",
+  "exampleSentence": {
+    "jp": "例文",
+    "reading": "れいぶん",
+    "romaji": "reibun",
+    "meaningPt": "Exemplo"
+  }
+},
+{
+  "id": "v_n3_final_1789496853210_45",
+  "word": "豊富",
+  "reading": "ほうふ",
+  "romaji": "houfu",
+  "meaningPt": "Abundante / Rico (em recursos)",
+  "jlpt": "N3",
+  "category": "adjetivo_i",
+  "categoryLabelPt": "Geral",
+  "exampleSentence": {
+    "jp": "例文",
+    "reading": "れいぶん",
+    "romaji": "reibun",
+    "meaningPt": "Exemplo"
+  }
+},
+
   // --- 2 LOTES MASSIVOS DE ENCERRAMENTO N3 ---
   {
   "word": "燃える",
