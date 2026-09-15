@@ -3,9 +3,11 @@ import { JLPTLevel, UserStats } from '../types';
 import { Layers, HelpCircle, CheckCircle, XCircle, ArrowRight, RotateCcw, HeartCrack } from 'lucide-react';
 import { JLPT_N5_TEST, JLPTQuestion } from '../data/jlptN5TestData';
 import { JLPT_N5_GRAMMAR_TEST } from '../data/jlptN5GrammarData';
+import { JLPT_N4_TEST } from '../data/jlptN4TestData';
 import { JLPT_N3_TEST } from '../data/jlptN3TestData';
 
 const FULL_N5_TEST = [...JLPT_N5_TEST, ...JLPT_N5_GRAMMAR_TEST];
+const FULL_N4_TEST = [...JLPT_N4_TEST];
 const FULL_N3_TEST = [...JLPT_N3_TEST];
 
 interface JlptTestsHubProps {
@@ -47,6 +49,7 @@ export const JlptTestsHub: React.FC<JlptTestsHubProps> = ({
     // Select the appropriate test array
     let selectedTestArr: JLPTQuestion[] = [];
     if (selectedJlpt === 'N5') selectedTestArr = FULL_N5_TEST;
+    else if (selectedJlpt === 'N4') selectedTestArr = FULL_N4_TEST;
     else if (selectedJlpt === 'N3') selectedTestArr = FULL_N3_TEST;
     else return; // Outros níveis ainda não possuem teste
 
@@ -75,7 +78,7 @@ export const JlptTestsHub: React.FC<JlptTestsHubProps> = ({
   };
 
   useEffect(() => {
-    if (selectedJlpt === 'N5' || selectedJlpt === 'N3') {
+    if (selectedJlpt === 'N5' || selectedJlpt === 'N4' || selectedJlpt === 'N3') {
       prepareTest();
     } else {
       setTestQuestions([]);
@@ -183,7 +186,7 @@ export const JlptTestsHub: React.FC<JlptTestsHubProps> = ({
                 key={level}
                 onClick={() => {
                   onSelectJlpt(level);
-                  if (level === 'N5' || level === 'N3') {
+                  if (level === 'N5' || level === 'N4' || level === 'N3') {
                      prepareTest();
                   }
                 }}
@@ -200,7 +203,7 @@ export const JlptTestsHub: React.FC<JlptTestsHubProps> = ({
         </div>
       </div>
 
-      {selectedJlpt === 'N5' || selectedJlpt === 'N3' ? (
+      {selectedJlpt === 'N5' || selectedJlpt === 'N4' || selectedJlpt === 'N3' ? (
         <div className="bg-white rounded-3xl p-6 sm:p-8 border border-stone-200 shadow-sm animate-fadeIn min-h-[400px]">
           {testQuestions.length === 0 ? (
             <div className="flex flex-col items-center justify-center h-full text-center space-y-4 py-20">
