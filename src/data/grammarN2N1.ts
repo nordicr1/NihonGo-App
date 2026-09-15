@@ -1,6 +1,152 @@
 import { GrammarItem } from '../types';
 
 export const GRAMMAR_N2_N1: GrammarItem[] = [
+  // --- LOTE 2 (Injetado) ---
+  {
+  "id": "g_n2_batch2_1789472905822_1",
+  "pattern": "〜わけがない / 〜はずがない (~wake ga nai / ~hazu ga nai)",
+  "titlePt": "Impossibilidade Lógica: \"É impossível que / Não tem como...\"",
+  "jlpt": "N2",
+  "category": "Negação Forte",
+  "formationFormula": "[Forma Simples] + わけがない / はずがない",
+  "explanationPt": "Expressa a convicção do falante de que algo é logicamente impossível de ser verdade ou de acontecer.",
+  "keyRulePt": "Muitas vezes usado em tom de indignação ou surpresa. Ex: \"Ele nunca faria isso!\".",
+  "examples": [
+    {
+      "jp": "あんなに練習したんだから、負けるわけがない。",
+      "reading": "あんなに れんしゅう したんだから、まける わけ が ない。",
+      "romaji": "Anna ni renshuu shita n dakara, makeru wake ga nai.",
+      "meaningPt": "Já que ele treinou tanto assim, é impossível que ele perca."
+    }
+  ]
+},
+{
+  "id": "g_n2_batch2_1789472905822_2",
+  "pattern": "〜わけではない / 〜というわけではない (~wake de wa nai / ~to iu wake de wa nai)",
+  "titlePt": "Negação Parcial: \"Não significa necessariamente que...\"",
+  "jlpt": "N2",
+  "category": "Negação Parcial",
+  "formationFormula": "[Forma Simples] + わけではない",
+  "explanationPt": "Usado para negar suavemente uma afirmação extrema ou para dizer que algo não é 100% verdadeiro.",
+  "keyRulePt": "Geralmente usado para dizer \"Não é que eu odeie, mas eu não como muito\".",
+  "examples": [
+    {
+      "jp": "肉が嫌いなわけではないが、あまり食べない。",
+      "reading": "にく が きらいな わけではない が、あまり たべない。",
+      "romaji": "Niku ga kirai na wake dewa nai ga, amari tabenai.",
+      "meaningPt": "Não é que eu odeie carne, mas eu não como muito."
+    }
+  ]
+},
+{
+  "id": "g_n2_batch2_1789472905822_3",
+  "pattern": "〜ばかりに (~bakari ni)",
+  "titlePt": "Causa Trágica: \"Só por causa de...\"",
+  "jlpt": "N2",
+  "category": "Causa & Arrependimento",
+  "formationFormula": "[Verbo Ta / Forma Simples] + ばかりに",
+  "explanationPt": "Expressa um profundo arrependimento por um resultado muito ruim que aconteceu POR CAUSA de um único e pequeno motivo.",
+  "keyRulePt": "Sempre traz um forte sentimento de culpa ou pena. O resultado na frase seguinte será sempre negativo.",
+  "examples": [
+    {
+      "jp": "お金がないばかりに、大学への進学を諦めた。",
+      "reading": "おかね が ない ばかりに、だいがく へ の しんがく を あきらめた。",
+      "romaji": "Okane ga nai bakari ni, daigaku e no shingaku o akirameta.",
+      "meaningPt": "Só porque eu não tinha dinheiro, acabei desistindo de ingressar na faculdade."
+    }
+  ]
+},
+{
+  "id": "g_n2_batch2_1789472905822_4",
+  "pattern": "〜からといって (~kara to itte)",
+  "titlePt": "Quebra de Premissa: \"Só porque (A), não quer dizer que (B)...\"",
+  "jlpt": "N2",
+  "category": "Condição Contrariada",
+  "formationFormula": "[Forma Simples] + からといって",
+  "explanationPt": "Informa que uma conclusão lógica baseada em um fato não é automaticamente verdadeira na prática.",
+  "keyRulePt": "Quase sempre é acompanhado de negações parciais no final da frase, como: 〜とは限らない (não se limita a), 〜わけではない (não significa que).",
+  "examples": [
+    {
+      "jp": "日本人だからといって、漢字が全部書けるわけではない。",
+      "reading": "にほんじん だ からといって、かんじ が ぜんぶ かける わけではない。",
+      "romaji": "Nihonjin da kara to itte, kanji ga zenbu kakeru wake dewa nai.",
+      "meaningPt": "Só porque a pessoa é japonesa, não significa que consiga escrever todos os kanjis."
+    }
+  ]
+},
+{
+  "id": "g_n2_batch2_1789472905822_5",
+  "pattern": "〜をめぐって / 〜をめぐる (~o megutte / ~o meguru)",
+  "titlePt": "Centro do Debate: \"Em torno de / A respeito de...\"",
+  "jlpt": "N2",
+  "category": "Foco & Discussão",
+  "formationFormula": "[Substantivo] + をめぐって",
+  "explanationPt": "Indica um assunto que é alvo de disputa, discussão, rumores ou competição entre várias pessoas.",
+  "keyRulePt": "A frase posterior sempre indica ação envolvendo múltiplas pessoas (ex: debateram, brigaram, competiram).",
+  "examples": [
+    {
+      "jp": "遺産をめぐって、兄弟が争っている。",
+      "reading": "いさん を めぐって、きょうだい が あらそっている。",
+      "romaji": "Isan o megutte, kyoudai ga arasotte iru.",
+      "meaningPt": "Os irmãos estão brigando em torno da (por causa da) herança."
+    }
+  ]
+},
+{
+  "id": "g_n2_batch2_1789472905822_6",
+  "pattern": "〜はもちろん / 〜はもとより (~wa mochiron / ~wa motoyori)",
+  "titlePt": "Inclusão Óbvia: \"Isso é óbvio, mas também...\"",
+  "jlpt": "N2",
+  "category": "Adição",
+  "formationFormula": "[Substantivo] + はもちろん / はもとより",
+  "explanationPt": "Afirma que o primeiro item é algo tão óbvio ou natural que não precisa nem ser mencionado, e em seguida adiciona outro item.",
+  "keyRulePt": "はもとより (wa motoyori) é a versão mais formal e escrita de はもちろん (wa mochiron).",
+  "examples": [
+    {
+      "jp": "彼は英語はもちろん、フランス語も話せる。",
+      "reading": "かれ は えいご は もちろん、フランスご も はなせる。",
+      "romaji": "Kare wa eigo wa mochiron, furansugo mo hanaseru.",
+      "meaningPt": "Ele, obviamente/sem falar do inglês, consegue falar francês também."
+    }
+  ]
+},
+{
+  "id": "g_n2_batch2_1789472905822_7",
+  "pattern": "〜に伴って / 〜に伴い (~ni tomonatte / ~ni tomonai)",
+  "titlePt": "Desenvolvimento Conjunto: \"Junto com / Acompanhando a mudança...\"",
+  "jlpt": "N2",
+  "category": "Proporção & Mudança",
+  "formationFormula": "[Verbo Dicionário / Substantivo de Ação] + に伴って",
+  "explanationPt": "Quando uma mudança A ocorre, ela acarreta ou \"traz consigo\" uma mudança secundária B de grande escala.",
+  "keyRulePt": "Muito parecido com につれて e にしたがって, porém に伴って enfatiza o EFEITO COLATERAL de larga escala (ex: sociedade, tecnologia, globalização).",
+  "examples": [
+    {
+      "jp": "人口の増加に伴って、住宅問題が深刻化した。",
+      "reading": "じんこう の ぞうか に ともなって、じゅうたく もんだい が しんこくか した。",
+      "romaji": "Jinkou no zouka ni tomonatte, juutaku mondai ga shinkokuka shita.",
+      "meaningPt": "Junto com (Acompanhando) o aumento populacional, o problema habitacional se agravou."
+    }
+  ]
+},
+{
+  "id": "g_n2_batch2_1789472905822_8",
+  "pattern": "〜がきっかけで / 〜を契機に (~ga kikkake de / ~o keiki ni)",
+  "titlePt": "Ponto de Partida: \"Tendo como gatilho / Tendo como oportunidade...\"",
+  "jlpt": "N2",
+  "category": "Causa & Início",
+  "formationFormula": "[Substantivo / Frase Nominalizada] + がきっかけで / をきっかけに",
+  "explanationPt": "Indica qual foi o evento \"gatilho\" fortuito que causou uma grande mudança de vida, início de um hábito ou de uma relação.",
+  "keyRulePt": "契機 (keiki) é uma palavra muito formal (noticiário) para gatilho, enquanto きっかけ (kikkake) é mais comum no cotidiano.",
+  "examples": [
+    {
+      "jp": "日本のアニメを見たのがきっかけで、日本語の勉強を始めた。",
+      "reading": "にほん の アニメ を みた の が きっかけ で、にほんご の べんきょう を はじめた。",
+      "romaji": "Nihon no anime o mita no ga kikkake de, nihongo no benkyou o hajimeta.",
+      "meaningPt": "Tendo como gatilho ter assistido anime japonês, comecei a estudar a língua japonesa."
+    }
+  ]
+},
+
   // --- LOTE 1 (Injetado) ---
   {
   "id": "g_n2_batch1_1789472794800_1",
