@@ -141,26 +141,38 @@ export const GRAMMAR_N2_N1: GrammarItem[] = [
     ]
   },
   {
-    id: 'g_n2_8',
-    pattern: '〜を通じて / 〜を通して (~o tsuujite / ~o tooshite)',
-    titlePt: 'Intermediação e Duração: "Por meio de / Ao longo de todo o..."',
+    id: 'g_n2_8_a',
+    pattern: '〜を通じて (~o tsuujite)',
+    titlePt: 'Intermediação: "Por meio de / Através de..."',
     jlpt: 'N2',
-    category: 'Meio & Período Contínuo',
-    formationFormula: '[Substantivo] + を通じて / を通して',
-    explanationPt: 'Tem dois sentidos principais: 1) Utilizar alguém ou um canal como mediador; 2) Um estado contínuo durante todo o período (ex: ao longo do ano).',
-    keyRulePt: 'Quando significa "período inteiro", é comum com 四季 (quatro estações), 一年 (o ano todo).',
+    category: 'Meio de Contato',
+    formationFormula: '[Substantivo] + を通じて (o tsuujite)',
+    explanationPt: 'Indica o meio, pessoa ou ferramenta utilizada para estabelecer uma comunicação, relação ou aprendizado.',
+    keyRulePt: 'Mais formal. Foca no "canal" da ação (ex: através da internet, por meio de um amigo).',
     examples: [
       {
         jp: '友人の紹介を通じて、現在の妻と知り合いました。',
         reading: 'ゆうじん の しょうかい を つうじて、げんざい の つま と しりあいました。',
         romaji: 'Yuujin no shoukai o tsuujite, genzai no tsuma to shiriai mashita.',
-        meaningPt: 'Conheci minha atual esposa por intermédio da apresentação de um amigo.'
-      },
+        meaningPt: 'Conheci minha atual esposa através (por meio) da apresentação de um amigo.'
+      }
+    ]
+  },
+  {
+    id: 'g_n2_8_b',
+    pattern: '〜を通して (~o tooshite)',
+    titlePt: 'Período Contínuo: "Ao longo de / Durante todo o..."',
+    jlpt: 'N2',
+    category: 'Duração',
+    formationFormula: '[Substantivo de Tempo] + を通して (o tooshite)',
+    explanationPt: 'Enfatiza que uma ação ou estado se mantém do começo ao fim do período mencionado.',
+    keyRulePt: 'Quase sempre acompanha palavras de tempo que denotam um ciclo inteiro: 一年 (um ano inteiro), 一生 (a vida toda), 四季 (as quatro estações).',
+    examples: [
       {
-        jp: 'この地域は一年を通じて温暖な気候です。',
-        reading: 'この ちいき は いちねん を つうじて おんだんな きこう です。',
-        romaji: 'Kono chiiki wa ichinen o tsuujite ondanna kikou desu.',
-        meaningPt: 'Esta região desfruta de um clima ameno ao longo de todo o ano.'
+        jp: 'この地域は一年を通して温暖な気候です。',
+        reading: 'この ちいき は いちねん を とおして おんだんな きこう です。',
+        romaji: 'Kono chiiki wa ichinen o tooshite ondanna kikou desu.',
+        meaningPt: 'Esta região possui um clima ameno ao longo de todo o ano.'
       }
     ]
   },
@@ -201,26 +213,38 @@ export const GRAMMAR_N2_N1: GrammarItem[] = [
     ]
   },
   {
-    id: 'g_n2_11',
-    pattern: '〜かねる / 〜かねない (~kaneru / ~kanenai)',
-    titlePt: 'Hesitação e Risco: "Não consigo / Há o perigo de..."',
+    id: 'g_n2_11_a',
+    pattern: '〜かねる (~kaneru)',
+    titlePt: 'Hesitação Profissional: "Não me sinto capaz de / Não posso..."',
     jlpt: 'N2',
-    category: 'Possibilidade & Sentimentos',
-    formationFormula: '[Raiz do Verbo (sem "masu")] + かねる (não conseguir) / かねない (poder acontecer algo ruim)',
-    explanationPt: 'Muito usado em negócios. "Kaneru" é uma forma polida de dizer que você não pode fazer algo (por motivos psicológicos ou de posição). "Kanenai" expressa o temor de que o pior cenário pode acabar acontecendo.',
-    keyRulePt: '• わかりかねます (Não sei lhe informar - muito formal).\n• 事故を起こしかねない (Temo que possa causar um acidente).',
+    category: 'Impossibilidade Psicológica',
+    formationFormula: '[Raiz do Verbo (sem "masu")] + かねる',
+    explanationPt: 'Uma forma polida e formal de dizer "não posso fazer isso" ou "é difícil aceitar isso". A recusa não é por falta de habilidade, mas por questões éticas, posição social ou regras.',
+    keyRulePt: 'Geralmente conjugado na afirmativa (かねる/かねます) mas o significado é NEGATIVO (Não posso).',
     examples: [
       {
         jp: 'その件については、私からはお答えしかねます。',
         reading: 'その けん に ついて は、わたし から は おこたえ しかねます。',
         romaji: 'Sono ken ni tsuite wa, watashi kara wa okotae shikanemasu.',
-        meaningPt: 'Sobre este assunto, eu infelizmente não posso responder (hesito/não tenho autoridade).'
-      },
+        meaningPt: 'Sobre este assunto, eu infelizmente não tenho como responder.'
+      }
+    ]
+  },
+  {
+    id: 'g_n2_11_b',
+    pattern: '〜かねない (~kanenai)',
+    titlePt: 'Risco Latente: "Temo que acabe / Corre o risco de..."',
+    jlpt: 'N2',
+    category: 'Possibilidade Negativa',
+    formationFormula: '[Raiz do Verbo (sem "masu")] + かねない',
+    explanationPt: 'Expressa a forte preocupação do falante de que um resultado negativo ou pior cenário PODE muito bem acontecer se as coisas continuarem como estão.',
+    keyRulePt: 'Equivale a "かもしれな (talvez)", mas é usado EXCLUSIVAMENTE para cenários ruins/negativos.',
+    examples: [
       {
         jp: 'あんな運転をしていたら、いつか事故を起こしかねない。',
         reading: 'あんな うんてん を していたら、いつか じこ を おこしかねない。',
         romaji: 'Anna unten o shite itara, itsuka jiko o okoshikanenai.',
-        meaningPt: 'Dirigindo daquele jeito, ele pode acabar causando um acidente qualquer dia.'
+        meaningPt: 'Dirigindo daquele jeito, ele corre um sério risco de causar um acidente.'
       }
     ]
   },
