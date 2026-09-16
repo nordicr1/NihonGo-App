@@ -5,6 +5,8 @@ import { JLPT_N5_TEST, JLPTQuestion } from '../data/jlptN5TestData';
 import { JLPT_N5_GRAMMAR_TEST } from '../data/jlptN5GrammarData';
 import { JLPT_N4_TEST } from '../data/jlptN4TestData';
 import { JLPT_N3_TEST } from '../data/jlptN3TestData';
+import { AudioButton } from './AudioButton';
+import { soundFX } from '../utils/audio';
 
 const FULL_N5_TEST = [...JLPT_N5_TEST, ...JLPT_N5_GRAMMAR_TEST];
 const FULL_N4_TEST = [...JLPT_N4_TEST];
@@ -96,9 +98,11 @@ export const JlptTestsHub: React.FC<JlptTestsHubProps> = ({
 
     const question = testQuestions[currentQuestionIdx];
     if (idx === question.correctAnswer) {
+      soundFX.playSuccess();
       setScore(prev => prev + 1);
       onGainXp(15, `Acertou questão do Simulado ${selectedJlpt}!`);
     } else {
+      soundFX.playError();
       onLoseHeart();
     }
   };
@@ -238,8 +242,14 @@ export const JlptTestsHub: React.FC<JlptTestsHubProps> = ({
                 </span>
               </div>
 
-              <div className="p-6 sm:p-8 bg-stone-50 rounded-2xl border border-stone-200 text-left sm:text-center shadow-inner">
+              <div className="relative p-6 sm:p-8 bg-stone-50 rounded-2xl border border-stone-200 text-left sm:text-center shadow-inner group">
                 {renderQuestion(testQuestions[currentQuestionIdx])}
+                <div className="absolute top-3 right-3 sm:top-4 sm:right-4">
+                  <AudioButton 
+                    text={testQuestions[currentQuestionIdx].question.replace(/[＿_]+/g, ' ')} 
+                    size="lg" 
+                  />
+                </div>
               </div>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -276,6 +286,19 @@ export const JlptTestsHub: React.FC<JlptTestsHubProps> = ({
 
               {showResult && (
                 <div className="mt-8 p-6 bg-stone-800 text-white rounded-2xl animate-fadeIn space-y-4">
+                  <div className="flex items-center justify-between bg-stone-700/50 p-4 rounded-xl border border-stone-600 mb-4">
+                    <span className="font-bold text-lg text-teal-300">
+                      {testQuestions[currentQuestionIdx].highlight 
+                        ? testQuestions[currentQuestionIdx].question.replace(testQuestions[currentQuestionIdx].highlight || '', testQuestions[currentQuestionIdx].options[testQuestions[currentQuestionIdx].correctAnswer]) 
+                        : testQuestions[currentQuestionIdx].question}
+                    </span>
+                    <AudioButton 
+                      text={testQuestions[currentQuestionIdx].highlight 
+                        ? testQuestions[currentQuestionIdx].question.replace(testQuestions[currentQuestionIdx].highlight || '', testQuestions[currentQuestionIdx].options[testQuestions[currentQuestionIdx].correctAnswer]) 
+                        : testQuestions[currentQuestionIdx].question} 
+                      size="lg" 
+                    />
+                  </div>
                   <div>
                     <span className="text-xs uppercase font-bold text-stone-400 tracking-wider">Tradução</span>
                     <p className="text-stone-100 font-medium">{testQuestions[currentQuestionIdx].translation}</p>
