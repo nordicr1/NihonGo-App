@@ -1,6 +1,7 @@
 export interface JLPTQuestion {
   id: number;
-  type: 'vocab_reading' | 'vocab_kanji' | 'grammar' | 'reading';
+  type: 'vocab_reading' | 'vocab_kanji' | 'grammar' | 'reading' | 'sentence_builder';
+  correctSentence?: string;
   question: string;
   highlight?: string;
   options: string[];
