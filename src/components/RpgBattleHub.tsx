@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { UserStats } from '../types';
 import { VOCAB_N5 } from '../data/vocabN5';
-import { Swords, Shield, Heart, Zap, Sparkles } from 'lucide-react';
+import { Swords, Shield, Zap, Sparkles, Droplet } from 'lucide-react';
 import { soundFX } from '../utils/audio';
 
 interface RpgBattleHubProps {
@@ -11,17 +11,19 @@ interface RpgBattleHubProps {
 }
 
 const MONSTERS = [
-  { id: 1, name: 'Slime de Tinta', emoji: '👾', maxHp: 3, color: 'text-indigo-500', size: 'text-7xl' },
-  { id: 2, name: 'Goblin do Vocabulário', emoji: '👺', maxHp: 5, color: 'text-red-500', size: 'text-8xl' },
-  { id: 3, name: 'Fantasma do Esquecimento', emoji: '👻', maxHp: 7, color: 'text-stone-300', size: 'text-[9rem]' },
-  { id: 4, name: 'Ogro dos Kanjis', emoji: '👹', maxHp: 10, color: 'text-rose-600', size: 'text-[10rem]' },
-  { id: 5, name: 'Dragão Ancião JLPT', emoji: '🐉', maxHp: 15, color: 'text-emerald-500', size: 'text-[12rem]' },
+  { id: 1, name: 'Slime de Tinta', emoji: '👾', maxHp: 150, color: 'text-indigo-500', size: 'text-7xl' },
+  { id: 2, name: 'Goblin do Vocabulário', emoji: '👺', maxHp: 300, color: 'text-red-500', size: 'text-8xl' },
+  { id: 3, name: 'Fantasma do Esquecimento', emoji: '👻', maxHp: 450, color: 'text-stone-300', size: 'text-[9rem]' },
+  { id: 4, name: 'Ogro dos Kanjis', emoji: '👹', maxHp: 700, color: 'text-rose-600', size: 'text-[10rem]' },
+  { id: 5, name: 'Dragão Ancião JLPT', emoji: '🐉', maxHp: 1500, color: 'text-emerald-500', size: 'text-[12rem]' },
 ];
+
+const HERO_MAX_HP = 500;
 
 export const RpgBattleHub: React.FC<RpgBattleHubProps> = ({ userStats, onGainXp, onLoseHeart }) => {
   const [currentMonsterIdx, setCurrentMonsterIdx] = useState(0);
   const [monsterHp, setMonsterHp] = useState(MONSTERS[0].maxHp);
-  const [heroHp, setHeroHp] = useState(3); // Temporary combat HP, distinct from global hearts
+  const [heroHp, setHeroHp] = useState(HERO_MAX_HP);
   
   const [question, setQuestion] = useState<any>(null);
   const [options, setOptions] = useState<string[]>([]);
@@ -34,7 +36,6 @@ export const RpgBattleHub: React.FC<RpgBattleHubProps> = ({ userStats, onGainXp,
 
   // Generate a random question
   const generateQuestion = () => {
-    // Pick 4 random vocab words
     const shuffled = [...VOCAB_N5].sort(() => 0.5 - Math.random());
     const target = shuffled[0];
     const wrongOptions = shuffled.slice(1, 4).map(v => v.meaningPt);
@@ -49,22 +50,25 @@ export const RpgBattleHub: React.FC<RpgBattleHubProps> = ({ userStats, onGainXp,
   useEffect(() => {
     generateQuestion();
     setMonsterHp(MONSTERS[currentMonsterIdx].maxHp);
-    setHeroHp(3);
+    setHeroHp(HERO_MAX_HP);
   }, [currentMonsterIdx]);
 
   const handleAttack = (selectedOpt: string) => {
-    if (heroAnim || monsterAnim) return; // Prevent spam
+    if (heroAnim || monsterAnim) return;
 
     if (selectedOpt === correctAnswer) {
       // Success! Hero attacks
+      const damage = Math.floor(Math.random() * 30) + 40; // 40-70 dmg
+      const isCritical = damage > 60;
+      
       setHeroAnim('animate-dash-right');
-      soundFX.playSuccess(); // We will use a standard sound for now
+      soundFX.playSuccess();
 
       setTimeout(() => {
         setMonsterAnim('animate-shake');
-        setDamageNumber({ value: -1, type: 'monster' });
-        setMonsterHp(prev => prev - 1);
-        onGainXp(5, 'Ataque bem sucedido no RPG!');
+        setDamageNumber({ value: -damage, type: 'monster' });
+        setMonsterHp(prev => Math.max(0, prev - damage));
+        onGainXp(isCritical ? 10 : 5, isCritical ? 'Ataque Crítico!' : 'Ataque bem sucedido no RPG!');
       }, 200);
 
       setTimeout(() => {
@@ -72,30 +76,34 @@ export const RpgBattleHub: React.FC<RpgBattleHubProps> = ({ userStats, onGainXp,
         setMonsterAnim('');
         setDamageNumber(null);
         
-        if (monsterHp - 1 <= 0) {
-           // Monster killed
-           onGainXp(50, `Derrotou o ${MONSTERS[currentMonsterIdx].name}!`);
-           if (currentMonsterIdx < MONSTERS.length - 1) {
-             setCurrentMonsterIdx(prev => prev + 1);
-           } else {
-             // Beat the game loop
-             setCurrentMonsterIdx(0);
-           }
-        } else {
-           generateQuestion();
-        }
+        setMonsterHp(currentHp => {
+          if (currentHp <= 0) {
+             onGainXp(50, `Derrotou o ${MONSTERS[currentMonsterIdx].name}!`);
+             if (currentMonsterIdx < MONSTERS.length - 1) {
+               setCurrentMonsterIdx(prev => prev + 1);
+             } else {
+               setCurrentMonsterIdx(0);
+             }
+             return MONSTERS[currentMonsterIdx < MONSTERS.length - 1 ? currentMonsterIdx + 1 : 0].maxHp;
+          } else {
+             generateQuestion();
+             return currentHp;
+          }
+        });
       }, 1000);
 
     } else {
       // Miss! Monster attacks
+      const damage = Math.floor(Math.random() * 40) + 50; // 50-90 dmg
+      
       setMonsterAnim('animate-shake');
       
       setTimeout(() => {
         setHeroAnim('animate-shake');
-        setDamageNumber({ value: -1, type: 'hero' });
-        setHeroHp(prev => prev - 1);
+        setDamageNumber({ value: -damage, type: 'hero' });
+        setHeroHp(prev => Math.max(0, prev - damage));
         soundFX.playError();
-        onLoseHeart();
+        // Removed global onLoseHeart() per user request!
       }, 200);
 
       setTimeout(() => {
@@ -103,12 +111,15 @@ export const RpgBattleHub: React.FC<RpgBattleHubProps> = ({ userStats, onGainXp,
         setMonsterAnim('');
         setDamageNumber(null);
         
-        if (heroHp - 1 <= 0) {
-           // Hero died - reset monster
-           setHeroHp(3);
-           setMonsterHp(MONSTERS[currentMonsterIdx].maxHp);
-           generateQuestion();
-        }
+        setHeroHp(currentHp => {
+          if (currentHp <= 0) {
+             // Hero died - reset
+             setMonsterHp(MONSTERS[currentMonsterIdx].maxHp);
+             generateQuestion();
+             return HERO_MAX_HP;
+          }
+          return currentHp;
+        });
       }, 1000);
     }
   };
@@ -121,25 +132,33 @@ export const RpgBattleHub: React.FC<RpgBattleHubProps> = ({ userStats, onGainXp,
         
         {/* Battle Header */}
         <div className="flex justify-between items-center bg-black/40 p-4 rounded-2xl border border-white/10 mb-8 backdrop-blur-md">
-           <div className="flex items-center gap-3">
-             <div className="w-12 h-12 bg-indigo-600 rounded-full flex items-center justify-center shadow-lg border-2 border-indigo-400">
-               <Shield className="text-white" size={24} />
+           
+           {/* Hero HUD */}
+           <div className="flex items-center gap-4">
+             <div className="w-14 h-14 bg-indigo-600 rounded-full flex items-center justify-center shadow-[0_0_15px_rgba(79,70,229,0.5)] border-2 border-indigo-400">
+               <Shield className="text-white" size={28} />
              </div>
              <div>
-               <h3 className="text-white font-black text-xl tracking-wide">HERÓI</h3>
-               <div className="flex gap-1 mt-1">
-                 {[...Array(3)].map((_, i) => (
-                   <Heart key={i} size={16} className={i < heroHp ? 'text-rose-500 fill-rose-500' : 'text-stone-600'} />
-                 ))}
+               <h3 className="text-white font-black text-xl tracking-wide flex items-center gap-2">
+                 HERÓI <span className="text-xs font-medium text-indigo-300">HP: {heroHp}/{HERO_MAX_HP}</span>
+               </h3>
+               <div className="w-40 sm:w-48 h-4 bg-stone-800 rounded-full mt-1 overflow-hidden border border-white/10">
+                 <div 
+                   className="h-full bg-indigo-500 transition-all duration-300"
+                   style={{ width: `${(heroHp / HERO_MAX_HP) * 100}%` }}
+                 />
                </div>
              </div>
            </div>
 
+           {/* Monster HUD */}
            <div className="flex flex-col items-end">
-             <h3 className="text-white font-black text-xl tracking-wide text-right">{monster.name}</h3>
-             <div className="w-40 h-4 bg-stone-800 rounded-full mt-2 overflow-hidden border border-white/10">
+             <h3 className="text-white font-black text-xl tracking-wide text-right flex items-center gap-2">
+               <span className="text-xs font-medium text-rose-300">HP: {monsterHp}/{monster.maxHp}</span> {monster.name}
+             </h3>
+             <div className="w-40 sm:w-48 h-4 bg-stone-800 rounded-full mt-1 overflow-hidden border border-white/10">
                <div 
-                 className="h-full bg-rose-500 transition-all duration-300"
+                 className="h-full bg-rose-500 transition-all duration-300 shadow-[0_0_10px_rgba(244,63,94,0.5)]"
                  style={{ width: `${(monsterHp / monster.maxHp) * 100}%` }}
                />
              </div>
@@ -149,43 +168,43 @@ export const RpgBattleHub: React.FC<RpgBattleHubProps> = ({ userStats, onGainXp,
         {/* Battle Arena */}
         <div className="flex-1 flex items-center justify-between px-4 sm:px-12 relative">
           
-          {/* Hero */}
+          {/* Hero Sprite */}
           <div className={`relative transition-transform ${heroAnim}`}>
             <div className="text-8xl sm:text-9xl filter drop-shadow-2xl">
               🧙‍♂️
             </div>
             {damageNumber?.type === 'hero' && (
-              <div className="absolute -top-10 left-1/2 -translate-x-1/2 text-3xl font-black text-rose-500 animate-float-up pointer-events-none drop-shadow-md">
+              <div className="absolute -top-10 left-1/2 -translate-x-1/2 text-4xl font-black text-rose-500 animate-float-up pointer-events-none drop-shadow-md">
                 {damageNumber.value}
               </div>
             )}
           </div>
 
-          {/* Spell / Question Box in the middle */}
-          <div className="absolute top-0 left-1/2 -translate-x-1/2 bg-white/10 backdrop-blur-md border border-white/20 p-6 rounded-2xl flex flex-col items-center justify-center text-center max-w-sm shadow-2xl">
+          {/* Spell / Question Box */}
+          <div className="absolute top-0 left-1/2 -translate-x-1/2 bg-white/10 backdrop-blur-md border border-white/20 p-6 rounded-2xl flex flex-col items-center justify-center text-center w-full max-w-sm shadow-2xl">
              <span className="text-indigo-300 font-black tracking-widest uppercase text-xs mb-2 flex items-center gap-1">
-               <Sparkles size={12}/> Ataque do Inimigo
+               <Sparkles size={12}/> Ataque Inimigo
              </span>
              {question && (
                <>
                  <span className="text-5xl font-black text-white drop-shadow-lg mb-2">{question.word}</span>
-                 <span className="text-lg text-indigo-200 font-mono">{question.reading}</span>
+                 <span className="text-xl text-indigo-200 font-mono font-bold tracking-widest">{question.reading}</span>
                </>
              )}
           </div>
 
-          {/* Monster */}
+          {/* Monster Sprite */}
           <div className={`relative transition-transform ${monsterAnim}`}>
             {monsterAnim === 'animate-shake' && damageNumber?.type === 'monster' && (
-               <div className="absolute inset-0 flex items-center justify-center z-10 animate-slash">
-                  <div className="w-40 h-2 bg-white rounded-full shadow-[0_0_15px_rgba(255,255,255,1)] transform rotate-45" />
+               <div className="absolute inset-0 flex items-center justify-center z-10 animate-slash pointer-events-none">
+                  <div className="w-48 h-3 bg-white rounded-full shadow-[0_0_20px_rgba(255,255,255,1)] transform rotate-45" />
                </div>
             )}
             <div className={`${monster.size} filter drop-shadow-[0_10px_20px_rgba(0,0,0,0.5)]`}>
               {monster.emoji}
             </div>
             {damageNumber?.type === 'monster' && (
-              <div className="absolute -top-10 left-1/2 -translate-x-1/2 text-4xl font-black text-white animate-float-up pointer-events-none drop-shadow-[0_0_10px_rgba(220,38,38,0.8)]">
+              <div className="absolute -top-10 left-1/2 -translate-x-1/2 text-5xl font-black text-white animate-float-up pointer-events-none drop-shadow-[0_0_15px_rgba(220,38,38,0.9)]">
                 {damageNumber.value}
               </div>
             )}
@@ -197,7 +216,7 @@ export const RpgBattleHub: React.FC<RpgBattleHubProps> = ({ userStats, onGainXp,
         <div className="mt-8 bg-black/40 backdrop-blur-md p-6 rounded-3xl border border-white/10">
           <div className="flex items-center gap-2 mb-4 text-white/50 text-sm font-black uppercase tracking-widest">
             <Swords size={16} />
-            <span>Escolha seu Ataque</span>
+            <span>Escolha a Magia de Contra-Ataque</span>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
             {options.map((opt, idx) => (
@@ -205,10 +224,10 @@ export const RpgBattleHub: React.FC<RpgBattleHubProps> = ({ userStats, onGainXp,
                 key={idx}
                 onClick={() => handleAttack(opt)}
                 disabled={!!heroAnim || !!monsterAnim}
-                className="bg-white/10 hover:bg-indigo-600 border border-white/20 hover:border-indigo-400 p-4 rounded-2xl text-left transition-all active:scale-95 group text-white font-bold text-lg cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-between"
+                className="bg-white/10 hover:bg-indigo-600 border border-white/20 hover:border-indigo-400 p-5 rounded-2xl text-left transition-all active:scale-95 group text-white font-bold text-lg sm:text-xl cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-between"
               >
                 <span>{opt}</span>
-                <Zap size={20} className="opacity-0 group-hover:opacity-100 text-yellow-300 transition-opacity" />
+                <Droplet size={20} className="opacity-0 group-hover:opacity-100 text-indigo-300 transition-opacity" />
               </button>
             ))}
           </div>
