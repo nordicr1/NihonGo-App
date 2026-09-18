@@ -229,6 +229,13 @@ export const HomeHub: React.FC<HomeHubProps> = ({
 
           {/* Action CTAs */}
           <div className="flex flex-col sm:flex-row flex-wrap justify-center items-stretch sm:items-center gap-3 sm:gap-4 pt-4 w-full sm:w-auto">
+                        <button
+              type="button"
+              onClick={() => onTabChange('rpg')}
+              className="w-full sm:w-auto flex justify-center items-center gap-2 px-6 py-3.5 rounded-2xl bg-indigo-600 hover:bg-indigo-500 text-white font-extrabold text-sm sm:text-base shadow-lg shadow-indigo-950/30 transition-all hover:scale-105 active:scale-95 cursor-pointer"
+            >
+              <span className="text-xl">⚔️</span> Batalha RPG
+            </button>
             <button
               type="button"
               onClick={() => onTabChange('games')}
