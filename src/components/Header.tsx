@@ -4,8 +4,8 @@ import { getLevelTitle } from '../utils/storage';
 import { Sparkles, Flame, Trophy, Bot, BookOpen, Compass, Gamepad2, Layers, PenTool, LogOut, Sword, Shield, Crown, Zap, Star, Medal, Ghost, Skull, Rocket, Gem, Heart } from 'lucide-react';
 
 interface HeaderProps {
-  currentTab: 'hub' | 'kana' | 'kanji' | 'grammar' | 'tests' | 'games' | 'analyzer' | 'sensei' | 'drawing' | 'conversation' | 'rpg';
-  onTabChange: (tab: 'hub' | 'kana' | 'kanji' | 'grammar' | 'tests' | 'games' | 'analyzer' | 'sensei' | 'drawing' | 'conversation' | 'rpg') => void;
+  currentTab: 'hub' | 'kana' | 'kanji' | 'grammar' | 'tests' | 'games' | 'analyzer' | 'sensei' | 'drawing' | 'conversation' | 'rpg' | 'konbini';
+  onTabChange: (tab: 'hub' | 'kana' | 'kanji' | 'grammar' | 'tests' | 'games' | 'analyzer' | 'sensei' | 'drawing' | 'conversation' | 'rpg' | 'konbini') => void;
   selectedJlpt: JLPTLevel;
   onJlptChange: (level: JLPTLevel) => void;
   userStats: UserStats;

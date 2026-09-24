@@ -155,7 +155,7 @@ const CHANGELOG = [
 ];
 
 interface HomeHubProps {
-  onTabChange: (tab: 'hub' | 'kana' | 'kanji' | 'grammar' | 'tests' | 'games' | 'analyzer' | 'sensei' | 'drawing' | 'conversation' | 'rpg') => void;
+  onTabChange: (tab: 'hub' | 'kana' | 'kanji' | 'grammar' | 'tests' | 'games' | 'analyzer' | 'sensei' | 'drawing' | 'conversation' | 'rpg' | 'konbini') => void;
   selectedJlpt: JLPTLevel;
   onJlptChange: (level: JLPTLevel) => void;
   userStats: UserStats;
@@ -235,6 +235,13 @@ export const HomeHub: React.FC<HomeHubProps> = ({
               className="w-full sm:w-auto flex justify-center items-center gap-2 px-6 py-3.5 rounded-2xl bg-indigo-600 hover:bg-indigo-500 text-white font-extrabold text-sm sm:text-base shadow-lg shadow-indigo-950/30 transition-all hover:scale-105 active:scale-95 cursor-pointer"
             >
               <span className="text-xl">⚔️</span> Batalha RPG
+            </button>
+                        <button
+              type="button"
+              onClick={() => onTabChange('konbini')}
+              className="w-full sm:w-auto flex justify-center items-center gap-2 px-6 py-3.5 rounded-2xl bg-teal-600 hover:bg-teal-500 text-white font-extrabold text-sm sm:text-base shadow-lg shadow-teal-950/30 transition-all hover:scale-105 active:scale-95 cursor-pointer"
+            >
+              <span className="text-xl">🏪</span> Konbini Sim
             </button>
             <button
               type="button"

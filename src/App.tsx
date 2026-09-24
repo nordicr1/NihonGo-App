@@ -20,6 +20,7 @@ import { UserProgressModal } from './components/UserProgressModal';
 import { CalligraphyHub } from './components/CalligraphyHub';
 import { ConversationHub } from './components/ConversationHub';
 import { RpgBattleHub } from './components/RpgBattleHub';
+import { KonbiniSimulator } from './components/KonbiniSimulator';
 import { Sparkles, Bot, Zap } from 'lucide-react';
 
 export default function App() {
@@ -27,7 +28,7 @@ export default function App() {
   const [loadingAuth, setLoadingAuth] = useState(true);
 
   const [currentTab, setCurrentTab] = useState<
-    'hub' | 'kana' | 'kanji' | 'grammar' | 'tests' | 'games' | 'analyzer' | 'sensei' | 'drawing' | 'conversation' | 'rpg'
+    'hub' | 'kana' | 'kanji' | 'grammar' | 'tests' | 'games' | 'analyzer' | 'sensei' | 'drawing' | 'conversation' | 'rpg' | 'konbini'
   >('hub');
   const [selectedJlpt, setSelectedJlpt] = useState<JLPTLevel>('N5');
   const [userStats, setUserStats] = useState<UserStats>(loadUserStats);
@@ -363,6 +364,7 @@ export default function App() {
 
         {currentTab === 'analyzer' && <SentenceAnalyzer onGainXp={handleGainXp} />}
         {currentTab === 'rpg' && <RpgBattleHub userStats={userStats} onGainXp={handleGainXp} onLoseHeart={handleLoseHeart} />}
+        {currentTab === 'konbini' && <KonbiniSimulator onGainXp={handleGainXp} />}
       </main>
 
       {/* Floating AI Sensei Quick Button */}
