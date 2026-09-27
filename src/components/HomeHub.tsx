@@ -53,6 +53,11 @@ const JAPANESE_TIPS = [
 
 const CHANGELOG = [
   {
+    date: '27 Set 2026',
+    title: 'Novos Modos: RPG Battle & Konbini Simulator! ⚔️🏪',
+    desc: 'Lançamos dois novos minigames para testar seu conhecimento! Enfrente inimigos no estilo RPG batalhando com seus conhecimentos de kanji e gramática no RpgBattleHub, e pratique seu japonês de sobrevivência para o dia a dia atendendo e sendo atendido em uma loja de conveniência no KonbiniSimulator. Aprender japonês nunca foi tão divertido!',
+  },
+  {
     date: '15 Set 2026',
     title: 'Tratamento de Choque: Fundações N4/N5 e Novos Simulados 💥🎓',
     desc: 'Aplicamos uma injeção massiva de conhecimento na base do aplicativo! O N4 recebeu 18 regras mortais (Condicionais, Voz Passiva, Keigo) e o N5 ganhou permissões e comparações vitais. Além da super gramática, introduzimos os Simulados Oficiais N3 e N4, cheios de pegadinhas de kanjis e textos Dokkai. A preparação definitiva para o JLPT está pronta!',
