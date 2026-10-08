@@ -364,7 +364,7 @@ export default function App() {
 
         {currentTab === 'analyzer' && <SentenceAnalyzer onGainXp={handleGainXp} />}
         {currentTab === 'rpg' && <RpgBattleHub userStats={userStats} onGainXp={handleGainXp} onLoseHeart={handleLoseHeart} />}
-        {currentTab === 'konbini' && <KonbiniSimulator onGainXp={handleGainXp} />}
+        {currentTab === 'konbini' && <KonbiniSimulator onGainXp={handleGainXp} onLoseHeart={handleLoseHeart} />}
       </main>
 
       {/* Floating AI Sensei Quick Button */}
