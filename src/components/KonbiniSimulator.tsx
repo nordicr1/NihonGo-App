@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Store, HeartCrack, Sparkles, ChevronRight, AlertTriangle, Smile } from 'lucide-react';
 import { AudioButton } from './AudioButton';
-import { soundFX } from '../utils/audio';
+import { soundFX, playJapaneseAudio } from '../utils/audio';
 
 interface Option {
   textJp: string;
@@ -179,6 +179,13 @@ export const KonbiniSimulator: React.FC<Props> = ({ onGainXp, onLoseHeart }) => 
   const [clerkMood, setClerkMood] = useState<number>(80); // 0 to 100
   
   const scene = KONBINI_SCENES[currentSceneId];
+
+  useEffect(() => {
+    // Autoplay the clerk's voice when the scene changes
+    if (scene.speakerRole === 'clerk') {
+      playJapaneseAudio(scene.textJp, 1.0);
+    }
+  }, [currentSceneId]);
 
   // Derive sprite from mood
   const getSprite = () => {
